@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-06T15:40:09+00:00",
+ "generated": "2026-07-06T18:06:11+00:00",
  "games": [
   {
    "away": "Philadelphia Phillies",
@@ -9,9 +9,9 @@
    "home_sp": "Noah Cameron",
    "p_home": 41.4,
    "raw_total": 8.66,
-   "adj_total": 8.84,
+   "adj_total": 8.87,
    "park": "park neutral [low-conf]",
-   "wx": "85F, wind 4mph"
+   "wx": "88F, wind 5mph"
   },
   {
    "away": "New York Yankees",
@@ -33,9 +33,9 @@
    "home_sp": "Miles Mikolas",
    "p_home": 59.8,
    "raw_total": 10.06,
-   "adj_total": 10.3,
+   "adj_total": 10.34,
    "park": "park +1%",
-   "wx": "84F, wind 4mph"
+   "wx": "87F, wind 3mph"
   },
   {
    "away": "New York Mets",
@@ -45,9 +45,9 @@
    "home_sp": "Reynaldo L\u00f3pez",
    "p_home": 61.8,
    "raw_total": 8.81,
-   "adj_total": 8.88,
+   "adj_total": 8.91,
    "park": "park neutral",
-   "wx": "78F, wind 3mph"
+   "wx": "82F, wind 4mph"
   },
   {
    "away": "Milwaukee Brewers",
@@ -57,9 +57,9 @@
    "home_sp": "Dustin May",
    "p_home": 45.2,
    "raw_total": 8.89,
-   "adj_total": 8.88,
+   "adj_total": 8.9,
    "park": "park -1%",
-   "wx": "79F, wind 5mph"
+   "wx": "81F, wind 6mph"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -69,9 +69,9 @@
    "home_sp": "Walker Buehler",
    "p_home": 52.5,
    "raw_total": 8.64,
-   "adj_total": 8.19,
+   "adj_total": 8.25,
    "park": "park -5%",
-   "wx": "69F, wind 4mph"
+   "wx": "75F, wind 8mph"
   },
   {
    "away": "Toronto Blue Jays",
@@ -81,9 +81,9 @@
    "home_sp": "Landen Roupp",
    "p_home": 54.9,
    "raw_total": 8.25,
-   "adj_total": 7.65,
+   "adj_total": 7.67,
    "park": "park -6%",
-   "wx": "57F, wind 7mph"
+   "wx": "59F, wind 8mph"
   },
   {
    "away": "Colorado Rockies",
@@ -280,8 +280,18 @@
    "net": 0.883
   }
  ],
- "edges": [],
- "edge_note": "no +EV sides vs consensus right now",
+ "edges": [
+  {
+   "game": "Boston Red Sox @ Chicago White Sox",
+   "bet": "Boston Red Sox",
+   "price": -116,
+   "book": "FanDuel",
+   "fair": 0.542,
+   "ev_pct": 0.92,
+   "kelly_frac": 0.00267
+  }
+ ],
+ "edge_note": "",
  "parlays": [],
  "near_parlays": [],
  "backtest": {
