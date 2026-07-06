@@ -1,0 +1,4 @@
+pybaseball>=2.2.0
+MLB-StatsAPI>=1.6.0
+pandas>=1.5
+numpy>=1.24

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLB · Model & Value</title>
+<style>
+:root{--bg:#0c1015;--panel:#131a22;--panel2:#0f151c;--hair:#22303e;--ink:#e8edf3;--mut:#8fa0b0;
+--mut2:#5c6b7a;--acc:#3ea675;--acc2:#5bd0a0;--warn:#d9a441;--red:#c96a5a;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
+font-family:"Saira","Segoe UI",system-ui,sans-serif;font-size:14.5px}
+header{padding:22px 22px 10px;border-bottom:1px solid var(--hair)}
+header .t{font-weight:800;font-size:19px;letter-spacing:.12em}
+header .t b{color:var(--warn)}
+header .s{color:var(--mut2);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
+.meta{color:var(--mut2);font-size:11.5px;margin-top:6px}
+nav{display:flex;gap:4px;padding:10px 16px;border-bottom:1px solid var(--hair);overflow-x:auto}
+nav button{background:none;border:1px solid transparent;color:var(--mut);font:inherit;font-weight:700;
+font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border-radius:8px;cursor:pointer}
+nav button.on{color:var(--ink);background:var(--panel);border-color:var(--hair)}
+main{padding:18px;max-width:1060px;margin:0 auto}
+section{display:none}section.on{display:block}
+.card{background:var(--panel);border:1px solid var(--hair);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h3{margin:0 0 4px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.card .sub{color:var(--mut2);font-size:12px;margin-bottom:12px;line-height:1.5}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{color:var(--mut2);text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+padding:6px 8px;border-bottom:1px solid var(--hair)}
+td{padding:8px;border-bottom:1px solid var(--panel2)}
+tr:last-child td{border-bottom:0}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.pos{color:var(--acc2)}.neg{color:var(--red)}.dim{color:var(--mut2);font-size:11.5px}
+.pill{display:inline-block;background:var(--panel2);border:1px solid var(--hair);border-radius:20px;
+padding:1px 9px;font-size:11px;color:var(--mut)}
+.bar{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden;min-width:80px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.empty{color:var(--mut2);padding:26px;text-align:center;font-size:13px}
+.note{color:var(--warn);font-size:12px;margin-top:8px}
+footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
+@media(max-width:640px){td,th{padding:6px 5px}body{font-size:13.5px}.hide-m{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="t">MLB <b>MODEL &amp; VALUE</b></div>
+  <div class="s">runs model · park + weather totals · line-shop edges</div>
+  <div class="meta" id="meta">loading…</div>
+</header>
+<nav id="nav">
+  <button data-t="slate" class="on">Slate</button>
+  <button data-t="edges">Edges</button>
+  <button data-t="parlays">Parlays</button>
+  <button data-t="ratings">Ratings</button>
+  <button data-t="method">Method</button>
+</nav>
+<main>
+
+<section id="slate" class="on">
+  <div class="card">
+    <h3>Today's Slate</h3>
+    <div class="sub">Model win probability (team ratings + starter xwOBA) and projected totals.
+    <b>Adj total</b> = model total × park factor × live weather. Tags show exactly what was applied.</div>
+    <div id="slateBody"><div class="empty">no slate loaded</div></div>
+  </div>
+</section>
+
+<section id="edges">
+  <div class="card">
+    <h3>Line-Shop Edges</h3>
+    <div class="sub">Best available price vs the multi-book no-vig consensus — the only layer with a real
+    long-term edge. Sizes are fraction-of-bankroll (quarter Kelly). The model's win% is deliberately
+    <b>not</b> used here: validated at ~56%, it is less accurate than the market.
+    Most days this table is empty — that's it working, not failing.</div>
+    <div id="edgeBody"><div class="empty">no odds loaded</div></div>
+  </div>
+</section>
+
+<section id="parlays">
+  <div class="card">
+    <h3>+EV Parlays</h3>
+    <div class="sub">Cross-game combos built <b>only</b> from legs that individually beat the no-vig
+    consensus — the joint edge compounds the line-shop edge, it doesn't manufacture one. Ordinary parlays
+    multiply vig and are always -EV; this tab is empty unless 2+ real edges exist today. <b>ONE BOOK</b>
+    combos are placeable as a single ticket; "split" combos are better bet as singles.</div>
+    <div id="parlayBody"><div class="empty">needs 2+ line-shop edges today</div></div>
+  </div>
+  <div class="card">
+    <h3>Boost Targets</h3>
+    <div class="sub">Near-miss parlays and the profit-boost %% that flips each one +EV — so when a book
+    hands you a 30/50%% token, this is where it's worth spending (lesson from the World Cup boost math:
+    a 50%% boost flipped a -EV ticket to +$62 expected).</div>
+    <div id="boostBody"><div class="empty">no near-miss combos</div></div>
+  </div>
+</section>
+
+<section id="ratings">
+  <div class="card">
+    <h3>Team Ratings</h3>
+    <div class="sub">O = offense multiplier (runs scored vs league), D = defense (runs allowed; below 1 is good),
+    net = O/D. Sample-shrunk season rates — deliberately simple; opponent-adjusted iteration overfit and was rejected.</div>
+    <div id="ratingsBody"></div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="card">
+    <h3>Backtest (walk-forward, leak-free)</h3>
+    <div class="sub">Every prediction made only from games before it. This is a <b>read</b>, not a market-beater:
+    closing moneylines hit ~57-60%; this model is validated below that. Its use is understanding matchups
+    and pricing totals — the bettable edge lives in the Edges tab.</div>
+    <div id="btBody"></div>
+  </div>
+  <div class="card">
+    <h3>What's in the number</h3>
+    <div class="sub" style="margin-bottom:0">
+    <b>Win%:</b> team run rates (shrunk) + starting-pitcher quality via season xwOBA (725 pitchers), Poisson
+    game grid, home field ~1.03. Rolling per-game xwOBA was tested against the crude runs-allowed proxy on
+    388k pitches and added nothing — both 55.3% — so the simpler input stands.<br><br>
+    <b>Totals:</b> model total × <b>park factor</b> (Statcast 3-yr run index; renovated parks
+    shrunk toward neutral and tagged low-conf rather than dropped) × <b>weather</b> (Open-Meteo live:
+    ~+1%/10°F above 70, wind >8mph; retractable roofs halved, domes zeroed — every game tagged with what applied).<br><br>
+    <b>Edges:</b> per-book devig → median no-vig consensus → best price per side → quarter-Kelly on the
+    price gap. In-progress games skipped. Same architecture validated in the UFC tool.
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>model &amp; form are decision support, not advice · weather by Open-Meteo (CC BY 4.0)</footer>
+<script>
+const $=id=>document.getElementById(id);
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('main section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t));
+});
+const pct=x=>x.toFixed(1)+'%';
+function bar(p){return `<div class="bar"><i style="width:${p}%"></i></div>`}
+function render(d){
+  $('meta').textContent=`updated ${new Date(d.generated).toLocaleString()} · league ${d.league_rpg} r/tm/g · xwOBA for ${d.xwoba_pitchers} pitchers`;
+  // slate
+  if(d.games && d.games.length){
+    $('slateBody').innerHTML=`<table><tr><th>matchup</th><th class="hide-m">starters</th>
+    <th class="num">home win</th><th></th><th class="num">total</th><th class="num">adj</th><th class="hide-m">applied</th></tr>`+
+    d.games.map(g=>`<tr>
+      <td>${g.away}<br><span class="dim">@ ${g.home}</span></td>
+      <td class="hide-m dim">${g.away_sp}<br>${g.home_sp}</td>
+      <td class="num"><b>${pct(g.p_home)}</b></td>
+      <td>${bar(g.p_home)}</td>
+      <td class="num dim">${g.raw_total}</td>
+      <td class="num"><b>${g.adj_total}</b></td>
+      <td class="hide-m"><span class="pill">${g.park}</span> <span class="pill">${g.wx}</span></td>
+    </tr>`).join('')+`</table>`;
+  } else $('slateBody').innerHTML='<div class="empty">no games in the loaded slate</div>';
+  // edges
+  if(d.edges && d.edges.length){
+    $('edgeBody').innerHTML=`<table><tr><th>bet</th><th class="num">price</th><th>book</th>
+    <th class="num">fair</th><th class="num">edge</th><th class="num">stake (of bank)</th></tr>`+
+    d.edges.map(e=>`<tr><td>${e.bet}<br><span class="dim">${e.game}</span></td>
+      <td class="num"><b>${e.price>0?'+':''}${e.price}</b></td><td>${e.book}</td>
+      <td class="num dim">${(e.fair*100).toFixed(1)}%</td>
+      <td class="num pos">+${e.ev_pct}%</td>
+      <td class="num">${(e.kelly_frac*100).toFixed(2)}%</td></tr>`).join('')+`</table>`
+      +(d.edge_note?`<div class="note">${d.edge_note}</div>`:'');
+  } else $('edgeBody').innerHTML=`<div class="empty">no +EV sides vs consensus right now${d.edge_note?' · '+d.edge_note:''}</div>`;
+  // parlays
+  if(d.parlays && d.parlays.length){
+    $('parlayBody').innerHTML=`<table><tr><th>combo</th><th class="num">payout</th><th class="num">fair</th><th class="num">joint EV</th><th>ticket</th></tr>`+
+    d.parlays.map(p=>`<tr><td>${p.legs.map(l=>`${l.bet} <span class="dim">${l.price>0?'+':''}${l.price} ${l.book}</span>`).join('<br>')}</td>
+      <td class="num"><b>${p.american>0?'+':''}${p.american}</b></td>
+      <td class="num dim">${p.fair_pct}%</td>
+      <td class="num pos">+${p.ev_pct}%</td>
+      <td>${p.one_book?'<span class="pill" style="color:var(--acc2)">ONE BOOK · '+p.books[0]+'</span>':'<span class="pill">split — bet as singles</span>'}</td></tr>`).join('')+`</table>`;
+  } else $('parlayBody').innerHTML='<div class="empty">needs 2+ line-shop edges today — none available</div>';
+  if(d.near_parlays && d.near_parlays.length){
+    $('boostBody').innerHTML=`<table><tr><th>combo</th><th class="num">payout</th><th class="num">EV now</th><th class="num">boost to flip</th></tr>`+
+    d.near_parlays.map(p=>`<tr><td>${p.legs.map(l=>l.bet).join(' + ')}</td>
+      <td class="num">${p.american>0?'+':''}${p.american}</td>
+      <td class="num neg">${p.ev_pct}%</td>
+      <td class="num"><b>${p.boost_to_flip_pct}%+</b></td></tr>`).join('')+`</table>`;
+  } else $('boostBody').innerHTML='<div class="empty">no near-miss combos to boost</div>';
+  // ratings
+  $('ratingsBody').innerHTML=`<table><tr><th>#</th><th>team</th><th class="num">O</th>
+  <th class="num">D</th><th class="num">net</th><th></th></tr>`+
+  d.ratings.map((r,i)=>`<tr><td class="dim">${i+1}</td><td>${r.team}</td>
+    <td class="num">${r.O.toFixed(3)}</td><td class="num">${r.D.toFixed(3)}</td>
+    <td class="num"><b>${r.net.toFixed(3)}</b></td><td>${bar(Math.min((r.net-0.8)/0.55*100,100))}</td></tr>`).join('')+`</table>`;
+  // backtest
+  const b=d.backtest;
+  $('btBody').innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
+  <tr><td>games predicted</td><td class="num">${b.n}</td></tr>
+  <tr><td>accuracy</td><td class="num"><b>${b.acc}%</b> <span class="dim">(home-always ${b.home_base}%)</span></td></tr>
+  <tr><td>Brier score</td><td class="num">${b.brier}</td></tr></table>
+  <div class="sub" style="margin-top:12px">calibration:</div>
+  <table><tr><th>bucket</th><th class="num">predicted</th><th class="num">actual</th><th class="num">n</th></tr>`+
+  b.cal.map(c=>`<tr><td>~${c.bucket}%</td><td class="num">${c.pred}%</td>
+    <td class="num">${c.actual}%</td><td class="num dim">${c.n}</td></tr>`).join('')+`</table>`;
+}
+fetch('slate.json').then(r=>r.json()).then(render)
+ .catch(()=>{$('meta').textContent='could not load slate.json — run mlb_publish.py (or wait for the daily Action)';});
+</script>
+</body>
+</html>
