@@ -29,5 +29,7 @@ jobs:
           git config user.name "mlb-bot"
           git config user.email "actions@github.com"
           git add mlb/data/slate.json
-          git diff --cached --quiet || git commit -m "daily slate $(date -u +%F)"
+          git diff --cached --quiet && echo "no change" && exit 0
+          git commit -m "daily slate $(date -u +%F)"
+          git pull --rebase origin main
           git push
