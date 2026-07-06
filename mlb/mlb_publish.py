@@ -115,12 +115,18 @@ def main():
 
     edge_rows, edge_note = edges_block()
     parlays, near_parlays = parlay_block()
+    try:
+        import mlb_hr
+        hr_rows, hr_note = mlb_hr.load_board(DATA)
+    except Exception as e:
+        hr_rows, hr_note = [], f"hr module error: {type(e).__name__}"
 
     out = {
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "games": games, "ratings": ratings,
         "edges": edge_rows, "edge_note": edge_note,
         "parlays": parlays, "near_parlays": near_parlays,
+        "hr_board": hr_rows, "hr_note": hr_note,
         "backtest": backtest_block(s),
         "league_rpg": round(float(m["L"]), 2),
         "xwoba_pitchers": len(xw),
@@ -129,7 +135,8 @@ def main():
     with open(path, "w") as f:
         json.dump(out, f, indent=1)
     print(f"slate.json written: {len(games)} games, {len(edge_rows)} edges "
-          f"({edge_note or 'ok'}), {len(ratings)} teams rated")
+          f"({edge_note or 'ok'}), {len(ratings)} teams rated, "
+          f"{len(hr_rows)} HR-board rows")
 
 
 if __name__ == "__main__":

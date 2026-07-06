@@ -42,13 +42,14 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
 <body>
 <header>
   <div class="t">MLB <b>MODEL &amp; VALUE</b></div>
-  <div class="s">runs model · park + weather totals · line-shop edges</div>
+  <div class="s">runs model · park + weather totals · line-shop edges · HR board</div>
   <div class="meta" id="meta">loading…</div>
 </header>
 <nav id="nav">
   <button data-t="slate" class="on">Slate</button>
   <button data-t="edges">Edges</button>
   <button data-t="parlays">Parlays</button>
+  <button data-t="homers">Homers</button>
   <button data-t="ratings">Ratings</button>
   <button data-t="method">Method</button>
 </nav>
@@ -92,6 +93,18 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   </div>
 </section>
 
+<section id="homers">
+  <div class="card">
+    <h3>Home Run Board — best HR bets of the day</h3>
+    <div class="sub">P(player homers today) = shrunk season HR/PA &times; starter's HR-allowed factor (62% weight)
+    &times; <b>HR-specific</b> park index &times; live temperature. Ranked by EV when props price in, else by model HR%.
+    <b>Props carry 8-15% hold</b> — a gap vs fair is the entry ticket, not the win. Lineups are season-usage
+    projections until cards post (~1-4h pre-game); a scratch voids that row.</div>
+    <div id="hrNote" class="sub" style="margin-top:6px"></div>
+    <div id="hrBody"><div class="empty">no HR board — run mlb_hr.py (or wait for the daily Action)</div></div>
+  </div>
+</section>
+
 <section id="ratings">
   <div class="card">
     <h3>Team Ratings</h3>
@@ -119,7 +132,13 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     shrunk toward neutral and tagged low-conf rather than dropped) × <b>weather</b> (Open-Meteo live:
     ~+1%/10°F above 70, wind >8mph; retractable roofs halved, domes zeroed — every game tagged with what applied).<br><br>
     <b>Edges:</b> per-book devig → median no-vig consensus → best price per side → quarter-Kelly on the
-    price gap. In-progress games skipped. Same architecture validated in the UFC tool.
+    price gap. In-progress games skipped. Same architecture validated in the UFC tool.<br><br>
+    <b>HR board:</b> shrunk batter HR/PA (K=130 PA prior) × starter HR-per-batter factor (K=200 BF, 62% weight,
+    bullpen = league) × HR-specific park index (seed approximations, conf-shrunk like the run parks) ×
+    temperature (+0.8%/°F over 70, roof-halved, dome-off; vs a flat 70°F baseline, so warm-climate open
+    parks mildly double-count). Wind and platoon splits deliberately excluded from v1 — wind needs
+    direction × park geometry, platoons need a second pull. Selftested: shrinkage, park/temp/pitcher
+    monotonicity, EV wiring.
     </div>
   </div>
 </section>
@@ -183,6 +202,25 @@ function render(d){
   d.ratings.map((r,i)=>`<tr><td class="dim">${i+1}</td><td>${r.team}</td>
     <td class="num">${r.O.toFixed(3)}</td><td class="num">${r.D.toFixed(3)}</td>
     <td class="num"><b>${r.net.toFixed(3)}</b></td><td>${bar(Math.min((r.net-0.8)/0.55*100,100))}</td></tr>`).join('')+`</table>`;
+  // homers
+  if(d.hr_board && d.hr_board.length){
+    const hasEV=d.hr_board.some(r=>r.ev_pct!==undefined);
+    $('hrNote').textContent=d.hr_note||'';
+    $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
+    <th class="num">model HR%</th><th></th><th class="num">fair</th>`+
+    (hasEV?`<th class="num">best book</th><th class="num">EV</th>`:``)+
+    `<th class="hide-m">applied</th></tr>`+
+    d.hr_board.map(r=>`<tr>
+      <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
+      <td class="hide-m dim">${r.opp_sp}<br>@ ${r.opp} <span class="dim">(sp ${r.sp_fac}x)</span></td>
+      <td class="num"><b>${r.hr_pct}%</b></td>
+      <td>${bar(Math.min(r.hr_pct*2.2,100))}</td>
+      <td class="num">${r.fair}</td>`+
+      (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
+      <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
+      `<td class="hide-m"><span class="pill">${r.park}</span> <span class="pill">${r.temp}</span></td>
+    </tr>`).join('')+`</table>`;
+  } else if(d.hr_note){ $('hrNote').textContent=d.hr_note; }
   // backtest
   const b=d.backtest;
   $('btBody').innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
