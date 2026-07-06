@@ -28,6 +28,7 @@ jobs:
           python mlb_statcast.py
           python mlb_data.py || true
           python mlb_odds.py || true
+          python mlb_hr.py || true
           python mlb_publish.py
       - name: Commit fresh slate
         run: |
