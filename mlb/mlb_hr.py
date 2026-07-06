@@ -147,6 +147,31 @@ def hr_temp_mult(temp_f, roof):
     if roof == "retract": tag += " (roof: half)"
     return m, tag
 
+def _resolve_team_key(full, keys):
+    """Map a schedule full name ('New York Yankees') onto whatever label the
+    batter source used: FG/BREF code, full name, nickname, or unique city."""
+    code = TEAM_MAP.get(full)
+    if code and code in keys: return code
+    if code:
+        for canon, alts in FG_ALIASES.items():
+            if code == canon:
+                for a in alts:
+                    if a in keys: return a
+    if full in keys: return full
+    low = {k.lower(): k for k in keys}
+    if full.lower() in low: return low[full.lower()]
+    words = full.split()
+    for n in (2, 1):                                      # 'red sox' before 'sox'
+        if len(words) > n:
+            nick = " ".join(words[-n:]).lower()
+            m = [k for k in keys if k.lower() == nick or k.lower().endswith(" " + nick)]
+            if len(m) == 1: return m[0]
+    for n in range(len(words) - 1, 0, -1):                # 'kansas city' before 'kansas'
+        city = " ".join(words[:n]).lower()
+        m = [k for k in keys if k.lower() == city or k.lower().startswith(city)]
+        if len(m) == 1: return m[0]
+    return None
+
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
 def build_board(batters, pitchers, sched, temps, props=None):
@@ -181,13 +206,8 @@ def build_board(batters, pitchers, sched, temps, props=None):
         return TEAM_MAP.get(full)
 
     def team_bats(full):
-        code = fg(full)
-        if code in lineup: return lineup[code]
-        for canon, alts in FG_ALIASES.items():
-            if code == canon:
-                for a in alts:
-                    if a in lineup: return lineup[a]
-        return []
+        k = _resolve_team_key(full, set(lineup.keys()))
+        return lineup.get(k, []) if k else []
 
     def sp_factor(name):
         n = norm(name or "")
@@ -467,12 +487,25 @@ def main():
     print("3) pitchers…"); pit, psrc = pull_pitchers()
     if not bat or not pit:
         sys.exit("no batter/pitcher data from any source — board not built")
+    tkeys = sorted({b["fg_team"] for b in bat})
+    print(f"   team labels in batter data ({len(tkeys)}): {tkeys[:34]}")
+    print(f"   schedule teams: {sorted({g[s] for g in sched for s in ('home','away')})[:8]} …")
     print("4) park temps (Open-Meteo)…")
     temps = pull_temps(sorted({g["venue"] for g in sched}))
     print("5) HR props (The Odds API, optional)…")
     props, pnote = pull_props(); print(f"   {pnote}")
     rows, have_ev = build_board(bat, pit, sched, temps, props or None)
     rows = rows[:30]
+    print(f"   board rows built: {len(rows)}")
+    if not rows:
+        note = (f"BOARD EMPTY — team labels in {bsrc} data didn't map to schedule teams. "
+                f"Sample labels: {', '.join(tkeys[:10])} · fix TEAM_MAP/resolver in mlb_hr.py")
+        out = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+               "note": note, "rows": []}
+        os.makedirs(DATA, exist_ok=True)
+        with open(os.path.join(DATA, "hr_board.json"), "w") as f:
+            json.dump(out, f, indent=1)
+        sys.exit("EMPTY BOARD — " + note)
     note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
             "lineups = top-9 by season PA until cards post · platoon splits not in v1 · "
             "wind not modeled (speed-only feed) · park HR factors are seed approximations "
