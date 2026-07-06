@@ -242,28 +242,75 @@ def build_board(batters, pitchers, sched, temps, props=None):
 
 # ---------------------------------------------------------------------------
 # live data pulls (network; lazy imports so --selftest never needs them)
-def pull_batters():
-    from pybaseball import batting_stats
-    df = batting_stats(YEAR, qual=0)
+def _col(df, *names):
+    """Find a column by candidate names, case-insensitive. None if absent."""
+    low = {c.lower(): c for c in df.columns}
+    for n in names:
+        if n.lower() in low: return low[n.lower()]
+    return None
+
+_MULTI = {"TOT", "2TM", "3TM", "4TM", "---", ""}
+
+def _rows_from_batting(df):
+    """FG or BREF batting frame -> [{name, fg_team, pa, hr}]. Pure; unit-tested."""
+    nc = _col(df, "Name"); tc = _col(df, "Team", "Tm")
+    pc = _col(df, "PA"); hc = _col(df, "HR")
+    if not all([nc, pc, hc]):
+        raise ValueError(f"batting frame missing columns (have: {list(df.columns)[:12]})")
     out = []
     for _, r in df.iterrows():
-        pa, hr = int(r.get("PA", 0) or 0), int(r.get("HR", 0) or 0)
+        team = str(r.get(tc, "") or "") if tc else ""
+        if team.strip().upper() in _MULTI: continue      # keep per-team rows only
+        try: pa, hr = int(float(r.get(pc, 0) or 0)), int(float(r.get(hc, 0) or 0))
+        except (TypeError, ValueError): continue
         if pa >= 30:
-            out.append({"name": str(r["Name"]), "fg_team": str(r.get("Team", "")),
-                        "pa": pa, "hr": hr})
-    print(f"   batters: {len(out)} with 30+ PA")
+            out.append({"name": str(r[nc]), "fg_team": team.strip(), "pa": pa, "hr": hr})
     return out
 
-def pull_pitchers():
-    from pybaseball import pitching_stats
-    df = pitching_stats(YEAR, qual=0)
-    out = []
+def _rows_from_pitching(df):
+    """FG or BREF pitching frame -> [{name, bf, hr}]. BF from TBF/BF, else IP*4.25."""
+    nc = _col(df, "Name"); bc = _col(df, "TBF", "BF"); ic = _col(df, "IP")
+    hc = _col(df, "HR")
+    if not all([nc, hc]) or not (bc or ic):
+        raise ValueError(f"pitching frame missing columns (have: {list(df.columns)[:12]})")
+    out, derived = [], 0
     for _, r in df.iterrows():
-        bf = int(r.get("TBF", 0) or 0)
+        try:
+            if bc and r.get(bc) == r.get(bc) and r.get(bc) not in (None, ""):
+                bf = int(float(r[bc]))
+            else:
+                bf = int(round(float(r.get(ic, 0) or 0) * 4.25)); derived += 1
+            hr = int(float(r.get(hc, 0) or 0))
+        except (TypeError, ValueError): continue
         if bf >= 40:
-            out.append({"name": str(r["Name"]), "bf": bf, "hr": int(r.get("HR", 0) or 0)})
-    print(f"   pitchers: {len(out)} with 40+ BF")
+            out.append({"name": str(r[nc]), "bf": bf, "hr": hr})
+    if derived: print(f"   (BF derived from IP*4.25 for {derived} rows)")
     return out
+
+def pull_batters():
+    """FanGraphs first (best data; works from home IP). Baseball-Reference
+    fallback: GitHub's datacenter IP gets 403'd by FanGraphs but BREF works
+    (proven by the game-log pulls in the same Action)."""
+    try:
+        from pybaseball import batting_stats
+        out = _rows_from_batting(batting_stats(YEAR, qual=0)); src = "FanGraphs"
+    except Exception as e:
+        print(f"   FanGraphs unavailable ({type(e).__name__}) -> Baseball-Reference fallback")
+        from pybaseball import batting_stats_bref
+        out = _rows_from_batting(batting_stats_bref(YEAR)); src = "Baseball-Reference"
+    print(f"   batters: {len(out)} with 30+ PA  [{src}]")
+    return out, src
+
+def pull_pitchers():
+    try:
+        from pybaseball import pitching_stats
+        out = _rows_from_pitching(pitching_stats(YEAR, qual=0)); src = "FanGraphs"
+    except Exception as e:
+        print(f"   FanGraphs unavailable ({type(e).__name__}) -> Baseball-Reference fallback")
+        from pybaseball import pitching_stats_bref
+        out = _rows_from_pitching(pitching_stats_bref(YEAR)); src = "Baseball-Reference"
+    print(f"   pitchers: {len(out)} with 40+ BF  [{src}]")
+    return out, src
 
 def todays_sched():
     hits = sorted(glob.glob(os.path.join(DATA, "schedule_*.csv"))) or \
@@ -416,15 +463,18 @@ def main():
         sys.exit(selftest())
     print("1) schedule…"); sched = todays_sched()
     print(f"   {len(sched)} games")
-    print("2) batters (FanGraphs via pybaseball)…"); bat = pull_batters()
-    print("3) pitchers…"); pit = pull_pitchers()
+    print("2) batters…"); bat, bsrc = pull_batters()
+    print("3) pitchers…"); pit, psrc = pull_pitchers()
+    if not bat or not pit:
+        sys.exit("no batter/pitcher data from any source — board not built")
     print("4) park temps (Open-Meteo)…")
     temps = pull_temps(sorted({g["venue"] for g in sched}))
     print("5) HR props (The Odds API, optional)…")
     props, pnote = pull_props(); print(f"   {pnote}")
     rows, have_ev = build_board(bat, pit, sched, temps, props or None)
     rows = rows[:30]
-    note = ("lineups = top-9 by season PA until cards post · platoon splits not in v1 · "
+    note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
+            "lineups = top-9 by season PA until cards post · platoon splits not in v1 · "
             "wind not modeled (speed-only feed) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
             "warm-climate open parks) · " + pnote +
