@@ -1,183 +1,99 @@
 {
- "generated": "2026-07-05T04:32:39+00:00",
+ "generated": "2026-07-06T15:40:09+00:00",
  "games": [
   {
-   "away": "Pittsburgh Pirates",
+   "away": "Philadelphia Phillies",
+   "home": "Kansas City Royals",
+   "venue": "Kauffman Stadium",
+   "away_sp": "Cristopher S\u00e1nchez",
+   "home_sp": "Noah Cameron",
+   "p_home": 41.4,
+   "raw_total": 8.66,
+   "adj_total": 8.84,
+   "park": "park neutral [low-conf]",
+   "wx": "85F, wind 4mph"
+  },
+  {
+   "away": "New York Yankees",
+   "home": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "away_sp": "Cam Schlittler",
+   "home_sp": "Griffin Jax",
+   "p_home": 44.0,
+   "raw_total": 8.89,
+   "adj_total": 8.89,
+   "park": "park neutral [unknown park]",
+   "wx": "dome (no wx)"
+  },
+  {
+   "away": "Houston Astros",
    "home": "Washington Nationals",
    "venue": "Nationals Park",
-   "away_sp": "Braxton Ashcraft",
-   "home_sp": "Carson Palmquist",
-   "p_home": 50.4,
-   "raw_total": 9.86,
-   "adj_total": 9.96,
+   "away_sp": "Mike Burrows",
+   "home_sp": "Miles Mikolas",
+   "p_home": 59.8,
+   "raw_total": 10.06,
+   "adj_total": 10.3,
    "park": "park +1%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Minnesota Twins",
-   "home": "New York Yankees",
-   "venue": "Yankee Stadium",
-   "away_sp": "Zebby Matthews",
-   "home_sp": "Brendan Beck",
-   "p_home": 56.3,
-   "raw_total": 9.64,
-   "adj_total": 9.93,
-   "park": "park +3%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Detroit Tigers",
-   "home": "Texas Rangers",
-   "venue": "Globe Life Field",
-   "away_sp": "Jack Flaherty",
-   "home_sp": "Cal Quantrill",
-   "p_home": 52.3,
-   "raw_total": 8.47,
-   "adj_total": 8.81,
-   "park": "park +4%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Toronto Blue Jays",
-   "home": "Seattle Mariners",
-   "venue": "T-Mobile Park",
-   "away_sp": "Shane Bieber",
-   "home_sp": "Logan Gilbert",
-   "p_home": 64.9,
-   "raw_total": 8.72,
-   "adj_total": 7.93,
-   "park": "park -9%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Baltimore Orioles",
-   "home": "Cincinnati Reds",
-   "venue": "Great American Ball Park",
-   "away_sp": "Brandon Young",
-   "home_sp": "Hunter Greene",
-   "p_home": 48.7,
-   "raw_total": 9.21,
-   "adj_total": 10.31,
-   "park": "park +12%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Tampa Bay Rays",
-   "home": "Houston Astros",
-   "venue": "Daikin Park",
-   "away_sp": "Drew Rasmussen",
-   "home_sp": "Hunter Brown",
-   "p_home": 49.0,
-   "raw_total": 8.59,
-   "adj_total": 8.42,
-   "park": "park -2%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Chicago White Sox",
-   "home": "Cleveland Guardians",
-   "venue": "Progressive Field",
-   "away_sp": "Sean Burke",
-   "home_sp": "Parker Messick",
-   "p_home": 51.2,
-   "raw_total": 8.41,
-   "adj_total": 8.32,
-   "park": "park -1%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "St. Louis Cardinals",
-   "home": "Chicago Cubs",
-   "venue": "Wrigley Field",
-   "away_sp": "Kyle Leahy",
-   "home_sp": "Shota Imanaga",
-   "p_home": 63.1,
-   "raw_total": 9.65,
-   "adj_total": 9.65,
-   "park": "park neutral",
-   "wx": "wx fetch failed (HTTPError)"
+   "wx": "84F, wind 4mph"
   },
   {
    "away": "New York Mets",
    "home": "Atlanta Braves",
    "venue": "Truist Park",
-   "away_sp": "Sean Manaea",
-   "home_sp": "Chris Sale",
-   "p_home": 65.7,
-   "raw_total": 8.43,
-   "adj_total": 8.43,
+   "away_sp": "Freddy Peralta",
+   "home_sp": "Reynaldo L\u00f3pez",
+   "p_home": 61.8,
+   "raw_total": 8.81,
+   "adj_total": 8.88,
    "park": "park neutral",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "San Francisco Giants",
-   "home": "Colorado Rockies",
-   "venue": "Coors Field",
-   "away_sp": "Robbie Ray",
-   "home_sp": "Sean Sullivan",
-   "p_home": 60.0,
-   "raw_total": 9.33,
-   "adj_total": 11.94,
-   "park": "park +28%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Philadelphia Phillies",
-   "home": "Kansas City Royals",
-   "venue": "Kauffman Stadium",
-   "away_sp": "Jes\u00fas Luzardo",
-   "home_sp": "Michael Wacha",
-   "p_home": 45.1,
-   "raw_total": 8.58,
-   "adj_total": 8.62,
-   "park": "park neutral [low-conf]",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Boston Red Sox",
-   "home": "Los Angeles Angels",
-   "venue": "Angel Stadium",
-   "away_sp": "Sonny Gray",
-   "home_sp": "Sam Aldegheri",
-   "p_home": 50.4,
-   "raw_total": 8.61,
-   "adj_total": 8.7,
-   "park": "park +1%",
-   "wx": "wx fetch failed (HTTPError)"
-  },
-  {
-   "away": "Miami Marlins",
-   "home": "Athletics",
-   "venue": "Sutter Health Park",
-   "away_sp": "Sandy Alcantara",
-   "home_sp": "Aaron Civale",
-   "p_home": 46.4,
-   "raw_total": 9.38,
-   "adj_total": 9.85,
-   "park": "park +5% [low-conf]",
-   "wx": "wx fetch failed (HTTPError)"
+   "wx": "78F, wind 3mph"
   },
   {
    "away": "Milwaukee Brewers",
-   "home": "Arizona Diamondbacks",
-   "venue": "Chase Field",
-   "away_sp": "Brandon Woodruff",
-   "home_sp": "Merrill Kelly",
-   "p_home": 31.8,
-   "raw_total": 9.36,
-   "adj_total": 9.55,
-   "park": "park +2%",
-   "wx": "wx fetch failed (HTTPError)"
+   "home": "St. Louis Cardinals",
+   "venue": "Busch Stadium",
+   "away_sp": "Shane Drohan",
+   "home_sp": "Dustin May",
+   "p_home": 45.2,
+   "raw_total": 8.89,
+   "adj_total": 8.88,
+   "park": "park -1%",
+   "wx": "79F, wind 5mph"
   },
   {
-   "away": "San Diego Padres",
+   "away": "Arizona Diamondbacks",
+   "home": "San Diego Padres",
+   "venue": "Petco Park",
+   "away_sp": "Brandon Pfaadt",
+   "home_sp": "Walker Buehler",
+   "p_home": 52.5,
+   "raw_total": 8.64,
+   "adj_total": 8.19,
+   "park": "park -5%",
+   "wx": "69F, wind 4mph"
+  },
+  {
+   "away": "Toronto Blue Jays",
+   "home": "San Francisco Giants",
+   "venue": "Oracle Park",
+   "away_sp": "Kevin Gausman",
+   "home_sp": "Landen Roupp",
+   "p_home": 54.9,
+   "raw_total": 8.25,
+   "adj_total": 7.65,
+   "park": "park -6%",
+   "wx": "57F, wind 7mph"
+  },
+  {
+   "away": "Colorado Rockies",
    "home": "Los Angeles Dodgers",
    "venue": "UNIQLO Field at Dodger Stadium",
-   "away_sp": "Wandy Peralta",
-   "home_sp": "Yoshinobu Yamamoto",
-   "p_home": 70.9,
-   "raw_total": 8.83,
-   "adj_total": 8.83,
+   "away_sp": "Kyle Freeland",
+   "home_sp": "Eric Lauer",
+   "p_home": 67.8,
+   "raw_total": 10.31,
+   "adj_total": 10.31,
    "park": "park neutral [unknown park]",
    "wx": "unknown venue (no wx)"
   }
@@ -185,221 +101,221 @@
  "ratings": [
   {
    "team": "Los Angeles Dodgers",
-   "O": 1.119,
-   "D": 0.866,
-   "net": 1.292
+   "O": 1.111,
+   "D": 0.862,
+   "net": 1.289
   },
   {
    "team": "Milwaukee Brewers",
-   "O": 1.083,
-   "D": 0.89,
-   "net": 1.216
-  },
-  {
-   "team": "New York Yankees",
-   "O": 1.043,
-   "D": 0.919,
-   "net": 1.135
+   "O": 1.077,
+   "D": 0.887,
+   "net": 1.214
   },
   {
    "team": "Atlanta Braves",
-   "O": 1.026,
-   "D": 0.904,
-   "net": 1.135
+   "O": 1.046,
+   "D": 0.911,
+   "net": 1.148
+  },
+  {
+   "team": "New York Yankees",
+   "O": 1.037,
+   "D": 0.921,
+   "net": 1.126
   },
   {
    "team": "Chicago Cubs",
-   "O": 1.077,
-   "D": 1.007,
-   "net": 1.07
+   "O": 1.072,
+   "D": 1.004,
+   "net": 1.068
   },
   {
    "team": "Tampa Bay Rays",
-   "O": 1.012,
-   "D": 0.956,
-   "net": 1.059
+   "O": 1.005,
+   "D": 0.952,
+   "net": 1.055
   },
   {
    "team": "Pittsburgh Pirates",
-   "O": 1.085,
+   "O": 1.094,
    "D": 1.045,
-   "net": 1.038
-  },
-  {
-   "team": "Chicago White Sox",
-   "O": 1.035,
-   "D": 0.998,
-   "net": 1.037
+   "net": 1.046
   },
   {
    "team": "Seattle Mariners",
    "O": 0.943,
-   "D": 0.909,
-   "net": 1.037
+   "D": 0.903,
+   "net": 1.044
+  },
+  {
+   "team": "Chicago White Sox",
+   "O": 1.039,
+   "D": 1.0,
+   "net": 1.039
   },
   {
    "team": "Miami Marlins",
-   "O": 1.0,
-   "D": 0.973,
-   "net": 1.027
+   "O": 1.01,
+   "D": 0.975,
+   "net": 1.036
   },
   {
    "team": "St. Louis Cardinals",
-   "O": 1.017,
-   "D": 0.99,
-   "net": 1.026
+   "O": 1.013,
+   "D": 0.986,
+   "net": 1.028
   },
   {
    "team": "Washington Nationals",
-   "O": 1.109,
-   "D": 1.087,
-   "net": 1.02
-  },
-  {
-   "team": "Philadelphia Phillies",
-   "O": 0.997,
-   "D": 0.982,
-   "net": 1.015
+   "O": 1.108,
+   "D": 1.095,
+   "net": 1.012
   },
   {
    "team": "Detroit Tigers",
-   "O": 0.951,
-   "D": 0.945,
-   "net": 1.006
+   "O": 0.953,
+   "D": 0.942,
+   "net": 1.011
+  },
+  {
+   "team": "Philadelphia Phillies",
+   "O": 0.993,
+   "D": 0.983,
+   "net": 1.011
   },
   {
    "team": "Boston Red Sox",
-   "O": 0.93,
-   "D": 0.936,
-   "net": 0.994
+   "O": 0.939,
+   "D": 0.932,
+   "net": 1.008
   },
   {
    "team": "Texas Rangers",
-   "O": 0.944,
-   "D": 0.951,
-   "net": 0.992
+   "O": 0.942,
+   "D": 0.953,
+   "net": 0.988
   },
   {
    "team": "Cleveland Guardians",
-   "O": 0.927,
-   "D": 0.941,
-   "net": 0.986
+   "O": 0.93,
+   "D": 0.945,
+   "net": 0.984
   },
   {
    "team": "Minnesota Twins",
-   "O": 1.053,
-   "D": 1.085,
-   "net": 0.97
+   "O": 1.054,
+   "D": 1.079,
+   "net": 0.977
   },
   {
    "team": "Baltimore Orioles",
-   "O": 1.011,
-   "D": 1.051,
-   "net": 0.962
+   "O": 1.007,
+   "D": 1.048,
+   "net": 0.961
   },
   {
    "team": "Arizona Diamondbacks",
-   "O": 0.967,
-   "D": 1.011,
+   "O": 0.963,
+   "D": 1.006,
    "net": 0.957
   },
   {
-   "team": "Toronto Blue Jays",
-   "O": 0.932,
-   "D": 0.988,
-   "net": 0.943
+   "team": "Houston Astros",
+   "O": 0.996,
+   "D": 1.06,
+   "net": 0.94
   },
   {
-   "team": "Houston Astros",
-   "O": 1.0,
-   "D": 1.068,
+   "team": "Toronto Blue Jays",
+   "O": 0.925,
+   "D": 0.987,
    "net": 0.937
   },
   {
    "team": "San Diego Padres",
-   "O": 0.925,
-   "D": 0.988,
+   "O": 0.92,
+   "D": 0.982,
    "net": 0.936
   },
   {
    "team": "Los Angeles Angels",
-   "O": 0.987,
-   "D": 1.06,
-   "net": 0.931
-  },
-  {
-   "team": "New York Mets",
-   "O": 0.928,
-   "D": 1.004,
-   "net": 0.924
+   "O": 0.982,
+   "D": 1.067,
+   "net": 0.92
   },
   {
    "team": "Cincinnati Reds",
-   "O": 0.958,
-   "D": 1.049,
-   "net": 0.913
+   "O": 0.955,
+   "D": 1.045,
+   "net": 0.915
   },
   {
    "team": "San Francisco Giants",
-   "O": 0.943,
-   "D": 1.035,
-   "net": 0.91
+   "O": 0.948,
+   "D": 1.038,
+   "net": 0.913
   },
   {
-   "team": "Athletics",
-   "O": 1.009,
-   "D": 1.118,
-   "net": 0.903
+   "team": "New York Mets",
+   "O": 0.934,
+   "D": 1.024,
+   "net": 0.912
   },
   {
    "team": "Colorado Rockies",
-   "O": 1.045,
-   "D": 1.161,
+   "O": 1.047,
+   "D": 1.163,
    "net": 0.9
   },
   {
+   "team": "Athletics",
+   "O": 1.01,
+   "D": 1.126,
+   "net": 0.897
+  },
+  {
    "team": "Kansas City Royals",
-   "O": 0.944,
-   "D": 1.075,
-   "net": 0.878
+   "O": 0.945,
+   "D": 1.07,
+   "net": 0.883
   }
  ],
  "edges": [],
- "edge_note": "4 in-progress game(s) skipped",
+ "edge_note": "no +EV sides vs consensus right now",
  "parlays": [],
  "near_parlays": [],
  "backtest": {
-  "n": 799,
-  "acc": 55.8,
-  "brier": 0.2465,
-  "home_base": 51.7,
+  "n": 821,
+  "acc": 55.7,
+  "brier": 0.2469,
+  "home_base": 51.4,
   "cal": [
    {
     "bucket": 40,
     "pred": 41.0,
-    "actual": 44.5,
-    "n": 119
+    "actual": 45.1,
+    "n": 122
    },
    {
     "bucket": 50,
     "pred": 50.4,
-    "actual": 50.8,
-    "n": 323
+    "actual": 50.0,
+    "n": 334
    },
    {
     "bucket": 60,
     "pred": 59.2,
     "actual": 55.4,
-    "n": 267
+    "n": 271
    },
    {
     "bucket": 70,
-    "pred": 68.4,
-    "actual": 60.9,
-    "n": 64
+    "pred": 68.5,
+    "actual": 59.7,
+    "n": 67
    }
   ]
  },
  "league_rpg": 4.52,
- "xwoba_pitchers": 725
+ "xwoba_pitchers": 729
 }
