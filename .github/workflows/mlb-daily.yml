@@ -1,0 +1,33 @@
+name: MLB daily slate
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install deps
+        run: pip install pybaseball MLB-StatsAPI pandas numpy
+      - name: Pull data + publish slate
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        working-directory: mlb
+        run: |
+          python mlb_pitchers.py
+          python mlb_statcast.py
+          python mlb_data.py || true
+          python mlb_odds.py || true
+          python mlb_publish.py
+      - name: Commit fresh slate
+        run: |
+          git config user.name "mlb-bot"
+          git config user.email "actions@github.com"
+          git add mlb/data/slate.json
+          git diff --cached --quiet || git commit -m "daily slate $(date -u +%F)"
+          git push
