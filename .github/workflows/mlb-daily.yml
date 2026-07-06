@@ -5,11 +5,16 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+concurrency:
+  group: mlb-daily-publish
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: Install deps
@@ -28,8 +33,17 @@ jobs:
         run: |
           git config user.name "mlb-bot"
           git config user.email "actions@github.com"
-          git add mlb/data/slate.json
-          git diff --cached --quiet && echo "no change" && exit 0
-          git commit -m "daily slate $(date -u +%F)"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --mixed origin/main
+            git add mlb/data/slate.json
+            if git diff --cached --quiet; then
+              echo "Slate unchanged vs published -- nothing to commit."
+              exit 0
+            fi
+            git commit -m "daily slate $(date -u +%F)"
+            git push origin HEAD:main && { echo "Published on attempt $attempt."; exit 0; }
+            echo "Remote advanced during push (attempt $attempt) -- retrying on new tip."
+          done
+          echo "::error::Failed to publish slate after 5 attempts."
+          exit 1
