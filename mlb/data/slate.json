@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-06T21:13:11+00:00",
+ "generated": "2026-07-06T21:39:21+00:00",
  "games": [
   {
    "away": "Philadelphia Phillies",
@@ -7,11 +7,11 @@
    "venue": "Kauffman Stadium",
    "away_sp": "Cristopher S\u00e1nchez",
    "home_sp": "Noah Cameron",
-   "p_home": 41.4,
-   "raw_total": 8.66,
-   "adj_total": 8.88,
+   "p_home": 43.4,
+   "raw_total": 8.73,
+   "adj_total": 8.93,
    "park": "park neutral [low-conf]",
-   "wx": "89F, wind 7mph"
+   "wx": "88F, wind 6mph"
   },
   {
    "away": "New York Yankees",
@@ -32,10 +32,10 @@
    "away_sp": "Mike Burrows",
    "home_sp": "Miles Mikolas",
    "p_home": 59.8,
-   "raw_total": 10.06,
-   "adj_total": 10.33,
+   "raw_total": 10.07,
+   "adj_total": 10.34,
    "park": "park +1%",
-   "wx": "87F, wind 7mph"
+   "wx": "87F, wind 6mph"
   },
   {
    "away": "New York Mets",
@@ -47,7 +47,7 @@
    "raw_total": 8.81,
    "adj_total": 8.94,
    "park": "park neutral",
-   "wx": "85F, wind 7mph"
+   "wx": "85F, wind 6mph"
   },
   {
    "away": "Milwaukee Brewers",
@@ -57,9 +57,9 @@
    "home_sp": "Dustin May",
    "p_home": 45.2,
    "raw_total": 8.89,
-   "adj_total": 8.95,
+   "adj_total": 8.8,
    "park": "park -1%",
-   "wx": "86F, wind 7mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -69,9 +69,9 @@
    "home_sp": "Walker Buehler",
    "p_home": 52.5,
    "raw_total": 8.64,
-   "adj_total": 8.32,
+   "adj_total": 8.3,
    "park": "park -5%",
-   "wx": "77F, wind 11mph"
+   "wx": "77F, wind 10mph"
   },
   {
    "away": "Toronto Blue Jays",
@@ -81,9 +81,9 @@
    "home_sp": "Landen Roupp",
    "p_home": 54.9,
    "raw_total": 8.25,
-   "adj_total": 7.72,
+   "adj_total": 7.74,
    "park": "park -6%",
-   "wx": "63F, wind 9mph"
+   "wx": "63F, wind 10mph"
   },
   {
    "away": "Colorado Rockies",
@@ -125,31 +125,31 @@
   },
   {
    "team": "Chicago Cubs",
-   "O": 1.072,
-   "D": 1.004,
+   "O": 1.071,
+   "D": 1.003,
    "net": 1.068
   },
   {
    "team": "Tampa Bay Rays",
-   "O": 1.005,
+   "O": 1.004,
    "D": 0.952,
    "net": 1.055
   },
   {
    "team": "Pittsburgh Pirates",
-   "O": 1.094,
+   "O": 1.093,
    "D": 1.045,
    "net": 1.046
   },
   {
    "team": "Seattle Mariners",
-   "O": 0.943,
+   "O": 0.942,
    "D": 0.903,
    "net": 1.044
   },
   {
    "team": "Chicago White Sox",
-   "O": 1.039,
+   "O": 1.038,
    "D": 1.0,
    "net": 1.039
   },
@@ -162,7 +162,7 @@
   {
    "team": "St. Louis Cardinals",
    "O": 1.013,
-   "D": 0.986,
+   "D": 0.985,
    "net": 1.028
   },
   {
@@ -178,27 +178,27 @@
    "net": 1.011
   },
   {
-   "team": "Philadelphia Phillies",
-   "O": 0.993,
-   "D": 0.983,
-   "net": 1.011
-  },
-  {
    "team": "Boston Red Sox",
    "O": 0.939,
    "D": 0.932,
    "net": 1.008
   },
   {
+   "team": "Philadelphia Phillies",
+   "O": 0.988,
+   "D": 0.998,
+   "net": 0.99
+  },
+  {
    "team": "Texas Rangers",
-   "O": 0.942,
+   "O": 0.941,
    "D": 0.953,
    "net": 0.988
   },
   {
    "team": "Cleveland Guardians",
    "O": 0.93,
-   "D": 0.945,
+   "D": 0.944,
    "net": 0.984
   },
   {
@@ -233,7 +233,7 @@
   },
   {
    "team": "San Diego Padres",
-   "O": 0.92,
+   "O": 0.919,
    "D": 0.982,
    "net": 0.936
   },
@@ -246,13 +246,13 @@
   {
    "team": "Cincinnati Reds",
    "O": 0.955,
-   "D": 1.045,
+   "D": 1.044,
    "net": 0.915
   },
   {
    "team": "San Francisco Giants",
-   "O": 0.948,
-   "D": 1.038,
+   "O": 0.947,
+   "D": 1.037,
    "net": 0.913
   },
   {
@@ -262,9 +262,15 @@
    "net": 0.912
   },
   {
+   "team": "Kansas City Royals",
+   "O": 0.96,
+   "D": 1.064,
+   "net": 0.902
+  },
+  {
    "team": "Colorado Rockies",
-   "O": 1.047,
-   "D": 1.163,
+   "O": 1.046,
+   "D": 1.162,
    "net": 0.9
   },
   {
@@ -272,12 +278,6 @@
    "O": 1.01,
    "D": 1.126,
    "net": 0.897
-  },
-  {
-   "team": "Kansas City Royals",
-   "O": 0.945,
-   "D": 1.07,
-   "net": 0.883
   }
  ],
  "edges": [
@@ -286,45 +286,79 @@
    "bet": "Colorado Rockies",
    "price": 215,
    "book": "BetRivers",
-   "fair": 0.3244,
-   "ev_pct": 2.19,
-   "kelly_frac": 0.00255
+   "fair": 0.3243,
+   "ev_pct": 2.15,
+   "kelly_frac": 0.00249
+  },
+  {
+   "game": "Milwaukee Brewers @ St. Louis Cardinals",
+   "bet": "St. Louis Cardinals",
+   "price": 111,
+   "book": "BetOnline.ag",
+   "fair": 0.4761,
+   "ev_pct": 0.45,
+   "kelly_frac": 0.00102
   }
  ],
  "edge_note": "",
- "parlays": [],
+ "parlays": [
+  {
+   "legs": [
+    {
+     "bet": "Colorado Rockies",
+     "price": 215,
+     "book": "BetRivers"
+    },
+    {
+     "bet": "St. Louis Cardinals",
+     "price": 111,
+     "book": "BetOnline.ag"
+    }
+   ],
+   "n_legs": 2,
+   "fair_pct": 15.44,
+   "dec": 6.647,
+   "american": 565,
+   "ev_pct": 2.61,
+   "one_book": false,
+   "books": [
+    "BetOnline.ag",
+    "BetRivers"
+   ]
+  }
+ ],
  "near_parlays": [],
  "hr_board": [],
- "hr_note": "no HR board (run mlb_hr.py)",
+ "hr_note": "stats: Baseball-Reference \u00b7 lineups = top-9 by season PA until cards post \u00b7 platoon splits not in v1 \u00b7 wind not modeled (speed-only feed) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props: 107 players priced across 7/14 events \u00b7 sorted by model HR% (no props matched)",
  "backtest": {
-  "n": 821,
-  "acc": 55.7,
+  "n": 809,
+  "acc": 55.5,
   "brier": 0.2469,
-  "home_base": 51.4,
+  "home_base": 51.3,
   "cal": [
    {
     "bucket": 40,
     "pred": 41.0,
-    "actual": 45.1,
-    "n": 122
+    "actual": 44.6,
+    "n": 121
    },
    {
     "bucket": 50,
     "pred": 50.4,
-    "actual": 50.0,
-    "n": 334
+    "actual": 49.7,
+    "n": 326
    },
    {
     "bucket": 60,
     "pred": 59.2,
-    "actual": 55.4,
-    "n": 271
+    "actual": 55.6,
+    "n": 268
    },
    {
     "bucket": 70,
     "pred": 68.5,
-    "actual": 59.7,
-    "n": 67
+    "actual": 59.1,
+    "n": 66
    }
   ]
  },
