@@ -194,7 +194,7 @@ function render(d){
   b.cal.map(c=>`<tr><td>~${c.bucket}%</td><td class="num">${c.pred}%</td>
     <td class="num">${c.actual}%</td><td class="num dim">${c.n}</td></tr>`).join('')+`</table>`;
 }
-fetch('data/slate.json')
+fetch('data/slate.json').then(r=>r.json()).then(render)
  .catch(()=>{$('meta').textContent='could not load slate.json — run mlb_publish.py (or wait for the daily Action)';});
 </script>
 </body>
