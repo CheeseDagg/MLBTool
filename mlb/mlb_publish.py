@@ -131,13 +131,18 @@ def main():
         hr_rows, hr_note = mlb_hr.load_board(DATA)
     except Exception as e:
         hr_rows, hr_note = [], f"hr module error: {type(e).__name__}"
+    try:
+        import mlb_grade
+        hr_cal = mlb_grade.panel_for_publish()
+    except Exception as e:
+        hr_cal = {"n": 0, "error": type(e).__name__}
 
     out = {
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "games": games, "ratings": ratings,
         "edges": edge_rows, "edge_note": edge_note,
         "parlays": parlays, "near_parlays": near_parlays,
-        "hr_board": hr_rows, "hr_note": hr_note,
+        "hr_board": hr_rows, "hr_note": hr_note, "hr_cal": hr_cal,
         "backtest": backtest_block(s),
         "league_rpg": round(float(m["L"]), 2),
         "xwoba_pitchers": len(xw),

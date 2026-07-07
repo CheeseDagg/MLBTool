@@ -103,6 +103,14 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     <div id="hrNote" class="sub" style="margin-top:6px"></div>
     <div id="hrBody"><div class="empty">no HR board — run mlb_hr.py (or wait for the daily Action)</div></div>
   </div>
+  <div class="card" style="margin-top:14px">
+    <h3>Calibration — the model, graded</h3>
+    <div class="sub">Every published row is settled against the actual box score the next morning.
+    <b>Does 30% behave like 30%?</b> Buckets compare predicted vs actual; lift shows whether each
+    factor earns its keep; the +EV tier is flat-staked at the logged book price. Scratches void
+    (books void them too) — the void-rate grades the lineup layer itself.</div>
+    <div id="hrCal"><div class="empty">grading begins after tonight's games settle — first grades on tomorrow's 9am run</div></div>
+  </div>
 </section>
 
 <section id="ratings">
@@ -236,6 +244,25 @@ function render(d){
   // homers (sortable)
   HRD = {rows: d.hr_board||[], note: d.hr_note||''};
   renderHomers();
+  // calibration
+  const cal=d.hr_cal;
+  if(cal && cal.n>0){
+    let h=`<div class="sub"><b>${cal.n}</b> graded rows over <b>${cal.dates}</b> day(s) · actual <b>${cal.actual}%</b> vs predicted <b>${cal.pred_mean}%</b> · Brier <b>${cal.brier}</b> · voids ${cal.voids}</div>`;
+    if(cal.buckets&&cal.buckets.length){
+      h+=`<table style="margin-top:8px"><tr><th>predicted</th><th class="num">n</th><th class="num">avg pred</th><th class="num">actual</th><th></th></tr>`+
+      cal.buckets.map(b=>`<tr><td>${b.bucket}%</td><td class="num">${b.n}</td><td class="num">${b.pred}%</td><td class="num"><b>${b.actual}%</b></td><td>${bar(Math.min(b.actual*2.2,100))}</td></tr>`).join('')+`</table>`;
+    }
+    if(cal.lift&&cal.lift.length){
+      h+=`<div class="sub" style="margin-top:10px">factor lift (actual vs its own predicted)</div>
+      <table><tr><th>group</th><th class="num">n</th><th class="num">pred</th><th class="num">actual</th><th class="num">gap</th></tr>`+
+      cal.lift.map(l=>{const gp=(l.actual-l.pred).toFixed(1);return `<tr><td>${l.g}</td><td class="num">${l.n}</td><td class="num">${l.pred}%</td><td class="num">${l.actual}%</td><td class="num"><b style="color:${+gp>=0?'var(--acc2)':'var(--red)'}">${+gp>=0?'+':''}${gp}</b></td></tr>`;}).join('')+`</table>`;
+    }
+    if(cal.ev_tier){
+      const e=cal.ev_tier;
+      h+=`<div class="sub" style="margin-top:10px">+EV tier, flat 1u at logged best price: <b>${e.hits}/${e.n}</b> hit · ROI <b style="color:${e.roi>=0?'var(--acc2)':'var(--red)'}">${e.roi>=0?'+':''}${e.roi}%</b></div>`;
+    }
+    $('hrCal').innerHTML=h;
+  } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
   // backtest
   // backtest
   const b=d.backtest;
