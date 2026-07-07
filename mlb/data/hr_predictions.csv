@@ -1,0 +1,40 @@
+date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,heat
+2026-07-07,Kyle Schwarber,PHI,Andrew Abbott,2,proj,28.9,+246,160,-25.0,park +25%,80F,LvL -22%,heat -15%
+2026-07-07,Hunter Goodman,COL,Justin Wrobleski,2,proj,26.3,+280,285,1.2,park +5%,86F · wind out 4,RvL +12%,heat -15%
+2026-07-07,Byron Buxton,MIN,Joey Cantillo,3,proj,25.8,+287,260,-7.1,park -2%,83F,RvL +12%,heat -15%
+2026-07-07,James Wood,WSN,Tatsuya Imai,1,card,21.8,+358,240,-25.8,park avg,79F,LvR +8%,heat -15%
+2026-07-07,JJ Bleday,CIN,Zack Wheeler,3,card,21.6,+362,310,-11.3,park +25%,80F,LvR +8%,heat -15%
+2026-07-07,Shea Langeliers,ATH,Tarik Skubal,2,proj,21.1,+375,370,-1.0,park -5%,85F,RvL +12%,heat -15%
+2026-07-07,Bryce Harper,PHI,Andrew Abbott,3,proj,21.0,+377,285,-19.2,park +25%,80F,LvL -22%,heat -15%
+2026-07-07,Willson Contreras,BOS,Noah Schultz,2,proj,20.9,+378,300,-16.3,park +9%,77F,RvL +12%,heat -15%
+2026-07-07,Randal Grichuk,CHW,Payton Tolle,2,card,20.8,+381,390,1.9,park +9%,77F,RvL +12%,heat -15%
+2026-07-07,Jordan Walker,STL,Robert Gasser,4,proj,20.8,+382,,,park -7%,86F · wind in 3,RvL +12%,heat -15%
+2026-07-07,Brandon Lowe,PIT,Hurston Waldrep *,2,proj,20.7,+382,335,-9.8,park -9%,81F,LvR +8%,
+2026-07-07,Elly De La Cruz,CIN,Zack Wheeler,1,card,20.0,+401,340,-12.1,park +25%,80F,SvR +8%,heat -15%
+2026-07-07,Miguel Vargas,CHW,Payton Tolle,1,card,20.0,+401,340,-12.1,park +9%,77F,RvL +12%,heat -15%
+2026-07-07,Ben Rice,NYM,Seth Lugo,3,proj,19.8,+406,410,0.8,park -4%,69F · wind in 5,LvR +8%,heat -15%
+2026-07-07,Sal Stewart,CIN,Zack Wheeler,2,card,19.4,+416,335,-15.7,park +25%,80F,RvR -3%,heat -15%
+2026-07-07,CJ Abrams,WSN,Tatsuya Imai,4,card,19.0,+426,380,-8.7,park avg,79F,LvR +8%,heat -15%
+2026-07-07,Curtis Mead,WSN,Tatsuya Imai,3,card,18.6,+437,460,4.3,park avg,79F,RvR -3%,heat -15%
+2026-07-07,Junior Caminero,TBR,Will Warren,3,card,18.6,+438,285,-28.4,park -4% [low-conf],dome,RvR -3%,heat -15%
+2026-07-07,Manny Machado,SDP,Zac Gallen,2,proj,18.5,+440,400,-7.4,park -4%,79F,RvR -3%,heat -15%
+2026-07-07,Colson Montgomery,CHW,Payton Tolle,3,card,18.5,+441,350,-16.9,park +9%,77F,LvL -22%,heat -15%
+2026-07-07,Ben Rice,NYY,Ian Seymour,3,proj,18.4,+442,410,-5.9,park -4% [low-conf],dome,LvL -22%,heat -15%
+2026-07-07,Jake Bauers,MIL,Hunter Dobbins,3,proj,18.1,+452,950,90.1,park -7%,86F · wind in 3,LvR +8%,heat -15%
+2026-07-07,Nathaniel Lowe,CIN,Zack Wheeler,5,card,18.1,+452,430,-4.0,park +25%,80F,LvR +8%,heat -15%
+2026-07-07,Gavin Sheets,SDP,Zac Gallen,5,proj,17.9,+459,475,2.8,park -4%,79F,LvR +8%,heat -15%
+2026-07-07,Nick Kurtz,ATH,Tarik Skubal,1,proj,17.9,+458,425,-6.0,park -5%,85F,LvL -22%,
+2026-07-07,Joc Pederson,TEX,José Soriano,5,proj,17.7,+464,390,-13.1,park +2%,97F (roof: half),LvR +8%,heat -15%
+2026-07-07,Brandon Marsh,PHI,Andrew Abbott,5,proj,17.5,+470,450,-3.5,park +25%,80F,LvL -22%,heat -15%
+2026-07-07,Yordan Alvarez,HOU,Andrew Alvarez,1,proj,17.5,+471,275,-34.3,park avg,79F,LvL -22%,heat -15%
+2026-07-07,Alec Bohm,PHI,Andrew Abbott,4,proj,17.4,+475,410,-11.3,park +25%,80F,RvL +12%,heat -15%
+2026-07-07,Kerry Carpenter,DET,J.T. Ginn,5,card,17.4,+475,,,park -5%,85F,LvR +8%,heat -15%
+2026-07-07,Jake Bauers,MIL,Matt Svanson,3,proj,16.9,+493,950,77.0,park -7%,86F · wind in 3,LvR +8%,heat -15%
+2026-07-07,Brice Turang,MIL,Matt Svanson,1,proj,13.6,+635,1700,144.9,park -7%,86F · wind in 3,LvR +8%,
+2026-07-07,Brice Turang,MIL,Hunter Dobbins,1,proj,13.3,+649,1700,140.2,park -7%,86F · wind in 3,LvR +8%,heat -15%
+2026-07-07,Nathan Church,STL,Robert Gasser,6,proj,12.4,+706,2400,210.0,park -7%,86F · wind in 3,LvL -22%,
+2026-07-07,Christian Yelich,MIL,Hunter Dobbins,7,proj,11.2,+795,1900,123.5,park -7%,86F · wind in 3,LvR +8%,
+2026-07-07,Nathan Church,STL,Jacob Misiorowski,6,proj,11.0,+805,2400,176.2,park -7%,86F · wind in 3,LvR +8%,
+2026-07-07,Christian Yelich,MIL,Matt Svanson,7,proj,10.4,+863,1900,107.6,park -7%,86F · wind in 3,LvR +8%,
+2026-07-07,Sal Frelick,MIL,Hunter Dobbins,4,proj,7.6,+1220,2800,119.7,park -7%,86F · wind in 3,LvR +8%,
+2026-07-07,Sal Frelick,MIL,Matt Svanson,4,proj,7.0,+1323,2800,103.9,park -7%,86F · wind in 3,LvR +8%,
