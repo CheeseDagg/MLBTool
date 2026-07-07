@@ -163,10 +163,10 @@ function renderHomers(){
   const rows=HRD.rows.slice();
   if(!rows.length){ if(HRD.note) $('hrNote').textContent=HRD.note; return; }
   const hasEV=rows.some(r=>r.ev_pct!==undefined);
-  const key=HRSORT.key||(hasEV?'ev_pct':'hr_pct');
+  const key=HRSORT.key||'hr_pct';
   const val=r=>{ const v=r[key]; return (key==='fair')?parseInt(r.fair)||0:(v===undefined?-1e9:v); };
   rows.sort((a,b)=>(val(b)-val(a))*(HRSORT.dir===-1?1:-1));
-  const arrow=k=>(HRSORT.key||(hasEV?'ev_pct':'hr_pct'))===k?(HRSORT.dir===-1?' ▾':' ▴'):'';
+  const arrow=k=>(HRSORT.key||'hr_pct')===k?(HRSORT.dir===-1?' ▾':' ▴'):'';
   const th=(k,label,cls)=>`<th class="${cls}" style="cursor:pointer" title="click to sort" onclick="hrSort('${k}')">${label}${arrow(k)}</th>`;
   $('hrNote').textContent=HRD.note;
   $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
