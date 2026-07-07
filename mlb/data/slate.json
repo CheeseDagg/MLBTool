@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-07T14:43:02+00:00",
+ "generated": "2026-07-07T14:58:20+00:00",
  "games": [
   {
    "away": "Milwaukee Brewers",
@@ -9,9 +9,9 @@
    "home_sp": NaN,
    "p_home": 38.5,
    "raw_total": 8.51,
-   "adj_total": 8.5,
+   "adj_total": 8.42,
    "park": "park -1%",
-   "wx": "79F, wind 3mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Milwaukee Brewers",
@@ -21,9 +21,9 @@
    "home_sp": NaN,
    "p_home": 43.0,
    "raw_total": 8.81,
-   "adj_total": 8.79,
+   "adj_total": 8.8,
    "park": "park -1%",
-   "wx": "79F, wind 3mph"
+   "wx": "79F, wind 4mph"
   },
   {
    "away": "Chicago Cubs",
@@ -35,7 +35,7 @@
    "raw_total": 9.64,
    "adj_total": 9.74,
    "park": "park +1% [low-conf]",
-   "wx": "74F, wind 5mph"
+   "wx": "74F, wind 4mph"
   },
   {
    "away": "Athletics",
@@ -47,7 +47,7 @@
    "raw_total": 8.78,
    "adj_total": 8.64,
    "park": "park -2%",
-   "wx": "74F, wind 5mph"
+   "wx": "75F, wind 4mph"
   },
   {
    "away": "Atlanta Braves",
@@ -57,9 +57,9 @@
    "home_sp": "Paul Skenes",
    "p_home": 57.7,
    "raw_total": 9.18,
-   "adj_total": 8.95,
+   "adj_total": 8.97,
    "park": "park -3%",
-   "wx": "74F, wind 0mph"
+   "wx": "76F, wind 2mph"
   },
   {
    "away": "Seattle Mariners",
@@ -93,9 +93,9 @@
    "home_sp": "Andrew Alvarez",
    "p_home": 62.2,
    "raw_total": 10.1,
-   "adj_total": 10.2,
+   "adj_total": 10.24,
    "park": "park +1%",
-   "wx": "wx fetch failed (URLError)"
+   "wx": "74F, wind 7mph"
   },
   {
    "away": "Kansas City Royals",
@@ -107,7 +107,7 @@
    "raw_total": 9.03,
    "adj_total": 8.71,
    "park": "park -3%",
-   "wx": "64F, wind 8mph"
+   "wx": "65F, wind 8mph"
   },
   {
    "away": "Philadelphia Phillies",
@@ -117,9 +117,9 @@
    "home_sp": "Andrew Abbott",
    "p_home": 48.4,
    "raw_total": 8.99,
-   "adj_total": 10.12,
+   "adj_total": 10.13,
    "park": "park +12%",
-   "wx": "76F, wind 5mph"
+   "wx": "77F, wind 5mph"
   },
   {
    "away": "Cleveland Guardians",
@@ -131,7 +131,7 @@
    "raw_total": 8.96,
    "adj_total": 8.89,
    "park": "park -1%",
-   "wx": "72F, wind 2mph"
+   "wx": "73F, wind 2mph"
   },
   {
    "away": "Boston Red Sox",
@@ -143,7 +143,7 @@
    "raw_total": 8.74,
    "adj_total": 8.69,
    "park": "park -1%",
-   "wx": "74F, wind 4mph"
+   "wx": "74F, wind 5mph"
   },
   {
    "away": "Los Angeles Angels",
@@ -153,9 +153,9 @@
    "home_sp": "Jacob deGrom",
    "p_home": 57.3,
    "raw_total": 8.59,
-   "adj_total": 9.01,
+   "adj_total": 9.02,
    "park": "park +4%",
-   "wx": "88F, wind 2mph (retract: halved)"
+   "wx": "89F, wind 2mph (retract: halved)"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -189,9 +189,9 @@
    "home_sp": "Justin Wrobleski",
    "p_home": 69.9,
    "raw_total": 10.23,
-   "adj_total": 9.97,
+   "adj_total": 9.98,
    "park": "park -2%",
-   "wx": "65F, wind 2mph"
+   "wx": "66F, wind 2mph"
   }
  ],
  "ratings": [
@@ -376,8 +376,18 @@
    "net": 0.897
   }
  ],
- "edges": [],
- "edge_note": "no +EV sides vs consensus right now",
+ "edges": [
+  {
+   "game": "Seattle Mariners @ Miami Marlins",
+   "bet": "Seattle Mariners",
+   "price": 110,
+   "book": "Bovada",
+   "fair": 0.4767,
+   "ev_pct": 0.11,
+   "kelly_frac": 0.00026
+  }
+ ],
+ "edge_note": "",
  "parlays": [],
  "near_parlays": [],
  "hr_board": [],
