@@ -320,17 +320,61 @@ def _rows_from_pitching(df):
     if derived: print(f"   (BF derived from IP*4.25 for {derived} rows)")
     return out
 
+def _statsapi_rows(group):
+    """Season stats for ALL players from MLB's own StatsAPI (statsapi.mlb.com)
+    — the same host mlb_pitchers.py / mlb_data.py hit successfully from this
+    Action daily, so it can't be IP-blocked like FanGraphs/BREF. Paginated.
+    group: 'hitting' -> [{name, fg_team, pa, hr}]  |  'pitching' -> [{name, bf, hr}]"""
+    base = "https://statsapi.mlb.com/api/v1/stats"
+    out, offset, limit = [], 0, 500
+    while True:
+        q = urllib.parse.urlencode({"stats": "season", "group": group,
+                                    "season": YEAR, "sportId": 1,
+                                    "playerPool": "ALL",
+                                    "limit": limit, "offset": offset})
+        with urllib.request.urlopen(f"{base}?{q}", timeout=45) as r:
+            data = json.loads(r.read().decode())
+        splits = (data.get("stats") or [{}])[0].get("splits", []) or []
+        for s in splits:
+            st = s.get("stat", {}) or {}
+            name = (s.get("player") or {}).get("fullName", "")
+            team = (s.get("team") or {}).get("name", "")      # full name, matches schedule
+            try:
+                if group == "hitting":
+                    pa, hr = int(st.get("plateAppearances", 0) or 0), int(st.get("homeRuns", 0) or 0)
+                    if name and pa >= 30:
+                        out.append({"name": name, "fg_team": team, "pa": pa, "hr": hr})
+                else:
+                    bf, hr = int(st.get("battersFaced", 0) or 0), int(st.get("homeRuns", 0) or 0)
+                    if not bf:
+                        ip = float(st.get("inningsPitched", 0) or 0)
+                        bf = int(round(ip * 4.25))
+                    if name and bf >= 40:
+                        out.append({"name": name, "bf": bf, "hr": hr})
+            except (TypeError, ValueError):
+                continue
+        if len(splits) < limit: break
+        offset += limit
+        if offset > 4000: break                                # hard stop, sanity
+    if not out:
+        raise ValueError(f"statsapi returned no usable {group} rows")
+    return out
+
 def pull_batters():
-    """FanGraphs first (best data; works from home IP). Baseball-Reference
-    fallback: GitHub's datacenter IP gets 403'd by FanGraphs but BREF works
-    (proven by the game-log pulls in the same Action)."""
+    """Three-tier: FanGraphs (best, works at home) -> Baseball-Reference
+    (usually works in CI) -> MLB StatsAPI (always works in CI). Each tier
+    wrapped; the survivor is named in the log and the published note."""
     try:
         from pybaseball import batting_stats
         out = _rows_from_batting(batting_stats(YEAR, qual=0)); src = "FanGraphs"
-    except Exception as e:
-        print(f"   FanGraphs unavailable ({type(e).__name__}) -> Baseball-Reference fallback")
-        from pybaseball import batting_stats_bref
-        out = _rows_from_batting(batting_stats_bref(YEAR)); src = "Baseball-Reference"
+    except Exception as e1:
+        print(f"   FanGraphs unavailable ({type(e1).__name__}) -> Baseball-Reference")
+        try:
+            from pybaseball import batting_stats_bref
+            out = _rows_from_batting(batting_stats_bref(YEAR)); src = "Baseball-Reference"
+        except Exception as e2:
+            print(f"   BREF unavailable ({type(e2).__name__}) -> MLB StatsAPI")
+            out = _statsapi_rows("hitting"); src = "MLB StatsAPI"
     print(f"   batters: {len(out)} with 30+ PA  [{src}]")
     return out, src
 
@@ -338,10 +382,14 @@ def pull_pitchers():
     try:
         from pybaseball import pitching_stats
         out = _rows_from_pitching(pitching_stats(YEAR, qual=0)); src = "FanGraphs"
-    except Exception as e:
-        print(f"   FanGraphs unavailable ({type(e).__name__}) -> Baseball-Reference fallback")
-        from pybaseball import pitching_stats_bref
-        out = _rows_from_pitching(pitching_stats_bref(YEAR)); src = "Baseball-Reference"
+    except Exception as e1:
+        print(f"   FanGraphs unavailable ({type(e1).__name__}) -> Baseball-Reference")
+        try:
+            from pybaseball import pitching_stats_bref
+            out = _rows_from_pitching(pitching_stats_bref(YEAR)); src = "Baseball-Reference"
+        except Exception as e2:
+            print(f"   BREF unavailable ({type(e2).__name__}) -> MLB StatsAPI")
+            out = _statsapi_rows("pitching"); src = "MLB StatsAPI"
     print(f"   pitchers: {len(out)} with 40+ BF  [{src}]")
     return out, src
 
