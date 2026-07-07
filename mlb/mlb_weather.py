@@ -61,15 +61,16 @@ VENUES = {
 }
 
 def fetch_weather(lat, lon, hour_utc=None):
-    """Current (or given-hour) temp F + wind mph from Open-Meteo. No key."""
+    """Current temp F + wind mph + wind direction (deg, meteorological 'from')
+    from Open-Meteo. No key. Returns (temp, wind_mph, wind_dir_deg)."""
     q = urllib.parse.urlencode({
         "latitude": lat, "longitude": lon,
-        "current": "temperature_2m,wind_speed_10m",
+        "current": "temperature_2m,wind_speed_10m,wind_direction_10m",
         "temperature_unit": "fahrenheit", "wind_speed_unit": "mph",
     })
     with urllib.request.urlopen(f"https://api.open-meteo.com/v1/forecast?{q}", timeout=15) as r:
         d = json.load(r)["current"]
-    return d["temperature_2m"], d["wind_speed_10m"]
+    return d["temperature_2m"], d["wind_speed_10m"], d.get("wind_direction_10m")
 
 def weather_mult(temp_f, wind_mph, roof):
     """Total-runs multiplier from weather. Small, research-calibrated effects."""
@@ -106,7 +107,7 @@ def game_weather_mult(venue):
     if roof == "dome":
         return 1.0, "dome (no wx)"
     try:
-        t, w = fetch_weather(lat, lon)
+        t, w, _wd = fetch_weather(lat, lon)
     except Exception as e:
         return 1.0, f"wx fetch failed ({type(e).__name__})"
     return weather_mult(t, w, roof)

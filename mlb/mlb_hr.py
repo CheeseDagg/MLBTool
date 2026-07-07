@@ -200,6 +200,57 @@ def hr_park(venue):
     elif conf < 0.9: lab += " [low-conf]"
     return eff, lab
 
+# ---------------------------------------------------------------------------
+# WIND — direction now modeled. PARK_ORIENT = approximate compass bearing from
+# home plate to CENTER FIELD (deg). SEED APPROXIMATIONS, conf-weighted like the
+# HR parks; verify any venue against satellite when convenient. Wind FROM
+# (bearing+180) blows straight OUT. Effect: +0.9% HR per mph of out-component,
+# capped ±18%, halved under a retractable roof, off in domes.
+PARK_ORIENT = {
+    "Yankee Stadium": (75, 0.9), "Fenway Park": (52, 0.9), "Wrigley Field": (45, 0.9),
+    "Oriole Park at Camden Yards": (31, 0.8), "Camden Yards": (31, 0.8),
+    "Great American Ball Park": (120, 0.8), "Great American": (120, 0.8),
+    "Citizens Bank Park": (10, 0.8), "Citi Field": (30, 0.8), "Nationals Park": (28, 0.8),
+    "PNC Park": (115, 0.8), "Truist Park": (145, 0.7), "Busch Stadium": (62, 0.8),
+    "Target Field": (90, 0.7), "Progressive Field": (0, 0.7), "Comerica Park": (145, 0.7),
+    "Kauffman Stadium": (45, 0.8), "Kauffman": (45, 0.8), "Rate Field": (127, 0.7),
+    "Angel Stadium": (65, 0.7), "Dodger Stadium": (25, 0.8), "Oracle Park": (85, 0.9),
+    "Petco Park": (0, 0.7), "Coors Field": (10, 0.8), "T-Mobile Park": (48, 0.7),
+    "Oakland Coliseum": (55, 0.7), "Sutter Health Park": (35, 0.5),
+    "George M. Steinbrenner Field": (70, 0.5), "loanDepot park": (78, 0.6),
+    "Daikin Park": (345, 0.6), "Minute Maid Park": (345, 0.6),
+    "Chase Field": (0, 0.6), "Globe Life Field": (95, 0.6), "American Family Field": (128, 0.7),
+    "Rogers Centre": (348, 0.6), "Tropicana Field": (45, 0.3),
+}
+WIND_PER_MPH = 0.009
+WIND_CAP = 0.18
+
+def hr_weather_mult(temp_f, roof, wind_mph=None, wind_dir=None, venue=None):
+    """Temp (+0.8%/F over 70) x wind out/in component. Returns (mult, tag).
+    Dome: off. Retractable: both effects halved. Unknown orientation: temp only."""
+    if roof == "dome":
+        return 1.0, "dome"
+    if temp_f is None:
+        return 1.0, "no wx"
+    tmult = 1 + 0.008 * (temp_f - 70)
+    wmult, wtag = 1.0, ""
+    ok = resolve_venue(venue, PARK_ORIENT) if venue else None
+    if ok is not None and wind_mph and wind_dir is not None:
+        bearing, conf = PARK_ORIENT[ok]
+        out_from = (bearing + 180) % 360
+        delta = math.radians((wind_dir - out_from + 180) % 360 - 180)
+        comp = wind_mph * math.cos(delta) * conf          # +out / -in, conf-shrunk
+        wmult = 1 + max(min(comp * WIND_PER_MPH, WIND_CAP), -WIND_CAP)
+        if abs(comp) >= 3:
+            wtag = f" · wind {'out' if comp > 0 else 'in'} {abs(comp):.0f}"
+    m = tmult * wmult
+    if roof == "retract":
+        m = 1 + (m - 1) * 0.5
+    m = min(max(m, 0.70), 1.35)
+    tag = f"{temp_f:.0f}F{wtag}"
+    if roof == "retract": tag += " (roof: half)"
+    return m, tag
+
 def hr_temp_mult(temp_f, roof):
     """+0.8%/F above 70 at open parks (ball-carry research), symmetric below,
     capped at +/-25%. Retractable roof: halved. Dome: off."""
@@ -360,7 +411,7 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
 
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
-def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None):
+def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None):
     """
     batters : list of {name, fg_team, pa, hr}
     pitchers: list of {name, bf, hr}
@@ -371,6 +422,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     """
     hands = hands or {}
     heats = heats or {}
+    cards = cards or {}
     tb_pa = sum(b["pa"] for b in batters) or 1
     Lb = sum(b["hr"] for b in batters) / tb_pa
     tp_bf = sum(p["bf"] for p in pitchers) or 1
@@ -394,7 +446,17 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     def fg(full):
         return TEAM_MAP.get(full)
 
+    bat_by_name = {norm(b["name"]): b for b in batters}
     def team_bats(full):
+        card = cards.get(full)
+        if card:
+            out9 = []
+            for nm, slot in card:
+                b = bat_by_name.get(norm(nm))
+                if b is None:
+                    b = {"name": nm, "fg_team": full, "pa": 0, "hr": 0}   # call-up: league prior via shrink
+                out9.append((b, slot))
+            return out9
         k = _resolve_team_key(full, set(lineup.keys()))
         return lineup.get(k, []) if k else []
 
@@ -413,8 +475,11 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     rows = []
     for g in sched:
         eff, park_lab = hr_park(g["venue"])
-        temp_f, roof = temps.get(g["venue"], (None, "open"))
-        tmult, ttag = hr_temp_mult(temp_f, roof)
+        tw = temps.get(g["venue"], (None, "open"))
+        temp_f, roof = tw[0], tw[1]
+        wspd = tw[2] if len(tw) > 2 else None
+        wdir = tw[3] if len(tw) > 3 else None
+        tmult, ttag = hr_weather_mult(temp_f, roof, wspd, wdir, g["venue"])
         for side, opp_sp_name in (("away", g.get("home_sp")), ("home", g.get("away_sp"))):
             team_full = g[side]
             opp_full = g["home" if side == "away" else "away"]
@@ -440,7 +505,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
-                    "sp_fac": round(fac, 2), "plat": plat_tag, "heat": heat_tag,
+                    "sp_fac": round(fac, 2), "plat": plat_tag, "heat": heat_tag, "lu": ("card" if cards.get(team_full) else "proj"),
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
@@ -630,11 +695,55 @@ def pull_temps(venues):
         if roof == "dome":
             temps[v] = (None, "dome"); continue
         try:
-            t, _w = fetch_weather(lat, lon)
-            temps[v] = (t, roof)
+            t, w, wd = fetch_weather(lat, lon)
+            temps[v] = (t, roof, w, wd)
         except Exception:
             temps[v] = (None, roof)
     return temps
+
+def pull_lineups(sched):
+    """Actual posted lineup cards from MLB StatsAPI boxscores (post ~1-4h
+    pregame). Returns ({full_team_name: [(player_name, slot1..9)]}, note).
+    Games without a posted card fall back to season-usage projection."""
+    base = "https://statsapi.mlb.com/api/v1"
+    def _get(url):
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (MLBTool board)"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode())
+    try:
+        today = dt.date.today().strftime("%m/%d/%Y")
+        s = _get(f"{base}/schedule?sportId=1&date={today}")
+        pks = {}
+        for d0 in s.get("dates", []):
+            for g in d0.get("games", []):
+                h = ((g.get("teams") or {}).get("home") or {}).get("team", {}).get("name")
+                a = ((g.get("teams") or {}).get("away") or {}).get("team", {}).get("name")
+                if h and a: pks[(h, a)] = g.get("gamePk")
+    except Exception as e:
+        return {}, f"lineups: schedule fetch failed ({type(e).__name__}) — season-usage for all"
+    cards, posted, total = {}, 0, 0
+    for g in sched:
+        total += 1
+        pk = pks.get((g["home"], g["away"]))
+        if not pk: continue
+        try:
+            box = _get(f"{base}/game/{pk}/boxscore")
+        except Exception:
+            continue
+        for side in ("home", "away"):
+            t = (box.get("teams") or {}).get(side) or {}
+            order = t.get("battingOrder") or []
+            if len(order) < 9: continue
+            players = t.get("players") or {}
+            lu = []
+            for i, pid in enumerate(order[:9]):
+                p = players.get(f"ID{pid}") or {}
+                nm = (p.get("person") or {}).get("fullName", "")
+                if nm: lu.append((nm, i + 1))
+            if len(lu) == 9:
+                cards[g[side]] = lu
+                if side == "home": posted += 1     # count per game via home card
+    return cards, f"lineups: {posted}/{total} cards posted (rest = season-usage)"
 
 def pull_props():
     """batter_home_runs Yes/Over-0.5 best price per player. Fails soft:
@@ -785,6 +894,29 @@ def selftest():
     assert pv(r_sw)["hr_pct"] > pv(r_vL)["hr_pct"], "switch hitter must dodge the LL penalty"
     r_unk, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")})
     assert pv(r_unk)["plat"] == "" 
+    # 12. REAL LINEUPS: posted card overrides usage — order, exclusion, call-up prior
+    card = {"New York Yankees": [("NY filler4", 1), ("Slug McPower", 2), ("Callup Kid", 3),
+            ("Mid Bat", 4), ("Slap Hitter", 5), ("NY filler0", 6), ("NY filler1", 7),
+            ("NY filler2", 8), ("NY filler3", 9)]}
+    r_card, _ = build_board(bat, pit, sched, {"Yankee Stadium": (88.0, "open")}, cards=card)
+    nyy = [r for r in r_card if r["team"] == "NYY"]
+    assert len(nyy) == 9 and all(r["lu"] == "card" for r in nyy)
+    assert not any(r["player"] == "Tiny Sample" for r in nyy), "benched player must vanish"
+    kid = [r for r in nyy if r["player"] == "Callup Kid"][0]
+    assert 0 < kid["hr_pct"] < 25 and kid["slot"] == 3          # league-prior via shrink
+    slugc = [r for r in nyy if r["player"] == "Slug McPower"][0]
+    assert slugc["slot"] == 2
+    bos = [r for r in r_card if r["team"] == "BOS"]
+    assert bos and all(r["lu"] == "proj" for r in bos), "no card -> usage projection"
+    # 13. WIND: out > calm > in at same temp; dome off; unknown orientation temp-only
+    from mlb_hr import hr_weather_mult
+    m_out,_t1 = hr_weather_mult(80, "open", 14, (75+180)%360, "Yankee Stadium")   # straight out
+    m_cal,_t2 = hr_weather_mult(80, "open", 0, 0, "Yankee Stadium")
+    m_in ,t3  = hr_weather_mult(80, "open", 14, 75, "Yankee Stadium")             # straight in
+    assert m_out > m_cal > m_in and "wind in" in t3
+    assert hr_weather_mult(95, "dome", 20, 0, "Yankee Stadium")[0] == 1.0
+    m_unk, t_unk = hr_weather_mult(80, "open", 14, 0, "Estadio Nowhere")
+    assert abs(m_unk - (1+0.008*10)) < 1e-9 and "wind" not in t_unk 
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0
@@ -802,9 +934,10 @@ def _build():
     print(f"   schedule teams: {sorted({g[s] for g in sched for s in ('home','away')})[:8]} …")
     print("4) park temps (Open-Meteo)…")
     temps = pull_temps(sorted({g["venue"] for g in sched}))
+    print("4b) lineup cards (StatsAPI)…"); cards, lu_note = pull_lineups(sched); print(f"   {lu_note}")
     print("5) HR props (The Odds API, optional)…")
     props, pnote = pull_props(); print(f"   {pnote}")
-    prelim, _ = build_board(bat, pit, sched, temps, None, hands or None)
+    prelim, _ = build_board(bat, pit, sched, temps, None, hands or None, None, cards or None)
     cand = sorted(prelim, key=lambda r: -r["hr_pct"])[:70]
     def _pid(nm):
         t = hands.get(norm(nm)) if hands else None
@@ -828,7 +961,7 @@ def _build():
             if bid and spid and side in ("L", "R"):
                 hf = heat_factor(bz.get(bid), pz.get((spid, side)))
                 if hf: heats[(norm(r["player"]), norm(spn))] = hf
-    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None)
+    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None)
     rows = select_rows(rows, have_ev)
     print(f"   board rows built: {len(rows)}")
     if not rows:
@@ -841,7 +974,7 @@ def _build():
             json.dump(_scrub(out), f, indent=1, allow_nan=False)
         sys.exit("EMPTY BOARD — " + note)
     note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
-            "lineups = top-9 by season PA until cards post · "
+            f"{lu_note} · "
             f"{hnote} (league factors, starter share) · {heat_note} · "
             "wind not modeled (speed-only feed) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
@@ -853,6 +986,28 @@ def _build():
     path = os.path.join(DATA, "hr_board.json")
     with open(path, "w") as f:
         json.dump(_scrub(out), f, indent=1, allow_nan=False)
+    try:
+        import csv
+        plog = os.path.join(DATA, "hr_predictions.csv")
+        today = dt.date.today().isoformat()
+        hdr = ["date","player","team","opp_sp","slot","lu","hr_pct","fair","book_price","ev_pct","park","temp","plat","heat"]
+        old_rows = []
+        if os.path.exists(plog):
+            with open(plog) as f:
+                old_rows = [r for r in csv.DictReader(f) if r.get("date") != today]
+        with open(plog, "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=hdr); w.writeheader()
+            for r in old_rows: w.writerow({k: r.get(k, "") for k in hdr})
+            for r in rows:
+                w.writerow({"date": today, "player": r["player"], "team": r["team"],
+                            "opp_sp": r["opp_sp"], "slot": r["slot"], "lu": r.get("lu",""),
+                            "hr_pct": r["hr_pct"], "fair": r["fair"],
+                            "book_price": r.get("book_price",""), "ev_pct": r.get("ev_pct",""),
+                            "park": r["park"], "temp": r["temp"], "plat": r.get("plat",""),
+                            "heat": r.get("heat","")})
+        print(f"   prediction log: {len(rows)} rows for {today} ({len(old_rows)} historical kept)")
+    except Exception as e:
+        print(f"   prediction log skipped: {type(e).__name__}")
     print(f"hr_board.json written: {len(rows)} rows"
           + (f", EV priced" if have_ev else ", model-only"))
 
