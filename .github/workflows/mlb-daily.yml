@@ -2,6 +2,7 @@ name: MLB daily slate
 on:
   schedule:
     - cron: "0 14 * * *"
+    - cron: "0 21 * * *"   # 4pm CT: reprice on posted lineup cards
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -40,7 +41,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --mixed origin/main
-            git add mlb/data/slate.json mlb/data/zone_cache.json
+            git add mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv
             if git diff --cached --quiet; then
               echo "Slate unchanged vs published -- nothing to commit."
               exit 0
