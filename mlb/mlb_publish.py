@@ -15,6 +15,17 @@ import numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import mlb_model as M
 from mlb_parks import adjust_total, tag as park_tag
+
+def _scrub(o):
+    """Browsers reject bare NaN/Infinity in JSON (Python's json tolerates them,
+    which is how a poisoned slate.json shipped and blanked the whole dashboard).
+    Recursively convert non-finite floats to None; allow_nan=False on the dump
+    is the tripwire if anything ever slips past."""
+    import math
+    if isinstance(o, float) and not math.isfinite(o): return None
+    if isinstance(o, dict):  return {k: _scrub(v) for k, v in o.items()}
+    if isinstance(o, list):  return [_scrub(v) for v in o]
+    return o
 try:
     from mlb_weather import game_weather_mult
     HAS_WX = True
@@ -133,7 +144,7 @@ def main():
     }
     path = os.path.join(DATA, "slate.json")
     with open(path, "w") as f:
-        json.dump(out, f, indent=1)
+        json.dump(_scrub(out), f, indent=1, allow_nan=False)
     print(f"slate.json written: {len(games)} games, {len(edge_rows)} edges "
           f"({edge_note or 'ok'}), {len(ratings)} teams rated, "
           f"{len(hr_rows)} HR-board rows")

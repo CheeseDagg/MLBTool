@@ -109,6 +109,13 @@ FG_ALIASES = {"KCR": {"KC", "KCR"}, "SDP": {"SD", "SDP"}, "SFG": {"SF", "SFG"},
               "TBR": {"TB", "TBR"}, "WSN": {"WSH", "WSN"}, "CHW": {"CWS", "CHW"},
               "ATH": {"OAK", "ATH"}}
 
+def _scrub(o):
+    """Non-finite floats are invalid JSON for browsers; convert to None."""
+    if isinstance(o, float) and not math.isfinite(o): return None
+    if isinstance(o, dict):  return {k: _scrub(v) for k, v in o.items()}
+    if isinstance(o, list):  return [_scrub(v) for v in o]
+    return o
+
 def norm(s):
     if not isinstance(s, str): return ""
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
@@ -599,7 +606,7 @@ def _build():
                "note": note, "rows": []}
         os.makedirs(DATA, exist_ok=True)
         with open(os.path.join(DATA, "hr_board.json"), "w") as f:
-            json.dump(out, f, indent=1)
+            json.dump(_scrub(out), f, indent=1, allow_nan=False)
         sys.exit("EMPTY BOARD — " + note)
     note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
             "lineups = top-9 by season PA until cards post · platoon splits not in v1 · "
@@ -612,7 +619,7 @@ def _build():
     os.makedirs(DATA, exist_ok=True)
     path = os.path.join(DATA, "hr_board.json")
     with open(path, "w") as f:
-        json.dump(out, f, indent=1)
+        json.dump(_scrub(out), f, indent=1, allow_nan=False)
     print(f"hr_board.json written: {len(rows)} rows"
           + (f", EV priced" if have_ev else ", model-only"))
 
@@ -630,9 +637,9 @@ def main():
         err = tb.strip().splitlines()[-1][:220]
         os.makedirs(DATA, exist_ok=True)
         with open(os.path.join(DATA, "hr_board.json"), "w") as f:
-            json.dump({"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+            json.dump(_scrub({"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                        "note": f"HR BUILD CRASHED — {err} (full trace in Action log)",
-                       "rows": []}, f, indent=1)
+                       "rows": []}), f, indent=1, allow_nan=False)
         sys.exit(1)
 
 if __name__ == "__main__":

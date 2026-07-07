@@ -161,7 +161,7 @@ function render(d){
     <th class="num">home win</th><th></th><th class="num">total</th><th class="num">adj</th><th class="hide-m">applied</th></tr>`+
     d.games.map(g=>`<tr>
       <td>${g.away}<br><span class="dim">@ ${g.home}</span></td>
-      <td class="hide-m dim">${g.away_sp}<br>${g.home_sp}</td>
+      <td class="hide-m dim">${g.away_sp||'TBD'}<br>${g.home_sp||'TBD'}</td>
       <td class="num"><b>${pct(g.p_home)}</b></td>
       <td>${bar(g.p_home)}</td>
       <td class="num dim">${g.raw_total}</td>
