@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-07T15:23:45+00:00",
+ "generated": "2026-07-07T16:02:53+00:00",
  "games": [
   {
    "away": "Milwaukee Brewers",
@@ -9,9 +9,9 @@
    "home_sp": "Matt Svanson",
    "p_home": 34.7,
    "raw_total": 8.8,
-   "adj_total": 8.71,
+   "adj_total": 8.81,
    "park": "park -1%",
-   "wx": "wx fetch failed (URLError)"
+   "wx": "82F, wind 5mph"
   },
   {
    "away": "Milwaukee Brewers",
@@ -21,9 +21,9 @@
    "home_sp": NaN,
    "p_home": 44.8,
    "raw_total": 8.93,
-   "adj_total": 8.94,
+   "adj_total": 8.95,
    "park": "park -1%",
-   "wx": "80F, wind 5mph"
+   "wx": "82F, wind 5mph"
   },
   {
    "away": "Chicago Cubs",
@@ -33,9 +33,9 @@
    "home_sp": "Shane Baz",
    "p_home": 48.8,
    "raw_total": 9.64,
-   "adj_total": 9.74,
+   "adj_total": 9.76,
    "park": "park +1% [low-conf]",
-   "wx": "74F, wind 4mph"
+   "wx": "76F, wind 1mph"
   },
   {
    "away": "Athletics",
@@ -45,9 +45,9 @@
    "home_sp": "Tarik Skubal",
    "p_home": 57.8,
    "raw_total": 8.78,
-   "adj_total": 8.66,
+   "adj_total": 8.68,
    "park": "park -2%",
-   "wx": "76F, wind 6mph"
+   "wx": "79F, wind 5mph"
   },
   {
    "away": "Atlanta Braves",
@@ -57,9 +57,9 @@
    "home_sp": "Paul Skenes",
    "p_home": 57.7,
    "raw_total": 9.18,
-   "adj_total": 8.97,
+   "adj_total": 8.99,
    "park": "park -3%",
-   "wx": "77F, wind 4mph"
+   "wx": "79F, wind 2mph"
   },
   {
    "away": "Seattle Mariners",
@@ -71,7 +71,7 @@
    "raw_total": 8.23,
    "adj_total": 8.22,
    "park": "park -1%",
-   "wx": "86F, wind 6mph (retract: halved)"
+   "wx": "87F, wind 7mph (retract: halved)"
   },
   {
    "away": "New York Yankees",
@@ -93,9 +93,9 @@
    "home_sp": "Andrew Alvarez",
    "p_home": 62.2,
    "raw_total": 10.1,
-   "adj_total": 10.25,
+   "adj_total": 10.28,
    "park": "park +1%",
-   "wx": "75F, wind 6mph"
+   "wx": "77F, wind 3mph"
   },
   {
    "away": "Kansas City Royals",
@@ -105,21 +105,21 @@
    "home_sp": NaN,
    "p_home": 55.6,
    "raw_total": 9.03,
-   "adj_total": 8.72,
+   "adj_total": 8.74,
    "park": "park -3%",
-   "wx": "66F, wind 7mph"
+   "wx": "67F, wind 9mph"
   },
   {
    "away": "Philadelphia Phillies",
    "home": "Cincinnati Reds",
    "venue": "Great American Ball Park",
-   "away_sp": NaN,
+   "away_sp": "Zack Wheeler",
    "home_sp": "Andrew Abbott",
-   "p_home": 48.4,
-   "raw_total": 8.99,
-   "adj_total": 10.15,
+   "p_home": 44.3,
+   "raw_total": 8.71,
+   "adj_total": 9.84,
    "park": "park +12%",
-   "wx": "78F, wind 4mph"
+   "wx": "79F, wind 2mph"
   },
   {
    "away": "Cleveland Guardians",
@@ -131,7 +131,7 @@
    "raw_total": 8.96,
    "adj_total": 8.9,
    "park": "park -1%",
-   "wx": "74F, wind 0mph"
+   "wx": "74F, wind 3mph"
   },
   {
    "away": "Boston Red Sox",
@@ -143,7 +143,7 @@
    "raw_total": 8.74,
    "adj_total": 8.69,
    "park": "park -1%",
-   "wx": "74F, wind 6mph"
+   "wx": "74F, wind 5mph"
   },
   {
    "away": "Los Angeles Angels",
@@ -153,9 +153,9 @@
    "home_sp": "Jacob deGrom",
    "p_home": 57.3,
    "raw_total": 8.59,
-   "adj_total": 9.02,
+   "adj_total": 9.03,
    "park": "park +4%",
-   "wx": "90F, wind 4mph (retract: halved)"
+   "wx": "93F, wind 6mph (retract: halved)"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -165,21 +165,21 @@
    "home_sp": "Germ\u00e1n M\u00e1rquez",
    "p_home": 52.2,
    "raw_total": 9.06,
-   "adj_total": 8.59,
+   "adj_total": 8.6,
    "park": "park -5%",
-   "wx": "68F, wind 4mph"
+   "wx": "69F, wind 3mph"
   },
   {
    "away": "Toronto Blue Jays",
    "home": "San Francisco Giants",
    "venue": "Oracle Park",
-   "away_sp": NaN,
+   "away_sp": "Spencer Miles",
    "home_sp": "Trevor McDonald",
-   "p_home": 55.8,
-   "raw_total": 8.46,
-   "adj_total": 7.84,
+   "p_home": 53.3,
+   "raw_total": 8.29,
+   "adj_total": 7.69,
    "park": "park -6%",
-   "wx": "56F, wind 8mph"
+   "wx": "57F, wind 7mph"
   },
   {
    "away": "Colorado Rockies",
@@ -189,9 +189,9 @@
    "home_sp": "Justin Wrobleski",
    "p_home": 69.9,
    "raw_total": 10.23,
-   "adj_total": 10.01,
+   "adj_total": 10.04,
    "park": "park -2%",
-   "wx": "68F, wind 2mph"
+   "wx": "72F, wind 3mph"
   }
  ],
  "ratings": [
@@ -381,7 +381,7 @@
  "parlays": [],
  "near_parlays": [],
  "hr_board": [],
- "hr_note": "no HR board (run mlb_hr.py)",
+ "hr_note": "HR BUILD CRASHED \u2014 TypeError: unsupported operand type(s) for +: 'float' and 'str' (full trace in Action log)",
  "backtest": {
   "n": 816,
   "acc": 55.6,
