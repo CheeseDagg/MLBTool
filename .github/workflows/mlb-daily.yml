@@ -40,7 +40,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --mixed origin/main
-            git add mlb/data/slate.json
+            git add mlb/data/slate.json mlb/data/zone_cache.json
             if git diff --cached --quiet; then
               echo "Slate unchanged vs published -- nothing to commit."
               exit 0
