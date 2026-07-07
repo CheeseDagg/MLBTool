@@ -324,12 +324,13 @@ def batter_zone_profile(df):
     hr = (d["events"] == "home_run") if "events" in d.columns else None
     if hr is None: return None
     ov = float(hr.sum()) / n
-    prof = {}
+    prof, share = {}, {}
     for z in ZONES:
         m = d["zone"] == z
         nz = int(m.sum()); hz = int((hr & m).sum())
         prof[int(z)] = (hz + K_ZONE * ov) / (nz + K_ZONE)
-    return {"z": prof, "ov": ov if ov > 0 else 1e-5, "n": n}
+        share[int(z)] = nz / n
+    return {"z": prof, "s": share, "ov": ov if ov > 0 else 1e-5, "n": n, "ver": 2}
 
 def pitcher_zone_mix(df, stand):
     """statcast pitcher frame -> zone weights vs batters of `stand` ('L'/'R')."""
@@ -347,15 +348,27 @@ def pitcher_zone_mix(df, stand):
 
 def heat_factor(bat_prof, pit_mix):
     """Overlap multiplier ~1.0, clipped. None if either side missing.
-    Key-agnostic: cached profiles come back from JSON with STRING zone keys."""
+    Key-agnostic (JSON cache stringifies zone keys). SELF-MIX CENTERED:
+    denominator is the batter's shrunk profile under HIS OWN pitch diet, so
+    the shrinkage bias that flattened sluggers' hot zones cancels — a pitcher
+    throwing the batter's average diet scores exactly 1.000. Falls back to the
+    raw-overall denominator for pre-v2 cached profiles."""
     if not bat_prof or not pit_mix: return None
     bz, pw = bat_prof["z"], pit_mix["w"]
     gb = lambda z: bz.get(z, bz.get(str(z), bat_prof["ov"]))
     gw = lambda z: pw.get(z, pw.get(str(z), 0.0))
     num = sum(gw(z) * gb(z) for z in ZONES)
     cov = sum(gw(z) for z in ZONES)
-    if cov <= 0: return None                      # unusable mix -> no factor, not a fake floor
-    raw = (num / cov) / bat_prof["ov"]
+    if cov <= 0: return None
+    bs = bat_prof.get("s")
+    if bs:
+        gs = lambda z: bs.get(z, bs.get(str(z), 0.0))
+        den_num = sum(gs(z) * gb(z) for z in ZONES)
+        den_cov = sum(gs(z) for z in ZONES)
+        base = (den_num / den_cov) if den_cov > 0 else bat_prof["ov"]
+    else:
+        base = bat_prof["ov"]                      # pre-v2 cache: documented bias
+    raw = (num / cov) / base
     return min(max(raw, HEAT_CLIP[0]), HEAT_CLIP[1])
 
 def _zone_cache_path(): return os.path.join(DATA, "zone_cache.json")
@@ -379,8 +392,11 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
     today = dt.date.today().isoformat()
     start = f"{YEAR}-03-01"
     cache = load_zone_cache()
-    def fresh(e):
-        try: return (dt.date.fromisoformat(today) - dt.date.fromisoformat(e["d"])).days < 5
+    def fresh(e, key=""):
+        try:
+            if key.startswith("b:") and (e.get("v") or {}).get("ver") != 2:
+                return False                       # pre-v2 batter profile: refresh for self-mix centering
+            return (dt.date.fromisoformat(today) - dt.date.fromisoformat(e["d"])).days < 5
         except Exception: return False
     bats, pits, pulled, failed = {}, {}, 0, 0
     try:
@@ -389,7 +405,7 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
         return {}, {}, f"heat off (pybaseball import: {type(e).__name__})"
     for pid in bat_ids:
         key = f"b:{pid}"
-        if key in cache and fresh(cache[key]):
+        if key in cache and fresh(cache[key], key):
             bats[pid] = cache[key]["v"]; continue
         try:
             prof = batter_zone_profile(statcast_batter(start, today, pid)); pulled += 1
@@ -933,6 +949,19 @@ def selftest():
     assert f_fresh is not None and abs(f_fresh - f_cached) < 1e-12, (f_fresh, f_cached)
     assert f_fresh > 1.02, f_fresh                      # zone-5 heavy mix must read hot, not floor
     assert heat_factor(bp, {"w": {}, "n": 500}) is None  # zero coverage -> None, never a fake 0.85
+    # 15. SELF-MIX CENTERING: pitcher throwing the batter's exact diet -> 1.000;
+    #     heart-heavy vs that diet -> >1; chase-heavy -> <1; legacy (no "s") still works.
+    diet = {z: (0.10 if z in (4,5,6) else 0.07) for z in [1,2,3,4,5,6,7,8,9,11,12,13,14]}
+    tot = sum(diet.values()); diet = {z: v/tot for z, v in diet.items()}
+    bpc = {"z": {z: (0.030 if z in (4,5,6) else 0.006) for z in diet}, "s": dict(diet),
+           "ov": 0.011, "n": 2500, "ver": 2}
+    f_same = heat_factor(bpc, {"w": dict(diet), "n": 1500})
+    assert abs(f_same - 1.0) < 1e-9, f_same
+    f_heart = heat_factor(bpc, {"w": {5: 1.0}, "n": 1500})
+    f_chase = heat_factor(bpc, {"w": {13: 1.0}, "n": 1500})
+    assert f_heart > 1.0 > f_chase, (f_heart, f_chase)
+    legacy = {"z": bpc["z"], "ov": 0.011, "n": 2500}
+    assert heat_factor(legacy, {"w": dict(diet), "n": 1500}) is not None
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0
