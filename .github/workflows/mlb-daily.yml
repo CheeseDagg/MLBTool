@@ -30,6 +30,9 @@ jobs:
           python mlb_odds.py || true
           python mlb_hr.py || true
           python mlb_publish.py
+      - name: Validate slate.json is browser-parseable
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('mlb/data/slate.json','utf8')); console.log('slate.json OK for browsers')"
       - name: Commit fresh slate
         run: |
           git config user.name "mlb-bot"
