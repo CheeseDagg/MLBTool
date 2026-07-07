@@ -192,6 +192,23 @@ def _resolve_team_key(full, keys):
         if len(m) == 1: return m[0]
     return None
 
+def select_rows(rows, have_ev, n_ev=30, n_hr=15):
+    """Board selection. A pure top-N-by-EV slice silently evicts elite bats
+    whenever books price them efficiently (negative EV), leaving a board of
+    fringe longshots — so the model's own best HR candidates were invisible.
+    Take the EV top-30 UNION the model-HR% top-15; sluggers always survive,
+    with their honest (often negative) EV shown. Re-sorted by the active key."""
+    if not have_ev:
+        return rows[:n_ev]
+    sel = rows[:n_ev]
+    key = lambda r: (r["player"], r.get("team"), r.get("opp_sp"), r.get("slot"))
+    seen = {key(r) for r in sel}
+    for r in sorted(rows, key=lambda r: -r["hr_pct"])[:n_hr]:
+        if key(r) not in seen:
+            sel.append(r); seen.add(key(r))
+    sel.sort(key=lambda r: -(r.get("ev_pct", -1e9)))
+    return sel
+
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
 def build_board(batters, pitchers, sched, temps, props=None):
@@ -578,6 +595,18 @@ def selftest():
     samp = r_tbd[0]
     assert samp["opp_sp"] in ("TBD *",) and samp["sp_fac"] == 1.0, samp["opp_sp"]
     json.dumps(r_tbd)
+    # 10. REGRESSION (Alvarez eviction): the model's best HR% bat must survive
+    #     the EV slice even when the book prices him to deeply negative EV.
+    big = [{"player": f"fringe{i}", "team": "X", "opp": "Y", "opp_sp": "P", "slot": 1,
+            "hr_pct": 10.0 + i * 0.1, "fair": "+800", "park": "park avg", "temp": "80F",
+            "sp_fac": 1.0, "book_price": 900, "book": "b", "ev_pct": 20.0 + i} for i in range(40)]
+    slug = {"player": "Elite Slugger", "team": "HOU", "opp": "WSN", "opp_sp": "Arm", "slot": 1,
+            "hr_pct": 33.0, "fair": "+203", "park": "park avg", "temp": "80F",
+            "sp_fac": 1.0, "book_price": 170, "book": "b", "ev_pct": -18.0}
+    pool = sorted(big + [slug], key=lambda r: -r["ev_pct"])
+    picked = select_rows(pool, True)
+    assert any(r["player"] == "Elite Slugger" for r in picked), "slugger evicted by EV slice"
+    assert len(picked) <= 45 and picked[0]["ev_pct"] >= picked[-1]["ev_pct"]
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0
@@ -597,7 +626,7 @@ def _build():
     print("5) HR props (The Odds API, optional)…")
     props, pnote = pull_props(); print(f"   {pnote}")
     rows, have_ev = build_board(bat, pit, sched, temps, props or None)
-    rows = rows[:30]
+    rows = select_rows(rows, have_ev)
     print(f"   board rows built: {len(rows)}")
     if not rows:
         note = (f"BOARD EMPTY — team labels in {bsrc} data didn't map to schedule teams. "
