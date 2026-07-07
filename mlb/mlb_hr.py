@@ -841,7 +841,8 @@ def _build():
             json.dump(_scrub(out), f, indent=1, allow_nan=False)
         sys.exit("EMPTY BOARD — " + note)
     note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
-            "lineups = top-9 by season PA until cards post · platoon splits not in v1 · "
+            "lineups = top-9 by season PA until cards post · "
+            f"{hnote} (league factors, starter share) · {heat_note} · "
             "wind not modeled (speed-only feed) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
             "warm-climate open parks) · " + pnote +
