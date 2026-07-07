@@ -181,7 +181,7 @@ function renderHomers(){
     <td class="num">${r.fair}</td>`+
     (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
     <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
-    `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span></td>
+    `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span>${r.plat?` <span class="pill">${r.plat}</span>`:``}${r.heat?` <span class="pill">${r.heat}</span>`:``}</td>
   </tr>`).join('')+`</table>`;
 }
 function render(d){

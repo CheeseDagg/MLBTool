@@ -44,6 +44,51 @@ YEAR = dt.date.today().year
 K_BAT = 130     # PA of league-average prior blended into each batter
 K_PIT = 200     # BF of league-average prior blended into each starter
 SP_WEIGHT = 0.62
+
+# ---------------------------------------------------------------------------
+# PLATOON — league-average HR-rate factors by (batter side, starter throws).
+# Per-batter splits at seasonal PA are mostly noise; the sound v2 is heavy
+# regression to the league effect: LHB-vs-LHP is the big penalty, the rest
+# mild. Approximate, conservative, labeled — refine when calibration says to.
+# Applied to the STARTER'S share only (SP_WEIGHT); bullpen hands unknowable.
+# Switch hitters take the favorable side. Unknown handedness -> neutral.
+PLATOON = {"LL": 0.78, "LR": 1.08, "RL": 1.12, "RR": 0.97}
+
+def platoon_factor(bat_side, pitch_hand):
+    """Effective per-PA multiplier vs a starter of known hand. Returns
+    (multiplier, tag) — tag empty when neutral/unknown."""
+    if not bat_side or not pitch_hand or pitch_hand not in ("L", "R"):
+        return 1.0, ""
+    b = bat_side
+    if b == "S":                       # switch: take the platoon-favorable side
+        b = "R" if pitch_hand == "L" else "L"
+    raw = PLATOON.get(b + pitch_hand)
+    if raw is None:
+        return 1.0, ""
+    eff = SP_WEIGHT * raw + (1 - SP_WEIGHT)          # starter share only
+    pct = (raw - 1) * 100
+    tag = f"{bat_side}v{pitch_hand} {'+' if pct >= 0 else ''}{pct:.0f}%"
+    return eff, tag
+
+def pull_handedness():
+    """batSide / pitchHand for every player from MLB StatsAPI's bulk roster
+    endpoint (one call, unblockable host). Fail-soft: {} -> platoon off."""
+    try:
+        req = urllib.request.Request(
+            f"https://statsapi.mlb.com/api/v1/sports/1/players?season={YEAR}",
+            headers={"User-Agent": "Mozilla/5.0 (MLBTool board)"})
+        with urllib.request.urlopen(req, timeout=45) as r:
+            data = json.loads(r.read().decode())
+        out = {}
+        for p in data.get("people", []):
+            n = norm(p.get("fullName", ""))
+            if n:
+                out[n] = ((p.get("batSide") or {}).get("code"),
+                          (p.get("pitchHand") or {}).get("code"),
+                          p.get("id"))
+        return out, f"platoon on ({len(out)} players)"
+    except Exception as e:
+        return {}, f"platoon off (handedness fetch failed: {type(e).__name__})"
 PA_TOP = 4.45   # expected PA for the #1 usage slot; -0.09 per slot down
 CAP_PPA = 0.12  # sanity cap on per-PA HR probability
 
@@ -209,15 +254,123 @@ def select_rows(rows, have_ev, n_hr=30, n_ev=10):
     return sel
 
 # ---------------------------------------------------------------------------
+# HEAT MAPS — Savant zone overlap: does this starter locate where this batter
+# does HR damage? Gameday zones (1-9 in-zone, 11-14 chase). Batter HR-rate per
+# pitch by zone (shrunk to his own overall, K_ZONE pitches); starter's pitch
+# mix by zone, split by batter side. Overlap = Sigma w_z * rate_z / overall,
+# clipped conservatively, applied to the STARTER SHARE like platoon. Fully
+# fail-soft; per-row pill; HR_HEAT=0 env disables without redeploy.
+K_ZONE = 150
+HEAT_CLIP = (0.85, 1.18)
+ZONES = [1,2,3,4,5,6,7,8,9,11,12,13,14]
+
+def batter_zone_profile(df):
+    """statcast batter frame -> {'z':{zone: shrunk HR-per-pitch}, 'ov': overall, 'n': pitches}"""
+    if df is None or not len(df) or "zone" not in df.columns: return None
+    d = df[df["zone"].notna()]
+    n = len(d)
+    if n < 400: return None                       # too thin to trust zones
+    hr = (d["events"] == "home_run") if "events" in d.columns else None
+    if hr is None: return None
+    ov = float(hr.sum()) / n
+    prof = {}
+    for z in ZONES:
+        m = d["zone"] == z
+        nz = int(m.sum()); hz = int((hr & m).sum())
+        prof[int(z)] = (hz + K_ZONE * ov) / (nz + K_ZONE)
+    return {"z": prof, "ov": ov if ov > 0 else 1e-5, "n": n}
+
+def pitcher_zone_mix(df, stand):
+    """statcast pitcher frame -> zone weights vs batters of `stand` ('L'/'R')."""
+    if df is None or not len(df) or "zone" not in df.columns: return None
+    d = df[df["zone"].notna()]
+    if "stand" in d.columns and stand in ("L", "R"):
+        ds = d[d["stand"] == stand]
+        if len(ds) >= 250: d = ds                 # side-split only when thick enough
+    n = len(d)
+    if n < 300: return None
+    w = {}
+    for z in ZONES:
+        w[int(z)] = float((d["zone"] == z).sum()) / n
+    return {"w": w, "n": n}
+
+def heat_factor(bat_prof, pit_mix):
+    """Overlap multiplier ~1.0, clipped. None if either side missing."""
+    if not bat_prof or not pit_mix: return None
+    num = sum(pit_mix["w"].get(z, 0.0) * bat_prof["z"].get(z, bat_prof["ov"]) for z in ZONES)
+    cov = sum(pit_mix["w"].get(z, 0.0) for z in ZONES) or 1.0
+    raw = (num / cov) / bat_prof["ov"]
+    return min(max(raw, HEAT_CLIP[0]), HEAT_CLIP[1])
+
+def _zone_cache_path(): return os.path.join(DATA, "zone_cache.json")
+
+def load_zone_cache():
+    try:
+        with open(_zone_cache_path()) as f: return json.load(f)
+    except Exception: return {}
+
+def save_zone_cache(c):
+    try:
+        os.makedirs(DATA, exist_ok=True)
+        with open(_zone_cache_path(), "w") as f: json.dump(_scrub(c), f)
+    except Exception: pass
+
+def fetch_zone_profiles(bat_ids, pit_ids, hands):
+    """Pull Savant pitch data for exactly the needed players (cached aggregates,
+    ~5-day freshness). Returns (bat_profiles{id}, pit_mixes{(id,stand)}, note)."""
+    if os.environ.get("HR_HEAT", "1") == "0":
+        return {}, {}, "heat off (HR_HEAT=0)"
+    today = dt.date.today().isoformat()
+    start = f"{YEAR}-03-01"
+    cache = load_zone_cache()
+    def fresh(e):
+        try: return (dt.date.fromisoformat(today) - dt.date.fromisoformat(e["d"])).days < 5
+        except Exception: return False
+    bats, pits, pulled, failed = {}, {}, 0, 0
+    try:
+        from pybaseball import statcast_batter, statcast_pitcher
+    except Exception as e:
+        return {}, {}, f"heat off (pybaseball import: {type(e).__name__})"
+    for pid in bat_ids:
+        key = f"b:{pid}"
+        if key in cache and fresh(cache[key]):
+            bats[pid] = cache[key]["v"]; continue
+        try:
+            prof = batter_zone_profile(statcast_batter(start, today, pid)); pulled += 1
+        except Exception:
+            prof = None; failed += 1
+        bats[pid] = prof
+        cache[key] = {"d": today, "v": prof}
+    for pid in pit_ids:
+        for stand in ("L", "R"):
+            key = f"p:{pid}:{stand}"
+            if key in cache and fresh(cache[key]):
+                pits[(pid, stand)] = cache[key]["v"]; continue
+            try:
+                df = statcast_pitcher(start, today, pid); pulled += 1
+                mix = pitcher_zone_mix(df, stand)
+            except Exception:
+                mix = None; failed += 1
+            pits[(pid, stand)] = mix
+            cache[key] = {"d": today, "v": mix}
+    save_zone_cache(cache)
+    ok_b = sum(1 for v in bats.values() if v); ok_p = sum(1 for v in pits.values() if v)
+    return bats, pits, (f"heat on ({ok_b} bats x {ok_p} pitcher-sides, "
+                        f"{pulled} pulls, {failed} fails)")
+
+# ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
-def build_board(batters, pitchers, sched, temps, props=None):
+def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None):
     """
     batters : list of {name, fg_team, pa, hr}
     pitchers: list of {name, bf, hr}
     sched   : list of {home, away, venue, home_sp, away_sp}   (full team names)
     temps   : {venue: (temp_f or None, roof)}
     props   : {norm_name: {"price": int, "book": str}} or None
+    hands   : {norm_name: (batSide, pitchHand)} or None -> platoon off
     """
+    hands = hands or {}
+    heats = heats or {}
     tb_pa = sum(b["pa"] for b in batters) or 1
     Lb = sum(b["hr"] for b in batters) / tb_pa
     tp_bf = sum(p["bf"] for p in pitchers) or 1
@@ -269,7 +422,13 @@ def build_board(batters, pitchers, sched, temps, props=None):
             sp_eff = SP_WEIGHT * fac + (1 - SP_WEIGHT)
             for b, slot in team_bats(team_full):
                 base = (b["hr"] + K_BAT * Lb) / (b["pa"] + K_BAT)
-                p_pa = min(base * eff * sp_eff * tmult, CAP_PPA)
+                sp_hand = (hands.get(norm(opp_sp_name)) or (None, None))[1] if isinstance(opp_sp_name, str) else None
+                bat_side = (hands.get(norm(b["name"])) or (None, None))[0]
+                plat_eff, plat_tag = platoon_factor(bat_side, sp_hand)
+                hf = heats.get((norm(b["name"]), norm(opp_sp_name or "")))
+                heat_eff = SP_WEIGHT * hf + (1 - SP_WEIGHT) if hf else 1.0
+                heat_tag = (f"heat {'+' if hf >= 1 else ''}{(hf-1)*100:.0f}%") if hf else ""
+                p_pa = min(base * eff * sp_eff * tmult * plat_eff * heat_eff, CAP_PPA)
                 pa_est = max(PA_TOP - 0.09 * (slot - 1), 3.4)
                 p_game = 1 - (1 - p_pa) ** pa_est
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
@@ -281,7 +440,7 @@ def build_board(batters, pitchers, sched, temps, props=None):
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
-                    "sp_fac": round(fac, 2),
+                    "sp_fac": round(fac, 2), "plat": plat_tag, "heat": heat_tag,
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
@@ -607,6 +766,25 @@ def selftest():
     assert picked[0]["player"] == "Elite Slugger", "likelihood-first: slugger must lead the board"
     assert any(r["ev_pct"] >= 59 for r in picked), "top EV gaps must still be appended"
     assert all(picked[i]["hr_pct"] >= picked[i+1]["hr_pct"] for i in range(len(picked)-1))
+    # 11. PLATOON: LHB must price lower vs LHP than vs RHP; switch immune to the
+    #     penalty; unknown handedness neutral; tag present when applied.
+    hands = {"slug mcpower": ("L", None), "ace groundall": (None, "L"), "gopher gary": (None, "R")}
+    r_lhp, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")}, hands=hands)
+    # BOS bats face Ace (LHP); NYY bats face Gary (RHP). Slug is NYY -> faces RHP.
+    hands2 = dict(hands); hands2["ace groundall"] = (None, "R")
+    r_rhp, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")}, hands=hands2)
+    # flip: make Slug face the lefty by swapping which SP is L
+    hands3 = {"slug mcpower": ("L", None), "gopher gary": (None, "L")}
+    r_vL, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")}, hands=hands3)
+    pv = lambda rows: [r for r in rows if r["player"] == "Slug McPower"][0]
+    assert pv(r_vL)["hr_pct"] < pv(r_lhp)["hr_pct"], "LHB vs LHP must price below vs RHP"
+    assert "Lv" in pv(r_vL)["plat"], pv(r_vL)["plat"]
+    assert pv(r_lhp)["plat"].startswith("LvR"), pv(r_lhp)["plat"]
+    hands4 = {"slug mcpower": ("S", None), "gopher gary": (None, "L")}
+    r_sw, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")}, hands=hands4)
+    assert pv(r_sw)["hr_pct"] > pv(r_vL)["hr_pct"], "switch hitter must dodge the LL penalty"
+    r_unk, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")})
+    assert pv(r_unk)["plat"] == "" 
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0
@@ -616,6 +794,7 @@ def _build():
     print(f"   {len(sched)} games")
     print("2) batters…"); bat, bsrc = pull_batters()
     print("3) pitchers…"); pit, psrc = pull_pitchers()
+    print("3b) handedness (MLB StatsAPI)…"); hands, hnote = pull_handedness(); print(f"   {hnote}")
     if not bat or not pit:
         sys.exit("no batter/pitcher data from any source — board not built")
     tkeys = sorted({b["fg_team"] for b in bat})
@@ -625,7 +804,31 @@ def _build():
     temps = pull_temps(sorted({g["venue"] for g in sched}))
     print("5) HR props (The Odds API, optional)…")
     props, pnote = pull_props(); print(f"   {pnote}")
-    rows, have_ev = build_board(bat, pit, sched, temps, props or None)
+    prelim, _ = build_board(bat, pit, sched, temps, None, hands or None)
+    cand = sorted(prelim, key=lambda r: -r["hr_pct"])[:70]
+    def _pid(nm):
+        t = hands.get(norm(nm)) if hands else None
+        return t[2] if t and len(t) > 2 and t[2] else None
+    bat_ids = sorted({_pid(r["player"]) for r in cand if _pid(r["player"])})
+    sp_names = sorted({(g.get(s) or "") for g in sched for s in ("home_sp", "away_sp") if isinstance(g.get(s), str)})
+    pit_ids = sorted({_pid(n) for n in sp_names if _pid(n)})
+    print(f"5b) heat maps (Savant zones) — {len(bat_ids)} bats, {len(pit_ids)} starters…")
+    bz, pz, heat_note = fetch_zone_profiles(bat_ids, pit_ids, hands or {})
+    print(f"   {heat_note}")
+    heats = {}
+    if bz or pz:
+        for r in cand:
+            bid = _pid(r["player"])
+            spn = r["opp_sp"].replace(" *", "").strip()
+            spid = _pid(spn)
+            side = (hands.get(norm(r["player"])) or (None,))[0] if hands else None
+            if side == "S" and hands and _pid(spn):
+                sph = (hands.get(norm(spn)) or (None, None))[1]
+                side = "R" if sph == "L" else "L"
+            if bid and spid and side in ("L", "R"):
+                hf = heat_factor(bz.get(bid), pz.get((spid, side)))
+                if hf: heats[(norm(r["player"]), norm(spn))] = hf
+    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None)
     rows = select_rows(rows, have_ev)
     print(f"   board rows built: {len(rows)}")
     if not rows:
