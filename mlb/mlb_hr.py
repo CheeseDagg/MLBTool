@@ -126,8 +126,21 @@ def dec_from_am(a):
     a = int(a)
     return a / 100 + 1 if a > 0 else 100 / (-a) + 1
 
+def resolve_venue(venue, table):
+    """Exact -> case-insensitive -> containment (longest key wins).
+    Survives sponsor renames like 'UNIQLO Field at Dodger Stadium'."""
+    if not venue: return None
+    if venue in table: return venue
+    low = {k.lower(): k for k in table}
+    v = venue.lower()
+    if v in low: return low[v]
+    hits = [k for k in table if k.lower() in v or v in k.lower()]
+    if hits: return max(hits, key=len)
+    return None
+
 def hr_park(venue):
-    raw, conf = HR_PARKS.get(venue, HR_DEFAULT)
+    key = resolve_venue(venue, HR_PARKS)
+    raw, conf = HR_PARKS[key] if key else HR_DEFAULT
     eff = 1 + ((raw - 100) / 100.0) * conf
     pct = (eff - 1) * 100
     lab = "park ~" if abs(pct) < 0.5 else (f"park +{pct:.0f}%" if pct > 0 else f"park {pct:.0f}%")
@@ -354,7 +367,8 @@ def pull_temps(venues):
         return {v: (None, "open") for v in venues}
     temps = {}
     for v in venues:
-        meta = VENUES.get(v)
+        k = resolve_venue(v, VENUES)
+        meta = VENUES.get(k) if k else None
         if meta is None:
             temps[v] = (None, "open"); continue
         lat, lon, roof = meta

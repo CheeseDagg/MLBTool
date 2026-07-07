@@ -60,9 +60,22 @@ PARKS = {
 
 DEFAULT = (100, 0.0)   # unknown venue -> neutral, zero confidence (flagged)
 
+def resolve_venue(venue, table):
+    """Exact -> case-insensitive -> containment (longest key wins).
+    Survives sponsor renames like 'UNIQLO Field at Dodger Stadium'."""
+    if not venue: return None
+    if venue in table: return venue
+    low = {k.lower(): k for k in table}
+    v = venue.lower()
+    if v in low: return low[v]
+    hits = [k for k in table if k.lower() in v or v in k.lower()]
+    if hits: return max(hits, key=len)
+    return None
+
 def factor(venue):
     """Return (effective_multiplier, confidence, raw_index) for a venue name."""
-    raw, conf = PARKS.get(venue, DEFAULT)
+    key = resolve_venue(venue, PARKS)
+    raw, conf = PARKS[key] if key else DEFAULT
     eff = 1 + ((raw - 100) / 100.0) * conf
     return eff, conf, raw
 

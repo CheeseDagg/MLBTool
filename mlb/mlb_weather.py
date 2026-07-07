@@ -84,9 +84,22 @@ def weather_mult(temp_f, wind_mph, roof):
         tag += " (retract: halved)"
     return m, tag
 
+def resolve_venue(venue, table):
+    """Exact -> case-insensitive -> containment (longest key wins).
+    Survives sponsor renames like 'UNIQLO Field at Dodger Stadium'."""
+    if not venue: return None
+    if venue in table: return venue
+    low = {k.lower(): k for k in table}
+    v = venue.lower()
+    if v in low: return low[v]
+    hits = [k for k in table if k.lower() in v or v in k.lower()]
+    if hits: return max(hits, key=len)
+    return None
+
 def game_weather_mult(venue):
     """One-call helper: venue name -> (multiplier, tag). Neutral if unknown."""
-    v = VENUES.get(venue)
+    vk = resolve_venue(venue, VENUES)
+    v = VENUES.get(vk) if vk else None
     if v is None:
         return 1.0, "unknown venue (no wx)"
     lat, lon, roof = v
