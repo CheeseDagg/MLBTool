@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-07T20:02:17+00:00",
+ "generated": "2026-07-07T20:36:55+00:00",
  "games": [
   {
    "away": "Milwaukee Brewers",
@@ -21,9 +21,9 @@
    "home_sp": "Hunter Dobbins",
    "p_home": 42.3,
    "raw_total": 9.11,
-   "adj_total": 9.18,
+   "adj_total": 9.02,
    "park": "park -1%",
-   "wx": "87F, wind 5mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Chicago Cubs",
@@ -45,9 +45,9 @@
    "home_sp": "Tarik Skubal",
    "p_home": 57.8,
    "raw_total": 8.78,
-   "adj_total": 8.73,
+   "adj_total": 8.71,
    "park": "park -2%",
-   "wx": "85F, wind 7mph"
+   "wx": "83F, wind 8mph"
   },
   {
    "away": "Atlanta Braves",
@@ -57,9 +57,9 @@
    "home_sp": "Paul Skenes",
    "p_home": 57.7,
    "raw_total": 9.18,
-   "adj_total": 9.02,
+   "adj_total": 9.04,
    "park": "park -3%",
-   "wx": "83F, wind 2mph"
+   "wx": "84F, wind 1mph"
   },
   {
    "away": "Seattle Mariners",
@@ -69,9 +69,9 @@
    "home_sp": "Max Meyer",
    "p_home": 54.4,
    "raw_total": 8.27,
-   "adj_total": 8.27,
+   "adj_total": 8.26,
    "park": "park -1%",
-   "wx": "87F, wind 9mph (retract: halved)"
+   "wx": "88F, wind 7mph (retract: halved)"
   },
   {
    "away": "New York Yankees",
@@ -93,9 +93,9 @@
    "home_sp": "Andrew Alvarez",
    "p_home": 62.2,
    "raw_total": 10.1,
-   "adj_total": 10.31,
+   "adj_total": 10.32,
    "park": "park +1%",
-   "wx": "81F, wind 4mph"
+   "wx": "82F, wind 4mph"
   },
   {
    "away": "Kansas City Royals",
@@ -105,9 +105,9 @@
    "home_sp": null,
    "p_home": 55.6,
    "raw_total": 9.03,
-   "adj_total": 8.8,
+   "adj_total": 8.77,
    "park": "park -3%",
-   "wx": "70F, wind 10mph"
+   "wx": "69F, wind 9mph"
   },
   {
    "away": "Philadelphia Phillies",
@@ -119,7 +119,7 @@
    "raw_total": 8.71,
    "adj_total": 9.87,
    "park": "park +12%",
-   "wx": "82F, wind 4mph"
+   "wx": "82F, wind 5mph"
   },
   {
    "away": "Cleveland Guardians",
@@ -129,9 +129,9 @@
    "home_sp": "Taj Bradley",
    "p_home": 58.8,
    "raw_total": 8.96,
-   "adj_total": 8.99,
+   "adj_total": 8.98,
    "park": "park -1%",
-   "wx": "84F, wind 6mph"
+   "wx": "83F, wind 4mph"
   },
   {
    "away": "Boston Red Sox",
@@ -141,9 +141,9 @@
    "home_sp": "Noah Schultz",
    "p_home": 52.0,
    "raw_total": 8.74,
-   "adj_total": 8.7,
+   "adj_total": 8.71,
    "park": "park -1%",
-   "wx": "75F, wind 8mph"
+   "wx": "76F, wind 8mph"
   },
   {
    "away": "Los Angeles Angels",
@@ -155,7 +155,7 @@
    "raw_total": 8.59,
    "adj_total": 9.06,
    "park": "park +4%",
-   "wx": "98F, wind 3mph (retract: halved)"
+   "wx": "98F, wind 4mph (retract: halved)"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -165,9 +165,9 @@
    "home_sp": "Germ\u00e1n M\u00e1rquez",
    "p_home": 52.2,
    "raw_total": 9.06,
-   "adj_total": 8.71,
+   "adj_total": 8.61,
    "park": "park -5%",
-   "wx": "78F, wind 10mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Toronto Blue Jays",
@@ -177,9 +177,9 @@
    "home_sp": "Trevor McDonald",
    "p_home": 53.3,
    "raw_total": 8.29,
-   "adj_total": 7.8,
+   "adj_total": 7.79,
    "park": "park -6%",
-   "wx": "62F, wind 12mph"
+   "wx": "61F, wind 12mph"
   },
   {
    "away": "Colorado Rockies",
@@ -189,9 +189,9 @@
    "home_sp": "Justin Wrobleski",
    "p_home": 69.9,
    "raw_total": 10.23,
-   "adj_total": 10.02,
+   "adj_total": 10.2,
    "park": "park -2%",
-   "wx": "wx fetch failed (URLError)"
+   "wx": "85F, wind 9mph"
   }
  ],
  "ratings": [
@@ -382,18 +382,9 @@
    "bet": "St. Louis Cardinals",
    "price": 120,
    "book": "FanDuel",
-   "fair": 0.461,
-   "ev_pct": 1.41,
-   "kelly_frac": 0.00295
-  },
-  {
-   "game": "Toronto Blue Jays @ San Francisco Giants",
-   "bet": "Toronto Blue Jays",
-   "price": 100,
-   "book": "LowVig.ag",
-   "fair": 0.5014,
-   "ev_pct": 0.28,
-   "kelly_frac": 0.00069
+   "fair": 0.4593,
+   "ev_pct": 1.04,
+   "kelly_frac": 0.00218
   },
   {
    "game": "Boston Red Sox @ Chicago White Sox",
@@ -415,96 +406,19 @@
      "book": "FanDuel"
     },
     {
-     "bet": "Toronto Blue Jays",
-     "price": 100,
-     "book": "LowVig.ag"
-    },
-    {
-     "bet": "Chicago White Sox",
-     "price": -118,
-     "book": "FanDuel"
-    }
-   ],
-   "n_legs": 3,
-   "fair_pct": 12.53,
-   "dec": 8.129,
-   "american": 713,
-   "ev_pct": 1.83,
-   "one_book": false,
-   "books": [
-    "FanDuel",
-    "LowVig.ag"
-   ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "St. Louis Cardinals",
-     "price": 120,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "Toronto Blue Jays",
-     "price": 100,
-     "book": "LowVig.ag"
-    }
-   ],
-   "n_legs": 2,
-   "fair_pct": 23.11,
-   "dec": 4.4,
-   "american": 340,
-   "ev_pct": 1.69,
-   "one_book": false,
-   "books": [
-    "FanDuel",
-    "LowVig.ag"
-   ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "St. Louis Cardinals",
-     "price": 120,
-     "book": "FanDuel"
-    },
-    {
      "bet": "Chicago White Sox",
      "price": -118,
      "book": "FanDuel"
     }
    ],
    "n_legs": 2,
-   "fair_pct": 24.98,
+   "fair_pct": 24.89,
    "dec": 4.064,
    "american": 306,
-   "ev_pct": 1.55,
+   "ev_pct": 1.18,
    "one_book": true,
    "books": [
     "FanDuel"
-   ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "Toronto Blue Jays",
-     "price": 100,
-     "book": "LowVig.ag"
-    },
-    {
-     "bet": "Chicago White Sox",
-     "price": -118,
-     "book": "FanDuel"
-    }
-   ],
-   "n_legs": 2,
-   "fair_pct": 27.17,
-   "dec": 3.695,
-   "american": 269,
-   "ev_pct": 0.41,
-   "one_book": false,
-   "books": [
-    "FanDuel",
-    "LowVig.ag"
    ]
   }
  ],
@@ -517,7 +431,7 @@
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 2,
-   "hr_pct": 34.3,
+   "hr_pct": 34.2,
    "fair": "+192",
    "park": "park +25%",
    "temp": "82F",
@@ -527,7 +441,7 @@
    "lu": "card",
    "book_price": 165,
    "book": "betrivers",
-   "ev_pct": -9.1
+   "ev_pct": -9.3
   },
   {
    "player": "Hunter Goodman",
@@ -536,17 +450,17 @@
    "opp_sp": "Justin Wrobleski",
    "venue": "UNIQLO Field at Dodger Stadium",
    "slot": 2,
-   "hr_pct": 32.2,
-   "fair": "+211",
+   "hr_pct": 31.5,
+   "fair": "+218",
    "park": "park +5%",
-   "temp": "89F \u00b7 wind out 5",
+   "temp": "85F \u00b7 wind out 5",
    "sp_fac": 0.82,
    "plat": "RvL +12%",
    "heat": "heat +18%",
    "lu": "proj",
    "book_price": 285,
    "book": "betrivers",
-   "ev_pct": 24.0
+   "ev_pct": 21.2
   },
   {
    "player": "Byron Buxton",
@@ -555,17 +469,17 @@
    "opp_sp": "Joey Cantillo",
    "venue": "Target Field",
    "slot": 3,
-   "hr_pct": 29.3,
-   "fair": "+241",
+   "hr_pct": 29.1,
+   "fair": "+243",
    "park": "park -2%",
-   "temp": "84F",
+   "temp": "83F",
    "sp_fac": 1.03,
    "plat": "RvL +12%",
    "heat": "heat +7%",
    "lu": "proj",
-   "book_price": 260,
+   "book_price": 265,
    "book": "betrivers",
-   "ev_pct": 5.6
+   "ev_pct": 6.3
   },
   {
    "player": "Bryce Harper",
@@ -574,17 +488,17 @@
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 3,
-   "hr_pct": 25.7,
-   "fair": "+289",
+   "hr_pct": 25.6,
+   "fair": "+290",
    "park": "park +25%",
    "temp": "82F",
    "sp_fac": 1.13,
    "plat": "LvL -22%",
    "heat": "heat +16%",
    "lu": "card",
-   "book_price": 285,
+   "book_price": 280,
    "book": "betrivers",
-   "ev_pct": -1.1
+   "ev_pct": -2.6
   },
   {
    "player": "Jordan Walker",
@@ -593,7 +507,7 @@
    "opp_sp": "Robert Gasser",
    "venue": "Busch Stadium",
    "slot": 4,
-   "hr_pct": 24.9,
+   "hr_pct": 25.0,
    "fair": "+301",
    "park": "park -7%",
    "temp": "87F \u00b7 wind in 3",
@@ -609,17 +523,17 @@
    "opp_sp": "Tatsuya Imai",
    "venue": "Nationals Park",
    "slot": 1,
-   "hr_pct": 24.7,
-   "fair": "+306",
+   "hr_pct": 24.9,
+   "fair": "+302",
    "park": "park avg",
-   "temp": "81F \u00b7 wind in 3",
+   "temp": "82F",
    "sp_fac": 1.12,
    "plat": "LvR +8%",
    "heat": "heat +6%",
    "lu": "card",
-   "book_price": 245,
+   "book_price": 250,
    "book": "betrivers",
-   "ev_pct": -14.9
+   "ev_pct": -12.9
   },
   {
    "player": "Shea Langeliers",
@@ -628,17 +542,17 @@
    "opp_sp": "Tarik Skubal",
    "venue": "Comerica Park",
    "slot": 3,
-   "hr_pct": 23.3,
-   "fair": "+330",
+   "hr_pct": 23.0,
+   "fair": "+335",
    "park": "park -5%",
-   "temp": "85F",
+   "temp": "83F",
    "sp_fac": 1.1,
    "plat": "RvL +12%",
    "heat": "heat +7%",
    "lu": "card",
    "book_price": 360,
    "book": "betrivers",
-   "ev_pct": 7.0
+   "ev_pct": 5.7
   },
   {
    "player": "JJ Bleday",
@@ -647,7 +561,7 @@
    "opp_sp": "Zack Wheeler",
    "venue": "Great American Ball Park",
    "slot": 3,
-   "hr_pct": 23.0,
+   "hr_pct": 22.9,
    "fair": "+336",
    "park": "park +25%",
    "temp": "82F",
@@ -655,28 +569,9 @@
    "plat": "LvR +8%",
    "heat": "heat -10%",
    "lu": "card",
-   "book_price": 340,
+   "book_price": 325,
    "book": "betrivers",
-   "ev_pct": 1.0
-  },
-  {
-   "player": "Miguel Vargas",
-   "team": "CHW",
-   "opp": "BOS",
-   "opp_sp": "Payton Tolle",
-   "venue": "Rate Field",
-   "slot": 1,
-   "hr_pct": 22.8,
-   "fair": "+339",
-   "park": "park +9%",
-   "temp": "75F \u00b7 wind in 3",
-   "sp_fac": 0.92,
-   "plat": "RvL +12%",
-   "heat": "heat +12%",
-   "lu": "card",
-   "book_price": 340,
-   "book": "betrivers",
-   "ev_pct": 0.2
+   "ev_pct": -2.6
   },
   {
    "player": "Ben Rice",
@@ -686,16 +581,35 @@
    "venue": "Citi Field",
    "slot": 3,
    "hr_pct": 22.6,
-   "fair": "+342",
+   "fair": "+343",
    "park": "park -4%",
-   "temp": "70F \u00b7 wind in 8",
+   "temp": "69F \u00b7 wind in 7",
    "sp_fac": 0.99,
    "plat": "LvR +8%",
    "heat": "heat +10%",
    "lu": "proj",
-   "book_price": 420,
+   "book_price": 440,
    "book": "betrivers",
-   "ev_pct": 17.6
+   "ev_pct": 21.9
+  },
+  {
+   "player": "Miguel Vargas",
+   "team": "CHW",
+   "opp": "BOS",
+   "opp_sp": "Payton Tolle",
+   "venue": "Rate Field",
+   "slot": 1,
+   "hr_pct": 22.6,
+   "fair": "+343",
+   "park": "park +9%",
+   "temp": "no wx",
+   "sp_fac": 0.92,
+   "plat": "RvL +12%",
+   "heat": "heat +12%",
+   "lu": "card",
+   "book_price": 340,
+   "book": "betrivers",
+   "ev_pct": -0.6
   },
   {
    "player": "Elly De La Cruz",
@@ -705,16 +619,35 @@
    "venue": "Great American Ball Park",
    "slot": 1,
    "hr_pct": 22.4,
-   "fair": "+346",
+   "fair": "+347",
    "park": "park +25%",
    "temp": "82F",
    "sp_fac": 0.98,
    "plat": "SvR +8%",
    "heat": "heat -1%",
    "lu": "card",
-   "book_price": 330,
+   "book_price": 335,
    "book": "betrivers",
-   "ev_pct": -3.6
+   "ev_pct": -2.6
+  },
+  {
+   "player": "Zach Neto",
+   "team": "LAA",
+   "opp": "TEX",
+   "opp_sp": "Jacob deGrom",
+   "venue": "Globe Life Field",
+   "slot": 1,
+   "hr_pct": 22.2,
+   "fair": "+350",
+   "park": "park +2%",
+   "temp": "98F (roof: half)",
+   "sp_fac": 1.26,
+   "plat": "RvR -3%",
+   "heat": "heat -6%",
+   "lu": "card",
+   "book_price": 400,
+   "book": "betrivers",
+   "ev_pct": 11.2
   },
   {
    "player": "Willson Contreras",
@@ -723,17 +656,17 @@
    "opp_sp": "Noah Schultz",
    "venue": "Rate Field",
    "slot": 4,
-   "hr_pct": 22.4,
-   "fair": "+346",
+   "hr_pct": 22.2,
+   "fair": "+350",
    "park": "park +9%",
-   "temp": "75F \u00b7 wind in 3",
+   "temp": "no wx",
    "sp_fac": 0.95,
    "plat": "RvL +12%",
    "heat": "heat +7%",
    "lu": "card",
-   "book_price": 300,
+   "book_price": 350,
    "book": "betrivers",
-   "ev_pct": -10.3
+   "ev_pct": -0.0
   },
   {
    "player": "Randal Grichuk",
@@ -742,17 +675,17 @@
    "opp_sp": "Payton Tolle",
    "venue": "Rate Field",
    "slot": 2,
-   "hr_pct": 22.2,
-   "fair": "+351",
+   "hr_pct": 22.0,
+   "fair": "+354",
    "park": "park +9%",
-   "temp": "75F \u00b7 wind in 3",
+   "temp": "no wx",
    "sp_fac": 0.92,
    "plat": "RvL +12%",
    "heat": "heat -0%",
    "lu": "card",
-   "book_price": 390,
+   "book_price": 380,
    "book": "betrivers",
-   "ev_pct": 8.8
+   "ev_pct": 5.6
   },
   {
    "player": "Sal Stewart",
@@ -762,16 +695,16 @@
    "venue": "Great American Ball Park",
    "slot": 2,
    "hr_pct": 21.8,
-   "fair": "+358",
+   "fair": "+359",
    "park": "park +25%",
    "temp": "82F",
    "sp_fac": 0.98,
    "plat": "RvR -3%",
    "heat": "heat -0%",
    "lu": "card",
-   "book_price": 360,
+   "book_price": 350,
    "book": "betrivers",
-   "ev_pct": 0.4
+   "ev_pct": -2.0
   },
   {
    "player": "Derek Hill",
@@ -780,7 +713,7 @@
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 8,
-   "hr_pct": 21.7,
+   "hr_pct": 21.6,
    "fair": "+362",
    "park": "park +25%",
    "temp": "82F",
@@ -804,9 +737,9 @@
    "plat": "LvL -22%",
    "heat": "heat +12%",
    "lu": "card",
-   "book_price": 420,
+   "book_price": 440,
    "book": "betrivers",
-   "ev_pct": 11.9
+   "ev_pct": 16.2
   },
   {
    "player": "Pete Alonso",
@@ -815,7 +748,7 @@
    "opp_sp": "Matthew Boyd",
    "venue": "Oriole Park at Camden Yards",
    "slot": 4,
-   "hr_pct": 21.5,
+   "hr_pct": 21.4,
    "fair": "+366",
    "park": "park +4% [low-conf]",
    "temp": "80F",
@@ -825,7 +758,7 @@
    "lu": "card",
    "book_price": 330,
    "book": "betrivers",
-   "ev_pct": -7.7
+   "ev_pct": -7.8
   },
   {
    "player": "Paul Goldschmidt",
@@ -842,9 +775,9 @@
    "plat": "RvL +12%",
    "heat": "heat +3%",
    "lu": "card",
-   "book_price": 390,
+   "book_price": 400,
    "book": "betrivers",
-   "ev_pct": 4.5
+   "ev_pct": 6.6
   },
   {
    "player": "CJ Abrams",
@@ -853,17 +786,17 @@
    "opp_sp": "Tatsuya Imai",
    "venue": "Nationals Park",
    "slot": 4,
-   "hr_pct": 20.9,
-   "fair": "+379",
+   "hr_pct": 21.1,
+   "fair": "+375",
    "park": "park avg",
-   "temp": "81F \u00b7 wind in 3",
+   "temp": "82F",
    "sp_fac": 1.12,
    "plat": "LvR +8%",
    "heat": "heat -0%",
    "lu": "card",
-   "book_price": 360,
+   "book_price": 410,
    "book": "betrivers",
-   "ev_pct": -4.0
+   "ev_pct": 7.4
   },
   {
    "player": "Matt Olson",
@@ -872,36 +805,17 @@
    "opp_sp": "Paul Skenes",
    "venue": "PNC Park",
    "slot": 3,
-   "hr_pct": 20.9,
-   "fair": "+379",
+   "hr_pct": 21.0,
+   "fair": "+377",
    "park": "park -9%",
-   "temp": "83F",
+   "temp": "84F",
    "sp_fac": 0.95,
    "plat": "LvR +8%",
    "heat": "heat -5%",
    "lu": "card",
-   "book_price": 300,
+   "book_price": 310,
    "book": "betrivers",
-   "ev_pct": -16.6
-  },
-  {
-   "player": "Jonah Heim",
-   "team": "ATH",
-   "opp": "DET",
-   "opp_sp": "Tarik Skubal",
-   "venue": "Comerica Park",
-   "slot": 4,
-   "hr_pct": 20.8,
-   "fair": "+381",
-   "park": "park -5%",
-   "temp": "85F",
-   "sp_fac": 1.1,
-   "plat": "SvL +12%",
-   "heat": "heat +3%",
-   "lu": "card",
-   "book_price": 750,
-   "book": "betrivers",
-   "ev_pct": 76.6
+   "ev_pct": -14.1
   },
   {
    "player": "Brandon Lowe",
@@ -910,36 +824,17 @@
    "opp_sp": "Hurston Waldrep *",
    "venue": "PNC Park",
    "slot": 2,
-   "hr_pct": 20.8,
-   "fair": "+381",
+   "hr_pct": 20.9,
+   "fair": "+378",
    "park": "park -9%",
-   "temp": "83F",
+   "temp": "84F",
    "sp_fac": 1.0,
    "plat": "LvR +8%",
    "heat": "",
    "lu": "card",
    "book_price": 285,
    "book": "betrivers",
-   "ev_pct": -19.9
-  },
-  {
-   "player": "Colson Montgomery",
-   "team": "CHW",
-   "opp": "BOS",
-   "opp_sp": "Payton Tolle",
-   "venue": "Rate Field",
-   "slot": 3,
-   "hr_pct": 20.7,
-   "fair": "+383",
-   "park": "park +9%",
-   "temp": "75F \u00b7 wind in 3",
-   "sp_fac": 0.92,
-   "plat": "LvL -22%",
-   "heat": "heat +9%",
-   "lu": "card",
-   "book_price": 350,
-   "book": "betrivers",
-   "ev_pct": -6.8
+   "ev_pct": -19.5
   },
   {
    "player": "Joc Pederson",
@@ -948,8 +843,8 @@
    "opp_sp": "Jos\u00e9 Soriano",
    "venue": "Globe Life Field",
    "slot": 1,
-   "hr_pct": 20.6,
-   "fair": "+386",
+   "hr_pct": 20.7,
+   "fair": "+383",
    "park": "park +2%",
    "temp": "98F (roof: half)",
    "sp_fac": 0.96,
@@ -958,7 +853,45 @@
    "lu": "card",
    "book_price": 390,
    "book": "betrivers",
-   "ev_pct": 0.8
+   "ev_pct": 1.4
+  },
+  {
+   "player": "Jonah Heim",
+   "team": "ATH",
+   "opp": "DET",
+   "opp_sp": "Tarik Skubal",
+   "venue": "Comerica Park",
+   "slot": 4,
+   "hr_pct": 20.5,
+   "fair": "+387",
+   "park": "park -5%",
+   "temp": "83F",
+   "sp_fac": 1.1,
+   "plat": "SvL +12%",
+   "heat": "heat +3%",
+   "lu": "card",
+   "book_price": 750,
+   "book": "betrivers",
+   "ev_pct": 74.5
+  },
+  {
+   "player": "Colson Montgomery",
+   "team": "CHW",
+   "opp": "BOS",
+   "opp_sp": "Payton Tolle",
+   "venue": "Rate Field",
+   "slot": 3,
+   "hr_pct": 20.5,
+   "fair": "+387",
+   "park": "park +9%",
+   "temp": "no wx",
+   "sp_fac": 0.92,
+   "plat": "LvL -22%",
+   "heat": "heat +9%",
+   "lu": "card",
+   "book_price": 350,
+   "book": "betrivers",
+   "ev_pct": -7.6
   },
   {
    "player": "Junior Caminero",
@@ -986,17 +919,17 @@
    "opp_sp": "Tatsuya Imai",
    "venue": "Nationals Park",
    "slot": 3,
-   "hr_pct": 20.1,
-   "fair": "+397",
+   "hr_pct": 20.3,
+   "fair": "+393",
    "park": "park avg",
-   "temp": "81F \u00b7 wind in 3",
+   "temp": "82F",
    "sp_fac": 1.12,
    "plat": "RvR -3%",
    "heat": "heat -3%",
    "lu": "card",
-   "book_price": 475,
+   "book_price": 460,
    "book": "betrivers",
-   "ev_pct": 15.6
+   "ev_pct": 13.6
   },
   {
    "player": "Edmundo Sosa",
@@ -1006,7 +939,7 @@
    "venue": "Great American Ball Park",
    "slot": 5,
    "hr_pct": 20.0,
-   "fair": "+400",
+   "fair": "+401",
    "park": "park +25%",
    "temp": "82F",
    "sp_fac": 1.13,
@@ -1015,7 +948,7 @@
    "lu": "card",
    "book_price": 460,
    "book": "betrivers",
-   "ev_pct": 12.1
+   "ev_pct": 11.9
   },
   {
    "player": "Spencer Steer",
@@ -1025,32 +958,13 @@
    "venue": "Great American Ball Park",
    "slot": 6,
    "hr_pct": 19.8,
-   "fair": "+404",
+   "fair": "+405",
    "park": "park +25%",
    "temp": "82F",
    "sp_fac": 0.98,
    "plat": "RvR -3%",
    "heat": "heat +3%",
    "lu": "card"
-  },
-  {
-   "player": "Zack Gelof",
-   "team": "ATH",
-   "opp": "DET",
-   "opp_sp": "Tarik Skubal",
-   "venue": "Comerica Park",
-   "slot": 1,
-   "hr_pct": 19.7,
-   "fair": "+408",
-   "park": "park -5%",
-   "temp": "85F",
-   "sp_fac": 1.1,
-   "plat": "RvL +12%",
-   "heat": "heat -2%",
-   "lu": "card",
-   "book_price": 575,
-   "book": "betrivers",
-   "ev_pct": 32.8
   },
   {
    "player": "Jake Bauers",
@@ -1060,7 +974,7 @@
    "venue": "Busch Stadium",
    "slot": 3,
    "hr_pct": 19.6,
-   "fair": "+410",
+   "fair": "+409",
    "park": "park -7%",
    "temp": "87F \u00b7 wind in 3",
    "sp_fac": 1.1,
@@ -1069,23 +983,61 @@
    "lu": "proj"
   },
   {
+   "player": "Zack Gelof",
+   "team": "ATH",
+   "opp": "DET",
+   "opp_sp": "Tarik Skubal",
+   "venue": "Comerica Park",
+   "slot": 1,
+   "hr_pct": 19.4,
+   "fair": "+415",
+   "park": "park -5%",
+   "temp": "83F",
+   "sp_fac": 1.1,
+   "plat": "RvL +12%",
+   "heat": "heat -2%",
+   "lu": "card",
+   "book_price": 575,
+   "book": "betrivers",
+   "ev_pct": 31.2
+  },
+  {
    "player": "Brooks Lee",
    "team": "MIN",
    "opp": "CLE",
    "opp_sp": "Joey Cantillo",
    "venue": "Target Field",
    "slot": 2,
-   "hr_pct": 18.7,
-   "fair": "+435",
+   "hr_pct": 18.6,
+   "fair": "+439",
    "park": "park -2%",
-   "temp": "84F",
+   "temp": "83F",
    "sp_fac": 1.03,
    "plat": "SvL +12%",
    "heat": "heat +4%",
    "lu": "proj",
    "book_price": 650,
    "book": "betrivers",
-   "ev_pct": 40.3
+   "ev_pct": 39.2
+  },
+  {
+   "player": "Max Schuemann",
+   "team": "NYY",
+   "opp": "TBR",
+   "opp_sp": "Ian Seymour",
+   "venue": "Tropicana Field",
+   "slot": 8,
+   "hr_pct": 12.8,
+   "fair": "+679",
+   "park": "park -4% [low-conf]",
+   "temp": "dome",
+   "sp_fac": 1.08,
+   "plat": "RvL +12%",
+   "heat": "",
+   "lu": "card",
+   "book_price": 900,
+   "book": "betrivers",
+   "ev_pct": 28.4
   },
   {
    "player": "Ali S\u00e1nchez",
@@ -1107,23 +1059,42 @@
    "ev_pct": 31.3
   },
   {
+   "player": "Wade Meckler",
+   "team": "LAA",
+   "opp": "TEX",
+   "opp_sp": "Jacob deGrom",
+   "venue": "Globe Life Field",
+   "slot": 8,
+   "hr_pct": 11.9,
+   "fair": "+738",
+   "park": "park +2%",
+   "temp": "98F (roof: half)",
+   "sp_fac": 1.26,
+   "plat": "LvR +8%",
+   "heat": "",
+   "lu": "card",
+   "book_price": 1000,
+   "book": "betrivers",
+   "ev_pct": 31.3
+  },
+  {
    "player": "Jacob Young",
    "team": "WSN",
    "opp": "HOU",
    "opp_sp": "Tatsuya Imai",
    "venue": "Nationals Park",
    "slot": 9,
-   "hr_pct": 11.6,
-   "fair": "+762",
+   "hr_pct": 11.7,
+   "fair": "+754",
    "park": "park avg",
-   "temp": "81F \u00b7 wind in 3",
+   "temp": "82F",
    "sp_fac": 1.12,
    "plat": "RvR -3%",
    "heat": "",
    "lu": "card",
-   "book_price": 1000,
+   "book_price": 1050,
    "book": "betrivers",
-   "ev_pct": 27.6
+   "ev_pct": 34.7
   },
   {
    "player": "Mauricio Dub\u00f3n",
@@ -1133,38 +1104,19 @@
    "venue": "PNC Park",
    "slot": 5,
    "hr_pct": 11.5,
-   "fair": "+772",
+   "fair": "+767",
    "park": "park -9%",
-   "temp": "83F",
+   "temp": "84F",
    "sp_fac": 0.95,
    "plat": "RvR -3%",
    "heat": "",
    "lu": "card",
    "book_price": 1300,
    "book": "betrivers",
-   "ev_pct": 60.6
-  },
-  {
-   "player": "Jacob Wilson",
-   "team": "ATH",
-   "opp": "DET",
-   "opp_sp": "Tarik Skubal",
-   "venue": "Comerica Park",
-   "slot": 5,
-   "hr_pct": 10.8,
-   "fair": "+825",
-   "park": "park -5%",
-   "temp": "85F",
-   "sp_fac": 1.1,
-   "plat": "RvL +12%",
-   "heat": "",
-   "lu": "card",
-   "book_price": 1000,
-   "book": "betrivers",
-   "ev_pct": 18.9
+   "ev_pct": 61.5
   }
  ],
- "hr_note": "stats: Baseball-Reference \u00b7 lineups: 9/16 cards posted (rest = season-usage) \u00b7 platoon on (1286 players) (league factors, starter share) \u00b7 heat on (65 bats x 58 pitcher-sides, 66 pulls, 0 fails) \u00b7 wind not modeled (speed-only feed) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props: 208 players priced across 15/16 events \u00b7 sorted by model HR% \u00b7 EV screen appended",
+ "hr_note": "stats: Baseball-Reference \u00b7 lineups: 9/16 cards posted (rest = season-usage) \u00b7 platoon on (1288 players) (league factors, starter share) \u00b7 heat on (64 bats x 58 pitcher-sides, 6 pulls, 0 fails) \u00b7 wind not modeled (speed-only feed) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props: 203 players priced across 14/16 events \u00b7 sorted by model HR% \u00b7 EV screen appended",
  "backtest": {
   "n": 816,
   "acc": 55.6,
