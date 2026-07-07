@@ -1,15 +1,15 @@
 {
- "generated": "2026-07-07T14:58:20+00:00",
+ "generated": "2026-07-07T15:23:45+00:00",
  "games": [
   {
    "away": "Milwaukee Brewers",
    "home": "St. Louis Cardinals",
    "venue": "Busch Stadium",
    "away_sp": "Jacob Misiorowski",
-   "home_sp": NaN,
-   "p_home": 38.5,
-   "raw_total": 8.51,
-   "adj_total": 8.42,
+   "home_sp": "Matt Svanson",
+   "p_home": 34.7,
+   "raw_total": 8.8,
+   "adj_total": 8.71,
    "park": "park -1%",
    "wx": "wx fetch failed (URLError)"
   },
@@ -17,13 +17,13 @@
    "away": "Milwaukee Brewers",
    "home": "St. Louis Cardinals",
    "venue": "Busch Stadium",
-   "away_sp": NaN,
+   "away_sp": "Robert Gasser",
    "home_sp": NaN,
-   "p_home": 43.0,
-   "raw_total": 8.81,
-   "adj_total": 8.8,
+   "p_home": 44.8,
+   "raw_total": 8.93,
+   "adj_total": 8.94,
    "park": "park -1%",
-   "wx": "79F, wind 4mph"
+   "wx": "80F, wind 5mph"
   },
   {
    "away": "Chicago Cubs",
@@ -45,9 +45,9 @@
    "home_sp": "Tarik Skubal",
    "p_home": 57.8,
    "raw_total": 8.78,
-   "adj_total": 8.64,
+   "adj_total": 8.66,
    "park": "park -2%",
-   "wx": "75F, wind 4mph"
+   "wx": "76F, wind 6mph"
   },
   {
    "away": "Atlanta Braves",
@@ -59,7 +59,7 @@
    "raw_total": 9.18,
    "adj_total": 8.97,
    "park": "park -3%",
-   "wx": "76F, wind 2mph"
+   "wx": "77F, wind 4mph"
   },
   {
    "away": "Seattle Mariners",
@@ -71,7 +71,7 @@
    "raw_total": 8.23,
    "adj_total": 8.22,
    "park": "park -1%",
-   "wx": "86F, wind 4mph (retract: halved)"
+   "wx": "86F, wind 6mph (retract: halved)"
   },
   {
    "away": "New York Yankees",
@@ -93,9 +93,9 @@
    "home_sp": "Andrew Alvarez",
    "p_home": 62.2,
    "raw_total": 10.1,
-   "adj_total": 10.24,
+   "adj_total": 10.25,
    "park": "park +1%",
-   "wx": "74F, wind 7mph"
+   "wx": "75F, wind 6mph"
   },
   {
    "away": "Kansas City Royals",
@@ -105,9 +105,9 @@
    "home_sp": NaN,
    "p_home": 55.6,
    "raw_total": 9.03,
-   "adj_total": 8.71,
+   "adj_total": 8.72,
    "park": "park -3%",
-   "wx": "65F, wind 8mph"
+   "wx": "66F, wind 7mph"
   },
   {
    "away": "Philadelphia Phillies",
@@ -117,9 +117,9 @@
    "home_sp": "Andrew Abbott",
    "p_home": 48.4,
    "raw_total": 8.99,
-   "adj_total": 10.13,
+   "adj_total": 10.15,
    "park": "park +12%",
-   "wx": "77F, wind 5mph"
+   "wx": "78F, wind 4mph"
   },
   {
    "away": "Cleveland Guardians",
@@ -129,9 +129,9 @@
    "home_sp": "Taj Bradley",
    "p_home": 58.8,
    "raw_total": 8.96,
-   "adj_total": 8.89,
+   "adj_total": 8.9,
    "park": "park -1%",
-   "wx": "73F, wind 2mph"
+   "wx": "74F, wind 0mph"
   },
   {
    "away": "Boston Red Sox",
@@ -143,7 +143,7 @@
    "raw_total": 8.74,
    "adj_total": 8.69,
    "park": "park -1%",
-   "wx": "74F, wind 5mph"
+   "wx": "74F, wind 6mph"
   },
   {
    "away": "Los Angeles Angels",
@@ -155,7 +155,7 @@
    "raw_total": 8.59,
    "adj_total": 9.02,
    "park": "park +4%",
-   "wx": "89F, wind 2mph (retract: halved)"
+   "wx": "90F, wind 4mph (retract: halved)"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -165,9 +165,9 @@
    "home_sp": "Germ\u00e1n M\u00e1rquez",
    "p_home": 52.2,
    "raw_total": 9.06,
-   "adj_total": 8.58,
+   "adj_total": 8.59,
    "park": "park -5%",
-   "wx": "67F, wind 3mph"
+   "wx": "68F, wind 4mph"
   },
   {
    "away": "Toronto Blue Jays",
@@ -179,7 +179,7 @@
    "raw_total": 8.46,
    "adj_total": 7.84,
    "park": "park -6%",
-   "wx": "55F, wind 8mph"
+   "wx": "56F, wind 8mph"
   },
   {
    "away": "Colorado Rockies",
@@ -189,9 +189,9 @@
    "home_sp": "Justin Wrobleski",
    "p_home": 69.9,
    "raw_total": 10.23,
-   "adj_total": 9.98,
+   "adj_total": 10.01,
    "park": "park -2%",
-   "wx": "66F, wind 2mph"
+   "wx": "68F, wind 2mph"
   }
  ],
  "ratings": [
@@ -376,18 +376,8 @@
    "net": 0.897
   }
  ],
- "edges": [
-  {
-   "game": "Seattle Mariners @ Miami Marlins",
-   "bet": "Seattle Mariners",
-   "price": 110,
-   "book": "Bovada",
-   "fair": 0.4767,
-   "ev_pct": 0.11,
-   "kelly_frac": 0.00026
-  }
- ],
- "edge_note": "",
+ "edges": [],
+ "edge_note": "no +EV sides vs consensus right now",
  "parlays": [],
  "near_parlays": [],
  "hr_board": [],
