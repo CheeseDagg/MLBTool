@@ -87,7 +87,7 @@ def weather_mult(temp_f, wind_mph, roof):
 def resolve_venue(venue, table):
     """Exact -> case-insensitive -> containment (longest key wins).
     Survives sponsor renames like 'UNIQLO Field at Dodger Stadium'."""
-    if not venue: return None
+    if not isinstance(venue, str) or not venue.strip(): return None
     if venue in table: return venue
     low = {k.lower(): k for k in table}
     v = venue.lower()

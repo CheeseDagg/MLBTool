@@ -129,7 +129,7 @@ def dec_from_am(a):
 def resolve_venue(venue, table):
     """Exact -> case-insensitive -> containment (longest key wins).
     Survives sponsor renames like 'UNIQLO Field at Dodger Stadium'."""
-    if not venue: return None
+    if not isinstance(venue, str) or not venue.strip(): return None
     if venue in table: return venue
     low = {k.lower(): k for k in table}
     v = venue.lower()
@@ -249,10 +249,11 @@ def build_board(batters, pitchers, sched, temps, props=None):
                 p_pa = min(base * eff * sp_eff * tmult, CAP_PPA)
                 pa_est = max(PA_TOP - 0.09 * (slot - 1), 3.4)
                 p_game = 1 - (1 - p_pa) ** pa_est
+                sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
                 row = {
                     "player": b["name"], "team": fg(team_full) or team_full,
                     "opp": fg(opp_full) or opp_full,
-                    "opp_sp": (opp_sp_name or "?") + ("" if matched else " *"),
+                    "opp_sp": sp_disp + ("" if matched else " *"),
                     "venue": g["venue"], "slot": slot,
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
@@ -419,12 +420,17 @@ def todays_sched():
         sys.exit("need data/schedule*.csv — run mlb_data.py first")
     import pandas as pd
     sc = pd.read_csv(hits[-1])
+    def _cs(x):
+        """clean string from CSV: pandas NaN (a truthy float!) -> None."""
+        return x.strip() if isinstance(x, str) and x.strip() else None
     out = []
     for _, r in sc.iterrows():
-        out.append({"home": r.get("home"), "away": r.get("away"),
-                    "venue": r.get("venue", "") or "",
-                    "home_sp": r.get("home_prob_pitcher"),
-                    "away_sp": r.get("away_prob_pitcher")})
+        home, away = _cs(r.get("home")), _cs(r.get("away"))
+        if not home or not away: continue
+        out.append({"home": home, "away": away,
+                    "venue": _cs(r.get("venue")) or "",
+                    "home_sp": _cs(r.get("home_prob_pitcher")),
+                    "away_sp": _cs(r.get("away_prob_pitcher"))})
     return out
 
 def pull_temps(venues):
@@ -555,6 +561,16 @@ def selftest():
     # 7. slot PA math: slot 1 must project above same-rate slot 9 (use fillers)
     # 8. JSON-serializable
     json.dumps(rows)
+    # 9. REGRESSION (run #9 crash): TBD starter (pandas NaN) + unknown venue must
+    #    build rows, price the SP neutral, and label it TBD — never crash.
+    nan = float("nan")
+    sched_tbd = [{"home": "New York Yankees", "away": "Boston Red Sox",
+                  "venue": "", "home_sp": None, "away_sp": nan}]
+    r_tbd, _ = build_board(bat, pit, sched_tbd, {})
+    assert r_tbd, "TBD-starter game built no rows"
+    samp = r_tbd[0]
+    assert samp["opp_sp"] in ("TBD *",) and samp["sp_fac"] == 1.0, samp["opp_sp"]
+    json.dumps(r_tbd)
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0
