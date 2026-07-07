@@ -29,6 +29,7 @@ jobs:
           python mlb_statcast.py
           python mlb_data.py || true
           python mlb_odds.py || true
+          python mlb_grade.py || true
           python mlb_hr.py || true
           python mlb_publish.py
       - name: Validate slate.json is browser-parseable
@@ -41,7 +42,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --mixed origin/main
-            git add mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv
+            git add mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv mlb/data/hr_graded.csv
             if git diff --cached --quiet; then
               echo "Slate unchanged vs published -- nothing to commit."
               exit 0
