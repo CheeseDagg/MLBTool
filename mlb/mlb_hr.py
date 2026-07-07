@@ -346,10 +346,15 @@ def pitcher_zone_mix(df, stand):
     return {"w": w, "n": n}
 
 def heat_factor(bat_prof, pit_mix):
-    """Overlap multiplier ~1.0, clipped. None if either side missing."""
+    """Overlap multiplier ~1.0, clipped. None if either side missing.
+    Key-agnostic: cached profiles come back from JSON with STRING zone keys."""
     if not bat_prof or not pit_mix: return None
-    num = sum(pit_mix["w"].get(z, 0.0) * bat_prof["z"].get(z, bat_prof["ov"]) for z in ZONES)
-    cov = sum(pit_mix["w"].get(z, 0.0) for z in ZONES) or 1.0
+    bz, pw = bat_prof["z"], pit_mix["w"]
+    gb = lambda z: bz.get(z, bz.get(str(z), bat_prof["ov"]))
+    gw = lambda z: pw.get(z, pw.get(str(z), 0.0))
+    num = sum(gw(z) * gb(z) for z in ZONES)
+    cov = sum(gw(z) for z in ZONES)
+    if cov <= 0: return None                      # unusable mix -> no factor, not a fake floor
     raw = (num / cov) / bat_prof["ov"]
     return min(max(raw, HEAT_CLIP[0]), HEAT_CLIP[1])
 
@@ -917,6 +922,17 @@ def selftest():
     assert hr_weather_mult(95, "dome", 20, 0, "Yankee Stadium")[0] == 1.0
     m_unk, t_unk = hr_weather_mult(80, "open", 14, 0, "Estadio Nowhere")
     assert abs(m_unk - (1+0.008*10)) < 1e-9 and "wind" not in t_unk 
+    # 14. REGRESSION (uniform -15% board): profiles cached through JSON come back
+    #     with STRING zone keys — the factor must be identical fresh vs reloaded.
+    bp = {"z": {z: 0.01 + (0.02 if z == 5 else 0) for z in [1,2,3,4,5,6,7,8,9,11,12,13,14]},
+          "ov": 0.012, "n": 2000}
+    pm = {"w": {5: 0.5, 13: 0.5}, "n": 1500}
+    f_fresh = heat_factor(bp, pm)
+    bp2, pm2 = json.loads(json.dumps(bp)), json.loads(json.dumps(pm))
+    f_cached = heat_factor(bp2, pm2)
+    assert f_fresh is not None and abs(f_fresh - f_cached) < 1e-12, (f_fresh, f_cached)
+    assert f_fresh > 1.02, f_fresh                      # zone-5 heavy mix must read hot, not floor
+    assert heat_factor(bp, {"w": {}, "n": 500}) is None  # zero coverage -> None, never a fake 0.85
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0
