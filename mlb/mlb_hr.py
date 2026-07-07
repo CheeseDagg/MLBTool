@@ -150,7 +150,7 @@ def hr_park(venue):
     raw, conf = HR_PARKS[key] if key else HR_DEFAULT
     eff = 1 + ((raw - 100) / 100.0) * conf
     pct = (eff - 1) * 100
-    lab = "park ~" if abs(pct) < 0.5 else (f"park +{pct:.0f}%" if pct > 0 else f"park {pct:.0f}%")
+    lab = "park avg" if abs(pct) < 0.5 else (f"park +{pct:.0f}%" if pct > 0 else f"park {pct:.0f}%")
     if conf == 0: lab += " [unknown]"
     elif conf < 0.9: lab += " [low-conf]"
     return eff, lab

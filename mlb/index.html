@@ -153,6 +153,37 @@ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
 });
 const pct=x=>x.toFixed(1)+'%';
 function bar(p){return `<div class="bar"><i style="width:${p}%"></i></div>`}
+let HRD=null, HRSORT={key:null, dir:-1};
+function hrSort(k){
+  if(HRSORT.key===k){ HRSORT.dir*=-1; } else { HRSORT={key:k, dir:-1}; }
+  renderHomers();
+}
+function renderHomers(){
+  if(!HRD) return;
+  const rows=HRD.rows.slice();
+  if(!rows.length){ if(HRD.note) $('hrNote').textContent=HRD.note; return; }
+  const hasEV=rows.some(r=>r.ev_pct!==undefined);
+  const key=HRSORT.key||(hasEV?'ev_pct':'hr_pct');
+  const val=r=>{ const v=r[key]; return (key==='fair')?parseInt(r.fair)||0:(v===undefined?-1e9:v); };
+  rows.sort((a,b)=>(val(b)-val(a))*(HRSORT.dir===-1?1:-1));
+  const arrow=k=>(HRSORT.key||(hasEV?'ev_pct':'hr_pct'))===k?(HRSORT.dir===-1?' ▾':' ▴'):'';
+  const th=(k,label,cls)=>`<th class="${cls}" style="cursor:pointer" title="click to sort" onclick="hrSort('${k}')">${label}${arrow(k)}</th>`;
+  $('hrNote').textContent=HRD.note;
+  $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
+  ${th('hr_pct','model HR%','num')}<th></th>${th('fair','fair','num')}`+
+  (hasEV?`<th class="num">best book</th>${th('ev_pct','EV','num')}`:``)+
+  `<th class="hide-m">applied</th></tr>`+
+  rows.map(r=>`<tr>
+    <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
+    <td class="hide-m dim">${r.opp_sp}<br>vs ${r.opp} <span class="dim">(sp ${r.sp_fac}x)</span></td>
+    <td class="num"><b>${r.hr_pct}%</b></td>
+    <td>${bar(Math.min(r.hr_pct*2.2,100))}</td>
+    <td class="num">${r.fair}</td>`+
+    (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
+    <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
+    `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span></td>
+  </tr>`).join('')+`</table>`;
+}
 function render(d){
   $('meta').textContent=`updated ${new Date(d.generated).toLocaleString()} · league ${d.league_rpg} r/tm/g · xwOBA for ${d.xwoba_pitchers} pitchers`;
   // slate
@@ -202,25 +233,10 @@ function render(d){
   d.ratings.map((r,i)=>`<tr><td class="dim">${i+1}</td><td>${r.team}</td>
     <td class="num">${r.O.toFixed(3)}</td><td class="num">${r.D.toFixed(3)}</td>
     <td class="num"><b>${r.net.toFixed(3)}</b></td><td>${bar(Math.min((r.net-0.8)/0.55*100,100))}</td></tr>`).join('')+`</table>`;
-  // homers
-  if(d.hr_board && d.hr_board.length){
-    const hasEV=d.hr_board.some(r=>r.ev_pct!==undefined);
-    $('hrNote').textContent=d.hr_note||'';
-    $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
-    <th class="num">model HR%</th><th></th><th class="num">fair</th>`+
-    (hasEV?`<th class="num">best book</th><th class="num">EV</th>`:``)+
-    `<th class="hide-m">applied</th></tr>`+
-    d.hr_board.map(r=>`<tr>
-      <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
-      <td class="hide-m dim">${r.opp_sp}<br>vs ${r.opp} <span class="dim">(sp ${r.sp_fac}x)</span></td>
-      <td class="num"><b>${r.hr_pct}%</b></td>
-      <td>${bar(Math.min(r.hr_pct*2.2,100))}</td>
-      <td class="num">${r.fair}</td>`+
-      (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
-      <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
-      `<td class="hide-m"><span class="pill">${r.park}</span> <span class="pill">${r.temp}</span></td>
-    </tr>`).join('')+`</table>`;
-  } else if(d.hr_note){ $('hrNote').textContent=d.hr_note; }
+  // homers (sortable)
+  HRD = {rows: d.hr_board||[], note: d.hr_note||''};
+  renderHomers();
+  // backtest
   // backtest
   const b=d.backtest;
   $('btBody').innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
