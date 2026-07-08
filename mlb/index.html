@@ -261,6 +261,10 @@ function render(d){
       const e=cal.ev_tier;
       h+=`<div class="sub" style="margin-top:10px">+EV tier, flat 1u at logged best price: <b>${e.hits}/${e.n}</b> hit · ROI <b style="color:${e.roi>=0?'var(--acc2)':'var(--red)'}">${e.roi>=0?'+':''}${e.roi}%</b></div>`;
     }
+    if(cal.top_tier){
+      const t=cal.top_tier;
+      h+=`<div class="sub">Top-Likelihood tier (daily top-5 by model HR%, EV ignored — house doctrine), flat 1u: <b>${t.hits}/${t.n}</b> hit · ROI <b style="color:${t.roi>=0?'var(--acc2)':'var(--red)'}">${t.roi>=0?'+':''}${t.roi}%</b></div>`;
+    }
     $('hrCal').innerHTML=h;
   } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
   // backtest

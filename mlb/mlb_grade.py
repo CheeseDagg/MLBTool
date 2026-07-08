@@ -172,6 +172,25 @@ def summarize(rows):
         panel["ev_tier"] = {"n": len(ev),
                             "hits": sum(1 for r in ev if r["outcome"]=="hr"),
                             "roi": round(100*pl/len(ev),1)}
+    # Top-Likelihood tier: the house doctrine — never pass on a likely outcome
+    # because EV is negative. Each day's top-5 by model HR% with a logged price,
+    # flat 1u, EV ignored. Graded head-to-head against the +EV tier above.
+    by_date = {}
+    for r in live:
+        if r.get("book_price") in ("", None): continue
+        by_date.setdefault(r["date"], []).append(r)
+    tops = []
+    for d0, rows_d in by_date.items():
+        tops += sorted(rows_d, key=lambda r: -float(r["hr_pct"]))[:5]
+    if tops:
+        pl = 0.0
+        for r in tops:
+            d = _dec(r["book_price"])
+            if d is None: continue
+            pl += (d-1) if r["outcome"]=="hr" else -1.0
+        panel["top_tier"] = {"n": len(tops),
+                             "hits": sum(1 for r in tops if r["outcome"]=="hr"),
+                             "roi": round(100*pl/len(tops),1)}
     return panel
 
 # ---------------------------------------------------------------------------
@@ -261,6 +280,10 @@ def selftest():
     assert hplus["n"]==2 and hplus["actual"]==50.0
     ev = p["ev_tier"]     # A wins at +200 (+2u), B loses (-1u) -> +1u/2 = +50%
     assert ev["n"]==2 and ev["hits"]==1 and ev["roi"]==50.0
+    # top-likelihood tier: A(30%,+200,hr) and B(30%,+300,no) and C(10%) -> top5 of the
+    # date = all 3 priced rows... C has no price -> excluded; A+B: +2u-1u = +50% ROI
+    tt = p["top_tier"]
+    assert tt["n"]==2 and tt["hits"]==1 and tt["roi"]==50.0, tt
     json.dumps(p)
     print("GRADER SELFTEST PASS — settle/void/pending/DH + Brier/buckets/lift/ROI all exact")
     return 0
