@@ -211,7 +211,7 @@ function renderHomers(){
   `<th class="hide-m">applied</th></tr>`+
   rows.map(r=>`<tr>
     <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
-    <td class="hide-m dim">${r.opp_sp}<br>vs ${r.opp} <span class="dim">(sp ${r.sp_fac}x)</span></td>
+    <td class="hide-m dim">${r.opp_sp}<br>vs ${r.opp} <span class="dim" ${r.sp_small?`title="starter under 60 BF — components mostly league-average by design" style="color:var(--acc)"`:``}>(sp ${r.sp_fac}x${r.sp_small?` · small n`:``})</span></td>
     <td class="num"><b>${r.hr_pct}%</b></td>
     <td>${bar(Math.min(r.hr_pct*2.2,100))}</td>
     <td class="num">${r.fair}</td>`+

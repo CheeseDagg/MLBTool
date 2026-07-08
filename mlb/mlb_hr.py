@@ -516,10 +516,37 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     if Lb <= 0: Lb = 0.031
     if Lp <= 0: Lp = Lb
 
-    pit_fac = {}
+    # Composite starter factor. HR/BF is the slowest-stabilizing pitcher stat
+    # because it bundles skill (contact allowed, fly-ball rate — both stabilize
+    # ~80 BF) with luck (HR per fly ball — barely signal under ~400 FB). When
+    # component data exists (statsapi tier: so/bb/ao) decompose and shrink each
+    # at its own speed; league-average inputs compose to exactly 1.000 by
+    # construction. Without components, legacy HR/BF shrink (K_PIT) unchanged.
+    K_CT, K_FB, K_HRFB = 80.0, 80.0, 400.0
+    comp = [p for p in pitchers if p.get("so") is not None and p.get("ao") is not None]
+    CL = FL = HL = None
+    if comp:
+        tb = sum(p["bf"] for p in comp) or 1
+        tct = sum(p["bf"] - p["so"] - p.get("bb", 0) for p in comp)
+        tfb = sum(p["ao"] + p["hr"] for p in comp)
+        thr = sum(p["hr"] for p in comp)
+        CL = tct / tb                      # league contact (BIP+HR) per BF
+        FL = tfb / tct if tct else 0.0     # league fly per contact
+        HL = thr / tfb if tfb else 0.0     # league HR per fly
+    pit_fac, pit_bf = {}, {}
     for p in pitchers:
-        rate = (p["hr"] + K_PIT * Lp) / (p["bf"] + K_PIT)
-        pit_fac[norm(p["name"])] = min(max(rate / Lp, 0.60), 1.60)
+        n = norm(p["name"]); pit_bf[n] = p["bf"]
+        if CL and p.get("so") is not None and p.get("ao") is not None:
+            ct = p["bf"] - p["so"] - p.get("bb", 0)
+            fb = p["ao"] + p["hr"]
+            c = ((ct + K_CT * CL) / (p["bf"] + K_CT)) / CL
+            f = (((fb + K_FB * FL) / (ct + K_FB)) / FL) if FL else 1.0
+            h = (((p["hr"] + K_HRFB * HL) / (fb + K_HRFB)) / HL) if HL else 1.0
+            fac = c * f * h
+        else:
+            rate = (p["hr"] + K_PIT * Lp) / (p["bf"] + K_PIT)
+            fac = rate / Lp
+        pit_fac[n] = min(max(fac, 0.60), 1.60)
 
     by_team = {}
     seen_name = {}                                  # norm name -> index of kept batter
@@ -614,7 +641,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
-                    "sp_fac": round(fac, 2), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "lu": ("card" if cards.get(team_full) else "proj"),
+                    "sp_fac": round(fac, 2), "sp_small": bool(matched and pit_bf.get(norm(opp_sp_name or ""), 999) < 60), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "lu": ("card" if cards.get(team_full) else "proj"),
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
@@ -727,7 +754,10 @@ def _statsapi_rows(group):
                         bf = int(round(ip * 4.25))
                     if name and bf >= 40:
                         out.append({"name": name, "bf": bf, "hr": hr,
-                                    "team": team, "gs": int(st.get("gamesStarted", 0) or 0)})
+                                    "team": team, "gs": int(st.get("gamesStarted", 0) or 0),
+                                    "so": int(st.get("strikeOuts", 0) or 0),
+                                    "bb": int(st.get("baseOnBalls", 0) or 0),
+                                    "ao": int(st.get("airOuts", 0) or 0)})
             except (TypeError, ValueError):
                 continue
         if len(splits) < limit: break
@@ -1043,6 +1073,40 @@ def selftest():
     rices = [r for r in rr if r["player"] == "Ben Rice"]
     assert len(rices) == 1, f"phantom survived on teams: {[r['team'] for r in rices]}"
     assert rices[0]["team"] in ("NYY", "New York Yankees"), rices[0]["team"]
+    # 20-22. COMPOSITE PITCHER FACTOR (the Burns fix)
+    # 20: centering by construction — in an all-average pool, every factor is exactly 1.000
+    avg = [{"name": f"avg{i}", "bf": 400, "hr": 12, "so": 90, "bb": 30, "ao": 108} for i in range(10)]
+    g1 = [{"home": "New York Yankees", "away": "Boston Red Sox", "venue": "Yankee Stadium",
+           "home_sp": "avg0", "away_sp": "avg1"}]
+    rows20, _ = build_board(bat, avg, g1, {})
+    assert all(r["sp_fac"] == 1.0 for r in rows20), [r["sp_fac"] for r in rows20]
+    # 21: with outliers in the pool — elite-K arm (100 BF) drops well below 1.0;
+    #     low-K flyball arm reads high; HR/FB luck outlier moves far less than raw HR/BF would
+    burns = {"name": "Ace Burns", "bf": 100, "hr": 3, "so": 46, "bb": 6, "ao": 18}
+    gopher = {"name": "Gopher Guy", "bf": 400, "hr": 12, "so": 80, "bb": 30, "ao": 150}
+    lucky = {"name": "HRFB Outlier", "bf": 100, "hr": 8, "so": 22, "bb": 8, "ao": 22}
+    pool = avg + [burns, gopher, lucky]
+    g2 = [{"home": "New York Yankees", "away": "Boston Red Sox", "venue": "Yankee Stadium",
+           "home_sp": "Gopher Guy", "away_sp": "Ace Burns"},
+          {"home": "New York Mets", "away": "Atlanta Braves", "venue": "Citi Field",
+           "home_sp": "HRFB Outlier", "away_sp": "avg0"}]
+    rows21, _ = build_board(bat + [{"name": "Met Bat", "fg_team": "New York Mets", "pa": 300, "hr": 10},
+                                   {"name": "Brave Bat", "fg_team": "Atlanta Braves", "pa": 300, "hr": 10}],
+                            pool, g2, {})
+    f_burns = [r for r in rows21 if r["team"] == "NYY"][0]["sp_fac"]
+    f_gopher = [r for r in rows21 if r["team"] == "BOS"][0]["sp_fac"]
+    f_lucky = [r for r in rows21 if r["team"] == "ATL"][0]["sp_fac"]
+    assert f_burns <= 0.90, f_burns
+    assert f_gopher >= 1.10, f_gopher
+    assert f_lucky <= 1.13 and f_lucky < f_gopher, (f_lucky, f_gopher)
+    # raw HR/BF would have priced the luck outlier at (8+200*Lp)/(100+200)/Lp — far higher
+    # 22: small-sample caveat flag under 60 BF; legacy path (no so/ao) still works
+    tiny = {"name": "Tiny Arm", "bf": 45, "hr": 1, "so": 15, "bb": 4, "ao": 12}
+    g3 = [{"home": "New York Yankees", "away": "Boston Red Sox", "venue": "Yankee Stadium",
+           "home_sp": "avg0", "away_sp": "Tiny Arm"}]
+    rows22, _ = build_board(bat, avg + [tiny], g3, {})
+    assert [r for r in rows22 if r["team"] == "NYY"][0]["sp_small"] is True
+    assert [r for r in rows22 if r["team"] == "BOS"][0]["sp_small"] is False
     # 12. REAL LINEUPS: posted card overrides usage — order, exclusion, call-up prior
     card = {"New York Yankees": [("NY filler4", 1), ("Slug McPower", 2), ("Callup Kid", 3),
             ("Mid Bat", 4), ("Slap Hitter", 5), ("NY filler0", 6), ("NY filler1", 7),
@@ -1150,7 +1214,7 @@ def _build():
     note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
             f"{lu_note} · "
             f"{hnote} (league factors, starter share) · {heat_note} · {pen_note} · {brl_note} · "
-            "wind not modeled (speed-only feed) · park HR factors are seed approximations "
+            "wind: direction x park bearing (conf-shrunk) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
             "warm-climate open parks) · " + pnote +
             (" · sorted by model HR% · EV screen appended" if have_ev else " · sorted by model HR% (no props matched)"))
