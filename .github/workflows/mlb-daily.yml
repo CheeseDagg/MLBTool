@@ -35,6 +35,7 @@ jobs:
           python mlb_publish.py
       - name: Pull futures (morning run only — odds move slowly, saves API quota)
         if: github.event.schedule == '17 13 * * *' || github.event_name == 'workflow_dispatch'
+        working-directory: mlb
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
