@@ -1,0 +1,307 @@
+{
+ "generated": "2026-07-08T19:27:34+00:00",
+ "market": "World Series",
+ "rows": [
+  {
+   "team": "Los Angeles Dodgers",
+   "cons_pct": 28.8,
+   "fair": "+248",
+   "best_price": 200,
+   "book": "betonlineag",
+   "edge_pct": -13.7,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "New York Yankees",
+   "cons_pct": 12.7,
+   "fair": "+685",
+   "best_price": 550,
+   "book": "betrivers",
+   "edge_pct": -17.2,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Seattle Mariners",
+   "cons_pct": 7.9,
+   "fair": "+1164",
+   "best_price": 1000,
+   "book": "betonlineag",
+   "edge_pct": -13.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Milwaukee Brewers",
+   "cons_pct": 7.5,
+   "fair": "+1229",
+   "best_price": 1000,
+   "book": "betonlineag",
+   "edge_pct": -17.2,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Atlanta Braves",
+   "cons_pct": 6.8,
+   "fair": "+1374",
+   "best_price": 1300,
+   "book": "draftkings",
+   "edge_pct": -5.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Philadelphia Phillies",
+   "cons_pct": 6.2,
+   "fair": "+1509",
+   "best_price": 1500,
+   "book": "betrivers",
+   "edge_pct": -0.6,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Tampa Bay Rays",
+   "cons_pct": 4.5,
+   "fair": "+2111",
+   "best_price": 2000,
+   "book": "betmgm",
+   "edge_pct": -5.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Chicago Cubs",
+   "cons_pct": 3.6,
+   "fair": "+2679",
+   "best_price": 2500,
+   "book": "betrivers",
+   "edge_pct": -6.4,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Texas Rangers",
+   "cons_pct": 3.1,
+   "fair": "+3093",
+   "best_price": 2800,
+   "book": "betmgm",
+   "edge_pct": -9.2,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Toronto Blue Jays",
+   "cons_pct": 2.2,
+   "fair": "+4357",
+   "best_price": 4000,
+   "book": "betrivers",
+   "edge_pct": -8.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Cleveland Guardians",
+   "cons_pct": 2.0,
+   "fair": "+4822",
+   "best_price": 4000,
+   "book": "betonlineag",
+   "edge_pct": -16.7,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Houston Astros",
+   "cons_pct": 1.9,
+   "fair": "+5083",
+   "best_price": 5500,
+   "book": "betmgm",
+   "edge_pct": 8.1,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Chicago White Sox",
+   "cons_pct": 1.8,
+   "fair": "+5422",
+   "best_price": 4500,
+   "book": "draftkings",
+   "edge_pct": -16.7,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Detroit Tigers",
+   "cons_pct": 1.3,
+   "fair": "+7452",
+   "best_price": 7500,
+   "book": "betonlineag",
+   "edge_pct": 0.6,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Pittsburgh Pirates",
+   "cons_pct": 1.1,
+   "fair": "+9084",
+   "best_price": 8000,
+   "book": "draftkings",
+   "edge_pct": -11.8,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Boston Red Sox",
+   "cons_pct": 1.1,
+   "fair": "+9309",
+   "best_price": 8000,
+   "book": "betonlineag",
+   "edge_pct": -13.9,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Baltimore Orioles",
+   "cons_pct": 1.0,
+   "fair": "+9623",
+   "best_price": 9000,
+   "book": "draftkings",
+   "edge_pct": -6.4,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Diego Padres",
+   "cons_pct": 0.8,
+   "fair": "+12024",
+   "best_price": 10000,
+   "book": "draftkings",
+   "edge_pct": -16.7,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "St. Louis Cardinals",
+   "cons_pct": 0.7,
+   "fair": "+15125",
+   "best_price": 17000,
+   "book": "draftkings",
+   "edge_pct": 12.3,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Minnesota Twins",
+   "cons_pct": 0.7,
+   "fair": "+15125",
+   "best_price": 15000,
+   "book": "betrivers",
+   "edge_pct": -0.8,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Miami Marlins",
+   "cons_pct": 0.6,
+   "fair": "+15374",
+   "best_price": 13000,
+   "book": "draftkings",
+   "edge_pct": -15.3,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Arizona Diamondbacks",
+   "cons_pct": 0.6,
+   "fair": "+15374",
+   "best_price": 15000,
+   "book": "betonlineag",
+   "edge_pct": -2.4,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Athletics",
+   "cons_pct": 0.4,
+   "fair": "+24028",
+   "best_price": 22500,
+   "book": "fanduel",
+   "edge_pct": -6.3,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Washington Nationals",
+   "cons_pct": 0.2,
+   "fair": "+48036",
+   "best_price": 50000,
+   "book": "fanduel",
+   "edge_pct": 4.1,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Los Angeles Angels",
+   "cons_pct": 0.2,
+   "fair": "+61427",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -18.6,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Francisco Giants",
+   "cons_pct": 0.2,
+   "fair": "+61427",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -18.6,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "New York Mets",
+   "cons_pct": 0.2,
+   "fair": "+43354",
+   "best_price": 50000,
+   "book": "fanduel",
+   "edge_pct": 15.3,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Kansas City Royals",
+   "cons_pct": 0.2,
+   "fair": "+60439",
+   "best_price": 50000,
+   "book": "betonlineag",
+   "edge_pct": -17.2,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Cincinnati Reds",
+   "cons_pct": 0.2,
+   "fair": "+43006",
+   "best_price": 40000,
+   "book": "betmgm",
+   "edge_pct": -7.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Colorado Rockies",
+   "cons_pct": 0.1,
+   "fair": "+94830",
+   "best_price": 100000,
+   "book": "betonlineag",
+   "edge_pct": 5.4,
+   "books_n": 5,
+   "shop": true
+  }
+ ],
+ "note": "World Series outrights \u00b7 30 teams priced \u00b7 consensus = median no-vig across books \u00b7 shop flag = best price beats consensus by 1.5%+ (3+ books)"
+}
