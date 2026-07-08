@@ -29,6 +29,7 @@ jobs:
           python mlb_statcast.py
           python mlb_data.py || true
           python mlb_odds.py || true
+          python mlb_futures.py || true
           python mlb_grade.py || true
           python mlb_hr.py || true
           python mlb_publish.py
