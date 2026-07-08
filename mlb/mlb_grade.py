@@ -84,8 +84,9 @@ def fetch_day_results(date_iso):
                 if pit:
                     sp = norm(((t.get("players") or {}).get(f"ID{pit[0]}",{})
                                .get("person") or {}).get("fullName",""))
+                abbr = ((box.get("teams") or {}).get(side, {}).get("team") or {}).get("abbreviation", "")
                 names[side], starters[side] = full, sp
-                entry["teams"][full] = {"bat": bat, "opp_sp": ""}
+                entry["teams"][full] = {"bat": bat, "opp_sp": "", "abbr": abbr}
             # each team's opponent starter
             entry["teams"][names["home"]]["opp_sp"] = starters["away"]
             entry["teams"][names["away"]]["opp_sp"] = starters["home"]
@@ -98,12 +99,20 @@ def settle_row(row, games):
     """-> 'hr' | 'no' | 'void' | 'pending' (pending = team not found in finals)"""
     pn = norm(row.get("player",""))
     want_sp = norm((row.get("opp_sp","") or "").replace(" *","").replace("TBD",""))
+    want_tm = (row.get("team","") or "").strip().upper()
     cands = []
     for g in games:
         for full, t in g["teams"].items():
             if pn in t["bat"]:
                 cands.append(t)
     if not cands: return "pending"
+    if want_tm:
+        # strict guard: the row claims a team; if no candidate box carries that
+        # team, this is a duplicate-name phantom -> void, never inherit outcomes
+        m2 = [t for t in cands if t.get("abbr","").upper() == want_tm]
+        if m2: cands = m2
+        elif len({t.get("abbr","") for t in cands}) >= 1 and all(t.get("abbr") for t in cands):
+            return "void"
     if len(cands) > 1 and want_sp:                 # doubleheader: match by starter
         m = [t for t in cands if t["opp_sp"] == want_sp]
         if len(m) == 1: cands = m
@@ -250,7 +259,7 @@ def selftest():
                     "benched guy": {"pa":0,"hr":0}}},
         "Boston Red Sox": {"opp_sp": "ace groundall",
             "bat": {"sox star": {"pa":5,"hr":0}}}}}]
-    row = lambda **k: dict({"date":"2026-07-07","player":"","opp_sp":"","hr_pct":"20",
+    row = lambda **k: dict({"date":"2026-07-07","player":"","opp_sp":"","team":"","hr_pct":"20",
                             "lu":"card","plat":"","heat":"","ev_pct":"","book_price":""}, **k)
     assert settle_row(row(player="Slug McPower", opp_sp="Gopher Gary"), G) == "hr"
     assert settle_row(row(player="Mid Bat", opp_sp="Gopher Gary"), G) == "no"
@@ -264,6 +273,11 @@ def selftest():
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter One"), G2) == "hr"
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter Two"), G2) == "no"
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter Three"), G2) == "void"
+    # duplicate-name phantom: row claims a team whose box the player isn't in -> void
+    G3 = [{"teams": {"New York Yankees": {"opp_sp": "x", "abbr": "NYY",
+            "bat": {"ben rice": {"pa": 4, "hr": 1}}}}}]
+    assert settle_row(row(player="Ben Rice", opp_sp="Ian Seymour", team="NYY"), G3) == "hr"
+    assert settle_row(row(player="Ben Rice", opp_sp="Seth Lugo", team="NYM"), G3) == "void"
     # summarize math
     rows = [
         row(player="A", hr_pct="30", outcome="hr",  heat="heat +5%", plat="RvL +12%", lu="card", ev_pct="10", book_price="200"),
