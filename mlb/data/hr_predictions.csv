@@ -37,11 +37,11 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-07,Jacob Young,WSN,Tatsuya Imai,9,card,11.7,+754,1050,34.7,park avg,82F,RvR -3%,
 2026-07-07,Mauricio Dubón,ATL,Paul Skenes,5,card,11.5,+767,1300,61.5,park -9%,84F,RvR -3%,
 2026-07-08,Kyle Schwarber,PHI,Chase Burns,2,card,37.7,+166,210,16.8,park +25%,89F,LvR +8%,heat -2%
-2026-07-08,Hunter Goodman,COL,Roki Sasaki,2,proj,32.8,+205,225,6.5,park +5%,84F · wind out 4,RvR -3%,heat +6%
 2026-07-08,Yordan Alvarez,HOU,Foster Griffin,2,card,31.9,+213,230,5.4,park avg,83F · wind out 4,LvL -22%,heat +4%
 2026-07-08,Dillon Dingler,DET,Jeffrey Springs,2,card,30.7,+226,350,38.1,park -5%,88F · wind out 3,RvL +12%,heat -2%
 2026-07-08,Juan Soto,NYM,Steven Cruz,2,card,30.6,+227,235,2.5,park -4%,80F · wind out 7,LvR +8%,heat +13%
 2026-07-08,Bryce Harper,PHI,Chase Burns,1,card,30.2,+231,330,29.8,park +25%,89F,LvR +8%,heat +3%
+2026-07-08,Hunter Goodman,COL,Roki Sasaki,2,proj,28.9,+246,225,-6.1,park +5%,no wx,RvR -3%,heat +6%
 2026-07-08,Esmerlyn Valdez,PIT,Grant Holmes,4,card,27.1,+269,500,62.6,park -9%,86F · wind out 5,RvR -3%,
 2026-07-08,Mike Trout,LAA,MacKenzie Gore,2,card,26.6,+276,,,park +2%,97F · wind out 6 (roof: half),RvL +12%,heat +2%
 2026-07-08,James Wood,WSN,Spencer Arrighetti,1,card,26.5,+278,255,-6.0,park avg,83F · wind out 4,LvR +8%,heat -4%
@@ -70,6 +70,6 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-08,Gabriel Rincones Jr.,PHI,Chase Burns,6,card,19.6,+410,600,37.3,park +25%,89F,LvR +8%,
 2026-07-08,Jared Young,NYM,Steven Cruz,7,card,19.0,+427,600,32.7,park -4%,80F · wind out 7,LvR +8%,heat +2%
 2026-07-08,A.J. Ewing,NYM,Steven Cruz,1,card,16.3,+513,750,38.7,park -4%,80F · wind out 7,LvR +8%,
-2026-07-08,Max Schuemann,NYY,Shane McClanahan,7,card,14.5,+589,900,45.1,park -4% [low-conf],dome,RvL +12%,
+2026-07-08,Max Schuemann,NYY,Shane McClanahan,7,card,14.5,+589,800,30.6,park -4% [low-conf],dome,RvL +12%,
 2026-07-08,Alan Roden,MIN,Slade Cecconi,8,card,12.9,+676,1000,41.7,park -2%,79F,LvR +8%,
 2026-07-08,Luisangel Acuña,CHW,Jake Bennett,9,card,11.5,+769,1150,43.9,park +9%,83F · wind in 5,RvL +12%,

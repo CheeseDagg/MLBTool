@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-08T21:48:55+00:00",
+ "generated": "2026-07-08T21:54:24+00:00",
  "games": [
   {
    "away": "Toronto Blue Jays",
@@ -9,9 +9,9 @@
    "home_sp": "Logan Webb",
    "p_home": 50.2,
    "raw_total": 8.21,
-   "adj_total": 7.74,
+   "adj_total": 7.72,
    "park": "park -6%",
-   "wx": "64F, wind 13mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Chicago Cubs",
@@ -177,9 +177,9 @@
    "home_sp": "Michael King",
    "p_home": 52.4,
    "raw_total": 8.68,
-   "adj_total": 8.32,
+   "adj_total": 8.25,
    "park": "park -5%",
-   "wx": "78F, wind 8mph"
+   "wx": "wx fetch failed (URLError)"
   }
  ],
  "ratings": [
@@ -392,28 +392,6 @@
    "ev_pct": 16.8
   },
   {
-   "player": "Hunter Goodman",
-   "team": "COL",
-   "opp": "LAD",
-   "opp_sp": "Roki Sasaki",
-   "venue": "UNIQLO Field at Dodger Stadium",
-   "slot": 2,
-   "hr_pct": 32.8,
-   "fair": "+205",
-   "park": "park +5%",
-   "temp": "84F \u00b7 wind out 4",
-   "sp_fac": 1.27,
-   "sp_small": false,
-   "plat": "RvR -3%",
-   "heat": "heat +6%",
-   "pen": "pen 0.88x",
-   "brl": "",
-   "lu": "proj",
-   "book_price": 225,
-   "book": "betrivers",
-   "ev_pct": 6.5
-  },
-  {
    "player": "Yordan Alvarez",
    "team": "HOU",
    "opp": "WSN",
@@ -500,6 +478,28 @@
    "book_price": 330,
    "book": "betrivers",
    "ev_pct": 29.8
+  },
+  {
+   "player": "Hunter Goodman",
+   "team": "COL",
+   "opp": "LAD",
+   "opp_sp": "Roki Sasaki",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "slot": 2,
+   "hr_pct": 28.9,
+   "fair": "+246",
+   "park": "park +5%",
+   "temp": "no wx",
+   "sp_fac": 1.27,
+   "sp_small": false,
+   "plat": "RvR -3%",
+   "heat": "heat +6%",
+   "pen": "pen 0.88x",
+   "brl": "",
+   "lu": "proj",
+   "book_price": 225,
+   "book": "betrivers",
+   "ev_pct": -6.1
   },
   {
    "player": "Esmerlyn Valdez",
@@ -1132,9 +1132,9 @@
    "pen": "pen 1.14x",
    "brl": "brl +24%",
    "lu": "card",
-   "book_price": 900,
+   "book_price": 800,
    "book": "betrivers",
-   "ev_pct": 45.1
+   "ev_pct": 30.6
   },
   {
    "player": "Alan Roden",
@@ -1283,7 +1283,7 @@
   }
  },
  "futures": {
-  "generated": "2026-07-08T21:48:48+00:00",
+  "generated": "2026-07-08T21:26:09+00:00",
   "market": "World Series",
   "rows": [
    {
@@ -1447,22 +1447,22 @@
     "shop": false
    },
    {
-    "team": "San Diego Padres",
-    "cons_pct": 1.0,
-    "fair": "+9888",
-    "best_price": 10000,
-    "book": "draftkings",
-    "edge_pct": 1.1,
-    "books_n": 5,
-    "shop": false
-   },
-   {
     "team": "Baltimore Orioles",
     "cons_pct": 1.0,
     "fair": "+9507",
     "best_price": 9000,
     "book": "draftkings",
     "edge_pct": -5.3,
+    "books_n": 5,
+    "shop": false
+   },
+   {
+    "team": "San Diego Padres",
+    "cons_pct": 1.0,
+    "fair": "+9888",
+    "best_price": 10000,
+    "book": "draftkings",
+    "edge_pct": 1.1,
     "books_n": 5,
     "shop": false
    },
@@ -1537,6 +1537,16 @@
     "shop": true
    },
    {
+    "team": "Los Angeles Angels",
+    "cons_pct": 0.2,
+    "fair": "+61675",
+    "best_price": 50000,
+    "book": "betrivers",
+    "edge_pct": -18.9,
+    "books_n": 5,
+    "shop": false
+   },
+   {
     "team": "San Francisco Giants",
     "cons_pct": 0.2,
     "fair": "+61675",
@@ -1563,16 +1573,6 @@
     "best_price": 50000,
     "book": "betonlineag",
     "edge_pct": -17.2,
-    "books_n": 5,
-    "shop": false
-   },
-   {
-    "team": "Los Angeles Angels",
-    "cons_pct": 0.2,
-    "fair": "+61675",
-    "best_price": 50000,
-    "book": "betrivers",
-    "edge_pct": -18.9,
     "books_n": 5,
     "shop": false
    },

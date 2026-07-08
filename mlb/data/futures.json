@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-08T21:48:48+00:00",
+ "generated": "2026-07-08T21:26:09+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -163,22 +163,22 @@
    "shop": false
   },
   {
-   "team": "San Diego Padres",
-   "cons_pct": 1.0,
-   "fair": "+9888",
-   "best_price": 10000,
-   "book": "draftkings",
-   "edge_pct": 1.1,
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Baltimore Orioles",
    "cons_pct": 1.0,
    "fair": "+9507",
    "best_price": 9000,
    "book": "draftkings",
    "edge_pct": -5.3,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Diego Padres",
+   "cons_pct": 1.0,
+   "fair": "+9888",
+   "best_price": 10000,
+   "book": "draftkings",
+   "edge_pct": 1.1,
    "books_n": 5,
    "shop": false
   },
@@ -253,6 +253,16 @@
    "shop": true
   },
   {
+   "team": "Los Angeles Angels",
+   "cons_pct": 0.2,
+   "fair": "+61675",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -18.9,
+   "books_n": 5,
+   "shop": false
+  },
+  {
    "team": "San Francisco Giants",
    "cons_pct": 0.2,
    "fair": "+61675",
@@ -279,16 +289,6 @@
    "best_price": 50000,
    "book": "betonlineag",
    "edge_pct": -17.2,
-   "books_n": 5,
-   "shop": false
-  },
-  {
-   "team": "Los Angeles Angels",
-   "cons_pct": 0.2,
-   "fair": "+61675",
-   "best_price": 50000,
-   "book": "betrivers",
-   "edge_pct": -18.9,
    "books_n": 5,
    "shop": false
   },
