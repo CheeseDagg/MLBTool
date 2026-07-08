@@ -522,7 +522,15 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
         pit_fac[norm(p["name"])] = min(max(rate / Lp, 0.60), 1.60)
 
     by_team = {}
-    for b in batters:
+    seen_name = {}                                  # norm name -> index of kept batter
+    deduped = []
+    for b in sorted(batters, key=lambda x: -x["pa"]):
+        nn = norm(b["name"])
+        if nn in seen_name:
+            continue                                # duplicate name: keep only the higher-PA real player
+        seen_name[nn] = True
+        deduped.append(b)
+    for b in deduped:
         by_team.setdefault(b["fg_team"], []).append(b)
     lineup = {}
     for t, bs in by_team.items():
@@ -1021,6 +1029,20 @@ def selftest():
     assert slug_b["brl"].startswith("brl ") and abs(slug_b["hr_pct"] - slug_0["hr_pct"]) > 0.3
     other = [r for r in r_b if r["player"] == "Mid Bat"][0]
     assert other["brl"] == "" 
+    # 19. PHANTOM (Ben Rice NYM): a duplicate name across two teams must collapse
+    #     to the higher-PA real player — never appear on both teams' boards.
+    #     (Production feeds one consistent team format; fixture mirrors that.)
+    base_bats = [{"name": f"Y{i}", "fg_team": "New York Yankees", "pa": 250 - i, "hr": 10} for i in range(8)]
+    base_bats += [{"name": f"M{i}", "fg_team": "New York Mets", "pa": 250 - i, "hr": 10} for i in range(8)]
+    dup_bats = [{"name": "Ben Rice", "fg_team": "New York Yankees", "pa": 300, "hr": 15},
+                {"name": "Ben Rice", "fg_team": "New York Mets", "pa": 8, "hr": 1}]
+    two_g = [{"home": "New York Yankees", "away": "New York Mets", "venue": "Yankee Stadium",
+              "home_sp": "arm x", "away_sp": "arm y"}]
+    rr, _ = build_board(dup_bats + base_bats, [{"name": "arm x", "bf": 300, "hr": 10},
+                                               {"name": "arm y", "bf": 300, "hr": 10}], two_g, {})
+    rices = [r for r in rr if r["player"] == "Ben Rice"]
+    assert len(rices) == 1, f"phantom survived on teams: {[r['team'] for r in rices]}"
+    assert rices[0]["team"] in ("NYY", "New York Yankees"), rices[0]["team"]
     # 12. REAL LINEUPS: posted card overrides usage — order, exclusion, call-up prior
     card = {"New York Yankees": [("NY filler4", 1), ("Slug McPower", 2), ("Callup Kid", 3),
             ("Mid Bat", 4), ("Slap Hitter", 5), ("NY filler0", 6), ("NY filler1", 7),
