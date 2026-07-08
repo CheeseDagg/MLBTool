@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-08T20:23:08+00:00",
+ "generated": "2026-07-08T21:26:09+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -183,16 +183,6 @@
    "shop": false
   },
   {
-   "team": "St. Louis Cardinals",
-   "cons_pct": 0.7,
-   "fair": "+15125",
-   "best_price": 17000,
-   "book": "draftkings",
-   "edge_pct": 12.3,
-   "books_n": 5,
-   "shop": true
-  },
-  {
    "team": "Miami Marlins",
    "cons_pct": 0.7,
    "fair": "+15125",
@@ -211,6 +201,16 @@
    "edge_pct": -0.8,
    "books_n": 5,
    "shop": false
+  },
+  {
+   "team": "St. Louis Cardinals",
+   "cons_pct": 0.7,
+   "fair": "+15125",
+   "best_price": 17000,
+   "book": "draftkings",
+   "edge_pct": 12.3,
+   "books_n": 5,
+   "shop": true
   },
   {
    "team": "Arizona Diamondbacks",
@@ -243,7 +243,27 @@
    "shop": true
   },
   {
+   "team": "New York Mets",
+   "cons_pct": 0.2,
+   "fair": "+43354",
+   "best_price": 50000,
+   "book": "fanduel",
+   "edge_pct": 15.3,
+   "books_n": 5,
+   "shop": true
+  },
+  {
    "team": "Los Angeles Angels",
+   "cons_pct": 0.2,
+   "fair": "+61675",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -18.9,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Francisco Giants",
    "cons_pct": 0.2,
    "fair": "+61675",
    "best_price": 50000,
@@ -263,32 +283,12 @@
    "shop": false
   },
   {
-   "team": "New York Mets",
-   "cons_pct": 0.2,
-   "fair": "+43354",
-   "best_price": 50000,
-   "book": "fanduel",
-   "edge_pct": 15.3,
-   "books_n": 5,
-   "shop": true
-  },
-  {
    "team": "Kansas City Royals",
    "cons_pct": 0.2,
    "fair": "+60439",
    "best_price": 50000,
    "book": "betonlineag",
    "edge_pct": -17.2,
-   "books_n": 5,
-   "shop": false
-  },
-  {
-   "team": "San Francisco Giants",
-   "cons_pct": 0.2,
-   "fair": "+61675",
-   "best_price": 50000,
-   "book": "betrivers",
-   "edge_pct": -18.9,
    "books_n": 5,
    "shop": false
   },
