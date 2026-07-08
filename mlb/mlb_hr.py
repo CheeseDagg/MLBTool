@@ -524,7 +524,13 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     # construction. Without components, legacy HR/BF shrink (K_PIT) unchanged.
     K_CT, K_FB, K_HRFB = 80.0, 80.0, 400.0
     comp = [p for p in pitchers if p.get("so") is not None and p.get("ao") is not None]
-    CL = FL = HL = None
+    kpool = [p for p in pitchers if p.get("so") is not None]
+    CL = FL = HL = C2 = H2 = None
+    if kpool:
+        tb2 = sum(p["bf"] for p in kpool) or 1
+        tct2 = sum(p["bf"] - p["so"] - p.get("bb", 0) for p in kpool)
+        C2 = tct2 / tb2
+        H2 = (sum(p["hr"] for p in kpool) / tct2) if tct2 else 0.0
     if comp:
         tb = sum(p["bf"] for p in comp) or 1
         tct = sum(p["bf"] - p["so"] - p.get("bb", 0) for p in comp)
@@ -543,6 +549,14 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
             f = (((fb + K_FB * FL) / (ct + K_FB)) / FL) if FL else 1.0
             h = (((p["hr"] + K_HRFB * HL) / (fb + K_HRFB)) / HL) if HL else 1.0
             fac = c * f * h
+        elif C2 and p.get("so") is not None:
+            # partial composite (FG/BREF tier: K and BB known, batted-ball mix not):
+            # fast-stabilizing contact skill x hard-shrunk HR-per-contact
+            K_H2 = 350.0
+            ct = p["bf"] - p["so"] - p.get("bb", 0)
+            c = ((ct + K_CT * C2) / (p["bf"] + K_CT)) / C2
+            h = (((p["hr"] + K_H2 * H2) / (ct + K_H2)) / H2) if H2 else 1.0
+            fac = c * h
         else:
             rate = (p["hr"] + K_PIT * Lp) / (p["bf"] + K_PIT)
             fac = rate / Lp
@@ -687,7 +701,7 @@ def _rows_from_batting(df):
 def _rows_from_pitching(df):
     """FG or BREF pitching frame -> [{name, bf, hr}]. BF from TBF/BF, else IP*4.25."""
     nc = _col(df, "Name"); bc = _col(df, "TBF", "BF"); ic = _col(df, "IP")
-    hc = _col(df, "HR")
+    hc = _col(df, "HR"); sc = _col(df, "SO", "K"); wc = _col(df, "BB")
     if not all([nc, hc]) or not (bc or ic):
         raise ValueError(f"pitching frame missing columns (have: {list(df.columns)[:12]})")
     out, derived = [], 0
@@ -700,7 +714,12 @@ def _rows_from_pitching(df):
             hr = int(float(r.get(hc, 0) or 0))
         except (TypeError, ValueError): continue
         if bf >= 40:
-            out.append({"name": str(r[nc]), "bf": bf, "hr": hr})
+            row = {"name": str(r[nc]), "bf": bf, "hr": hr}
+            try:
+                if sc and r.get(sc) == r.get(sc): row["so"] = int(float(r[sc]))
+                if wc and r.get(wc) == r.get(wc): row["bb"] = int(float(r[wc]))
+            except (TypeError, ValueError): pass
+            out.append(row)
     if derived: print(f"   (BF derived from IP*4.25 for {derived} rows)")
     return out
 
@@ -1107,6 +1126,16 @@ def selftest():
     rows22, _ = build_board(bat, avg + [tiny], g3, {})
     assert [r for r in rows22 if r["team"] == "NYY"][0]["sp_small"] is True
     assert [r for r in rows22 if r["team"] == "BOS"][0]["sp_small"] is False
+    # 23. PARTIAL TIER (BREF/FG: so/bb but no ao) — centering exact; elite-K arm still drops
+    avgp = [{"name": f"pavg{i}", "bf": 400, "hr": 12, "so": 90, "bb": 30} for i in range(10)]
+    pburns = {"name": "K Burns", "bf": 100, "hr": 3, "so": 46, "bb": 6}
+    g4 = [{"home": "New York Yankees", "away": "Boston Red Sox", "venue": "Yankee Stadium",
+           "home_sp": "pavg0", "away_sp": "K Burns"}]
+    r23a, _ = build_board(bat, avgp, g4, {})
+    assert all(r["sp_fac"] == 1.0 for r in r23a), [r["sp_fac"] for r in r23a]
+    r23b, _ = build_board(bat, avgp + [pburns], g4, {})
+    f_kburns = [r for r in r23b if r["team"] == "NYY"][0]["sp_fac"]
+    assert f_kburns <= 0.93, f_kburns
     # 12. REAL LINEUPS: posted card overrides usage — order, exclusion, call-up prior
     card = {"New York Yankees": [("NY filler4", 1), ("Slug McPower", 2), ("Callup Kid", 3),
             ("Mid Bat", 4), ("Slap Hitter", 5), ("NY filler0", 6), ("NY filler1", 7),
