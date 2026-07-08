@@ -102,6 +102,12 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     <b>Props carry 8-15% hold</b> — a gap vs fair is the entry ticket, not the win. Lineups are season-usage
     projections until cards post (~1-4h pre-game); a scratch voids that row.</div>
     <div id="hrNote" class="sub" style="margin-top:6px"></div>
+    <div id="hrFilters" style="display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 10px">
+      <button class="filt" data-f="heat" onclick="toggleFilt('heat')">heat+ only</button>
+      <button class="filt" data-f="p25" onclick="toggleFilt('p25')">25%+ only</button>
+      <button class="filt" data-f="card" onclick="toggleFilt('card')">card only</button>
+      <span id="filtCount" class="sub" style="margin:0;align-self:center"></span>
+    </div>
     <div id="hrBody"><div class="empty">no HR board — run mlb_hr.py (or wait for the daily Action)</div></div>
   </div>
   <div class="card" style="margin-top:14px">
@@ -172,15 +178,26 @@ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
 });
 const pct=x=>x.toFixed(1)+'%';
 function bar(p){return `<div class="bar"><i style="width:${p}%"></i></div>`}
-let HRD=null, HRSORT={key:null, dir:-1};
+let HRD=null, HRSORT={key:null, dir:-1}, HRFILT={heat:false, p25:false, card:false};
+function toggleFilt(f){ HRFILT[f]=!HRFILT[f]; renderHomers(); }
+window.toggleFilt=toggleFilt;
 function hrSort(k){
   if(HRSORT.key===k){ HRSORT.dir*=-1; } else { HRSORT={key:k, dir:-1}; }
   renderHomers();
 }
 function renderHomers(){
   if(!HRD) return;
-  const rows=HRD.rows.slice();
-  if(!rows.length){ if(HRD.note) $('hrNote').textContent=HRD.note; return; }
+  let rows=HRD.rows.slice();
+  const total=rows.length;
+  if(HRFILT.heat) rows=rows.filter(r=>String(r.heat||'').startsWith('heat +') && r.heat!=='heat +0%');
+  if(HRFILT.p25)  rows=rows.filter(r=>Number(r.hr_pct)>=25);
+  if(HRFILT.card) rows=rows.filter(r=>r.lu==='card');
+  const active=Object.keys(HRFILT).filter(k=>HRFILT[k]);
+  const fc=document.getElementById('filtCount');
+  if(fc) fc.textContent = active.length ? `${rows.length} of ${total} rows match` : '';
+  document.querySelectorAll('.filt').forEach(b=>b.classList.toggle('on', !!HRFILT[b.dataset.f]));
+  if(!HRD.rows.length){ if(HRD.note) $('hrNote').textContent=HRD.note; return; }
+  if(!rows.length){ $('hrNote').textContent=HRD.note; $('hrBody').innerHTML=`<div class="empty">no rows match the active filters</div>`; return; }
   const hasEV=rows.some(r=>r.ev_pct!==undefined);
   const key=HRSORT.key||'hr_pct';
   const val=r=>{ const v=r[key]; return (key==='fair')?parseInt(r.fair)||0:(v===undefined?-1e9:v); };
