@@ -2,6 +2,7 @@ name: MLB daily slate
 on:
   schedule:
     - cron: "17 13 * * *"   # 8:17am CT — off-peak minute, board ready by 9 even with GitHub cron drift
+    - cron: "47 17 * * *"   # 12:47pm CT — day-game cards before early first pitches
     - cron: "17 20 * * *"   # 3:17pm CT — cards reprice, ready by 4
   workflow_dispatch: {}
 permissions:
@@ -29,9 +30,15 @@ jobs:
           python mlb_statcast.py
           python mlb_data.py || true
           python mlb_odds.py || true
-          python mlb_futures.py || true
           python mlb_grade.py || true
           python mlb_hr.py || true
+          python mlb_publish.py
+      - name: Pull futures (morning run only — odds move slowly, saves API quota)
+        if: github.event.schedule == '17 13 * * *' || github.event_name == 'workflow_dispatch'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python mlb_futures.py || true
           python mlb_publish.py
       - name: Validate slate.json is browser-parseable
         run: |
@@ -43,7 +50,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --mixed origin/main
-            git add mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv mlb/data/hr_graded.csv
+            git add mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv mlb/data/hr_graded.csv mlb/data/futures.json
             if git diff --cached --quiet; then
               echo "Slate unchanged vs published -- nothing to commit."
               exit 0
