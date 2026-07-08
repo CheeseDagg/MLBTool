@@ -62,13 +62,88 @@ def _save(df, name):
     return path
 
 
+
+def _ip_float(ip):
+    """statsapi innings '812.1' means 812 and 1/3."""
+    try:
+        s = str(ip); w, _, f = s.partition(".")
+        return int(w) + (int(f) if f else 0) / 3.0
+    except Exception: return 0.0
+
+def _statsapi_get(url):
+    import urllib.request, json as _j
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (MLBTool data)"})
+    with urllib.request.urlopen(req, timeout=45) as r:
+        return _j.loads(r.read().decode())
+
+def _team_ratings_statsapi(season):
+    """Floor source: MLB's own team season splits. Fewer columns than FanGraphs
+    (no wOBA/FIP family) — downstream keep-lists already tolerate absence."""
+    base = "https://statsapi.mlb.com/api/v1/teams/stats?sportIds=1&stats=season&season={s}&group={g}"
+    rows = {}
+    for grp in ("hitting", "pitching"):
+        d = _statsapi_get(base.format(s=season, g=grp))
+        for sp in (d.get("stats") or [{}])[0].get("splits", []):
+            t = (sp.get("team") or {}).get("name", "");  st = sp.get("stat", {}) or {}
+            if not t: continue
+            r = rows.setdefault(t, {"Team": t})
+            if grp == "hitting":
+                r.update({"G": int(st.get("gamesPlayed", 0) or 0),
+                          "PA": int(st.get("plateAppearances", 0) or 0),
+                          "R": int(st.get("runs", 0) or 0),
+                          "HR": int(st.get("homeRuns", 0) or 0),
+                          "BB": int(st.get("baseOnBalls", 0) or 0),
+                          "SO": int(st.get("strikeOuts", 0) or 0),
+                          "AVG": float(st.get("avg", 0) or 0), "OBP": float(st.get("obp", 0) or 0),
+                          "SLG": float(st.get("slg", 0) or 0), "OPS": float(st.get("ops", 0) or 0)})
+            else:
+                ip = _ip_float(st.get("inningsPitched", 0))
+                r.update({"IP": round(ip, 1), "ERA": float(st.get("era", 0) or 0),
+                          "WHIP": float(st.get("whip", 0) or 0),
+                          "K/9": round(9 * int(st.get("strikeOuts", 0) or 0) / ip, 2) if ip else 0,
+                          "BB/9": round(9 * int(st.get("baseOnBalls", 0) or 0) / ip, 2) if ip else 0,
+                          "HR/9": round(9 * int(st.get("homeRuns", 0) or 0) / ip, 2) if ip else 0})
+    m = pd.DataFrame(list(rows.values()))
+    if "R" in m.columns and "G" in m.columns:
+        m["R_per_G"] = m["R"] / m["G"]
+    return m
+
+def _pitchers_statsapi(season):
+    base = ("https://statsapi.mlb.com/api/v1/stats?stats=season&group=pitching"
+            f"&season={season}&sportId=1&limit=500&offset={{o}}&playerPool=All")
+    out, off = [], 0
+    while True:
+        d = _statsapi_get(base.format(o=off))
+        sp = (d.get("stats") or [{}])[0].get("splits", []) or []
+        for s in sp:
+            st = s.get("stat", {}) or {}
+            ip = _ip_float(st.get("inningsPitched", 0))
+            if ip < 5: continue
+            out.append({"Name": (s.get("player") or {}).get("fullName", ""),
+                        "Team": (s.get("team") or {}).get("name", ""),
+                        "IP": round(ip, 1), "GS": int(st.get("gamesStarted", 0) or 0),
+                        "ERA": float(st.get("era", 0) or 0),
+                        "WHIP": float(st.get("whip", 0) or 0),
+                        "K/9": round(9 * int(st.get("strikeOuts", 0) or 0) / ip, 2),
+                        "BB/9": round(9 * int(st.get("baseOnBalls", 0) or 0) / ip, 2),
+                        "HR/9": round(9 * int(st.get("homeRuns", 0) or 0) / ip, 2)})
+        if len(sp) < 500 or off > 4000: break
+        off += 500
+    return pd.DataFrame(out)
+
 def pull_team_ratings(season=CURRENT_SEASON):
     """Season team batting + pitching -> one row/team with the rate stats that
     drive run scoring (offense) and run prevention (defense)."""
-    from pybaseball import team_batting, team_pitching
     print(f"[team ratings] {season} ...")
-    bat = team_batting(season)
-    pit = team_pitching(season)
+    try:
+        from pybaseball import team_batting, team_pitching
+        bat = team_batting(season); pit = team_pitching(season)
+        src_note = "FanGraphs"
+    except Exception as e1:
+        print(f"   FanGraphs unavailable ({type(e1).__name__}) -> MLB StatsAPI")
+        m = _team_ratings_statsapi(season)
+        print(f"   team ratings: {len(m)} teams [MLB StatsAPI]")
+        return _save(m, f"team_ratings_{season}.csv")
     # keep only the most predictive columns that are actually present
     bat_keep = [c for c in ["Team", "G", "PA", "R", "HR", "BB", "SO",
                             "AVG", "OBP", "SLG", "OPS", "wOBA", "wRC+"] if c in bat.columns]
@@ -103,9 +178,19 @@ def pull_game_logs(season=CURRENT_SEASON):
 def pull_pitcher_ratings(season=CURRENT_SEASON):
     """Every pitcher's season stats (qual=0 = include all) -> the per-game
     starter adjustment. We filter to starters (GS) in the model step."""
-    from pybaseball import pitching_stats
     print(f"[pitcher ratings] {season} ...")
-    p = pitching_stats(season, season, qual=0)
+    try:
+        from pybaseball import pitching_stats
+        p = pitching_stats(season, season, qual=0)
+    except Exception as e1:
+        print(f"   FanGraphs unavailable ({type(e1).__name__}) -> Baseball-Reference")
+        try:
+            from pybaseball import pitching_stats_bref
+            p = pitching_stats_bref(season)
+            if "Tm" in p.columns and "Team" not in p.columns: p = p.rename(columns={"Tm": "Team"})
+        except Exception as e2:
+            print(f"   BREF unavailable ({type(e2).__name__}) -> MLB StatsAPI")
+            p = _pitchers_statsapi(season)
     keep = [c for c in ["Name", "Team", "IP", "GS", "ERA", "FIP", "xFIP",
                         "SIERA", "K/9", "BB/9", "HR/9", "WHIP", "WAR"] if c in p.columns]
     return _save(p[keep].copy(), f"pitcher_ratings_{season}.csv")

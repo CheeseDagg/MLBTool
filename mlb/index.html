@@ -50,6 +50,7 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <button data-t="edges">Edges</button>
   <button data-t="parlays">Parlays</button>
   <button data-t="homers">Homers</button>
+  <button data-t="futures">Futures</button>
   <button data-t="ratings">Ratings</button>
   <button data-t="method">Method</button>
 </nav>
@@ -110,6 +111,16 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     factor earns its keep; the +EV tier is flat-staked at the logged book price. Scratches void
     (books void them too) — the void-rate grades the lineup layer itself.</div>
     <div id="hrCal"><div class="empty">grading begins after tonight's games settle — first grades on tomorrow's 9am run</div></div>
+  </div>
+</section>
+
+<section id="futures">
+  <div class="card">
+    <h3>World Series Futures</h3>
+    <div class="sub">Teams ranked by <b>consensus title probability</b> (median no-vig across books) —
+    likelihood-first, house rule. The only value claim is line-shopping: <b>SHOP</b> flags a best price
+    beating consensus by 1.5%+ across 3+ books. No model title odds until a season simulator earns them.</div>
+    <div id="futBody"><div class="empty">no futures loaded</div></div>
   </div>
 </section>
 
@@ -189,7 +200,7 @@ function renderHomers(){
     <td class="num">${r.fair}</td>`+
     (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
     <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
-    `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span>${r.plat?` <span class="pill">${r.plat}</span>`:``}${r.heat?` <span class="pill">${r.heat}</span>`:``}</td>
+    `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span>${r.plat?` <span class="pill">${r.plat}</span>`:``}${r.heat?` <span class="pill">${r.heat}</span>`:``}${r.pen?` <span class="pill">${r.pen}</span>`:``}${r.brl?` <span class="pill">${r.brl}</span>`:``}</td>
   </tr>`).join('')+`</table>`;
 }
 function render(d){
@@ -269,6 +280,20 @@ function render(d){
   } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
   // backtest
   // backtest
+  // futures
+  const fu=d.futures;
+  if(fu&&fu.rows&&fu.rows.length){
+    $('futBody').innerHTML=`<div class="sub">${fu.note||''} · updated ${new Date(fu.generated).toLocaleString()}</div>
+    <table><tr><th>#</th><th>team</th><th class="num">title %</th><th></th><th class="num">fair</th>
+    <th class="num">best price</th><th class="hide-m">book</th><th class="num">edge</th><th></th></tr>`+
+    fu.rows.map((r,i)=>`<tr><td class="dim">${i+1}</td><td><b>${r.team}</b></td>
+    <td class="num"><b>${r.cons_pct}%</b></td><td>${bar(Math.min(r.cons_pct*4,100))}</td>
+    <td class="num dim">${r.fair}</td>
+    <td class="num">${r.best_price!=null?(r.best_price>0?'+':'')+r.best_price:'—'}</td>
+    <td class="hide-m dim">${r.book||''} <span class="pill">${r.books_n} books</span></td>
+    <td class="num">${r.edge_pct!=null?`<b style="color:${r.edge_pct>=0?'var(--acc2)':'var(--red)'}">${r.edge_pct>=0?'+':''}${r.edge_pct}%</b>`:'—'}</td>
+    <td>${r.shop?'<span class="pill" style="color:var(--acc2)">SHOP</span>':''}</td></tr>`).join('')+`</table>`;
+  } else if(fu&&fu.note){ $('futBody').innerHTML=`<div class="empty">${fu.note}</div>`; }
   const b=d.backtest;
   $('btBody').innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
   <tr><td>games predicted</td><td class="num">${b.n}</td></tr>

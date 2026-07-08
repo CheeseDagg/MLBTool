@@ -70,6 +70,67 @@ def platoon_factor(bat_side, pitch_hand):
     tag = f"{bat_side}v{pitch_hand} {'+' if pct >= 0 else ''}{pct:.0f}%"
     return eff, tag
 
+
+def hands_get(hands, name, want="bat"):
+    """Duplicate-name safe lookup. want='bat' prefers position players,
+    want='pit' prefers pitchers. -> (batSide, pitchHand, mlbam_id) or (None,)*3."""
+    cands = (hands or {}).get(norm(name)) or []
+    if isinstance(cands, tuple): cands = [cands]     # legacy single-entry shape
+    if not cands: return (None, None, None)
+    if len(cands) > 1:
+        pit = [c for c in cands if (c[3] if len(c) > 3 else "") == "P"]
+        bat = [c for c in cands if (c[3] if len(c) > 3 else "") != "P"]
+        pick = (pit or cands) if want == "pit" else (bat or cands)
+        c = pick[0]
+    else:
+        c = cands[0]
+    return (c[0], c[1], c[2] if len(c) > 2 else None)
+
+
+# ---------------------------------------------------------------------------
+# BULLPEN — the (1-SP_WEIGHT) share of PAs was priced league-flat. Team relief
+# HR-allowed rates (gs==0 arms, MLB StatsAPI), conf-shrunk. Fail-soft neutral.
+K_PEN = 350
+
+BARREL_W = 0.35
+
+def pull_barrels():
+    """Savant barrels-per-PA leaderboard -> {mlbam_id: brl_pa_pct}. One request,
+    same host pattern as the xwOBA pull already running in this Action."""
+    try:
+        from pybaseball import statcast_batter_exitvelo_barrels
+        df = statcast_batter_exitvelo_barrels(YEAR, minBBE=25)
+        col = "brl_pa" if "brl_pa" in df.columns else ("brl_percent" if "brl_percent" in df.columns else None)
+        idc = "player_id" if "player_id" in df.columns else None
+        if col is None or idc is None:
+            return {}, "barrel off (columns changed)"
+        out = {}
+        for _, r in df.iterrows():
+            try: out[int(r[idc])] = float(r[col])
+            except (TypeError, ValueError): continue
+        return out, f"barrel blend {int(BARREL_W*100)}% ({len(out)} bats)"
+    except Exception as e:
+        return {}, f"barrel off ({type(e).__name__})"
+
+def pull_bullpens():
+    try:
+        rows = _statsapi_rows("pitching")
+    except Exception as e:
+        return {}, f"bullpen off ({type(e).__name__})"
+    rp = [r for r in rows if r.get("gs", 1) == 0 and r.get("team")]
+    if not rp:
+        return {}, "bullpen off (no relief rows)"
+    L_hr = sum(r["hr"] for r in rp); L_bf = sum(r["bf"] for r in rp) or 1
+    L = L_hr / L_bf
+    agg = {}
+    for r in rp:
+        a = agg.setdefault(r["team"], [0, 0]); a[0] += r["hr"]; a[1] += r["bf"]
+    out = {}
+    for team, (hr, bf) in agg.items():
+        rate = (hr + K_PEN * L) / (bf + K_PEN)
+        out[team] = round(rate / L, 3)
+    return out, f"bullpen on ({len(out)} pens)"
+
 def pull_handedness():
     """batSide / pitchHand for every player from MLB StatsAPI's bulk roster
     endpoint (one call, unblockable host). Fail-soft: {} -> platoon off."""
@@ -83,10 +144,11 @@ def pull_handedness():
         for p in data.get("people", []):
             n = norm(p.get("fullName", ""))
             if n:
-                out[n] = ((p.get("batSide") or {}).get("code"),
+                pos = ((p.get("primaryPosition") or {}).get("abbreviation") or "")
+                out.setdefault(n, []).append(((p.get("batSide") or {}).get("code"),
                           (p.get("pitchHand") or {}).get("code"),
-                          p.get("id"))
-        return out, f"platoon on ({len(out)} players)"
+                          p.get("id"), pos))
+        return out, f"platoon on ({sum(len(v) for v in out.values())} players)"
     except Exception as e:
         return {}, f"platoon off (handedness fetch failed: {type(e).__name__})"
 PA_TOP = 4.45   # expected PA for the #1 usage slot; -0.09 per slot down
@@ -432,7 +494,7 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
 
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
-def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None):
+def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None, pens=None, barrels=None):
     """
     batters : list of {name, fg_team, pa, hr}
     pitchers: list of {name, bf, hr}
@@ -444,6 +506,9 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     hands = hands or {}
     heats = heats or {}
     cards = cards or {}
+    pens = pens or {}
+    barrels = barrels or {}
+    L_brl = (sum(barrels.values())/len(barrels)) if barrels else None
     tb_pa = sum(b["pa"] for b in batters) or 1
     Lb = sum(b["hr"] for b in batters) / tb_pa
     tp_bf = sum(p["bf"] for p in pitchers) or 1
@@ -505,11 +570,26 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
             team_full = g[side]
             opp_full = g["home" if side == "away" else "away"]
             fac, matched = sp_factor(opp_sp_name)
-            sp_eff = SP_WEIGHT * fac + (1 - SP_WEIGHT)
+            bp_fac = 1.0
+            if pens:
+                k = opp_full if opp_full in pens else _resolve_team_key(opp_full, set(pens.keys()))
+                bp_fac = pens.get(k, 1.0) if k else 1.0
+            sp_eff = SP_WEIGHT * fac + (1 - SP_WEIGHT) * bp_fac
+            pen_tag = f"pen {bp_fac:.2f}x" if abs(bp_fac - 1.0) >= 0.05 else ""
             for b, slot in team_bats(team_full):
                 base = (b["hr"] + K_BAT * Lb) / (b["pa"] + K_BAT)
-                sp_hand = (hands.get(norm(opp_sp_name)) or (None, None))[1] if isinstance(opp_sp_name, str) else None
-                bat_side = (hands.get(norm(b["name"])) or (None, None))[0]
+                brl_tag = ""
+                if barrels and L_brl:
+                    bid = hands_get(hands, b["name"], "bat")[2]
+                    bp_ = barrels.get(bid)
+                    if bp_ is not None and base > 0:
+                        implied = (bp_ / L_brl) * Lb
+                        blended = (1 - BARREL_W) * base + BARREL_W * implied
+                        if abs(blended / base - 1) >= 0.05:
+                            brl_tag = f"brl {'+' if blended > base else ''}{(blended/base-1)*100:.0f}%"
+                        base = blended
+                sp_hand = hands_get(hands, opp_sp_name, "pit")[1] if isinstance(opp_sp_name, str) else None
+                bat_side = hands_get(hands, b["name"], "bat")[0]
                 plat_eff, plat_tag = platoon_factor(bat_side, sp_hand)
                 hf = heats.get((norm(b["name"]), norm(opp_sp_name or "")))
                 heat_eff = SP_WEIGHT * hf + (1 - SP_WEIGHT) if hf else 1.0
@@ -526,7 +606,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
-                    "sp_fac": round(fac, 2), "plat": plat_tag, "heat": heat_tag, "lu": ("card" if cards.get(team_full) else "proj"),
+                    "sp_fac": round(fac, 2), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "lu": ("card" if cards.get(team_full) else "proj"),
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
@@ -638,7 +718,8 @@ def _statsapi_rows(group):
                         ip = float(st.get("inningsPitched", 0) or 0)
                         bf = int(round(ip * 4.25))
                     if name and bf >= 40:
-                        out.append({"name": name, "bf": bf, "hr": hr})
+                        out.append({"name": name, "bf": bf, "hr": hr,
+                                    "team": team, "gs": int(st.get("gamesStarted", 0) or 0)})
             except (TypeError, ValueError):
                 continue
         if len(splits) < limit: break
@@ -769,7 +850,9 @@ def pull_lineups(sched):
 def pull_props():
     """batter_home_runs Yes/Over-0.5 best price per player. Fails soft:
     returns ({}, reason). Costs ~1 credit per event on The Odds API."""
-    key = os.environ.get("ODDS_API_KEY") or "2aa2e57832d4c9ca4bd66b20b05ba448"
+    key = os.environ.get("ODDS_API_KEY", "")
+    if not key:
+        return {}, "props off (ODDS_API_KEY secret not set)"
     base = "https://api.the-odds-api.com/v4/sports/baseball_mlb"
     try:
         q = urllib.parse.urlencode({"apiKey": key})
@@ -915,6 +998,29 @@ def selftest():
     assert pv(r_sw)["hr_pct"] > pv(r_vL)["hr_pct"], "switch hitter must dodge the LL penalty"
     r_unk, _ = build_board(bat, pit, [dict(sched[0])], {"Yankee Stadium": (88.0, "open")})
     assert pv(r_unk)["plat"] == "" 
+    # 16. GARCIA REGRESSION: duplicate names must resolve by role, both directions
+    dup = {"luis garcia": [("L", "R", 111, "2B"), (None, "R", 222, "P")]}
+    assert hands_get(dup, "Luis García Jr.", "bat") == ("L", "R", 111)
+    assert hands_get(dup, "Luis Garcia", "pit") == (None, "R", 222)
+    assert hands_get(dup, "Nobody Here", "bat") == (None, None, None)
+    # 17. BULLPEN: soft opposing pen must raise the row; unknown team neutral
+    pens = {"Boston Red Sox": 1.20}
+    r_pen, _ = build_board(bat, pit, sched, {"Yankee Stadium": (88.0, "open")}, pens=pens)
+    nyy_p = [r for r in r_pen if r["team"] == "NYY"][0]      # NYY bats face BOS pen
+    nyy_0 = [r for r in rows if r["team"] == "NYY" and r["player"] == nyy_p["player"]][0]
+    assert nyy_p["hr_pct"] > nyy_0["hr_pct"] and nyy_p["pen"] == "pen 1.20x"
+    bos_p = [r for r in r_pen if r["team"] == "BOS"][0]
+    assert bos_p["pen"] == "" and abs(bos_p["hr_pct"] - [r for r in rows if r["player"]==bos_p["player"]][0]["hr_pct"]) < 0.05
+    # 18. BARREL: high-barrel bat rises with tag; barrel-less bat untouched
+    hands_b = {"slug mcpower": [("L", None, 500, "DH")]}
+    brl = {500: 12.0}   # league mean will be 12 -> implied == Lb; craft asym:
+    brl = {500: 24.0, 999: 8.0}                      # mean 16 -> slug implied 1.5x league
+    r_b, _ = build_board(bat, pit, sched, {"Yankee Stadium": (88.0, "open")}, hands=hands_b, barrels=brl)
+    slug_b = [r for r in r_b if r["player"] == "Slug McPower"][0]
+    slug_0 = [r for r in rows if r["player"] == "Slug McPower"][0]
+    assert slug_b["brl"].startswith("brl ") and abs(slug_b["hr_pct"] - slug_0["hr_pct"]) > 0.3
+    other = [r for r in r_b if r["player"] == "Mid Bat"][0]
+    assert other["brl"] == "" 
     # 12. REAL LINEUPS: posted card overrides usage — order, exclusion, call-up prior
     card = {"New York Yankees": [("NY filler4", 1), ("Slug McPower", 2), ("Callup Kid", 3),
             ("Mid Bat", 4), ("Slap Hitter", 5), ("NY filler0", 6), ("NY filler1", 7),
@@ -979,17 +1085,18 @@ def _build():
     print(f"   schedule teams: {sorted({g[s] for g in sched for s in ('home','away')})[:8]} …")
     print("4) park temps (Open-Meteo)…")
     temps = pull_temps(sorted({g["venue"] for g in sched}))
+    print("3c) bullpens (StatsAPI)…"); pens, pen_note = pull_bullpens(); print(f"   {pen_note}")
+    print("3d) barrels (Savant)…"); barrels, brl_note = pull_barrels(); print(f"   {brl_note}")
     print("4b) lineup cards (StatsAPI)…"); cards, lu_note = pull_lineups(sched); print(f"   {lu_note}")
     print("5) HR props (The Odds API, optional)…")
     props, pnote = pull_props(); print(f"   {pnote}")
-    prelim, _ = build_board(bat, pit, sched, temps, None, hands or None, None, cards or None)
+    prelim, _ = build_board(bat, pit, sched, temps, None, hands or None, None, cards or None, pens or None, barrels or None)
     cand = sorted(prelim, key=lambda r: -r["hr_pct"])[:70]
-    def _pid(nm):
-        t = hands.get(norm(nm)) if hands else None
-        return t[2] if t and len(t) > 2 and t[2] else None
+    def _pid(nm, want="bat"):
+        return hands_get(hands, nm, want)[2] if hands else None
     bat_ids = sorted({_pid(r["player"]) for r in cand if _pid(r["player"])})
     sp_names = sorted({(g.get(s) or "") for g in sched for s in ("home_sp", "away_sp") if isinstance(g.get(s), str)})
-    pit_ids = sorted({_pid(n) for n in sp_names if _pid(n)})
+    pit_ids = sorted({_pid(n, "pit") for n in sp_names if _pid(n, "pit")})
     print(f"5b) heat maps (Savant zones) — {len(bat_ids)} bats, {len(pit_ids)} starters…")
     bz, pz, heat_note = fetch_zone_profiles(bat_ids, pit_ids, hands or {})
     print(f"   {heat_note}")
@@ -998,15 +1105,15 @@ def _build():
         for r in cand:
             bid = _pid(r["player"])
             spn = r["opp_sp"].replace(" *", "").strip()
-            spid = _pid(spn)
-            side = (hands.get(norm(r["player"])) or (None,))[0] if hands else None
-            if side == "S" and hands and _pid(spn):
-                sph = (hands.get(norm(spn)) or (None, None))[1]
+            spid = _pid(spn, "pit")
+            side = hands_get(hands, r["player"], "bat")[0] if hands else None
+            if side == "S" and hands and _pid(spn, "pit"):
+                sph = hands_get(hands, spn, "pit")[1]
                 side = "R" if sph == "L" else "L"
             if bid and spid and side in ("L", "R"):
                 hf = heat_factor(bz.get(bid), pz.get((spid, side)))
                 if hf: heats[(norm(r["player"]), norm(spn))] = hf
-    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None)
+    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None)
     rows = select_rows(rows, have_ev)
     print(f"   board rows built: {len(rows)}")
     if not rows:
@@ -1020,7 +1127,7 @@ def _build():
         sys.exit("EMPTY BOARD — " + note)
     note = (f"stats: {bsrc}" + ("" if psrc == bsrc else f"/{psrc}") + " · "
             f"{lu_note} · "
-            f"{hnote} (league factors, starter share) · {heat_note} · "
+            f"{hnote} (league factors, starter share) · {heat_note} · {pen_note} · {brl_note} · "
             "wind not modeled (speed-only feed) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
             "warm-climate open parks) · " + pnote +

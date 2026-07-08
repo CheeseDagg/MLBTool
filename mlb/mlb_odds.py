@@ -6,7 +6,7 @@ Get a free key at https://the-odds-api.com, paste it below, run:  python mlb_odd
 import os, sys, csv, json, urllib.request, urllib.parse
 
 # ================= PASTE YOUR KEY BETWEEN THE QUOTES =================
-API_KEY = os.environ.get("ODDS_API_KEY") or "2aa2e57832d4c9ca4bd66b20b05ba448"
+API_KEY = os.environ.get("ODDS_API_KEY", "")
 # ====================================================================
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
@@ -14,6 +14,12 @@ os.makedirs(DATA_DIR, exist_ok=True)
 BASE = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds"
 
 def pull():
+    if not API_KEY:
+        print("[odds] off — ODDS_API_KEY secret not set; writing empty odds file")
+        path = os.path.join(DATA_DIR, "mlb_odds.csv")
+        with open(path, "w", newline="") as f:
+            csv.DictWriter(f, fieldnames=["game_id","commence","home","away","book","home_ml","away_ml"]).writeheader()
+        return
     q = urllib.parse.urlencode({"apiKey": API_KEY, "regions": "us", "markets": "h2h",
                                 "oddsFormat": "american", "dateFormat": "iso"})
     print("[odds] pulling MLB moneylines across US books ...")

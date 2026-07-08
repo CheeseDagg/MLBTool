@@ -136,13 +136,20 @@ def main():
         hr_cal = mlb_grade.panel_for_publish()
     except Exception as e:
         hr_cal = {"n": 0, "error": type(e).__name__}
+    futures = None
+    try:
+        fp = os.path.join(DATA, "futures.json")
+        if os.path.exists(fp):
+            with open(fp) as f: futures = json.load(f)
+    except Exception:
+        futures = None
 
     out = {
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "games": games, "ratings": ratings,
         "edges": edge_rows, "edge_note": edge_note,
         "parlays": parlays, "near_parlays": near_parlays,
-        "hr_board": hr_rows, "hr_note": hr_note, "hr_cal": hr_cal,
+        "hr_board": hr_rows, "hr_note": hr_note, "hr_cal": hr_cal, "futures": futures,
         "backtest": backtest_block(s),
         "league_rpg": round(float(m["L"]), 2),
         "xwoba_pitchers": len(xw),
