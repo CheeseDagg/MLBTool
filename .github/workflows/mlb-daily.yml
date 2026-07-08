@@ -1,8 +1,8 @@
 name: MLB daily slate
 on:
   schedule:
-    - cron: "0 14 * * *"
-    - cron: "0 21 * * *"   # 4pm CT: reprice on posted lineup cards
+    - cron: "17 13 * * *"   # 8:17am CT — off-peak minute, board ready by 9 even with GitHub cron drift
+    - cron: "17 20 * * *"   # 3:17pm CT — cards reprice, ready by 4
   workflow_dispatch: {}
 permissions:
   contents: write
