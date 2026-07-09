@@ -1,0 +1,36 @@
+name: savant probe (diagnostic only)
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe Savant park-factor endpoints
+        run: |
+          python3 - <<'PY'
+          import urllib.request
+          UA = {"User-Agent": "Mozilla/5.0 (MLBTool diagnostics)"}
+          candidates = [
+            "https://baseballsavant.mlb.com/leaderboard/statcast-park-factors?type=year&year=2026&batSide=&stat=index_hr&condition=All&rolling=&csv=true",
+            "https://baseballsavant.mlb.com/leaderboard/statcast-park-factors?type=year&year=2025&batSide=&stat=index_hr&condition=All&rolling=3&csv=true",
+            "https://baseballsavant.mlb.com/leaderboard/statcast-park-factors",
+          ]
+          for url in candidates:
+              print("=" * 90)
+              print("URL:", url)
+              try:
+                  req = urllib.request.Request(url, headers=UA)
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      body = r.read().decode("utf-8", "replace")
+                      print("status:", r.status, "| content-type:", r.headers.get("content-type"))
+                      print("bytes:", len(body))
+                      print("--- first 25 lines ---")
+                      for line in body.splitlines()[:25]:
+                          print(line[:200])
+              except Exception as e:
+                  print("FAILED:", type(e).__name__, str(e)[:200])
+          print("=" * 90)
+          print("probe complete — paste this log back for parser wiring")
+          PY
