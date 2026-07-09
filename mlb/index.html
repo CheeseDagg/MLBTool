@@ -275,23 +275,24 @@ function render(d){
   // calibration
   const cal=d.hr_cal;
   if(cal && cal.n>0){
-    let h=`<div class="sub"><b>${cal.n}</b> graded rows over <b>${cal.dates}</b> day(s) · actual <b>${cal.actual}%</b> vs predicted <b>${cal.pred_mean}%</b> · Brier <b>${cal.brier}</b> · voids ${cal.voids}</div>`;
+    let h=`<div class="sub"><b>${cal.n}</b> settled bets over <b>${cal.dates}</b> day(s): the model said <b>${cal.pred_mean}%</b> of them would homer on average — <b>${cal.actual}%</b> actually did · precision score ${cal.brier} (lower = sharper) · ${cal.voids} scratched (refunded, not counted)</div>
+    <div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0 2px"><b style="color:var(--acc)">How to read this:</b> <b>“bets”</b> = how many settled predictions each row is built from — a percentage from 3 bets is a coin flip, from 100+ it's a verdict. <b>MODEL SAID</b> = what we predicted · <b>HAPPENED</b> = what reality did. A trustworthy model has those two columns converging as the bets count grows.</div>`;
     if(cal.buckets&&cal.buckets.length){
-      h+=`<table style="margin-top:8px"><tr><th>predicted</th><th class="num">n</th><th class="num">avg pred</th><th class="num">actual</th><th></th></tr>`+
+      h+=`<table style="margin-top:8px"><tr><th>model said…</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th></th></tr>`+
       cal.buckets.map(b=>`<tr><td>${b.bucket}%</td><td class="num">${b.n}</td><td class="num">${b.pred}%</td><td class="num"><b>${b.actual}%</b></td><td>${bar(Math.min(b.actual*2.2,100))}</td></tr>`).join('')+`</table>`;
     }
     if(cal.lift&&cal.lift.length){
-      h+=`<div class="sub" style="margin-top:10px">factor lift (actual vs its own predicted)</div>
-      <table><tr><th>group</th><th class="num">n</th><th class="num">pred</th><th class="num">actual</th><th class="num">gap</th></tr>`+
+      h+=`<div class="sub" style="margin-top:10px"><b>Does each ingredient earn its keep?</b> Every row = only the bets carrying that tag. Green gap: those bets homered <i>more</i> than the model expected of them; red: less. Judge nothing under ~50 bets.</div>
+      <table><tr><th>ingredient</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th class="num">gap</th></tr>`+
       cal.lift.map(l=>{const gp=(l.actual-l.pred).toFixed(1);return `<tr><td>${l.g}</td><td class="num">${l.n}</td><td class="num">${l.pred}%</td><td class="num">${l.actual}%</td><td class="num"><b style="color:${+gp>=0?'var(--acc2)':'var(--red)'}">${+gp>=0?'+':''}${gp}</b></td></tr>`;}).join('')+`</table>`;
     }
     if(cal.ev_tier){
       const e=cal.ev_tier;
-      h+=`<div class="sub" style="margin-top:10px">+EV tier, flat 1u at logged best price: <b>${e.hits}/${e.n}</b> hit · ROI <b style="color:${e.roi>=0?'var(--acc2)':'var(--red)'}">${e.roi>=0?'+':''}${e.roi}%</b></div>`;
+      h+=`<div class="sub" style="margin-top:10px">Value strategy — bet only when our number beats the book's price (flat 1 unit each): <b>${e.hits}/${e.n}</b> hit · ROI <b style="color:${e.roi>=0?'var(--acc2)':'var(--red)'}">${e.roi>=0?'+':''}${e.roi}%</b></div>`;
     }
     if(cal.top_tier){
       const t=cal.top_tier;
-      h+=`<div class="sub">Top-Likelihood tier (daily top-5 by model HR%, EV ignored — house doctrine), flat 1u: <b>${t.hits}/${t.n}</b> hit · ROI <b style="color:${t.roi>=0?'var(--acc2)':'var(--red)'}">${t.roi>=0?'+':''}${t.roi}%</b></div>`;
+      h+=`<div class="sub">Likelihood strategy — bet the 5 most-likely homers daily, price ignored (house doctrine), flat 1 unit: <b>${t.hits}/${t.n}</b> hit · ROI <b style="color:${t.roi>=0?'var(--acc2)':'var(--red)'}">${t.roi>=0?'+':''}${t.roi}%</b></div>`;
     }
     $('hrCal').innerHTML=h;
   } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
