@@ -73,41 +73,39 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-08,Max Schuemann,NYY,Shane McClanahan,7,card,14.5,+589,800,30.6,park -4% [low-conf],dome,RvL +12%,
 2026-07-08,Alan Roden,MIN,Slade Cecconi,8,card,12.9,+676,1000,41.7,park -2%,79F,LvR +8%,
 2026-07-08,Luisangel Acuña,CHW,Jake Bennett,9,card,11.5,+769,1150,43.9,park +9%,83F · wind in 5,RvL +12%,
-2026-07-09,Kyle Schwarber,PHI,Brady Singer,2,proj,42.0,+138,140,0.9,park +25%,81F,LvR +8%,heat -4%
-2026-07-09,Bryce Harper,PHI,Brady Singer,3,proj,32.3,+210,250,13.0,park +25%,81F,LvR +8%,heat +3%
-2026-07-09,Juan Soto,NYM,Michael Wacha,2,card,29.3,+241,240,-0.3,park -4%,86F · wind out 8,LvR +8%,heat +12%
-2026-07-09,Randal Grichuk,CHW,Patrick Sandoval *,2,card,26.8,+273,330,15.1,park +9%,81F,RvL +12%,
-2026-07-09,Ben Rice,NYY,Drew Rasmussen,2,card,26.0,+284,380,24.9,park -4% [low-conf],dome,LvR +8%,heat +11%
-2026-07-09,Brandon Marsh,PHI,Brady Singer,5,proj,25.7,+288,390,26.2,park +25%,81F,LvR +8%,heat -8%
-2026-07-09,Miguel Vargas,CHW,Patrick Sandoval *,3,card,25.4,+294,310,4.1,park +9%,81F,RvL +12%,
-2026-07-09,Sal Stewart,CIN,Jesús Luzardo,1,proj,25.1,+298,335,9.2,park +25%,81F,RvL +12%,heat +2%
-2026-07-09,Pete Alonso,BAL,David Peterson,4,card,25.0,+300,310,2.4,park +4% [low-conf],80F · wind out 5,RvL +12%,heat +9%
-2026-07-09,Matt Olson,ATL,Mitch Keller,3,card,23.6,+325,265,-14.0,park -9%,83F,LvR +8%,heat +6%
-2026-07-09,Shea Langeliers,ATH,Framber Valdez,2,proj,23.2,+331,335,0.9,park -5%,84F,RvL +12%,heat +7%
-2026-07-09,Esmerlyn Valdez,PIT,Bryce Elder,4,card,23.1,+334,400,15.3,park -9%,83F,RvR -3%,heat +1%
-2026-07-09,Elly De La Cruz,CIN,Jesús Luzardo,3,proj,22.7,+341,340,-0.1,park +25%,81F,SvL +12%,heat +3%
-2026-07-09,Michael Harris II,ATL,Mitch Keller,1,card,22.5,+344,380,8.1,park -9%,83F,LvR +8%,heat +8%
-2026-07-09,Jordan Walker,STL,Logan Henderson,4,proj,22.5,+345,360,3.3,park -7%,87F · wind out 8,RvR -3%,heat +16%
-2026-07-09,Kody Clemens,MIN,Gavin Williams,3,card,22.4,+347,400,12.0,park -2%,78F,LvR +8%,heat +5%
-2026-07-09,Brandon Lowe,PIT,Bryce Elder,2,card,21.7,+362,300,-13.4,park -9%,83F,LvR +8%,heat +4%
-2026-07-09,Spencer Steer,CIN,Jesús Luzardo,2,proj,21.4,+366,460,20.1,park +25%,81F,RvL +12%,heat -0%
-2026-07-09,Colson Montgomery,CHW,Patrick Sandoval *,4,card,21.2,+372,255,-24.8,park +9%,81F,LvL -22%,
-2026-07-09,Drake Baldwin,ATL,Mitch Keller,4,card,20.8,+380,440,12.6,park -9%,83F,LvR +8%,heat +1%
-2026-07-09,Francisco Alvarez,NYM,Michael Wacha,5,card,20.1,+398,290,-21.6,park -4%,86F · wind out 8,RvR -3%,heat -3%
-2026-07-09,Coby Mayo,BAL,David Peterson,6,card,19.8,+405,340,-12.9,park +4% [low-conf],80F · wind out 5,RvL +12%,heat +4%
-2026-07-09,Jake Bauers,MIL,Andre Pallante,3,proj,19.6,+409,475,13.0,park -7%,87F · wind out 8,LvR +8%,heat +4%
-2026-07-09,Bobby Witt Jr.,KCR,Sean Manaea,2,card,19.3,+417,265,-29.4,park -4%,86F · wind out 8,RvL +12%,heat +11%
-2026-07-09,Hunter Goodman,COL,TBD *,2,proj,19.3,+419,,,park -14%,57F · wind out 4,,
-2026-07-09,Pete Crow-Armstrong,CHC,Trevor Rogers,1,card,19.2,+422,325,-18.6,park +4% [low-conf],80F · wind out 5,LvL -22%,heat +5%
-2026-07-09,Jake Burger,TEX,Reid Detmers,3,proj,19.1,+423,380,-8.3,park +2%,94F (roof: half),RvL +12%,heat +16%
-2026-07-09,Samuel Basallo,BAL,David Peterson,7,card,19.0,+426,370,-10.6,park +4% [low-conf],80F · wind out 5,LvL -22%,heat +13%
-2026-07-09,Seiya Suzuki,CHC,Trevor Rogers,3,card,19.0,+425,350,-14.3,park +4% [low-conf],80F · wind out 5,RvL +12%,heat +3%
-2026-07-09,Ian Happ,CHC,Trevor Rogers,7,card,19.0,+426,310,-22.0,park +4% [low-conf],80F · wind out 5,SvL +12%,heat +1%
-2026-07-09,Jared Young,NYM,Michael Wacha,6,card,18.8,+432,550,22.2,park -4%,86F · wind out 8,LvR +8%,heat +6%
-2026-07-09,A.J. Ewing,NYM,Michael Wacha,1,card,17.5,+471,650,31.5,park -4%,86F · wind out 8,LvR +8%,heat +5%
-2026-07-09,Drew Romo,CHW,Patrick Sandoval *,9,card,15.9,+529,750,35.2,park +9%,81F,SvL +12%,
-2026-07-09,Nate Eaton,BOS,Anthony Kay,7,card,14.6,+585,800,31.3,park +9%,81F,RvL +12%,
-2026-07-09,Max Schuemann,NYY,Drew Rasmussen,7,card,14.2,+602,900,42.5,park -4% [low-conf],dome,RvR -3%,
-2026-07-09,Ryan McMahon,NYY,Drew Rasmussen,8,card,14.1,+607,750,20.2,park -4% [low-conf],dome,LvR +8%,
-2026-07-09,Brice Turang,MIL,Andre Pallante,1,proj,13.6,+637,900,35.6,park -7%,87F · wind out 8,LvR +8%,
-2026-07-09,Luisangel Acuña,CHW,Patrick Sandoval *,8,card,12.6,+691,1000,39.1,park +9%,81F,RvL +12%,
+2026-07-09,Kyle Schwarber,PHI,Brady Singer,2,proj,42.6,+134,140,2.4,park +25%,82F,LvR +8%,heat -4%
+2026-07-09,Bryce Harper,PHI,Brady Singer,3,proj,32.8,+205,250,14.8,park +25%,82F,LvR +8%,heat +3%
+2026-07-09,Juan Soto,NYM,Michael Wacha,2,card,29.2,+242,240,-0.7,park -4%,84F · wind out 10,LvR +8%,heat +12%
+2026-07-09,Randal Grichuk,CHW,Patrick Sandoval *,2,card,26.5,+277,350,19.3,park +9%,79F,RvL +12%,
+2026-07-09,Brandon Marsh,PHI,Brady Singer,5,proj,26.2,+282,390,28.2,park +25%,82F,LvR +8%,heat -8%
+2026-07-09,Ben Rice,NYY,Drew Rasmussen,2,card,26.0,+284,410,32.7,park -4% [low-conf],dome,LvR +8%,heat +11%
+2026-07-09,Sal Stewart,CIN,Jesús Luzardo,1,proj,25.5,+292,335,11.0,park +25%,82F,RvL +12%,heat +2%
+2026-07-09,Pete Alonso,BAL,David Peterson,4,card,25.4,+293,300,1.8,park +4% [low-conf],82F · wind out 6,RvL +12%,heat +9%
+2026-07-09,Miguel Vargas,CHW,Patrick Sandoval *,3,card,25.2,+298,325,6.9,park +9%,79F,RvL +12%,
+2026-07-09,Matt Olson,ATL,Mitch Keller,3,card,24.2,+314,,,park -9%,85F · wind out 3,LvR +8%,heat +6%
+2026-07-09,Esmerlyn Valdez,PIT,Bryce Elder,4,card,23.7,+323,480,37.3,park -9%,85F · wind out 3,RvR -3%,heat +1%
+2026-07-09,Shea Langeliers,ATH,Framber Valdez,2,proj,23.5,+326,335,2.0,park -5%,86F,RvL +12%,heat +7%
+2026-07-09,Michael Harris II,ATL,Mitch Keller,1,card,23.1,+333,480,34.0,park -9%,85F · wind out 3,LvR +8%,heat +8%
+2026-07-09,Elly De La Cruz,CIN,Jesús Luzardo,3,proj,23.1,+334,340,1.5,park +25%,82F,SvL +12%,heat +3%
+2026-07-09,Jordan Walker,STL,Logan Henderson,4,proj,22.5,+345,360,3.3,park -7%,88F · wind out 7,RvR -3%,heat +16%
+2026-07-09,Kody Clemens,MIN,Gavin Williams,3,card,22.4,+347,400,11.9,park -2%,79F,LvR +8%,heat +5%
+2026-07-09,Brandon Lowe,PIT,Bryce Elder,2,card,22.2,+350,370,4.5,park -9%,85F · wind out 3,LvR +8%,heat +4%
+2026-07-09,Spencer Steer,CIN,Jesús Luzardo,2,proj,21.8,+359,460,22.1,park +25%,82F,RvL +12%,heat -0%
+2026-07-09,Drake Baldwin,ATL,Mitch Keller,4,card,21.4,+367,500,28.4,park -9%,85F · wind out 3,LvR +8%,heat +1%
+2026-07-09,Colson Montgomery,CHW,Patrick Sandoval *,4,card,21.0,+377,255,-25.6,park +9%,79F,LvL -22%,
+2026-07-09,Coby Mayo,BAL,David Peterson,6,card,20.2,+396,330,-13.3,park +4% [low-conf],82F · wind out 6,RvL +12%,heat +4%
+2026-07-09,Francisco Alvarez,NYM,Michael Wacha,5,card,20.0,+400,290,-21.9,park -4%,84F · wind out 10,RvR -3%,heat -3%
+2026-07-09,Jake Bauers,MIL,Andre Pallante,3,proj,19.6,+409,475,13.0,park -7%,88F · wind out 7,LvR +8%,heat +4%
+2026-07-09,Pete Crow-Armstrong,CHC,Trevor Rogers,1,card,19.5,+412,335,-15.1,park +4% [low-conf],82F · wind out 6,LvL -22%,heat +5%
+2026-07-09,Samuel Basallo,BAL,David Peterson,7,card,19.4,+416,360,-10.8,park +4% [low-conf],82F · wind out 6,LvL -22%,heat +13%
+2026-07-09,Seiya Suzuki,CHC,Trevor Rogers,3,card,19.4,+415,350,-12.6,park +4% [low-conf],82F · wind out 6,RvL +12%,heat +3%
+2026-07-09,Ian Happ,CHC,Trevor Rogers,7,card,19.4,+416,310,-20.5,park +4% [low-conf],82F · wind out 6,SvL +12%,heat +1%
+2026-07-09,Hunter Goodman,COL,TBD *,2,proj,19.4,+416,,,park -14%,59F,,
+2026-07-09,Dominic Canzone,SEA,Janson Junk,8,proj,19.3,+418,430,2.3,park -9%,88F · wind in 5 (roof: half),LvR +8%,heat +11%
+2026-07-09,Bobby Witt Jr.,KCR,Sean Manaea,2,card,19.3,+419,265,-29.7,park -4%,84F · wind out 10,RvL +12%,heat +11%
+2026-07-09,A.J. Ewing,NYM,Michael Wacha,1,card,17.5,+473,650,30.9,park -4%,84F · wind out 10,LvR +8%,heat +5%
+2026-07-09,Drew Romo,CHW,Patrick Sandoval *,9,card,15.7,+535,750,33.9,park +9%,79F,SvL +12%,
+2026-07-09,Nate Eaton,BOS,Anthony Kay,7,card,14.4,+592,800,30.0,park +9%,79F,RvL +12%,
+2026-07-09,Max Schuemann,NYY,Drew Rasmussen,7,card,14.2,+602,1150,78.1,park -4% [low-conf],dome,RvR -3%,
+2026-07-09,Brice Turang,MIL,Andre Pallante,1,proj,13.6,+637,900,35.6,park -7%,88F · wind out 7,LvR +8%,
+2026-07-09,Mauricio Dubón,ATL,Mitch Keller,5,card,11.3,+782,1050,30.3,park -9%,85F · wind out 3,RvR -3%,

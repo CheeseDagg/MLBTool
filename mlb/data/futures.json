@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-09T16:25:03+00:00",
+ "generated": "2026-07-09T17:06:52+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -113,22 +113,22 @@
    "shop": false
   },
   {
-   "team": "Chicago White Sox",
-   "cons_pct": 1.8,
-   "fair": "+5422",
-   "best_price": 4500,
-   "book": "draftkings",
-   "edge_pct": -16.7,
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Houston Astros",
    "cons_pct": 1.8,
    "fair": "+5476",
    "best_price": 5500,
    "book": "betmgm",
    "edge_pct": 0.4,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Chicago White Sox",
+   "cons_pct": 1.8,
+   "fair": "+5422",
+   "best_price": 4500,
+   "book": "draftkings",
+   "edge_pct": -16.7,
    "books_n": 5,
    "shop": false
   },
@@ -163,22 +163,22 @@
    "shop": false
   },
   {
-   "team": "San Diego Padres",
-   "cons_pct": 0.9,
-   "fair": "+11149",
-   "best_price": 10000,
-   "book": "fanduel",
-   "edge_pct": -10.2,
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Baltimore Orioles",
    "cons_pct": 0.9,
    "fair": "+10824",
    "best_price": 10000,
    "book": "draftkings",
    "edge_pct": -7.5,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Diego Padres",
+   "cons_pct": 0.9,
+   "fair": "+11149",
+   "best_price": 10000,
+   "book": "fanduel",
+   "edge_pct": -10.2,
    "books_n": 5,
    "shop": false
   },
@@ -243,14 +243,14 @@
    "shop": false
   },
   {
-   "team": "San Francisco Giants",
+   "team": "Washington Nationals",
    "cons_pct": 0.2,
-   "fair": "+60867",
+   "fair": "+48039",
    "best_price": 50000,
-   "book": "betrivers",
-   "edge_pct": -17.8,
+   "book": "fanduel",
+   "edge_pct": 4.1,
    "books_n": 5,
-   "shop": false
+   "shop": true
   },
   {
    "team": "Kansas City Royals",
@@ -261,16 +261,6 @@
    "edge_pct": -17.5,
    "books_n": 5,
    "shop": false
-  },
-  {
-   "team": "Washington Nationals",
-   "cons_pct": 0.2,
-   "fair": "+48039",
-   "best_price": 50000,
-   "book": "fanduel",
-   "edge_pct": 4.1,
-   "books_n": 5,
-   "shop": true
   },
   {
    "team": "Los Angeles Angels",
@@ -289,6 +279,16 @@
    "best_price": 50000,
    "book": "fanduel",
    "edge_pct": -10.1,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Francisco Giants",
+   "cons_pct": 0.2,
+   "fair": "+60867",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -17.8,
    "books_n": 5,
    "shop": false
   },
