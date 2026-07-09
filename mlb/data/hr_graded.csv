@@ -72,3 +72,25 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-08,Alan Roden,MIN,Slade Cecconi,8,card,12.9,+676,1000,41.7,park -2%,79F,LvR +8%,,no
 2026-07-08,Luisangel Acuña,CHW,Jake Bennett,9,card,11.5,+769,1150,43.9,park +9%,83F · wind in 5,RvL +12%,,void
 2026-07-08,Hunter Goodman,COL,Roki Sasaki,2,proj,28.9,+246,225,-6.1,park +5%,no wx,RvR -3%,heat +6%,no
+2026-07-09,Juan Soto,NYM,Michael Wacha,2,card,28.5,+250,,,park -4%,80F · wind out 9,LvR +8%,heat +12%,hr
+2026-07-09,Randal Grichuk,CHW,Patrick Sandoval *,2,card,27.5,+263,600,92.6,park +9%,84F,RvL +12%,,void
+2026-07-09,Ben Rice,NYY,Drew Rasmussen,2,card,26.2,+281,,,park -4% [low-conf],dome,LvR +8%,heat +11%,hr
+2026-07-09,Miguel Vargas,CHW,Patrick Sandoval *,3,card,26.1,+283,575,76.2,park +9%,84F,RvL +12%,,void
+2026-07-09,Pete Alonso,BAL,David Peterson,4,card,25.0,+299,,,park +4% [low-conf],83F · wind out 3,RvL +12%,heat +9%,no
+2026-07-09,Matt Olson,ATL,Mitch Keller,3,card,24.9,+302,,,park -9%,87F · wind out 4,LvR +8%,heat +6%,hr
+2026-07-09,Esmerlyn Valdez,PIT,Bryce Elder,4,card,24.2,+313,,,park -9%,87F · wind out 4,RvR -3%,heat +1%,hr
+2026-07-09,Michael Harris II,ATL,Mitch Keller,1,card,23.8,+320,1900,376.3,park -9%,87F · wind out 4,LvR +8%,heat +8%,no
+2026-07-09,Kody Clemens,MIN,Gavin Williams,3,card,22.8,+340,700,82.0,park -2%,84F,LvR +8%,heat +5%,no
+2026-07-09,Brandon Lowe,PIT,Bryce Elder,2,card,22.7,+340,575,53.5,park -9%,87F · wind out 4,LvR +8%,heat +4%,no
+2026-07-09,Drake Baldwin,ATL,Mitch Keller,4,card,22.1,+353,2400,451.4,park -9%,87F · wind out 4,LvR +8%,heat +1%,no
+2026-07-09,Colson Montgomery,CHW,Patrick Sandoval *,4,card,21.8,+359,335,-5.2,park +9%,84F,LvL -22%,,void
+2026-07-09,Francisco Alvarez,NYM,Michael Wacha,5,card,19.5,+412,,,park -4%,80F · wind out 9,RvR -3%,heat -3%,no
+2026-07-09,Pete Crow-Armstrong,CHC,Trevor Rogers,1,card,19.2,+420,,,park +4% [low-conf],83F · wind out 3,LvL -22%,heat +5%,no
+2026-07-09,Ozzie Albies,ATL,Mitch Keller,2,card,13.9,+617,2400,248.5,park -9%,87F · wind out 4,SvR +8%,,no
+2026-07-09,Trevor Larnach,MIN,Gavin Williams,1,card,13.2,+656,2200,204.2,park -2%,84F,LvR +8%,,no
+2026-07-09,Dominic Smith,ATL,Mitch Keller,6,card,12.8,+684,2200,193.3,park -9%,87F · wind out 4,LvR +8%,,no
+2026-07-09,Cody Bellinger,NYY,Drew Rasmussen,4,card,12.5,+699,2200,187.7,park -4% [low-conf],dome,LvR +8%,,no
+2026-07-09,Jasson Domínguez,NYY,Drew Rasmussen,3,card,11.8,+749,2900,253.5,park -4% [low-conf],dome,SvR +8%,,no
+2026-07-09,Mauricio Dubón,ATL,Mitch Keller,5,card,11.7,+755,2800,239.3,park -9%,87F · wind out 4,RvR -3%,,no
+2026-07-09,Brayan Rocchio,CLE,Bailey Ober,2,card,10.4,+861,2800,201.9,park -2%,84F,SvR +8%,,no
+2026-07-09,José Caballero,NYY,Drew Rasmussen,5,card,10.2,+880,3400,257.2,park -4% [low-conf],dome,RvR -3%,,no
