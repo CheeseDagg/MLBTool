@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-09T03:50:25+00:00",
+ "generated": "2026-07-09T04:04:21+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -15,10 +15,10 @@
   {
    "team": "New York Yankees",
    "cons_pct": 12.5,
-   "fair": "+700",
+   "fair": "+698",
    "best_price": 550,
    "book": "betrivers",
-   "edge_pct": -18.7,
+   "edge_pct": -18.6,
    "books_n": 4,
    "shop": false
   },
@@ -35,30 +35,30 @@
   {
    "team": "Milwaukee Brewers",
    "cons_pct": 7.5,
-   "fair": "+1233",
+   "fair": "+1230",
    "best_price": 1000,
    "book": "draftkings",
-   "edge_pct": -17.5,
+   "edge_pct": -17.3,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Atlanta Braves",
    "cons_pct": 6.6,
-   "fair": "+1412",
+   "fair": "+1410",
    "best_price": 1300,
    "book": "draftkings",
-   "edge_pct": -7.4,
+   "edge_pct": -7.3,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Philadelphia Phillies",
    "cons_pct": 6.0,
-   "fair": "+1559",
+   "fair": "+1556",
    "best_price": 1500,
    "book": "betrivers",
-   "edge_pct": -3.5,
+   "edge_pct": -3.4,
    "books_n": 4,
    "shop": false
   },
@@ -74,61 +74,61 @@
   },
   {
    "team": "Chicago Cubs",
-   "cons_pct": 3.6,
-   "fair": "+2712",
+   "cons_pct": 3.8,
+   "fair": "+2554",
    "best_price": 2500,
    "book": "betrivers",
-   "edge_pct": -7.5,
+   "edge_pct": -2.0,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Texas Rangers",
-   "cons_pct": 3.4,
-   "fair": "+2858",
+   "cons_pct": 3.2,
+   "fair": "+3044",
    "best_price": 2500,
    "book": "betrivers",
-   "edge_pct": -12.1,
+   "edge_pct": -17.3,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Toronto Blue Jays",
    "cons_pct": 2.3,
-   "fair": "+4329",
+   "fair": "+4288",
    "best_price": 4000,
    "book": "betrivers",
-   "edge_pct": -7.4,
+   "edge_pct": -6.6,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Cleveland Guardians",
-   "cons_pct": 2.1,
-   "fair": "+4578",
+   "cons_pct": 2.3,
+   "fair": "+4321",
    "best_price": 4000,
-   "book": "fanduel",
-   "edge_pct": -12.4,
+   "book": "betmgm",
+   "edge_pct": -7.3,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Houston Astros",
-   "cons_pct": 1.9,
-   "fair": "+5294",
+   "cons_pct": 2.0,
+   "fair": "+4987",
    "best_price": 5500,
    "book": "betmgm",
-   "edge_pct": 3.8,
+   "edge_pct": 10.1,
    "books_n": 4,
    "shop": true
   },
   {
    "team": "Chicago White Sox",
    "cons_pct": 1.8,
-   "fair": "+5472",
-   "best_price": 4500,
-   "book": "draftkings",
-   "edge_pct": -17.5,
+   "fair": "+5507",
+   "best_price": 5000,
+   "book": "fanduel",
+   "edge_pct": -9.0,
    "books_n": 4,
    "shop": false
   },
@@ -155,40 +155,50 @@
   {
    "team": "Pittsburgh Pirates",
    "cons_pct": 1.0,
-   "fair": "+9712",
-   "best_price": 8000,
-   "book": "draftkings",
-   "edge_pct": -17.5,
+   "fair": "+9773",
+   "best_price": 10000,
+   "book": "fanduel",
+   "edge_pct": 2.3,
    "books_n": 4,
-   "shop": false
+   "shop": true
   },
   {
    "team": "Baltimore Orioles",
-   "cons_pct": 1.0,
-   "fair": "+10288",
-   "best_price": 9000,
-   "book": "draftkings",
-   "edge_pct": -12.4,
+   "cons_pct": 0.9,
+   "fair": "+10992",
+   "best_price": 10000,
+   "book": "fanduel",
+   "edge_pct": -8.9,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "San Diego Padres",
    "cons_pct": 0.9,
-   "fair": "+10801",
+   "fair": "+10781",
    "best_price": 10000,
    "book": "draftkings",
-   "edge_pct": -7.4,
+   "edge_pct": -7.2,
    "books_n": 4,
    "shop": false
   },
   {
    "team": "Minnesota Twins",
    "cons_pct": 0.8,
-   "fair": "+12135",
+   "fair": "+12114",
    "best_price": 15000,
    "book": "betrivers",
-   "edge_pct": 23.4,
+   "edge_pct": 23.6,
+   "books_n": 4,
+   "shop": true
+  },
+  {
+   "team": "Arizona Diamondbacks",
+   "cons_pct": 0.6,
+   "fair": "+17019",
+   "best_price": 20000,
+   "book": "fanduel",
+   "edge_pct": 17.4,
    "books_n": 4,
    "shop": true
   },
@@ -203,32 +213,52 @@
    "shop": false
   },
   {
-   "team": "Arizona Diamondbacks",
-   "cons_pct": 0.6,
-   "fair": "+17019",
-   "best_price": 15000,
-   "book": "fanduel",
-   "edge_pct": -11.8,
-   "books_n": 4,
-   "shop": false
-  },
-  {
    "team": "St. Louis Cardinals",
-   "cons_pct": 0.6,
-   "fair": "+16555",
+   "cons_pct": 0.5,
+   "fair": "+18161",
    "best_price": 17000,
    "book": "draftkings",
-   "edge_pct": 2.7,
+   "edge_pct": -6.4,
    "books_n": 4,
-   "shop": true
+   "shop": false
   },
   {
    "team": "Athletics",
    "cons_pct": 0.4,
    "fair": "+27158",
-   "best_price": 25000,
+   "best_price": 30000,
    "book": "fanduel",
-   "edge_pct": -7.9,
+   "edge_pct": 10.4,
+   "books_n": 4,
+   "shop": true
+  },
+  {
+   "team": "Cincinnati Reds",
+   "cons_pct": 0.3,
+   "fair": "+30875",
+   "best_price": 35000,
+   "book": "draftkings",
+   "edge_pct": 13.3,
+   "books_n": 4,
+   "shop": true
+  },
+  {
+   "team": "Los Angeles Angels",
+   "cons_pct": 0.2,
+   "fair": "+61427",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -18.6,
+   "books_n": 4,
+   "shop": false
+  },
+  {
+   "team": "San Francisco Giants",
+   "cons_pct": 0.2,
+   "fair": "+61427",
+   "best_price": 50000,
+   "book": "betrivers",
+   "edge_pct": -18.6,
    "books_n": 4,
    "shop": false
   },
@@ -243,52 +273,22 @@
    "shop": false
   },
   {
-   "team": "Kansas City Royals",
-   "cons_pct": 0.2,
-   "fair": "+60591",
-   "best_price": 50000,
-   "book": "draftkings",
-   "edge_pct": -17.5,
-   "books_n": 4,
-   "shop": false
-  },
-  {
-   "team": "Los Angeles Angels",
-   "cons_pct": 0.2,
-   "fair": "+61533",
-   "best_price": 50000,
-   "book": "betrivers",
-   "edge_pct": -18.7,
-   "books_n": 4,
-   "shop": false
-  },
-  {
-   "team": "Cincinnati Reds",
-   "cons_pct": 0.2,
-   "fair": "+42420",
-   "best_price": 35000,
-   "book": "draftkings",
-   "edge_pct": -17.5,
-   "books_n": 4,
-   "shop": false
-  },
-  {
    "team": "Washington Nationals",
    "cons_pct": 0.2,
-   "fair": "+48477",
+   "fair": "+48394",
    "best_price": 40000,
    "book": "draftkings",
-   "edge_pct": -17.5,
+   "edge_pct": -17.3,
    "books_n": 4,
    "shop": false
   },
   {
-   "team": "San Francisco Giants",
+   "team": "Kansas City Royals",
    "cons_pct": 0.2,
-   "fair": "+61533",
+   "fair": "+60488",
    "best_price": 50000,
-   "book": "betrivers",
-   "edge_pct": -18.7,
+   "book": "draftkings",
+   "edge_pct": -17.3,
    "books_n": 4,
    "shop": false
   },
