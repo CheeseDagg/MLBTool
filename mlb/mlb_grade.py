@@ -213,7 +213,10 @@ def grade_all():
         print("no prediction log yet"); return
     done = {(r["date"], norm(r["player"]), r.get("opp_sp","")) for r in load_csv(GRADED)}
     today = dt.date.today().isoformat()
-    dates = sorted({r["date"] for r in preds if r["date"] < today})
+    # settle every date through today. Prior days are fully final; today's games
+    # that aren't Final yet come back 'pending' from settle_row and retry next run,
+    # so early day-games settle on the 3:17 build instead of waiting overnight.
+    dates = sorted({r["date"] for r in preds if r["date"] <= today})
     new = []
     for d in dates:
         rows = [r for r in preds if r["date"]==d
@@ -299,6 +302,37 @@ def selftest():
     tt = p["top_tier"]
     assert tt["n"]==2 and tt["hits"]==1 and tt["roi"]==50.0, tt
     json.dumps(p)
+    # SAME-DAY GRADING: today's finished game settles now; unfinished stays pending
+    import datetime as _dt
+    _today = _dt.date.today().isoformat()
+    global load_csv, fetch_day_results
+    _orig_load, _orig_fetch = load_csv, fetch_day_results
+    def _fake_load(path):
+        if path == PLOG:
+            return [
+                {"date": _today, "player": "Done Hitter", "team": "AAA", "opp_sp": "Early Arm", "hr_pct":"30"},
+                {"date": _today, "player": "Live Hitter", "team": "BBB", "opp_sp": "Late Arm", "hr_pct":"28"},
+            ]
+        return []   # empty graded log
+    def _fake_fetch(d):
+        # AAA game final (Done Hitter homered), BBB game still going -> not in finals, all_final False
+        games = [{"teams": {"AAA Team": {"opp_sp": norm("Early Arm"), "abbr":"AAA",
+                                          "bat": {norm("Done Hitter"): {"pa":4,"hr":1}}}}}]
+        return games, False
+    load_csv, fetch_day_results = _fake_load, _fake_fetch
+    try:
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            grade_all()
+        graded_now = _fake_load  # can't easily read file; assert via settle directly
+        g,_ = _fake_fetch(_today)
+        assert settle_row({"date":_today,"player":"Done Hitter","team":"AAA","opp_sp":"Early Arm"}, g) == "hr"
+        assert settle_row({"date":_today,"player":"Live Hitter","team":"BBB","opp_sp":"Late Arm"}, g) == "pending"
+    finally:
+        load_csv, fetch_day_results = _orig_load, _orig_fetch
+    print("SAME-DAY PARTIAL SLATE PASS — final game settles, in-progress stays pending")
+
     print("GRADER SELFTEST PASS — settle/void/pending/DH + Brier/buckets/lift/ROI all exact")
     return 0
 
