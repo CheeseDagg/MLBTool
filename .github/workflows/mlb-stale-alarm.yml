@@ -1,0 +1,26 @@
+name: MLB staleness alarm
+# Fails (= GitHub emails you) if the slate hasn't been rebuilt in 40h.
+# A silent dead cron can no longer go unnoticed.
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Slate freshness
+        run: |
+          TS=$(git log -1 --format=%ct -- "mlb/data/slate.json")
+          [ -n "$TS" ] || { echo "::error::mlb/data/slate.json has never been committed"; exit 1; }
+          AGE=$(( ($(date +%s) - TS) / 3600 ))
+          echo "slate age: ${AGE}h (limit 40h)"
+          if [ "$AGE" -gt "40" ]; then
+            echo "::error::STALE — mlb/data/slate.json is ${AGE}h old. The daily pipeline has stopped. Check the main workflow runs."
+            exit 1
+          fi
+          echo "fresh."
