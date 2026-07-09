@@ -73,42 +73,41 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-08,Max Schuemann,NYY,Shane McClanahan,7,card,14.5,+589,800,30.6,park -4% [low-conf],dome,RvL +12%,
 2026-07-08,Alan Roden,MIN,Slade Cecconi,8,card,12.9,+676,1000,41.7,park -2%,79F,LvR +8%,
 2026-07-08,Luisangel Acuña,CHW,Jake Bennett,9,card,11.5,+769,1150,43.9,park +9%,83F · wind in 5,RvL +12%,
-2026-07-09,Kyle Schwarber,PHI,Brady Singer,2,proj,40.7,+146,,,park +25%,74F,LvR +8%,heat -4%
-2026-07-09,Bryce Harper,PHI,Brady Singer,3,proj,31.9,+214,,,park +25%,74F,LvR +8%,heat +3%
-2026-07-09,Ben Rice,NYY,Drew Rasmussen,3,proj,25.7,+288,,,park -4% [low-conf],dome,LvR +8%,heat +11%
-2026-07-09,Ben Rice,NYM,Michael Wacha,3,proj,25.6,+291,,,park -4%,71F · wind out 3,LvR +8%,heat +9%
-2026-07-09,Brandon Marsh,PHI,Brady Singer,5,proj,25.4,+293,,,park +25%,74F,LvR +8%,heat -8%
-2026-07-09,Byron Buxton,MIN,Gavin Williams,4,proj,25.0,+300,,,park -2%,70F,RvR -3%,heat -0%
-2026-07-09,Willson Contreras,BOS,Anthony Kay,2,proj,24.3,+312,,,park +9%,73F,RvL +12%,heat +3%
-2026-07-09,Juan Soto,NYM,Michael Wacha,7,proj,23.4,+327,,,park -4%,71F · wind out 3,LvR +8%,heat +12%
-2026-07-09,Sal Stewart,CIN,Jesús Luzardo,1,proj,23.4,+327,,,park +25%,74F,RvL +12%,heat +2%
-2026-07-09,Juan Soto,NYY,Drew Rasmussen,7,proj,23.2,+332,,,park -4% [low-conf],dome,LvR +8%,heat +11%
-2026-07-09,Shea Langeliers,ATH,Framber Valdez,2,proj,21.7,+361,,,park -5%,75F,RvL +12%,heat +7%
-2026-07-09,Spencer Steer,CIN,Jesús Luzardo,2,proj,21.2,+373,,,park +25%,74F,RvL +12%,heat -0%
-2026-07-09,Elly De La Cruz,CIN,Jesús Luzardo,3,proj,21.2,+373,,,park +25%,74F,SvL +12%,heat +3%
-2026-07-09,Junior Caminero,TBR,TBD *,1,proj,21.1,+374,,,park -4% [low-conf],dome,,
-2026-07-09,Kody Clemens,MIN,Gavin Williams,5,proj,20.4,+390,,,park -2%,70F,LvR +8%,heat +5%
-2026-07-09,Hunter Goodman,COL,TBD *,2,proj,20.2,+394,,,park -14%,55F · wind out 11,,
-2026-07-09,Brandon Lowe,PIT,Bryce Elder,2,proj,20.1,+397,,,park -9%,73F,LvR +8%,heat +4%
-2026-07-09,Jordan Walker,STL,Logan Henderson,4,proj,19.7,+409,,,park -7%,77F,RvR -3%,heat +16%
-2026-07-09,Dominic Canzone,SEA,Janson Junk,8,proj,19.3,+418,,,park -9%,81F · wind in 3 (roof: half),LvR +8%,heat +11%
-2026-07-09,Luke Raley,SEA,Janson Junk,7,proj,18.6,+438,,,park -9%,81F · wind in 3 (roof: half),LvR +8%,heat +10%
-2026-07-09,Jake Burger,TEX,Reid Detmers,3,proj,18.6,+437,,,park +2%,90F (roof: half),RvL +12%,heat +16%
-2026-07-09,Ketel Marte,ARI,Griffin Canning,1,proj,18.2,+449,1000,100.3,park -4%,66F,SvR +8%,heat -1%
-2026-07-09,Josh Bell,MIN,Gavin Williams,1,proj,18.0,+454,,,park -2%,70F,SvR +8%,heat +9%
-2026-07-09,Oneil Cruz,PIT,Bryce Elder,6,proj,17.8,+463,,,park -9%,73F,LvR +8%,heat +2%
-2026-07-09,Bryson Stott,PHI,Brady Singer,6,proj,17.7,+464,,,park +25%,74F,LvR +8%,heat +1%
-2026-07-09,Brent Rooker,ATH,Framber Valdez,9,proj,17.6,+468,,,park -5%,75F,RvL +12%,heat +17%
-2026-07-09,Alec Bohm,PHI,Brady Singer,4,proj,17.6,+470,,,park +25%,74F,RvR -3%,heat -10%
-2026-07-09,Manny Machado,SDP,Merrill Kelly,2,proj,17.6,+468,,,park -4%,66F,RvR -3%,heat -9%
-2026-07-09,Trea Turner,PHI,Brady Singer,1,proj,17.5,+471,,,park +25%,74F,RvR -3%,heat -10%
-2026-07-09,Jake Bauers,MIL,Andre Pallante,3,proj,17.4,+475,,,park -7%,77F,LvR +8%,heat +4%
-2026-07-09,Gavin Sheets,SDP,Merrill Kelly,5,proj,15.8,+535,1100,89.1,park -4%,66F,LvR +8%,heat -10%
-2026-07-09,Corbin Carroll,ARI,Griffin Canning,2,proj,14.8,+577,900,47.6,park -4%,66F,LvR +8%,heat -3%
-2026-07-09,Jackson Merrill,SDP,Merrill Kelly,3,proj,14.3,+602,1050,63.9,park -4%,66F,LvR +8%,heat -5%
-2026-07-09,Fernando Tatis Jr.,SDP,Merrill Kelly,1,proj,12.6,+691,950,32.8,park -4%,66F,RvR -3%,
-2026-07-09,Xander Bogaerts,SDP,Merrill Kelly,4,proj,10.8,+826,1900,116.0,park -4%,66F,RvR -3%,
-2026-07-09,Nolan Arenado,ARI,Griffin Canning,4,proj,10.6,+844,950,11.2,park -4%,66F,RvR -3%,
-2026-07-09,Gabriel Moreno,ARI,Griffin Canning,6,proj,10.0,+897,2200,130.6,park -4%,66F,RvR -3%,
-2026-07-09,Miguel Andujar,SDP,Merrill Kelly,6,proj,9.7,+929,2800,181.8,park -4%,66F,RvR -3%,
-2026-07-09,Ildemaro Vargas,ARI,Griffin Canning,5,proj,9.2,+986,2400,130.1,park -4%,66F,SvR +8%,
+2026-07-09,Kyle Schwarber,PHI,Brady Singer,2,proj,42.0,+138,140,0.9,park +25%,81F,LvR +8%,heat -4%
+2026-07-09,Bryce Harper,PHI,Brady Singer,3,proj,32.3,+210,250,13.0,park +25%,81F,LvR +8%,heat +3%
+2026-07-09,Juan Soto,NYM,Michael Wacha,2,card,29.3,+241,240,-0.3,park -4%,86F · wind out 8,LvR +8%,heat +12%
+2026-07-09,Randal Grichuk,CHW,Patrick Sandoval *,2,card,26.8,+273,330,15.1,park +9%,81F,RvL +12%,
+2026-07-09,Ben Rice,NYY,Drew Rasmussen,2,card,26.0,+284,380,24.9,park -4% [low-conf],dome,LvR +8%,heat +11%
+2026-07-09,Brandon Marsh,PHI,Brady Singer,5,proj,25.7,+288,390,26.2,park +25%,81F,LvR +8%,heat -8%
+2026-07-09,Miguel Vargas,CHW,Patrick Sandoval *,3,card,25.4,+294,310,4.1,park +9%,81F,RvL +12%,
+2026-07-09,Sal Stewart,CIN,Jesús Luzardo,1,proj,25.1,+298,335,9.2,park +25%,81F,RvL +12%,heat +2%
+2026-07-09,Pete Alonso,BAL,David Peterson,4,card,25.0,+300,310,2.4,park +4% [low-conf],80F · wind out 5,RvL +12%,heat +9%
+2026-07-09,Matt Olson,ATL,Mitch Keller,3,card,23.6,+325,265,-14.0,park -9%,83F,LvR +8%,heat +6%
+2026-07-09,Shea Langeliers,ATH,Framber Valdez,2,proj,23.2,+331,335,0.9,park -5%,84F,RvL +12%,heat +7%
+2026-07-09,Esmerlyn Valdez,PIT,Bryce Elder,4,card,23.1,+334,400,15.3,park -9%,83F,RvR -3%,heat +1%
+2026-07-09,Elly De La Cruz,CIN,Jesús Luzardo,3,proj,22.7,+341,340,-0.1,park +25%,81F,SvL +12%,heat +3%
+2026-07-09,Michael Harris II,ATL,Mitch Keller,1,card,22.5,+344,380,8.1,park -9%,83F,LvR +8%,heat +8%
+2026-07-09,Jordan Walker,STL,Logan Henderson,4,proj,22.5,+345,360,3.3,park -7%,87F · wind out 8,RvR -3%,heat +16%
+2026-07-09,Kody Clemens,MIN,Gavin Williams,3,card,22.4,+347,400,12.0,park -2%,78F,LvR +8%,heat +5%
+2026-07-09,Brandon Lowe,PIT,Bryce Elder,2,card,21.7,+362,300,-13.4,park -9%,83F,LvR +8%,heat +4%
+2026-07-09,Spencer Steer,CIN,Jesús Luzardo,2,proj,21.4,+366,460,20.1,park +25%,81F,RvL +12%,heat -0%
+2026-07-09,Colson Montgomery,CHW,Patrick Sandoval *,4,card,21.2,+372,255,-24.8,park +9%,81F,LvL -22%,
+2026-07-09,Drake Baldwin,ATL,Mitch Keller,4,card,20.8,+380,440,12.6,park -9%,83F,LvR +8%,heat +1%
+2026-07-09,Francisco Alvarez,NYM,Michael Wacha,5,card,20.1,+398,290,-21.6,park -4%,86F · wind out 8,RvR -3%,heat -3%
+2026-07-09,Coby Mayo,BAL,David Peterson,6,card,19.8,+405,340,-12.9,park +4% [low-conf],80F · wind out 5,RvL +12%,heat +4%
+2026-07-09,Jake Bauers,MIL,Andre Pallante,3,proj,19.6,+409,475,13.0,park -7%,87F · wind out 8,LvR +8%,heat +4%
+2026-07-09,Bobby Witt Jr.,KCR,Sean Manaea,2,card,19.3,+417,265,-29.4,park -4%,86F · wind out 8,RvL +12%,heat +11%
+2026-07-09,Hunter Goodman,COL,TBD *,2,proj,19.3,+419,,,park -14%,57F · wind out 4,,
+2026-07-09,Pete Crow-Armstrong,CHC,Trevor Rogers,1,card,19.2,+422,325,-18.6,park +4% [low-conf],80F · wind out 5,LvL -22%,heat +5%
+2026-07-09,Jake Burger,TEX,Reid Detmers,3,proj,19.1,+423,380,-8.3,park +2%,94F (roof: half),RvL +12%,heat +16%
+2026-07-09,Samuel Basallo,BAL,David Peterson,7,card,19.0,+426,370,-10.6,park +4% [low-conf],80F · wind out 5,LvL -22%,heat +13%
+2026-07-09,Seiya Suzuki,CHC,Trevor Rogers,3,card,19.0,+425,350,-14.3,park +4% [low-conf],80F · wind out 5,RvL +12%,heat +3%
+2026-07-09,Ian Happ,CHC,Trevor Rogers,7,card,19.0,+426,310,-22.0,park +4% [low-conf],80F · wind out 5,SvL +12%,heat +1%
+2026-07-09,Jared Young,NYM,Michael Wacha,6,card,18.8,+432,550,22.2,park -4%,86F · wind out 8,LvR +8%,heat +6%
+2026-07-09,A.J. Ewing,NYM,Michael Wacha,1,card,17.5,+471,650,31.5,park -4%,86F · wind out 8,LvR +8%,heat +5%
+2026-07-09,Drew Romo,CHW,Patrick Sandoval *,9,card,15.9,+529,750,35.2,park +9%,81F,SvL +12%,
+2026-07-09,Nate Eaton,BOS,Anthony Kay,7,card,14.6,+585,800,31.3,park +9%,81F,RvL +12%,
+2026-07-09,Max Schuemann,NYY,Drew Rasmussen,7,card,14.2,+602,900,42.5,park -4% [low-conf],dome,RvR -3%,
+2026-07-09,Ryan McMahon,NYY,Drew Rasmussen,8,card,14.1,+607,750,20.2,park -4% [low-conf],dome,LvR +8%,
+2026-07-09,Brice Turang,MIL,Andre Pallante,1,proj,13.6,+637,900,35.6,park -7%,87F · wind out 8,LvR +8%,
+2026-07-09,Luisangel Acuña,CHW,Patrick Sandoval *,8,card,12.6,+691,1000,39.1,park +9%,81F,RvL +12%,
