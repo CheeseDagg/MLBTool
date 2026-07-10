@@ -1,0 +1,32 @@
+name: MLB HR line shop
+# Pulls multi-book HR-prop odds and finds +EV plays vs our Marcel-calibrated fair number.
+# Runs a few times through the afternoon/evening to catch lines as lineups drop and books
+# move — line shopping + stale-line catching. Needs the ODDS_API_KEY secret.
+on:
+  schedule:
+    - cron: "0 18,21,23 * * *"   # 18/21/23 UTC ~ afternoon to evening ET, as slates set
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  lineshop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Find HR line-shop edges
+        working-directory: mlb
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python mlb_lineshop.py --selftest
+          python mlb_lineshop_run.py
+      - name: Commit plays
+        run: |
+          git config user.name mlb-bot
+          git config user.email mlb-bot@users.noreply.github.com
+          git add mlb/data/lineshop.json
+          git commit -m "HR line-shop refresh" || echo "no changes"
+          git push
