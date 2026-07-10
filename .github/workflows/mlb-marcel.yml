@@ -1,0 +1,30 @@
+name: MLB Marcel talent refresh (weekly)
+# Rebuilds the multi-year Marcel HR/PA talent table from statsapi yearByYear.
+# Weekly is plenty — true talent moves slowly; the current-season blend updates daily
+# from the board's own data. Manual trigger available.
+on:
+  schedule:
+    - cron: "0 12 * * 1"      # Mondays 12:00 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  marcel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Build talent table
+        working-directory: mlb
+        run: |
+          python mlb_marcel.py --selftest
+          python mlb_marcel_run.py
+      - name: Commit talent
+        run: |
+          git config user.name mlb-bot
+          git config user.email mlb-bot@users.noreply.github.com
+          git add mlb/data/marcel_talent.json
+          git commit -m "Marcel talent refresh" || echo "no changes"
+          git push
