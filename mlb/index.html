@@ -317,6 +317,7 @@ function render(d){
   <tr><td>games predicted</td><td class="num">${b.n}</td></tr>
   <tr><td>accuracy</td><td class="num"><b>${b.acc}%</b> <span class="dim">(home-always ${b.home_base}%)</span></td></tr>
   <tr><td>Brier score</td><td class="num">${b.brier}</td></tr></table>
+  ${cal.multi?`<div class="sub" style="margin-top:8px"><b>Two-homer games</b> (counted from Jul 9 on): A-tier bats ${cal.multi.a_two_plus} of ${cal.multi.a_n}${cal.multi.a_rate!=null?` (${cal.multi.a_rate}%)`:''} went deep twice · all graded bats ${cal.multi.two_plus} of ${cal.multi.n} (${cal.multi.rate}%). If A-tier keeps doubling up, "combine 2+" markets are the best-priced surface — verdict needs ~50 counted bets.</div>`:''}
   <div class="sub" style="margin-top:12px">calibration:</div>
   <table><tr><th>bucket</th><th class="num">predicted</th><th class="num">actual</th><th class="num">n</th></tr>`+
   b.cal.map(c=>`<tr><td>~${c.bucket}%</td><td class="num">${c.pred}%</td>
@@ -324,6 +325,31 @@ function render(d){
 }
 fetch('data/slate.json').then(r=>r.json()).then(render)
  .catch(()=>{$('meta').textContent='could not load slate.json — run mlb_publish.py (or wait for the daily Action)';});
+</script>
+
+<!-- SEASON BACKTEST PANEL -->
+<div id="backtestSection" style="display:none;margin-top:10px"></div>
+<script>
+fetch('mlb/data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).then(function(bt){
+  var el=document.getElementById('backtestSection'); if(!el||!bt||!bt.n) return;
+  function band(rows){return rows.map(function(b){return '<tr><td>'+b.band+'</td><td class="num">'+b.n+'</td><td class="num">'+b.pred+'%</td><td class="num"><b>'+b.actual+'%</b></td></tr>';}).join('');}
+  function bkt(rows){return rows.map(function(b){return '<tr><td>'+b.bucket+'</td><td class="num">'+b.n+'</td><td class="num">'+b.pred+'%</td><td class="num"><b>'+b.actual+'%</b></td></tr>';}).join('');}
+  var a=bt.a_tier, m=bt.multi;
+  el.innerHTML='<div class="card"><h2>Season backtest — core model, no weather</h2>'+
+    '<div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0"><b>What this is:</b> the whole season replayed day-by-day, each prediction using only stats available that morning (no hindsight). <b>Calibration only</b> — historical book prices aren\'t available, so this proves whether the numbers MEAN what they say and which signals carry; it does not claim profit. n='+bt.n+' graded predictions across '+bt.dates+' days.</div>'+
+    '<table class="tbl"><tr><th>overall</th><th>bets</th><th>model said</th><th>happened</th></tr>'+
+    '<tr><td>all predictions</td><td class="num">'+bt.n+'</td><td class="num">'+bt.pred_mean+'%</td><td class="num"><b>'+bt.actual+'%</b></td></tr>'+
+    (a?'<tr style="background:var(--hl)"><td><b>A-tier (25%+ & heat≥+10)</b></td><td class="num">'+a.n+'</td><td class="num">'+a.pred+'%</td><td class="num"><b>'+a.actual+'%</b></td></tr>':'')+
+    '</table>'+
+    '<div class="sub" style="margin-top:8px"><b>Heat-magnitude bands</b> — the verdict on the +10 rule:</div>'+
+    '<table class="tbl"><tr><th>heat</th><th>bets</th><th>said</th><th>happened</th></tr>'+band(bt.heat_bands||[])+'</table>'+
+    '<div class="sub" style="margin-top:8px"><b>Calibration buckets</b>:</div>'+
+    '<table class="tbl"><tr><th>predicted</th><th>bets</th><th>said</th><th>happened</th></tr>'+bkt(bt.buckets||[])+'</table>'+
+    (m?'<div class="sub" style="margin-top:8px"><b>Two-homer rate:</b> '+m.two_plus+' of '+m.n+' ('+m.rate+'%) went deep twice.</div>':'')+
+    '<div class="sub" style="opacity:.6;margin-top:6px">Brier '+bt.brier+' · generated '+(bt.generated||'')+' · weather '+bt.weather+'</div>'+
+    '</div>';
+  el.style.display='';
+}).catch(function(){});
 </script>
 </body>
 </html>

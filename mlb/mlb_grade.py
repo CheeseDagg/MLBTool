@@ -31,7 +31,26 @@ DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 PLOG = os.path.join(DATA, "hr_predictions.csv")
 GRADED = os.path.join(DATA, "hr_graded.csv")
 GCOLS = ["date","player","team","opp_sp","slot","lu","hr_pct","fair",
-         "book_price","ev_pct","park","temp","plat","heat","outcome"]
+         "book_price","ev_pct","park","temp","plat","heat","outcome","hr_n"]
+
+def migrate_graded():
+    """One-time: add hr_n column to a pre-existing graded file (blank = uncounted era).
+    Reads the file directly (never via load_csv) and writes atomically, so test
+    monkeypatching or a mid-write crash can never corrupt the ledger."""
+    if not os.path.exists(GRADED): return
+    with open(GRADED, newline="") as f:
+        header = f.readline()
+        if "hr_n" in header: return
+        f.seek(0)
+        rows = list(csv.DictReader(f))
+    tmp = GRADED + ".tmp"
+    with open(tmp, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=GCOLS); w.writeheader()
+        for r in rows:
+            r["hr_n"] = ""
+            w.writerow({k: r.get(k,"") for k in GCOLS})
+    os.replace(tmp, GRADED)
+    print(f"  migrated {len(rows)} legacy rows -> hr_n column added (blank = pre-counting)")
 
 def norm(s):
     if not isinstance(s, str): return ""
@@ -121,7 +140,7 @@ def settle_row(row, games):
     t = cands[0]
     b = t["bat"][pn]
     if b["pa"] <= 0: return "void"
-    return "hr" if b["hr"] >= 1 else "no"
+    return ("hr", b["hr"]) if b["hr"] >= 1 else ("no", 0)
 
 # ---------------------------------------------------------------------------
 # pure: aggregate graded rows into the calibration panel
@@ -153,6 +172,23 @@ def summarize(rows):
                         "pred": round(100*sum(a for a,_ in sel)/len(sel),1),
                         "actual": round(100*sum(b for _,b in sel)/len(sel),1)})
     panel["buckets"] = bks
+    # two-homer games — counted era only (hr_n present)
+    def _heat(r):
+        h = r.get("heat","") or ""
+        try:
+            if "heat +" in h: return int(h.split("+")[1].rstrip("%"))
+            if "heat -" in h: return -int(h.split("-")[1].rstrip("%"))
+        except Exception: pass
+        return None
+    cnt = [r for r in live if str(r.get("hr_n","")).strip() != ""]
+    if cnt:
+        two = sum(1 for r in cnt if int(float(r["hr_n"])) >= 2)
+        A = [r for r in cnt if float(r["hr_pct"]) >= 25 and (_heat(r) or -99) >= 10]
+        a2 = sum(1 for r in A if int(float(r["hr_n"])) >= 2)
+        panel["multi"] = {"n": len(cnt), "two_plus": two,
+                          "rate": round(100*two/len(cnt),1),
+                          "a_n": len(A), "a_two_plus": a2,
+                          "a_rate": (round(100*a2/len(A),1) if A else None)}
     # factor lift
     def grp(label, sel):
         if not sel: return None
@@ -229,10 +265,13 @@ def grade_all():
         settled = 0
         for r in rows:
             o = settle_row(r, games)
+            o, hn = o if isinstance(o, tuple) else (o, "")
             if o == "pending": continue
-            rec = {k: r.get(k,"") for k in GCOLS[:-1]}; rec["outcome"] = o
+            rec = {k: r.get(k,"") for k in GCOLS[:-2]}
+            rec["outcome"], rec["hr_n"] = o, hn
             new.append(rec); settled += 1
         print(f"  {d}: settled {settled}/{len(rows)}")
+    migrate_graded()
     if new:
         exists = os.path.exists(GRADED)
         with open(GRADED, "a", newline="") as f:
@@ -264,8 +303,8 @@ def selftest():
             "bat": {"sox star": {"pa":5,"hr":0}}}}}]
     row = lambda **k: dict({"date":"2026-07-07","player":"","opp_sp":"","team":"","hr_pct":"20",
                             "lu":"card","plat":"","heat":"","ev_pct":"","book_price":""}, **k)
-    assert settle_row(row(player="Slug McPower", opp_sp="Gopher Gary"), G) == "hr"
-    assert settle_row(row(player="Mid Bat", opp_sp="Gopher Gary"), G) == "no"
+    assert settle_row(row(player="Slug McPower", opp_sp="Gopher Gary"), G)[0] == "hr"
+    assert settle_row(row(player="Mid Bat", opp_sp="Gopher Gary"), G) == ("no", 0)
     assert settle_row(row(player="Benched Guy", opp_sp="Gopher Gary"), G) == "void"
     assert settle_row(row(player="Ghost Man", opp_sp="X"), G) == "pending"
     # doubleheader: same player two games, starter disambiguates
@@ -273,13 +312,13 @@ def selftest():
                         "bat": {"jake bauers":{"pa":4,"hr":1}}}}},
            {"teams": {"Milwaukee Brewers": {"opp_sp":"starter two",
                         "bat": {"jake bauers":{"pa":3,"hr":0}}}}} ]
-    assert settle_row(row(player="Jake Bauers", opp_sp="Starter One"), G2) == "hr"
-    assert settle_row(row(player="Jake Bauers", opp_sp="Starter Two"), G2) == "no"
+    assert settle_row(row(player="Jake Bauers", opp_sp="Starter One"), G2)[0] == "hr"
+    assert settle_row(row(player="Jake Bauers", opp_sp="Starter Two"), G2) == ("no", 0)
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter Three"), G2) == "void"
     # duplicate-name phantom: row claims a team whose box the player isn't in -> void
     G3 = [{"teams": {"New York Yankees": {"opp_sp": "x", "abbr": "NYY",
             "bat": {"ben rice": {"pa": 4, "hr": 1}}}}}]
-    assert settle_row(row(player="Ben Rice", opp_sp="Ian Seymour", team="NYY"), G3) == "hr"
+    assert settle_row(row(player="Ben Rice", opp_sp="Ian Seymour", team="NYY"), G3)[0] == "hr"
     assert settle_row(row(player="Ben Rice", opp_sp="Seth Lugo", team="NYM"), G3) == "void"
     # summarize math
     rows = [
@@ -288,13 +327,19 @@ def selftest():
         row(player="C", hr_pct="10", outcome="no",  heat="heat -4%", plat="LvL -22%", lu="proj"),
         row(player="D", hr_pct="10", outcome="void"),
     ]
+    rows[0]["hr_n"]="2"; rows[1]["hr_n"]="0"; rows[2]["hr_n"]=""   # mixed eras
+    rows.append(row(player="E", hr_pct="27", outcome="hr", heat="heat +11%", hr_n="2", lu="card"))
+    rows.append(row(player="F", hr_pct="26", outcome="hr", heat="heat +14%", hr_n="1", lu="card"))
     p = summarize(rows)
-    assert p["n"] == 3 and p["voids"] == 1
-    assert p["pred_mean"] == round(100*(0.3+0.3+0.1)/3,1)
-    assert p["brier"] == round((0.7**2 + 0.3**2 + 0.1**2)/3, 4), p["brier"]
-    assert any(b["bucket"]=="25-+" and b["n"]==2 for b in p["buckets"])
+    assert p["n"] == 5 and p["voids"] == 1
+    m = p["multi"]
+    assert m["n"] == 4 and m["two_plus"] == 2 and m["rate"] == 50.0
+    assert m["a_n"] == 2 and m["a_two_plus"] == 1 and m["a_rate"] == 50.0
+    assert p["pred_mean"] == round(100*(0.3+0.3+0.1+0.27+0.26)/5,1)
+    assert p["brier"] == round((0.7**2 + 0.3**2 + 0.1**2 + 0.73**2 + 0.74**2)/5, 4), p["brier"]
+    assert any(b["bucket"]=="25-+" and b["n"]==4 for b in p["buckets"])
     hplus = [x for x in p["lift"] if x["g"]=="heat +"][0]
-    assert hplus["n"]==2 and hplus["actual"]==50.0
+    assert hplus["n"]==4 and hplus["actual"]==75.0
     ev = p["ev_tier"]     # A wins at +200 (+2u), B loses (-1u) -> +1u/2 = +50%
     assert ev["n"]==2 and ev["hits"]==1 and ev["roi"]==50.0
     # top-likelihood tier: A(30%,+200,hr) and B(30%,+300,no) and C(10%) -> top5 of the
@@ -305,8 +350,10 @@ def selftest():
     # SAME-DAY GRADING: today's finished game settles now; unfinished stays pending
     import datetime as _dt
     _today = _dt.date.today().isoformat()
-    global load_csv, fetch_day_results
-    _orig_load, _orig_fetch = load_csv, fetch_day_results
+    global load_csv, fetch_day_results, GRADED
+    _orig_load, _orig_fetch, _orig_graded = load_csv, fetch_day_results, GRADED
+    import tempfile as _tf
+    GRADED = os.path.join(_tf.mkdtemp(), "hr_graded_selftest.csv")
     def _fake_load(path):
         if path == PLOG:
             return [
@@ -327,10 +374,10 @@ def selftest():
             grade_all()
         graded_now = _fake_load  # can't easily read file; assert via settle directly
         g,_ = _fake_fetch(_today)
-        assert settle_row({"date":_today,"player":"Done Hitter","team":"AAA","opp_sp":"Early Arm"}, g) == "hr"
+        assert settle_row({"date":_today,"player":"Done Hitter","team":"AAA","opp_sp":"Early Arm"}, g)[0] == "hr"
         assert settle_row({"date":_today,"player":"Live Hitter","team":"BBB","opp_sp":"Late Arm"}, g) == "pending"
     finally:
-        load_csv, fetch_day_results = _orig_load, _orig_fetch
+        load_csv, fetch_day_results, GRADED = _orig_load, _orig_fetch, _orig_graded
     print("SAME-DAY PARTIAL SLATE PASS — final game settles, in-progress stays pending")
 
     print("GRADER SELFTEST PASS — settle/void/pending/DH + Brier/buckets/lift/ROI all exact")
