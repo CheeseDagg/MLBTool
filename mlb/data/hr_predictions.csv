@@ -108,3 +108,35 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-09,Victor Bericoto,SFG,Ryan Feltner,7,card,18.2,+450,750,54.5,park -14%,66F · wind out 14,RvR -3%,
 2026-07-09,Bryan Torres,STL,Logan Henderson,7,card,14.9,+571,750,26.6,park -7%,78F · wind out 4,LvR +8%,
 2026-07-09,Vaughn Grissom,LAA,Nathan Eovaldi,5,card,13.6,+635,1000,49.7,park +2%,100F (roof: half),RvR -3%,
+2026-07-10,Sal Stewart,CIN,Shota Imanaga,1,proj,35.8,+179,1150,347.5,park +25%,82F,RvL +12%,heat +0%
+2026-07-10,Elly De La Cruz,CIN,Shota Imanaga,3,proj,34.2,+192,1200,344.5,park +25%,82F,SvL +12%,heat +11%
+2026-07-10,Yordan Alvarez,HOU,TBD *,1,proj,31.7,+216,,,park +2%,98F (roof: half),,
+2026-07-10,Spencer Steer,CIN,Shota Imanaga,2,proj,31.0,+223,850,194.1,park +25%,82F,RvL +12%,heat -1%
+2026-07-10,Shea Langeliers,ATH,Sean Burke,2,proj,25.8,+288,1150,222.5,park +9%,81F,RvR -3%,heat +14%
+2026-07-10,Hunter Goodman,COL,Robbie Ray,2,proj,25.8,+288,340,13.4,park -14%,65F · wind out 14,RvL +12%,heat +8%
+2026-07-10,Byron Buxton,MIN,TBD *,4,proj,25.7,+289,,,park -2%,no wx,,
+2026-07-10,Ben Rice,NYM,Sonny Gray,3,proj,24.5,+308,,,park -4%,74F · wind out 3,LvR +8%,heat +2%
+2026-07-10,Nick Kurtz,ATH,Sean Burke,1,proj,24.0,+317,1150,199.7,park +9%,81F,LvR +8%,heat +1%
+2026-07-10,Ben Rice,NYY,Carson Palmquist *,3,proj,24.0,+316,,,park avg,75F,LvL -22%,
+2026-07-10,JJ Bleday,CIN,Shota Imanaga,5,proj,23.8,+321,1100,185.3,park +25%,82F,LvL -22%,heat -3%
+2026-07-10,Kyle Schwarber,PHI,Jack Flaherty,2,proj,23.8,+321,360,9.4,park -5%,79F,LvR +8%,heat -4%
+2026-07-10,Luis Garc\xc3\xada Jr.,WSN,Ryan Weathers,4,proj,22.8,+338,,,park avg,75F,,
+2026-07-10,James Wood,WSN,Ryan Weathers,1,proj,22.6,+343,,,park avg,75F,LvL -22%,heat +0%
+2026-07-10,Kazuma Okamoto,TOR,JP Sears,2,proj,22.4,+346,,,park -4%,69F · wind out 3,RvL +12%,
+2026-07-10,Eugenio Su\xc3\xa1rez,CIN,Shota Imanaga,6,proj,22.3,+348,,,park +25%,82F,,
+2026-07-10,Christian Walker,HOU,TBD *,2,proj,22.1,+352,,,park +2%,98F (roof: half),,
+2026-07-10,Juan Soto,NYM,Sonny Gray,7,proj,21.8,+359,,,park -4%,74F · wind out 3,LvR +8%,heat +0%
+2026-07-10,Juan Soto,NYY,Carson Palmquist *,7,proj,21.6,+363,,,park avg,75F,LvL -22%,
+2026-07-10,Dominic Canzone,SEA,Nick Martinez,8,proj,21.5,+365,1200,179.7,park -4% [low-conf],dome,LvR +8%,heat +11%
+2026-07-10,Tyler Stephenson,CIN,Shota Imanaga,7,proj,21.5,+364,1100,158.5,park +25%,82F,RvL +12%,heat -2%
+2026-07-10,Brandon Lowe,PIT,Brandon Sproat,2,proj,21.5,+366,,,park -9%,79F,LvR +8%,heat +3%
+2026-07-10,Matt McLain,CIN,Shota Imanaga,4,proj,21.4,+367,,,park +25%,82F,RvL +12%,heat -3%
+2026-07-10,Rafael Devers,SFG,Tanner Gordon,1,proj,20.7,+383,360,-4.8,park -14%,65F · wind out 14,LvR +8%,heat +4%
+2026-07-10,Jordan Walker,STL,Chris Sale,4,proj,20.5,+388,410,4.5,park -7%,77F,RvL +12%,heat +5%
+2026-07-10,Luke Raley,SEA,Nick Martinez,7,proj,20.4,+391,800,83.5,park -4% [low-conf],dome,LvR +8%,heat +7%
+2026-07-10,Curtis Mead,WSN,Ryan Weathers,6,proj,20.1,+398,,,park avg,75F,RvL +12%,heat -0%
+2026-07-10,Nathaniel Lowe,CIN,Shota Imanaga,8,proj,20.1,+396,,,park +25%,82F,LvL -22%,heat -4%
+2026-07-10,Casey Schmitt,SFG,Tanner Gordon,5,proj,19.6,+411,525,22.4,park -14%,65F · wind out 14,RvR -3%,heat +1%
+2026-07-10,Oneil Cruz,PIT,Brandon Sproat,6,proj,19.5,+413,,,park -9%,79F,LvR +8%,heat +6%
+2026-07-10,TJ Friedl,CIN,Shota Imanaga,9,proj,9.8,+921,2800,184.1,park +25%,82F,LvL -22%,
+2026-07-10,Jacob Wilson,ATH,Sean Burke,8,proj,7.5,+1226,4000,209.1,park +9%,81F,RvR -3%,
