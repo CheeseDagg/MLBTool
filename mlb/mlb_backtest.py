@@ -69,6 +69,8 @@ class AsOfState:
     def __init__(self, heat_window=15, heat_shrink_K=120.0):
         self.heat_window = heat_window
         self.heat_shrink_K = heat_shrink_K
+        self.prior_seasons = {}   # norm_name -> [{"year","hr","pa"}] (pre-replay seasons)
+        self.player_age = {}      # norm_name -> age in replay season
         self.bat_days = {}     # norm_name -> list[(date, pa, hr)]
         self.pit_days = {}     # norm_name -> list[(date, bf, hr, so, bb, ao)]
         self.lg_days  = []     # list[(date, tot_hr, tot_pa, tot_bf)]
@@ -103,6 +105,24 @@ class AsOfState:
         past = self._before(self.bat_days.get(norm(name), []), date)
         return sum(r[1] for r in past), sum(r[2] for r in past)   # pa, hr
 
+    def set_priors(self, name, seasons, age):
+        """Register a player's PRE-replay-season yearByYear + age for Marcel base."""
+        self.prior_seasons[norm(name)] = seasons
+        self.player_age[norm(name)] = age
+
+    def marcel_base(self, name, date, Lb):
+        """Marcel HR/PA using ONLY prior seasons + season-to-date-through-this-morning.
+        Prior seasons are pre-loaded (all < replay year); the current partial season is
+        blended in from bat_days strictly before `date` — so no leakage."""
+        import mlb_marcel as _mcx
+        prior = self.prior_seasons.get(norm(name))
+        if not prior:
+            return None
+        age = self.player_age.get(norm(name))
+        talent = _mcx.marcel_hrpa(prior, age, lg_hrpa=Lb)
+        cur_pa, cur_hr = self.batter_season(name, date)   # season-to-date, leak-free
+        return _mcx.blend_with_current(talent, cur_hr, cur_pa, lg_hrpa=Lb, k=200)
+
     def batter_heat(self, name, date, Lb):
         """Rolling HR/PA vs league over trailing window -> same shape as live heat mult.
         Returns a multiplier ~ (window HR/PA)/(league HR/PA), shrunk toward 1 by PA."""
@@ -130,10 +150,14 @@ class AsOfState:
 # ---------------------------------------------------------------------------
 # PRICE ONE BATTER-GAME — identical formula to build_board, minus weather.
 # ---------------------------------------------------------------------------
-def price_row(state, date, bat_name, bat_side, opp_sp, sp_hand, venue, slot):
+def price_row(state, date, bat_name, bat_side, opp_sp, sp_hand, venue, slot, use_marcel=False):
     Lb, Lp = state.league_rates(date)
     pa, hr = state.batter_season(bat_name, date)
-    base = (hr + K_BAT * Lb) / (pa + K_BAT)
+    base = None
+    if use_marcel:
+        base = state.marcel_base(bat_name, date, Lb)
+    if base is None:
+        base = (hr + K_BAT * Lb) / (pa + K_BAT)   # legacy shrink fallback
 
     eff, park_lab = (H.hr_park(venue) if H else (1.0, "park +0%"))
 
@@ -309,6 +333,33 @@ def selftest():
 
     st2 = AsOfState(heat_window=10, heat_shrink_K=40.0)
     assert st2.heat_shrink_K == 40.0 and st2.heat_window == 10
+
+    # --- MARCEL BASE (multi-year talent) leak-free + distinct from legacy ---
+    import mlb_marcel as _mc_test
+    if _mc_test is not None:
+        stm = AsOfState()
+        # a proven slugger: 3 strong prior years, currently cold in-season
+        stm.set_priors("Talent Bat",
+            [{"year":2025,"hr":40,"pa":600},{"year":2024,"hr":38,"pa":600},
+             {"year":2023,"hr":42,"pa":600}], age=30)
+        # season-to-date (before 5/1): a cold 4 HR / 120 PA
+        stm.record_day(d(2026,4,15), [{"name":"Talent Bat","pa":120,"hr":4}], [])
+        Lb,_ = stm.league_rates(d(2026,5,1))
+        mb = stm.marcel_base("Talent Bat", d(2026,5,1), Lb)
+        legacy_pa, legacy_hr = stm.batter_season("Talent Bat", d(2026,5,1))
+        legacy = (legacy_hr + 130*Lb)/(legacy_pa + 130)
+        assert mb is not None and mb > legacy, (mb, legacy)   # talent remembered above cold season
+        # LEAK CHECK: adding a FUTURE game must not change the 5/1 marcel base
+        before = stm.marcel_base("Talent Bat", d(2026,5,1), Lb)
+        stm.record_day(d(2026,6,1), [{"name":"Talent Bat","pa":100,"hr":15}], [])
+        after = stm.marcel_base("Talent Bat", d(2026,5,1), Lb)
+        assert abs(before - after) < 1e-12, "LEAK: future game altered marcel base"
+        # a player with no priors -> marcel_base None -> price_row falls back to legacy
+        assert stm.marcel_base("Unknown Guy", d(2026,5,1), Lb) is None
+        if H:
+            r_leg = price_row(stm, d(2026,5,1), "Talent Bat","R","SomeArm","R","Yankee Stadium",3, use_marcel=False)
+            r_mrc = price_row(stm, d(2026,5,1), "Talent Bat","R","SomeArm","R","Yankee Stadium",3, use_marcel=True)
+            assert r_mrc["hr_pct"] > r_leg["hr_pct"]   # Marcel lifts the cold star
     # heat_lift appears when heat>=+10 rows exist
     assert "heat_lift" in p and p["heat_lift"]["n"] >= 1
     print("BACKTEST SELFTEST PASS — as-of/no-leakage/heat-window/pitcher/price/summary all exact")

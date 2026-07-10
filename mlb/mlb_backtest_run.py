@@ -17,6 +17,7 @@ Network is confined to this file; mlb_backtest.py stays pure/testable.
 import os, csv, json, time, urllib.request, datetime as dt
 import mlb_backtest as BT
 import mlb_backtest_weather as WX
+import mlb_marcel_run as MR
 import mlb_hr as H
 
 API = "https://statsapi.mlb.com/api/v1"
@@ -75,7 +76,7 @@ def _hand(pdata):
     ph = (p.get("pitchHand") or {}).get("code")
     return bs, ph
 
-def predict_day(state, date, games):
+def predict_day(state, date, games, use_marcel=False):
     """One projected row per batter in each final game's lineup, priced as-of `date`."""
     rows = []
     for g in games:
@@ -109,7 +110,7 @@ def predict_day(state, date, games):
                 nm = (pdata.get("person") or {}).get("fullName", "")
                 bat_side, _ = _hand(pdata)
                 if not nm: continue
-                r = BT.price_row(state, date, nm, bat_side, opp_sp, sp_hand, venue, slot)
+                r = BT.price_row(state, date, nm, bat_side, opp_sp, sp_hand, venue, slot, use_marcel=use_marcel)
                 r = WX.reprice_row(r, wmult, wtag)      # fold in historical weather
                 rows.append(r)
     return rows
@@ -141,8 +142,24 @@ def grade_day(pred_rows, box_by_pk, games):
 
 def main():
     yesterday = dt.date.today() - dt.timedelta(days=1)
+    season = SEASON_START.year
     state = BT.AsOfState(heat_window=15)
+    state_m = BT.AsOfState(heat_window=15)   # parallel state for the Marcel arm
+    # preload prior-season talent (all years < replay season) + ages, once
+    print("preloading multi-year talent for Marcel arm...")
+    try:
+        hitters = MR.active_hitters(season)
+        for pid, nm in hitters.items():
+            ybY = MR.year_by_year(pid)
+            prior = [s for s in ybY if s["year"] < season]
+            age = MR.player_age(pid, season)
+            state.set_priors(nm, prior, age)      # both states share the same priors
+            state_m.set_priors(nm, prior, age)
+        print(f"  priors loaded for {len(hitters)} hitters")
+    except Exception as e:
+        print(f"  prior preload failed ({type(e).__name__}) — Marcel arm will fall back to legacy")
     all_graded = []
+    all_graded_m = []
     day = SEASON_START
     days_done = 0
     while day <= yesterday:
@@ -154,17 +171,21 @@ def main():
         if games:
             # 1) predict using PAST-ONLY state
             preds = predict_day(state, day, games)
+            preds_m = predict_day(state_m, day, games, use_marcel=True)
             # 2) reveal + grade
             box_by_pk = {}
             for g in games:
                 try: box_by_pk[g["gamePk"]] = boxscore(g["gamePk"])
                 except Exception: pass
             graded = grade_day(preds, box_by_pk, games)
+            graded_m = grade_day(preds_m, box_by_pk, games)
             all_graded.extend(graded)
+            all_graded_m.extend(graded_m)
             # 3) fold the day's lines into state (now visible to tomorrow)
             for pk, box in box_by_pk.items():
                 bats, pits = _bat_pit_lines(box)
                 state.record_day(day, bats, pits)
+                state_m.record_day(day, bats, pits)
             print(f"  {day}: {len(games)} games, {len(graded)} graded (cum {len(all_graded)})")
         day += dt.timedelta(days=1)
         days_done += 1
@@ -177,9 +198,29 @@ def main():
             w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
             for r in all_graded: w.writerow(r)
     panel = BT.summarize(all_graded)
+    panel_m = BT.summarize(all_graded_m)
     panel["generated"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
     panel["season_start"] = SEASON_START.isoformat()
     json.dump(panel, open(os.path.join(DATA, "hr_backtest_panel.json"), "w"), indent=1)
+    json.dump(panel_m, open(os.path.join(DATA, "hr_backtest_marcel.json"), "w"), indent=1)
+    # HEAD-TO-HEAD: lower Brier = sharper; compare high-end calibration gap
+    def hi_gap(p):
+        b = next((x for x in p.get("buckets",[]) if x["bucket"]=="25-+"), None)
+        return round(b["pred"]-b["actual"],1) if b else None
+    cmp = {"legacy": {"n": panel["n"], "brier": panel["brier"],
+                      "actual": panel["actual"], "hi_gap": hi_gap(panel)},
+           "marcel": {"n": panel_m["n"], "brier": panel_m["brier"],
+                      "actual": panel_m["actual"], "hi_gap": hi_gap(panel_m)},
+           "winner": ("marcel" if panel_m["brier"] < panel["brier"] else "legacy"),
+           "brier_delta": round(panel["brier"] - panel_m["brier"], 5),
+           "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")}
+    json.dump(cmp, open(os.path.join(DATA, "hr_backtest_compare.json"), "w"), indent=1)
+    print("\n=== HEAD-TO-HEAD: Marcel base vs legacy single-season ===")
+    print(f"  legacy: Brier {panel['brier']}  (25%+ gap {cmp['legacy']['hi_gap']})")
+    print(f"  marcel: Brier {panel_m['brier']}  (25%+ gap {cmp['marcel']['hi_gap']})")
+    print(f"  WINNER: {cmp['winner'].upper()}  (Brier improved by {cmp['brier_delta']:+})")
+    print("  Lower Brier = sharper predictions. Marcel wins only if it's genuinely better")
+    print("  on these games — which the season-long, leak-free replay makes an honest test.")
     print(f"\nBACKTEST DONE: {panel.get('n',0)} graded predictions across "
           f"{panel.get('dates',0)} days | pred {panel.get('pred_mean')}% -> "
           f"actual {panel.get('actual')}% | Brier {panel.get('brier')}")

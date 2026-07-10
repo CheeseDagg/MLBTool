@@ -41,6 +41,10 @@ import urllib.request, urllib.parse
 
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 YEAR = dt.date.today().year
+try:
+    import mlb_marcel as _mc
+except Exception:
+    _mc = None
 K_BAT = 130     # PA of league-average prior blended into each batter
 K_PIT = 200     # BF of league-average prior blended into each starter
 SP_WEIGHT = 0.62
@@ -524,7 +528,7 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
 
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
-def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None, pens=None, barrels=None):
+def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None, pens=None, barrels=None, marcel=None):
     """
     batters : list of {name, fg_team, pa, hr}
     pitchers: list of {name, bf, hr}
@@ -656,7 +660,16 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
             sp_eff = SP_WEIGHT * fac + (1 - SP_WEIGHT) * bp_fac
             pen_tag = f"pen {bp_fac:.2f}x" if abs(bp_fac - 1.0) >= 0.05 else ""
             for b, slot in team_bats(team_full):
-                base = (b["hr"] + K_BAT * Lb) / (b["pa"] + K_BAT)
+                # BASE: Marcel multi-year talent (5/4/3, regressed, age-adjusted) blended
+                # with this season's line — the pro approach — else the legacy shrink estimate.
+                mt = (marcel or {}).get(norm(b["name"])) if marcel else None
+                if mt and mt.get("marcel"):
+                    base = _mc.blend_with_current(mt["marcel"], mt.get("cur_hr", 0),
+                                                  mt.get("cur_pa", 0), lg_hrpa=Lb, k=200)
+                    b_src = "mrc"
+                else:
+                    base = (b["hr"] + K_BAT * Lb) / (b["pa"] + K_BAT)
+                    b_src = "shr"
                 brl_tag = ""
                 if barrels and L_brl:
                     bid = hands_get(hands, b["name"], "bat")[2]
@@ -690,7 +703,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
-                    "sp_fac": round(fac, 2), "sp_small": bool(matched and pit_bf.get(norm(opp_sp_name or ""), 999) < 60), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "lu": ("card" if cards.get(team_full) else "proj"),
+                    "sp_fac": round(fac, 2), "sp_small": bool(matched and pit_bf.get(norm(opp_sp_name or ""), 999) < 60), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "lu": ("card" if cards.get(team_full) else "proj"), "b_src": b_src,
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
@@ -1263,8 +1276,18 @@ def _build():
             if bid and spid and side in ("L", "R"):
                 hf = heat_factor(bz.get(bid), pz.get((spid, side)))
                 if hf: heats[(norm(r["player"]), norm(spn))] = hf
-    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None)
+    marcel = None
+    try:
+        import json as _json
+        mp = _json.load(open(os.path.join(DATA, "marcel_talent.json")))
+        marcel = mp.get("players")
+        print(f"   Marcel talent: {len(marcel)} hitters (generated {mp.get('generated','?')})")
+    except Exception as _e:
+        print(f"   Marcel talent: not available ({type(_e).__name__}) — using single-season base")
+    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None, marcel=marcel)
     rows = select_rows(rows, have_ev)
+    _mrc = sum(1 for r in rows if r.get("b_src")=="mrc")
+    print(f"   base: {_mrc}/{len(rows)} rows using Marcel talent, rest single-season fallback")
     print(f"   board rows built: {len(rows)}")
     if not rows:
         note = (f"BOARD EMPTY — team labels in {bsrc} data didn't map to schedule teams. "
