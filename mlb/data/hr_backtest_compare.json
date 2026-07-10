@@ -1,0 +1,17 @@
+{
+ "legacy": {
+  "n": 25128,
+  "brier": 0.0972,
+  "actual": 11.1,
+  "hi_gap": 6.2
+ },
+ "marcel": {
+  "n": 25128,
+  "brier": 0.0968,
+  "actual": 11.1,
+  "hi_gap": 5.4
+ },
+ "winner": "marcel",
+ "brier_delta": 0.0004,
+ "generated": "2026-07-10T02:40+00:00"
+}

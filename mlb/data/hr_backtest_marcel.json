@@ -1,39 +1,39 @@
 {
  "n": 25128,
  "weather": "included (historical first-pitch, Meteostat)",
- "pred_mean": 11.4,
+ "pred_mean": 12.0,
  "actual": 11.1,
- "brier": 0.0972,
+ "brier": 0.0968,
  "buckets": [
   {
    "bucket": "0-12",
-   "n": 15902,
-   "pred": 8.4,
-   "actual": 8.8
+   "n": 14405,
+   "pred": 7.8,
+   "actual": 8.0
   },
   {
    "bucket": "12-16",
-   "n": 4971,
-   "pred": 13.7,
-   "actual": 12.3
+   "n": 5020,
+   "pred": 13.8,
+   "actual": 12.6
   },
   {
    "bucket": "16-20",
-   "n": 2535,
+   "n": 2929,
    "pred": 17.7,
-   "actual": 16.0
+   "actual": 13.8
   },
   {
    "bucket": "20-25",
-   "n": 1244,
-   "pred": 22.0,
-   "actual": 20.1
+   "n": 1761,
+   "pred": 22.1,
+   "actual": 19.4
   },
   {
    "bucket": "25-+",
-   "n": 476,
-   "pred": 28.3,
-   "actual": 22.1
+   "n": 1013,
+   "pred": 29.0,
+   "actual": 23.6
   }
  ],
  "heat_bands": [
@@ -41,19 +41,19 @@
    "band": "+10 or more",
    "n": 7847,
    "actual": 14.2,
-   "pred": 16.1
+   "pred": 17.3
   },
   {
    "band": "+5..+9",
    "n": 1692,
    "actual": 13.7,
-   "pred": 12.9
+   "pred": 13.7
   },
   {
    "band": "+1..+4",
    "n": 893,
    "actual": 9.9,
-   "pred": 11.0
+   "pred": 11.3
   },
   {
    "band": "0 / none",
@@ -65,14 +65,14 @@
    "band": "negative",
    "n": 12613,
    "actual": 9.3,
-   "pred": 8.4
+   "pred": 8.8
   }
  ],
  "a_tier": {
-  "n": 452,
-  "hits": 98,
-  "actual": 21.7,
-  "pred": 28.3
+  "n": 917,
+  "hits": 210,
+  "actual": 22.9,
+  "pred": 29.2
  },
  "multi": {
   "n": 25128,
@@ -85,7 +85,5 @@
   "base_actual": 11.1,
   "lift_pts": 3.1
  },
- "dates": 105,
- "generated": "2026-07-10T02:40+00:00",
- "season_start": "2026-03-27"
+ "dates": 105
 }
