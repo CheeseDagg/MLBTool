@@ -172,6 +172,43 @@ def summarize(rows):
                         "pred": round(100*sum(a for a,_ in sel)/len(sel),1),
                         "actual": round(100*sum(b for _,b in sel)/len(sel),1)})
     panel["buckets"] = bks
+    # --- HOLDOUT TRIGGER (item 7): once the live ledger is big + representative enough,
+    #     surface whether it CONFIRMS the season backtest's calibration verdict. Below
+    #     threshold we say so explicitly, so nobody trusts a hot-week sample of 66. ---
+    HOLDOUT_MIN = 300
+    def _heat(r):
+        h = r.get("heat","") or ""
+        try:
+            if "heat +" in h: return int(h.split("+")[1].rstrip("%"))
+            if "heat -" in h: return -int(h.split("-")[1].rstrip("%"))
+        except Exception: pass
+        return None
+    hi = {"n": len(live), "ready": len(live) >= HOLDOUT_MIN, "min": HOLDOUT_MIN}
+    if live:
+        span = len({r["date"] for r in live})
+        hi["span_days"] = span
+        hp = [r for r in live if float(r["hr_pct"]) >= 25]
+        if hp:
+            hi["hi_bucket"] = {"n": len(hp),
+                "pred": round(sum(float(r["hr_pct"]) for r in hp)/len(hp),1),
+                "actual": round(100*sum(1 for r in hp if r["outcome"]=="hr")/len(hp),1)}
+        # try to load the backtest panel for a live-vs-season comparison
+        try:
+            bt = json.load(open(os.path.join(DATA, "hr_backtest_panel.json")))
+            b25 = next((b for b in bt.get("buckets",[]) if b["bucket"]=="25-+"), None)
+            if b25 and hp:
+                bt_gap = b25["pred"] - b25["actual"]                 # season: +hot
+                lv_gap = hi["hi_bucket"]["pred"] - hi["hi_bucket"]["actual"]
+                same_sign = (bt_gap > 0) == (lv_gap > 0)
+                hi["compare"] = {"season_hot_by": round(bt_gap,1),
+                                 "live_hot_by": round(lv_gap,1),
+                                 "agree_direction": same_sign,
+                                 "verdict": ("confirmed" if (hi["ready"] and same_sign)
+                                             else "insufficient_sample" if not hi["ready"]
+                                             else "conflict_investigate")}
+        except Exception:
+            pass
+    panel["holdout"] = hi
     # two-homer games — counted era only (hr_n present)
     def _heat(r):
         h = r.get("heat","") or ""
@@ -334,6 +371,11 @@ def selftest():
     assert p["n"] == 5 and p["voids"] == 1
     m = p["multi"]
     assert m["n"] == 4 and m["two_plus"] == 2 and m["rate"] == 50.0
+    # holdout: 5 live rows is nowhere near 300 -> not ready (guards against trusting
+    # a tiny hot-week sample); verdict must read insufficient_sample
+    h = p["holdout"]
+    assert h["ready"] is False and h["n"] == 5 and h["min"] == 300
+    assert h["compare"]["verdict"] == "insufficient_sample"
     assert m["a_n"] == 2 and m["a_two_plus"] == 1 and m["a_rate"] == 50.0
     assert p["pred_mean"] == round(100*(0.3+0.3+0.1+0.27+0.26)/5,1)
     assert p["brier"] == round((0.7**2 + 0.3**2 + 0.1**2 + 0.73**2 + 0.74**2)/5, 4), p["brier"]

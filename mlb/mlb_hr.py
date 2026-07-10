@@ -154,6 +154,36 @@ def pull_handedness():
 PA_TOP = 4.45   # expected PA for the #1 usage slot; -0.09 per slot down
 CAP_PPA = 0.12  # sanity cap on per-PA HR probability
 
+# --- Season-backtest-derived corrections (25,074 predictions, 105 days) ---
+# The raw model runs progressively HOT above ~16%: 25%+ bucket said 28.3% but only
+# 22.2% happened (+6.1pts). Calibrate on the GAME probability with a piecewise
+# shrink that leaves the well-calibrated low end (0-12%: +0.4) untouched and pulls
+# the high end down to observed. Anchors are (predicted%, observed%) bucket midpoints.
+CALIB_ANCHORS = [(0.0, 0.0), (8.4, 8.8), (13.7, 12.3), (17.7, 16.0),
+                 (22.0, 20.1), (28.3, 22.2), (40.0, 30.5)]   # last extrapolates the slope
+def calibrate_pct(p_pct):
+    """Map a raw game-HR% to the backtest-calibrated %. Piecewise-linear, monotone."""
+    a = CALIB_ANCHORS
+    if p_pct <= a[0][0]: return p_pct
+    for (x0, y0), (x1, y1) in zip(a, a[1:]):
+        if p_pct <= x1:
+            t = (p_pct - x0) / (x1 - x0) if x1 > x0 else 0.0
+            return y0 + t * (y1 - y0)
+    # above the top anchor: continue the final slope
+    (x0, y0), (x1, y1) = a[-2], a[-1]
+    slope = (y1 - y0) / (x1 - x0) if x1 > x0 else 1.0
+    return y1 + slope * (p_pct - x1)
+
+# Heat DEMOTED. Over 7,824 heat>=+10 predictions the factor UNDERperformed its own
+# projection (said 16.1%, happened 14.2%) and barely beat negative-heat (9.3%). It was
+# adding to the hot bias, not signal. Shrink its deviation-from-1 toward neutral until a
+# rebuilt (zone/window) version proves out. 0.0 = fully neutral; 1.0 = original weight.
+HEAT_WEIGHT = 0.25
+
+# Observed two-homer rate among all graded predictions (season): the base rate combine
+# markets should be priced against.
+TWO_HR_BASE_RATE = 0.007
+
 # ---------------------------------------------------------------------------
 # HR-SPECIFIC park factors  (100 = league avg HR environment)
 # SEED APPROXIMATIONS of the Statcast 3-yr HR index — refresh from Baseball
@@ -641,11 +671,16 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 bat_side = hands_get(hands, b["name"], "bat")[0]
                 plat_eff, plat_tag = platoon_factor(bat_side, sp_hand)
                 hf = heats.get((norm(b["name"]), norm(opp_sp_name or "")))
-                heat_eff = SP_WEIGHT * hf + (1 - SP_WEIGHT) if hf else 1.0
+                if hf:
+                    hf_raw = SP_WEIGHT * hf + (1 - SP_WEIGHT)     # starter-share, as before
+                    heat_eff = 1.0 + HEAT_WEIGHT * (hf_raw - 1.0) # demoted toward neutral
+                else:
+                    heat_eff = 1.0
                 heat_tag = (f"heat {'+' if hf >= 1 else ''}{(hf-1)*100:.0f}%") if hf else ""
                 p_pa = min(base * eff * sp_eff * tmult * plat_eff * heat_eff, CAP_PPA)
                 pa_est = max(PA_TOP - 0.09 * (slot - 1), 3.4)
                 p_game = 1 - (1 - p_pa) ** pa_est
+                p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
                 row = {
                     "player": b["name"], "team": fg(team_full) or team_full,

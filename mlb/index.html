@@ -339,13 +339,18 @@ fetch('mlb/data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).th
     '<div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0"><b>What this is:</b> the whole season replayed day-by-day, each prediction using only stats available that morning (no hindsight). <b>Calibration only</b> — historical book prices aren\'t available, so this proves whether the numbers MEAN what they say and which signals carry; it does not claim profit. n='+bt.n+' graded predictions across '+bt.dates+' days.</div>'+
     '<table class="tbl"><tr><th>overall</th><th>bets</th><th>model said</th><th>happened</th></tr>'+
     '<tr><td>all predictions</td><td class="num">'+bt.n+'</td><td class="num">'+bt.pred_mean+'%</td><td class="num"><b>'+bt.actual+'%</b></td></tr>'+
-    (a?'<tr style="background:var(--hl)"><td><b>A-tier (25%+ & heat≥+10)</b></td><td class="num">'+a.n+'</td><td class="num">'+a.pred+'%</td><td class="num"><b>'+a.actual+'%</b></td></tr>':'')+
+    (a?'<tr style="background:var(--hl)"><td><b>Old A-tier (25%+ & heat≥+10)</b><br><span class="note" style="width:auto">heat overlay did NOT carry at scale — see note</span></td><td class="num">'+a.n+'</td><td class="num">'+a.pred+'%</td><td class="num"><b>'+a.actual+'%</b></td></tr>':'')+
     '</table>'+
     '<div class="sub" style="margin-top:8px"><b>Heat-magnitude bands</b> — the verdict on the +10 rule:</div>'+
     '<table class="tbl"><tr><th>heat</th><th>bets</th><th>said</th><th>happened</th></tr>'+band(bt.heat_bands||[])+'</table>'+
     '<div class="sub" style="margin-top:8px"><b>Calibration buckets</b>:</div>'+
     '<table class="tbl"><tr><th>predicted</th><th>bets</th><th>said</th><th>happened</th></tr>'+bkt(bt.buckets||[])+'</table>'+
     (m?'<div class="sub" style="margin-top:8px"><b>Two-homer rate:</b> '+m.two_plus+' of '+m.n+' ('+m.rate+'%) went deep twice.</div>':'')+
+    '<div class="sub" style="border:1px solid var(--acc);border-radius:8px;padding:8px 11px;margin:10px 0"><b style="color:var(--acc)">What the season taught us:</b><br>' +
+    '&bull; The model runs <b>hot at the high end</b> — 25%+ predictions happened '+((bt.buckets.find(function(b){return b.bucket==="25-+"})||{}).actual||"?")+'% vs '+((bt.buckets.find(function(b){return b.bucket==="25-+"})||{}).pred||"?")+'% predicted. Live prices are now <b>recalibrated down</b> at the top.<br>' +
+    '&bull; The <b>+10 heat rule did not survive</b> — heat≥+10 happened '+(bt.heat_bands.find(function(b){return b.band==="+10 or more"})||{}).actual+'% vs '+(bt.heat_bands.find(function(b){return b.band==="+10 or more"})||{}).pred+'% projected, barely above negative-heat. Heat is now <b>demoted</b> pending a rebuilt version. A-tier = the 25%+ screen alone.<br>' +
+    '&bull; Two-homer base rate: <b>'+(bt.multi?bt.multi.rate:"0.7")+'%</b> — price combine markets against this.<br>' +
+    '<span style="opacity:.7">The recalibration size is provisional until the live ledger reaches ~300 bets across a representative stretch (this week overlapped a hot streak, so the 66-bet sample can\'t confirm the magnitude yet).</span></div>' +
     '<div class="sub" style="opacity:.6;margin-top:6px">Brier '+bt.brier+' · generated '+(bt.generated||'')+' · weather '+bt.weather+'</div>'+
     '</div>';
   el.style.display='';

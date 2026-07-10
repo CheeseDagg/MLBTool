@@ -60,9 +60,15 @@ class AsOfState:
     Feed daily() in ascending date order. Each daily() records that date's results
     but does NOT expose them until a LATER date is queried — so predicting D only
     ever sees < D. Rolling heat = HR/PA over the trailing `heat_window` days.
+
+    HEAT REBUILD (item 6): heat_window and heat_shrink_K are constructor args so a
+    candidate heat definition can be replayed against the full season and compared to
+    the incumbent BEFORE it's trusted live. The season backtest showed the default
+    (15d / K=120) did not carry — this is the knob to find one that does.
     """
-    def __init__(self, heat_window=15):
+    def __init__(self, heat_window=15, heat_shrink_K=120.0):
         self.heat_window = heat_window
+        self.heat_shrink_K = heat_shrink_K
         self.bat_days = {}     # norm_name -> list[(date, pa, hr)]
         self.pit_days = {}     # norm_name -> list[(date, bf, hr, so, bb, ao)]
         self.lg_days  = []     # list[(date, tot_hr, tot_pa, tot_bf)]
@@ -105,7 +111,7 @@ class AsOfState:
         pa = sum(r[1] for r in past); hr = sum(r[2] for r in past)
         if pa < 8 or Lb <= 0:            # too few recent PA -> no heat signal
             return None
-        K = 120.0                         # heavy shrink: recent form is a NUDGE, not a
+        K = self.heat_shrink_K            # tunable shrink (item 6 rebuild knob)
         rate = (hr + K * Lb) / (pa + K)   # stat explosion (a 10-PA hot streak ~= +a few %)
         mult = rate / Lb
         return min(max(mult, 0.70), 1.30)  # heat multiplier bounded like a real factor
@@ -209,6 +215,14 @@ def summarize(graded):
         two = sum(1 for r in cnt if int(float(r["hr_n"])) >= 2)
         out["multi"] = {"n": len(cnt), "two_plus": two, "rate": round(100*two/len(cnt),1)}
 
+    # HEAT LIFT (item 6): the single number a rebuilt heat def must beat. Positive =
+    # heat>=+10 bats homer MORE than the overall rate (signal); ~0 = no signal.
+    base = out["actual"]
+    hp = [r for r in live if (_heat_val(r.get("heat")) or -99) >= 10]
+    if hp:
+        h_act = 100 * sum(1 for r in hp if r["outcome"] == "hr") / len(hp)
+        out["heat_lift"] = {"n": len(hp), "heat_actual": round(h_act,1),
+                            "base_actual": base, "lift_pts": round(h_act - base,1)}
     out["dates"] = len({r["date"] for r in live})
     return out
 
@@ -293,6 +307,10 @@ def selftest():
     assert "included" in p["weather"] or "excluded" in p["weather"]
     json.dumps(p)   # JSON-safe for the dashboard
 
+    st2 = AsOfState(heat_window=10, heat_shrink_K=40.0)
+    assert st2.heat_shrink_K == 40.0 and st2.heat_window == 10
+    # heat_lift appears when heat>=+10 rows exist
+    assert "heat_lift" in p and p["heat_lift"]["n"] >= 1
     print("BACKTEST SELFTEST PASS — as-of/no-leakage/heat-window/pitcher/price/summary all exact")
     return 0
 
