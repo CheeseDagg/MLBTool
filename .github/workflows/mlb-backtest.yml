@@ -16,9 +16,10 @@ jobs:
         with: { python-version: "3.11" }
       - name: Install deps
         run: pip install meteostat pandas
-      - name: Replay season
+      - name: Replay season (legacy + Marcel head-to-head)
         working-directory: mlb
         run: |
+          python mlb_marcel.py --selftest
           python mlb_backtest.py --selftest
           python mlb_backtest_weather.py --selftest
           python mlb_backtest_run.py
@@ -26,6 +27,6 @@ jobs:
         run: |
           git config user.name mlb-bot
           git config user.email mlb-bot@users.noreply.github.com
-          git add mlb/data/hr_backtest.csv mlb/data/hr_backtest_panel.json
+          git add mlb/data/hr_backtest.csv mlb/data/hr_backtest_panel.json mlb/data/hr_backtest_marcel.json mlb/data/hr_backtest_compare.json
           git commit -m "season backtest refresh" || echo "no changes"
           git push
