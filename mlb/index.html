@@ -50,6 +50,7 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <button data-t="edges">Edges</button>
   <button data-t="parlays">Parlays</button>
   <button data-t="homers">Homers</button>
+  <button data-t="hrshop">HR Shop</button>
   <button data-t="futures">Futures</button>
   <button data-t="ratings">Ratings</button>
   <button data-t="method">Method</button>
@@ -117,6 +118,18 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     factor earns its keep; the +EV tier is flat-staked at the logged book price. Scratches void
     (books void them too) — the void-rate grades the lineup layer itself.</div>
     <div id="hrCal"><div class="empty">grading begins after tonight's games settle — first grades on tomorrow's 9am run</div></div>
+  </div>
+</section>
+
+<section id="hrshop">
+  <div class="card">
+    <h3>HR Prop Line Shop</h3>
+    <div class="sub">The structural edge: our <b>Marcel-calibrated</b> fair HR% vs every book's actual price.
+    A play is listed <b>only</b> if the best available price is +EV against <b>both</b> our fair number
+    <b>and</b> the vig-free market consensus — so the model can't manufacture a bet by being overconfident;
+    the market has to agree it's mispriced. <b>Best book</b> is where to place it. <b>*STALE*</b> = one book
+    badly out of step with the field (repriced slow after news, or a gift). Empty most days = working, not broken.</div>
+    <div id="hrshopBody"><div class="empty">no odds loaded — run the HR Shop workflow (needs ODDS_API_KEY)</div></div>
   </div>
 </section>
 
@@ -272,19 +285,34 @@ function render(d){
   // homers (sortable)
   HRD = {rows: d.hr_board||[], note: d.hr_note||''};
   renderHomers();
-  // calibration
+  // calibration (+ season backtest side-by-side)
   const cal=d.hr_cal;
   if(cal && cal.n>0){
+    // pull the season backtest panel so every live row shows its 25k-prediction twin
+    fetch('mlb/data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).then(function(BT){
+      renderCal(cal, BT);
+    }).catch(function(){ renderCal(cal, null); });
+  } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
+
+  function renderCal(cal, BT){
     let h=`<div class="sub"><b>${cal.n}</b> settled bets over <b>${cal.dates}</b> day(s): the model said <b>${cal.pred_mean}%</b> of them would homer on average — <b>${cal.actual}%</b> actually did · precision score ${cal.brier} (lower = sharper) · ${cal.voids} scratched (refunded, not counted)</div>
     <div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0 2px"><b style="color:var(--acc)">How to read this:</b> <b>“bets”</b> = how many settled predictions each row is built from — a percentage from 3 bets is a coin flip, from 100+ it's a verdict. <b>MODEL SAID</b> = what we predicted · <b>HAPPENED</b> = what reality did. A trustworthy model has those two columns converging as the bets count grows.</div>`;
+    const btBk = BT&&BT.buckets ? Object.fromEntries(BT.buckets.map(b=>[b.bucket,b])) : {};
     if(cal.buckets&&cal.buckets.length){
-      h+=`<table style="margin-top:8px"><tr><th>model said…</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th></th></tr>`+
-      cal.buckets.map(b=>`<tr><td>${b.bucket}%</td><td class="num">${b.n}</td><td class="num">${b.pred}%</td><td class="num"><b>${b.actual}%</b></td><td>${bar(Math.min(b.actual*2.2,100))}</td></tr>`).join('')+`</table>`;
+      h+=(BT?`<div class="sub" style="margin-top:8px;opacity:.85">Two columns now: <b>LIVE</b> (${cal.n} settled bets, this week) vs <b>SEASON</b> (${BT.n} replayed predictions, ${BT.dates} days, weather-included). The season column is the verdict; the live column is the holdout that has to grow to confirm it.</div>`:'')+
+      `<table style="margin-top:8px"><tr><th>model said…</th><th class="num">live bets</th><th class="num">live happened</th><th class="num" style="border-left:2px solid var(--line)">season bets</th><th class="num">season happened</th></tr>`+
+      cal.buckets.map(b=>{const s=btBk[b.bucket];return `<tr><td>${b.bucket}%</td><td class="num">${b.n}</td><td class="num"><b>${b.actual}%</b></td>`+
+        (s?`<td class="num" style="border-left:2px solid var(--line)">${s.n}</td><td class="num"><b style="color:var(--acc)">${s.actual}%</b> <span class="dim">(said ${s.pred}%)</span></td>`:`<td class="num dim" style="border-left:2px solid var(--line)">—</td><td class="num dim">—</td>`)+`</tr>`;}).join('')+`</table>`;
     }
     if(cal.lift&&cal.lift.length){
       h+=`<div class="sub" style="margin-top:10px"><b>Does each ingredient earn its keep?</b> Every row = only the bets carrying that tag. Green gap: those bets homered <i>more</i> than the model expected of them; red: less. Judge nothing under ~50 bets.</div>
       <table><tr><th>ingredient</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th class="num">gap</th></tr>`+
       cal.lift.map(l=>{const gp=(l.actual-l.pred).toFixed(1);return `<tr><td>${l.g}</td><td class="num">${l.n}</td><td class="num">${l.pred}%</td><td class="num">${l.actual}%</td><td class="num"><b style="color:${+gp>=0?'var(--acc2)':'var(--red)'}">${+gp>=0?'+':''}${gp}</b></td></tr>`;}).join('')+`</table>`;
+      if(BT&&BT.heat_bands){
+        h+=`<div class="sub" style="margin-top:8px"><b>Heat, at season scale (${BT.n} predictions):</b> this is why heat got demoted — the live sample is too small and this week ran hot.</div>
+        <table><tr><th>heat band</th><th class="num">season bets</th><th class="num">said</th><th class="num">happened</th><th class="num">gap</th></tr>`+
+        BT.heat_bands.map(b=>{const gp=(b.actual-b.pred).toFixed(1);return `<tr><td>${b.band}</td><td class="num">${b.n}</td><td class="num">${b.pred}%</td><td class="num">${b.actual}%</td><td class="num"><b style="color:${+gp>=0?'var(--acc2)':'var(--red)'}">${+gp>=0?'+':''}${gp}</b></td></tr>`;}).join('')+`</table>`;
+      }
     }
     if(cal.ev_tier){
       const e=cal.ev_tier;
@@ -295,7 +323,7 @@ function render(d){
       h+=`<div class="sub">Likelihood strategy — bet the 5 most-likely homers daily, price ignored (house doctrine), flat 1 unit: <b>${t.hits}/${t.n}</b> hit · ROI <b style="color:${t.roi>=0?'var(--acc2)':'var(--red)'}">${t.roi>=0?'+':''}${t.roi}%</b></div>`;
     }
     $('hrCal').innerHTML=h;
-  } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
+  }
   // backtest
   // backtest
   // futures
@@ -354,6 +382,36 @@ fetch('mlb/data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).th
     '<div class="sub" style="opacity:.6;margin-top:6px">Brier '+bt.brier+' · generated '+(bt.generated||'')+' · weather '+bt.weather+'</div>'+
     '</div>';
   el.style.display='';
+}).catch(function(){});
+</script>
+
+<script>
+fetch('mlb/data/lineshop.json',{cache:'no-store'}).then(r=>r.json()).then(function(ls){
+  var el=document.getElementById('hrshopBody'); if(!el) return;
+  if(!ls||!ls.plays||!ls.plays.length){
+    el.innerHTML='<div class="empty">'+((ls&&ls.note)?ls.note:'no +EV HR plays right now — that\'s the edge working, not failing')+'</div>';
+    return;
+  }
+  var rows=ls.plays.map(function(p){
+    var stale=p.stale_flag?' <span style="color:var(--acc);font-weight:700">*STALE*</span>':'';
+    var evc=(p.ev_vs_consensus_pct!=null)?(p.ev_vs_consensus_pct+'%'):'—';
+    var gap=(p.model_market_gap_pts!=null)?(p.model_market_gap_pts+' pts'):'—';
+    return '<tr><td>'+p.player+stale+'</td>'+
+      '<td class="num">'+(p.fair_prob*100).toFixed(1)+'%</td>'+
+      '<td><b>'+p.best_book+'</b></td>'+
+      '<td class="num"><b>'+(p.best_price>0?'+':'')+p.best_price+'</b></td>'+
+      '<td class="num" style="color:var(--acc2)"><b>'+p.conservative_ev_pct+'%</b></td>'+
+      '<td class="num">'+p.ev_vs_fair_pct+'%</td>'+
+      '<td class="num">'+evc+'</td>'+
+      '<td class="num">'+p.n_books+'</td></tr>';
+  }).join('');
+  el.innerHTML='<div class="sub" style="opacity:.7;margin-bottom:6px">'+ls.n_plays+' plays from '+ls.n_analyzed+
+    ' player-markets · books: '+(ls.books||[]).join(', ')+' · '+(ls.generated||'')+'</div>'+
+    '<table class="tbl"><tr><th>batter</th><th class="num">our fair</th><th>best book</th><th class="num">best price</th>'+
+    '<th class="num">EV (min)</th><th class="num">vs fair</th><th class="num">vs mkt</th><th class="num">books</th></tr>'+
+    rows+'</table>'+
+    '<div class="sub" style="opacity:.6;margin-top:6px">EV (min) is the conservative edge — the smaller of vs-fair and vs-market. '+
+    'Bet the best-book price. This is line shopping + stale-line catching, not a model-vs-market opinion.</div>';
 }).catch(function(){});
 </script>
 </body>
