@@ -106,3 +106,15 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-09,Bryson Stott,PHI,Brady Singer,6,card,19.2,+420,370,-9.6,park +25%,86F,LvR +8%,heat +1%,no,0
 2026-07-09,Luke Raley,SEA,Janson Junk,6,card,19.0,+427,410,-3.2,park -9%,86F · wind in 3 (roof: half),LvR +8%,heat +10%,no,0
 2026-07-09,Trea Turner,PHI,Brady Singer,1,card,18.8,+431,480,9.2,park +25%,86F,RvR -3%,heat -10%,no,0
+2026-07-09,Mike Trout,LAA,Nathan Eovaldi,2,card,30.6,+227,310,25.4,park +2%,100F (roof: half),RvR -3%,heat +11%,no,0
+2026-07-09,Zach Neto,LAA,Nathan Eovaldi,1,card,25.5,+292,510,55.8,park +2%,100F (roof: half),RvR -3%,heat +12%,no,0
+2026-07-09,Hunter Goodman,COL,Carson Whisenhunt *,4,card,22.9,+337,340,0.6,park -14%,66F · wind out 14,RvL +12%,,no,0
+2026-07-09,Justin Foscue,TEX,Reid Detmers,1,card,20.9,+378,550,35.9,park +2%,100F (roof: half),RvL +12%,heat +0%,hr,1
+2026-07-09,Jordan Walker,STL,Logan Henderson,4,card,20.6,+384,340,-9.2,park -7%,78F · wind out 4,RvR -3%,heat +16%,hr,1
+2026-07-09,Jorge Soler,LAA,Nathan Eovaldi,4,card,19.8,+404,550,29.0,park +2%,100F (roof: half),RvR -3%,heat +3%,no,0
+2026-07-09,Ketel Marte,ARI,Griffin Canning,1,card,19.4,+415,320,-18.5,park -4%,71F · wind out 3,SvR +8%,heat -1%,void,
+2026-07-09,Josh Lowe,LAA,Nathan Eovaldi,6,card,18.7,+434,600,31.0,park +2%,100F (roof: half),LvR +8%,heat -5%,no,0
+2026-07-09,Heliot Ramos,SFG,Ryan Feltner,1,card,18.7,+435,575,26.3,park -14%,66F · wind out 14,RvR -3%,heat +1%,void,
+2026-07-09,Victor Bericoto,SFG,Ryan Feltner,7,card,18.2,+450,750,54.5,park -14%,66F · wind out 14,RvR -3%,,void,
+2026-07-09,Bryan Torres,STL,Logan Henderson,7,card,14.9,+571,750,26.6,park -7%,78F · wind out 4,LvR +8%,,no,0
+2026-07-09,Vaughn Grissom,LAA,Nathan Eovaldi,5,card,13.6,+635,1000,49.7,park +2%,100F (roof: half),RvR -3%,,no,0
