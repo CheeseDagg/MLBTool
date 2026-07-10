@@ -182,9 +182,11 @@ def summarize(graded):
     out["buckets"] = bks
 
     # heat-magnitude bands — the verdict on the +10 rule
-    bands = [("+10 or more", lambda v: v >= 10), ("+5..+9", lambda v: 5 <= v < 10),
-             ("+1..+4", lambda v: 1 <= v < 5), ("0 / none", lambda v: v == 0 or v is None),
-             ("negative", lambda v: v is not None and v < 0)]
+    bands = [("+10 or more", lambda v: v is not None and v >= 10),
+             ("+5..+9",      lambda v: v is not None and 5 <= v < 10),
+             ("+1..+4",      lambda v: v is not None and 1 <= v < 5),
+             ("0 / none",    lambda v: v is None or v == 0),
+             ("negative",    lambda v: v is not None and v < 0)]
     hb = []
     for name, f in bands:
         sel = [r for r in live if f(_heat_val(r.get("heat")))]
@@ -278,13 +280,16 @@ def selftest():
         {"date":"2026-05-02","hr_pct":"27","outcome":"hr","hr_n":"1","heat":"heat +14%","plat":"LvR +8%"},
         {"date":"2026-05-02","hr_pct":"9","outcome":"no","hr_n":"0","heat":"heat -6%","plat":"LvL -22%"},
         {"date":"2026-05-03","hr_pct":"22","outcome":"hr","hr_n":"1","heat":"heat +3%","plat":"RvR +0%"},
+        {"date":"2026-05-03","hr_pct":"14","outcome":"no","hr_n":"0","plat":"RvR +0%"},   # NO heat tag -> None
+        {"date":"2026-05-04","hr_pct":"11","outcome":"no","hr_n":"0","heat":"","plat":""}, # empty heat -> None
     ]
     p = summarize(graded)
-    assert p["n"] == 5
+    assert p["n"] == 7                       # includes 2 tagless-heat rows
+    assert any(b["band"]=="0 / none" for b in p["heat_bands"])   # None rows land here, no crash
     at = p["a_tier"]; assert at["n"] == 3 and at["hits"] == 2 and at["actual"] == round(200/3,1)
     hb = {b["band"]: b for b in p["heat_bands"]}
     assert hb["+10 or more"]["n"] == 3 and hb["+10 or more"]["actual"] == round(200/3,1)
-    assert p["multi"]["n"] == 5 and p["multi"]["two_plus"] == 1
+    assert p["multi"]["n"] == 7 and p["multi"]["two_plus"] == 1
     assert "included" in p["weather"] or "excluded" in p["weather"]
     json.dumps(p)   # JSON-safe for the dashboard
 
