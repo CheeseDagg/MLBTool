@@ -118,3 +118,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-09,Victor Bericoto,SFG,Ryan Feltner,7,card,18.2,+450,750,54.5,park -14%,66F · wind out 14,RvR -3%,,void,
 2026-07-09,Bryan Torres,STL,Logan Henderson,7,card,14.9,+571,750,26.6,park -7%,78F · wind out 4,LvR +8%,,no,0
 2026-07-09,Vaughn Grissom,LAA,Nathan Eovaldi,5,card,13.6,+635,1000,49.7,park +2%,100F (roof: half),RvR -3%,,no,0
+2026-07-10,Sal Stewart,CIN,Shota Imanaga,2,card,28.9,+246,,,park +25%,82F,RvL +12%,heat +0%,no,0
+2026-07-10,Elly De La Cruz,CIN,Shota Imanaga,1,card,26.7,+275,,,park +25%,82F,SvL +12%,heat +11%,hr,1
+2026-07-10,Yordan Alvarez,HOU,Cal Quantrill,2,card,25.8,+287,,,park +2%,96F (roof: half),LvR +8%,heat -7%,hr,1
+2026-07-10,Spencer Steer,CIN,Shota Imanaga,3,card,24.3,+311,,,park +25%,82F,RvL +12%,heat -1%,no,0
+2026-07-10,Eugenio Suárez,CIN,Shota Imanaga,5,card,23.5,+325,,,park +25%,82F,RvL +12%,heat -2%,no,0
+2026-07-10,Juan Soto,NYM,Sonny Gray,2,card,22.1,+353,,,park -4%,85F · wind out 3,LvR +8%,heat +0%,no,0
+2026-07-10,Miguel Vargas,CHW,Jacob Lopez,3,card,22.1,+352,,,park +9%,74F,RvL +12%,heat +2%,void,
+2026-07-10,Pete Crow-Armstrong,CHC,Hunter Greene *,1,card,22.1,+353,,,park +25%,82F,LvR +8%,,no,0
+2026-07-10,Munetaka Murakami,CHW,Jacob Lopez,2,card,21.9,+358,,,park +9%,74F,LvL -22%,heat +2%,void,
+2026-07-10,Colson Montgomery,CHW,Jacob Lopez,4,card,21.6,+364,,,park +9%,74F,LvL -22%,heat -2%,void,
+2026-07-10,Kyle Schwarber,PHI,Jack Flaherty,2,card,21.5,+366,,,park -5%,82F,LvR +8%,heat -4%,no,0
+2026-07-10,Ben Rice,NYY,Carson Palmquist *,2,card,21.2,+372,,,park avg,77F,LvL -22%,,hr,1
+2026-07-10,JJ Bleday,CIN,Shota Imanaga,4,card,21.2,+372,,,park +25%,82F,LvL -22%,heat -3%,hr,1
+2026-07-10,Shea Langeliers,ATH,Sean Burke,2,card,21.1,+374,,,park +9%,74F,RvR -3%,heat +14%,no,0
+2026-07-10,Noelvi Marte,CIN,Shota Imanaga,7,card,20.8,+381,,,park +25%,82F,RvL +12%,heat +3%,no,0
+2026-07-10,Hunter Goodman,COL,Robbie Ray,4,card,20.7,+383,,,park -14%,62F · wind out 13,RvL +12%,heat +8%,no,0
+2026-07-10,Ian Happ,CHC,Hunter Greene *,5,card,20.7,+383,,,park +25%,82F,SvR +8%,,no,0
+2026-07-10,Dominic Canzone,SEA,Nick Martinez,3,card,20.6,+386,,,park -4% [low-conf],dome,LvR +8%,heat +11%,no,0
+2026-07-10,Shohei Ohtani,LAD,Eduardo Rodriguez *,1,card,20.6,+385,,,park +5%,80F · wind out 6,LvL -22%,heat +5%,hr,1
+2026-07-10,Tyler Stephenson,CIN,Shota Imanaga,6,card,20.6,+386,,,park +25%,82F,RvL +12%,heat -2%,no,0
+2026-07-10,Michael Conforto,CHC,Hunter Greene *,7,card,20.5,+387,,,park +25%,82F,LvR +8%,,no,0
+2026-07-10,Seiya Suzuki,CHC,Hunter Greene *,4,card,20.4,+391,,,park +25%,82F,RvR -3%,,no,0
+2026-07-10,Kerry Carpenter,DET,Aaron Nola,5,card,20.3,+392,,,park -5%,82F,LvR +8%,heat +0%,no,0
+2026-07-10,Matt Olson,ATL,Kyle Leahy,3,card,20.3,+392,,,park -7%,87F,LvR +8%,heat +3%,no,0
+2026-07-10,James Wood,WSN,Ryan Weathers,1,card,20.2,+394,,,park avg,77F,LvL -22%,heat +0%,void,
+2026-07-10,Nelson Velázquez,STL,Chris Sale,4,card,20.2,+395,,,park -7%,87F,RvL +12%,,no,0
+2026-07-10,Paul Goldschmidt,NYY,Carson Palmquist *,4,card,20.2,+394,,,park avg,77F,RvL +12%,,no,0
+2026-07-10,Amed Rosario,NYY,Carson Palmquist *,1,card,20.1,+397,,,park avg,77F,RvL +12%,,no,0
+2026-07-10,Christian Walker,HOU,Cal Quantrill,4,card,20.1,+398,,,park +2%,96F (roof: half),RvR -3%,,no,0
+2026-07-10,Ketel Marte,ARI,Kyle Hurt,1,card,20.1,+398,,,park +5%,80F · wind out 6,SvR +8%,heat +5%,void,
