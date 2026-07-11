@@ -154,3 +154,17 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-11,Shea Langeliers,ATH,Bryan Hudson,3,card,20.6,+385,,,park +9%,77F,RvL +12%,heat +16%,no,0
 2026-07-11,Brandon Lowe,PIT,Brandon Sproat,2,proj,20.1,+397,,,park -9%,78F,LvR +8%,heat +3%,no,0
 2026-07-11,Randal Grichuk,CHW,Gage Jump,1,card,18.7,+433,,,park +9%,77F,RvL +12%,heat -1%,void,
+2026-07-11,Kody Clemens,MIN,Ryan Johnson,4,card,21.8,+360,,,park -2%,90F,LvR +8%,heat +0%,no,0
+2026-07-11,Ben Rice,NYY,PJ Poulin,2,card,21.7,+361,,,park avg,87F,LvL -22%,,no,0
+2026-07-11,Dominic Canzone,SEA,Griffin Jax,3,card,21.1,+375,,,park -4% [low-conf],dome,LvR +8%,heat -1%,no,0
+2026-07-11,James Wood,WSN,Cam Schlittler,1,card,21.1,+375,,,park avg,87F,LvR +8%,heat +18%,void,
+2026-07-11,Mike Trout,LAA,Joe Ryan,2,card,20.7,+382,,,park -2%,90F,RvR -3%,heat +1%,no,0
+2026-07-11,Esmerlyn Valdez,PIT,Brandon Sproat,4,card,20.5,+388,,,park -9%,82F,RvR -3%,heat +1%,hr,2
+2026-07-11,Paul Goldschmidt,NYY,PJ Poulin,4,card,20.5,+388,,,park avg,87F,RvL +12%,heat -4%,hr,1
+2026-07-11,Amed Rosario,NYY,PJ Poulin,1,card,20.4,+390,,,park avg,87F,RvL +12%,heat -2%,no,0
+2026-07-11,Esmerlyn Valdez,PIT,Shane Drohan,4,card,20.2,+396,,,park -9%,82F,RvL +12%,heat +7%,hr,1
+2026-07-11,Hunter Goodman,COL,Tyler Mahle,3,card,20.2,+396,,,park -14%,67F · wind out 9,RvR -3%,heat -7%,no,0
+2026-07-11,Juan Soto,NYM,Eduardo Rivera *,2,card,20.2,+394,,,park -4%,84F,LvL -22%,,no,0
+2026-07-11,Luke Raley,SEA,Griffin Jax,6,card,20.1,+397,,,park -4% [low-conf],dome,LvR +8%,heat +2%,no,0
+2026-07-11,Josh Bell,MIN,Ryan Johnson,3,card,20.0,+399,,,park -2%,90F,SvR +8%,heat +2%,no,0
+2026-07-11,Casey Schmitt,SFG,Kyle Freeland,3,card,19.8,+405,,,park -14%,67F · wind out 9,RvL +12%,heat +3%,void,

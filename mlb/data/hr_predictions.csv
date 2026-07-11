@@ -138,33 +138,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-10,Amed Rosario,NYY,Carson Palmquist *,1,card,20.1,+397,,,park avg,77F,RvL +12%,
 2026-07-10,Christian Walker,HOU,Cal Quantrill,4,card,20.1,+398,,,park +2%,96F (roof: half),RvR -3%,
 2026-07-10,Ketel Marte,ARI,Kyle Hurt,1,card,20.1,+398,,,park +5%,80F · wind out 6,SvR +8%,heat +5%
-2026-07-11,Yordan Alvarez,HOU,Kumar Rocker,2,card,25.2,+297,,,park +2%,96F (roof: half),LvR +8%,heat +2%
-2026-07-11,Sal Stewart,CIN,Javier Assad,2,card,23.7,+321,,,park +25%,72F,RvR -3%,heat +1%
-2026-07-11,Elly De La Cruz,CIN,Javier Assad,1,card,23.1,+333,,,park +25%,72F,SvR +8%,heat +10%
-2026-07-11,Kody Clemens,MIN,Ryan Johnson,4,card,21.8,+360,,,park -2%,90F,LvR +8%,heat +0%
-2026-07-11,Ben Rice,NYY,PJ Poulin,2,card,21.7,+361,,,park avg,87F,LvL -22%,
-2026-07-11,JJ Bleday,CIN,Javier Assad,3,card,21.7,+360,,,park +25%,72F,LvR +8%,heat +6%
-2026-07-11,Miguel Vargas,CHW,Gage Jump,3,card,21.6,+362,,,park +9%,75F · wind out 3,RvL +12%,heat +4%
-2026-07-11,Kyle Schwarber,PHI,Casey Mize,2,card,21.5,+364,,,park -5%,85F,LvR +8%,heat +6%
-2026-07-11,Dominic Canzone,SEA,Griffin Jax,3,card,21.1,+375,,,park -4% [low-conf],dome,LvR +8%,heat -1%
-2026-07-11,James Wood,WSN,Cam Schlittler,1,card,21.1,+375,,,park avg,87F,LvR +8%,heat +18%
-2026-07-11,Munetaka Murakami,CHW,Gage Jump,2,card,21.0,+376,,,park +9%,75F · wind out 3,LvL -22%,
-2026-07-11,Pete Alonso,BAL,Noah Cameron,4,card,20.9,+378,,,park +4% [low-conf],87F,RvL +12%,heat +5%
-2026-07-11,Spencer Steer,CIN,Javier Assad,4,card,20.9,+379,,,park +25%,72F,RvR -3%,heat -1%
-2026-07-11,Colson Montgomery,CHW,Gage Jump,4,card,20.8,+381,,,park +9%,75F · wind out 3,LvL -22%,
-2026-07-11,Shea Langeliers,ATH,Bryan Hudson,3,card,20.8,+380,,,park +9%,75F · wind out 3,RvL +12%,heat +16%
-2026-07-11,Mike Trout,LAA,Joe Ryan,2,card,20.7,+382,,,park -2%,90F,RvR -3%,heat +1%
-2026-07-11,Eugenio Suárez,CIN,Javier Assad,6,card,20.6,+385,,,park +25%,72F,RvR -3%,heat +5%
-2026-07-11,Seiya Suzuki,CHC,Nick Lodolo,2,card,20.6,+386,,,park +25%,72F,RvL +12%,heat +1%
-2026-07-11,Esmerlyn Valdez,PIT,Brandon Sproat,4,card,20.5,+388,,,park -9%,82F,RvR -3%,heat +1%
-2026-07-11,Paul Goldschmidt,NYY,PJ Poulin,4,card,20.5,+388,,,park avg,87F,RvL +12%,heat -4%
-2026-07-11,Amed Rosario,NYY,PJ Poulin,1,card,20.4,+390,,,park avg,87F,RvL +12%,heat -2%
-2026-07-11,Brandon Lowe,PIT,Brandon Sproat,2,card,20.4,+391,,,park -9%,82F,LvR +8%,heat +3%
-2026-07-11,Ketel Marte,ARI,Yoshinobu Yamamoto,1,card,20.4,+389,,,park +5%,82F · wind out 5,SvR +8%,heat +7%
-2026-07-11,Nathaniel Lowe,CIN,Javier Assad,5,card,20.3,+391,,,park +25%,72F,LvR +8%,heat +6%
-2026-07-11,Esmerlyn Valdez,PIT,Shane Drohan,4,card,20.2,+396,,,park -9%,82F,RvL +12%,heat +7%
-2026-07-11,Hunter Goodman,COL,Tyler Mahle,3,card,20.2,+396,,,park -14%,67F · wind out 9,RvR -3%,heat -7%
-2026-07-11,Juan Soto,NYM,Eduardo Rivera *,2,card,20.2,+394,,,park -4%,84F,LvL -22%,
-2026-07-11,Luke Raley,SEA,Griffin Jax,6,card,20.1,+397,,,park -4% [low-conf],dome,LvR +8%,heat +2%
-2026-07-11,Josh Bell,MIN,Ryan Johnson,3,card,20.0,+399,,,park -2%,90F,SvR +8%,heat +2%
-2026-07-11,Casey Schmitt,SFG,Kyle Freeland,3,card,19.8,+405,,,park -14%,67F · wind out 9,RvL +12%,heat +3%
+2026-07-11,Yordan Alvarez,HOU,Kumar Rocker,2,card,25.1,+298,,,park +2%,95F (roof: half),LvR +8%,heat +2%
+2026-07-11,Sal Stewart,CIN,Javier Assad,2,card,24.9,+302,,,park +25%,76F,RvR -3%,heat +1%
+2026-07-11,Elly De La Cruz,CIN,Javier Assad,1,card,24.2,+314,,,park +25%,76F,SvR +8%,heat +10%
+2026-07-11,Shohei Ohtani,LAD,Brandon Pfaadt,1,card,23.0,+335,,,park +5%,80F · wind out 7,LvR +8%,heat -3%
+2026-07-11,JJ Bleday,CIN,Javier Assad,3,card,22.2,+350,,,park +25%,76F,LvR +8%,heat +6%
+2026-07-11,Kody Clemens,MIN,Ryan Johnson,4,card,21.7,+361,,,park -2%,89F,LvR +8%,heat +0%
+2026-07-11,Kyle Schwarber,PHI,Casey Mize,2,card,21.5,+366,,,park -5%,82F,LvR +8%,heat +6%
+2026-07-11,Spencer Steer,CIN,Javier Assad,4,card,21.3,+369,,,park +25%,76F,RvR -3%,heat -1%
+2026-07-11,Eugenio Suárez,CIN,Javier Assad,6,card,21.1,+375,,,park +25%,76F,RvR -3%,heat +5%
+2026-07-11,Miguel Vargas,CHW,Gage Jump,3,card,21.1,+374,,,park +9%,no wx,RvL +12%,heat +4%
+2026-07-11,Dominic Canzone,SEA,Griffin Jax,3,card,21.0,+375,,,park -4% [low-conf],dome,LvR +8%,heat -1%
+2026-07-11,Seiya Suzuki,CHC,Nick Lodolo,2,card,21.0,+376,,,park +25%,76F,RvL +12%,heat +1%
+2026-07-11,James Wood,WSN,Cam Schlittler,1,card,20.9,+379,,,park avg,86F · wind in 4,LvR +8%,heat +18%
+2026-07-11,Max Muncy,LAD,Brandon Pfaadt,5,card,20.9,+379,,,park +5%,80F · wind out 7,LvR +8%,heat -9%
+2026-07-11,Nathaniel Lowe,CIN,Javier Assad,5,card,20.8,+382,,,park +25%,76F,LvR +8%,heat +6%
+2026-07-11,Mike Trout,LAA,Joe Ryan,2,card,20.7,+384,,,park -2%,89F,RvR -3%,heat +1%
+2026-07-11,Munetaka Murakami,CHW,Gage Jump,2,card,20.5,+388,,,park +9%,no wx,LvL -22%,
+2026-07-11,Paul Goldschmidt,NYY,PJ Poulin,4,card,20.5,+387,,,park avg,86F · wind in 4,RvL +12%,heat -4%
+2026-07-11,Brandon Lowe,PIT,Brandon Sproat,2,card,20.4,+390,,,park -9%,81F,LvR +8%,heat +3%
+2026-07-11,Hunter Goodman,COL,Tyler Mahle,3,card,20.4,+391,,,park -14%,66F · wind out 13,RvR -3%,heat -7%
+2026-07-11,Ketel Marte,ARI,Yoshinobu Yamamoto,1,card,20.4,+391,,,park +5%,80F · wind out 7,SvR +8%,heat +7%
+2026-07-11,Colson Montgomery,CHW,Gage Jump,4,card,20.3,+393,,,park +9%,no wx,LvL -22%,
+2026-07-11,Pete Crow-Armstrong,CHC,Nick Lodolo,1,card,20.3,+392,,,park +25%,76F,LvL -22%,heat +5%
+2026-07-11,Shea Langeliers,ATH,Bryan Hudson,3,card,20.3,+392,,,park +9%,no wx,RvL +12%,heat +16%
+2026-07-11,Ian Happ,CHC,Nick Lodolo,7,card,20.2,+395,,,park +25%,76F,SvL +12%,heat -6%
+2026-07-11,Casey Schmitt,SFG,Kyle Freeland,3,card,20.1,+396,,,park -14%,66F · wind out 13,RvL +12%,heat +3%
+2026-07-11,Mickey Moniak,COL,Tyler Mahle,2,card,20.1,+397,,,park -14%,66F · wind out 13,LvR +8%,heat -4%
+2026-07-11,Juan Soto,NYM,Eduardo Rivera *,2,card,20.0,+399,,,park -4%,80F,LvL -22%,
+2026-07-11,Heliot Ramos,SFG,Kyle Freeland,1,card,19.9,+403,,,park -14%,66F · wind out 13,RvL +12%,heat -2%
+2026-07-11,Josh Bell,MIN,Ryan Johnson,3,card,19.8,+404,,,park -2%,89F,SvR +8%,heat +2%
