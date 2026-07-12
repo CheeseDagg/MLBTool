@@ -168,33 +168,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-11,Juan Soto,NYM,Eduardo Rivera *,2,card,20.0,+399,,,park -4%,80F,LvL -22%,
 2026-07-11,Heliot Ramos,SFG,Kyle Freeland,1,card,19.9,+403,,,park -14%,66F · wind out 13,RvL +12%,heat -2%
 2026-07-11,Josh Bell,MIN,Ryan Johnson,3,card,19.8,+404,,,park -2%,89F,SvR +8%,heat +2%
-2026-07-12,Sal Stewart,CIN,Matthew Boyd,2,card,23.6,+323,,,park +25%,80F · wind in 4,RvL +12%,heat +3%
-2026-07-12,Elly De La Cruz,CIN,Matthew Boyd,1,card,22.2,+351,,,park +25%,80F · wind in 4,SvL +12%,heat +15%
-2026-07-12,Ben Rice,NYY,Cade Cavalli,2,card,22.0,+354,,,park avg,80F · wind in 6,LvR +8%,heat +5%
-2026-07-12,Munetaka Murakami,CHW,J.T. Ginn,2,card,21.9,+357,,,park +9%,no wx,LvR +8%,heat -5%
-2026-07-12,Colson Montgomery,CHW,J.T. Ginn,4,card,21.6,+362,,,park +9%,no wx,LvR +8%,heat -7%
-2026-07-12,Esmerlyn Valdez,PIT,Robert Gasser,4,card,21.6,+363,,,park -9%,82F,RvL +12%,heat +11%
-2026-07-12,Yordan Alvarez,HOU,MacKenzie Gore,2,card,21.6,+362,,,park +2%,89F (roof: half),LvL -22%,heat +2%
-2026-07-12,Seiya Suzuki,CHC,Andrew Abbott,2,card,21.2,+371,,,park +25%,80F · wind in 4,RvL +12%,heat -0%
-2026-07-12,Shea Langeliers,ATH,Noah Schultz,3,card,21.2,+371,,,park +9%,no wx,RvL +12%,heat +9%
-2026-07-12,Mike Trout,LAA,Taj Bradley,2,card,21.1,+374,,,park -2%,87F · wind out 4,RvR -3%,heat -3%
-2026-07-12,James Wood,WSN,Will Warren,1,card,21.0,+376,,,park avg,80F · wind in 6,LvR +8%,heat +3%
-2026-07-12,Ketel Marte,ARI,Emmet Sheehan,1,proj,21.0,+377,,,park +5%,79F,SvR +8%,heat +6%
-2026-07-12,Spencer Steer,CIN,Matthew Boyd,3,card,21.0,+377,,,park +25%,80F · wind in 4,RvL +12%,heat -1%
-2026-07-12,Eugenio Suárez,CIN,Matthew Boyd,5,card,20.9,+379,,,park +25%,80F · wind in 4,RvL +12%,heat -1%
-2026-07-12,Kyle Schwarber,PHI,Tarik Skubal,2,card,20.8,+381,,,park -5%,81F,LvL -22%,
-2026-07-12,Pete Crow-Armstrong,CHC,Andrew Abbott,1,card,20.6,+386,,,park +25%,80F · wind in 4,LvL -22%,heat +8%
-2026-07-12,Ian Happ,CHC,Andrew Abbott,7,card,20.4,+390,,,park +25%,80F · wind in 4,SvL +12%,heat -9%
-2026-07-12,Miguel Vargas,CHW,J.T. Ginn,3,card,20.4,+391,,,park +9%,no wx,RvR -3%,heat -2%
-2026-07-12,Pete Alonso,BAL,Seth Lugo,4,card,20.4,+389,,,park +4% [low-conf],80F,RvR -3%,heat +12%
-2026-07-12,Kody Clemens,MIN,José Soriano,4,card,20.2,+396,,,park -2%,87F · wind out 4,LvR +8%,heat -8%
-2026-07-12,Christian Walker,HOU,MacKenzie Gore,4,card,20.1,+397,,,park +2%,89F (roof: half),RvL +12%,heat +6%
-2026-07-12,Joc Pederson,TEX,Cristian Javier,1,card,19.9,+404,,,park +2%,89F (roof: half),LvR +8%,heat +5%
-2026-07-12,Samuel Basallo,BAL,Seth Lugo,5,card,19.8,+406,,,park +4% [low-conf],80F,LvR +8%,heat +13%
-2026-07-12,Juan Soto,NYM,Payton Tolle,2,card,19.6,+410,,,park -4%,84F · wind in 4,LvL -22%,heat +16%
+2026-07-12,Sal Stewart,CIN,Matthew Boyd,2,card,23.8,+320,,,park +25%,81F · wind in 4,RvL +12%,heat +3%
+2026-07-12,Ben Rice,NYY,Cade Cavalli,2,card,22.5,+345,,,park avg,83F · wind in 5,LvR +8%,heat +5%
+2026-07-12,Munetaka Murakami,CHW,J.T. Ginn,2,card,22.5,+345,,,park +9%,78F,LvR +8%,heat -5%
+2026-07-12,Elly De La Cruz,CIN,Matthew Boyd,1,card,22.4,+347,,,park +25%,81F · wind in 4,SvL +12%,heat +15%
+2026-07-12,Colson Montgomery,CHW,J.T. Ginn,4,card,22.1,+353,,,park +9%,78F,LvR +8%,heat -7%
+2026-07-12,Shea Langeliers,ATH,Noah Schultz,3,card,21.7,+362,,,park +9%,78F,RvL +12%,heat +9%
+2026-07-12,Yordan Alvarez,HOU,MacKenzie Gore,2,card,21.7,+361,,,park +2%,91F (roof: half),LvL -22%,heat +2%
+2026-07-12,Esmerlyn Valdez,PIT,Robert Gasser,4,card,21.6,+362,,,park -9%,83F,RvL +12%,heat +11%
+2026-07-12,James Wood,WSN,Will Warren,1,card,21.3,+370,,,park avg,83F · wind in 5,LvR +8%,heat +3%
+2026-07-12,Seiya Suzuki,CHC,Andrew Abbott,2,card,21.3,+369,,,park +25%,81F · wind in 4,RvL +12%,heat -0%
+2026-07-12,Mike Trout,LAA,Taj Bradley,2,card,21.2,+371,,,park -2%,88F · wind out 4,RvR -3%,heat -3%
+2026-07-12,Ketel Marte,ARI,Emmet Sheehan,1,proj,21.1,+374,,,park +5%,82F,SvR +8%,heat +6%
+2026-07-12,Spencer Steer,CIN,Matthew Boyd,3,card,21.1,+375,,,park +25%,81F · wind in 4,RvL +12%,heat -1%
+2026-07-12,Eugenio Suárez,CIN,Matthew Boyd,5,card,20.9,+378,,,park +25%,81F · wind in 4,RvL +12%,heat -1%
+2026-07-12,Kyle Schwarber,PHI,Tarik Skubal,2,card,20.9,+379,,,park -5%,83F,LvL -22%,
+2026-07-12,Miguel Vargas,CHW,J.T. Ginn,3,card,20.8,+382,,,park +9%,78F,RvR -3%,heat -2%
+2026-07-12,Pete Crow-Armstrong,CHC,Andrew Abbott,1,card,20.6,+384,,,park +25%,81F · wind in 4,LvL -22%,heat +8%
+2026-07-12,Ian Happ,CHC,Andrew Abbott,7,card,20.5,+388,,,park +25%,81F · wind in 4,SvL +12%,heat -9%
+2026-07-12,Pete Alonso,BAL,Seth Lugo,4,card,20.4,+390,,,park +4% [low-conf],80F,RvR -3%,heat +12%
+2026-07-12,Kody Clemens,MIN,José Soriano,4,card,20.3,+393,,,park -2%,88F · wind out 4,LvR +8%,heat -8%
+2026-07-12,Christian Walker,HOU,MacKenzie Gore,4,card,20.2,+396,,,park +2%,91F (roof: half),RvL +12%,heat +6%
+2026-07-12,Joc Pederson,TEX,Cristian Javier,1,card,20.0,+401,,,park +2%,91F (roof: half),LvR +8%,heat +5%
+2026-07-12,Juan Soto,NYM,Payton Tolle,2,card,19.8,+405,,,park -4%,85F · wind in 4,LvL -22%,heat +16%
+2026-07-12,Samuel Basallo,BAL,Seth Lugo,5,card,19.6,+409,,,park +4% [low-conf],80F,LvR +8%,heat +13%
 2026-07-12,Junior Caminero,TBR,Emerson Hancock,3,card,19.5,+413,,,park -4% [low-conf],dome,RvR -3%,heat +9%
-2026-07-12,Jordan Walker,STL,Danny Young *,3,card,19.1,+423,,,park -7%,81F · wind in 4,RvL +12%,
-2026-07-12,Zach Neto,LAA,Taj Bradley,1,card,19.1,+425,,,park -2%,87F · wind out 4,RvR -3%,heat +8%
-2026-07-12,Dansby Swanson,CHC,Andrew Abbott,8,card,19.0,+427,,,park +25%,80F · wind in 4,RvL +12%,heat -6%
-2026-07-12,Ryan Jeffers,MIN,José Soriano,2,card,18.9,+429,,,park -2%,87F · wind out 4,RvR -3%,heat -2%
-2026-07-12,JJ Bleday,CIN,Matthew Boyd,4,card,18.7,+435,,,park +25%,80F · wind in 4,LvL -22%,heat +1%
+2026-07-12,Jordan Walker,STL,Danny Young *,3,card,19.3,+419,,,park -7%,82F · wind in 4,RvL +12%,
+2026-07-12,Zach Neto,LAA,Taj Bradley,1,card,19.3,+418,,,park -2%,88F · wind out 4,RvR -3%,heat +8%
+2026-07-12,Dansby Swanson,CHC,Andrew Abbott,8,card,19.2,+422,,,park +25%,81F · wind in 4,RvL +12%,heat -6%
+2026-07-12,Ryan Jeffers,MIN,José Soriano,2,card,19.2,+421,,,park -2%,88F · wind out 4,RvR -3%,heat -2%
+2026-07-12,JJ Bleday,CIN,Matthew Boyd,4,card,18.9,+429,,,park +25%,81F · wind in 4,LvL -22%,heat +1%
