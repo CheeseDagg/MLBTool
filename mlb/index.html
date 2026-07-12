@@ -51,6 +51,7 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <button data-t="parlays">Parlays</button>
   <button data-t="homers">Homers</button>
   <button data-t="hrshop">HR Shop</button>
+  <button data-t="kprops">K Props</button>
   <button data-t="futures">Futures</button>
   <button data-t="ratings">Ratings</button>
   <button data-t="method">Method</button>
@@ -130,6 +131,17 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     the market has to agree it's mispriced. <b>Best book</b> is where to place it. <b>*STALE*</b> = one book
     badly out of step with the field (repriced slow after news, or a gift). Empty most days = working, not broken.</div>
     <div id="hrshopBody"><div class="empty">no odds loaded — run the HR Shop workflow (needs ODDS_API_KEY)</div></div>
+  </div>
+</section>
+
+<section id="kprops">
+  <div class="card">
+    <h3>Pitcher Strikeout Props</h3>
+    <div class="sub">Every starter tonight, projected: <b>&lambda;</b> = expected strikeouts, built from his
+    regressed K-rate &times; expected innings &times; the opponent&#39;s whiff propensity. The ladder shows our fair
+    probability and price at each line. <b>Plays</b> appear only when a book&#39;s price is +EV against BOTH our
+    fair number AND the vig-free market consensus &mdash; same double-gate as HR Shop. No plays most days = working.</div>
+    <div id="kpropsBody"><div class="empty">K props haven&#39;t run yet &mdash; run the K Props workflow (needs ODDS_API_KEY for the shop; the model board works without it)</div></div>
   </div>
 </section>
 
@@ -389,7 +401,14 @@ fetch('data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).then(f
 fetch('data/lineshop.json',{cache:'no-store'}).then(r=>r.json()).then(function(ls){
   var el=document.getElementById('hrshopBody'); if(!el) return;
   if(!ls||!ls.plays||!ls.plays.length){
-    el.innerHTML='<div class="empty">'+((ls&&ls.note)?ls.note:'no +EV HR plays right now — that\'s the edge working, not failing')+'</div>';
+    var dg=(ls&&ls.diag)?('<br><span style="opacity:.55">diag: '+ls.diag+'</span>'):'';
+    if(ls && typeof ls.n_analyzed==='number' && ls.n_analyzed>0){
+      el.innerHTML='<div class="empty"><b>No +EV plays right now.</b><br>Analyzed '+ls.n_analyzed+
+        ' player-markets across your books — none is mispriced enough to beat both our fair number and the vig-free market. '+
+        'This is the edge working, not failing. Checked '+(ls.generated||'')+'.'+dg+'</div>';
+    } else {
+      el.innerHTML='<div class="empty"><b>Ran, but analyzed 0 markets</b> — either the books haven\'t posted HR props yet, or the odds calls failed. '+(ls&&ls.generated?('Checked '+ls.generated+'.'):'')+dg+'</div>';
+    }
     return;
   }
   var rows=ls.plays.map(function(p){
@@ -412,6 +431,38 @@ fetch('data/lineshop.json',{cache:'no-store'}).then(r=>r.json()).then(function(l
     rows+'</table>'+
     '<div class="sub" style="opacity:.6;margin-top:6px">EV (min) is the conservative edge — the smaller of vs-fair and vs-market. '+
     'Bet the best-book price. This is line shopping + stale-line catching, not a model-vs-market opinion.</div>';
+}).catch(function(){});
+</script>
+
+<script>
+fetch('data/kprops.json',{cache:'no-store'}).then(r=>r.json()).then(function(kp){
+  var el=document.getElementById('kpropsBody'); if(!el) return;
+  var h='';
+  if(kp.plays && kp.plays.length){
+    h+='<div class="sub" style="color:var(--acc2)"><b>'+kp.n_plays+' +EV plays</b> from '+kp.n_markets+' markets shopped</div>';
+    h+='<table class="tbl"><tr><th>market</th><th>best book</th><th class="num">price</th><th class="num">EV (min)</th><th class="num">vs fair</th><th class="num">vs mkt</th></tr>';
+    kp.plays.forEach(function(p){
+      h+='<tr><td>'+p.player+(p.stale_flag?' <b style="color:var(--acc)">*STALE*</b>':'')+'</td><td><b>'+p.best_book+'</b></td>'+
+         '<td class="num"><b>'+(p.best_price>0?'+':'')+p.best_price+'</b></td>'+
+         '<td class="num" style="color:var(--acc2)"><b>'+p.conservative_ev_pct+'%</b></td>'+
+         '<td class="num">'+p.ev_vs_fair_pct+'%</td><td class="num">'+(p.ev_vs_consensus_pct!=null?p.ev_vs_consensus_pct+'%':'&mdash;')+'</td></tr>';
+    });
+    h+='</table><hr style="border-color:var(--line);opacity:.3">';
+  } else if(typeof kp.n_markets==='number' && kp.n_markets>0){
+    h+='<div class="sub"><b>No +EV plays right now.</b> Shopped '+kp.n_markets+' markets &mdash; none beats both our fair and the vig-free market. The edge working, not failing.</div>';
+  }
+  if(kp.board && kp.board.length){
+    h+='<table class="tbl"><tr><th>starter</th><th>opp</th><th class="num">&lambda; (exp K)</th><th class="num">O5.5</th><th class="num">O6.5</th><th class="num">O7.5</th></tr>';
+    kp.board.forEach(function(c){
+      function cell(ln){ var l=(c.lines||[]).filter(function(x){return x.line===ln})[0];
+        return l ? (l.p_over*100).toFixed(0)+'% <span style="opacity:.55">('+(l.fair_over>0?'+':'')+l.fair_over+')</span>' : '&mdash;'; }
+      h+='<tr><td>'+c.pitcher+'</td><td>'+(c.opp||'')+'</td><td class="num"><b>'+c.lam+'</b></td>'+
+         '<td class="num">'+cell(5.5)+'</td><td class="num">'+cell(6.5)+'</td><td class="num">'+cell(7.5)+'</td></tr>';
+    });
+    h+='</table><div class="sub" style="opacity:.6;margin-top:6px">'+ (kp.board.length)+' starts projected &middot; '+(kp.generated||'')+
+       ' &middot; &lambda; = regressed K/9 &times; expected IP &times; opponent whiff. Cells: our fair P(over) and fair price.</div>';
+  }
+  if(h) el.innerHTML=h;
 }).catch(function(){});
 </script>
 </body>
