@@ -168,33 +168,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-11,Juan Soto,NYM,Eduardo Rivera *,2,card,20.0,+399,,,park -4%,80F,LvL -22%,
 2026-07-11,Heliot Ramos,SFG,Kyle Freeland,1,card,19.9,+403,,,park -14%,66F · wind out 13,RvL +12%,heat -2%
 2026-07-11,Josh Bell,MIN,Ryan Johnson,3,card,19.8,+404,,,park -2%,89F,SvR +8%,heat +2%
-2026-07-12,Sal Stewart,CIN,Matthew Boyd,2,card,24.5,+308,,,park +25%,83F,RvL +12%,heat +3%
-2026-07-12,Elly De La Cruz,CIN,Matthew Boyd,1,card,23.0,+335,,,park +25%,83F,SvL +12%,heat +15%
-2026-07-12,Munetaka Murakami,CHW,J.T. Ginn,2,card,22.6,+343,,,park +9%,80F,LvR +8%,heat -5%
-2026-07-12,Colson Montgomery,CHW,J.T. Ginn,4,card,22.1,+352,,,park +9%,80F,LvR +8%,heat -7%
-2026-07-12,Yordan Alvarez,HOU,MacKenzie Gore,2,card,21.8,+358,,,park +2%,96F (roof: half),LvL -22%,heat +2%
-2026-07-12,Esmerlyn Valdez,PIT,Robert Gasser,4,card,21.7,+360,,,park -9%,86F · wind in 4,RvL +12%,heat +11%
-2026-07-12,James Wood,WSN,Will Warren,1,card,21.7,+360,,,park avg,83F,LvR +8%,heat +3%
-2026-07-12,Seiya Suzuki,CHC,Andrew Abbott,2,card,21.6,+363,,,park +25%,83F,RvL +12%,heat -0%
-2026-07-12,Ketel Marte,ARI,Emmet Sheehan,1,card,21.5,+366,,,park +5%,82F · wind out 7,SvR +8%,heat +6%
-2026-07-12,Mike Trout,LAA,Taj Bradley,2,card,21.5,+366,,,park -2%,92F · wind out 5,RvR -3%,heat -3%
-2026-07-12,Spencer Steer,CIN,Matthew Boyd,3,card,21.3,+369,,,park +25%,83F,RvL +12%,heat -1%
-2026-07-12,Eugenio Suárez,CIN,Matthew Boyd,5,card,21.2,+372,,,park +25%,83F,RvL +12%,heat -1%
-2026-07-12,Kyle Schwarber,PHI,Tarik Skubal,2,card,20.9,+379,,,park -5%,84F,LvL -22%,
-2026-07-12,Pete Crow-Armstrong,CHC,Andrew Abbott,1,card,20.9,+378,,,park +25%,83F,LvL -22%,heat +8%
-2026-07-12,Ian Happ,CHC,Andrew Abbott,7,card,20.8,+382,,,park +25%,83F,SvL +12%,heat -9%
-2026-07-12,Miguel Vargas,CHW,J.T. Ginn,3,card,20.8,+381,,,park +9%,80F,RvR -3%,heat -2%
-2026-07-12,Pete Alonso,BAL,Seth Lugo,4,card,20.7,+383,,,park +4% [low-conf],86F,RvR -3%,heat +12%
-2026-07-12,Shohei Ohtani,LAD,Mitch Bratt *,1,card,20.7,+383,,,park +5%,82F · wind out 7,LvL -22%,
-2026-07-12,Kody Clemens,MIN,José Soriano,4,card,20.5,+387,,,park -2%,92F · wind out 5,LvR +8%,heat -8%
-2026-07-12,Juan Soto,NYM,Payton Tolle,2,card,20.4,+390,,,park -4%,82F · wind out 6,LvL -22%,heat +16%
-2026-07-12,Christian Walker,HOU,MacKenzie Gore,4,card,20.3,+394,,,park +2%,96F (roof: half),RvL +12%,heat +6%
-2026-07-12,Joc Pederson,TEX,Cristian Javier,1,card,20.2,+396,,,park +2%,96F (roof: half),LvR +8%,heat +5%
-2026-07-12,Samuel Basallo,BAL,Seth Lugo,5,card,20.2,+394,,,park +4% [low-conf],86F,LvR +8%,heat +13%
-2026-07-12,Jose Siri,LAA,Taj Bradley,4,card,20.1,+397,,,park -2%,92F · wind out 5,RvR -3%,heat +2%
-2026-07-12,Dansby Swanson,CHC,Andrew Abbott,8,card,19.9,+403,,,park +25%,83F,RvL +12%,heat -6%
-2026-07-12,Ryan Jeffers,MIN,José Soriano,2,card,19.9,+403,,,park -2%,92F · wind out 5,RvR -3%,heat -2%
-2026-07-12,Zach Neto,LAA,Taj Bradley,1,card,19.9,+403,,,park -2%,92F · wind out 5,RvR -3%,heat +8%
+2026-07-12,Sal Stewart,CIN,Matthew Boyd,2,card,24.3,+312,,,park +25%,82F,RvL +12%,heat +3%
+2026-07-12,Munetaka Murakami,CHW,J.T. Ginn,2,card,22.9,+337,,,park +9%,80F,LvR +8%,heat -5%
+2026-07-12,Elly De La Cruz,CIN,Matthew Boyd,1,card,22.8,+339,,,park +25%,82F,SvL +12%,heat +15%
+2026-07-12,Colson Montgomery,CHW,J.T. Ginn,4,card,22.4,+346,,,park +9%,80F,LvR +8%,heat -7%
+2026-07-12,James Wood,WSN,Will Warren,1,card,21.8,+359,,,park avg,82F,LvR +8%,heat +3%
+2026-07-12,Yordan Alvarez,HOU,MacKenzie Gore,2,card,21.6,+363,,,park +2%,95F · wind in 3 (roof: half),LvL -22%,heat +2%
+2026-07-12,Seiya Suzuki,CHC,Andrew Abbott,2,card,21.5,+365,,,park +25%,82F,RvL +12%,heat -0%
+2026-07-12,Mike Trout,LAA,Taj Bradley,2,card,21.3,+369,,,park -2%,90F · wind out 3,RvR -3%,heat -3%
+2026-07-12,Spencer Steer,CIN,Matthew Boyd,3,card,21.2,+371,,,park +25%,82F,RvL +12%,heat -1%
+2026-07-12,Esmerlyn Valdez,PIT,Robert Gasser,4,card,21.1,+373,,,park -9%,80F · wind in 7,RvL +12%,heat +11%
+2026-07-12,Eugenio Suárez,CIN,Matthew Boyd,5,card,21.1,+374,,,park +25%,82F,RvL +12%,heat -1%
+2026-07-12,Miguel Vargas,CHW,J.T. Ginn,3,card,20.9,+377,,,park +9%,80F,RvR -3%,heat -2%
+2026-07-12,Kyle Schwarber,PHI,Tarik Skubal,2,card,20.8,+382,,,park -5%,82F,LvL -22%,
+2026-07-12,Pete Crow-Armstrong,CHC,Andrew Abbott,1,card,20.8,+380,,,park +25%,82F,LvL -22%,heat +8%
+2026-07-12,Ian Happ,CHC,Andrew Abbott,7,card,20.7,+383,,,park +25%,82F,SvL +12%,heat -9%
+2026-07-12,Ketel Marte,ARI,Emmet Sheehan,1,card,20.6,+385,,,park +5%,71F · wind out 4,SvR +8%,heat +6%
+2026-07-12,Pete Alonso,BAL,Seth Lugo,4,card,20.6,+385,,,park +4% [low-conf],83F,RvR -3%,heat +12%
+2026-07-12,Kody Clemens,MIN,José Soriano,4,card,20.4,+391,,,park -2%,90F · wind out 3,LvR +8%,heat -8%
+2026-07-12,Samuel Basallo,BAL,Seth Lugo,5,card,20.1,+397,,,park +4% [low-conf],83F,LvR +8%,heat +13%
+2026-07-12,Christian Walker,HOU,MacKenzie Gore,4,card,20.0,+400,,,park +2%,95F · wind in 3 (roof: half),RvL +12%,heat +6%
+2026-07-12,Juan Soto,NYM,Payton Tolle,2,card,19.9,+403,,,park -4%,78F,LvL -22%,heat +16%
+2026-07-12,Jose Siri,LAA,Taj Bradley,4,card,19.8,+404,,,park -2%,90F · wind out 3,RvR -3%,heat +2%
+2026-07-12,Dansby Swanson,CHC,Andrew Abbott,8,card,19.7,+408,,,park +25%,82F,RvL +12%,heat -6%
 2026-07-12,Junior Caminero,TBR,Emerson Hancock,3,card,19.6,+411,,,park -4% [low-conf],dome,RvR -3%,heat +9%
-2026-07-12,JJ Bleday,CIN,Matthew Boyd,4,card,19.5,+412,,,park +25%,83F,LvL -22%,heat +1%
-2026-07-12,Jordan Walker,STL,Danny Young *,3,card,19.5,+413,,,park -7%,87F · wind in 6,RvL +12%,
+2026-07-12,Shohei Ohtani,LAD,Mitch Bratt *,1,card,19.6,+411,,,park +5%,71F · wind out 4,LvL -22%,
+2026-07-12,Hunter Goodman,COL,Trevor McDonald,3,card,19.5,+413,,,park -14%,72F · wind out 12,RvR -3%,heat +3%
+2026-07-12,Ryan Jeffers,MIN,José Soriano,2,card,19.5,+413,,,park -2%,90F · wind out 3,RvR -3%,heat -2%
+2026-07-12,Zach Neto,LAA,Taj Bradley,1,card,19.5,+412,,,park -2%,90F · wind out 3,RvR -3%,heat +8%
+2026-07-12,Jordan Walker,STL,Danny Young *,3,card,19.4,+416,,,park -7%,86F · wind in 5,RvL +12%,
+2026-07-12,JJ Bleday,CIN,Matthew Boyd,4,card,19.3,+417,,,park +25%,82F,LvL -22%,heat +1%

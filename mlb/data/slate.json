@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-12T20:28:24+00:00",
+ "generated": "2026-07-12T23:17:06+00:00",
  "games": [
   {
    "away": "Milwaukee Brewers",
@@ -9,9 +9,9 @@
    "home_sp": "Paul Skenes",
    "p_home": 54.6,
    "raw_total": 9.21,
-   "adj_total": 9.08,
+   "adj_total": 8.93,
    "park": "park -3%",
-   "wx": "86F, wind 8mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Kansas City Royals",
@@ -19,11 +19,11 @@
    "venue": "Oriole Park at Camden Yards",
    "away_sp": "Seth Lugo",
    "home_sp": "Shane Baz",
-   "p_home": 60.1,
-   "raw_total": 9.48,
-   "adj_total": 9.72,
+   "p_home": 60.9,
+   "raw_total": 9.49,
+   "adj_total": 9.7,
    "park": "park +1% [low-conf]",
-   "wx": "86F, wind 9mph"
+   "wx": "83F, wind 9mph"
   },
   {
    "away": "New York Yankees",
@@ -31,11 +31,11 @@
    "venue": "Nationals Park",
    "away_sp": "Will Warren",
    "home_sp": "Cade Cavalli",
-   "p_home": 53.2,
-   "raw_total": 9.73,
-   "adj_total": 9.95,
+   "p_home": 53.0,
+   "raw_total": 9.72,
+   "adj_total": 9.94,
    "park": "park +1%",
-   "wx": "83F, wind 7mph"
+   "wx": "82F, wind 9mph"
   },
   {
    "away": "Chicago Cubs",
@@ -43,11 +43,11 @@
    "venue": "Great American Ball Park",
    "away_sp": "Matthew Boyd",
    "home_sp": "Andrew Abbott",
-   "p_home": 44.5,
-   "raw_total": 9.35,
-   "adj_total": 10.61,
+   "p_home": 44.0,
+   "raw_total": 9.37,
+   "adj_total": 10.63,
    "park": "park +12%",
-   "wx": "83F, wind 6mph"
+   "wx": "82F, wind 4mph"
   },
   {
    "away": "Boston Red Sox",
@@ -55,11 +55,11 @@
    "venue": "Citi Field",
    "away_sp": "Payton Tolle",
    "home_sp": "Zach Thornton",
-   "p_home": 45.0,
-   "raw_total": 8.26,
-   "adj_total": 8.16,
+   "p_home": 44.9,
+   "raw_total": 8.23,
+   "adj_total": 8.04,
    "park": "park -3%",
-   "wx": "82F, wind 11mph"
+   "wx": "78F, wind 7mph"
   },
   {
    "away": "Seattle Mariners",
@@ -67,7 +67,7 @@
    "venue": "Tropicana Field",
    "away_sp": "Emerson Hancock",
    "home_sp": "Ian Seymour",
-   "p_home": 60.9,
+   "p_home": 60.1,
    "raw_total": 8.32,
    "adj_total": 8.32,
    "park": "park neutral [unknown park]",
@@ -79,11 +79,11 @@
    "venue": "Comerica Park",
    "away_sp": "Zack Wheeler",
    "home_sp": "Tarik Skubal",
-   "p_home": 52.7,
-   "raw_total": 8.06,
-   "adj_total": 8.02,
+   "p_home": 52.0,
+   "raw_total": 8.02,
+   "adj_total": 7.96,
    "park": "park -2%",
-   "wx": "84F, wind 9mph"
+   "wx": "82F, wind 7mph"
   },
   {
    "away": "Cleveland Guardians",
@@ -91,11 +91,11 @@
    "venue": "loanDepot park",
    "away_sp": "Joey Cantillo",
    "home_sp": "Tyler Phillips",
-   "p_home": 56.0,
-   "raw_total": 8.61,
-   "adj_total": 8.61,
+   "p_home": 55.6,
+   "raw_total": 8.59,
+   "adj_total": 8.57,
    "park": "park -1%",
-   "wx": "90F, wind 8mph (retract: halved)"
+   "wx": "86F, wind 8mph (retract: halved)"
   },
   {
    "away": "Los Angeles Angels",
@@ -103,11 +103,11 @@
    "venue": "Target Field",
    "away_sp": "Jos\u00e9 Soriano",
    "home_sp": "Taj Bradley",
-   "p_home": 59.0,
-   "raw_total": 9.43,
-   "adj_total": 9.59,
+   "p_home": 59.2,
+   "raw_total": 9.4,
+   "adj_total": 9.51,
    "park": "park -1%",
-   "wx": "92F, wind 10mph"
+   "wx": "90F, wind 9mph"
   },
   {
    "away": "Athletics",
@@ -115,11 +115,11 @@
    "venue": "Rate Field",
    "away_sp": "J.T. Ginn",
    "home_sp": "Noah Schultz",
-   "p_home": 56.5,
-   "raw_total": 9.62,
-   "adj_total": 9.65,
+   "p_home": 57.5,
+   "raw_total": 9.63,
+   "adj_total": 9.63,
    "park": "park -1%",
-   "wx": "80F, wind 10mph"
+   "wx": "80F, wind 6mph"
   },
   {
    "away": "Atlanta Braves",
@@ -127,11 +127,11 @@
    "venue": "Busch Stadium",
    "away_sp": "Danny Young",
    "home_sp": "Dustin May",
-   "p_home": 50.4,
-   "raw_total": 8.89,
-   "adj_total": 9.0,
+   "p_home": 50.3,
+   "raw_total": 8.87,
+   "adj_total": 8.94,
    "park": "park -1%",
-   "wx": "87F, wind 11mph"
+   "wx": "86F, wind 9mph"
   },
   {
    "away": "Houston Astros",
@@ -139,11 +139,11 @@
    "venue": "Globe Life Field",
    "away_sp": "Cristian Javier",
    "home_sp": "MacKenzie Gore",
-   "p_home": 56.8,
-   "raw_total": 9.1,
-   "adj_total": 9.58,
+   "p_home": 57.0,
+   "raw_total": 9.12,
+   "adj_total": 9.6,
    "park": "park +4%",
-   "wx": "96F, wind 4mph (retract: halved)"
+   "wx": "95F, wind 7mph (retract: halved)"
   },
   {
    "away": "Colorado Rockies",
@@ -151,11 +151,11 @@
    "venue": "Oracle Park",
    "away_sp": "Michael Lorenzen",
    "home_sp": "Trevor McDonald",
-   "p_home": 55.4,
-   "raw_total": 9.58,
-   "adj_total": 9.04,
+   "p_home": 55.7,
+   "raw_total": 9.53,
+   "adj_total": 9.07,
    "park": "park -6%",
-   "wx": "72F, wind 9mph"
+   "wx": "72F, wind 13mph"
   },
   {
    "away": "Arizona Diamondbacks",
@@ -163,11 +163,11 @@
    "venue": "UNIQLO Field at Dodger Stadium",
    "away_sp": "Mitch Bratt",
    "home_sp": "Emmet Sheehan",
-   "p_home": 65.5,
-   "raw_total": 9.07,
-   "adj_total": 9.02,
+   "p_home": 65.2,
+   "raw_total": 9.06,
+   "adj_total": 8.89,
    "park": "park -2%",
-   "wx": "82F, wind 9mph"
+   "wx": "71F, wind 6mph"
   },
   {
    "away": "Toronto Blue Jays",
@@ -175,193 +175,193 @@
    "venue": "Petco Park",
    "away_sp": "Kevin Gausman",
    "home_sp": "Germ\u00e1n M\u00e1rquez",
-   "p_home": 48.6,
+   "p_home": 48.7,
    "raw_total": 8.49,
-   "adj_total": 8.14,
+   "adj_total": 8.1,
    "park": "park -5%",
-   "wx": "80F, wind 8mph"
+   "wx": "75F, wind 6mph"
   }
  ],
  "ratings": [
   {
    "team": "Los Angeles Dodgers",
-   "O": 1.104,
-   "D": 0.879,
-   "net": 1.255
+   "O": 1.102,
+   "D": 0.882,
+   "net": 1.25
   },
   {
    "team": "Milwaukee Brewers",
-   "O": 1.078,
-   "D": 0.899,
+   "O": 1.079,
+   "D": 0.9,
    "net": 1.199
   },
   {
    "team": "New York Yankees",
-   "O": 1.039,
-   "D": 0.912,
-   "net": 1.139
+   "O": 1.041,
+   "D": 0.911,
+   "net": 1.142
   },
   {
    "team": "Atlanta Braves",
    "O": 1.041,
-   "D": 0.918,
-   "net": 1.134
+   "D": 0.917,
+   "net": 1.135
   },
   {
    "team": "Chicago Cubs",
-   "O": 1.066,
+   "O": 1.072,
    "D": 0.998,
-   "net": 1.069
+   "net": 1.074
   },
   {
    "team": "Pittsburgh Pirates",
-   "O": 1.109,
-   "D": 1.047,
+   "O": 1.11,
+   "D": 1.048,
    "net": 1.059
   },
   {
+   "team": "Chicago White Sox",
+   "O": 1.036,
+   "D": 0.986,
+   "net": 1.051
+  },
+  {
    "team": "Tampa Bay Rays",
-   "O": 1.004,
-   "D": 0.949,
-   "net": 1.058
+   "O": 1.001,
+   "D": 0.955,
+   "net": 1.048
   },
   {
    "team": "Boston Red Sox",
-   "O": 0.944,
-   "D": 0.907,
-   "net": 1.041
+   "O": 0.943,
+   "D": 0.904,
+   "net": 1.043
   },
   {
    "team": "Miami Marlins",
-   "O": 1.004,
-   "D": 0.966,
-   "net": 1.04
-  },
-  {
-   "team": "Chicago White Sox",
-   "O": 1.029,
-   "D": 0.99,
-   "net": 1.039
+   "O": 1.001,
+   "D": 0.968,
+   "net": 1.035
   },
   {
    "team": "Detroit Tigers",
-   "O": 0.962,
-   "D": 0.926,
-   "net": 1.039
-  },
-  {
-   "team": "St. Louis Cardinals",
-   "O": 0.999,
-   "D": 0.982,
-   "net": 1.018
+   "O": 0.956,
+   "D": 0.927,
+   "net": 1.031
   },
   {
    "team": "Seattle Mariners",
-   "O": 0.929,
-   "D": 0.915,
-   "net": 1.015
+   "O": 0.935,
+   "D": 0.913,
+   "net": 1.025
+  },
+  {
+   "team": "St. Louis Cardinals",
+   "O": 0.998,
+   "D": 0.982,
+   "net": 1.016
   },
   {
    "team": "Washington Nationals",
-   "O": 1.112,
-   "D": 1.099,
-   "net": 1.012
+   "O": 1.11,
+   "D": 1.1,
+   "net": 1.009
   },
   {
    "team": "Cleveland Guardians",
-   "O": 0.925,
-   "D": 0.934,
-   "net": 0.991
+   "O": 0.927,
+   "D": 0.931,
+   "net": 0.995
+  },
+  {
+   "team": "Philadelphia Phillies",
+   "O": 0.98,
+   "D": 0.994,
+   "net": 0.986
   },
   {
    "team": "Minnesota Twins",
    "O": 1.047,
-   "D": 1.07,
-   "net": 0.979
-  },
-  {
-   "team": "Philadelphia Phillies",
-   "O": 0.979,
-   "D": 1.0,
-   "net": 0.979
+   "D": 1.066,
+   "net": 0.981
   },
   {
    "team": "Arizona Diamondbacks",
-   "O": 0.974,
-   "D": 0.995,
-   "net": 0.978
+   "O": 0.975,
+   "D": 0.994,
+   "net": 0.981
   },
   {
    "team": "Texas Rangers",
-   "O": 0.948,
-   "D": 0.971,
-   "net": 0.976
+   "O": 0.951,
+   "D": 0.972,
+   "net": 0.978
   },
   {
    "team": "Baltimore Orioles",
-   "O": 1.007,
-   "D": 1.043,
-   "net": 0.966
+   "O": 1.013,
+   "D": 1.04,
+   "net": 0.974
   },
   {
    "team": "Toronto Blue Jays",
    "O": 0.941,
-   "D": 0.989,
-   "net": 0.951
+   "D": 0.991,
+   "net": 0.95
   },
   {
    "team": "Houston Astros",
-   "O": 1.008,
-   "D": 1.073,
-   "net": 0.94
+   "O": 1.009,
+   "D": 1.075,
+   "net": 0.939
   },
   {
    "team": "San Diego Padres",
-   "O": 0.921,
+   "O": 0.923,
    "D": 0.984,
-   "net": 0.936
+   "net": 0.938
   },
   {
    "team": "Los Angeles Angels",
-   "O": 0.992,
-   "D": 1.067,
-   "net": 0.93
+   "O": 0.989,
+   "D": 1.066,
+   "net": 0.927
+  },
+  {
+   "team": "San Francisco Giants",
+   "O": 0.949,
+   "D": 1.032,
+   "net": 0.919
   },
   {
    "team": "Cincinnati Reds",
    "O": 0.951,
-   "D": 1.032,
-   "net": 0.922
-  },
-  {
-   "team": "San Francisco Giants",
-   "O": 0.95,
    "D": 1.037,
    "net": 0.917
   },
   {
    "team": "New York Mets",
-   "O": 0.946,
-   "D": 1.037,
-   "net": 0.912
+   "O": 0.944,
+   "D": 1.035,
+   "net": 0.911
   },
   {
    "team": "Colorado Rockies",
-   "O": 1.037,
-   "D": 1.16,
-   "net": 0.894
-  },
-  {
-   "team": "Kansas City Royals",
-   "O": 0.965,
-   "D": 1.081,
+   "O": 1.033,
+   "D": 1.158,
    "net": 0.892
   },
   {
+   "team": "Kansas City Royals",
+   "O": 0.962,
+   "D": 1.086,
+   "net": 0.886
+  },
+  {
    "team": "Athletics",
-   "O": 0.984,
-   "D": 1.134,
-   "net": 0.868
+   "O": 0.98,
+   "D": 1.14,
+   "net": 0.86
   }
  ],
  "edges": [],
@@ -376,10 +376,10 @@
    "opp_sp": "Matthew Boyd",
    "venue": "Great American Ball Park",
    "slot": 2,
-   "hr_pct": 24.5,
-   "fair": "+308",
+   "hr_pct": 24.3,
+   "fair": "+312",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 0.93,
    "sp_small": false,
    "plat": "RvL +12%",
@@ -390,34 +390,14 @@
    "b_src": "mrc"
   },
   {
-   "player": "Elly De La Cruz",
-   "team": "CIN",
-   "opp": "CHC",
-   "opp_sp": "Matthew Boyd",
-   "venue": "Great American Ball Park",
-   "slot": 1,
-   "hr_pct": 23.0,
-   "fair": "+335",
-   "park": "park +25%",
-   "temp": "83F",
-   "sp_fac": 0.93,
-   "sp_small": false,
-   "plat": "SvL +12%",
-   "heat": "heat +15%",
-   "pen": "pen 1.36x",
-   "brl": "brl +16%",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
    "player": "Munetaka Murakami",
    "team": "CHW",
    "opp": "ATH",
    "opp_sp": "J.T. Ginn",
    "venue": "Rate Field",
    "slot": 2,
-   "hr_pct": 22.6,
-   "fair": "+343",
+   "hr_pct": 22.9,
+   "fair": "+337",
    "park": "park +9%",
    "temp": "80F",
    "sp_fac": 0.95,
@@ -430,14 +410,34 @@
    "b_src": "mrc"
   },
   {
+   "player": "Elly De La Cruz",
+   "team": "CIN",
+   "opp": "CHC",
+   "opp_sp": "Matthew Boyd",
+   "venue": "Great American Ball Park",
+   "slot": 1,
+   "hr_pct": 22.8,
+   "fair": "+339",
+   "park": "park +25%",
+   "temp": "82F",
+   "sp_fac": 0.93,
+   "sp_small": false,
+   "plat": "SvL +12%",
+   "heat": "heat +15%",
+   "pen": "pen 1.36x",
+   "brl": "brl +16%",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
    "player": "Colson Montgomery",
    "team": "CHW",
    "opp": "ATH",
    "opp_sp": "J.T. Ginn",
    "venue": "Rate Field",
    "slot": 4,
-   "hr_pct": 22.1,
-   "fair": "+352",
+   "hr_pct": 22.4,
+   "fair": "+346",
    "park": "park +9%",
    "temp": "80F",
    "sp_fac": 0.95,
@@ -450,16 +450,36 @@
    "b_src": "mrc"
   },
   {
+   "player": "James Wood",
+   "team": "WSN",
+   "opp": "NYY",
+   "opp_sp": "Will Warren",
+   "venue": "Nationals Park",
+   "slot": 1,
+   "hr_pct": 21.8,
+   "fair": "+359",
+   "park": "park avg",
+   "temp": "82F",
+   "sp_fac": 1.02,
+   "sp_small": false,
+   "plat": "LvR +8%",
+   "heat": "heat +3%",
+   "pen": "pen 0.89x",
+   "brl": "brl +16%",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
    "player": "Yordan Alvarez",
    "team": "HOU",
    "opp": "TEX",
    "opp_sp": "MacKenzie Gore",
    "venue": "Globe Life Field",
    "slot": 2,
-   "hr_pct": 21.8,
-   "fair": "+358",
+   "hr_pct": 21.6,
+   "fair": "+363",
    "park": "park +2%",
-   "temp": "96F (roof: half)",
+   "temp": "95F \u00b7 wind in 3 (roof: half)",
    "sp_fac": 0.91,
    "sp_small": false,
    "plat": "LvL -22%",
@@ -470,56 +490,16 @@
    "b_src": "mrc"
   },
   {
-   "player": "Esmerlyn Valdez",
-   "team": "PIT",
-   "opp": "MIL",
-   "opp_sp": "Robert Gasser",
-   "venue": "PNC Park",
-   "slot": 4,
-   "hr_pct": 21.7,
-   "fair": "+360",
-   "park": "park -9%",
-   "temp": "86F \u00b7 wind in 4",
-   "sp_fac": 1.13,
-   "sp_small": false,
-   "plat": "RvL +12%",
-   "heat": "heat +11%",
-   "pen": "pen 0.95x",
-   "brl": "brl +58%",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "James Wood",
-   "team": "WSN",
-   "opp": "NYY",
-   "opp_sp": "Will Warren",
-   "venue": "Nationals Park",
-   "slot": 1,
-   "hr_pct": 21.7,
-   "fair": "+360",
-   "park": "park avg",
-   "temp": "83F",
-   "sp_fac": 1.02,
-   "sp_small": false,
-   "plat": "LvR +8%",
-   "heat": "heat +3%",
-   "pen": "pen 0.88x",
-   "brl": "brl +16%",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
    "player": "Seiya Suzuki",
    "team": "CHC",
    "opp": "CIN",
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 2,
-   "hr_pct": 21.6,
-   "fair": "+363",
+   "hr_pct": 21.5,
+   "fair": "+365",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 1.11,
    "sp_small": false,
    "plat": "RvL +12%",
@@ -530,36 +510,16 @@
    "b_src": "mrc"
   },
   {
-   "player": "Ketel Marte",
-   "team": "ARI",
-   "opp": "LAD",
-   "opp_sp": "Emmet Sheehan",
-   "venue": "UNIQLO Field at Dodger Stadium",
-   "slot": 1,
-   "hr_pct": 21.5,
-   "fair": "+366",
-   "park": "park +5%",
-   "temp": "82F \u00b7 wind out 7",
-   "sp_fac": 1.18,
-   "sp_small": false,
-   "plat": "SvR +8%",
-   "heat": "heat +6%",
-   "pen": "pen 0.85x",
-   "brl": "brl +6%",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
    "player": "Mike Trout",
    "team": "LAA",
    "opp": "MIN",
    "opp_sp": "Taj Bradley",
    "venue": "Target Field",
    "slot": 2,
-   "hr_pct": 21.5,
-   "fair": "+366",
+   "hr_pct": 21.3,
+   "fair": "+369",
    "park": "park -2%",
-   "temp": "92F \u00b7 wind out 5",
+   "temp": "90F \u00b7 wind out 3",
    "sp_fac": 0.99,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -576,10 +536,10 @@
    "opp_sp": "Matthew Boyd",
    "venue": "Great American Ball Park",
    "slot": 3,
-   "hr_pct": 21.3,
-   "fair": "+369",
+   "hr_pct": 21.2,
+   "fair": "+371",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 0.93,
    "sp_small": false,
    "plat": "RvL +12%",
@@ -590,16 +550,36 @@
    "b_src": "mrc"
   },
   {
+   "player": "Esmerlyn Valdez",
+   "team": "PIT",
+   "opp": "MIL",
+   "opp_sp": "Robert Gasser",
+   "venue": "PNC Park",
+   "slot": 4,
+   "hr_pct": 21.1,
+   "fair": "+373",
+   "park": "park -9%",
+   "temp": "80F \u00b7 wind in 7",
+   "sp_fac": 1.13,
+   "sp_small": false,
+   "plat": "RvL +12%",
+   "heat": "heat +11%",
+   "pen": "pen 0.95x",
+   "brl": "brl +58%",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
    "player": "Eugenio Su\u00e1rez",
    "team": "CIN",
    "opp": "CHC",
    "opp_sp": "Matthew Boyd",
    "venue": "Great American Ball Park",
    "slot": 5,
-   "hr_pct": 21.2,
-   "fair": "+372",
+   "hr_pct": 21.1,
+   "fair": "+374",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 0.93,
    "sp_small": false,
    "plat": "RvL +12%",
@@ -610,16 +590,36 @@
    "b_src": "mrc"
   },
   {
+   "player": "Miguel Vargas",
+   "team": "CHW",
+   "opp": "ATH",
+   "opp_sp": "J.T. Ginn",
+   "venue": "Rate Field",
+   "slot": 3,
+   "hr_pct": 20.9,
+   "fair": "+377",
+   "park": "park +9%",
+   "temp": "80F",
+   "sp_fac": 0.95,
+   "sp_small": false,
+   "plat": "RvR -3%",
+   "heat": "heat -2%",
+   "pen": "pen 1.32x",
+   "brl": "brl +19%",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
    "player": "Kyle Schwarber",
    "team": "PHI",
    "opp": "DET",
    "opp_sp": "Tarik Skubal",
    "venue": "Comerica Park",
    "slot": 2,
-   "hr_pct": 20.9,
-   "fair": "+379",
+   "hr_pct": 20.8,
+   "fair": "+382",
    "park": "park -5%",
-   "temp": "84F",
+   "temp": "82F",
    "sp_fac": 1.05,
    "sp_small": false,
    "plat": "LvL -22%",
@@ -636,10 +636,10 @@
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 1,
-   "hr_pct": 20.9,
-   "fair": "+378",
+   "hr_pct": 20.8,
+   "fair": "+380",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 1.11,
    "sp_small": false,
    "plat": "LvL -22%",
@@ -656,10 +656,10 @@
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 7,
-   "hr_pct": 20.8,
-   "fair": "+382",
+   "hr_pct": 20.7,
+   "fair": "+383",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 1.11,
    "sp_small": false,
    "plat": "SvL +12%",
@@ -670,22 +670,22 @@
    "b_src": "mrc"
   },
   {
-   "player": "Miguel Vargas",
-   "team": "CHW",
-   "opp": "ATH",
-   "opp_sp": "J.T. Ginn",
-   "venue": "Rate Field",
-   "slot": 3,
-   "hr_pct": 20.8,
-   "fair": "+381",
-   "park": "park +9%",
-   "temp": "80F",
-   "sp_fac": 0.95,
+   "player": "Ketel Marte",
+   "team": "ARI",
+   "opp": "LAD",
+   "opp_sp": "Emmet Sheehan",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "slot": 1,
+   "hr_pct": 20.6,
+   "fair": "+385",
+   "park": "park +5%",
+   "temp": "71F \u00b7 wind out 4",
+   "sp_fac": 1.18,
    "sp_small": false,
-   "plat": "RvR -3%",
-   "heat": "heat -2%",
-   "pen": "pen 1.32x",
-   "brl": "brl +19%",
+   "plat": "SvR +8%",
+   "heat": "heat +6%",
+   "pen": "pen 0.84x",
+   "brl": "brl +6%",
    "lu": "card",
    "b_src": "mrc"
   },
@@ -696,35 +696,15 @@
    "opp_sp": "Seth Lugo",
    "venue": "Oriole Park at Camden Yards",
    "slot": 4,
-   "hr_pct": 20.7,
-   "fair": "+383",
+   "hr_pct": 20.6,
+   "fair": "+385",
    "park": "park +4% [low-conf]",
-   "temp": "86F",
+   "temp": "83F",
    "sp_fac": 1.06,
    "sp_small": false,
    "plat": "RvR -3%",
    "heat": "heat +12%",
    "pen": "pen 1.11x",
-   "brl": "",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "Shohei Ohtani",
-   "team": "LAD",
-   "opp": "ARI",
-   "opp_sp": "Mitch Bratt *",
-   "venue": "UNIQLO Field at Dodger Stadium",
-   "slot": 1,
-   "hr_pct": 20.7,
-   "fair": "+383",
-   "park": "park +5%",
-   "temp": "82F \u00b7 wind out 7",
-   "sp_fac": 1.0,
-   "sp_small": false,
-   "plat": "LvL -22%",
-   "heat": "",
-   "pen": "pen 0.86x",
    "brl": "",
    "lu": "card",
    "b_src": "mrc"
@@ -736,75 +716,15 @@
    "opp_sp": "Jos\u00e9 Soriano",
    "venue": "Target Field",
    "slot": 4,
-   "hr_pct": 20.5,
-   "fair": "+387",
+   "hr_pct": 20.4,
+   "fair": "+391",
    "park": "park -2%",
-   "temp": "92F \u00b7 wind out 5",
+   "temp": "90F \u00b7 wind out 3",
    "sp_fac": 0.91,
    "sp_small": false,
    "plat": "LvR +8%",
    "heat": "heat -8%",
    "pen": "pen 1.07x",
-   "brl": "",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "Juan Soto",
-   "team": "NYM",
-   "opp": "BOS",
-   "opp_sp": "Payton Tolle",
-   "venue": "Citi Field",
-   "slot": 2,
-   "hr_pct": 20.4,
-   "fair": "+390",
-   "park": "park -4%",
-   "temp": "82F \u00b7 wind out 6",
-   "sp_fac": 0.92,
-   "sp_small": false,
-   "plat": "LvL -22%",
-   "heat": "heat +16%",
-   "pen": "",
-   "brl": "",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "Christian Walker",
-   "team": "HOU",
-   "opp": "TEX",
-   "opp_sp": "MacKenzie Gore",
-   "venue": "Globe Life Field",
-   "slot": 4,
-   "hr_pct": 20.3,
-   "fair": "+394",
-   "park": "park +2%",
-   "temp": "96F (roof: half)",
-   "sp_fac": 0.91,
-   "sp_small": false,
-   "plat": "RvL +12%",
-   "heat": "heat +6%",
-   "pen": "pen 1.24x",
-   "brl": "",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "Joc Pederson",
-   "team": "TEX",
-   "opp": "HOU",
-   "opp_sp": "Cristian Javier",
-   "venue": "Globe Life Field",
-   "slot": 1,
-   "hr_pct": 20.2,
-   "fair": "+396",
-   "park": "park +2%",
-   "temp": "96F (roof: half)",
-   "sp_fac": 1.06,
-   "sp_small": false,
-   "plat": "LvR +8%",
-   "heat": "heat +5%",
-   "pen": "",
    "brl": "",
    "lu": "card",
    "b_src": "mrc"
@@ -816,10 +736,10 @@
    "opp_sp": "Seth Lugo",
    "venue": "Oriole Park at Camden Yards",
    "slot": 5,
-   "hr_pct": 20.2,
-   "fair": "+394",
+   "hr_pct": 20.1,
+   "fair": "+397",
    "park": "park +4% [low-conf]",
-   "temp": "86F",
+   "temp": "83F",
    "sp_fac": 1.06,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -830,16 +750,56 @@
    "b_src": "mrc"
   },
   {
+   "player": "Christian Walker",
+   "team": "HOU",
+   "opp": "TEX",
+   "opp_sp": "MacKenzie Gore",
+   "venue": "Globe Life Field",
+   "slot": 4,
+   "hr_pct": 20.0,
+   "fair": "+400",
+   "park": "park +2%",
+   "temp": "95F \u00b7 wind in 3 (roof: half)",
+   "sp_fac": 0.91,
+   "sp_small": false,
+   "plat": "RvL +12%",
+   "heat": "heat +6%",
+   "pen": "pen 1.24x",
+   "brl": "",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
+   "player": "Juan Soto",
+   "team": "NYM",
+   "opp": "BOS",
+   "opp_sp": "Payton Tolle",
+   "venue": "Citi Field",
+   "slot": 2,
+   "hr_pct": 19.9,
+   "fair": "+403",
+   "park": "park -4%",
+   "temp": "78F",
+   "sp_fac": 0.92,
+   "sp_small": false,
+   "plat": "LvL -22%",
+   "heat": "heat +16%",
+   "pen": "",
+   "brl": "",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
    "player": "Jose Siri",
    "team": "LAA",
    "opp": "MIN",
    "opp_sp": "Taj Bradley",
    "venue": "Target Field",
    "slot": 4,
-   "hr_pct": 20.1,
-   "fair": "+397",
+   "hr_pct": 19.8,
+   "fair": "+404",
    "park": "park -2%",
-   "temp": "92F \u00b7 wind out 5",
+   "temp": "90F \u00b7 wind out 3",
    "sp_fac": 0.99,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -856,56 +816,16 @@
    "opp_sp": "Andrew Abbott",
    "venue": "Great American Ball Park",
    "slot": 8,
-   "hr_pct": 19.9,
-   "fair": "+403",
+   "hr_pct": 19.7,
+   "fair": "+408",
    "park": "park +25%",
-   "temp": "83F",
+   "temp": "82F",
    "sp_fac": 1.11,
    "sp_small": false,
    "plat": "RvL +12%",
    "heat": "heat -6%",
    "pen": "pen 1.17x",
    "brl": "brl -8%",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "Ryan Jeffers",
-   "team": "MIN",
-   "opp": "LAA",
-   "opp_sp": "Jos\u00e9 Soriano",
-   "venue": "Target Field",
-   "slot": 2,
-   "hr_pct": 19.9,
-   "fair": "+403",
-   "park": "park -2%",
-   "temp": "92F \u00b7 wind out 5",
-   "sp_fac": 0.91,
-   "sp_small": false,
-   "plat": "RvR -3%",
-   "heat": "heat -2%",
-   "pen": "pen 1.07x",
-   "brl": "brl +24%",
-   "lu": "card",
-   "b_src": "mrc"
-  },
-  {
-   "player": "Zach Neto",
-   "team": "LAA",
-   "opp": "MIN",
-   "opp_sp": "Taj Bradley",
-   "venue": "Target Field",
-   "slot": 1,
-   "hr_pct": 19.9,
-   "fair": "+403",
-   "park": "park -2%",
-   "temp": "92F \u00b7 wind out 5",
-   "sp_fac": 0.99,
-   "sp_small": false,
-   "plat": "RvR -3%",
-   "heat": "heat +8%",
-   "pen": "",
-   "brl": "",
    "lu": "card",
    "b_src": "mrc"
   },
@@ -930,21 +850,81 @@
    "b_src": "mrc"
   },
   {
-   "player": "JJ Bleday",
-   "team": "CIN",
-   "opp": "CHC",
-   "opp_sp": "Matthew Boyd",
-   "venue": "Great American Ball Park",
-   "slot": 4,
-   "hr_pct": 19.5,
-   "fair": "+412",
-   "park": "park +25%",
-   "temp": "83F",
-   "sp_fac": 0.93,
+   "player": "Shohei Ohtani",
+   "team": "LAD",
+   "opp": "ARI",
+   "opp_sp": "Mitch Bratt *",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "slot": 1,
+   "hr_pct": 19.6,
+   "fair": "+411",
+   "park": "park +5%",
+   "temp": "71F \u00b7 wind out 4",
+   "sp_fac": 1.0,
    "sp_small": false,
    "plat": "LvL -22%",
-   "heat": "heat +1%",
-   "pen": "pen 1.36x",
+   "heat": "",
+   "pen": "pen 0.85x",
+   "brl": "",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
+   "player": "Hunter Goodman",
+   "team": "COL",
+   "opp": "SFG",
+   "opp_sp": "Trevor McDonald",
+   "venue": "Oracle Park",
+   "slot": 3,
+   "hr_pct": 19.5,
+   "fair": "+413",
+   "park": "park -14%",
+   "temp": "72F \u00b7 wind out 12",
+   "sp_fac": 0.89,
+   "sp_small": false,
+   "plat": "RvR -3%",
+   "heat": "heat +3%",
+   "pen": "pen 0.91x",
+   "brl": "",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
+   "player": "Ryan Jeffers",
+   "team": "MIN",
+   "opp": "LAA",
+   "opp_sp": "Jos\u00e9 Soriano",
+   "venue": "Target Field",
+   "slot": 2,
+   "hr_pct": 19.5,
+   "fair": "+413",
+   "park": "park -2%",
+   "temp": "90F \u00b7 wind out 3",
+   "sp_fac": 0.91,
+   "sp_small": false,
+   "plat": "RvR -3%",
+   "heat": "heat -2%",
+   "pen": "pen 1.07x",
+   "brl": "brl +24%",
+   "lu": "card",
+   "b_src": "mrc"
+  },
+  {
+   "player": "Zach Neto",
+   "team": "LAA",
+   "opp": "MIN",
+   "opp_sp": "Taj Bradley",
+   "venue": "Target Field",
+   "slot": 1,
+   "hr_pct": 19.5,
+   "fair": "+412",
+   "park": "park -2%",
+   "temp": "90F \u00b7 wind out 3",
+   "sp_fac": 0.99,
+   "sp_small": false,
+   "plat": "RvR -3%",
+   "heat": "heat +8%",
+   "pen": "",
    "brl": "",
    "lu": "card",
    "b_src": "mrc"
@@ -956,10 +936,10 @@
    "opp_sp": "Danny Young *",
    "venue": "Busch Stadium",
    "slot": 3,
-   "hr_pct": 19.5,
-   "fair": "+413",
+   "hr_pct": 19.4,
+   "fair": "+416",
    "park": "park -7%",
-   "temp": "87F \u00b7 wind in 6",
+   "temp": "86F \u00b7 wind in 5",
    "sp_fac": 1.0,
    "sp_small": false,
    "plat": "RvL +12%",
@@ -968,16 +948,36 @@
    "brl": "brl +10%",
    "lu": "card",
    "b_src": "mrc"
+  },
+  {
+   "player": "JJ Bleday",
+   "team": "CIN",
+   "opp": "CHC",
+   "opp_sp": "Matthew Boyd",
+   "venue": "Great American Ball Park",
+   "slot": 4,
+   "hr_pct": 19.3,
+   "fair": "+417",
+   "park": "park +25%",
+   "temp": "82F",
+   "sp_fac": 0.93,
+   "sp_small": false,
+   "plat": "LvL -22%",
+   "heat": "heat +1%",
+   "pen": "pen 1.36x",
+   "brl": "",
+   "lu": "card",
+   "b_src": "mrc"
   }
  ],
- "hr_note": "stats: Baseball-Reference \u00b7 lineups: 15/15 cards posted (rest = season-usage) \u00b7 platoon on (1304 players) (league factors, starter share) \u00b7 heat on (68 bats x 53 pitcher-sides, 7 pulls, 0 fails) \u00b7 bullpen on (30 pens) \u00b7 barrel blend 35% (486 bats) \u00b7 wind: direction x park bearing (conf-shrunk) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props off: plan/market unavailable (HTTP 401) \u00b7 sorted by model HR% (no props matched)",
+ "hr_note": "stats: Baseball-Reference \u00b7 lineups: 15/15 cards posted (rest = season-usage) \u00b7 platoon on (1304 players) (league factors, starter share) \u00b7 heat on (68 bats x 53 pitcher-sides, 2 pulls, 0 fails) \u00b7 bullpen on (30 pens) \u00b7 barrel blend 35% (486 bats) \u00b7 wind: direction x park bearing (conf-shrunk) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props off: plan/market unavailable (HTTP 401) \u00b7 sorted by model HR% (no props matched)",
  "hr_cal": {
-  "n": 162,
-  "voids": 26,
+  "n": 182,
+  "voids": 33,
   "dates": 6,
   "pred_mean": 21.7,
-  "actual": 19.8,
-  "brier": 0.1527,
+  "actual": 19.2,
+  "brier": 0.1504,
   "buckets": [
    {
     "bucket": "0-12",
@@ -993,15 +993,15 @@
    },
    {
     "bucket": "16-20",
-    "n": 15,
-    "pred": 19.1,
-    "actual": 6.7
+    "n": 20,
+    "pred": 19.2,
+    "actual": 5.0
    },
    {
     "bucket": "20-25",
-    "n": 102,
-    "pred": 21.8,
-    "actual": 19.6
+    "n": 117,
+    "pred": 21.7,
+    "actual": 19.7
    },
    {
     "bucket": "25-+",
@@ -1011,7 +1011,7 @@
    }
   ],
   "holdout": {
-   "n": 162,
+   "n": 182,
    "ready": false,
    "min": 300,
    "span_days": 6,
@@ -1028,9 +1028,9 @@
    }
   },
   "multi": {
-   "n": 77,
+   "n": 97,
    "two_plus": 1,
-   "rate": 1.3,
+   "rate": 1.0,
    "a_n": 3,
    "a_two_plus": 0,
    "a_rate": 0.0
@@ -1038,45 +1038,45 @@
   "lift": [
    {
     "g": "heat +",
-    "n": 77,
-    "pred": 23.2,
-    "actual": 27.3
+    "n": 87,
+    "pred": 22.9,
+    "actual": 25.3
    },
    {
     "g": "heat \u2212",
-    "n": 44,
-    "pred": 23.0,
-    "actual": 15.9
+    "n": 52,
+    "pred": 22.6,
+    "actual": 15.4
    },
    {
     "g": "LvL",
-    "n": 14,
-    "pred": 22.8,
-    "actual": 35.7
+    "n": 18,
+    "pred": 22.3,
+    "actual": 33.3
    },
    {
     "g": "LvR",
-    "n": 63,
-    "pred": 22.3,
-    "actual": 20.6
+    "n": 66,
+    "pred": 22.2,
+    "actual": 21.2
    },
    {
     "g": "RvL",
-    "n": 41,
-    "pred": 21.9,
+    "n": 48,
+    "pred": 21.8,
     "actual": 14.6
    },
    {
     "g": "RvR",
-    "n": 31,
+    "n": 35,
     "pred": 20.7,
-    "actual": 19.4
+    "actual": 17.1
    },
    {
     "g": "card",
-    "n": 157,
-    "pred": 21.7,
-    "actual": 19.7
+    "n": 177,
+    "pred": 21.6,
+    "actual": 19.2
    },
    {
     "g": "proj",
@@ -1103,10 +1103,10 @@
   "note": "futures off (HTTPError: HTTP Error 401: Unauthorized)"
  },
  "backtest": {
-  "n": 866,
+  "n": 880,
   "acc": 56.0,
-  "brier": 0.2472,
-  "home_base": 51.6,
+  "brier": 0.2471,
+  "home_base": 51.5,
   "cal": [
    {
     "bucket": 40,
@@ -1117,14 +1117,14 @@
    {
     "bucket": 50,
     "pred": 50.3,
-    "actual": 49.9,
-    "n": 341
+    "actual": 49.3,
+    "n": 347
    },
    {
     "bucket": 60,
     "pred": 59.2,
-    "actual": 56.0,
-    "n": 291
+    "actual": 56.2,
+    "n": 299
    },
    {
     "bucket": 70,
