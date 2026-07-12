@@ -56,30 +56,54 @@ def pull_pitcher_stats(names):
         time.sleep(0.2)
     return out
 
+WHIFF_DIAG = {"method": None, "rows": 0, "err": None}
 def pull_team_whiff():
-    """{team_name_norm: {'so':, 'pa':}} — team BATTING strikeouts, via statsapi
-    season hitting stats per team."""
-    import statsapi
+    """{team_name_norm: {'so':, 'pa':}} — team BATTING strikeouts.
+    Primary: MLB StatsAPI raw REST (documented, stable). Fallback: statsapi wrapper.
+    Never fails silently — WHIFF_DIAG records what happened."""
     out = {}
+    # primary: one raw call per team against the documented REST endpoint
     try:
-        teams = statsapi.get("teams", {"sportId": 1}).get("teams", [])
+        teams = json.loads(urllib.request.urlopen(
+            "https://statsapi.mlb.com/api/v1/teams?sportId=1", timeout=20).read()).get("teams", [])
         for t in teams:
             tid, tname = t["id"], t["name"]
             try:
-                st = statsapi.get("team_stats", {"teamId": tid, "group": "hitting",
-                                                  "stats": "season"})
+                u = f"https://statsapi.mlb.com/api/v1/teams/{tid}/stats?stats=season&group=hitting"
+                st = json.loads(urllib.request.urlopen(u, timeout=20).read())
                 for grp in st.get("stats", []):
                     for sp in grp.get("splits", []):
                         s = sp.get("stat", {})
-                        out[norm(tname)] = {
-                            "so": int(s.get("strikeOuts", 0) or 0),
-                            "pa": int(s.get("plateAppearances", 0) or 0),
-                        }
+                        so = int(s.get("strikeOuts", 0) or 0)
+                        pa = int(s.get("plateAppearances", 0) or 0)
+                        if pa > 0:
+                            out[norm(tname)] = {"so": so, "pa": pa}
             except Exception:
                 pass
-            time.sleep(0.15)
+            time.sleep(0.1)
+        if out:
+            WHIFF_DIAG.update(method="rest", rows=len(out)); return out
     except Exception as e:
-        print(f"  [team whiff] {type(e).__name__}")
+        WHIFF_DIAG["err"] = f"rest:{type(e).__name__}"
+    # fallback: wrapper
+    try:
+        import statsapi
+        teams = statsapi.get("teams", {"sportId": 1}).get("teams", [])
+        for t in teams:
+            try:
+                st = statsapi.get("team_stats", {"teamId": t["id"], "group": "hitting", "stats": "season"})
+                for grp in st.get("stats", []):
+                    for sp in grp.get("splits", []):
+                        s = sp.get("stat", {})
+                        if int(s.get("plateAppearances", 0) or 0) > 0:
+                            out[norm(t["name"])] = {"so": int(s.get("strikeOuts",0) or 0),
+                                                     "pa": int(s.get("plateAppearances",0) or 0)}
+            except Exception:
+                pass
+            time.sleep(0.1)
+        WHIFF_DIAG.update(method="wrapper", rows=len(out))
+    except Exception as e:
+        WHIFF_DIAG["err"] = (WHIFF_DIAG["err"] or "") + f" wrapper:{type(e).__name__}"
     return out
 
 # ---------------------------------------------------------------- odds pulls
@@ -186,7 +210,10 @@ def main():
             time.sleep(0.3)
         plays = LS.rank_board(plays, min_ev_fair=0.0, min_books=2)
 
-    diag = f"errors {err_counts if API_KEY else 'no-key'} · credits remaining {QUOTA['remaining']} (used {QUOTA['used']})"
+    diag = (f"errors {err_counts if API_KEY else 'no-key'} · credits remaining {QUOTA['remaining']} (used {QUOTA['used']})"
+            f" · whiff {WHIFF_DIAG['method']}:{WHIFF_DIAG['rows']} rows" + (f" ({WHIFF_DIAG['err']})" if WHIFF_DIAG['err'] else ""))
+    if WHIFF_DIAG['rows'] == 0:
+        print("WARNING: opponent whiff pull returned 0 rows — multipliers will be flat 1.0")
     print("DIAG:", diag)
     out = {"generated": ts, "board": board, "diag": diag,
            "n_markets": n_markets, "n_plays": len(plays), "plays": plays,
