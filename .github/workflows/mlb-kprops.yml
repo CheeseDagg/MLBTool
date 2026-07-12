@@ -1,0 +1,34 @@
+name: MLB K props
+# Projects every starter's strikeout distribution and shops pitcher_strikeouts
+# odds across the books with the same double-gate as HR Shop. Runs after the
+# daily slate exists; same afternoon/evening cadence as the HR line shop.
+on:
+  schedule:
+    - cron: "10 18,21,23 * * *"   # 10 past, offset from the HR shop runs
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  kprops:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Install deps
+        run: pip install MLB-StatsAPI
+      - name: Project + shop K props
+        working-directory: mlb
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python mlb_kprops.py --selftest
+          python mlb_kprops_run.py
+      - name: Commit
+        run: |
+          git config user.name mlb-bot
+          git config user.email mlb-bot@users.noreply.github.com
+          git add mlb/data/kprops.json
+          git commit -m "K props refresh" || echo "no changes"
+          git push
