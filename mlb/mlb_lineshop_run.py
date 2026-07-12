@@ -29,8 +29,13 @@ def norm(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
     return s.lower().replace(".", "").replace("'", "").strip()
 
+QUOTA = {"remaining": None, "used": None}
 def _get(url):
     with urllib.request.urlopen(url, timeout=25) as r:
+        h = r.headers
+        if h.get("x-requests-remaining") is not None:
+            QUOTA["remaining"] = h.get("x-requests-remaining")
+            QUOTA["used"] = h.get("x-requests-used")
         return json.loads(r.read())
 
 def list_events():
@@ -90,12 +95,15 @@ def main():
         print(f"events fetch failed: {type(e).__name__}"); return
 
     matched = 0
+    err_counts = {}
     for ev in events:
         eid = ev.get("id")
         if not eid: continue
         try:
             odds = event_hr_odds(eid)
-        except Exception:
+        except Exception as e:
+            code = getattr(e, "code", None) or type(e).__name__
+            err_counts[str(code)] = err_counts.get(str(code), 0) + 1
             continue
         for pname, sides in odds.items():
             fair = fairs.get(pname)
@@ -112,8 +120,10 @@ def main():
         time.sleep(0.3)                          # polite; also spares API quota
 
     plays = LS.rank_board(analyses, min_ev_fair=0.0, min_books=2)
+    diag = f"events {len(events)} · errors {err_counts or 'none'} · credits remaining {QUOTA['remaining']} (used {QUOTA['used']})"
+    print("DIAG:", diag)
     out = {"generated": ts, "n_analyzed": matched, "n_plays": len(plays),
-           "books": BOOKS, "plays": plays,
+           "books": BOOKS, "plays": plays, "diag": diag,
            "note": "Plays are +EV vs BOTH our fair number AND the vig-free market consensus. "
                    "Best price shown is the book to bet. Stale flags = a book out of step with the field."}
     json.dump(out, open(os.path.join(DATA, "lineshop.json"), "w"), indent=1)
