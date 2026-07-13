@@ -46,10 +46,24 @@ def load_slate_inputs():
 
 
 def todays_games():
+    """Newest schedule CSV that actually parses. A 0-byte/corrupt file (transient
+    pull failure) must not kill the publish — fall back through older pulls,
+    warn loudly, and degrade to empty rather than crash."""
     hits = sorted(glob.glob(os.path.join(DATA, "schedule_*.csv"))) or \
            [p for p in [os.path.join(DATA, "schedule.csv")] if os.path.exists(p)]
-    sc = pd.read_csv(hits[-1]) if hits else pd.DataFrame()
-    return sc
+    for p in reversed(hits):
+        try:
+            if os.path.getsize(p) == 0:
+                print(f"[todays_games] WARNING: {os.path.basename(p)} is empty — skipping")
+                continue
+            sc = pd.read_csv(p)
+            if p != hits[-1]:
+                print(f"[todays_games] WARNING: fell back to older pull {os.path.basename(p)}")
+            return sc
+        except Exception as e:
+            print(f"[todays_games] WARNING: {os.path.basename(p)} unreadable ({type(e).__name__}) — skipping")
+    print("[todays_games] WARNING: no parseable schedule CSV — proceeding with empty frame")
+    return pd.DataFrame()
 
 
 def edges_block():
