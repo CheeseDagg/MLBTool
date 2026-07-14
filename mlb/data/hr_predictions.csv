@@ -198,21 +198,21 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-12,Zach Neto,LAA,Taj Bradley,1,card,19.5,+412,,,park -2%,90F · wind out 3,RvR -3%,heat +8%
 2026-07-12,Jordan Walker,STL,Danny Young *,3,card,19.4,+416,,,park -7%,86F · wind in 5,RvL +12%,
 2026-07-12,JJ Bleday,CIN,Matthew Boyd,4,card,19.3,+417,,,park +25%,82F,LvL -22%,heat +1%
-2026-07-14,Junior Caminero,American League All-Stars,Cristopher Sánchez *,4,card,25.7,+288,,,park +9%,93F · wind out 6,RvL +12%,heat +5%
-2026-07-14,Mike Trout,American League All-Stars,Cristopher Sánchez *,1,card,25.0,+300,,,park +9%,93F · wind out 6,RvL +12%,heat +12%
-2026-07-14,Yordan Alvarez,American League All-Stars,Cristopher Sánchez *,2,card,24.8,+303,,,park +9%,93F · wind out 6,LvL -22%,heat +18%
-2026-07-14,Shea Langeliers,American League All-Stars,Cristopher Sánchez *,3,card,24.0,+317,,,park +9%,93F · wind out 6,RvL +12%,heat -4%
-2026-07-14,Kyle Schwarber,National League All-Stars,Dylan Cease,1,card,23.4,+328,,,park +9%,93F · wind out 6,LvR +8%,heat -3%
-2026-07-14,Juan Soto,National League All-Stars,Dylan Cease,2,card,21.8,+358,,,park +9%,93F · wind out 6,LvR +8%,heat +5%
-2026-07-14,Ben Rice,American League All-Stars,Cristopher Sánchez *,7,card,21.4,+366,,,park +9%,93F · wind out 6,LvL -22%,heat +3%
-2026-07-14,Bobby Witt Jr.,American League All-Stars,Cristopher Sánchez *,5,card,20.1,+397,,,park +9%,93F · wind out 6,RvL +12%,heat +12%
-2026-07-14,Max Muncy,National League All-Stars,Dylan Cease,5,card,19.6,+409,,,park +9%,93F · wind out 6,LvR +8%,heat -8%
-2026-07-14,Drake Baldwin,National League All-Stars,Dylan Cease,9,card,17.7,+464,,,park +9%,93F · wind out 6,LvR +8%,heat -5%
-2026-07-14,CJ Abrams,National League All-Stars,Dylan Cease,4,card,16.9,+490,,,park +9%,93F · wind out 6,LvR +8%,heat -3%
-2026-07-14,Freddie Freeman,National League All-Stars,Dylan Cease,3,card,16.3,+512,,,park +9%,93F · wind out 6,LvR +8%,heat +2%
-2026-07-14,Riley Greene,American League All-Stars,Cristopher Sánchez *,8,card,16.0,+526,,,park +9%,93F · wind out 6,LvL -22%,heat +7%
-2026-07-14,Brandon Marsh,National League All-Stars,Dylan Cease,7,card,13.9,+621,,,park +9%,93F · wind out 6,LvR +8%,heat -6%
-2026-07-14,Andy Pages,National League All-Stars,Dylan Cease,8,card,13.2,+656,,,park +9%,93F · wind out 6,RvR -3%,heat -11%
-2026-07-14,Cody Bellinger,American League All-Stars,Cristopher Sánchez *,6,card,12.4,+706,,,park +9%,93F · wind out 6,LvL -22%,heat +9%
-2026-07-14,Ozzie Albies,National League All-Stars,Dylan Cease,6,card,11.3,+785,,,park +9%,93F · wind out 6,SvR +8%,heat -2%
-2026-07-14,Ernie Clement,American League All-Stars,Cristopher Sánchez *,9,card,9.5,+952,,,park +9%,93F · wind out 6,RvL +12%,heat -3%
+2026-07-14,Junior Caminero,American League All-Stars,Cristopher Sánchez *,4,card,24.8,+303,,,park +9%,85F · wind out 7,RvL +12%,heat +5%
+2026-07-14,Mike Trout,American League All-Stars,Cristopher Sánchez *,1,card,24.1,+315,,,park +9%,85F · wind out 7,RvL +12%,heat +12%
+2026-07-14,Yordan Alvarez,American League All-Stars,Cristopher Sánchez *,2,card,23.9,+319,,,park +9%,85F · wind out 7,LvL -22%,heat +18%
+2026-07-14,Shea Langeliers,American League All-Stars,Cristopher Sánchez *,3,card,23.1,+333,,,park +9%,85F · wind out 7,RvL +12%,heat -4%
+2026-07-14,Kyle Schwarber,National League All-Stars,Dylan Cease,1,card,22.5,+344,,,park +9%,85F · wind out 7,LvR +8%,heat -3%
+2026-07-14,Juan Soto,National League All-Stars,Dylan Cease,2,card,21.5,+366,,,park +9%,85F · wind out 7,LvR +8%,heat +5%
+2026-07-14,Ben Rice,American League All-Stars,Cristopher Sánchez *,7,card,21.1,+374,,,park +9%,85F · wind out 7,LvL -22%,heat +3%
+2026-07-14,Bobby Witt Jr.,American League All-Stars,Cristopher Sánchez *,5,card,19.3,+419,,,park +9%,85F · wind out 7,RvL +12%,heat +12%
+2026-07-14,Max Muncy,National League All-Stars,Dylan Cease,5,card,18.8,+433,,,park +9%,85F · wind out 7,LvR +8%,heat -8%
+2026-07-14,Drake Baldwin,National League All-Stars,Dylan Cease,9,card,16.9,+491,,,park +9%,85F · wind out 7,LvR +8%,heat -5%
+2026-07-14,CJ Abrams,National League All-Stars,Dylan Cease,4,card,16.2,+519,,,park +9%,85F · wind out 7,LvR +8%,heat -3%
+2026-07-14,Freddie Freeman,National League All-Stars,Dylan Cease,3,card,15.6,+541,,,park +9%,85F · wind out 7,LvR +8%,heat +2%
+2026-07-14,Riley Greene,American League All-Stars,Cristopher Sánchez *,8,card,15.3,+555,,,park +9%,85F · wind out 7,LvL -22%,heat +7%
+2026-07-14,Brandon Marsh,National League All-Stars,Dylan Cease,7,card,13.2,+655,,,park +9%,85F · wind out 7,LvR +8%,heat -6%
+2026-07-14,Andy Pages,National League All-Stars,Dylan Cease,8,card,12.6,+692,,,park +9%,85F · wind out 7,RvR -3%,heat -11%
+2026-07-14,Cody Bellinger,American League All-Stars,Cristopher Sánchez *,6,card,12.0,+735,,,park +9%,85F · wind out 7,LvL -22%,heat +9%
+2026-07-14,Ozzie Albies,National League All-Stars,Dylan Cease,6,card,10.9,+814,,,park +9%,85F · wind out 7,SvR +8%,heat -2%
+2026-07-14,Ernie Clement,American League All-Stars,Cristopher Sánchez *,9,card,9.2,+984,,,park +9%,85F · wind out 7,RvL +12%,heat -3%
