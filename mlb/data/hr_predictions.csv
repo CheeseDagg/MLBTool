@@ -216,21 +216,21 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-14,Cody Bellinger,American League All-Stars,Cristopher Sánchez *,6,card,12.0,+735,,,park +9%,85F · wind out 7,LvL -22%,heat +9%
 2026-07-14,Ozzie Albies,National League All-Stars,Dylan Cease,6,card,10.9,+814,,,park +9%,85F · wind out 7,SvR +8%,heat -2%
 2026-07-14,Ernie Clement,American League All-Stars,Cristopher Sánchez *,9,card,9.2,+984,,,park +9%,85F · wind out 7,RvL +12%,heat -3%
-2026-07-16,Juan Soto,NYM,Aaron Nola,2,card,27.9,+259,,,park +9%,94F · wind out 5,LvR +8%,heat -3%
-2026-07-16,Kyle Schwarber,PHI,Christian Scott,2,card,25.9,+287,,,park +9%,94F · wind out 5,LvR +8%,heat +0%
-2026-07-16,Francisco Alvarez,NYM,Aaron Nola,9,card,20.8,+382,,,park +9%,94F · wind out 5,RvR -3%,heat -5%
-2026-07-16,Bryce Harper,PHI,Christian Scott,3,card,20.7,+383,,,park +9%,94F · wind out 5,LvR +8%,heat +11%
-2026-07-16,Francisco Lindor,NYM,Aaron Nola,4,card,20.3,+392,,,park +9%,94F · wind out 5,SvR +8%,heat -8%
-2026-07-16,Jared Young,NYM,Aaron Nola,7,card,18.5,+441,,,park +9%,94F · wind out 5,LvR +8%,heat -3%
-2026-07-16,Brandon Marsh,PHI,Christian Scott,4,card,17.0,+489,,,park +9%,94F · wind out 5,LvR +8%,heat -4%
-2026-07-16,A.J. Ewing,NYM,Aaron Nola,1,card,16.9,+492,,,park +9%,94F · wind out 5,LvR +8%,heat -1%
-2026-07-16,Carson Benge,NYM,Aaron Nola,5,card,15.7,+538,,,park +9%,94F · wind out 5,LvR +8%,heat -7%
-2026-07-16,Bo Bichette,NYM,Aaron Nola,3,card,14.6,+587,,,park +9%,94F · wind out 5,RvR -3%,heat -15%
-2026-07-16,Jorge Polanco,NYM,Aaron Nola,6,card,14.3,+597,,,park +9%,94F · wind out 5,SvR +8%,heat -5%
-2026-07-16,Gabriel Rincones Jr.,PHI,Christian Scott,8,card,13.3,+650,,,park +9%,94F · wind out 5,LvR +8%,
-2026-07-16,Brett Baty,NYM,Aaron Nola,8,card,12.7,+686,,,park +9%,94F · wind out 5,LvR +8%,heat -10%
-2026-07-16,Trea Turner,PHI,Christian Scott,1,card,12.2,+718,,,park +9%,94F · wind out 5,RvR -3%,heat +2%
-2026-07-16,Alec Bohm,PHI,Christian Scott,5,card,11.6,+760,,,park +9%,94F · wind out 5,RvR -3%,heat -2%
-2026-07-16,Bryson Stott,PHI,Christian Scott,6,card,11.3,+783,,,park +9%,94F · wind out 5,LvR +8%,heat +4%
-2026-07-16,J.T. Realmuto,PHI,Christian Scott,7,card,10.9,+817,,,park +9%,94F · wind out 5,RvR -3%,heat -2%
-2026-07-16,Justin Crawford,PHI,Christian Scott,9,card,5.0,+1901,,,park +9%,94F · wind out 5,LvR +8%,heat -2%
+2026-07-16,Juan Soto,NYM,Aaron Nola,2,card,26.0,+284,,,park +9%,92F · wind in 3,LvR +8%,heat -3%
+2026-07-16,Kyle Schwarber,PHI,Christian Scott,2,card,24.1,+315,,,park +9%,92F · wind in 3,LvR +8%,heat +0%
+2026-07-16,Bryce Harper,PHI,Christian Scott,3,card,20.1,+398,,,park +9%,92F · wind in 3,LvR +8%,heat +11%
+2026-07-16,Francisco Alvarez,NYM,Aaron Nola,9,card,20.1,+397,,,park +9%,92F · wind in 3,RvR -3%,heat -5%
+2026-07-16,Francisco Lindor,NYM,Aaron Nola,4,card,19.1,+425,,,park +9%,92F · wind in 3,SvR +8%,heat -8%
+2026-07-16,Jared Young,NYM,Aaron Nola,7,card,16.9,+490,,,park +9%,92F · wind in 3,LvR +8%,heat -3%
+2026-07-16,Brandon Marsh,PHI,Christian Scott,4,card,15.6,+542,,,park +9%,92F · wind in 3,LvR +8%,heat -4%
+2026-07-16,A.J. Ewing,NYM,Aaron Nola,1,card,15.5,+545,,,park +9%,92F · wind in 3,LvR +8%,heat -1%
+2026-07-16,Carson Benge,NYM,Aaron Nola,5,card,14.4,+595,,,park +9%,92F · wind in 3,LvR +8%,heat -7%
+2026-07-16,Bo Bichette,NYM,Aaron Nola,3,card,13.4,+648,,,park +9%,92F · wind in 3,RvR -3%,heat -15%
+2026-07-16,Jorge Polanco,NYM,Aaron Nola,6,card,13.2,+660,,,park +9%,92F · wind in 3,SvR +8%,heat -5%
+2026-07-16,Gabriel Rincones Jr.,PHI,Christian Scott,8,card,12.3,+716,,,park +9%,92F · wind in 3,LvR +8%,
+2026-07-16,Brett Baty,NYM,Aaron Nola,8,card,11.8,+745,,,park +9%,92F · wind in 3,LvR +8%,heat -10%
+2026-07-16,Trea Turner,PHI,Christian Scott,1,card,11.5,+770,,,park +9%,92F · wind in 3,RvR -3%,heat +2%
+2026-07-16,Alec Bohm,PHI,Christian Scott,5,card,11.0,+813,,,park +9%,92F · wind in 3,RvR -3%,heat -2%
+2026-07-16,Bryson Stott,PHI,Christian Scott,6,card,10.7,+838,,,park +9%,92F · wind in 3,LvR +8%,heat +4%
+2026-07-16,J.T. Realmuto,PHI,Christian Scott,7,card,10.3,+873,,,park +9%,92F · wind in 3,RvR -3%,heat -2%
+2026-07-16,Justin Crawford,PHI,Christian Scott,9,card,4.6,+2084,,,park +9%,92F · wind in 3,LvR +8%,heat -2%
