@@ -315,61 +315,111 @@ function render(d){
     const p = Math.max(Math.min(actualPct/100, 0.999), 0.001);
     return 2 * Math.sqrt(p*(1-p)/n) * 100;
   }
+  // How many rows would we need before a gap this size could even be judged?
+  const CAL_MATTERS = 1.0;   // a gap under ~1 point is practically nothing on a homer market
+  const CAL_DETECT  = 3.0;   // the size of edge worth sizing a sample for
+  function calNeed(actualPct){
+    // rows needed before a CAL_DETECT-point gap could be told apart from luck.
+    // Sized against a fixed, meaningful gap — never against the observed one,
+    // which in a tiny sample IS the noise (LvL's +11.0 would "need" only 74).
+    const p=Math.max(Math.min(actualPct/100,.999),.001), g=CAL_DETECT/100;
+    return Math.ceil(4*p*(1-p)/(g*g));
+  }
+  // Plain-English verdict. A gap only counts if it is bigger than this row's own
+  // margin of error. And note what "good" means here: ZERO gap is good. A model
+  // that says 22% and delivers 22% is working. Any real gap in EITHER direction
+  // is the model being wrong — over-promising is not better than under-promising.
   function calVerdict(n, said, actual){
     const band = calBand(n, actual);
-    if(band===null) return {tag:'—', z:0, band:0, real:false, cls:'dim'};
+    if(band===null) return {tag:'\u2014', band:0, real:false, col:'var(--mut,#7c8a84)'};
     const gap = actual - said, z = band>0 ? Math.abs(gap)/(band/2) : 0;
-    if(n < 30 || z < 1.3) return {tag:'noise', z:z, band:band, real:false, cls:'dim'};
-    if(z < 2)             return {tag:'lean',  z:z, band:band, real:false, cls:'dim'};
-    return {tag:(gap>0?'REAL over':'REAL under'), z:z, band:band, real:true,
-            cls:(gap>0?'ok':'bad')};
+    // 1. Practically on target — the gap is too small to care about, whatever the maths says.
+    //    With 15k rows even a 0.4-point gap goes "significant"; 0.4 points is still nothing.
+    if(Math.abs(gap) < CAL_MATTERS && n >= 200)
+      return {tag:'on target', band:band, real:false, good:true, col:'var(--acc2)'};
+    // 2. Not enough rows to say anything at all.
+    if(n < 30 || z < 1.3)
+      return {tag:'can\'t tell yet', band:band, real:false, unknown:true,
+              col:'var(--mut,#7c8a84)', need:calNeed(actual)};
+    // 3. Leaning but not proven.
+    if(z < 2)
+      return {tag:(gap<0?'maybe too high':'maybe too low'), band:band, real:false,
+              col:'var(--mut,#7c8a84)'};
+    // 4. Genuinely off, and by how much, in which direction.
+    return {tag:(gap<0?'TOO HIGH by '+Math.abs(gap).toFixed(1):'TOO LOW by '+gap.toFixed(1)),
+            band:band, real:true, col:'var(--red)'};
   }
   function calRow(label, n, said, actual){
     const v = calVerdict(n, said, actual), gap = actual - said;
-    const col = v.real ? (gap>0?'var(--acc2)':'var(--red)') : 'var(--mut,#7c8a84)';
+    const col = v.col, tag = v.tag;
     return `<tr><td>${label}</td><td class="num">${n}</td><td class="num">${said}%</td>
       <td class="num">${actual}%</td>
       <td class="num"><b style="color:${col}">${gap>=0?'+':''}${gap.toFixed(1)}</b>
         <span class="dim" style="font-size:11px"> \u00b1${v.band.toFixed(1)}</span></td>
-      <td class="num"><span style="color:${col};font-size:11px;font-weight:${v.real?'700':'400'}">${v.tag}</span></td></tr>`;
+      <td class="num"><span style="color:${col};font-size:11px;font-weight:${v.real?'700':'400'}">${tag}</span>${
+        v.need&&v.need<1e6?`<br><span class="dim" style="font-size:10px">need ~${v.need.toLocaleString()}</span>`:''}</td></tr>`;
   }
   function renderCal(cal, BT){
     let h=`<div class="sub"><b>${cal.n}</b> graded batter-games over <b>${cal.dates}</b> day(s): the model predicted each batter&apos;s homer chance, then we checked the box score. It said <b>${cal.pred_mean}%</b> on average — <b>${cal.actual}%</b> actually homered · precision ${cal.brier} (lower = sharper) · ${cal.voids} voided</div>
     <div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0 2px"><b style="color:var(--acc)">How to read this:</b> batter-games grouped by predicted homer chance. <b>MODEL SAID</b> = predicted · <b>HAPPENED</b> = actual. They converge as the count grows — <b>ignore rows under ~50</b> (noise, not verdict). The 3-day <b>live</b> sample is too small to trust; the <b>season</b> column is the real read.</div>`;
     const btBk = BT&&BT.buckets ? Object.fromEntries(BT.buckets.map(b=>[b.bucket,b])) : {};
-    // ---- headline: what is actually true, in one box ----
+    // ---- headline ----
+    // CRITICAL: the SEASON tables are the RAW model, pre-correction. Those exact
+    // gaps are the CALIB_ANCHORS already applied to every row on today's board
+    // (raw 28.3% publishes as 22.2%). Telling anyone to "shade the big numbers
+    // down" would double-discount an already-discounted number. The only open
+    // question is whether the correction WORKED — that is the live sample.
     if(BT&&BT.buckets&&BT.buckets.length){
-      const real = BT.buckets.map(b=>({b:b, v:calVerdict(b.n, b.pred, b.actual)}))
-                             .filter(x=>x.v.real);
-      const hot  = real.filter(x=>x.b.actual < x.b.pred);
-      const top  = BT.buckets.slice().sort((a,b)=>(b.pred-b.actual)-(a.pred-a.actual))[0];
-      const topV = top ? calVerdict(top.n, top.pred, top.actual) : null;
-      let verdict, vcol;
-      if(!real.length){ verdict = 'No tier is off by more than its own noise — the model is calibrated as far as this sample can tell.'; vcol='var(--acc2)'; }
-      else if(hot.length >= real.length/2){
-        verdict = `<b>The model runs HOT.</b> ${hot.length} of ${BT.buckets.length} tiers promise more homers than land`
-                + (topV&&topV.real ? `, worst in the <b>${top.bucket}%</b> tier: says <b>${top.pred}%</b>, delivers <b>${top.actual}%</b>.` : '.')
-                + ' Shade your own expectations down at the top end.';
-        vcol='var(--red)';
-      } else { verdict = '<b>The model runs COLD</b> — more homers land than promised. Its numbers are conservative.'; vcol='var(--acc2)'; }
-      h+=`<div class="sub" style="border:1px solid ${vcol};border-radius:8px;padding:8px 11px;margin:8px 0 2px;background:rgba(255,255,255,.02)">
-        <b style="color:${vcol}">THE VERDICT:</b> ${verdict}
-        <div style="margin-top:5px;opacity:.8">Read the <b>verdict</b> column below, not the colour of the gap. A row is only
-        <b>REAL</b> when the gap is bigger than that row&apos;s own margin of error (the \u00b1 next to it). Everything marked
-        <b>noise</b> is a coin-flip sized sample — it is telling you nothing, however big the number looks.</div></div>`;
+      const lv = calVerdict(cal.n, cal.pred_mean, cal.actual);
+      const worst = BT.buckets.slice().sort((a,b)=>(a.actual-a.pred)-(b.actual-b.pred))[0];
+      let head, body, vcol;
+      if(lv.unknown || lv.tag==='\u2014'){
+        vcol='var(--acc)'; head='Already corrected \u2014 not yet enough games to re-grade.';
+        body = `The season tables below are the <b>raw model, before the fix</b>. `
+             + (worst? `They showed it overselling at the top: a raw <b>${worst.pred}%</b> only homered <b>${worst.actual}%</b>. ` : '')
+             + `<b>That correction is already applied to every number on today\'s board</b> \u2014 a raw ${worst?worst.pred:28.3}% is published as ${worst?worst.actual:22.2}%, which is why the board tops out near 27% and not 33%.
+                <b style="color:var(--acc)">Take the board\'s numbers at face value \u2014 do not shade them down again.</b>
+                Since the fix, the board has said <b>${cal.pred_mean}%</b> and <b>${cal.actual}%</b> homered over ${cal.n} games \u2014 ${lv.need?`too few to grade (need ~${lv.need.toLocaleString()})`:'too few to grade'}.`;
+      } else if(lv.real && cal.actual < cal.pred_mean){
+        vcol='var(--red)'; head='The correction is not holding \u2014 the board still oversells.';
+        body = `Since the fix the board has said <b>${cal.pred_mean}%</b> and only <b>${cal.actual}%</b> homered over ${cal.n} games \u2014 <b>${(cal.pred_mean-cal.actual).toFixed(1)} points high</b>, past its own margin. The anchors need re-cutting.`;
+      } else if(lv.real){
+        vcol='var(--red)'; head='The correction over-shot \u2014 the board now undersells.';
+        body = `Since the fix the board has said <b>${cal.pred_mean}%</b> but <b>${cal.actual}%</b> homered over ${cal.n} games. It is now too conservative.`;
+      } else {
+        vcol='var(--acc2)'; head='The correction is holding.';
+        body = `Since the fix the board has said <b>${cal.pred_mean}%</b> and <b>${cal.actual}%</b> homered over ${cal.n} games \u2014 on target. Take its numbers at face value.`;
+      }
+      h+=`<div class="sub" style="border:1px solid ${vcol};border-radius:8px;padding:9px 12px;margin:8px 0 2px;background:rgba(255,255,255,.02)">
+        <div style="font-size:14px"><b style="color:${vcol}">THE VERDICT: ${head}</b></div>
+        <div style="margin-top:4px">${body}</div>
+        <div style="margin-top:7px;padding-top:6px;border-top:1px solid var(--line);opacity:.85">
+        <b>Reading the tables below \u2014 they are the BEFORE picture:</b> they grade the <b>raw</b> model on the full season, which is how the correction above was measured.
+        A gap of <b>zero</b> is the goal. <b style="color:var(--acc2)">Green = on target</b>.
+        <b style="color:var(--red)">Red = really off</b>, and which way. <b style="color:var(--mut,#7c8a84)">Grey = can\'t tell yet</b> \u2014 too few rows, so the number means nothing however big it looks.
+        The <b>\u00b1</b> is that row\'s margin of error; a gap smaller than its \u00b1 is luck.</div></div>`;
     }
     if(cal.buckets&&cal.buckets.length){
-      h+=(BT?`<div class="sub" style="margin-top:8px;opacity:.85"><b>LIVE</b> = this week&apos;s ${cal.n} batter-games (small, noisy). <b>SEASON</b> = ${BT.n} batter-games replayed over ${BT.dates} days — the trustworthy read. When a live row looks alarming, check the season number beside it first.</div>`:'')+
-      `<table style="margin-top:8px"><tr><th>model said…</th><th class="num">live n</th><th class="num">live happened</th><th class="num" style="border-left:2px solid var(--line)">season n</th><th class="num">season happened</th></tr>`+
-      cal.buckets.map(b=>{const s=btBk[b.bucket];return `<tr><td>${b.bucket}%</td><td class="num">${b.n}</td><td class="num"><b>${b.actual}%</b></td>`+
-        (s?`<td class="num" style="border-left:2px solid var(--line)">${s.n}</td><td class="num"><b style="color:var(--acc)">${s.actual}%</b> <span class="dim">(said ${s.pred}%)</span></td>`:`<td class="num dim" style="border-left:2px solid var(--line)">—</td><td class="num dim">—</td>`)+`</tr>`;}).join('')+`</table>`;
+      h+=(BT?`<div class="sub" style="margin-top:8px;opacity:.85">Graded on the <b>full season</b>: ${BT.n} batter-games replayed over ${BT.dates} days, each predicted using only that morning&apos;s stats. This is the trustworthy read \u2014 this week&apos;s handful of games is not, and is greyed out below the table.</div>`:'')+
+      `<table style="margin-top:8px"><tr><th>when the model says\u2026</th><th class="num">rows</th><th class="num">it predicted</th><th class="num">actually homered</th><th class="num">gap \u00b1 margin</th><th class="num">verdict</th></tr>`+
+      cal.buckets.map(b=>{
+        const s=btBk[b.bucket];
+        if(!s) return `<tr><td>${b.bucket}%</td><td class="num dim">\u2014</td><td class="num dim">\u2014</td><td class="num dim">\u2014</td><td class="num dim">\u2014</td><td class="num dim">no season data</td></tr>`;
+        return calRow(b.bucket+'%', s.n, s.pred, s.actual);
+      }).join('')+`</table>`+
+      // This week's numbers, deliberately demoted: every bucket is 14-120 rows, which
+      // cannot be read. Shown for completeness, greyed so nobody trades off them.
+      `<div class="sub" style="margin-top:6px;opacity:.6;font-size:11px"><b>This week</b> (too few to read \u2014 shown only for completeness): `+
+      cal.buckets.map(b=>`${b.bucket}%: ${b.actual}% of ${b.n}`).join(' \u00b7 ')+
+      `. Each of these is a handful of games; a single homer swings a bucket by tens of points. Judge nothing here.</div>`;
     }
     if(cal.lift&&cal.lift.length){
       const liftReal = cal.lift.filter(l=>calVerdict(l.n,l.pred,l.actual).real).length;
+      const liftN = cal.lift.reduce((s,l)=>s+l.n,0);
       h+=`<div class="sub" style="margin-top:10px"><b>Does each ingredient earn its keep?</b> Every row = only the batter-games carrying that tag.
       <b style="color:${liftReal?'var(--acc)':'var(--mut,#7c8a84)'}">${liftReal
         ? liftReal+' of '+cal.lift.length+' rows clear their own noise — only those mean anything.'
-        : 'Right now <b>none of these rows clear their own noise</b> \u2014 every sample here is too small to grade. Ignore this table until the counts grow.'}</b></div>
+        : 'Right now <b>not one row here can be graded</b> \u2014 every sample is too small. The biggest number on this table (LvL) swings \u00b1 more than its own gap, so it means nothing. Come back when the counts are in the hundreds; the <b>need ~</b> column says how many.'}</b></div>
       <table><tr><th>ingredient</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th class="num">gap \u00b1 margin</th><th class="num">verdict</th></tr>`+
       cal.lift.map(l=>calRow(l.g, l.n, l.pred, l.actual)).join('')+`</table>`;
       if(BT&&BT.heat_bands){
