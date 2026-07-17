@@ -306,10 +306,58 @@ function render(d){
     }).catch(function(){ renderCal(cal, null); });
   } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
 
+  // A gap only means something if it is bigger than the noise in its own sample.
+  // se = sqrt(p(1-p)/n); we show the 95% band (2*se) and grade |gap| against it.
+  // Without this a +11.0 on 18 bets looks like the best row on the board when it
+  // is nothing at all — the old panel coloured by gap size, which pointed backwards.
+  function calBand(n, actualPct){
+    if(!n || n<1) return null;
+    const p = Math.max(Math.min(actualPct/100, 0.999), 0.001);
+    return 2 * Math.sqrt(p*(1-p)/n) * 100;
+  }
+  function calVerdict(n, said, actual){
+    const band = calBand(n, actual);
+    if(band===null) return {tag:'—', z:0, band:0, real:false, cls:'dim'};
+    const gap = actual - said, z = band>0 ? Math.abs(gap)/(band/2) : 0;
+    if(n < 30 || z < 1.3) return {tag:'noise', z:z, band:band, real:false, cls:'dim'};
+    if(z < 2)             return {tag:'lean',  z:z, band:band, real:false, cls:'dim'};
+    return {tag:(gap>0?'REAL over':'REAL under'), z:z, band:band, real:true,
+            cls:(gap>0?'ok':'bad')};
+  }
+  function calRow(label, n, said, actual){
+    const v = calVerdict(n, said, actual), gap = actual - said;
+    const col = v.real ? (gap>0?'var(--acc2)':'var(--red)') : 'var(--mut,#7c8a84)';
+    return `<tr><td>${label}</td><td class="num">${n}</td><td class="num">${said}%</td>
+      <td class="num">${actual}%</td>
+      <td class="num"><b style="color:${col}">${gap>=0?'+':''}${gap.toFixed(1)}</b>
+        <span class="dim" style="font-size:11px"> \u00b1${v.band.toFixed(1)}</span></td>
+      <td class="num"><span style="color:${col};font-size:11px;font-weight:${v.real?'700':'400'}">${v.tag}</span></td></tr>`;
+  }
   function renderCal(cal, BT){
     let h=`<div class="sub"><b>${cal.n}</b> graded batter-games over <b>${cal.dates}</b> day(s): the model predicted each batter&apos;s homer chance, then we checked the box score. It said <b>${cal.pred_mean}%</b> on average — <b>${cal.actual}%</b> actually homered · precision ${cal.brier} (lower = sharper) · ${cal.voids} voided</div>
     <div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0 2px"><b style="color:var(--acc)">How to read this:</b> batter-games grouped by predicted homer chance. <b>MODEL SAID</b> = predicted · <b>HAPPENED</b> = actual. They converge as the count grows — <b>ignore rows under ~50</b> (noise, not verdict). The 3-day <b>live</b> sample is too small to trust; the <b>season</b> column is the real read.</div>`;
     const btBk = BT&&BT.buckets ? Object.fromEntries(BT.buckets.map(b=>[b.bucket,b])) : {};
+    // ---- headline: what is actually true, in one box ----
+    if(BT&&BT.buckets&&BT.buckets.length){
+      const real = BT.buckets.map(b=>({b:b, v:calVerdict(b.n, b.pred, b.actual)}))
+                             .filter(x=>x.v.real);
+      const hot  = real.filter(x=>x.b.actual < x.b.pred);
+      const top  = BT.buckets.slice().sort((a,b)=>(b.pred-b.actual)-(a.pred-a.actual))[0];
+      const topV = top ? calVerdict(top.n, top.pred, top.actual) : null;
+      let verdict, vcol;
+      if(!real.length){ verdict = 'No tier is off by more than its own noise — the model is calibrated as far as this sample can tell.'; vcol='var(--acc2)'; }
+      else if(hot.length >= real.length/2){
+        verdict = `<b>The model runs HOT.</b> ${hot.length} of ${BT.buckets.length} tiers promise more homers than land`
+                + (topV&&topV.real ? `, worst in the <b>${top.bucket}%</b> tier: says <b>${top.pred}%</b>, delivers <b>${top.actual}%</b>.` : '.')
+                + ' Shade your own expectations down at the top end.';
+        vcol='var(--red)';
+      } else { verdict = '<b>The model runs COLD</b> — more homers land than promised. Its numbers are conservative.'; vcol='var(--acc2)'; }
+      h+=`<div class="sub" style="border:1px solid ${vcol};border-radius:8px;padding:8px 11px;margin:8px 0 2px;background:rgba(255,255,255,.02)">
+        <b style="color:${vcol}">THE VERDICT:</b> ${verdict}
+        <div style="margin-top:5px;opacity:.8">Read the <b>verdict</b> column below, not the colour of the gap. A row is only
+        <b>REAL</b> when the gap is bigger than that row&apos;s own margin of error (the \u00b1 next to it). Everything marked
+        <b>noise</b> is a coin-flip sized sample — it is telling you nothing, however big the number looks.</div></div>`;
+    }
     if(cal.buckets&&cal.buckets.length){
       h+=(BT?`<div class="sub" style="margin-top:8px;opacity:.85"><b>LIVE</b> = this week&apos;s ${cal.n} batter-games (small, noisy). <b>SEASON</b> = ${BT.n} batter-games replayed over ${BT.dates} days — the trustworthy read. When a live row looks alarming, check the season number beside it first.</div>`:'')+
       `<table style="margin-top:8px"><tr><th>model said…</th><th class="num">live n</th><th class="num">live happened</th><th class="num" style="border-left:2px solid var(--line)">season n</th><th class="num">season happened</th></tr>`+
@@ -317,22 +365,30 @@ function render(d){
         (s?`<td class="num" style="border-left:2px solid var(--line)">${s.n}</td><td class="num"><b style="color:var(--acc)">${s.actual}%</b> <span class="dim">(said ${s.pred}%)</span></td>`:`<td class="num dim" style="border-left:2px solid var(--line)">—</td><td class="num dim">—</td>`)+`</tr>`;}).join('')+`</table>`;
     }
     if(cal.lift&&cal.lift.length){
-      h+=`<div class="sub" style="margin-top:10px"><b>Does each ingredient earn its keep?</b> Every row = only the batter-games carrying that tag. Green gap: they homered <i>more</i> than the model expected; red: fewer. Judge nothing under ~50.</div>
-      <table><tr><th>ingredient</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th class="num">gap</th></tr>`+
-      cal.lift.map(l=>{const gp=(l.actual-l.pred).toFixed(1);return `<tr><td>${l.g}</td><td class="num">${l.n}</td><td class="num">${l.pred}%</td><td class="num">${l.actual}%</td><td class="num"><b style="color:${+gp>=0?'var(--acc2)':'var(--red)'}">${+gp>=0?'+':''}${gp}</b></td></tr>`;}).join('')+`</table>`;
+      const liftReal = cal.lift.filter(l=>calVerdict(l.n,l.pred,l.actual).real).length;
+      h+=`<div class="sub" style="margin-top:10px"><b>Does each ingredient earn its keep?</b> Every row = only the batter-games carrying that tag.
+      <b style="color:${liftReal?'var(--acc)':'var(--mut,#7c8a84)'}">${liftReal
+        ? liftReal+' of '+cal.lift.length+' rows clear their own noise — only those mean anything.'
+        : 'Right now <b>none of these rows clear their own noise</b> \u2014 every sample here is too small to grade. Ignore this table until the counts grow.'}</b></div>
+      <table><tr><th>ingredient</th><th class="num">bets</th><th class="num">model said</th><th class="num">happened</th><th class="num">gap \u00b1 margin</th><th class="num">verdict</th></tr>`+
+      cal.lift.map(l=>calRow(l.g, l.n, l.pred, l.actual)).join('')+`</table>`;
       if(BT&&BT.heat_bands){
         h+=`<div class="sub" style="margin-top:8px"><b>Heat, at season scale (${BT.n} predictions):</b> this is why heat got demoted — the live sample is too small and this week ran hot.</div>
-        <table><tr><th>heat band</th><th class="num">season n</th><th class="num">said</th><th class="num">happened</th><th class="num">gap</th></tr>`+
-        BT.heat_bands.map(b=>{const gp=(b.actual-b.pred).toFixed(1);return `<tr><td>${b.band}</td><td class="num">${b.n}</td><td class="num">${b.pred}%</td><td class="num">${b.actual}%</td><td class="num"><b style="color:${+gp>=0?'var(--acc2)':'var(--red)'}">${+gp>=0?'+':''}${gp}</b></td></tr>`;}).join('')+`</table>`;
+        <table><tr><th>heat band</th><th class="num">season n</th><th class="num">said</th><th class="num">happened</th><th class="num">gap \u00b1 margin</th><th class="num">verdict</th></tr>`+
+        BT.heat_bands.map(b=>calRow(b.band, b.n, b.pred, b.actual)).join('')+`</table>`;
       }
     }
     if(cal.ev_tier){
       const e=cal.ev_tier;
-      h+=`<div class="sub" style="margin-top:10px">Value strategy — bet only when our number beats the book's price (flat 1 unit each): <b>${e.hits}/${e.n}</b> hit · ROI <b style="color:${e.roi>=0?'var(--acc2)':'var(--red)'}">${e.roi>=0?'+':''}${e.roi}%</b></div>`;
+      h+=`<div class="sub" style="margin-top:10px">Value strategy — bet only when our number beats the book's price (flat 1 unit each): <b>${e.hits}/${e.n}</b> hit · ROI <b style="color:${e.roi>=0?'var(--acc2)':'var(--red)'}">${e.roi>=0?'+':''}${e.roi}%</b>${e.n<100?` <span class="dim">(${e.n} bets — too few to call; ±large)</span>`:''}</div>`;
     }
     if(cal.top_tier){
       const t=cal.top_tier;
-      h+=`<div class="sub">Likelihood strategy — bet the 5 most-likely homers daily, price ignored (house doctrine), flat 1 unit: <b>${t.hits}/${t.n}</b> hit · ROI <b style="color:${t.roi>=0?'var(--acc2)':'var(--red)'}">${t.roi>=0?'+':''}${t.roi}%</b></div>`;
+      h+=`<div class="sub">Likelihood strategy — bet the 5 most-likely homers daily, price ignored (house doctrine), flat 1 unit: <b>${t.hits}/${t.n}</b> hit · ROI <b style="color:${t.roi>=0?'var(--acc2)':'var(--red)'}">${t.roi>=0?'+':''}${t.roi}%</b>${t.n<100?` <span class="dim">(${t.n} bets — too few to call; ±large)</span>`:''}</div>`;
+      const bad=[cal.ev_tier,cal.top_tier].filter(x=>x&&x.roi<0);
+      if(bad.length===2) h+=`<div class="sub" style="border:1px solid var(--red);border-radius:8px;padding:7px 10px;margin-top:6px">
+        <b style="color:var(--red)">Both strategies are losing.</b> Neither picking on price nor picking on likelihood has cleared the vig over the logged sample.
+        The board is a calibrated read of who is likely to homer — it is not, on this evidence, a way to beat the book's price.</div>`;
     }
     $('hrCal').innerHTML=h;
   }
@@ -376,7 +432,7 @@ fetch('data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).then(f
   function bkt(rows){return rows.map(function(b){return '<tr><td>'+b.bucket+'</td><td class="num">'+b.n+'</td><td class="num">'+b.pred+'%</td><td class="num"><b>'+b.actual+'%</b></td></tr>';}).join('');}
   var a=bt.a_tier, m=bt.multi;
   el.innerHTML='<div class="card"><h2>Model changelog — what the season audit found, and what we fixed</h2>'+
-    '<div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0"><b>This is a completed audit — every fix below is already LIVE on today's board.</b> We replayed the whole season (each prediction using only that morning's stats, no hindsight) to see if the numbers were honest and which signals worked. The tables are the BEFORE picture that told us what to change. n='+bt.n+' batter-games across '+bt.dates+' days.</div>'+
+    '<div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0"><b>This is a completed audit — every fix below is already LIVE on today\'s board.</b> We replayed the whole season (each prediction using only that morning\'s stats, no hindsight) to see if the numbers were honest and which signals worked. The tables are the BEFORE picture that told us what to change. n='+bt.n+' batter-games across '+bt.dates+' days.</div>'+
     '<table class="tbl"><tr><th>overall</th><th>bets</th><th>model said</th><th>happened</th></tr>'+
     '<tr><td>all predictions</td><td class="num">'+bt.n+'</td><td class="num">'+bt.pred_mean+'%</td><td class="num"><b>'+bt.actual+'%</b></td></tr>'+
     (a?'<tr style="background:var(--hl)"><td><b>Old A-tier (25%+ & heat≥+10)</b><br><span class="note" style="width:auto">heat overlay did NOT carry at scale — see note</span></td><td class="num">'+a.n+'</td><td class="num">'+a.pred+'%</td><td class="num"><b>'+a.actual+'%</b></td></tr>':'')+
