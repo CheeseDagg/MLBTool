@@ -234,3 +234,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-16,Bryson Stott,PHI,Christian Scott,6,card,10.7,+838,,,park +9%,92F · wind in 3,LvR +8%,heat +4%
 2026-07-16,J.T. Realmuto,PHI,Christian Scott,7,card,10.3,+873,,,park +9%,92F · wind in 3,RvR -3%,heat -2%
 2026-07-16,Justin Crawford,PHI,Christian Scott,9,card,4.6,+2084,,,park +9%,92F · wind in 3,LvR +8%,heat -2%
+2026-07-17,Byron Buxton,MIN,Colin Rea,4,proj,27.4,+265,,,park avg,87F · wind out 8,RvR -3%,heat +1%
+2026-07-17,Ben Rice,NYY,Roki Sasaki,4,proj,26.0,+284,,,park +14%,84F,LvR +8%,heat -3%
+2026-07-17,Juan Soto,NYY,Roki Sasaki,6,proj,25.0,+300,,,park +14%,84F,LvR +8%,heat +3%
+2026-07-17,Hunter Goodman,COL,Brady Singer,2,proj,24.9,+302,,,park +9%,78F · wind in 5,RvR -3%,heat -6%
+2026-07-17,Kody Clemens,MIN,Colin Rea,5,proj,21.9,+357,,,park avg,87F · wind out 8,LvR +8%,heat -3%
+2026-07-17,Junior Caminero,TBR,Jake Bennett,1,proj,21.7,+361,,,park -7%,78F · wind out 7,RvL +12%,heat +12%
+2026-07-17,Junior Caminero,TBR,TBD *,1,proj,21.4,+367,,,park -7%,78F · wind out 7,,
+2026-07-17,Nick Kurtz,ATH,Cade Cavalli,1,proj,21.1,+373,,,park +6% [low-conf],62F,LvR +8%,heat +11%
+2026-07-17,Josh Bell,MIN,Colin Rea,1,proj,20.7,+383,,,park avg,87F · wind out 8,SvR +8%,heat +4%
+2026-07-17,Shea Langeliers,ATH,Cade Cavalli,2,proj,20.7,+384,,,park +6% [low-conf],62F,RvR -3%,heat +7%
+2026-07-17,James Wood,WSN,Gage Jump,1,proj,20.5,+388,,,park +6% [low-conf],62F,LvL -22%,
+2026-07-17,Brandon Lowe,PIT,Gavin Williams,2,proj,20.4,+391,,,park -3%,76F,LvR +8%,heat +12%
+2026-07-17,Jordan Walker,STL,Merrill Kelly,4,proj,20.4,+391,,,park +4%,84F (roof: half),RvR -3%,heat -8%
+2026-07-17,Willson Contreras,BOS,Griffin Jax,4,proj,20.1,+397,,,park -7%,78F · wind out 7,RvR -3%,heat +2%
+2026-07-17,Luis Garc\xc3\xada Jr.,WSN,Gage Jump,4,proj,20.0,+400,,,park +6% [low-conf],62F,,
+2026-07-17,Kazuma Okamoto,TOR,Anthony Kay,2,proj,19.5,+413,,,park +3% [low-conf],73F (roof: half),RvL +12%,heat -1%
+2026-07-17,Royce Lewis,MIN,Colin Rea,9,proj,19.5,+413,,,park avg,87F · wind out 8,RvR -3%,heat +2%
+2026-07-17,Alec Burleson,STL,Merrill Kelly,3,proj,19.3,+417,,,park +4%,84F (roof: half),LvR +8%,heat -11%
+2026-07-17,Willson Contreras,BOS,TBD *,4,proj,19.1,+422,,,park -7%,78F · wind out 7,,
+2026-07-17,Trent Grisham,NYY,Roki Sasaki,9,proj,18.8,+433,,,park +14%,84F,LvR +8%,heat -10%
+2026-07-17,Manny Machado,SDP,Seth Lugo,3,proj,18.6,+436,,,park -4% [low-conf],80F · wind out 4,RvR -3%,heat +1%
+2026-07-17,Oneil Cruz,PIT,Gavin Williams,6,proj,18.2,+449,,,park -3%,76F,LvR +8%,heat +10%
+2026-07-17,Ketel Marte,ARI,TBD *,1,proj,17.8,+462,,,park +4%,84F (roof: half),,
+2026-07-17,Wilyer Abreu,BOS,Griffin Jax,1,proj,17.7,+465,,,park -7%,78F · wind out 7,LvR +8%,heat -5%
+2026-07-17,Jazz Chisholm Jr.,NYY,Roki Sasaki,5,proj,17.4,+473,,,park +14%,84F,LvR +8%,heat -2%
+2026-07-17,Brent Rooker,ATH,Cade Cavalli,9,proj,17.0,+488,,,park +6% [low-conf],62F,RvR -3%,heat -1%
+2026-07-17,Curtis Mead,WSN,Gage Jump,6,proj,16.9,+492,,,park +6% [low-conf],62F,RvL +12%,heat +0%
+2026-07-17,Cody Bellinger,NYY,Roki Sasaki,2,proj,16.5,+504,,,park +14%,84F,LvR +8%,heat -8%
+2026-07-17,Tyler Soderstrom,ATH,Cade Cavalli,3,proj,16.4,+509,,,park +6% [low-conf],62F,LvR +8%,heat +2%
+2026-07-17,Jake Burger,TEX,Chris Sale,3,proj,16.0,+525,,,park +4%,no wx,RvL +12%,heat +8%
