@@ -149,6 +149,34 @@ TEAM_ID_MAP = {
 # ACCUMULATED STATS for, which is a different question and goes stale the moment
 # anyone changes clubs — that is how Juan Soto sat on the Yankees board in 2026.
 ROSTER_TEAM = {}
+# norm(name) -> team code for players on a 26-man ACTIVE roster, i.e. who can
+# actually play today. Season stats cannot know about the IL: a hurt star keeps
+# his big PA total and gets projected straight into the lineup for weeks after he
+# stops playing. Judge (IL since Jun 5) and Buxton (IL since Jul 6) both did.
+ACTIVE_ROSTER = {}
+ROSTER_OK = set()          # team codes whose roster we actually fetched
+
+def pull_active_rosters():
+    """26-man active roster per club. Positive list: on it = available today.
+    Fail-soft per team — a club we cannot fetch is simply never filtered."""
+    ACTIVE_ROSTER.clear(); ROSTER_OK.clear()
+    for tid, code in TEAM_ID_MAP.items():
+        try:
+            req = urllib.request.Request(
+                f"https://statsapi.mlb.com/api/v1/teams/{tid}/roster?rosterType=active&season={YEAR}",
+                headers={"User-Agent": "Mozilla/5.0 (MLBTool board)"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                data = json.loads(r.read().decode())
+            got = 0
+            for e in (data.get("roster") or []):
+                nm = norm(((e.get("person") or {}).get("fullName")) or "")
+                if nm:
+                    ACTIVE_ROSTER[nm] = code; got += 1
+            if got:
+                ROSTER_OK.add(code)
+        except Exception:
+            continue
+    return len(ROSTER_OK)
 
 def pull_handedness():
     """batSide / pitchHand AND current team for every player from MLB StatsAPI's
@@ -627,13 +655,22 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
         deduped.append(b)
     # Team of record = today's roster, not the season-stats table. Without this a
     # player who changed clubs is projected into his OLD lineup for the whole year.
-    moved = 0
+    moved = dropped = 0
+    keep = []
     for b in deduped:
-        rt = ROSTER_TEAM.get(norm(b["name"]))
+        nn = norm(b["name"])
+        rt = ACTIVE_ROSTER.get(nn) or ROSTER_TEAM.get(nn)
         if rt and rt != b.get("fg_team"):
             b["fg_team"] = rt; moved += 1
-    if ROSTER_TEAM:
-        print(f"   roster: {moved} batter(s) re-teamed from live MLB roster ({len(ROSTER_TEAM)} players known)")
+        # Drop only when we hold that club's active roster and he is not on it —
+        # i.e. injured/optioned. Never drop on a roster we failed to fetch.
+        if ACTIVE_ROSTER and b["fg_team"] in ROSTER_OK and nn not in ACTIVE_ROSTER:
+            dropped += 1; continue
+        keep.append(b)
+    deduped = keep
+    if ROSTER_TEAM or ACTIVE_ROSTER:
+        print(f"   roster: {moved} re-teamed, {dropped} dropped as inactive/IL "
+              f"({len(ACTIVE_ROSTER)} active across {len(ROSTER_OK)} clubs)")
     for b in deduped:
         by_team.setdefault(b["fg_team"], []).append(b)
     lineup = {}
@@ -1270,6 +1307,10 @@ def _build():
     print("2) batters…"); bat, bsrc = pull_batters()
     print("3) pitchers…"); pit, psrc = pull_pitchers()
     print("3b) handedness (MLB StatsAPI)…"); hands, hnote = pull_handedness(); print(f"   {hnote}")
+    print("3c) active rosters (MLB StatsAPI)…")
+    _nt = pull_active_rosters()
+    print(f"   active rosters: {len(ACTIVE_ROSTER)} players across {_nt}/30 clubs"
+          + ("" if _nt >= 25 else "  ** thin — IL filter will be partial **"))
     if not bat or not pit:
         sys.exit("no batter/pitcher data from any source — board not built")
     tkeys = sorted({b["fg_team"] for b in bat})
