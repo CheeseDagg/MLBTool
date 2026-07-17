@@ -1,88 +1,88 @@
 {
- "generated": "2026-07-16T21:47+00:00",
+ "generated": "2026-07-17T07:29+00:00",
  "board": [
   {
-   "pitcher": "Aaron Nola",
-   "opp": "New York Mets",
-   "lam": 5.21,
-   "k9_regressed": 9.23,
-   "exp_ip": 5.11,
-   "opp_mult": 0.994,
+   "pitcher": "Christian Scott",
+   "opp": "Philadelphia Phillies",
+   "lam": 5.25,
+   "k9_regressed": 10.07,
+   "exp_ip": 4.55,
+   "opp_mult": 1.03,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5951,
-     "fair_over": -147,
-     "fair_under": 147
+     "p_over": 0.6019,
+     "fair_over": -151,
+     "fair_under": 151
     },
     {
      "line": 5.5,
-     "p_over": 0.4204,
-     "fair_over": 138,
-     "fair_under": -138
+     "p_over": 0.4274,
+     "fair_over": 134,
+     "fair_under": -134
     },
     {
      "line": 6.5,
-     "p_over": 0.2688,
-     "fair_over": 272,
-     "fair_under": -272
+     "p_over": 0.2749,
+     "fair_over": 264,
+     "fair_under": -264
     },
     {
      "line": 7.5,
-     "p_over": 0.1559,
-     "fair_over": 541,
-     "fair_under": -541
+     "p_over": 0.1605,
+     "fair_over": 523,
+     "fair_under": -523
     },
     {
      "line": 8.5,
-     "p_over": 0.0825,
-     "fair_over": 1112,
-     "fair_under": -1112
+     "p_over": 0.0855,
+     "fair_over": 1070,
+     "fair_under": -1070
     }
    ]
   },
   {
-   "pitcher": "Christian Scott",
-   "opp": "Philadelphia Phillies",
-   "lam": 5.12,
-   "k9_regressed": 9.96,
-   "exp_ip": 4.5,
-   "opp_mult": 1.029,
+   "pitcher": "Aaron Nola",
+   "opp": "New York Mets",
+   "lam": 5.25,
+   "k9_regressed": 9.22,
+   "exp_ip": 5.15,
+   "opp_mult": 0.994,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5803,
-     "fair_over": -138,
-     "fair_under": 138
+     "p_over": 0.6016,
+     "fair_over": -151,
+     "fair_under": 151
     },
     {
      "line": 5.5,
-     "p_over": 0.4051,
-     "fair_over": 147,
-     "fair_under": -147
+     "p_over": 0.4272,
+     "fair_over": 134,
+     "fair_under": -134
     },
     {
      "line": 6.5,
-     "p_over": 0.2555,
-     "fair_over": 291,
-     "fair_under": -291
+     "p_over": 0.2746,
+     "fair_over": 264,
+     "fair_under": -264
     },
     {
      "line": 7.5,
-     "p_over": 0.1462,
-     "fair_over": 584,
-     "fair_under": -584
+     "p_over": 0.1603,
+     "fair_over": 524,
+     "fair_under": -524
     },
     {
      "line": 8.5,
-     "p_over": 0.0762,
-     "fair_over": 1212,
-     "fair_under": -1212
+     "p_over": 0.0854,
+     "fair_over": 1071,
+     "fair_under": -1071
     }
    ]
   }
  ],
- "diag": "errors {'401': 12} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 14} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
