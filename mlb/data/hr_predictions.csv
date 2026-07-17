@@ -234,33 +234,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-16,Bryson Stott,PHI,Christian Scott,6,card,10.7,+838,,,park +9%,92F · wind in 3,LvR +8%,heat +4%
 2026-07-16,J.T. Realmuto,PHI,Christian Scott,7,card,10.3,+873,,,park +9%,92F · wind in 3,RvR -3%,heat -2%
 2026-07-16,Justin Crawford,PHI,Christian Scott,9,card,4.6,+2084,,,park +9%,92F · wind in 3,LvR +8%,heat -2%
-2026-07-17,Ben Rice,NYY,Roki Sasaki,2,proj,28.7,+249,,,park +14%,88F · wind out 5,LvR +8%,heat -3%
-2026-07-17,Yordan Alvarez,HOU,Dean Kremer,1,proj,28.5,+251,,,park +3%,90F · wind out 4 (roof: half),LvR +8%,heat -5%
-2026-07-17,Hunter Goodman,COL,Brady Singer,2,proj,27.3,+266,,,park +9%,88F,RvR -3%,heat -6%
-2026-07-17,Shohei Ohtani,LAD,Gerrit Cole,3,proj,25.6,+291,,,park +14%,88F · wind out 5,LvR +8%,heat +0%
-2026-07-17,Matt Olson,ATL,Cal Quantrill,1,proj,25.0,+300,,,park +4%,92F · wind out 4,LvR +8%,heat -4%
-2026-07-17,Junior Caminero,TBR,Jake Bennett,1,proj,22.0,+355,,,park -7%,82F · wind out 8,RvL +12%,heat +12%
-2026-07-17,Max Muncy,LAD,Gerrit Cole,5,proj,21.9,+356,,,park +14%,88F · wind out 5,LvR +8%,heat -1%
-2026-07-17,Drake Baldwin,ATL,Cal Quantrill,5,proj,21.8,+359,,,park +4%,92F · wind out 4,LvR +8%,heat -12%
-2026-07-17,Junior Caminero,TBR,TBD *,1,proj,21.7,+361,,,park -7%,82F · wind out 8,,
-2026-07-17,Michael Harris II,ATL,Cal Quantrill,4,proj,21.7,+360,,,park +4%,92F · wind out 4,LvR +8%,heat +4%
-2026-07-17,Shea Langeliers,ATH,Cade Cavalli,1,proj,21.7,+360,,,park +6% [low-conf],77F,RvR -3%,heat +7%
-2026-07-17,James Wood,WSN,Gage Jump,1,proj,21.4,+368,,,park +6% [low-conf],77F,LvL -22%,
-2026-07-17,Paul Goldschmidt,NYY,Roki Sasaki,5,proj,21.4,+368,,,park +14%,88F · wind out 5,RvR -3%,heat -1%
-2026-07-17,Kody Clemens,MIN,Colin Rea,4,proj,21.3,+370,,,park avg,87F · wind in 3,LvR +8%,heat -3%
-2026-07-17,Mike Trout,LAA,Troy Melton,3,proj,21.1,+373,,,park +4%,80F · wind out 4,RvR -3%,
-2026-07-17,Sal Stewart,CIN,Gabriel Hughes *,1,proj,21.1,+374,,,park +9%,88F,RvR -3%,
-2026-07-17,Trent Grisham,NYY,Roki Sasaki,4,proj,21.0,+377,,,park +14%,88F · wind out 5,LvR +8%,heat -10%
-2026-07-17,Christian Walker,HOU,Dean Kremer,2,proj,20.8,+380,,,park +3%,90F · wind out 4 (roof: half),RvR -3%,heat +4%
-2026-07-17,Esmerlyn Valdez,PIT,Gavin Williams,8,proj,20.8,+381,,,park -3%,83F · wind in 4,RvR -3%,heat -1%
-2026-07-17,Jordan Walker,STL,Merrill Kelly,3,proj,20.7,+384,,,park +4%,85F (roof: half),RvR -3%,heat -8%
-2026-07-17,Brandon Lowe,PIT,Gavin Williams,2,proj,20.5,+388,,,park -3%,83F · wind in 4,LvR +8%,heat +12%
-2026-07-17,Elly De La Cruz,CIN,Gabriel Hughes *,3,proj,20.5,+388,,,park +9%,88F,SvR +8%,
-2026-07-17,Freddie Freeman,LAD,Gerrit Cole,2,proj,20.5,+389,,,park +14%,88F · wind out 5,LvR +8%,heat -4%
-2026-07-17,JJ Bleday,CIN,Gabriel Hughes *,4,proj,20.3,+394,,,park +9%,88F,LvR +8%,
-2026-07-17,Ryan McMahon,NYY,Roki Sasaki,6,proj,20.3,+393,,,park +14%,88F · wind out 5,LvR +8%,heat -7%
-2026-07-17,Pete Crow-Armstrong,CHC,Bailey Ober,4,proj,20.2,+394,,,park avg,87F · wind in 3,LvR +8%,heat +2%
-2026-07-17,Alec Burleson,STL,Merrill Kelly,2,proj,20.1,+397,,,park +4%,85F (roof: half),LvR +8%,heat -11%
-2026-07-17,Amed Rosario,NYY,Roki Sasaki,8,proj,20.1,+397,,,park +14%,88F · wind out 5,RvR -3%,heat +1%
-2026-07-17,Ketel Marte,ARI,Michael McGreevy,1,proj,20.0,+399,,,park +4%,85F (roof: half),SvR +8%,heat +1%
-2026-07-17,Andy Pages,LAD,Gerrit Cole,1,proj,19.9,+402,,,park +14%,88F · wind out 5,RvR -3%,
+2026-07-17,Ben Rice,NYY,Roki Sasaki,2,card,28.6,+250,,,park +14%,89F · wind out 4,LvR +8%,heat -3%
+2026-07-17,Yordan Alvarez,HOU,Dean Kremer,2,card,28.4,+253,,,park +3%,92F · wind out 5 (roof: half),LvR +8%,heat -5%
+2026-07-17,Hunter Goodman,COL,Brady Singer,3,card,27.0,+270,,,park +9%,93F · wind in 3,RvR -3%,heat -6%
+2026-07-17,Shohei Ohtani,LAD,Gerrit Cole,1,card,26.3,+280,,,park +14%,89F · wind out 4,LvR +8%,heat +0%
+2026-07-17,Mickey Moniak,COL,Brady Singer,2,card,25.9,+285,,,park +9%,93F · wind in 3,LvR +8%,heat -1%
+2026-07-17,Matt Olson,ATL,Cal Quantrill,3,card,23.2,+331,,,park +4%,79F · wind out 8,LvR +8%,heat -4%
+2026-07-17,Shea Langeliers,ATH,Cade Cavalli,1,proj,22.7,+341,,,park +6% [low-conf],88F · wind out 3,RvR -3%,heat +7%
+2026-07-17,Junior Caminero,TBR,Jake Bennett,1,proj,22.2,+351,,,park -7%,85F · wind out 7,RvL +12%,heat +12%
+2026-07-17,Drake Baldwin,ATL,Cal Quantrill,1,card,22.0,+355,,,park +4%,79F · wind out 8,LvR +8%,heat -12%
+2026-07-17,James Wood,WSN,Gage Jump,1,proj,22.0,+354,,,park +6% [low-conf],88F · wind out 3,LvL -22%,
+2026-07-17,Max Muncy,LAD,Gerrit Cole,5,card,21.9,+357,,,park +14%,89F · wind out 4,LvR +8%,heat -1%
+2026-07-17,Junior Caminero,TBR,TBD *,1,proj,21.8,+358,,,park -7%,85F · wind out 7,,
+2026-07-17,Kody Clemens,MIN,Colin Rea,4,card,21.7,+361,,,park avg,88F,LvR +8%,heat -3%
+2026-07-17,Paul Goldschmidt,NYY,Roki Sasaki,3,card,21.7,+361,,,park +14%,89F · wind out 4,RvR -3%,heat -1%
+2026-07-17,Mike Trout,LAA,Troy Melton,3,proj,21.6,+363,,,park +4%,87F · wind out 6,RvR -3%,
+2026-07-17,Trent Grisham,NYY,Roki Sasaki,1,card,21.4,+368,,,park +14%,89F · wind out 4,LvR +8%,heat -10%
+2026-07-17,Esmerlyn Valdez,PIT,Gavin Williams,4,card,21.3,+369,,,park -3%,82F · wind in 5,RvR -3%,heat -1%
+2026-07-17,Michael Harris II,ATL,Cal Quantrill,4,card,21.3,+370,,,park +4%,79F · wind out 8,LvR +8%,heat +4%
+2026-07-17,Sal Stewart,CIN,Gabriel Hughes *,1,proj,21.1,+373,,,park +9%,93F · wind in 3,RvR -3%,
+2026-07-17,Pete Crow-Armstrong,CHC,Bailey Ober,1,card,21.0,+375,,,park avg,88F,LvR +8%,heat +2%
+2026-07-17,Ryan Jeffers,MIN,Colin Rea,2,card,21.0,+376,,,park avg,88F,RvR -3%,heat -0%
+2026-07-17,Willson Contreras,BOS,Mason Englert,4,card,20.7,+383,,,park -7%,85F · wind out 7,RvR -3%,heat +10%
+2026-07-17,Christian Walker,HOU,Dean Kremer,4,card,20.6,+385,,,park +3%,92F · wind out 5 (roof: half),RvR -3%,heat +4%
+2026-07-17,Curtis Mead,WSN,Gage Jump,4,proj,20.6,+386,,,park +6% [low-conf],88F · wind out 3,RvL +12%,heat +0%
+2026-07-17,Jordan Walker,STL,Merrill Kelly,3,proj,20.6,+386,,,park +4%,84F (roof: half),RvR -3%,heat -8%
+2026-07-17,Willson Contreras,BOS,Griffin Jax,4,card,20.6,+386,,,park -7%,85F · wind out 7,RvR -3%,heat +2%
+2026-07-17,Elly De La Cruz,CIN,Gabriel Hughes *,3,proj,20.5,+387,,,park +9%,93F · wind in 3,SvR +8%,
+2026-07-17,Brandon Lowe,PIT,Gavin Williams,2,card,20.4,+391,,,park -3%,82F · wind in 5,LvR +8%,heat +12%
+2026-07-17,Spencer Torkelson,DET,Reid Detmers,3,proj,20.4,+391,,,park +4%,87F · wind out 6,RvL +12%,heat +9%
+2026-07-17,Dillon Dingler,DET,Reid Detmers,4,proj,20.3,+391,,,park +4%,87F · wind out 6,RvL +12%,heat +11%
