@@ -135,9 +135,24 @@ def pull_bullpens():
         out[team] = round(rate / L, 3)
     return out, f"bullpen on ({len(out)} pens)"
 
+# MLB StatsAPI team ids -> our codes. Used as a fallback when currentTeam
+# carries an id but no name. Ids are stable across seasons.
+TEAM_ID_MAP = {
+    108: "LAA", 109: "ARI", 110: "BAL", 111: "BOS", 112: "CHC", 113: "CIN",
+    114: "CLE", 115: "COL", 116: "DET", 117: "HOU", 118: "KCR", 119: "LAD",
+    120: "WSN", 121: "NYM", 133: "ATH", 134: "PIT", 135: "SDP", 136: "SEA",
+    137: "SFG", 138: "STL", 139: "TBR", 140: "TEX", 141: "TOR", 142: "MIN",
+    143: "PHI", 144: "ATL", 145: "CHW", 146: "MIA", 147: "NYY", 158: "MIL",
+}
+# norm(name) -> current team code, from the StatsAPI roster. Authoritative for
+# WHICH CLUB a player is on today. Season stats tables carry the team a player
+# ACCUMULATED STATS for, which is a different question and goes stale the moment
+# anyone changes clubs — that is how Juan Soto sat on the Yankees board in 2026.
+ROSTER_TEAM = {}
+
 def pull_handedness():
-    """batSide / pitchHand for every player from MLB StatsAPI's bulk roster
-    endpoint (one call, unblockable host). Fail-soft: {} -> platoon off."""
+    """batSide / pitchHand AND current team for every player from MLB StatsAPI's
+    bulk roster endpoint (one call, unblockable host). Fail-soft: {} -> platoon off."""
     try:
         req = urllib.request.Request(
             f"https://statsapi.mlb.com/api/v1/sports/1/players?season={YEAR}",
@@ -145,6 +160,7 @@ def pull_handedness():
         with urllib.request.urlopen(req, timeout=45) as r:
             data = json.loads(r.read().decode())
         out = {}
+        ROSTER_TEAM.clear()
         for p in data.get("people", []):
             n = norm(p.get("fullName", ""))
             if n:
@@ -152,6 +168,10 @@ def pull_handedness():
                 out.setdefault(n, []).append(((p.get("batSide") or {}).get("code"),
                           (p.get("pitchHand") or {}).get("code"),
                           p.get("id"), pos))
+                ct = p.get("currentTeam") or {}
+                code = TEAM_MAP.get(ct.get("name") or "") or TEAM_ID_MAP.get(ct.get("id"))
+                if code:
+                    ROSTER_TEAM[n] = code
         return out, f"platoon on ({sum(len(v) for v in out.values())} players)"
     except Exception as e:
         return {}, f"platoon off (handedness fetch failed: {type(e).__name__})"
@@ -605,6 +625,15 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
             continue                                # duplicate name: keep only the higher-PA real player
         seen_name[nn] = True
         deduped.append(b)
+    # Team of record = today's roster, not the season-stats table. Without this a
+    # player who changed clubs is projected into his OLD lineup for the whole year.
+    moved = 0
+    for b in deduped:
+        rt = ROSTER_TEAM.get(norm(b["name"]))
+        if rt and rt != b.get("fg_team"):
+            b["fg_team"] = rt; moved += 1
+    if ROSTER_TEAM:
+        print(f"   roster: {moved} batter(s) re-teamed from live MLB roster ({len(ROSTER_TEAM)} players known)")
     for b in deduped:
         by_team.setdefault(b["fg_team"], []).append(b)
     lineup = {}
