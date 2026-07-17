@@ -374,12 +374,16 @@ function render(d){
       const worst = BT.buckets.slice().sort((a,b)=>(a.actual-a.pred)-(b.actual-b.pred))[0];
       let head, body, vcol;
       if(lv.unknown || lv.tag==='\u2014'){
-        vcol='var(--acc)'; head='Already corrected \u2014 not yet enough games to re-grade.';
+        vcol='var(--acc)'; head='Corrected, but the correction is not proven yet.';
+        const drift=(cal.pred_mean-cal.actual);
         body = `The season tables below are the <b>raw model, before the fix</b>. `
              + (worst? `They showed it overselling at the top: a raw <b>${worst.pred}%</b> only homered <b>${worst.actual}%</b>. ` : '')
-             + `<b>That correction is already applied to every number on today\'s board</b> \u2014 a raw ${worst?worst.pred:28.3}% is published as ${worst?worst.actual:22.2}%, which is why the board tops out near 27% and not 33%.
-                <b style="color:var(--acc)">Take the board\'s numbers at face value \u2014 do not shade them down again.</b>
-                Since the fix, the board has said <b>${cal.pred_mean}%</b> and <b>${cal.actual}%</b> homered over ${cal.n} games \u2014 ${lv.need?`too few to grade (need ~${lv.need.toLocaleString()})`:'too few to grade'}.`;
+             + `That correction <b>is applied to every number on today\'s board</b> \u2014 a raw ${worst?worst.pred:28.3}% publishes as ${worst?worst.actual:22.2}%, which is why the board tops out near 27% and not 33%. So <b>do not shade the board\'s numbers down again</b>; the discount is already in them.
+                <div style="margin-top:5px"><b style="color:var(--acc)">The honest catch:</b> that correction was <b>fitted on the very tables below</b>, so those tables cannot prove it works \u2014 the curve was drawn through those points. The only independent test is what has happened <b>since</b>:
+                the board said <b>${cal.pred_mean}%</b> and <b>${cal.actual}%</b> homered over <b>${cal.n}</b> games` 
+             + (drift>0.5?` \u2014 still <b>${drift.toFixed(1)} points high</b>, the same direction as the old bias, though inside its own \u00b1${lv.band.toFixed(1)} margin.`:` \u2014 on target so far, inside its own \u00b1${lv.band.toFixed(1)} margin.`)
+             + ` ${lv.need?`Needs ~${lv.need.toLocaleString()} games to call; there are ${cal.n}.`:''}
+                <b>Trust the ordering</b> (who is likelier than whom \u2014 that rests on ${BT.n.toLocaleString()} games). <b>Hold the number loosely above ~20%</b>, where the fit is unproven.</div>`;
       } else if(lv.real && cal.actual < cal.pred_mean){
         vcol='var(--red)'; head='The correction is not holding \u2014 the board still oversells.';
         body = `Since the fix the board has said <b>${cal.pred_mean}%</b> and only <b>${cal.actual}%</b> homered over ${cal.n} games \u2014 <b>${(cal.pred_mean-cal.actual).toFixed(1)} points high</b>, past its own margin. The anchors need re-cutting.`;
