@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-18T06:30+00:00",
+ "generated": "2026-07-18T20:32+00:00",
  "n_analyzed": 0,
  "n_plays": 0,
  "books": [
@@ -9,6 +9,6 @@
   "williamhill_us"
  ],
  "plays": [],
- "diag": "events 16 \u00b7 errors {'401': 16} \u00b7 credits remaining 0 (used 500)",
+ "diag": "events 29 \u00b7 errors {'401': 29} \u00b7 credits remaining 0 (used 500)",
  "note": "Plays are +EV vs BOTH our fair number AND the vig-free market consensus. Best price shown is the book to bet. Stale flags = a book out of step with the field."
 }
