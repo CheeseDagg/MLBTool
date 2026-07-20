@@ -328,3 +328,23 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-19,Max Muncy,LAD,Cam Schlittler,5,proj,20.8,+380,,,park +14%,81F · wind out 7,LvR +8%,heat +2%,no,0
 2026-07-19,Esmerlyn Valdez,PIT,Joey Cantillo,4,card,20.7,+382,,,park -3%,76F · wind in 6,RvL +12%,heat +4%,hr,1
 2026-07-19,Junior Caminero,TBR,Sonny Gray,3,card,20.6,+385,,,park -7%,77F · wind out 7,RvR -3%,heat -13%,void,
+2026-07-19,Shea Langeliers,ATH,Foster Griffin,3,card,26.7,+275,,,park +6% [low-conf],90F,RvL +12%,heat +3%,no,0
+2026-07-19,James Wood,WSN,Jacob Lopez,1,card,24.2,+313,,,park +6% [low-conf],90F,LvL -22%,heat +3%,void,
+2026-07-19,Hunter Goodman,COL,Hunter Greene,3,card,23.5,+326,,,park +9%,99F,RvR -3%,,hr,3
+2026-07-19,Yordan Alvarez,HOU,Brandon Young,2,card,22.9,+338,,,park +3%,92F (roof: half),LvR +8%,heat -3%,no,0
+2026-07-19,Kyle Schwarber,PHI,Nolan McLean,2,card,22.5,+344,,,park +9%,82F,LvR +8%,heat +2%,no,0
+2026-07-19,Ben Rice,NYY,Will Klein,2,proj,22.4,+346,,,park +14%,82F · wind out 6,LvR +8%,heat +11%,no,0
+2026-07-19,Mickey Moniak,COL,Hunter Greene,2,card,22.3,+349,,,park +9%,99F,LvR +8%,,no,0
+2026-07-19,Elly De La Cruz,CIN,Ryan Feltner,1,card,22.1,+353,,,park +9%,99F,SvR +8%,heat +10%,no,0
+2026-07-19,Juan Soto,NYM,Alan Rangel,2,card,22.1,+352,,,park +9%,82F,LvR +8%,heat +5%,no,0
+2026-07-19,Sal Stewart,CIN,Ryan Feltner,2,card,22.0,+354,,,park +9%,99F,RvR -3%,heat -1%,hr,1
+2026-07-19,Curtis Mead,WSN,Jacob Lopez,2,card,21.8,+359,,,park +6% [low-conf],90F,RvL +12%,heat +2%,void,
+2026-07-19,Kerry Carpenter,DET,Ryan Johnson,6,card,21.8,+360,,,park +4%,89F · wind out 5,LvR +8%,heat +1%,no,0
+2026-07-19,JJ Bleday,CIN,Ryan Feltner,3,card,21.5,+365,,,park +9%,99F,LvR +8%,heat +10%,no,0
+2026-07-19,Dillon Dingler,DET,Ryan Johnson,2,card,21.2,+371,,,park +4%,89F · wind out 5,RvR -3%,heat +3%,no,0
+2026-07-19,Nelson Velázquez,STL,Eduardo Rodriguez *,4,card,21.0,+377,,,park +4%,101F (roof: half),RvL +12%,,no,0
+2026-07-19,Heriberto Hernández,MIA,Robert Gasser,2,card,20.9,+379,,,park +9%,77F · wind in 5 (roof: half),RvL +12%,heat +11%,no,0
+2026-07-19,Riley Greene,DET,Ryan Johnson,4,card,20.9,+378,,,park +4%,89F · wind out 5,LvR +8%,heat +1%,hr,1
+2026-07-19,Spencer Torkelson,DET,Ryan Johnson,5,card,20.9,+378,,,park +4%,89F · wind out 5,RvR -3%,heat +4%,no,0
+2026-07-19,Eugenio Suárez,CIN,Ryan Feltner,6,card,20.8,+382,,,park +9%,99F,RvR -3%,,no,0
+2026-07-19,Colby Thomas,ATH,Foster Griffin,6,card,20.5,+387,,,park +6% [low-conf],90F,RvL +12%,heat +1%,no,0
