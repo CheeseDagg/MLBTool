@@ -324,33 +324,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-19,Michael Harris II,ATL,Nathan Eovaldi,4,card,20.8,+382,,,park +4%,86F · wind in 11,LvR +8%,heat -3%
 2026-07-19,Max Muncy,LAD,Cam Schlittler,5,proj,20.7,+382,,,park +14%,82F · wind out 6,LvR +8%,heat +2%
 2026-07-19,Colby Thomas,ATH,Foster Griffin,6,card,20.5,+387,,,park +6% [low-conf],90F,RvL +12%,heat +1%
-2026-07-20,Hunter Goodman,COL,Andrew Alvarez,2,proj,25.0,+300,,,park +9%,84F,RvL +12%,heat +15%
-2026-07-20,Ketel Marte,ARI,Jeffrey Springs,1,proj,24.5,+308,,,park +4%,94F (roof: half),SvL +12%,heat +9%
-2026-07-20,Kyle Schwarber,PHI,Emmet Sheehan,2,proj,24.5,+307,,,park +9%,75F,LvR +8%,heat +3%
-2026-07-20,Ben Rice,NYY,Braxton Ashcraft,2,proj,23.5,+325,,,park +14%,75F,LvR +8%,heat +7%
-2026-07-20,James Wood,WSN,Kyle Freeland,1,proj,22.8,+338,,,park +9%,84F,LvL -22%,heat +18%
-2026-07-20,Yordan Alvarez,HOU,Janson Junk,1,proj,22.6,+342,,,park +3%,81F (roof: half),LvR +8%,heat +11%
-2026-07-20,Colson Montgomery,CHW,Jacob deGrom,3,proj,22.3,+349,,,park +2%,87F (roof: half),LvR +8%,heat +1%
-2026-07-20,Esmerlyn Valdez,PIT,Ryan Weathers,8,proj,21.9,+357,,,park +14%,75F,RvL +12%,heat +2%
-2026-07-20,Kerry Carpenter,DET,Jameson Taillon,8,proj,21.7,+360,,,park avg,74F · wind out 6,LvR +8%,heat -7%
-2026-07-20,Riley Greene,DET,Jameson Taillon,2,proj,21.7,+362,,,park avg,74F · wind out 6,LvR +8%,heat -6%
-2026-07-20,Shea Langeliers,ATH,Mitch Bratt *,1,proj,21.5,+366,,,park +4%,94F (roof: half),RvL +12%,
-2026-07-20,Spencer Torkelson,DET,Jameson Taillon,3,proj,21.5,+365,,,park avg,74F · wind out 6,RvR -3%,heat -6%
-2026-07-20,Dillon Dingler,DET,Jameson Taillon,4,proj,21.3,+371,,,park avg,74F · wind out 6,RvR -3%,heat -9%
-2026-07-20,Munetaka Murakami,CHW,Jacob deGrom,7,proj,21.3,+370,,,park +2%,87F (roof: half),LvR +8%,heat +3%
-2026-07-20,Miguel Vargas,CHW,Jacob deGrom,1,proj,21.0,+377,,,park +2%,87F (roof: half),RvR -3%,heat -15%
-2026-07-20,Kody Clemens,MIN,Tanner Bibee,4,proj,20.9,+379,,,park -3%,76F · wind out 4,LvR +8%,heat +2%
-2026-07-20,Curtis Mead,WSN,Kyle Freeland,4,proj,20.8,+381,,,park +9%,84F,RvL +12%,heat +1%
-2026-07-20,Juan Soto,NYM,Jacob Misiorowski,3,proj,20.8,+380,,,park +9%,77F (roof: half),LvR +8%,heat +18%
-2026-07-20,Rafael Devers,SFG,Michael Wacha,1,proj,20.4,+390,,,park -4% [low-conf],86F · wind out 4,LvR +8%,heat +0%
-2026-07-20,Matt Olson,ATL,JP Sears,1,proj,20.3,+392,,,park +4%,80F,LvL -22%,heat +4%
-2026-07-20,Shohei Ohtani,LAD,Cristopher Sánchez *,3,proj,20.3,+393,,,park +9%,75F,LvL -22%,heat +15%
-2026-07-20,Bryce Harper,PHI,Emmet Sheehan,3,proj,20.1,+396,,,park +9%,75F,LvR +8%,heat +11%
-2026-07-20,Casey Schmitt,SFG,Michael Wacha,4,proj,19.9,+402,,,park -4% [low-conf],86F · wind out 4,RvR -3%,heat -4%
-2026-07-20,Corbin Carroll,ARI,Jeffrey Springs,2,proj,19.9,+403,,,park +4%,94F (roof: half),LvL -22%,heat -3%
-2026-07-20,Joc Pederson,TEX,Erick Fedde,5,proj,19.6,+409,,,park +2%,87F (roof: half),LvR +8%,heat +1%
-2026-07-20,Nolan Arenado,ARI,Jeffrey Springs,4,proj,19.6,+409,,,park +4%,94F (roof: half),RvL +12%,heat +4%
-2026-07-20,Jake Bauers,MIL,Freddy Peralta,3,proj,19.3,+418,,,park +9%,77F (roof: half),LvR +8%,heat -7%
-2026-07-20,Brandon Lowe,PIT,Ryan Weathers,2,proj,19.1,+423,,,park +14%,75F,LvL -22%,heat +3%
-2026-07-20,CJ Abrams,WSN,Kyle Freeland,3,proj,18.7,+435,,,park +9%,84F,LvL -22%,heat +10%
-2026-07-20,Jake Burger,TEX,Erick Fedde,3,proj,18.6,+439,,,park +2%,87F (roof: half),RvR -3%,heat -1%
+2026-07-20,Hunter Goodman,COL,Andrew Alvarez,2,proj,27.4,+265,,,park +9%,99F · wind in 5,RvL +12%,heat +15%
+2026-07-20,Kyle Schwarber,PHI,Emmet Sheehan,2,proj,27.0,+270,,,park +9%,84F · wind out 5,LvR +8%,heat +3%
+2026-07-20,Ben Rice,NYY,Braxton Ashcraft,2,proj,25.3,+295,,,park +14%,84F,LvR +8%,heat +7%
+2026-07-20,Ketel Marte,ARI,Jeffrey Springs,1,proj,24.6,+306,,,park +4%,100F (roof: half),SvL +12%,heat +9%
+2026-07-20,Byron Buxton,MIN,Tanner Bibee,5,proj,24.4,+310,,,park -3%,84F,RvR -3%,heat +4%
+2026-07-20,Esmerlyn Valdez,PIT,Ryan Weathers,8,proj,24.2,+313,,,park +14%,84F,RvL +12%,heat +2%
+2026-07-20,James Wood,WSN,Kyle Freeland,1,proj,24.0,+317,,,park +9%,99F · wind in 5,LvL -22%,heat +18%
+2026-07-20,Spencer Torkelson,DET,Jameson Taillon,3,proj,23.3,+330,,,park avg,83F · wind out 10,RvR -3%,heat -6%
+2026-07-20,Riley Greene,DET,Jameson Taillon,2,proj,23.2,+332,,,park avg,83F · wind out 10,LvR +8%,heat -6%
+2026-07-20,Colson Montgomery,CHW,Jacob deGrom,3,proj,23.0,+335,,,park +2%,98F (roof: half),LvR +8%,heat +1%
+2026-07-20,Kerry Carpenter,DET,Jameson Taillon,8,proj,22.8,+338,,,park avg,83F · wind out 10,LvR +8%,heat -7%
+2026-07-20,Yordan Alvarez,HOU,Janson Junk,1,proj,22.8,+339,,,park +3%,88F (roof: half),LvR +8%,heat +11%
+2026-07-20,Dillon Dingler,DET,Jameson Taillon,4,proj,22.0,+355,,,park avg,83F · wind out 10,RvR -3%,heat -9%
+2026-07-20,Shea Langeliers,ATH,Mitch Bratt *,1,proj,21.7,+361,,,park +4%,100F (roof: half),RvL +12%,
+2026-07-20,Kody Clemens,MIN,Tanner Bibee,4,proj,21.5,+366,,,park -3%,84F,LvR +8%,heat +2%
+2026-07-20,Munetaka Murakami,CHW,Jacob deGrom,7,proj,21.4,+368,,,park +2%,98F (roof: half),LvR +8%,heat +3%
+2026-07-20,Curtis Mead,WSN,Kyle Freeland,4,proj,21.2,+372,,,park +9%,99F · wind in 5,RvL +12%,heat +1%
+2026-07-20,Miguel Vargas,CHW,Jacob deGrom,1,proj,21.1,+373,,,park +2%,98F (roof: half),RvR -3%,heat -15%
+2026-07-20,Shohei Ohtani,LAD,Cristopher Sánchez *,3,proj,21.1,+375,,,park +9%,84F · wind out 5,LvL -22%,heat +15%
+2026-07-20,Matt Olson,ATL,JP Sears,1,proj,21.0,+375,,,park +4%,93F,LvL -22%,heat +4%
+2026-07-20,Rafael Devers,SFG,Michael Wacha,1,proj,21.0,+377,,,park -4% [low-conf],98F · wind out 3,LvR +8%,heat +0%
+2026-07-20,Bryce Harper,PHI,Emmet Sheehan,3,proj,20.9,+378,,,park +9%,84F · wind out 5,LvR +8%,heat +11%
+2026-07-20,Juan Soto,NYM,Jacob Misiorowski,3,proj,20.9,+379,,,park +9%,84F (roof: half),LvR +8%,heat +18%
+2026-07-20,Brandon Lowe,PIT,Ryan Weathers,2,proj,20.4,+390,,,park +14%,84F,LvL -22%,heat +3%
+2026-07-20,Casey Schmitt,SFG,Michael Wacha,4,proj,20.4,+390,,,park -4% [low-conf],98F · wind out 3,RvR -3%,heat -4%
+2026-07-20,Corbin Carroll,ARI,Jeffrey Springs,2,proj,20.3,+394,,,park +4%,100F (roof: half),LvL -22%,heat -3%
+2026-07-20,Joc Pederson,TEX,Erick Fedde,5,proj,20.3,+393,,,park +2%,98F (roof: half),LvR +8%,heat +1%
+2026-07-20,CJ Abrams,WSN,Kyle Freeland,3,proj,20.2,+396,,,park +9%,99F · wind in 5,LvL -22%,heat +10%
+2026-07-20,Drake Baldwin,ATL,JP Sears,5,proj,20.2,+395,,,park +4%,93F,LvL -22%,heat +7%
+2026-07-20,Mike Trout,LAA,Kyle Leahy,3,proj,20.2,+396,,,park +4%,86F,RvR -3%,heat -1%
