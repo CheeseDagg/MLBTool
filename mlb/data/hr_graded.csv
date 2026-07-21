@@ -378,3 +378,7 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-20,Nolan Arenado,ARI,Jeffrey Springs,6,card,20.1,+399,,,park +4%,104F (roof: half),RvL +12%,heat +4%,void,
 2026-07-20,Jordan Walker,STL,José Soriano,4,card,19.9,+403,,,park +4%,89F · wind out 4,RvR -3%,heat -2%,no,0
 2026-07-20,Trent Grisham,NYY,Braxton Ashcraft,1,card,19.8,+404,,,park +14%,76F,LvR +8%,heat +3%,no,0
+2026-07-21,Ben Rice,NYY,Bubba Chandler,2,proj,24.1,+315,,,park +14%,83F · wind out 3,LvR +8%,heat +9%,void,
+2026-07-21,Esmerlyn Valdez,PIT,Will Warren,8,proj,22.1,+352,,,park +14%,83F · wind out 3,RvR -3%,heat +2%,void,
+2026-07-21,Brandon Lowe,PIT,Will Warren,2,proj,21.4,+367,,,park +14%,83F · wind out 3,LvR +8%,heat -1%,void,
+2026-07-21,Pete Alonso,BAL,Eduardo Rivera *,3,proj,19.6,+410,,,park -7%,81F · wind out 6,RvL +12%,,void,
