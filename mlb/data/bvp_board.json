@@ -1,0 +1,95 @@
+{
+ "generated": "2026-07-22T18:13:57+00:00",
+ "date": "2026-07-22",
+ "min_pa": 6,
+ "rows": [
+  {
+   "batter": "Rafael Devers",
+   "team": "SF",
+   "opp_sp": "Seth Lugo",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.250"
+  },
+  {
+   "batter": "Luke Raley",
+   "team": "SEA",
+   "opp_sp": "Brady Singer",
+   "pa": 11,
+   "ab": 10,
+   "h": 5,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.200"
+  },
+  {
+   "batter": "Jeff McNeil",
+   "team": "ATH",
+   "opp_sp": "Merrill Kelly",
+   "pa": 12,
+   "ab": 12,
+   "h": 3,
+   "hr": 2,
+   "avg": ".250",
+   "slg": ".917"
+  },
+  {
+   "batter": "Willy Adames",
+   "team": "SF",
+   "opp_sp": "Seth Lugo",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".714"
+  },
+  {
+   "batter": "Cal Raleigh",
+   "team": "SEA",
+   "opp_sp": "Brady Singer",
+   "pa": 18,
+   "ab": 16,
+   "h": 6,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".688"
+  },
+  {
+   "batter": "Ryan O'Hearn",
+   "team": "PIT",
+   "opp_sp": "Gerrit Cole",
+   "pa": 19,
+   "ab": 19,
+   "h": 2,
+   "hr": 1,
+   "avg": ".105",
+   "slg": ".316"
+  },
+  {
+   "batter": "Brandon Lowe",
+   "team": "PIT",
+   "opp_sp": "Gerrit Cole",
+   "pa": 36,
+   "ab": 33,
+   "h": 7,
+   "hr": 1,
+   "avg": ".212",
+   "slg": ".303"
+  },
+  {
+   "batter": "Josh Naylor",
+   "team": "SEA",
+   "opp_sp": "Brady Singer",
+   "pa": 28,
+   "ab": 28,
+   "h": 3,
+   "hr": 1,
+   "avg": ".107",
+   "slg": ".250"
+  }
+ ]
+}
