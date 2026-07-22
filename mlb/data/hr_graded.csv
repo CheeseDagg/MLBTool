@@ -409,3 +409,10 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-21,Corbin Carroll,ARI,Jack Perkins,3,card,20.1,+396,,,park +4%,100F (roof: half),LvR +8%,heat -1%,void,
 2026-07-21,Luke Raley,SEA,Chase Burns,6,card,20.1,+397,,,park -4%,86F (roof: half),LvR +8%,heat +4%,no,0
 2026-07-21,Michael Harris II,ATL,Walker Buehler,5,card,19.7,+408,,,park +4%,88F · wind in 5,LvR +8%,heat +5%,no,0
+2026-07-22,Ben Rice,NYY,Mitch Keller,2,proj,23.3,+330,,,park +14%,no wx,LvR +8%,heat +12%,hr,1
+2026-07-22,Ben Rice,NYY,Bubba Chandler,2,proj,22.0,+354,,,park +14%,no wx,LvR +8%,heat +10%,hr,1
+2026-07-22,Esmerlyn Valdez,PIT,Gerrit Cole,8,proj,21.4,+368,,,park +14%,no wx,RvR -3%,,no,0
+2026-07-22,Willson Contreras,BOS,Dean Kremer,4,proj,20.9,+379,,,park -7%,79F · wind out 8,RvR -3%,heat +3%,no,0
+2026-07-22,Brandon Lowe,PIT,Gerrit Cole,2,proj,20.8,+382,,,park +14%,no wx,LvR +8%,heat -1%,no,0
+2026-07-22,Wilyer Abreu,BOS,Dean Kremer,1,proj,20.4,+391,,,park -7%,79F · wind out 8,LvR +8%,heat -11%,no,0
+2026-07-22,Esmerlyn Valdez,PIT,Max Fried,8,proj,20.2,+394,,,park +14%,no wx,RvL +12%,heat +2%,no,0
