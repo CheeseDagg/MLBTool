@@ -1,8 +1,30 @@
 {
- "generated": "2026-07-22T18:13:57+00:00",
+ "generated": "2026-07-22T18:56:04+00:00",
  "date": "2026-07-22",
  "min_pa": 6,
  "rows": [
+  {
+   "batter": "Willson Contreras",
+   "team": "BOS",
+   "opp_sp": "Kyle Bradish",
+   "pa": 6,
+   "ab": 4,
+   "h": 2,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "2.000"
+  },
+  {
+   "batter": "George Springer",
+   "team": "TOR",
+   "opp_sp": "Griffin Jax",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.286"
+  },
   {
    "batter": "Rafael Devers",
    "team": "SF",
@@ -37,6 +59,72 @@
    "slg": ".917"
   },
   {
+   "batter": "Trea Turner",
+   "team": "PHI",
+   "opp_sp": "Eric Lauer",
+   "pa": 17,
+   "ab": 16,
+   "h": 6,
+   "hr": 2,
+   "avg": ".375",
+   "slg": ".813"
+  },
+  {
+   "batter": "Mookie Betts",
+   "team": "LAD",
+   "opp_sp": "Aaron Nola",
+   "pa": 23,
+   "ab": 23,
+   "h": 9,
+   "hr": 2,
+   "avg": ".391",
+   "slg": ".696"
+  },
+  {
+   "batter": "Jos\u00e9 Ram\u00edrez",
+   "team": "CLE",
+   "opp_sp": "Bailey Ober",
+   "pa": 32,
+   "ab": 28,
+   "h": 9,
+   "hr": 2,
+   "avg": ".321",
+   "slg": ".607"
+  },
+  {
+   "batter": "Freddie Freeman",
+   "team": "LAD",
+   "opp_sp": "Aaron Nola",
+   "pa": 86,
+   "ab": 76,
+   "h": 18,
+   "hr": 2,
+   "avg": ".237",
+   "slg": ".368"
+  },
+  {
+   "batter": "Connor Wong",
+   "team": "BOS",
+   "opp_sp": "Kyle Bradish",
+   "pa": 8,
+   "ab": 5,
+   "h": 2,
+   "hr": 1,
+   "avg": ".400",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Daniel Schneemann",
+   "team": "CLE",
+   "opp_sp": "Bailey Ober",
+   "pa": 12,
+   "ab": 11,
+   "h": 5,
+   "hr": 1,
+   "avg": ".455",
+   "slg": ".909"
+  },
+  {
    "batter": "Willy Adames",
    "team": "SF",
    "opp_sp": "Seth Lugo",
@@ -59,37 +147,26 @@
    "slg": ".688"
   },
   {
-   "batter": "Ryan O'Hearn",
-   "team": "PIT",
-   "opp_sp": "Gerrit Cole",
-   "pa": 19,
-   "ab": 19,
+   "batter": "Christian Walker",
+   "team": "HOU",
+   "opp_sp": "Sandy Alcantara",
+   "pa": 15,
+   "ab": 14,
+   "h": 5,
+   "hr": 1,
+   "avg": ".357",
+   "slg": ".643"
+  },
+  {
+   "batter": "Jarren Duran",
+   "team": "BOS",
+   "opp_sp": "Kyle Bradish",
+   "pa": 11,
+   "ab": 11,
    "h": 2,
    "hr": 1,
-   "avg": ".105",
-   "slg": ".316"
-  },
-  {
-   "batter": "Brandon Lowe",
-   "team": "PIT",
-   "opp_sp": "Gerrit Cole",
-   "pa": 36,
-   "ab": 33,
-   "h": 7,
-   "hr": 1,
-   "avg": ".212",
-   "slg": ".303"
-  },
-  {
-   "batter": "Josh Naylor",
-   "team": "SEA",
-   "opp_sp": "Brady Singer",
-   "pa": 28,
-   "ab": 28,
-   "h": 3,
-   "hr": 1,
-   "avg": ".107",
-   "slg": ".250"
+   "avg": ".182",
+   "slg": ".545"
   }
  ]
 }
