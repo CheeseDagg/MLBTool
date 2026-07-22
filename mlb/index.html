@@ -113,12 +113,9 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     <div id="hrBody"><div class="empty">no HR board — run mlb_hr.py (or wait for the daily Action)</div></div>
   </div>
   <div class="card" style="margin-top:14px">
-    <h3>Calibration — the model, graded</h3>
-    <div class="sub">Every published row is settled against the actual box score the next morning.
-    <b>Does 30% behave like 30%?</b> Buckets compare predicted vs actual; lift shows whether each
-    factor earns its keep; the +EV tier is flat-staked at the logged book price. Scratches void
-    (books void them too) — the void-rate grades the lineup layer itself.</div>
-    <div id="hrCal"><div class="empty">grading begins after tonight's games settle — first grades on tomorrow's 9am run</div></div>
+    <h3>Best HR history vs today's starter</h3>
+    <div class="sub">The batters with the most career homers off the pitcher they face today (min <b>6 career PA</b> vs that arm, so a lone 1-for-1 can't top it). History &amp; color — it does <b>not</b> feed the model's HR%.</div>
+    <div id="bvpBody"><div class="empty">no BvP yet — run mlb_bvp.py (writes data/bvp_board.json)</div></div>
   </div>
 </section>
 
@@ -165,13 +162,6 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
 </section>
 
 <section id="method">
-  <div class="card">
-    <h3>Backtest (walk-forward, leak-free)</h3>
-    <div class="sub">Every prediction made only from games before it. This is a <b>read</b>, not a market-beater:
-    closing moneylines hit ~57-60%; this model is validated below that. Its use is understanding matchups
-    and pricing totals — the bettable edge lives in the Edges tab.</div>
-    <div id="btBody"></div>
-  </div>
   <div class="card">
     <h3>What's in the number</h3>
     <div class="sub" style="margin-bottom:0">
@@ -245,6 +235,25 @@ function renderHomers(){
     `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span>${r.plat?` <span class="pill">${r.plat}</span>`:``}${r.heat?` <span class="pill">${r.heat}</span>`:``}${r.pen?` <span class="pill">${r.pen}</span>`:``}${r.brl?` <span class="pill">${r.brl}</span>`:``}</td>
   </tr>`).join('')+`</table>`;
 }
+function renderBvp(){
+  var el=document.getElementById('bvpBody'); if(!el) return;
+  fetch('data/bvp_board.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(bv){
+    if(!bv || !bv.rows || !bv.rows.length){
+      el.innerHTML='<div class="empty">no qualifying BvP history on today\'s slate'+(bv&&bv.min_pa?' (min '+bv.min_pa+' PA vs that starter)':'')+'</div>'; return;
+    }
+    var rows=bv.rows;
+    el.innerHTML='<div class="sub" style="margin-top:2px">'+rows.length+' bats · most career HR vs the arm they face today'+(bv.generated?' · updated '+new Date(bv.generated).toLocaleString():'')+'</div>'+
+      '<table><tr><th>batter</th><th class="hide-m">vs starter</th><th class="num">HR</th><th class="num">PA</th><th class="num hide-m">AVG</th><th class="num">SLG</th></tr>'+
+      rows.map(function(r){return '<tr>'+
+        '<td>'+r.batter+'<br><span class="dim">'+(r.team||'')+'</span></td>'+
+        '<td class="hide-m dim">'+(r.opp_sp||'')+'</td>'+
+        '<td class="num"><b>'+r.hr+'</b></td>'+
+        '<td class="num dim">'+r.pa+'</td>'+
+        '<td class="num hide-m">'+r.avg+'</td>'+
+        '<td class="num"><b>'+r.slg+'</b></td>'+
+      '</tr>';}).join('')+'</table>';
+  }).catch(function(){ el.innerHTML='<div class="empty">could not load data/bvp_board.json — run mlb_bvp.py</div>'; });
+}
 function render(d){
   $('meta').textContent=`updated ${new Date(d.generated).toLocaleString()} · league ${d.league_rpg} r/tm/g · xwOBA for ${d.xwoba_pitchers} pitchers`;
   // slate
@@ -299,12 +308,7 @@ function render(d){
   renderHomers();
   // calibration (+ season backtest side-by-side)
   const cal=d.hr_cal;
-  if(cal && cal.n>0){
-    // pull the season backtest panel so every live row shows its 25k-prediction twin
-    fetch('data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).then(function(BT){
-      renderCal(cal, BT);
-    }).catch(function(){ renderCal(cal, null); });
-  } else if(cal && cal.error){ $('hrCal').innerHTML=`<div class="empty">grader error: ${cal.error}</div>`; }
+  renderBvp();  // BvP list replaces the calibration/backtest/changelog panels
 
   // A gap only means something if it is bigger than the noise in its own sample.
   // se = sqrt(p(1-p)/n); we show the 95% band (2*se) and grade |gap| against it.
@@ -463,7 +467,7 @@ function render(d){
     <td>${r.shop?'<span class="pill" style="color:var(--acc2)">SHOP</span>':''}</td></tr>`).join('')+`</table>`;
   } else if(fu&&fu.note){ $('futBody').innerHTML=`<div class="empty">${fu.note}</div>`; }
   const b=d.backtest;
-  $('btBody').innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
+  var _bt=$('btBody'); if(_bt) _bt.innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
   <tr><td>games predicted</td><td class="num">${b.n}</td></tr>
   <tr><td>accuracy</td><td class="num"><b>${b.acc}%</b> <span class="dim">(home-always ${b.home_base}%)</span></td></tr>
   <tr><td>Brier score</td><td class="num">${b.brier}</td></tr></table>
@@ -477,35 +481,7 @@ fetch('data/slate.json').then(r=>r.json()).then(render)
  .catch(()=>{$('meta').textContent='could not load slate.json — run mlb_publish.py (or wait for the daily Action)';});
 </script>
 
-<!-- SEASON BACKTEST PANEL -->
-<div id="backtestSection" style="display:none;margin-top:10px"></div>
-<script>
-fetch('data/hr_backtest_panel.json',{cache:'no-store'}).then(r=>r.json()).then(function(bt){
-  var el=document.getElementById('backtestSection'); if(!el||!bt||!bt.n) return;
-  function band(rows){return rows.map(function(b){return '<tr><td>'+b.band+'</td><td class="num">'+b.n+'</td><td class="num">'+b.pred+'%</td><td class="num"><b>'+b.actual+'%</b></td></tr>';}).join('');}
-  function bkt(rows){return rows.map(function(b){return '<tr><td>'+b.bucket+'</td><td class="num">'+b.n+'</td><td class="num">'+b.pred+'%</td><td class="num"><b>'+b.actual+'%</b></td></tr>';}).join('');}
-  var a=bt.a_tier, m=bt.multi;
-  el.innerHTML='<div class="card"><h2>Model changelog — what the season audit found, and what we fixed</h2>'+
-    '<div class="sub" style="border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:6px 0"><b>This is a completed audit — every fix below is already LIVE on today\'s board.</b> We replayed the whole season (each prediction using only that morning\'s stats, no hindsight) to see if the numbers were honest and which signals worked. The tables are the BEFORE picture that told us what to change. n='+bt.n+' batter-games across '+bt.dates+' days.</div>'+
-    '<table class="tbl"><tr><th>overall</th><th>bets</th><th>model said</th><th>happened</th></tr>'+
-    '<tr><td>all predictions</td><td class="num">'+bt.n+'</td><td class="num">'+bt.pred_mean+'%</td><td class="num"><b>'+bt.actual+'%</b></td></tr>'+
-    (a?'<tr style="background:var(--hl)"><td><b>Old A-tier (25%+ & heat≥+10)</b><br><span class="note" style="width:auto">heat overlay did NOT carry at scale — see note</span></td><td class="num">'+a.n+'</td><td class="num">'+a.pred+'%</td><td class="num"><b>'+a.actual+'%</b></td></tr>':'')+
-    '</table>'+
-    '<div class="sub" style="margin-top:8px"><b>Heat-magnitude bands</b> — the verdict on the +10 rule:</div>'+
-    '<table class="tbl"><tr><th>heat</th><th>bets</th><th>said</th><th>happened</th></tr>'+band(bt.heat_bands||[])+'</table>'+
-    '<div class="sub" style="margin-top:8px"><b>Calibration buckets</b>:</div>'+
-    '<table class="tbl"><tr><th>predicted</th><th>bets</th><th>said</th><th>happened</th></tr>'+bkt(bt.buckets||[])+'</table>'+
-    (m?'<div class="sub" style="margin-top:8px"><b>Two-homer rate:</b> '+m.two_plus+' of '+m.n+' ('+m.rate+'%) went deep twice.</div>':'')+
-    '<div class="sub" style="border:1px solid var(--acc);border-radius:8px;padding:8px 11px;margin:10px 0"><b style="color:var(--acc)">What the season taught us:</b><br>' +
-    '&bull; We FOUND the model ran <b>hot at the high end</b> — 25%+ predictions happened '+((bt.buckets.find(function(b){return b.bucket==="25-+"})||{}).actual||"?")+'% vs '+((bt.buckets.find(function(b){return b.bucket==="25-+"})||{}).pred||"?")+'% predicted. FIXED: live prices are now <b>recalibrated down</b> at the top — your board ceiling dropped ~33% to ~27%.<br>' +
-    '&bull; We FOUND the <b>+10 heat rule did not survive</b> — heat≥+10 happened '+(bt.heat_bands.find(function(b){return b.band==="+10 or more"})||{}).actual+'% vs '+(bt.heat_bands.find(function(b){return b.band==="+10 or more"})||{}).pred+'% projected, barely above negative-heat. FIXED: heat is now <b>demoted</b> to quarter-weight; A-tier is the 25%+ screen alone.<br>' +
-    '&bull; FIXED — two-homer base rate wired in for combine pricing: <b>'+(bt.multi?bt.multi.rate:"0.7")+'%</b> — price combine markets against this.<br>' +
-    '<span style="opacity:.7">The <i>direction</i> of these fixes is confirmed by 25,128 batter-games. The exact <i>size</i> stays provisional until the live ledger reaches ~300 across a normal stretch — the fixes are in, we are just still tuning magnitude.</span></div>' +
-    '<div class="sub" style="opacity:.6;margin-top:6px">Brier '+bt.brier+' · generated '+(bt.generated||'')+' · weather '+bt.weather+'</div>'+
-    '</div>';
-  el.style.display='';
-}).catch(function(){});
-</script>
+
 
 <script>
 fetch('data/lineshop.json',{cache:'no-store'}).then(r=>r.json()).then(function(ls){
