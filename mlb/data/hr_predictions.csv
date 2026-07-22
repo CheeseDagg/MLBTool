@@ -384,3 +384,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-21,Corbin Carroll,ARI,Jack Perkins,3,card,20.1,+396,,,park +4%,100F (roof: half),LvR +8%,heat -1%
 2026-07-21,Luke Raley,SEA,Chase Burns,6,card,20.1,+397,,,park -4%,86F (roof: half),LvR +8%,heat +4%
 2026-07-21,Michael Harris II,ATL,Walker Buehler,5,card,19.7,+408,,,park +4%,88F · wind in 5,LvR +8%,heat +5%
+2026-07-22,Ben Rice,NYY,Mitch Keller,2,proj,26.2,+282,,,park +14%,81F · wind out 8,LvR +8%,heat +12%
+2026-07-22,Shohei Ohtani,LAD,Aaron Nola,3,proj,25.4,+293,,,park +9%,78F · wind out 5,LvR +8%,heat -0%
+2026-07-22,Kyle Schwarber,PHI,Eric Lauer,2,proj,24.8,+303,,,park +9%,78F · wind out 5,LvL -22%,
+2026-07-22,Ben Rice,NYY,Bubba Chandler,2,proj,24.6,+307,,,park +14%,81F · wind out 8,LvR +8%,heat +10%
+2026-07-22,Esmerlyn Valdez,PIT,Gerrit Cole,8,proj,23.1,+333,,,park +14%,81F · wind out 8,RvR -3%,
+2026-07-22,Hunter Goodman,COL,Cade Cavalli,2,proj,23.1,+332,,,park +9%,78F · wind in 4,RvR -3%,heat +0%
+2026-07-22,Shea Langeliers,ATH,Merrill Kelly,1,proj,22.3,+348,,,park +4%,88F (roof: half),RvR -3%,heat -3%
+2026-07-22,Brandon Lowe,PIT,Gerrit Cole,2,proj,21.9,+356,,,park +14%,81F · wind out 8,LvR +8%,heat -1%
+2026-07-22,Max Muncy,ATH,Merrill Kelly,3,proj,21.7,+362,,,park +4%,88F (roof: half),LvR +8%,heat -9%
+2026-07-22,Yordan Alvarez,HOU,Sandy Alcantara,1,proj,21.6,+362,,,park +3%,82F (roof: half),LvR +8%,heat +5%
+2026-07-22,James Wood,WSN,Gabriel Hughes,1,proj,21.5,+365,,,park +9%,78F · wind in 4,LvR +8%,
+2026-07-22,Esmerlyn Valdez,PIT,Max Fried,8,proj,21.3,+369,,,park +14%,81F · wind out 8,RvL +12%,heat +2%
+2026-07-22,Juan Soto,NYM,Logan Henderson,3,proj,21.2,+372,,,park +9%,67F · wind out 3 (roof: half),LvR +8%,heat +18%
+2026-07-22,Luke Raley,SEA,Brady Singer,6,proj,21.1,+375,,,park -4%,no wx,LvR +8%,heat -0%
+2026-07-22,Dominic Canzone,SEA,Brady Singer,7,proj,20.9,+377,,,park -4%,no wx,LvR +8%,heat +3%
+2026-07-22,Ketel Marte,ARI,Gage Jump,1,proj,20.6,+386,,,park +4%,88F (roof: half),SvL +12%,heat +15%
+2026-07-22,Miguel Vargas,CHW,Tyler Alexander,1,proj,20.6,+385,,,park +2%,95F (roof: half),RvL +12%,heat -6%
+2026-07-22,Willson Contreras,BOS,Dean Kremer,4,proj,20.6,+386,,,park -7%,74F · wind out 8,RvR -3%,heat +3%
+2026-07-22,Byron Buxton,MIN,Slade Cecconi,5,proj,20.5,+387,,,park -3%,65F · wind in 4,RvR -3%,heat +3%
+2026-07-22,Matt Olson,ATL,Michael King,1,proj,20.5,+387,,,park +4%,79F,LvR +8%,heat -6%
+2026-07-22,Paul Goldschmidt,NYY,Mitch Keller,5,proj,20.3,+394,,,park +14%,81F · wind out 8,RvR -3%,heat +0%
+2026-07-22,Trent Grisham,NYY,Mitch Keller,4,proj,20.3,+392,,,park +14%,81F · wind out 8,LvR +8%,heat +1%
+2026-07-22,Freddie Freeman,LAD,Aaron Nola,2,proj,20.2,+394,,,park +9%,78F · wind out 5,LvR +8%,heat -6%
+2026-07-22,Tyler Soderstrom,ATH,Merrill Kelly,2,proj,20.2,+394,,,park +4%,88F (roof: half),LvR +8%,heat -14%
+2026-07-22,Bryce Harper,PHI,Eric Lauer,3,proj,20.1,+397,,,park +9%,78F · wind out 5,LvL -22%,
+2026-07-22,Wilyer Abreu,BOS,Dean Kremer,1,proj,20.1,+398,,,park -7%,74F · wind out 8,LvR +8%,heat -11%
+2026-07-22,Jazz Chisholm Jr.,NYY,Mitch Keller,3,proj,19.8,+405,,,park +14%,81F · wind out 8,LvR +8%,heat +6%
+2026-07-22,Junior Caminero,TBR,Braydon Fisher,1,proj,19.7,+409,,,park +3% [low-conf],64F · wind in 4 (roof: half),RvR -3%,heat -3%
+2026-07-22,Colson Montgomery,CHW,Tyler Alexander,3,proj,19.5,+412,,,park +2%,95F (roof: half),LvL -22%,heat +9%
+2026-07-22,Jake Burger,TEX,Anthony Kay,3,proj,19.5,+412,,,park +2%,95F (roof: half),RvL +12%,heat +2%

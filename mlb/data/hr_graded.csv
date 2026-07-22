@@ -382,3 +382,30 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-21,Esmerlyn Valdez,PIT,Will Warren,8,proj,22.1,+352,,,park +14%,83F · wind out 3,RvR -3%,heat +2%,void,
 2026-07-21,Brandon Lowe,PIT,Will Warren,2,proj,21.4,+367,,,park +14%,83F · wind out 3,LvR +8%,heat -1%,void,
 2026-07-21,Pete Alonso,BAL,Eduardo Rivera *,3,proj,19.6,+410,,,park -7%,81F · wind out 6,RvL +12%,,void,
+2026-07-21,Hunter Goodman,COL,Carson Palmquist,3,card,31.1,+222,,,park +9%,97F · wind out 7,RvL +12%,,hr,1
+2026-07-21,James Wood,WSN,Michael Lorenzen,1,card,26.8,+273,,,park +9%,97F · wind out 7,LvR +8%,heat +1%,void,
+2026-07-21,Mike Trout,LAA,Matthew Liberatore,2,card,22.9,+336,,,park +4%,85F · wind out 7,RvL +12%,heat +7%,no,0
+2026-07-21,Juan Soto,NYM,Brandon Sproat,2,card,22.4,+347,,,park +9%,72F (roof: half),LvR +8%,heat +4%,no,0
+2026-07-21,Munetaka Murakami,CHW,Kumar Rocker,2,card,22.0,+354,,,park +2%,104F (roof: half),LvR +8%,heat +5%,void,
+2026-07-21,Shohei Ohtani,LAD,Zack Wheeler,1,card,21.9,+357,,,park +9%,74F · wind out 4,LvR +8%,heat -3%,no,0
+2026-07-21,Yordan Alvarez,HOU,Tyler Phillips,2,card,21.9,+357,,,park +3%,96F (roof: half),LvR +8%,heat +4%,no,0
+2026-07-21,Byron Buxton,MIN,Parker Messick,2,card,21.6,+363,,,park -3%,75F · wind in 3,RvL +12%,heat +4%,no,0
+2026-07-21,Ketel Marte,ARI,Jack Perkins,1,card,21.5,+366,,,park +4%,100F (roof: half),SvR +8%,heat -0%,void,
+2026-07-21,Shea Langeliers,ATH,Kohl Drake *,3,card,21.4,+368,,,park +4%,100F (roof: half),RvL +12%,,hr,1
+2026-07-21,Matt Olson,ATL,Walker Buehler,3,card,21.3,+370,,,park +4%,88F · wind in 5,LvR +8%,heat +6%,no,0
+2026-07-21,Mickey Moniak,COL,Carson Palmquist,7,card,21.3,+370,,,park +9%,97F · wind out 7,LvL -22%,,hr,1
+2026-07-21,CJ Abrams,WSN,Michael Lorenzen,4,card,21.2,+371,,,park +9%,97F · wind out 7,LvR +8%,heat +2%,void,
+2026-07-21,Drake Baldwin,ATL,Walker Buehler,1,card,21.2,+372,,,park +4%,88F · wind in 5,LvR +8%,heat -1%,no,0
+2026-07-21,Zach Neto,LAA,Matthew Liberatore,1,card,21.0,+376,,,park +4%,85F · wind out 7,RvL +12%,heat +14%,no,0
+2026-07-21,Kyle Schwarber,PHI,Justin Wrobleski,2,card,20.9,+379,,,park +9%,74F · wind out 4,LvL -22%,heat +10%,no,0
+2026-07-21,Dominic Canzone,SEA,Chase Burns,3,card,20.7,+384,,,park -4%,86F (roof: half),LvR +8%,heat +7%,no,0
+2026-07-21,Miguel Vargas,CHW,Kumar Rocker,3,card,20.7,+383,,,park +2%,104F (roof: half),RvR -3%,heat -3%,void,
+2026-07-21,Jordan Walker,STL,Walbert Ureña *,4,card,20.5,+387,,,park +4%,85F · wind out 7,RvR -3%,heat +6%,no,0
+2026-07-21,Jose Siri,LAA,Matthew Liberatore,8,card,20.5,+387,,,park +4%,85F · wind out 7,RvL +12%,heat +5%,no,0
+2026-07-21,Luis García Jr.,WSN,Michael Lorenzen,2,card,20.4,+389,,,park +9%,97F · wind out 7,LvR +8%,heat +2%,void,
+2026-07-21,Max Muncy,LAD,Zack Wheeler,4,card,20.3,+392,,,park +9%,74F · wind out 4,LvR +8%,,hr,1
+2026-07-21,Curtis Mead,WSN,Michael Lorenzen,5,card,20.2,+396,,,park +9%,97F · wind out 7,RvR -3%,heat +1%,void,
+2026-07-21,Junior Caminero,TBR,Kevin Gausman,3,card,20.2,+395,,,park +3% [low-conf],70F (roof: half),RvR -3%,heat -3%,void,
+2026-07-21,Corbin Carroll,ARI,Jack Perkins,3,card,20.1,+396,,,park +4%,100F (roof: half),LvR +8%,heat -1%,void,
+2026-07-21,Luke Raley,SEA,Chase Burns,6,card,20.1,+397,,,park -4%,86F (roof: half),LvR +8%,heat +4%,no,0
+2026-07-21,Michael Harris II,ATL,Walker Buehler,5,card,19.7,+408,,,park +4%,88F · wind in 5,LvR +8%,heat +5%,no,0
