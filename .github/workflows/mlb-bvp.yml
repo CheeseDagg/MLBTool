@@ -1,0 +1,37 @@
+name: MLB BvP
+# Builds the "Best HR history vs today's starter" list — career HR for each team's
+# batters vs the opposing probable starter — and commits mlb/data/bvp_board.json.
+# Pure MLB StatsAPI: no API key, no pip installs. Uses the posted lineup when the
+# card is up and the team's active roster when it isn't, so nobody gets missed.
+# Set up once; you never run or upload this file again.
+on:
+  schedule:
+    - cron: "15 17,20,23 * * *"   # ~1pm / 4pm / 7pm ET — refreshes as lineups post through the day
+  workflow_dispatch: {}            # a "Run workflow" button for on-demand rebuilds
+permissions:
+  contents: write
+jobs:
+  bvp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Build BvP board
+        working-directory: mlb
+        run: |
+          python mlb_bvp.py --selftest
+          python mlb_bvp.py
+      - name: Commit (rebase-safe against the other workflows)
+        run: |
+          git config user.name mlb-bot
+          git config user.email mlb-bot@users.noreply.github.com
+          git add mlb/data/bvp_board.json || true
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "BvP refresh"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && { echo "pushed"; exit 0; }
+            echo "push race — retry $i"; sleep 3
+          done
+          echo "push failed after 5 retries"; exit 1
