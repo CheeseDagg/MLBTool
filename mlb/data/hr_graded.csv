@@ -421,3 +421,14 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-22,Jazz Chisholm Jr.,NYY,Mitch Keller,3,proj,20.5,+387,,,park +14%,90F · wind out 10,LvR +8%,heat +6%,no,0
 2026-07-22,Paul Goldschmidt,NYY,Bubba Chandler,5,proj,20.3,+393,,,park +14%,90F · wind out 10,RvR -3%,heat +2%,no,0
 2026-07-22,Trent Grisham,NYY,Bubba Chandler,4,proj,20.3,+393,,,park +14%,90F · wind out 10,LvR +8%,heat -3%,no,0
+2026-07-22,Hunter Goodman,COL,Cade Cavalli,3,card,24.2,+314,,,park +9%,84F,RvR -3%,heat +0%,no,0
+2026-07-22,Max Muncy,LAD,Aaron Nola,4,card,22.6,+343,,,park +9%,82F · wind out 4,LvR +8%,heat -10%,void,
+2026-07-22,Shea Langeliers,ATH,Merrill Kelly,3,card,22.5,+345,,,park +4%,104F (roof: half),RvR -3%,heat -3%,no,0
+2026-07-22,Dominic Canzone,SEA,Brady Singer,3,card,22.1,+353,,,park -4%,88F (roof: half),LvR +8%,heat +3%,no,0
+2026-07-22,Mickey Moniak,COL,Cade Cavalli,2,card,21.8,+359,,,park +9%,84F,LvR +8%,heat +4%,no,0
+2026-07-22,Luke Raley,SEA,Brady Singer,7,card,21.4,+368,,,park -4%,88F (roof: half),LvR +8%,heat -0%,no,0
+2026-07-22,Nelson Velázquez,STL,Reid Detmers,5,card,21.2,+373,,,park +4%,87F · wind out 7,RvL +12%,,no,0
+2026-07-22,Jordan Walker,STL,Reid Detmers,3,card,20.9,+379,,,park +4%,87F · wind out 7,RvL +12%,heat +9%,no,0
+2026-07-22,Ketel Marte,ARI,Gage Jump,1,card,20.9,+378,,,park +4%,104F (roof: half),SvL +12%,heat +15%,void,
+2026-07-22,Mike Trout,LAA,Hunter Dobbins,2,card,20.9,+379,,,park +4%,87F · wind out 7,RvR -3%,heat -0%,no,0
+2026-07-22,Tyler Soderstrom,ATH,Merrill Kelly,2,card,20.6,+387,,,park +4%,104F (roof: half),LvR +8%,heat -14%,no,0
