@@ -226,6 +226,70 @@ def calibrate_pct(p_pct):
     slope = (y1 - y0) / (x1 - x0) if x1 > x0 else 1.0
     return y1 + slope * (p_pct - x1)
 
+# ---- "spot" READABILITY layer (NOT a probability change) -------------------
+# The board is calibrated by park (verified on the 25k-prediction backtest: high-HR
+# parks project 12.0% -> 11.7% actual, gap -0.3, inside 2SE). So a bat like a Coors
+# regular CORRECTLY sits near the top every home game -- which makes the board hard
+# to READ day to day: is today special for him, or just his floor? This tags each
+# bat by today's HR% vs its OWN recent median so standout days (soft SP, wind out,
+# good platoon) separate from the perennial floor. Display only; hr_pct/fair untouched.
+SPOT_K, SPOT_MIN = 8, 3                    # look-back games; min history to fire
+SPOT_STANDOUT, SPOT_FLOOR = 3.0, -2.0      # pts above/below own median
+
+def _spot_median(xs):
+    s = sorted(xs); n = len(s); m = n // 2
+    return s[m] if n % 2 else (s[m - 1] + s[m]) / 2.0
+
+def _spot_history(plog_path, today):
+    """{player: [most-recent-first HR% ...][:SPOT_K]} from the prediction log,
+    excluding today. Pure stdlib; fails soft to {}."""
+    import csv
+    hist = {}
+    if not os.path.exists(plog_path):
+        return hist
+    try:
+        with open(plog_path) as f:
+            for r in csv.DictReader(f):
+                if r.get("date") == today:
+                    continue
+                try:
+                    v = float(r["hr_pct"])
+                except (KeyError, ValueError, TypeError):
+                    continue
+                hist.setdefault(r["player"], []).append((r.get("date", ""), v))
+    except Exception:
+        return {}
+    return {pl: [v for _, v in sorted(x, reverse=True)][:SPOT_K] for pl, x in hist.items()}
+
+def annotate_spots(rows, plog_path, today):
+    """Add base_self / edge_self / spot to each row. edge_self = today - own median.
+    spot in {STANDOUT, floor, "", new}. Never touches hr_pct."""
+    hist = _spot_history(plog_path, today)
+    for r in rows:
+        vals = hist.get(r["player"], [])
+        if len(vals) < SPOT_MIN:
+            r["base_self"], r["edge_self"], r["spot"] = None, None, "new"
+            continue
+        base = _spot_median(vals)
+        d = round(r["hr_pct"] - base, 1)
+        r["base_self"] = round(base, 1)
+        r["edge_self"] = d
+        r["spot"] = "STANDOUT" if d >= SPOT_STANDOUT else ("floor" if d <= SPOT_FLOOR else "")
+    return rows
+
+def print_spotlight(rows, n=8):
+    """Console leaderboard of today's biggest movers vs their own norm."""
+    scored = sorted((r for r in rows if r.get("edge_self") is not None),
+                    key=lambda r: -r["edge_self"])
+    hits = [r for r in scored[:n] if r["edge_self"] >= SPOT_STANDOUT]
+    if not hits:
+        print("   spotlight: no bats meaningfully above their own norm today")
+        return
+    print("   SPOTLIGHT - elevated vs own recent norm (readability, not a price):")
+    for r in hits:
+        print(f"     +{r['edge_self']:.1f} over own {r['base_self']:.0f}%   "
+              f"{r['player']:<22} {r['hr_pct']:.1f}%   ({r.get('opp_sp','')}, {r.get('park','')})")
+
 # Heat DEMOTED. Over 7,824 heat>=+10 predictions the factor UNDERperformed its own
 # projection (said 16.1%, happened 14.2%) and barely beat negative-heat (9.3%). It was
 # adding to the hot bias, not signal. Shrink its deviation-from-1 toward neutral until a
@@ -1356,9 +1420,11 @@ def _build():
         print(f"   Marcel talent: not available ({type(_e).__name__}) — using single-season base")
     rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None, marcel=marcel)
     rows = select_rows(rows, have_ev)
+    annotate_spots(rows, os.path.join(DATA, "hr_predictions.csv"), dt.date.today().isoformat())
     _mrc = sum(1 for r in rows if r.get("b_src")=="mrc")
     print(f"   base: {_mrc}/{len(rows)} rows using Marcel talent, rest single-season fallback")
     print(f"   board rows built: {len(rows)}")
+    print_spotlight(rows)
     if not rows:
         note = (f"BOARD EMPTY — team labels in {bsrc} data didn't map to schedule teams. "
                 f"Sample labels: {', '.join(tkeys[:10])} · fix TEAM_MAP/resolver in mlb_hr.py")
@@ -1385,7 +1451,7 @@ def _build():
         import csv
         plog = os.path.join(DATA, "hr_predictions.csv")
         today = dt.date.today().isoformat()
-        hdr = ["date","player","team","opp_sp","slot","lu","hr_pct","fair","book_price","ev_pct","park","temp","plat","heat"]
+        hdr = ["date","player","team","opp_sp","slot","lu","hr_pct","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
         old_rows = []
         if os.path.exists(plog):
             with open(plog) as f:
@@ -1399,7 +1465,9 @@ def _build():
                             "hr_pct": r["hr_pct"], "fair": r["fair"],
                             "book_price": r.get("book_price",""), "ev_pct": r.get("ev_pct",""),
                             "park": r["park"], "temp": r["temp"], "plat": r.get("plat",""),
-                            "heat": r.get("heat","")})
+                            "heat": r.get("heat",""),
+                            "edge_self": ("" if r.get("edge_self") is None else r.get("edge_self")),
+                            "spot": r.get("spot","")})
         print(f"   prediction log: {len(rows)} rows for {today} ({len(old_rows)} historical kept)")
     except Exception as e:
         print(f"   prediction log skipped: {type(e).__name__}")
