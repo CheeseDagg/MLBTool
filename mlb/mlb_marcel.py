@@ -54,7 +54,7 @@ def marcel_hrpa(seasons, age, lg_hrpa=LG_HRPA_DEFAULT):
     num = den = wpa = 0.0
     for i, s in enumerate(qual):
         w = WEIGHTS[i]
-        pa = int(s["pa"]); hr = int(s["hr"])
+        pa = int(s.get("pa", 0) or 0); hr = int(s.get("hr", 0) or 0)
         cw = w * pa
         num += cw * (hr / pa)     # weighted HR rate contribution
         den += cw

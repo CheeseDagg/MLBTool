@@ -83,7 +83,11 @@ def main():
     try:
         fairs = load_board_fairs()
     except Exception as e:
-        print(f"board load failed ({type(e).__name__}); aborting"); return
+        # write an empty-but-valid file (like the events-fail path) so the dashboard shows
+        # "no plays" instead of silently keeping the PREVIOUS run's odds as if fresh.
+        json.dump({"generated": ts, "plays": [], "note": f"board load failed: {type(e).__name__}"},
+                  open(os.path.join(DATA, "lineshop.json"), "w"), indent=1)
+        print(f"board load failed ({type(e).__name__}); wrote empty lineshop.json"); return
     print(f"board fair probs: {len(fairs)} players")
 
     analyses = []

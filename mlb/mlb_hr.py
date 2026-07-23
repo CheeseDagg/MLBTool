@@ -799,9 +799,19 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 # BASE: Marcel multi-year talent (5/4/3, regressed, age-adjusted) blended
                 # with this season's line — the pro approach — else the legacy shrink estimate.
                 mt = (marcel or {}).get(norm(b["name"])) if marcel else None
+                # CURRENT-SEASON line: prefer whichever source has seen more PA. `b` is pulled
+                # fresh today; mt["cur_*"] is the snapshot baked into marcel_talent.json, which
+                # FREEZES if the Marcel Action lags. Taking the higher-PA (fresher) line means
+                # recent homers actually move the number. When the snapshot is current (>= live
+                # PA) it wins, so the walk-forward-validated in-sync behavior is unchanged.
+                _snap_hr = (mt.get("cur_hr", 0) if mt else 0) or 0
+                _snap_pa = (mt.get("cur_pa", 0) if mt else 0) or 0
+                _live_hr = (b.get("hr", 0)) or 0
+                _live_pa = (b.get("pa", 0)) or 0
+                _cur_hr, _cur_pa = ((_live_hr, _live_pa) if _live_pa > _snap_pa
+                                    else (_snap_hr, _snap_pa))
                 if mt and mt.get("marcel"):
-                    base = _mc.blend_with_current(mt["marcel"], mt.get("cur_hr", 0),
-                                                  mt.get("cur_pa", 0), lg_hrpa=Lb, k=200)
+                    base = _mc.blend_with_current(mt["marcel"], _cur_hr, _cur_pa, lg_hrpa=Lb, k=200)
                     b_src = "mrc"
                 else:
                     base = (b["hr"] + K_BAT * Lb) / (b["pa"] + K_BAT)
@@ -833,8 +843,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 # because the walk-forward test shows the talent prior + factor stack is
                 # systematically overconfident vs current-season reality. Display tag: szn.
                 szn_tag = ""
-                _chr = (mt.get("cur_hr", 0) if mt else b.get("hr", 0)) or 0
-                _cpa = (mt.get("cur_pa", 0) if mt else b.get("pa", 0)) or 0
+                _chr, _cpa = _cur_hr, _cur_pa      # fresher-of-(live, snapshot), computed above
                 if _cpa >= SEASON_MIN_PA:
                     # enough season sample: anchor toward the bat's own context-free
                     # CURRENT-SEASON rate (validated blend — unchanged).

@@ -46,7 +46,16 @@ def pull():
     print(f"   -> saved mlb_odds.csv  ({len(rows)} lines across {len(books)} books: {books})")
 
 if __name__ == "__main__":
-    try: pull()
+    try:
+        pull()
     except Exception as e:
+        # Don't leave the PREVIOUS pull's prices on disk to be Kelly-sized as fresh — clear
+        # to a header-only file so mlb_edge sees no games this cycle instead of stale ones.
+        try:
+            with open(os.path.join(DATA_DIR, "mlb_odds.csv"), "w", newline="") as f:
+                csv.DictWriter(f, fieldnames=["game_id","commence","home","away","book","home_ml","away_ml"]).writeheader()
+            print("cleared mlb_odds.csv (removed stale prices after pull failure)")
+        except Exception:
+            pass
         print(f"FAILED: {type(e).__name__}: {e}")
         print("If 401: key is wrong/inactive. If 429: out of monthly requests.")

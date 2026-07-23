@@ -129,8 +129,12 @@ def _team_eq(box_abbr, want_tm):
     if a == b: return True
     return any(a in alts and b in alts for alts in FG_ALIASES.values())
 
-def settle_row(row, games):
-    """-> 'hr' | 'no' | 'void' | 'pending' (pending = team not found in finals)"""
+def settle_row(row, games, all_final=True):
+    """-> 'hr' | 'no' | 'void' | 'pending' (pending = team not found in finals).
+
+    all_final: whether every game on the slate is Final. Used to resolve doubleheaders
+    safely — while games are still live, a row whose starter matches no available box is
+    most likely game 2 that hasn't posted yet (pending), not a phantom (void)."""
     pn = norm(row.get("player",""))
     want_sp = norm((row.get("opp_sp","") or "").replace(" *","").replace("TBD",""))
     want_tm = (row.get("team","") or "").strip().upper()
@@ -147,11 +151,20 @@ def settle_row(row, games):
         if m2: cands = m2
         elif len({t.get("abbr","") for t in cands}) >= 1 and all(t.get("abbr") for t in cands):
             return "void"
-    if len(cands) > 1 and want_sp:                 # doubleheader: match by starter
-        m = [t for t in cands if t["opp_sp"] == want_sp]
-        if len(m) == 1: cands = m
-        elif not m:     return "void"              # row's game unidentifiable
-        else:           cands = m[:1]
+    if want_sp:                                    # identify the row's game by its starter
+        m = [t for t in cands if t.get("opp_sp") and t["opp_sp"] == want_sp]
+        if m:
+            cands = m[:1]
+        elif len(cands) > 1:
+            # doubleheader with multiple final boxes but none matches the row's starter ->
+            # the row's game is unidentifiable (or not final yet)
+            return "void" if all_final else "pending"
+        elif not all_final:
+            # ONE box, it doesn't match the row's starter, and games are still live: this is
+            # most likely game 2 of a doubleheader that hasn't posted — do NOT settle the row
+            # against game 1's box. Once the slate is fully final, trust the single box below
+            # (its opp_sp text may just differ in formatting).
+            return "pending"
     t = cands[0]
     b = t["bat"][pn]
     if b["pa"] <= 0: return "void"
@@ -316,7 +329,7 @@ def grade_all():
             print(f"  {d}: results fetch failed ({type(e).__name__}) — retry next run"); continue
         settled = 0
         for r in rows:
-            o = settle_row(r, games)
+            o = settle_row(r, games, _fin)
             o, hn = o if isinstance(o, tuple) else (o, "")
             if o == "pending": continue
             rec = {k: r.get(k,"") for k in GCOLS[:-2]}
@@ -367,6 +380,16 @@ def selftest():
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter One"), G2)[0] == "hr"
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter Two"), G2) == ("no", 0)
     assert settle_row(row(player="Jake Bauers", opp_sp="Starter Three"), G2) == "void"
+    # PARTIAL DOUBLEHEADER: only game 1 is final (one box). The game-2 row (starter two)
+    # must NOT settle against game 1's box while games are live — it stays pending.
+    G_dh = [{"teams": {"Houston Astros": {"opp_sp": "starter one", "abbr": "HOU",
+              "bat": {norm("Dh Bat"): {"pa": 4, "hr": 1}}}}}]
+    assert settle_row(row(player="Dh Bat", opp_sp="Starter Two", team="HOU"), G_dh, all_final=False) == "pending", \
+        "game-2 row must not grade against game-1 box while games are live"
+    assert settle_row(row(player="Dh Bat", opp_sp="Starter One", team="HOU"), G_dh, all_final=False)[0] == "hr", \
+        "game-1 row still settles against its own box"
+    # once the slate is fully final, a single unmatched box is trusted (ordinary single game)
+    assert settle_row(row(player="Dh Bat", opp_sp="Weird Format", team="HOU"), G_dh, all_final=True)[0] == "hr"
     # duplicate-name phantom: row claims a team whose box the player isn't in -> void
     G3 = [{"teams": {"New York Yankees": {"opp_sp": "x", "abbr": "NYY",
             "bat": {"ben rice": {"pa": 4, "hr": 1}}}}}]

@@ -117,11 +117,20 @@ def load_xwoba(path="data/pitcher_xstats.csv"):
     predictions only (clean for future games); NOT used in the leak-free backtest."""
     import os
     if not os.path.exists(path): return {}
-    x = pd.read_csv(path); nc = [c for c in x.columns if "last_name" in c][0]
+    x = pd.read_csv(path)
+    ncs = [c for c in x.columns if "last_name" in c]
+    # Empty/header-only pull (Savant returned 0 rows) or a schema-drifted export must
+    # degrade to "no xwOBA layer" (predict_live falls back to team defense), NOT crash
+    # the whole publish run on a ZeroDivision/IndexError.
+    if x.empty or not ncs or "est_woba" not in x.columns or "pa" not in x.columns:
+        return {}
+    nc = ncs[0]
     def flip(v):
         v=str(v); return (v.split(",",1)[1].strip()+" "+v.split(",",1)[0].strip()) if "," in v else v.strip()
     x["full"]=x[nc].map(flip)
-    lg=(x["est_woba"]*x["pa"]).sum()/x["pa"].sum(); Kpa=100
+    denom = x["pa"].sum()
+    if denom <= 0: return {}
+    lg=(x["est_woba"]*x["pa"]).sum()/denom; Kpa=100
     return {r["full"]: 1+((r["est_woba"]/lg)-1)*(r["pa"]/(r["pa"]+Kpa)) for _,r in x.iterrows()}
 
 def predict_live(m, home, away, home_sp, away_sp, xw):

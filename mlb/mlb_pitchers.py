@@ -29,7 +29,11 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 
-def pull_game_starters(start="03/01/2026", end=None):
+def pull_game_starters(start=None, end=None):
+    # Default to March 1 of the CURRENT season (not a hardcoded year) so next season
+    # doesn't silently span two years of games into one file.
+    if start is None:
+        start = f"03/01/{dt.date.today().year}"
     if end is None:
         end = dt.date.today().strftime("%m/%d/%Y")
     print(f"[game starters] {start} -> {end}")
@@ -61,6 +65,15 @@ def pull_game_starters(start="03/01/2026", end=None):
         cur = nxt
 
     df = pd.DataFrame(rows)
+    if df.empty:
+        # every monthly pull failed (transient statsapi outage) — write an empty but
+        # well-formed file instead of KeyError-crashing on df["home_score"].
+        print("\n   total rows: 0 — all monthly pulls failed; writing empty game_starters.csv")
+        path = os.path.join(DATA_DIR, "game_starters.csv")
+        pd.DataFrame(columns=["date","away","home","away_SP","home_SP",
+                              "away_score","home_score","status"]).to_csv(path, index=False)
+        print(f"   -> saved game_starters.csv (empty)")
+        return path
     # keep only completed games with a real score and both starters known
     have_score = df["home_score"].notna() & df["away_score"].notna()
     print(f"\n   total rows: {len(df)}  |  with final score: {int(have_score.sum())}")

@@ -203,6 +203,15 @@ def main():
     panel["season_start"] = SEASON_START.isoformat()
     json.dump(panel, open(os.path.join(DATA, "hr_backtest_panel.json"), "w"), indent=1)
     json.dump(panel_m, open(os.path.join(DATA, "hr_backtest_marcel.json"), "w"), indent=1)
+    # No graded rows yet (ran before opening day, or day-1 statsapi failure) -> summarize()
+    # returns no 'brier'/'actual'. Degrade gracefully instead of KeyError-crashing.
+    if "brier" not in panel or "brier" not in panel_m:
+        cmp = {"note": "no graded rows yet - head-to-head skipped",
+               "legacy_n": panel.get("n", 0), "marcel_n": panel_m.get("n", 0),
+               "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")}
+        json.dump(cmp, open(os.path.join(DATA, "hr_backtest_compare.json"), "w"), indent=1)
+        print("no graded rows yet - head-to-head comparison skipped")
+        return
     # HEAD-TO-HEAD: lower Brier = sharper; compare high-end calibration gap
     def hi_gap(p):
         b = next((x for x in p.get("buckets",[]) if x["bucket"]=="25-+"), None)
