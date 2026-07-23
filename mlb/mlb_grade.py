@@ -30,7 +30,7 @@ import urllib.request, urllib.parse
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 PLOG = os.path.join(DATA, "hr_predictions.csv")
 GRADED = os.path.join(DATA, "hr_graded.csv")
-GCOLS = ["date","player","team","opp_sp","slot","lu","hr_pct","fair",
+GCOLS = ["date","player","team","opp_sp","slot","lu","hr_pct","hr_raw","fair",
          "book_price","ev_pct","park","temp","plat","heat","outcome","hr_n"]
 
 def migrate_graded():

@@ -82,12 +82,15 @@ def consensus_prob(book_prices_over, book_prices_under=None):
     if not probs: return None
     return sum(probs) / len(probs)
 
-def analyze_player(name, fair_prob, book_over, book_under=None, stale_mult=1.6):
-    """Full line-shop analysis for one player's HR prop.
+def analyze_player(name, fair_prob, book_over, book_under=None, stale_mult=1.6, push_prob=0.0):
+    """Full line-shop analysis for one player's prop.
 
-    fair_prob : our Marcel-calibrated P(homer) — the trustworthy fair number.
+    fair_prob : our model P(over wins) — the trustworthy fair number.
     book_over : {book: american} best-available over prices per book.
     book_under: {book: american} unders (enables per-book devig + consensus).
+    push_prob : P(exact push) on a whole-number line (K props). A push RETURNS the
+                stake, so EV = fair*dec - 1 + push_prob; without this term a whole-line
+                over's EV is understated by the full push mass (HR props: 0, no change).
 
     Returns a dict with best line, edge vs fair, edge vs consensus, and flags.
     """
@@ -96,12 +99,12 @@ def analyze_player(name, fair_prob, book_over, book_under=None, stale_mult=1.6):
         return None
     best_book, best_am, best_dec = bl
 
-    # 1) EDGE vs our fair number: EV per $1 = fair_prob * decimal - 1
-    ev_fair = fair_prob * best_dec - 1.0
+    # 1) EDGE vs our fair number: EV per $1 = fair_prob*decimal - 1 + push (stake returned on a push)
+    ev_fair = fair_prob * best_dec - 1.0 + push_prob
 
     # 2) CONSENSUS (vig-free true-prob estimate) and edge vs it
     cons = consensus_prob(book_over, book_under)
-    ev_cons = (cons * best_dec - 1.0) if cons is not None else None
+    ev_cons = (cons * best_dec - 1.0 + push_prob) if cons is not None else None
 
     # 3) LINE-SHOP VALUE: how much the best price beats the field (in implied-prob pts)
     field_probs = [american_to_prob(a) for a in book_over.values() if a is not None]
@@ -232,7 +235,15 @@ def selftest():
     # every play is genuinely +EV
     assert all(p["conservative_ev_pct"] > 0 for p in plays)
 
-    print("LINESHOP SELFTEST PASS — devig/best-line/fair-EV/consensus/stale/rank all exact")
+    # --- PUSH MASS: a whole-number K line returns the stake on a push, so the over's EV
+    #     is fair*dec - 1 + push. Without the term it's understated by the full push mass. ---
+    ap = analyze_player("Ace O7", fair_prob=0.46, book_over={"dk": +100}, push_prob=0.15)
+    an = analyze_player("Ace O7", fair_prob=0.46, book_over={"dk": +100}, push_prob=0.0)
+    # dec=2.0: with push .46*2-1+.15 = +.07 ; without = -.08  -> understated by exactly push*100
+    assert abs(ap["ev_vs_fair_pct"] - 7.0) < 0.1, ap["ev_vs_fair_pct"]
+    assert abs(an["ev_vs_fair_pct"] - (-8.0)) < 0.1, an["ev_vs_fair_pct"]
+    assert abs((ap["ev_vs_fair_pct"] - an["ev_vs_fair_pct"]) - 15.0) < 0.1
+    print("LINESHOP SELFTEST PASS — devig/best-line/fair-EV/consensus/stale/rank/push all exact")
     return 0
 
 

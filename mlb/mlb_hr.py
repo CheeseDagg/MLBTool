@@ -851,6 +851,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 if p_game > 0 and abs(_blend / p_game - 1) >= 0.05:
                     szn_tag = f"szn {'+' if _blend > p_game else ''}{(_blend/p_game-1)*100:.0f}%"
                 p_game = _blend
+                _raw_pct = round(p_game * 100, 1)               # pre-calibration % (leak-free recalib input)
                 p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
                 row = {
@@ -859,6 +860,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     "opp_sp": sp_disp + ("" if matched else " *"),
                     "venue": g["venue"], "slot": slot,
                     "hr_pct": round(p_game * 100, 1),
+                    "hr_raw": _raw_pct,
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
                     "sp_fac": round(fac, 2), "sp_small": bool(matched and pit_bf.get(norm(opp_sp_name or ""), 999) < 60), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "szn": szn_tag, "lu": ("card" if cards.get(team_full) else "proj"), "b_src": b_src,
@@ -1479,7 +1481,7 @@ def _build():
         import csv
         plog = os.path.join(DATA, "hr_predictions.csv")
         today = dt.date.today().isoformat()
-        hdr = ["date","player","team","opp_sp","slot","lu","hr_pct","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
+        hdr = ["date","player","team","opp_sp","slot","lu","hr_pct","hr_raw","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
         old_rows = []
         if os.path.exists(plog):
             with open(plog) as f:
@@ -1490,7 +1492,7 @@ def _build():
             for r in rows:
                 w.writerow({"date": today, "player": r["player"], "team": r["team"],
                             "opp_sp": r["opp_sp"], "slot": r["slot"], "lu": r.get("lu",""),
-                            "hr_pct": r["hr_pct"], "fair": r["fair"],
+                            "hr_pct": r["hr_pct"], "hr_raw": r.get("hr_raw",""), "fair": r["fair"],
                             "book_price": r.get("book_price",""), "ev_pct": r.get("ev_pct",""),
                             "park": r["park"], "temp": r["temp"], "plat": r.get("plat",""),
                             "heat": r.get("heat",""),

@@ -63,24 +63,35 @@ def active_hitters(season):
         time.sleep(0.15)
     return out
 
+def collapse_seasons(splits):
+    """statsapi yearByYear returns ONE split PER TEAM per season, so a player traded
+    mid-year appears as multiple same-year stints. Sum them into a single row per
+    season — otherwise a deadline trade is counted as two separate seasons, which
+    double-weights that year in Marcel's 5/4/3 window (and pushes a real prior season
+    out), and the current-season capture below sees only one stint. Idempotent when
+    statsapi already returns one row per season. Returns most-recent-first."""
+    by_year = {}
+    for s in splits:
+        st = s.get("stat", {}) or {}
+        yr = s.get("season")
+        pa = st.get("plateAppearances")
+        hr = st.get("homeRuns")
+        if yr is None or pa is None or hr is None:
+            continue
+        y = int(yr)
+        e = by_year.setdefault(y, {"year": y, "hr": 0, "pa": 0})
+        e["hr"] += int(hr); e["pa"] += int(pa)
+    return sorted(by_year.values(), key=lambda r: -r["year"])
+
 def year_by_year(pid):
-    """[{year, hr, pa}] most-recent-first from statsapi yearByYear hitting."""
+    """[{year, hr, pa}] most-recent-first from statsapi yearByYear hitting, with
+    same-year (traded-player) stints summed per season."""
     try:
         d = _get(f"{API}/people/{pid}/stats?stats=yearByYear&group=hitting")
         splits = d.get("stats", [{}])[0].get("splits", [])
     except Exception:
         return []
-    rows = []
-    for s in splits:
-        st = s.get("stat", {})
-        yr = s.get("season")
-        pa = st.get("plateAppearances")
-        hr = st.get("homeRuns")
-        if yr and pa is not None and hr is not None:
-            rows.append({"year": int(yr), "hr": int(hr), "pa": int(pa)})
-    # most-recent-first
-    rows.sort(key=lambda r: -r["year"])
-    return rows
+    return collapse_seasons(splits)
 
 def player_age(pid, season):
     try:
@@ -139,5 +150,29 @@ def main():
     for nm, p in top:
         print(f"  {nm:<24} {p['marcel']:.4f}  (age {p['age']}, {p['seasons']} seasons)")
 
+def selftest():
+    # traded mid-2025 (two team stints) + full 2024 + traded 2023 (two stints).
+    splits = [
+        {"season": "2025", "stat": {"plateAppearances": 300, "homeRuns": 12}},  # team A
+        {"season": "2025", "stat": {"plateAppearances": 320, "homeRuns": 16}},  # team B (traded)
+        {"season": "2024", "stat": {"plateAppearances": 640, "homeRuns": 30}},
+        {"season": "2023", "stat": {"plateAppearances": 250, "homeRuns": 9}},   # team A
+        {"season": "2023", "stat": {"plateAppearances": 300, "homeRuns": 11}},  # team B (traded)
+    ]
+    rows = collapse_seasons(splits)
+    assert [r["year"] for r in rows] == [2025, 2024, 2023], rows           # one row per season
+    assert rows[0] == {"year": 2025, "hr": 28, "pa": 620}, rows[0]         # 2025 stints summed
+    assert rows[2] == {"year": 2023, "hr": 20, "pa": 550}, rows[2]         # 2023 stints summed
+    # malformed / null-stat splits are dropped, not crashed on
+    assert collapse_seasons([{"season": None, "stat": {}}, {"season": "2022", "stat": {}}]) == []
+    # idempotent when statsapi already returns one row per season
+    one = [{"season": "2025", "stat": {"plateAppearances": 500, "homeRuns": 25}}]
+    assert collapse_seasons(one) == [{"year": 2025, "hr": 25, "pa": 500}]
+    print("MARCEL-RUN SELFTEST PASS — traded-player same-year stints summed; malformed dropped; idempotent")
+    return 0
+
 if __name__ == "__main__":
+    import sys
+    if "--selftest" in sys.argv:
+        sys.exit(selftest())
     main()

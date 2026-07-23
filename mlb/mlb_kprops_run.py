@@ -210,20 +210,20 @@ def main():
                 code = getattr(e, "code", None) or type(e).__name__
                 err_counts[str(code)] = err_counts.get(str(code), 0) + 1
                 continue
+            import mlb_kprops as _kp
             for (pn, line), sides in odds.items():
                 fairs = fair_by_pitcher.get(pn)
                 if not fairs: continue
+                lam = next((c["lam"] for c in board if norm(c["pitcher"])==pn), None)
+                if lam is None: continue
                 # model P(over) at the book's exact line (interpolate ladder if needed)
-                if line in fairs:
-                    fp = fairs[line]
-                else:
-                    import mlb_kprops as _kp
-                    lam = next((c["lam"] for c in board if norm(c["pitcher"])==pn), None)
-                    if lam is None: continue
-                    fp = _kp.p_over(line, lam)
+                fp = fairs[line] if line in fairs else _kp.p_over(line, lam)
+                # whole-number lines can push (K == line): the stake is returned, so the
+                # over's EV must credit the push mass instead of counting it as a loss.
+                push = _kp.p_push(line, lam)
                 over, under = sides.get("over", {}), sides.get("under", {})
                 if not over: continue
-                a = LS.analyze_player(f"{pn} O{line}", fp, over, under or None)
+                a = LS.analyze_player(f"{pn} O{line}", fp, over, under or None, push_prob=push)
                 if a:
                     n_markets += 1
                     plays.append(a)

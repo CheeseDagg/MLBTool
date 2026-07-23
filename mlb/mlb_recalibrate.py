@@ -97,8 +97,32 @@ def invert_map(anchors, y):
 
 
 # ---------- data ----------
+def row_raw(r, anchors):
+    """Recover a graded row's RAW (pre-calibration) hr%. Prefer the stored `hr_raw`
+    column — written at prediction time under that day's own anchors, the only
+    leak-free source. Fall back to inverting `hr_pct` through `anchors` ONLY for legacy
+    rows written before hr_raw existed. (Inversion is exact only within one anchor
+    epoch; after a refit, inverting an old row through the NEW anchors recovers a wrong
+    raw and biases the next fit — which is exactly what hr_raw removes.)"""
+    hr_raw = r.get("hr_raw")
+    if hr_raw is not None and str(hr_raw).strip() != "":
+        return float(hr_raw)
+    return invert_map(anchors, float(r["hr_pct"]))
+
+def graded_dates():
+    """Dates of PRODUCTION graded rows only (excludes the static backtest replay), for
+    measuring how much genuinely-new data has arrived since the last refit."""
+    out = []
+    gr = os.path.join(DATA, "hr_graded.csv")
+    if os.path.exists(gr):
+        for r in csv.DictReader(open(gr)):
+            if r.get("outcome") in ("hr", "no") and r.get("date"):
+                out.append(r["date"])
+    return out
+
 def load_rows(anchors):
-    """[(date, raw_pct, hit)] from backtest (raw already) + graded (invert calibrated)."""
+    """[(date, raw_pct, hit)] from backtest (raw already) + graded (stored hr_raw, else
+    inverted)."""
     rows = []
     bt = os.path.join(DATA, "hr_backtest.csv")
     if os.path.exists(bt):
@@ -115,7 +139,7 @@ def load_rows(anchors):
             if r.get("outcome") not in ("hr", "no"):
                 continue
             try:
-                raw = invert_map(anchors, float(r["hr_pct"]))
+                raw = row_raw(r, anchors)
                 rows.append((r["date"], raw, 1 if r["outcome"] == "hr" else 0))
             except (KeyError, ValueError):
                 continue
@@ -185,7 +209,9 @@ def main(dry):
     m = re.search(r"# auto-refit (\d{4}-\d{2}-\d{2})", src)
     if m:
         last_fit = m.group(1)
-        fresh = sum(1 for d, _, _ in rows if d > last_fit)
+        # count NEW production rows only — the static backtest file carries dated rows
+        # that would otherwise inflate this and let a refit run on unchanged data.
+        fresh = sum(1 for d in graded_dates() if d > last_fit)
         if fresh < MIN_NEW_ROWS:
             print(f"only {fresh} graded rows since last refit ({last_fit}) - need {MIN_NEW_ROWS}; keeping current")
             return
@@ -257,7 +283,15 @@ def selftest():
         write_anchors(fake + fake, [(0.0,0.0)]); raise SystemExit("writer accepted a duplicate line")
     except AssertionError:
         pass
-    print("selftest OK: inversion exact | fit recovers truth & monotonic | gate blocks worse curves | writer assert-guarded")
+    # 5) leak-free raw recovery: a stored hr_raw is used verbatim (NOT re-inverted through
+    #    the current anchors), so an anchor refit can't corrupt an old row's raw. A legacy
+    #    row without hr_raw falls back to inversion through the given anchors.
+    assert row_raw({"hr_raw": "12.5", "hr_pct": "9.9"}, A) == 12.5, "stored hr_raw must win"
+    legacy_cal = apply_map(A, 20.0)                       # a row calibrated under A, no hr_raw
+    assert abs(row_raw({"hr_pct": legacy_cal}, A) - 20.0) < 1e-9, "legacy fallback must invert"
+    assert row_raw({"hr_raw": "", "hr_pct": legacy_cal}, A) == row_raw({"hr_pct": legacy_cal}, A), \
+        "empty hr_raw must fall back to inversion"
+    print("selftest OK: inversion exact | fit recovers truth & monotonic | gate blocks worse curves | writer assert-guarded | hr_raw leak-free")
 
 
 if __name__ == "__main__":
