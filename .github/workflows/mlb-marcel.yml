@@ -25,6 +25,11 @@ jobs:
         run: |
           git config user.name mlb-bot
           git config user.email mlb-bot@users.noreply.github.com
-          git add mlb/data/marcel_talent.json
-          git commit -m "Marcel talent refresh" || echo "no changes"
-          git push
+          git add mlb/data/marcel_talent.json || true
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Marcel talent refresh"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && { echo "pushed"; exit 0; }
+            echo "push race - retry $i"; sleep 3
+          done
+          echo "push failed after 5 retries"; exit 1
