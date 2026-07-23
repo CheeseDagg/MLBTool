@@ -414,3 +414,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-22,Bryce Harper,PHI,Eric Lauer,3,card,19.5,+413,,,park +9%,78F,LvL -22%,,-6.1,floor
 2026-07-22,Freddie Freeman,LAD,Aaron Nola,3,card,19.4,+415,,,park +9%,78F,LvR +8%,heat -6%,,new
 2026-07-22,CJ Abrams,WSN,Gabriel Hughes,4,card,19.1,+424,,,park +9%,83F,LvR +8%,,-1.9,
+2026-07-23,Byron Buxton,MIN,Gavin Williams,5,proj,21.6,+364,,,park -3%,69F,RvR -3%,heat +1%,-2.9,floor
+2026-07-23,Junior Caminero,TBR,Shane Bieber,1,proj,21.5,+366,,,park +3% [low-conf],66F · wind out 4 (roof: half),RvR -3%,heat +1%,0.0,
+2026-07-23,Kazuma Okamoto,TOR,Ian Seymour,2,proj,20.4,+390,,,park +3% [low-conf],66F · wind out 4 (roof: half),RvL +12%,heat +6%,,new
+2026-07-23,Kody Clemens,MIN,Gavin Williams,4,proj,19.9,+402,,,park -3%,69F,LvR +8%,heat +6%,-1.5,
+2026-07-23,Matt Olson,ATL,Kyle Hart,3,card,18.8,+433,,,park +4%,81F,LvL -22%,,-2.3,floor
+2026-07-23,Drake Baldwin,ATL,Kyle Hart,1,card,18.6,+437,,,park +4%,81F,LvL -22%,,-2.2,floor
+2026-07-23,Manny Machado,SDP,Chris Sale,3,card,18.1,+454,,,park +4%,81F,RvL +12%,heat +10%,,new
+2026-07-23,Riley Greene,DET,Randy Dobnak,2,proj,17.3,+479,,,park -5%,70F,LvR +8%,heat -8%,-3.6,floor
+2026-07-23,Spencer Torkelson,DET,Randy Dobnak,3,proj,17.2,+482,,,park -5%,70F,RvR -3%,heat -8%,-4.6,floor
+2026-07-23,Kerry Carpenter,DET,Randy Dobnak,8,proj,16.8,+497,,,park -5%,70F,LvR +8%,heat -1%,-4.4,floor
+2026-07-23,Ketel Marte,ARI,Michael McGreevy,1,proj,16.8,+494,,,park -7%,74F,SvR +8%,heat +1%,-3.7,floor
+2026-07-23,Jac Caglianone,KCR,Troy Melton,3,proj,16.6,+504,,,park -5%,70F,LvR +8%,heat +4%,,new
+2026-07-23,Ty France,SDP,Chris Sale,4,card,16.5,+507,,,park +4%,81F,RvL +12%,heat +3%,,new
+2026-07-23,Dillon Dingler,DET,Randy Dobnak,4,proj,16.2,+518,,,park -5%,70F,RvR -3%,heat -1%,-5.0,floor
+2026-07-23,Jordan Walker,STL,Brandon Pfaadt,3,proj,16.1,+519,,,park -7%,74F,RvR -3%,heat +4%,-4.5,floor
+2026-07-23,Michael Harris II,ATL,Kyle Hart,4,card,15.8,+532,,,park +4%,81F,LvL -22%,,-5.0,floor
+2026-07-23,Josh Bell,MIN,Gavin Williams,1,proj,15.6,+540,,,park -3%,69F,SvR +8%,heat +10%,,new
+2026-07-23,George Springer,TOR,Ian Seymour,5,proj,14.9,+573,,,park +3% [low-conf],66F · wind out 4 (roof: half),RvL +12%,heat +7%,,new
+2026-07-23,Alec Burleson,STL,Brandon Pfaadt,2,proj,14.8,+577,,,park -7%,74F,LvR +8%,heat -4%,,new
+2026-07-23,Jonathan Aranda,TBR,Shane Bieber,2,proj,14.6,+585,,,park +3% [low-conf],66F · wind out 4 (roof: half),LvR +8%,heat +11%,,new
+2026-07-23,Austin Riley,ATL,Kyle Hart,6,card,14.5,+590,,,park +4%,81F,RvL +12%,heat -2%,,new
+2026-07-23,Corbin Carroll,ARI,Michael McGreevy,2,proj,14.4,+592,,,park -7%,74F,LvR +8%,heat -4%,,new
+2026-07-23,Royce Lewis,MIN,Gavin Williams,9,proj,14.0,+614,,,park -3%,69F,RvR -3%,heat +3%,,new
+2026-07-23,Salvador Perez,KCR,Troy Melton,1,proj,13.9,+622,,,park -5%,70F,RvR -3%,heat +17%,,new
+2026-07-23,José Ramírez,CLE,Taj Bradley,2,card,13.2,+657,,,park -3%,69F,SvR +8%,heat +4%,,new
+2026-07-23,Fernando Tatis Jr.,SDP,Chris Sale,1,card,13.0,+667,,,park +4%,81F,RvL +12%,heat +16%,,new
+2026-07-23,Brandon Valenzuela,TOR,Ian Seymour,7,proj,12.9,+675,,,park +3% [low-conf],66F · wind out 4 (roof: half),SvL +12%,heat +2%,,new
+2026-07-23,Carter Jensen,KCR,Troy Melton,2,proj,12.9,+674,,,park -5%,70F,LvR +8%,heat -6%,,new
+2026-07-23,Kyle Manzardo,CLE,Taj Bradley,7,card,12.9,+678,,,park -3%,69F,LvR +8%,heat +2%,,new
+2026-07-23,Rhys Hoskins,CLE,Taj Bradley,6,card,12.6,+695,,,park -3%,69F,RvR -3%,heat -7%,,new
