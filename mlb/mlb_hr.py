@@ -99,6 +99,9 @@ K_PEN = 350
 BARREL_W = 0.35
 SLOT_B   = -0.066  # logit slope of the residual batting-order HR gradient (walk-forward
                    # validated): top-of-order bats out-HR their PA-implied rate, 8-9 under.
+PARK_LOWCONF_B = 0.07  # logit bump for [low-conf] parks (walk-forward validated, 6/6 split
+                       # stability, all 4 such venues over-perform): the conf-shrink toward
+                       # neutral is too aggressive there. Conservative end of the tested range.
 SEASON_W  = 0.6   # weight on the bat's CURRENT-SEASON rate vs the model's talent-prior projection.
                   # Walk-forward validated on the 25,128-prediction backtest: w=0.6 is the Brier
                   # minimum on train AND unseen test independently (base .108573 -> .108249);
@@ -870,6 +873,8 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 # holdout Brier by ~0.0002 and log-loss ~0.0008, robust across 6 split points.
                 if 0.0 < p_game < 1.0:
                     _lg = math.log(p_game / (1 - p_game)) + SLOT_B * (slot - 5)
+                    if "[low-conf]" in park_lab:
+                        _lg += PARK_LOWCONF_B
                     p_game = 1.0 / (1.0 + math.exp(-_lg))
                 _raw_pct = round(p_game * 100, 1)               # pre-calibration % (leak-free recalib input)
                 p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
