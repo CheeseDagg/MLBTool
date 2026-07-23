@@ -444,3 +444,21 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-22,Bryce Harper,PHI,Eric Lauer,3,card,19.5,+413,,,park +9%,78F,LvL -22%,,no,0
 2026-07-22,Freddie Freeman,LAD,Aaron Nola,3,card,19.4,+415,,,park +9%,78F,LvR +8%,heat -6%,no,0
 2026-07-22,CJ Abrams,WSN,Gabriel Hughes,4,card,19.1,+424,,,park +9%,83F,LvR +8%,,void,
+2026-07-23,Byron Buxton,MIN,Gavin Williams,2,card,20.7,23.9,+382,,,park -3%,75F · wind in 7,RvR -3%,heat +1%,no,0
+2026-07-23,Junior Caminero,TBR,Shane Bieber,3,card,20.3,22.6,+393,,,park +3% [low-conf],70F · wind out 5 (roof: half),RvR -3%,heat +1%,no,0
+2026-07-23,Matt Olson,ATL,Kyle Hart,3,card,18.1,19.9,+453,,,park +4%,86F,LvL -22%,,no,0
+2026-07-23,Manny Machado,SDP,Chris Sale,3,card,17.4,19.2,+474,,,park +4%,86F,RvL +12%,heat +10%,no,0
+2026-07-23,Drake Baldwin,ATL,Kyle Hart,1,card,17.2,19.0,+480,,,park +4%,86F,LvL -22%,,hr,1
+2026-07-23,Ty France,SDP,Chris Sale,4,card,16.4,18.1,+511,,,park +4%,86F,RvL +12%,heat +3%,hr,1
+2026-07-23,Kody Clemens,MIN,Gavin Williams,5,card,16.2,18.0,+515,,,park -3%,75F · wind in 7,LvR +8%,heat +6%,no,0
+2026-07-23,Kazuma Okamoto,TOR,Casey Legumina,6,card,15.8,17.5,+532,,,park +3% [low-conf],70F · wind out 5 (roof: half),RvR -3%,heat -3%,no,0
+2026-07-23,Ryan Jeffers,MIN,Gavin Williams,3,card,15.5,17.2,+545,,,park -3%,75F · wind in 7,RvR -3%,heat +0%,no,0
+2026-07-23,Michael Harris II,ATL,Kyle Hart,4,card,15.2,16.8,+559,,,park +4%,86F,LvL -22%,,hr,1
+2026-07-23,Victor Mesa Jr.,TBR,Shane Bieber,4,card,13.7,15.2,+630,,,park +3% [low-conf],70F · wind out 5 (roof: half),LvR +8%,heat -1%,no,0
+2026-07-23,Jonathan Aranda,TBR,Shane Bieber,2,card,12.9,14.4,+673,,,park +3% [low-conf],70F · wind out 5 (roof: half),LvR +8%,heat +11%,no,0
+2026-07-23,Brooks Lee,MIN,Gavin Williams,1,card,12.7,14.1,+688,,,park -3%,75F · wind in 7,SvR +8%,heat +7%,no,0
+2026-07-23,Royce Lewis,MIN,Gavin Williams,6,card,12.6,14.0,+693,,,park -3%,75F · wind in 7,RvR -3%,heat +3%,no,0
+2026-07-23,Josh Bell,MIN,Gavin Williams,4,card,12.5,13.9,+702,,,park -3%,75F · wind in 7,SvR +8%,heat +10%,no,0
+2026-07-23,Ozzie Albies,ATL,Kyle Hart,2,card,12.5,13.9,+702,,,park +4%,86F,SvL +12%,heat +12%,hr,1
+2026-07-23,Rhys Hoskins,CLE,Taj Bradley,6,card,12.4,13.9,+703,,,park -3%,75F · wind in 7,RvR -3%,heat -7%,no,0
+2026-07-23,Yandy Díaz,TBR,Shane Bieber,1,card,12.3,13.7,+714,,,park +3% [low-conf],70F · wind out 5 (roof: half),RvR -3%,heat -3%,no,0
