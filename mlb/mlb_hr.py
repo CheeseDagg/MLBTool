@@ -97,6 +97,8 @@ def hands_get(hands, name, want="bat"):
 K_PEN = 350
 
 BARREL_W = 0.35
+SLOT_B   = -0.066  # logit slope of the residual batting-order HR gradient (walk-forward
+                   # validated): top-of-order bats out-HR their PA-implied rate, 8-9 under.
 SEASON_W  = 0.6   # weight on the bat's CURRENT-SEASON rate vs the model's talent-prior projection.
                   # Walk-forward validated on the 25,128-prediction backtest: w=0.6 is the Brier
                   # minimum on train AND unseen test independently (base .108573 -> .108249);
@@ -860,6 +862,15 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 if p_game > 0 and abs(_blend / p_game - 1) >= 0.05:
                     szn_tag = f"szn {'+' if _blend > p_game else ''}{(_blend/p_game-1)*100:.0f}%"
                 p_game = _blend
+                # LINEUP-QUALITY SLOT GRADIENT: the pa_est(slot) term above scales PAs by
+                # batting order, but top-of-order bats also out-HR their PA-implied rate
+                # (better power hitters bat 1-4) while 8-9 hitters under-perform. Walk-forward
+                # validated on the 25,128-prediction backtest: a logit slot term of -0.066
+                # (slots 1-4 run ~1.03-1.08x predicted, slots 8-9 ~0.76-0.80x) improves
+                # holdout Brier by ~0.0002 and log-loss ~0.0008, robust across 6 split points.
+                if 0.0 < p_game < 1.0:
+                    _lg = math.log(p_game / (1 - p_game)) + SLOT_B * (slot - 5)
+                    p_game = 1.0 / (1.0 + math.exp(-_lg))
                 _raw_pct = round(p_game * 100, 1)               # pre-calibration % (leak-free recalib input)
                 p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
