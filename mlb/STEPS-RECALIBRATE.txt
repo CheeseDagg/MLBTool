@@ -1,0 +1,36 @@
+MONTHLY SELF-TUNING — the model now learns, safely
+===================================================
+What it does: once a month, refits the CALIB_ANCHORS curve in mlb_hr.py from the season's
+graded results, and applies the new curve ONLY if it beats the current one on held-out
+recent data it never saw (Brier score, last 21 days). Bad/no-better candidates are
+rejected automatically — the calibration can only ratchet toward accuracy, never chase noise.
+Most months it will say KEEP. That is success — it means your current curve is already
+as good as the data supports.
+
+TWO FILES:
+  1. mlb_recalibrate.py        -> MLBTool/mlb/
+  2. mlb-recalibrate.yml       -> .github/workflows/   (create via GitHub "Create new file",
+                                  type the path .github/workflows/mlb-recalibrate.yml — the
+                                  no-drop method — or navigate INTO the folder and upload)
+
+DEPLOY:
+  1. Put both files in place, commit.
+  2. Optional first run: Actions -> "MLB monthly recalibration" -> Run workflow.
+     Expected today: "KEEP" (verified in rehearsal on your real 25,427 graded rows:
+     current 0.11650 vs candidate 0.11646 — your curve already holds up).
+  3. From then on it runs itself on the 2nd of each month after grading. When it does
+     apply, the commit is "monthly recalibration" and the anchors line in mlb_hr.py gains
+     an "# auto-refit YYYY-MM-DD" stamp. Either way it writes data/recalib_report.json
+     with the numbers.
+
+GUARDRAILS (all tested):
+  - Out-of-sample gate: candidate must beat current on a 21-day holdout (>=400 rows)
+  - Fresh-data gate: after a refit, waits for >=500 new graded rows before refitting again
+  - Monotonic fit (pooled-adjacent-violators), assert-guarded single-line rewrite
+  - Selftest runs before every refit in the workflow; any failure = no changes committed
+  - Rebase-safe push (same race protection as K-props/BvP)
+
+VERIFIED IN REHEARSAL (real data):
+  - KEEP path: real anchors held their ground on the holdout -> file untouched
+  - APPLY path: handicapped anchors -> gate fired (0.129 -> 0.118) -> file rewritten,
+    parses clean, engine imports and calibrates with the new curve

@@ -1,0 +1,45 @@
+BvP LEADERBOARD — "Best HR history vs today's starter"
+=======================================================
+Replaces the 3 audit panels (Calibration, walk-forward Backtest, Model changelog) with a
+list of the batters who have the most CAREER home runs off the arm they face today.
+History/color — it does NOT feed the model's HR%. Ranked most HR -> higher SLG -> more PA,
+gated at >=6 career PA vs that pitcher so a lone 1-for-1 can't top it.
+
+TWO FILES, both into MLBTool/mlb/:
+  1. index.html   (dashboard — 3 audit panels out, BvP panel in where Calibration was)
+  2. mlb_bvp.py   (the pull engine — writes data/bvp_board.json)
+
+DEPLOY:
+  1. Drop both files into MLBTool/mlb/ (overwrite index.html; add mlb_bvp.py).
+  2. Run the pull on your machine (it needs statsapi.mlb.com; the sandbox can't reach it):
+         python mlb_bvp.py
+     -> writes mlb/data/bvp_board.json. Do it after the daily slate so lineups are posted.
+  3. Commit + push data/bvp_board.json (and the two files).
+  4. Hard-refresh the tool. The homers tab now shows the BvP list where Calibration was;
+     the Backtest + changelog panels are gone from the method tab.
+
+HOW IT PULLS (no API key):
+  StatsAPI schedule?hydrate=probablePitcher,lineups,team  -> today's matchups WITH player IDs
+  (no name-matching — every batter/pitcher carries its MLBAM id), then vsPlayerTotal per
+  batter for the career line vs the opposing starter.
+  - Uses the posted lineup when the card is up; falls back to the team's ACTIVE ROSTER when it isn't,
+    so a bat with real history (e.g. Turner, 2 HR vs today's SP) isn't missed just because his game is later.
+    (Run closer to first pitch and it's all confirmed starters; run early and later games are roster-based.)
+  - Fails soft: any pull error writes an EMPTY board and prints to stderr; it never crashes the run.
+  - python mlb_bvp.py --probe     -> prints the matchups it found (debug)
+  - python mlb_bvp.py --selftest  -> offline logic + parser checks (green here)
+  Tweak at the top of the file: MIN_PA (default 6), TOP_N (default 15).
+
+WHAT'S TESTED vs NOT:
+  - Dashboard: jsdom-verified — renders the BvP table, the 3 audit panels are gone, the HR board /
+    slate / ratings still render, zero JS errors.
+  - Pull engine: ranking + gate + the schedule/vsPlayer PARSERS are unit-tested with fixtures.
+    The live StatsAPI calls themselves run on your machine (like every other pull) — --probe
+    is there to sanity-check the first run.
+
+NOTES:
+  - Calibration still RUNS and still lands in slate.json (hr_cal) — you only dropped the on-screen
+    panels, not the honesty check. If you ever want it back it's a panel add, not a rebuild.
+  - I left the old renderCal() function in index.html as dead code (its div is removed, so it never
+    runs) rather than excise a big interdependent block blind. Harmless. Say the word and I'll strip
+    it cleanly (jsdom-verified) in a follow-up.

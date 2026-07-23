@@ -146,6 +146,13 @@ def main():
     slate = json.load(open(os.path.join(DATA, "slate.json")))
     games = slate.get("games", [])
 
+    # ---- stale-slate guard: never build today's K board off yesterday's starters ----
+    gen = str(slate.get("generated", ""))[:10]
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    if gen != today:
+        print(f"slate.json is stale (generated {gen or 'unknown'}, today {today}) - skipping build so the board can't show yesterday's arms")
+        return
+
     # tonight's starters + their opponent team names
     matchups = []   # (pitcher_name, opposing_team_name)
     for g in games:

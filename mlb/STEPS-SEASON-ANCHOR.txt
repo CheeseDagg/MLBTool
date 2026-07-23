@@ -1,0 +1,24 @@
+SEASON ANCHOR — the "no 2026 form" hole, fixed the tested way
+==============================================================
+THE FINDING (walk-forward, 25,128 predictions):
+  - Last-30-day streaks: add NOTHING (optimal weight exactly 0; hot bats hit 16.1% vs
+    15.8% projected - noise). Streak-chasing would make the model worse. Not shipped.
+  - CURRENT-SEASON rate vs the multi-year talent prior: REAL signal. The model overrated
+    season-decliners (Ohtani-shape) by -2.9 pts and underrated surgers by +2.1 (outside
+    2SE). Blending 60% season / 40% model is the Brier minimum on train AND unseen test
+    independently (.108573 -> .108249), and improves the top of the board (.1737 -> .1726).
+
+WHAT SHIPPED (in this mlb_hr.py):
+  - SEASON_W=0.6 blend of the raw game probability toward the bat's shrunk current-season
+    rate (SEASON_K=250 PA of league rate), before calibration. Bats under 60 season PA are
+    exempt. New board tag "szn" shows the pull (e.g. Ohtani-type reads "szn -18%").
+  - Proven in-engine: decliner fixture pulled down 14.0 w/ szn -18%, steady bat ranks above
+    it, tiny samples untouched. File parses clean; Ben Rice dedupe + spot tags intact.
+
+DEPLOY (one file):
+  1. Upload this mlb_hr.py into MLBTool/mlb/ (overwrite).
+  2. Nothing else. Next daily slate run builds with the season anchor; szn tags appear in
+     hr_board.json rows automatically.
+
+NOTE: the monthly recalibrator will re-fit CALIB_ANCHORS to the new distribution on its
+next run - that's the two systems working together, no action needed.

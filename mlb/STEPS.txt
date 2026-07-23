@@ -1,0 +1,43 @@
+GOODMAN / TOP-OF-BOARD — what I changed and why
+================================================
+
+THE FINDING (why I did NOT nerf him):
+  You were right that he's annoying at the top — but the cause is NOT miscalibration.
+  - He is NOT #1 every day. On the road (park -14%) the model correctly buries him:
+    14th, 16th, 20th, 26th on the 07-09..07-12 trip. Park discrimination works.
+  - What you see is a Coors homestand (07-17 on): ranks 3,4,3,1. It recurs every homestand.
+  - I tested Coors/high-HR parks on the FULL 25,128-prediction backtest:
+        projected 12.0%  ->  actual 11.7%   gap -0.3   (2SE +/-0.9)  = DEAD CALIBRATED
+    The -4.3 Coors gap in the last 13 days was a COLD STREAK, not a bias.
+  - Goodman's 1-for-8 is a coin flip for a correctly-projected ~24% bat (39-50% odds).
+  => Shading Coors down would take a calibrated tier and make it UNDER-project. So I didn't.
+     "Top only on days he homers" is an oracle no model has — a correct 31% still misses 2 of 3.
+
+THE FIX (readability, not probability):
+  Added a "spot" layer: each bat's today HR% vs its OWN recent median (last 8 games).
+  A perennial Coors name now reads STANDOUT only on genuinely elevated days vs his floor.
+    - Goodman today: 31.1% vs own 23% -> +7.9 -> STANDOUT (soft LHP Palmquist, wind out 7, hot pen)
+    - On a floor Coors day he'd show ~0 edge and read normal.
+  hr_pct and fair are UNTOUCHED — the calibrated numbers don't move.
+  Selective by design: on today's board = 2 STANDOUT, 1 floor, 22 normal, 5 new.
+
+WHAT LANDS WHEN YOU RUN IT:
+  1. Console prints a SPOTLIGHT block (biggest movers vs own norm) every run.
+  2. Each hr_board.json row gains: base_self, edge_self, spot.
+  3. hr_predictions.csv gains two columns: edge_self, spot.
+
+DEPLOY:
+  1. Drop this mlb_hr.py into  MLBTool/mlb/mlb_hr.py  (overwrite).
+  2. Commit + push  (or run locally on the Windows box, then push data/).
+  3. Next slate run: watch for the SPOTLIGHT lines; confirm spot/edge_self appear in
+     data/hr_board.json and the two new columns in data/hr_predictions.csv.
+  Pure-stdlib, fails soft (missing/short log -> spot="new", never crashes). No new deps.
+
+FOLLOW-UP (not in this drop):
+  The spot tag is in the JSON now, but rendering it on the dashboard board needs the
+  slate-merge step + index.html render — say the word and I'll wire a "Spot" column and
+  jsdom-verify it before you deploy.
+
+STILL OPEN (unchanged from earlier):
+  - Rotate the exposed Odds API key; quota was fully burned (0/500) — fresh acct or monthly reset.
+  - K-props + UFC workflow fixes from earlier are staged in their own PUT-IN folders.

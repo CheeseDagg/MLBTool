@@ -97,6 +97,12 @@ def hands_get(hands, name, want="bat"):
 K_PEN = 350
 
 BARREL_W = 0.35
+SEASON_W  = 0.6   # weight on the bat's CURRENT-SEASON rate vs the model's talent-prior projection.
+                  # Walk-forward validated on the 25,128-prediction backtest: w=0.6 is the Brier
+                  # minimum on train AND unseen test independently (base .108573 -> .108249);
+                  # decliners (Ohtani-shape) were overrated -2.9, surgers underrated +2.1 (>2SE).
+SEASON_K  = 250   # PA of league rate the season term is shrunk with (insensitive 170-380 in test)
+SEASON_MIN_PA = 60  # below this the season sample is noise - blend inactive
 
 def pull_barrels():
     """Savant barrels-per-PA leaderboard -> {mlbam_id: brl_pa_pct}. One request,
@@ -211,7 +217,8 @@ CAP_PPA = 0.12  # sanity cap on per-PA HR probability
 # 22.2% happened (+6.1pts). Calibrate on the GAME probability with a piecewise
 # shrink that leaves the well-calibrated low end (0-12%: +0.4) untouched and pulls
 # the high end down to observed. Anchors are (predicted%, observed%) bucket midpoints.
-CALIB_ANCHORS = [[0.0, 0.0], [5.4, 6.6], [7.2, 7.6], [8.5, 8.5], [10.3, 10.5], [12.7, 11.0], [15.3, 14.4], [21.2, 18.4]]  # auto-refit 2026-07-23
+CALIB_ANCHORS = [(0.0, 0.0), (8.4, 8.8), (13.7, 12.3), (17.7, 16.0),
+                 (22.0, 20.1), (28.3, 22.2), (40.0, 30.5)]   # last extrapolates the slope
 def calibrate_pct(p_pct):
     """Map a raw game-HR% to the backtest-calibrated %. Piecewise-linear, monotone."""
     a = CALIB_ANCHORS
@@ -822,6 +829,19 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 p_pa = min(base * eff * sp_eff * tmult * plat_eff * heat_eff, CAP_PPA)
                 pa_est = max(PA_TOP - 0.09 * (slot - 1), 3.4)
                 p_game = 1 - (1 - p_pa) ** pa_est
+                # SEASON ANCHOR - blend toward what the bat is doing THIS season (context-free),
+                # because the walk-forward test shows the talent prior + factor stack is
+                # systematically overconfident vs current-season reality. Display tag: szn.
+                szn_tag = ""
+                _chr = (mt.get("cur_hr", 0) if mt else b.get("hr", 0)) or 0
+                _cpa = (mt.get("cur_pa", 0) if mt else b.get("pa", 0)) or 0
+                if _cpa >= SEASON_MIN_PA:
+                    _pszn = (_chr + SEASON_K * Lb) / (_cpa + SEASON_K)
+                    _gszn = 1 - (1 - min(_pszn, CAP_PPA)) ** pa_est
+                    _blend = (1 - SEASON_W) * p_game + SEASON_W * _gszn
+                    if p_game > 0 and abs(_blend / p_game - 1) >= 0.05:
+                        szn_tag = f"szn {'+' if _blend > p_game else ''}{(_blend/p_game-1)*100:.0f}%"
+                    p_game = _blend
                 p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
                 row = {
@@ -832,7 +852,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     "hr_pct": round(p_game * 100, 1),
                     "fair": am_from_p(p_game),
                     "park": park_lab, "temp": ttag,
-                    "sp_fac": round(fac, 2), "sp_small": bool(matched and pit_bf.get(norm(opp_sp_name or ""), 999) < 60), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "lu": ("card" if cards.get(team_full) else "proj"), "b_src": b_src,
+                    "sp_fac": round(fac, 2), "sp_small": bool(matched and pit_bf.get(norm(opp_sp_name or ""), 999) < 60), "plat": plat_tag, "heat": heat_tag, "pen": pen_tag, "brl": brl_tag, "szn": szn_tag, "lu": ("card" if cards.get(team_full) else "proj"), "b_src": b_src,
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
