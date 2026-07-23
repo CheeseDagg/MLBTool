@@ -114,6 +114,21 @@ def fetch_day_results(date_iso):
 
 # ---------------------------------------------------------------------------
 # pure: settle one prediction row against a day's games
+# FanGraphs board codes (written by mlb_hr) vs statsapi box abbreviations differ for
+# these clubs. Without aliasing, the strict team guard below voids EVERY prediction for
+# them (SFG!=SF, WSN!=WSH, etc.) — silently dropping ~6 teams from calibration.
+FG_ALIASES = {"KCR": {"KC", "KCR"}, "SDP": {"SD", "SDP"}, "SFG": {"SF", "SFG"},
+              "TBR": {"TB", "TBR"}, "WSN": {"WSH", "WSN"}, "CHW": {"CWS", "CHW"},
+              "ATH": {"OAK", "ATH"}}
+
+def _team_eq(box_abbr, want_tm):
+    """True if the box-score abbr and the board's team code are the same club,
+    tolerating the FanGraphs<->statsapi code differences above."""
+    a = (box_abbr or "").upper(); b = (want_tm or "").upper()
+    if not a or not b: return False
+    if a == b: return True
+    return any(a in alts and b in alts for alts in FG_ALIASES.values())
+
 def settle_row(row, games):
     """-> 'hr' | 'no' | 'void' | 'pending' (pending = team not found in finals)"""
     pn = norm(row.get("player",""))
@@ -128,7 +143,7 @@ def settle_row(row, games):
     if want_tm:
         # strict guard: the row claims a team; if no candidate box carries that
         # team, this is a duplicate-name phantom -> void, never inherit outcomes
-        m2 = [t for t in cands if t.get("abbr","").upper() == want_tm]
+        m2 = [t for t in cands if _team_eq(t.get("abbr",""), want_tm)]
         if m2: cands = m2
         elif len({t.get("abbr","") for t in cands}) >= 1 and all(t.get("abbr") for t in cands):
             return "void"
@@ -357,6 +372,20 @@ def selftest():
             "bat": {"ben rice": {"pa": 4, "hr": 1}}}}}]
     assert settle_row(row(player="Ben Rice", opp_sp="Ian Seymour", team="NYY"), G3)[0] == "hr"
     assert settle_row(row(player="Ben Rice", opp_sp="Seth Lugo", team="NYM"), G3) == "void"
+    # ALIAS REGRESSION: board writes FanGraphs codes (SFG/WSN/…) but the box abbr is the
+    # statsapi form (SF/WSH). These must grade as the SAME team, not void — else ~6 clubs
+    # silently never contribute to calibration. A genuine mismatch must still void.
+    G_sf = [{"teams": {"San Francisco Giants": {"opp_sp": "arm", "abbr": "SF",
+              "bat": {norm("Homer Giant"): {"pa": 4, "hr": 1}}}}}]
+    assert settle_row(row(player="Homer Giant", opp_sp="Arm", team="SFG"), G_sf)[0] == "hr", \
+        "SFG board code must grade against SF box abbr, not void"
+    G_wsh = [{"teams": {"Washington Nationals": {"opp_sp": "arm", "abbr": "WSH",
+               "bat": {norm("Nat Bat"): {"pa": 4, "hr": 0}}}}}]
+    assert settle_row(row(player="Nat Bat", opp_sp="Arm", team="WSN"), G_wsh) == ("no", 0)
+    G_bad = [{"teams": {"New York Yankees": {"opp_sp": "arm", "abbr": "NYY",
+               "bat": {norm("Real Phantom"): {"pa": 4, "hr": 1}}}}}]
+    assert settle_row(row(player="Real Phantom", opp_sp="Arm", team="BOS"), G_bad) == "void", \
+        "a genuine team mismatch must still void"
     # summarize math
     rows = [
         row(player="A", hr_pct="30", outcome="hr",  heat="heat +5%", plat="RvL +12%", lu="card", ev_pct="10", book_price="200"),

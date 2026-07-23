@@ -124,6 +124,7 @@ def main():
         wx_mult, wx_tag = game_weather_mult(venue) if HAS_WX else (1.0, "wx module off")
         games.append({
             "away": a, "home": h, "venue": venue,
+            "date": str(r.get("date") or "")[:10],
             "away_sp": r.get("away_prob_pitcher") or "?",
             "home_sp": r.get("home_prob_pitcher") or "?",
             "p_home": round(float(pr["p_home"]) * 100, 1),
@@ -158,8 +159,15 @@ def main():
     except Exception:
         futures = None
 
+    # Authoritative slate date = the games' own statsapi game_date, NOT wall-clock. If
+    # todays_games() silently fell back to an older schedule pull, these rows carry the
+    # OLDER date — the real freshness signal the stale-slate guard + dashboard need.
+    # (`generated` is always "now" and cannot detect a stale-but-freshly-published slate.)
+    _sdates = sorted({g["date"] for g in games if g.get("date")})
+    slate_date = _sdates[-1] if _sdates else None
     out = {
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "slate_date": slate_date,
         "games": games, "ratings": ratings,
         "edges": edge_rows, "edge_note": edge_note,
         "parlays": parlays, "near_parlays": near_parlays,

@@ -255,7 +255,17 @@ function renderBvp(){
   }).catch(function(){ el.innerHTML='<div class="empty">could not load data/bvp_board.json — run mlb_bvp.py</div>'; });
 }
 function render(d){
-  $('meta').textContent=`updated ${new Date(d.generated).toLocaleString()} · league ${d.league_rpg} r/tm/g · xwOBA for ${d.xwoba_pitchers} pitchers`;
+  var _meta=`updated ${new Date(d.generated).toLocaleString()} · league ${d.league_rpg} r/tm/g · xwOBA for ${d.xwoba_pitchers} pitchers`;
+  // FRESHNESS: warn loudly if the slate's actual game date is older than today — the
+  // board is frozen on an old day (stale arms/lineups) even though `generated` says now.
+  var _sd=(d.slate_date||'');
+  var _n=new Date();
+  var _t=_n.getFullYear()+'-'+String(_n.getMonth()+1).padStart(2,'0')+'-'+String(_n.getDate()).padStart(2,'0');
+  if(_sd && _sd<_t){
+    $('meta').innerHTML='<span style="color:var(--acc);font-weight:800">⚠ STALE SLATE — showing '+_sd+' games (today is '+_t+'). The daily build hasn\'t refreshed; arms &amp; lineups may be yesterday\'s.</span><br>'+_meta;
+  } else {
+    $('meta').textContent=_meta;
+  }
   // slate
   if(d.games && d.games.length){
     $('slateBody').innerHTML=`<table><tr><th>matchup</th><th class="hide-m">starters</th>

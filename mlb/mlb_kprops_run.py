@@ -147,10 +147,23 @@ def main():
     games = slate.get("games", [])
 
     # ---- stale-slate guard: never build today's K board off yesterday's starters ----
-    gen = str(slate.get("generated", ""))[:10]
-    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    if gen != today:
-        print(f"slate.json is stale (generated {gen or 'unknown'}, today {today}) - skipping build so the board can't show yesterday's arms")
+    # Check the slate's ACTUAL game date (statsapi game_date), not `generated` — which
+    # mlb_publish stamps to "now" unconditionally, so a stale-but-freshly-published slate
+    # (schedule pull failed -> fell back to yesterday's games) sails through a generated
+    # check. Compare against today's MLB date in ET (the canonical slate day) so an evening
+    # run just after 00:00 UTC isn't false-rejected. Skip only when we can PROVE the slate
+    # is older than today; an unknowable date must not blank the board on a missing field.
+    try:
+        from zoneinfo import ZoneInfo
+        today = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    except Exception:
+        today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    sd = str(slate.get("slate_date") or "")[:10]
+    if not sd:                                   # older slate.json w/o slate_date: use game dates
+        _gd = [str(g.get("date") or "")[:10] for g in games if g.get("date")]
+        sd = max(_gd) if _gd else ""
+    if sd and sd < today:
+        print(f"slate.json is stale (slate date {sd}, today {today} ET) - skipping build so the board can't show yesterday's arms")
         return
 
     # tonight's starters + their opponent team names
