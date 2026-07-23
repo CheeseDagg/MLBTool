@@ -30,5 +30,9 @@ jobs:
           git config user.name mlb-bot
           git config user.email mlb-bot@users.noreply.github.com
           git add mlb/data/kprops.json
-          git commit -m "K props refresh" || echo "no changes"
-          git push
+          git commit -m "K props refresh" || { echo "no changes"; exit 0; }
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push race - retry $i"; sleep $((RANDOM % 4 + 2))
+          done
+          echo "push still rejected after 5 tries"; exit 1
