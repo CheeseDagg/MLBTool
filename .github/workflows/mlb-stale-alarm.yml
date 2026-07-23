@@ -23,4 +23,11 @@ jobs:
             echo "::error::STALE — mlb/data/slate.json is ${AGE}h old. The daily pipeline has stopped. Check the main workflow runs."
             exit 1
           fi
-          echo "fresh."
+          LATEST=$(python3 -c "import json; d=json.load(open('mlb/data/slate.json')); print(d.get('slate_end') or d.get('slate_date') or '')")
+          TODAY=$(date -u +%F)
+          echo "newest game in slate: ${LATEST:-unknown} (today $TODAY)"
+          if [ -n "$LATEST" ] && [[ "$LATEST" < "$TODAY" ]]; then
+            echo "::error::STALE DATA — newest game in the slate is $LATEST but today is $TODAY. The build runs but the game data is frozen (commit time alone wouldn't catch this)."
+            exit 1
+          fi
+          echo "fresh (commit + game dates current)."
