@@ -1,0 +1,38 @@
+name: MLB umpire experiment
+# On-demand research experiment: does the home-plate umpire's K-tendency sharpen strikeout
+# props? Pulls a season of games from statsapi, runs the leak-free backtest, prints a
+# VERDICT. Touches no production model — nothing ships unless the verdict shows a robust win.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "start date (YYYY-MM-DD)"
+        default: "2025-04-01"
+      end:
+        description: "end date (YYYY-MM-DD)"
+        default: "2025-09-28"
+permissions:
+  contents: read
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mlb
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: deps
+        run: pip install numpy
+      - name: selftest gate (leak-free logic must hold)
+        run: python3 mlb_umpire_experiment.py --selftest
+      - name: run experiment (prints baseline vs umpire-factor verdict)
+        run: python3 mlb_umpire_experiment.py --start "${{ github.event.inputs.start }}" --end "${{ github.event.inputs.end }}"
+      - name: upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mlb-umpire-result
+          path: mlb/data/umpire_experiment.json
+          if-no-files-found: ignore
