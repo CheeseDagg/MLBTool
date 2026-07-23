@@ -1,0 +1,37 @@
+name: MLB monthly recalibration
+# Once a month, refits CALIB_ANCHORS in mlb_hr.py from the season's graded results and
+# applies the new curve ONLY if it beats the current one on held-out recent data
+# (Brier, most-recent 21 days the fit never saw). Most months it will say KEEP and
+# commit only the report — that means the calibration is already as good as the data
+# supports. Set up once; the model now tunes itself safely.
+on:
+  schedule:
+    - cron: "0 13 2 * *"       # 2nd of each month, 13:00 UTC (after that morning's grading)
+  workflow_dispatch: {}         # Run workflow button for an on-demand refit
+permissions:
+  contents: write
+jobs:
+  recalibrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Selftest then refit
+        working-directory: mlb
+        run: |
+          python mlb_recalibrate.py --selftest
+          python mlb_recalibrate.py
+      - name: Commit (rebase-safe)
+        run: |
+          git config user.name mlb-bot
+          git config user.email mlb-bot@users.noreply.github.com
+          git add mlb/mlb_hr.py mlb/data/recalib_report.json || true
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "monthly recalibration"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && { echo "pushed"; exit 0; }
+            echo "push race - retry $i"; sleep 3
+          done
+          echo "push failed after 5 retries"; exit 1
