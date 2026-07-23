@@ -836,12 +836,21 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 _chr = (mt.get("cur_hr", 0) if mt else b.get("hr", 0)) or 0
                 _cpa = (mt.get("cur_pa", 0) if mt else b.get("pa", 0)) or 0
                 if _cpa >= SEASON_MIN_PA:
-                    _pszn = (_chr + SEASON_K * Lb) / (_cpa + SEASON_K)
-                    _gszn = 1 - (1 - min(_pszn, CAP_PPA)) ** pa_est
-                    _blend = (1 - SEASON_W) * p_game + SEASON_W * _gszn
-                    if p_game > 0 and abs(_blend / p_game - 1) >= 0.05:
-                        szn_tag = f"szn {'+' if _blend > p_game else ''}{(_blend/p_game-1)*100:.0f}%"
-                    p_game = _blend
+                    # enough season sample: anchor toward the bat's own context-free
+                    # CURRENT-SEASON rate (validated blend — unchanged).
+                    _anchor = min((_chr + SEASON_K * Lb) / (_cpa + SEASON_K), CAP_PPA)
+                else:
+                    # season sample too noisy to trust the bat's own rate, but the factor-stack
+                    # overconfidence still needs correcting: anchor toward the shrunk talent
+                    # prior (context-free) so a tiny-sample flier can't sit at a full boosted
+                    # number and tie a proven bat. Prior is already league-shrunk (K_BAT), so
+                    # this collapses toward league exactly when the sample is thinnest.
+                    _anchor = min(base, CAP_PPA)
+                _gszn = 1 - (1 - _anchor) ** pa_est
+                _blend = (1 - SEASON_W) * p_game + SEASON_W * _gszn
+                if p_game > 0 and abs(_blend / p_game - 1) >= 0.05:
+                    szn_tag = f"szn {'+' if _blend > p_game else ''}{(_blend/p_game-1)*100:.0f}%"
+                p_game = _blend
                 p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
                 row = {
