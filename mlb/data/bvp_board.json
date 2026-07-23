@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-23T15:01:49+00:00",
+ "generated": "2026-07-23T20:43:08+00:00",
  "date": "2026-07-23",
  "min_pa": 6,
  "rows": [
@@ -29,23 +29,12 @@
    "batter": "Manny Machado",
    "team": "SD",
    "opp_sp": "Chris Sale",
-   "pa": 33,
-   "ab": 28,
-   "h": 10,
+   "pa": 36,
+   "ab": 31,
+   "h": 11,
    "hr": 1,
-   "avg": ".357",
-   "slg": ".571"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Shane Bieber",
-   "pa": 7,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
+   "avg": ".355",
+   "slg": ".548"
   },
   {
    "batter": "Lars Nootbaar",
@@ -68,17 +57,6 @@
    "hr": 1,
    "avg": ".318",
    "slg": ".455"
-  },
-  {
-   "batter": "Royce Lewis",
-   "team": "MIN",
-   "opp_sp": "Gavin Williams",
-   "pa": 18,
-   "ab": 18,
-   "h": 4,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".444"
   }
  ]
 }
