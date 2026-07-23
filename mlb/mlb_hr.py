@@ -211,8 +211,7 @@ CAP_PPA = 0.12  # sanity cap on per-PA HR probability
 # 22.2% happened (+6.1pts). Calibrate on the GAME probability with a piecewise
 # shrink that leaves the well-calibrated low end (0-12%: +0.4) untouched and pulls
 # the high end down to observed. Anchors are (predicted%, observed%) bucket midpoints.
-CALIB_ANCHORS = [(0.0, 0.0), (8.4, 8.8), (13.7, 12.3), (17.7, 16.0),
-                 (22.0, 20.1), (28.3, 22.2), (40.0, 30.5)]   # last extrapolates the slope
+CALIB_ANCHORS = [[0.0, 0.0], [5.4, 6.6], [7.2, 7.6], [8.5, 8.5], [10.3, 10.5], [12.7, 11.0], [15.3, 14.4], [21.2, 18.4]]  # auto-refit 2026-07-23
 def calibrate_pct(p_pct):
     """Map a raw game-HR% to the backtest-calibrated %. Piecewise-linear, monotone."""
     a = CALIB_ANCHORS
