@@ -1,38 +1,39 @@
 name: MLB umpire experiment
-# On-demand research experiment: does the home-plate umpire's K-tendency sharpen strikeout
-# props? Pulls a season of games from statsapi, runs the leak-free backtest, prints a
-# VERDICT. Touches no production model — nothing ships unless the verdict shows a robust win.
+# Research experiment: does the home-plate umpire's K-tendency sharpen strikeout props?
+# Auto-runs when experiments/RUN.txt changes; commits its VERDICT back to the repo.
+# Touches no production model.
 on:
   workflow_dispatch:
     inputs:
-      start:
-        description: "start date (YYYY-MM-DD)"
-        default: "2025-04-01"
-      end:
-        description: "end date (YYYY-MM-DD)"
-        default: "2025-09-28"
+      start: { description: "start date", default: "2025-04-01" }
+      end:   { description: "end date",   default: "2025-06-30" }
+  push:
+    paths: ['experiments/RUN.txt']
 permissions:
-  contents: read
+  contents: write
 jobs:
   experiment:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: mlb
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
-      - name: deps
-        run: pip install numpy
-      - name: selftest gate (leak-free logic must hold)
-        run: python3 mlb_umpire_experiment.py --selftest
-      - name: run experiment (prints baseline vs umpire-factor verdict)
-        run: python3 mlb_umpire_experiment.py --start "${{ github.event.inputs.start }}" --end "${{ github.event.inputs.end }}"
-      - name: upload results
+      - run: pip install numpy
+      - name: run experiment -> verdict file
+        run: |
+          mkdir -p experiments
+          set -o pipefail
+          cd mlb
+          python3 mlb_umpire_experiment.py --selftest
+          START="${{ github.event.inputs.start || '2025-04-01' }}"
+          END="${{ github.event.inputs.end || '2025-06-30' }}"
+          python3 mlb_umpire_experiment.py --start "$START" --end "$END" 2>&1 | tee ../experiments/MLB-UMPIRE-VERDICT.md || true
+      - name: commit verdict
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: mlb-umpire-result
-          path: mlb/data/umpire_experiment.json
-          if-no-files-found: ignore
+        run: |
+          git config user.name mlb-bot
+          git config user.email actions@github.com
+          git add experiments/MLB-UMPIRE-VERDICT.md || true
+          if git diff --cached --quiet; then echo "no verdict change"; exit 0; fi
+          git commit -m "MLB umpire experiment verdict $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && { echo pushed; exit 0; }; sleep 3; done
