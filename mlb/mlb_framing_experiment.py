@@ -481,10 +481,13 @@ def parse_framing_csv(text, year):
     if i_name is None and (i_last is None or i_first is None):
         raise ValueError(f"savant {year}: no name column in header {header}")
 
-    i_rate = _find_col(low, exact=("strike_rate",), contains=("strike rate",))
-    i_runs = _find_col(low, contains=("runs",)) if i_rate is None else None
+    # 2026 savant format: name/pitches/rv_tot/pct_tot/rv_11..pct_19 — pct_tot is the
+    # overall shadow-zone strike rate (percent points), rv_tot the framing runs value.
+    i_rate = _find_col(low, exact=("strike_rate", "pct_tot"), contains=("strike rate",))
+    i_runs = (_find_col(low, exact=("rv_tot",), contains=("runs",))
+              if i_rate is None else None)
     if i_rate is None and i_runs is None:
-        raise ValueError(f"savant {year}: no strike_rate/runs column in {header}")
+        raise ValueError(f"savant {year}: no strike_rate/pct_tot/runs column in {header}")
     i_n = _find_col(low, exact=("n_called_pitches",), contains=("pitches",))
 
     recs = []
@@ -763,6 +766,12 @@ def run_live(start_date, end_date, train_frac):
                 tab, info = pull_framing_year(y)
                 framing[y] = tab
                 framing_info.append(info)
+        except ValueError as e:
+            # savant ANSWERED but the CSV didn't parse — that's column drift, not egress.
+            # Don't mislabel it; the header was already printed above for diagnosis.
+            print(f"\nsavant PARSE FAILURE (column drift?): {e}")
+            print("  Fix parse_framing_csv to accept the header printed above, then re-run.")
+            return 0
         except Exception as e:
             print("\nbaseballsavant UNREACHABLE — run on GitHub Actions.")
             print(f"  (probe error: {type(e).__name__}: {str(e)[:120]})")

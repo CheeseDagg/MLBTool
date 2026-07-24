@@ -1,1 +1,1 @@
-kick off framing experiment — run 1
+framing run 2 — parser accepts 2026 savant format (pct_tot/rv_tot)
