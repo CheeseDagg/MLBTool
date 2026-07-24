@@ -1,0 +1,67 @@
+{
+ "cutoff": "2025-05-23",
+ "n_train": 799,
+ "n_holdout": 923,
+ "framing_coverage": 0.7753,
+ "coverage_ok": true,
+ "constants": {
+  "reg_bf": 100.0,
+  "min_prior_starts": 3,
+  "min_opp_pa": 300,
+  "w_opp_baseline": 0.6,
+  "train_frac": 0.5,
+  "train_win_margin": 0.0005,
+  "min_coverage": 0.7,
+  "fr_w_grid": [
+   0.0,
+   0.5,
+   1.0,
+   1.5,
+   2.0,
+   3.0,
+   4.0,
+   6.0,
+   8.0
+  ]
+ },
+ "tuned": {
+  "param": {
+   "w": 8.0
+  },
+  "train_dll_per_start": 5e-05,
+  "train_win": false
+ },
+ "holdout": {
+  "n": 923,
+  "ll_b": -2011.31,
+  "ll_m": -2011.317,
+  "ll_delta_total": -0.007,
+  "ll_delta_per_start": -1e-05,
+  "mae_b": 1.7754,
+  "mae_m": 1.7754,
+  "mae_delta": 0.0,
+  "periods": [
+   {
+    "period": "2025-05-23..2025-06-05",
+    "n": 304,
+    "ll_delta_total": 0.089,
+    "treatment_better": true
+   },
+   {
+    "period": "2025-06-05..2025-06-18",
+    "n": 308,
+    "ll_delta_total": -0.139,
+    "treatment_better": false
+   },
+   {
+    "period": "2025-06-18..end",
+    "n": 311,
+    "ll_delta_total": 0.043,
+    "treatment_better": true
+   }
+  ],
+  "periods_better": 2,
+  "periods_total": 3
+ },
+ "verdict": "NO EDGE ON TRAIN (w tuned to ~neutral)"
+}
