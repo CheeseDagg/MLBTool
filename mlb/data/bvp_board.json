@@ -1,13 +1,156 @@
 {
- "generated": "2026-07-23T20:43:08+00:00",
- "date": "2026-07-23",
+ "generated": "2026-07-24T07:58:04+00:00",
+ "date": "2026-07-24",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Masyn Winn",
-   "team": "STL",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 13,
+   "batter": "Kyle Tucker",
+   "team": "LAD",
+   "opp_sp": "Sean Manaea",
+   "pa": 21,
+   "ab": 20,
+   "h": 7,
+   "hr": 4,
+   "avg": ".350",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Salvador Perez",
+   "team": "KC",
+   "opp_sp": "Tarik Skubal",
+   "pa": 39,
+   "ab": 39,
+   "h": 11,
+   "hr": 4,
+   "avg": ".282",
+   "slg": ".641"
+  },
+  {
+   "batter": "Mookie Betts",
+   "team": "LAD",
+   "opp_sp": "Sean Manaea",
+   "pa": 35,
+   "ab": 32,
+   "h": 10,
+   "hr": 3,
+   "avg": ".313",
+   "slg": ".781"
+  },
+  {
+   "batter": "J.P. Crawford",
+   "team": "SEA",
+   "opp_sp": "MacKenzie Gore",
+   "pa": 10,
+   "ab": 10,
+   "h": 3,
+   "hr": 2,
+   "avg": ".300",
+   "slg": ".900"
+  },
+  {
+   "batter": "Josh Jung",
+   "team": "TEX",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 4,
+   "hr": 1,
+   "avg": ".571",
+   "slg": "1.143"
+  },
+  {
+   "batter": "Kyle Schwarber",
+   "team": "PHI",
+   "opp_sp": "Will Warren",
+   "pa": 6,
+   "ab": 4,
+   "h": 1,
+   "hr": 1,
+   "avg": ".250",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Eugenio Su\u00e1rez",
+   "team": "CIN",
+   "opp_sp": "Dustin May",
+   "pa": 6,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Ian Happ",
+   "team": "CHC",
+   "opp_sp": "Jared Jones",
+   "pa": 12,
+   "ab": 12,
+   "h": 5,
+   "hr": 1,
+   "avg": ".417",
+   "slg": ".917"
+  },
+  {
+   "batter": "Isaac Paredes",
+   "team": "HOU",
+   "opp_sp": "Davis Martin",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Seiya Suzuki",
+   "team": "CHC",
+   "opp_sp": "Jared Jones",
+   "pa": 8,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Brooks Lee",
+   "team": "MIN",
+   "opp_sp": "Jacob Lopez",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Nathaniel Lowe",
+   "team": "CIN",
+   "opp_sp": "Dustin May",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Randy Arozarena",
+   "team": "SEA",
+   "opp_sp": "MacKenzie Gore",
+   "pa": 8,
+   "ab": 8,
+   "h": 2,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".750"
+  },
+  {
+   "batter": "Weston Wilson",
+   "team": "SEA",
+   "opp_sp": "MacKenzie Gore",
+   "pa": 11,
    "ab": 10,
    "h": 4,
    "hr": 1,
@@ -15,48 +158,15 @@
    "slg": ".700"
   },
   {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Chris Sale",
-   "pa": 12,
-   "ab": 12,
-   "h": 4,
+   "batter": "Max Muncy",
+   "team": "LAD",
+   "opp_sp": "Sean Manaea",
+   "pa": 8,
+   "ab": 6,
+   "h": 1,
    "hr": 1,
-   "avg": ".333",
+   "avg": ".167",
    "slg": ".667"
-  },
-  {
-   "batter": "Manny Machado",
-   "team": "SD",
-   "opp_sp": "Chris Sale",
-   "pa": 36,
-   "ab": 31,
-   "h": 11,
-   "hr": 1,
-   "avg": ".355",
-   "slg": ".548"
-  },
-  {
-   "batter": "Lars Nootbaar",
-   "team": "STL",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 12,
-   "ab": 12,
-   "h": 3,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".500"
-  },
-  {
-   "batter": "Xander Bogaerts",
-   "team": "SD",
-   "opp_sp": "Chris Sale",
-   "pa": 26,
-   "ab": 22,
-   "h": 7,
-   "hr": 1,
-   "avg": ".318",
-   "slg": ".455"
   }
  ]
 }
