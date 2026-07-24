@@ -1,0 +1,42 @@
+name: MLB framing experiment
+# Research experiment: does the starting catcher's PRIOR-SEASON pitch-framing
+# quality (Baseball Savant catcher-framing leaderboard) sharpen pitcher-K props
+# over the validated baseline (prior-rate * BF * opp-whiff w=0.6)?
+# Auto-runs when experiments/RUN-FRAMING.txt changes; commits its VERDICT and
+# the cached dataset back to the repo. Touches no production model.
+on:
+  workflow_dispatch:
+    inputs:
+      start: { description: "start date", default: "2025-04-01" }
+      end:   { description: "end date",   default: "2025-06-30" }
+  push:
+    paths: ['experiments/RUN-FRAMING.txt']
+permissions:
+  contents: write
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: run experiment -> verdict file
+        run: |
+          mkdir -p experiments
+          set -o pipefail
+          cd mlb
+          python3 mlb_framing_experiment.py --selftest
+          START="${{ github.event.inputs.start || '2025-04-01' }}"
+          END="${{ github.event.inputs.end || '2025-06-30' }}"
+          python3 mlb_framing_experiment.py --start "$START" --end "$END" 2>&1 | tee ../experiments/MLB-FRAMING-VERDICT.md || true
+      - name: commit verdict + cached dataset
+        if: always()
+        run: |
+          git config user.name mlb-bot
+          git config user.email actions@github.com
+          for f in experiments/MLB-FRAMING-VERDICT.md mlb/data/framing_dataset.json mlb/data/framing_experiment.json; do
+            git add "$f" || true
+          done
+          if git diff --cached --quiet; then echo "no verdict change"; exit 0; fi
+          git commit -m "MLB framing experiment verdict $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && { echo pushed; exit 0; }; sleep 3; done

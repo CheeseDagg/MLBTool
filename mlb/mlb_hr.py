@@ -102,6 +102,12 @@ SLOT_B   = -0.066  # logit slope of the residual batting-order HR gradient (walk
 PARK_LOWCONF_B = 0.07  # logit bump for [low-conf] parks (walk-forward validated, 6/6 split
                        # stability, all 4 such venues over-perform): the conf-shrink toward
                        # neutral is too aggressive there. Conservative end of the tested range.
+HOT_B = 0.18  # logit bump when the bat HOMERED in his most recent GRADED board game.
+              # Walk-forward validated (25,128 preds): +0.20 raw, 6/6 split-sign-stable,
+              # holdout Brier AND log-loss improve at all 6 splits, survives player-quality
+              # controls (actual 18.0% vs predicted 13.6% on last1 rows). 0.18 = the
+              # control-adjusted conservative estimate. Only the MOST RECENT game counts —
+              # HRs 2-3 games back carry nothing.
 SEASON_W  = 0.6   # weight on the bat's CURRENT-SEASON rate vs the model's talent-prior projection.
                   # Walk-forward validated on the 25,128-prediction backtest: w=0.6 is the Brier
                   # minimum on train AND unseen test independently (base .108573 -> .108249);
@@ -651,7 +657,7 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
 
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
-def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None, pens=None, barrels=None, marcel=None):
+def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=None, cards=None, pens=None, barrels=None, marcel=None, hot=None):
     """
     batters : list of {name, fg_team, pa, hr}
     pitchers: list of {name, bf, hr}
@@ -875,6 +881,8 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                     _lg = math.log(p_game / (1 - p_game)) + SLOT_B * (slot - 5)
                     if "[low-conf]" in park_lab:
                         _lg += PARK_LOWCONF_B
+                    if hot and hot.get(norm(b["name"])):
+                        _lg += HOT_B         # homered in his most recent graded board game
                     p_game = 1.0 / (1.0 + math.exp(-_lg))
                 _raw_pct = round(p_game * 100, 1)               # pre-calibration % (leak-free recalib input)
                 p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
@@ -1473,7 +1481,24 @@ def _build():
         print(f"   Marcel talent: {len(marcel)} hitters (generated {mp.get('generated','?')})")
     except Exception as _e:
         print(f"   Marcel talent: not available ({type(_e).__name__}) — using single-season base")
-    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None, marcel=marcel)
+    # HOT HAND: did each bat homer in his most recent GRADED board game? (validated
+    # residual signal — see HOT_B). Built from hr_graded.csv, which only ever contains
+    # settled prior games, so this is leak-free by construction. Fail-soft to no-bump.
+    hot = {}
+    try:
+        import csv as _csv
+        _gr = {}
+        with open(os.path.join(DATA, "hr_graded.csv")) as f:
+            for r in _csv.DictReader(f):
+                if r.get("outcome") in ("hr", "no") and r.get("date"):
+                    k = norm(r.get("player", ""))
+                    if k and (k not in _gr or r["date"] > _gr[k][0]):
+                        _gr[k] = (r["date"], r["outcome"])
+        hot = {k: 1 for k, (d, o) in _gr.items() if o == "hr"}
+        print(f"   hot-hand: {len(hot)} bats homered in their last graded board game")
+    except Exception as _e:
+        print(f"   hot-hand: unavailable ({type(_e).__name__}) — neutral")
+    rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None, marcel=marcel, hot=hot or None)
     rows = select_rows(rows, have_ev)
     annotate_spots(rows, os.path.join(DATA, "hr_predictions.csv"), dt.date.today().isoformat())
     _mrc = sum(1 for r in rows if r.get("b_src")=="mrc")
