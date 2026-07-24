@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-24T14:26+00:00",
+ "generated": "2026-07-24T21:46+00:00",
  "board": [
   {
    "pitcher": "Jes\u00fas Luzardo",
@@ -44,40 +44,40 @@
   {
    "pitcher": "Shane Drohan",
    "opp": "Colorado Rockies",
-   "lam": 6.98,
-   "k9_regressed": 8.87,
+   "lam": 6.99,
+   "k9_regressed": 8.88,
    "exp_ip": 7.0,
    "opp_mult": 1.012,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8253,
-     "fair_over": -472,
-     "fair_under": 472
+     "p_over": 0.826,
+     "fair_over": -475,
+     "fair_under": 475
     },
     {
      "line": 5.5,
-     "p_over": 0.6969,
-     "fair_over": -230,
-     "fair_under": 230
+     "p_over": 0.6979,
+     "fair_over": -231,
+     "fair_under": 231
     },
     {
      "line": 6.5,
-     "p_over": 0.5475,
-     "fair_over": -121,
-     "fair_under": 121
+     "p_over": 0.5487,
+     "fair_over": -122,
+     "fair_under": 122
     },
     {
      "line": 7.5,
-     "p_over": 0.3985,
-     "fair_over": 151,
-     "fair_under": -151
+     "p_over": 0.3997,
+     "fair_over": 150,
+     "fair_under": -150
     },
     {
      "line": 8.5,
-     "p_over": 0.2685,
-     "fair_over": 272,
-     "fair_under": -272
+     "p_over": 0.2695,
+     "fair_over": 271,
+     "fair_under": -271
     }
    ]
   },
@@ -842,6 +842,86 @@
    ]
   },
   {
+   "pitcher": "Ryan Gusto",
+   "opp": "San Diego Padres",
+   "lam": 4.71,
+   "k9_regressed": 8.34,
+   "exp_ip": 5.03,
+   "opp_mult": 1.01,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5074,
+     "fair_over": -103,
+     "fair_under": 103
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3335,
+     "fair_over": 200,
+     "fair_under": -200
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1969,
+     "fair_over": 408,
+     "fair_under": -408
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.105,
+     "fair_over": 853,
+     "fair_under": -853
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0508,
+     "fair_over": 1867,
+     "fair_under": -1867
+    }
+   ]
+  },
+  {
+   "pitcher": "Trevor Rogers",
+   "opp": "Atlanta Braves",
+   "lam": 4.39,
+   "k9_regressed": 7.58,
+   "exp_ip": 5.34,
+   "opp_mult": 0.976,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4469,
+     "fair_over": 124,
+     "fair_under": -124
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2784,
+     "fair_over": 259,
+     "fair_under": -259
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1551,
+     "fair_over": 545,
+     "fair_under": -545
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0778,
+     "fair_over": 1185,
+     "fair_under": -1185
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0354,
+     "fair_over": 2726,
+     "fair_under": -2726
+    }
+   ]
+  },
+  {
    "pitcher": "Rhett Lowder",
    "opp": "St. Louis Cardinals",
    "lam": 4.32,
@@ -1044,40 +1124,40 @@
   {
    "pitcher": "Tomoyuki Sugano",
    "opp": "Milwaukee Brewers",
-   "lam": 3.48,
-   "k9_regressed": 6.07,
-   "exp_ip": 5.31,
+   "lam": 3.54,
+   "k9_regressed": 6.15,
+   "exp_ip": 5.33,
    "opp_mult": 0.972,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2703,
-     "fair_over": 270,
-     "fair_under": -270
+     "p_over": 0.2821,
+     "fair_over": 254,
+     "fair_under": -254
     },
     {
      "line": 5.5,
-     "p_over": 0.1394,
-     "fair_over": 617,
-     "fair_under": -617
+     "p_over": 0.1477,
+     "fair_over": 577,
+     "fair_under": -577
     },
     {
      "line": 6.5,
-     "p_over": 0.0636,
-     "fair_over": 1473,
-     "fair_under": -1473
+     "p_over": 0.0684,
+     "fair_over": 1362,
+     "fair_under": -1362
     },
     {
      "line": 7.5,
-     "p_over": 0.0259,
-     "fair_over": 3763,
-     "fair_under": -3763
+     "p_over": 0.0283,
+     "fair_over": 3432,
+     "fair_under": -3432
     },
     {
      "line": 8.5,
-     "p_over": 0.0095,
-     "fair_over": 10425,
-     "fair_under": -10425
+     "p_over": 0.0106,
+     "fair_over": 9364,
+     "fair_under": -9364
     }
    ]
   },
@@ -1122,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 15} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 30} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
