@@ -5,6 +5,8 @@ on:
     - cron: "47 17 * * *"   # 12:47pm CT — day-game cards before early first pitches
     - cron: "17 20 * * *"   # 3:17pm CT — cards reprice, ready by 4
   workflow_dispatch: {}
+  push:
+    paths: ['experiments/REBUILD.txt']   # touch this file to rebuild the board on demand
 permissions:
   contents: write
 concurrency:
