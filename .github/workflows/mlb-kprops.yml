@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: "10 18,21,23 * * *"   # 10 past, offset from the HR shop runs
   workflow_dispatch: {}
+  push:
+    paths: ['experiments/REBUILD-KPROPS.txt']   # touch to rebuild the K board on demand
 permissions:
   contents: write
 jobs:
