@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-25T07:30:44+00:00",
+ "generated": "2026-07-25T20:29:18+00:00",
  "date": "2026-07-25",
  "min_pa": 6,
  "rows": [
@@ -13,39 +13,6 @@
    "hr": 2,
    "avg": ".500",
    "slg": "1.667"
-  },
-  {
-   "batter": "Nathaniel Lowe",
-   "team": "CIN",
-   "opp_sp": "Andre Pallante",
-   "pa": 12,
-   "ab": 11,
-   "h": 4,
-   "hr": 2,
-   "avg": ".364",
-   "slg": ".909"
-  },
-  {
-   "batter": "Jake Rogers",
-   "team": "DET",
-   "opp_sp": "Michael Wacha",
-   "pa": 12,
-   "ab": 12,
-   "h": 6,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Jose Trevino",
-   "team": "CIN",
-   "opp_sp": "Andre Pallante",
-   "pa": 8,
-   "ab": 7,
-   "h": 3,
-   "hr": 1,
-   "avg": ".429",
-   "slg": ".857"
   },
   {
    "batter": "Jonathan Aranda",
@@ -90,28 +57,6 @@
    "hr": 1,
    "avg": ".167",
    "slg": ".667"
-  },
-  {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Casey Mize",
-   "pa": 35,
-   "ab": 33,
-   "h": 14,
-   "hr": 1,
-   "avg": ".424",
-   "slg": ".636"
-  },
-  {
-   "batter": "Luis Ur\u00edas",
-   "team": "TOR",
-   "opp_sp": "Sonny Gray",
-   "pa": 12,
-   "ab": 11,
-   "h": 4,
-   "hr": 1,
-   "avg": ".364",
-   "slg": ".636"
   },
   {
    "batter": "Yandy D\u00edaz",
@@ -167,6 +112,61 @@
    "hr": 1,
    "avg": ".143",
    "slg": ".571"
+  },
+  {
+   "batter": "Luke Raley",
+   "team": "SEA",
+   "opp_sp": "Nathan Eovaldi",
+   "pa": 18,
+   "ab": 18,
+   "h": 5,
+   "hr": 1,
+   "avg": ".278",
+   "slg": ".556"
+  },
+  {
+   "batter": "Dansby Swanson",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 12,
+   "ab": 9,
+   "h": 2,
+   "hr": 1,
+   "avg": ".222",
+   "slg": ".556"
+  },
+  {
+   "batter": "Julio Rodr\u00edguez",
+   "team": "SEA",
+   "opp_sp": "Nathan Eovaldi",
+   "pa": 24,
+   "ab": 24,
+   "h": 9,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".542"
+  },
+  {
+   "batter": "Willson Contreras",
+   "team": "BOS",
+   "opp_sp": "Dylan Cease",
+   "pa": 20,
+   "ab": 17,
+   "h": 4,
+   "hr": 1,
+   "avg": ".235",
+   "slg": ".471"
+  },
+  {
+   "batter": "Nico Hoerner",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 17,
+   "ab": 15,
+   "h": 4,
+   "hr": 1,
+   "avg": ".267",
+   "slg": ".467"
   }
  ]
 }
