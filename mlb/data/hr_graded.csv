@@ -511,3 +511,30 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-25,Curtis Mead,WSN,Mitch Bratt,2,card,19.9,21.7,+403,,,park avg,82F,RvL +12%,,no,0
 2026-07-25,Mike Trout,LAA,Robbie Ray,2,card,19.7,21.6,+407,,,park -14%,70F · wind out 14,RvL +12%,heat -1%,no,0
 2026-07-25,Zach Neto,LAA,Robbie Ray,1,card,18.8,20.7,+431,,,park -14%,70F · wind out 14,RvL +12%,heat +5%,no,0
+2026-07-25,Yordan Alvarez,HOU,Sean Burke,2,card,26.4,34.3,+278,,,park +9%,no wx,LvR +8%,heat +4%,no,0
+2026-07-25,Byron Buxton,MIN,Brady Basso,2,card,24.1,31.0,+314,,,park -2%,85F,RvL +12%,,no,0
+2026-07-25,Ben Rice,NYY,Tim Mayza,2,card,23.0,29.4,+335,,,park +9%,76F,LvL -22%,heat -2%,no,0
+2026-07-25,Hunter Goodman,COL,Robert Gasser,4,card,22.2,28.2,+351,,,park +9%,78F (roof: half),RvL +12%,heat +18%,no,0
+2026-07-25,Kyle Schwarber,PHI,Ryan Weathers,2,card,22.2,28.2,+351,,,park +9%,76F,LvL -22%,heat +7%,no,0
+2026-07-25,Drake Baldwin,ATL,Brandon Young,1,card,21.7,26.7,+362,,,park +4% [low-conf],77F,LvR +8%,heat -3%,no,0
+2026-07-25,Esmerlyn Valdez,PIT,Shota Imanaga,4,card,21.7,26.7,+362,,,park -9%,79F,RvL +12%,heat +3%,no,0
+2026-07-25,Joc Pederson,TEX,Bryan Woo,1,card,21.7,26.9,+360,,,park +2%,98F (roof: half),LvR +8%,heat +3%,no,0
+2026-07-25,Junior Caminero,TBR,Tanner Bibee,3,card,21.4,25.9,+368,,,park -4% [low-conf],dome,RvR -3%,heat -1%,no,0
+2026-07-25,Munetaka Murakami,CHW,Hunter Brown,2,card,21.1,25.0,+374,,,park +9%,no wx,LvR +8%,heat +2%,no,0
+2026-07-25,Matt Olson,ATL,Brandon Young,3,card,20.9,24.5,+378,,,park +4% [low-conf],77F,LvR +8%,heat -2%,no,0
+2026-07-25,Nick Kurtz,ATH,Mike Paredes,2,card,20.9,24.4,+378,,,park -2%,85F,LvR +8%,heat +3%,no,0
+2026-07-25,Sal Stewart,CIN,Andre Pallante,2,card,20.8,24.0,+382,,,park -7%,90F,RvR -3%,heat -2%,no,0
+2026-07-25,Dominic Canzone,SEA,Nathan Eovaldi,3,card,20.7,23.8,+383,,,park +2%,98F (roof: half),LvR +8%,heat -3%,no,0
+2026-07-25,Shohei Ohtani,LAD,Nolan McLean,1,card,20.7,23.9,+382,,,park -4%,74F,LvR +8%,heat -0%,no,0
+2026-07-25,Pete Alonso,BAL,Bryce Elder,2,card,20.6,23.6,+385,,,park +4% [low-conf],77F,RvR -3%,heat +3%,no,0
+2026-07-25,Jordan Walker,STL,Hunter Greene,2,card,20.3,22.5,+393,,,park -7%,90F,RvR -3%,,no,0
+2026-07-25,Elly De La Cruz,CIN,Andre Pallante,1,card,19.9,21.8,+402,,,park -7%,90F,SvR +8%,heat +8%,no,0
+2026-07-25,Pete Crow-Armstrong,CHC,Paul Skenes,1,card,19.8,21.7,+405,,,park -9%,79F,LvR +8%,heat -3%,hr,1
+2026-07-25,Colson Montgomery,CHW,Hunter Brown,4,card,19.7,21.5,+409,,,park +9%,no wx,LvR +8%,heat -1%,no,0
+2026-07-25,Jackson Chourio,MIL,Ryan Feltner,2,card,19.3,21.2,+417,,,park +9%,78F (roof: half),RvR -3%,heat -4%,no,0
+2026-07-25,Kody Clemens,MIN,Brady Basso,3,card,18.9,20.7,+429,,,park -2%,85F,LvL -22%,,no,0
+2026-07-25,Paul Goldschmidt,NYY,Tim Mayza,3,card,18.9,20.8,+428,,,park +9%,76F,RvL +12%,heat +0%,no,0
+2026-07-25,Trea Turner,PHI,Ryan Weathers,1,card,18.7,20.5,+436,,,park +9%,76F,RvL +12%,heat -5%,no,0
+2026-07-25,Wyatt Langford,TEX,Bryan Woo,2,card,18.4,20.2,+444,,,park +2%,98F (roof: half),RvR -3%,heat +0%,no,0
+2026-07-25,Michael Harris II,ATL,Brandon Young,4,card,18.3,20.1,+448,,,park +4% [low-conf],77F,LvR +8%,heat +1%,no,0
+2026-07-25,Corbin Carroll,ARI,Foster Griffin,1,card,18.1,19.9,+452,,,park avg,79F,LvL -22%,heat +6%,void,
