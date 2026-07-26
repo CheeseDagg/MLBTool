@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-26T07:58:04+00:00",
+ "generated": "2026-07-26T20:33:29+00:00",
  "date": "2026-07-26",
  "min_pa": 6,
  "rows": [
@@ -15,15 +15,26 @@
    "slg": "1.333"
   },
   {
-   "batter": "Brandon Lowe",
-   "team": "PIT",
-   "opp_sp": "Jameson Taillon",
-   "pa": 20,
-   "ab": 17,
-   "h": 5,
+   "batter": "Ketel Marte",
+   "team": "AZ",
+   "opp_sp": "Miles Mikolas",
+   "pa": 14,
+   "ab": 13,
+   "h": 3,
    "hr": 3,
-   "avg": ".294",
-   "slg": ".882"
+   "avg": ".231",
+   "slg": ".923"
+  },
+  {
+   "batter": "Andrew Vaughn",
+   "team": "MIL",
+   "opp_sp": "Kyle Freeland",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
   },
   {
    "batter": "Shohei Ohtani",
@@ -35,28 +46,6 @@
    "hr": 2,
    "avg": ".333",
    "slg": "1.000"
-  },
-  {
-   "batter": "Willson Contreras",
-   "team": "BOS",
-   "opp_sp": "Kevin Gausman",
-   "pa": 11,
-   "ab": 11,
-   "h": 4,
-   "hr": 2,
-   "avg": ".364",
-   "slg": ".909"
-  },
-  {
-   "batter": "Ketel Marte",
-   "team": "AZ",
-   "opp_sp": "Miles Mikolas",
-   "pa": 12,
-   "ab": 11,
-   "h": 2,
-   "hr": 2,
-   "avg": ".182",
-   "slg": ".727"
   },
   {
    "batter": "Brandon Nimmo",
@@ -81,92 +70,103 @@
    "slg": "1.273"
   },
   {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Will Warren",
-   "pa": 6,
-   "ab": 4,
-   "h": 1,
-   "hr": 1,
-   "avg": ".250",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Masataka Yoshida",
-   "team": "BOS",
-   "opp_sp": "Kevin Gausman",
-   "pa": 15,
-   "ab": 15,
-   "h": 8,
-   "hr": 1,
-   "avg": ".533",
-   "slg": ".933"
-  },
-  {
-   "batter": "Andrew Vaughn",
-   "team": "MIL",
-   "opp_sp": "Kyle Freeland",
-   "pa": 12,
-   "ab": 11,
-   "h": 5,
-   "hr": 1,
-   "avg": ".455",
-   "slg": ".909"
-  },
-  {
-   "batter": "Nathaniel Lowe",
-   "team": "CIN",
-   "opp_sp": "Kyle Leahy",
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
    "pa": 8,
    "ab": 8,
-   "h": 3,
+   "h": 4,
    "hr": 1,
-   "avg": ".375",
-   "slg": ".750"
+   "avg": ".500",
+   "slg": "1.125"
   },
   {
-   "batter": "Julio Rodr\u00edguez",
-   "team": "SEA",
-   "opp_sp": "Jacob deGrom",
-   "pa": 16,
-   "ab": 15,
-   "h": 6,
+   "batter": "Jake Cronenworth",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
-   "avg": ".400",
-   "slg": ".667"
+   "avg": ".500",
+   "slg": "1.125"
   },
   {
-   "batter": "Jarren Duran",
-   "team": "BOS",
-   "opp_sp": "Kevin Gausman",
-   "pa": 25,
-   "ab": 25,
-   "h": 8,
+   "batter": "Manny Machado",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
-   "avg": ".320",
-   "slg": ".640"
+   "avg": ".500",
+   "slg": "1.125"
   },
   {
-   "batter": "Vinnie Pasquantino",
-   "team": "KC",
-   "opp_sp": "Framber Valdez",
-   "pa": 9,
-   "ab": 9,
-   "h": 2,
+   "batter": "Ty France",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
+   "avg": ".500",
+   "slg": "1.125"
   },
   {
-   "batter": "Isaac Paredes",
-   "team": "HOU",
-   "opp_sp": "Erick Fedde",
-   "pa": 9,
-   "ab": 9,
-   "h": 2,
+   "batter": "Jackson Merrill",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
+   "avg": ".500",
+   "slg": "1.125"
+  },
+  {
+   "batter": "Luis Rengifo",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.125"
+  },
+  {
+   "batter": "Gavin Sheets",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.125"
+  },
+  {
+   "batter": "Luis Campusano",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.125"
+  },
+  {
+   "batter": "Sung-Mun Song",
+   "team": "SD",
+   "opp_sp": "Janson Junk",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.125"
   }
  ]
 }
