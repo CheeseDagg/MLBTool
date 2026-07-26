@@ -545,3 +545,21 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-26,Corbin Carroll,ARI,Miles Mikolas,1,card,20.6,23.5,+385,,,park avg,83F,LvR +8%,heat +5%,void,
 2026-07-26,Pete Crow-Armstrong,CHC,Braxton Ashcraft,1,card,20.6,23.5,+385,,,park -9%,79F,LvR +8%,heat +2%,no,0
 2026-07-26,Ketel Marte,ARI,Miles Mikolas,4,card,19.2,21.1,+420,,,park avg,83F,SvR +8%,heat +4%,void,
+2026-07-26,Yordan Alvarez,HOU,Erick Fedde,2,card,28.2,36.8,+255,,,park +9%,85F · wind in 3,LvR +8%,heat -1%,no,0
+2026-07-26,Byron Buxton,MIN,Jeffrey Springs,2,card,26.5,34.3,+278,,,park -2%,96F · wind out 3,RvL +12%,heat +2%,no,0
+2026-07-26,Ryan Jeffers,MIN,Jeffrey Springs,3,card,22.2,28.2,+351,,,park -2%,96F · wind out 3,RvL +12%,heat +3%,no,0
+2026-07-26,Joc Pederson,TEX,Logan Gilbert,1,card,21.8,27.1,+358,,,park +2%,99F (roof: half),LvR +8%,heat +6%,no,0
+2026-07-26,Drake Baldwin,ATL,Shane Baz,1,card,21.6,26.5,+363,,,park +4% [low-conf],83F,LvR +8%,heat -0%,no,0
+2026-07-26,Munetaka Murakami,CHW,Ronel Blanco *,2,card,21.6,26.4,+364,,,park +9%,85F · wind in 3,LvR +8%,,hr,2
+2026-07-26,Hunter Goodman,COL,Jacob Misiorowski,3,card,21.3,25.6,+369,,,park +9%,84F · wind in 6 (roof: half),RvR -3%,heat -1%,no,0
+2026-07-26,Jordan Walker,STL,Andrew Abbott,2,card,20.9,24.5,+378,,,park -7%,99F,RvL +12%,heat -7%,no,0
+2026-07-26,Matt Olson,ATL,Shane Baz,3,card,20.9,24.5,+378,,,park +4% [low-conf],83F,LvR +8%,heat +5%,no,0
+2026-07-26,Jackson Chourio,MIL,Kyle Freeland,1,card,20.7,23.7,+384,,,park +9%,84F · wind in 6 (roof: half),RvL +12%,heat +9%,no,0
+2026-07-26,Pete Alonso,BAL,Reynaldo López *,2,card,20.6,23.4,+386,,,park +4% [low-conf],83F,RvR -3%,heat +5%,hr,1
+2026-07-26,Dominic Canzone,SEA,Jacob deGrom,3,card,20.4,22.8,+391,,,park +2%,99F (roof: half),LvR +8%,heat +1%,hr,1
+2026-07-26,Elly De La Cruz,CIN,Kyle Leahy,1,card,20.3,22.5,+393,,,park -7%,99F,SvR +8%,heat +2%,hr,1
+2026-07-26,Nick Kurtz,ATH,Connor Prielipp,2,card,20.2,22.2,+396,,,park -2%,96F · wind out 3,LvL -22%,heat -2%,hr,1
+2026-07-26,Miguel Vargas,CHW,Ronel Blanco *,3,card,19.1,20.9,+424,,,park +9%,85F · wind in 3,RvR -3%,,hr,1
+2026-07-26,Mike Trout,LAA,Carson Whisenhunt,2,card,19.0,20.9,+425,,,park -14%,66F · wind out 12,RvL +12%,heat -1%,no,0
+2026-07-26,Dillon Dingler,DET,Luinder Avila,5,card,18.8,20.6,+432,,,park -5%,87F,RvR -3%,heat -7%,no,0
+2026-07-26,Kody Clemens,MIN,Jeffrey Springs,5,card,18.6,20.5,+437,,,park -2%,96F · wind out 3,LvL -22%,heat -6%,no,0
