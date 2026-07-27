@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-27T00:11:20+00:00",
+ "generated": "2026-07-27T18:45:09+00:00",
  "date": "2026-07-27",
  "min_pa": 6,
  "rows": [
@@ -79,17 +79,6 @@
    "hr": 1,
    "avg": ".333",
    "slg": "1.000"
-  },
-  {
-   "batter": "Cal Raleigh",
-   "team": "SEA",
-   "opp_sp": "Kumar Rocker",
-   "pa": 10,
-   "ab": 8,
-   "h": 3,
-   "hr": 1,
-   "avg": ".375",
-   "slg": ".875"
   },
   {
    "batter": "Kyle Schwarber",
