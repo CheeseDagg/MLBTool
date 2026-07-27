@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-27T20:26+00:00",
+ "generated": "2026-07-27T21:03+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -204,40 +204,40 @@
   {
    "pitcher": "George Kirby",
    "opp": "Texas Rangers",
-   "lam": 5.46,
+   "lam": 5.47,
    "k9_regressed": 8.15,
    "exp_ip": 6.0,
-   "opp_mult": 1.004,
+   "opp_mult": 1.006,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6363,
-     "fair_over": -175,
-     "fair_under": 175
+     "p_over": 0.6376,
+     "fair_over": -176,
+     "fair_under": 176
     },
     {
      "line": 5.5,
-     "p_over": 0.4644,
+     "p_over": 0.4658,
      "fair_over": 115,
      "fair_under": -115
     },
     {
      "line": 6.5,
-     "p_over": 0.3078,
-     "fair_over": 225,
-     "fair_under": -225
+     "p_over": 0.3091,
+     "fair_over": 224,
+     "fair_under": -224
     },
     {
      "line": 7.5,
-     "p_over": 0.1857,
-     "fair_over": 438,
-     "fair_under": -438
+     "p_over": 0.1867,
+     "fair_over": 436,
+     "fair_under": -436
     },
     {
      "line": 8.5,
-     "p_over": 0.1023,
-     "fair_over": 877,
-     "fair_under": -877
+     "p_over": 0.103,
+     "fair_over": 871,
+     "fair_under": -871
     }
    ]
   },
@@ -487,37 +487,37 @@
    "lam": 4.69,
    "k9_regressed": 8.27,
    "exp_ip": 5.0,
-   "opp_mult": 1.021,
+   "opp_mult": 1.02,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5029,
+     "p_over": 0.5027,
      "fair_over": -101,
      "fair_under": 101
     },
     {
      "line": 5.5,
-     "p_over": 0.3292,
+     "p_over": 0.3291,
      "fair_over": 204,
      "fair_under": -204
     },
     {
      "line": 6.5,
-     "p_over": 0.1936,
+     "p_over": 0.1935,
      "fair_over": 417,
      "fair_under": -417
     },
     {
      "line": 7.5,
-     "p_over": 0.1028,
-     "fair_over": 873,
-     "fair_under": -873
+     "p_over": 0.1027,
+     "fair_over": 874,
+     "fair_under": -874
     },
     {
      "line": 8.5,
      "p_over": 0.0495,
-     "fair_over": 1919,
-     "fair_under": -1919
+     "fair_over": 1921,
+     "fair_under": -1921
     }
    ]
   },
