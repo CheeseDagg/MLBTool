@@ -7,7 +7,11 @@ on:
     - cron: "10 18,21,23 * * *"   # 10 past, offset from the HR shop runs
   workflow_dispatch: {}
   push:
-    paths: ['experiments/REBUILD-KPROPS.txt']   # touch to rebuild the K board on demand
+    paths:
+      - 'experiments/REBUILD-KPROPS.txt'   # touch to rebuild the K board on demand
+      - 'mlb/data/slate.json'              # auto-rebuild K board whenever a fresh slate publishes
+                                           # (fixes the race where K ran before the new slate landed,
+                                           #  the stale-guard rightly refused, and yesterday's board stayed up)
 permissions:
   contents: write
 jobs:
