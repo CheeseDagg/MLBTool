@@ -104,15 +104,30 @@ def price_lines(lam, lines=(4.5, 5.5, 6.5, 7.5, 8.5)):
     return out
 
 def project_start(name, pitcher_so, pitcher_ip, games_started, team_so, team_pa,
-                  opp_name=""):
-    """Full projection card for one start."""
-    lam = k_lambda(pitcher_so, pitcher_ip, games_started, team_so, team_pa)
+                  opp_name="", start_ip=None, start_gs=None):
+    """Full projection card for one start.
+
+    start_ip / start_gs: innings and count from the pitcher's STARTS ONLY
+    (game-log derived, fed by the runner). When provided they drive expected
+    innings; season totals still drive the K rate — relief strikeouts are
+    real strikeout evidence, but relief innings are not start-length
+    evidence. Guards the swingman bug: total season IP / games-started
+    inflated expected IP for pitchers with relief work (Jack Perkins
+    projected 7.0 IP on 2026-07-27; no pitcher in the 2,448-start validated
+    2025 sample earned even 6.4)."""
+    if start_gs and start_gs > 0 and start_ip is not None:
+        ip_est = expected_ip(start_ip, start_gs)
+    else:
+        ip_est = expected_ip(pitcher_ip, games_started)
+    k9 = regressed_k9(pitcher_so, pitcher_ip)
+    mult = opp_k_multiplier(team_so, team_pa)
+    lam = (k9 / 9.0) * ip_est * mult
     return {
         "pitcher": name, "opp": opp_name,
         "lam": round(lam, 2),
-        "k9_regressed": round(regressed_k9(pitcher_so, pitcher_ip), 2),
-        "exp_ip": round(expected_ip(pitcher_ip, games_started), 2),
-        "opp_mult": round(opp_k_multiplier(team_so, team_pa), 3),
+        "k9_regressed": round(k9, 2),
+        "exp_ip": round(ip_est, 2),
+        "opp_mult": round(mult, 3),
         "lines": price_lines(lam),
     }
 
@@ -175,6 +190,26 @@ def selftest():
     pp = p_push(7.0, 7.0)
     assert 0.10 < pp < 0.18                      # mode of Poisson(7) ~ 14.9%
     assert p_push(6.5, 7.0) == 0.0
+
+    # --- swingman guard: starts-only innings drive exp_ip when provided ---
+    # 80 season IP but only 5 GS (relief work inflates IP/GS to 16 -> cap 7.0)
+    swing_old = project_start("Swingman", 80, 80.0, 5, 0, 0, "OPP")
+    assert swing_old["exp_ip"] == 7.0, swing_old["exp_ip"]   # the bug, reproduced
+    # game log says his 5 starts totaled 27 innings -> 5.4, not 7.0
+    swing_fix = project_start("Swingman", 80, 80.0, 5, 0, 0, "OPP",
+                              start_ip=27.0, start_gs=5)
+    assert abs(swing_fix["exp_ip"] - 5.4) < 1e-9, swing_fix["exp_ip"]
+    # K rate must be IDENTICAL — relief Ks still count toward the rate
+    assert swing_fix["k9_regressed"] == swing_old["k9_regressed"]
+    assert swing_fix["lam"] < swing_old["lam"]
+    # pure starter: start data matches season data -> byte-identical card
+    pure_a = project_start("Pure", 150, 150.0, 25, 250, 1000, "OPP")
+    pure_b = project_start("Pure", 150, 150.0, 25, 250, 1000, "OPP",
+                           start_ip=150.0, start_gs=25)
+    assert pure_a == pure_b
+    # fallback: start data absent/zero -> old behavior exactly
+    assert project_start("Swingman", 80, 80.0, 5, 0, 0, "OPP", start_ip=None,
+                         start_gs=0) == swing_old
 
     print("KPROPS SELFTEST PASS — Poisson exact, regression, workload caps, opp mult, ladder, pushes")
     return 0

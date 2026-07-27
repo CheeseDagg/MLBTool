@@ -31,13 +31,17 @@ rookies/new bats, not scratches) · anything intra-day (board is pregame).
 
 ## MLB — K props (mlb_kprops*.py)
 
-**IN:** pitcher season K/BF, league-regressed · expected IP from his recent starts ·
-opponent OVERALL team K% shrunk 0.6 toward neutral (walk-forward validated on 2,448
-starts — 0.6 beat the old 0.5 in 3/3 periods) · push credit on whole-number lines ·
-stale-slate guard + auto-rebuild when a fresh slate publishes.
+**IN:** pitcher season K/BF, league-regressed · expected IP from his ACTUAL STARTS
+only (game-log; relief innings excluded — the swingman guard, after Perkins pinned
+7.0 IP off bulk-relief innings) · opponent OVERALL team K% shrunk 0.6 toward neutral
+(walk-forward validated on 2,448 starts — 0.6 beat the old 0.5 in 3/3 periods) ·
+push credit on whole-number lines · stale-slate guard + auto-rebuild when a fresh
+slate publishes.
 
 **TESTED & DEAD (all on real 2025 data):** umpire K-tendency · catcher framing ·
-recent-form windows · home/away splits · days rest · workload (BF) trend.
+recent-form windows · home/away splits · days rest · workload (BF) trend ·
+innings shrinkage toward league average (raw start-average won on holdout; shrink
+actively hurts short-leash arms — openers really are short).
 
 **BLIND SPOTS:** opponent K% **vs LHP/RHP** (← the Noah Schultz issue; experiment
 running to close this — see below) · lineup-specific whiff (who's actually in tonight)

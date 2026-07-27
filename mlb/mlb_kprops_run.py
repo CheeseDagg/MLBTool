@@ -32,8 +32,39 @@ def norm(s):
     return "".join(c for c in s.lower() if c.isalnum())
 
 # ---------------------------------------------------------------- stats pulls
+def ip_float(x):
+    """Baseball-notation innings -> real number. statsapi sends '45.1' meaning
+    45 and ONE OUT (45.333), not 45.1. '.0/.1/.2' are the only valid frames."""
+    s = str(x or 0)
+    whole, _, frac = s.partition(".")
+    try:
+        base = float(whole or 0)
+    except ValueError:
+        return 0.0
+    return base + {"": 0.0, "0": 0.0, "1": 1/3, "2": 2/3}.get(frac, 0.0)
+
+def pull_start_log(statsapi, pid):
+    """(start_ip_total, n_starts) from the game log — STARTS ONLY. Relief
+    innings in the season line inflate IP/GS for swingmen (the Perkins bug:
+    exp_ip pinned the 7.0 cap). Fail-soft: (None, 0) keeps the season-line
+    fallback in project_start."""
+    try:
+        data = statsapi.player_stat_data(pid, group="pitching", type="gameLog")
+        tot, n = 0.0, 0
+        for g in data.get("stats", []):
+            st = g.get("stats", {})
+            if int(st.get("gamesStarted", 0) or 0) < 1:
+                continue
+            tot += ip_float(st.get("inningsPitched", 0))
+            n += 1
+        return (tot, n) if n else (None, 0)
+    except Exception as e:
+        print(f"  [gamelog] pid {pid}: {type(e).__name__}")
+        return (None, 0)
+
 def pull_pitcher_stats(names):
-    """{norm_name: {'so':, 'ip':, 'gs':}} via statsapi lookup+stats."""
+    """{norm_name: {'so':, 'ip':, 'gs':, 'start_ip':, 'start_gs':}}
+    via statsapi lookup+stats (+ game log for starts-only innings)."""
     import statsapi
     out = {}
     for nm in names:
@@ -44,11 +75,13 @@ def pull_pitcher_stats(names):
             data = statsapi.player_stat_data(pid, group="pitching", type="season")
             for s in data.get("stats", []):
                 st = s.get("stats", {})
-                ip = float(st.get("inningsPitched", 0) or 0)
+                s_ip, s_gs = pull_start_log(statsapi, pid)
                 out[norm(nm)] = {
                     "so": int(st.get("strikeOuts", 0) or 0),
-                    "ip": ip,
+                    "ip": ip_float(st.get("inningsPitched", 0)),
                     "gs": int(st.get("gamesStarted", 0) or 0),
+                    "start_ip": s_ip,
+                    "start_gs": s_gs,
                 }
                 break
         except Exception as e:
@@ -185,7 +218,8 @@ def main():
         if not ps:
             continue
         so_t, pa_t = (tw["so"], tw["pa"]) if tw else (0, 0)
-        card = KP.project_start(pname, ps["so"], ps["ip"], ps["gs"], so_t, pa_t, opp)
+        card = KP.project_start(pname, ps["so"], ps["ip"], ps["gs"], so_t, pa_t, opp,
+                                start_ip=ps.get("start_ip"), start_gs=ps.get("start_gs", 0))
         board.append(card)
         fair_by_pitcher[norm(pname)] = {l["line"]: l["p_over"] for l in card["lines"]}
     board.sort(key=lambda c: -c["lam"])
