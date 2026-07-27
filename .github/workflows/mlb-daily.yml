@@ -43,6 +43,16 @@ jobs:
         run: |
           python mlb_futures.py || true
           python mlb_publish.py
+      - name: Build K props off the slate just built
+        # In-run, not chained: pushes made with GITHUB_TOKEN never trigger other
+        # workflows, so the 'kprops on slate.json push' chain in mlb-kprops.yml
+        # only fires on PAT/manual pushes. Building here guarantees the K board
+        # is never older than the slate it prices. Fail-soft: a K-props hiccup
+        # must not block the slate publish.
+        working-directory: mlb
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python mlb_kprops_run.py || true
       - name: Validate slate.json is browser-parseable
         run: |
           node -e "JSON.parse(require('fs').readFileSync('mlb/data/slate.json','utf8')); console.log('slate.json OK for browsers')"
@@ -53,7 +63,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --mixed origin/main
-            for f in mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv mlb/data/hr_graded.csv mlb/data/futures.json; do
+            for f in mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv mlb/data/hr_graded.csv mlb/data/futures.json mlb/data/kprops.json; do
               git add "$f" 2>/dev/null || true
             done
             if git diff --cached --quiet; then
