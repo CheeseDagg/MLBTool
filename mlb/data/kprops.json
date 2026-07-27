@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-27T19:47+00:00",
+ "generated": "2026-07-27T19:49+00:00",
  "board": [
   {
    "pitcher": "Jack Perkins",
@@ -404,40 +404,40 @@
   {
    "pitcher": "Kumar Rocker",
    "opp": "Seattle Mariners",
-   "lam": 5.19,
-   "k9_regressed": 8.23,
+   "lam": 5.23,
+   "k9_regressed": 8.29,
    "exp_ip": 5.56,
    "opp_mult": 1.021,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5914,
-     "fair_over": -145,
-     "fair_under": 145
+     "p_over": 0.5985,
+     "fair_over": -149,
+     "fair_under": 149
     },
     {
      "line": 5.5,
-     "p_over": 0.4165,
-     "fair_over": 140,
-     "fair_under": -140
+     "p_over": 0.4239,
+     "fair_over": 136,
+     "fair_under": -136
     },
     {
      "line": 6.5,
-     "p_over": 0.2654,
-     "fair_over": 277,
-     "fair_under": -277
+     "p_over": 0.2718,
+     "fair_over": 268,
+     "fair_under": -268
     },
     {
      "line": 7.5,
-     "p_over": 0.1534,
-     "fair_over": 552,
-     "fair_under": -552
+     "p_over": 0.1582,
+     "fair_over": 532,
+     "fair_under": -532
     },
     {
      "line": 8.5,
-     "p_over": 0.0809,
-     "fair_over": 1137,
-     "fair_under": -1137
+     "p_over": 0.084,
+     "fair_over": 1091,
+     "fair_under": -1091
     }
    ]
   },
