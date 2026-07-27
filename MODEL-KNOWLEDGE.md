@@ -41,11 +41,14 @@ slate publishes.
 **TESTED & DEAD (all on real 2025 data):** umpire K-tendency · catcher framing ·
 recent-form windows · home/away splits · days rest · workload (BF) trend ·
 innings shrinkage toward league average (raw start-average won on holdout; shrink
-actively hurts short-leash arms — openers really are short).
+actively hurts short-leash arms — openers really are short) · opponent K% split
+by starter hand at the TEAM level (100% hand coverage, walk-forward: no shrink
+level beat overall K% even in-sample — team-overall whiff already carries it).
 
-**BLIND SPOTS:** opponent K% **vs LHP/RHP** (← the Noah Schultz issue; experiment
-running to close this — see below) · lineup-specific whiff (who's actually in tonight)
-· pitch-type matchups · scratches after build.
+**BLIND SPOTS:** the LINEUP-specific vs-hand read — who's actually in tonight and
+how those bats whiff vs this hand (team-level splits tested & dead above; the
+Schultz-type read stays YOURS, it needs tonight's lineup, not team history) ·
+pitch-type matchups · scratches after build.
 
 ## NFL (nfl_model.py)
 
