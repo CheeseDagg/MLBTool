@@ -1,0 +1,56 @@
+{
+ "cutoff": "2025-05-23",
+ "n_train": 799,
+ "n_holdout": 923,
+ "hand_known_frac": 1.0,
+ "holdout_starts_using_split": 0,
+ "constants": {
+  "reg_bf": 100.0,
+  "min_prior_starts": 3,
+  "min_opp_pa": 300,
+  "w_opp_fixed": 0.6,
+  "train_frac": 0.5,
+  "train_win_margin": 0.0005
+ },
+ "tuned": {
+  "param": {
+   "tau": null,
+   "min_split_pa": null
+  },
+  "train_dll_per_start": 0.0,
+  "train_win": false
+ },
+ "holdout": {
+  "n": 923,
+  "ll_b": -2011.31,
+  "ll_m": -2011.31,
+  "ll_delta_total": 0.0,
+  "ll_delta_per_start": 0.0,
+  "mae_b": 1.7754,
+  "mae_m": 1.7754,
+  "mae_delta": 0.0,
+  "periods": [
+   {
+    "period": "2025-05-23..2025-06-05",
+    "n": 304,
+    "ll_delta_total": 0.0,
+    "treatment_better": false
+   },
+   {
+    "period": "2025-06-05..2025-06-18",
+    "n": 308,
+    "ll_delta_total": 0.0,
+    "treatment_better": false
+   },
+   {
+    "period": "2025-06-18..end",
+    "n": 311,
+    "ll_delta_total": 0.0,
+    "treatment_better": false
+   }
+  ],
+  "periods_better": 0,
+  "periods_total": 3
+ },
+ "verdict": "NO EDGE ON TRAIN (blend tuned to ~pure overall) \u2014 keep overall whiff"
+}
