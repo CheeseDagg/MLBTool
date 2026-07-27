@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-27T18:45:09+00:00",
+ "generated": "2026-07-27T21:21:51+00:00",
  "date": "2026-07-27",
  "min_pa": 6,
  "rows": [
@@ -59,17 +59,6 @@
    "slg": "1.000"
   },
   {
-   "batter": "Marcell Ozuna",
-   "team": "PIT",
-   "opp_sp": "Merrill Kelly",
-   "pa": 6,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  },
-  {
    "batter": "Nathaniel Lowe",
    "team": "CIN",
    "opp_sp": "Slade Cecconi",
@@ -103,15 +92,15 @@
    "slg": ".800"
   },
   {
-   "batter": "Jorge Polanco",
-   "team": "NYM",
-   "opp_sp": "Mart\u00edn P\u00e9rez",
-   "pa": 18,
-   "ab": 14,
-   "h": 4,
+   "batter": "Michael Busch",
+   "team": "CHC",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 10,
+   "ab": 9,
+   "h": 3,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".571"
+   "avg": ".333",
+   "slg": ".778"
   },
   {
    "batter": "Ketel Marte",
@@ -125,37 +114,59 @@
    "slg": ".500"
   },
   {
-   "batter": "Marcus Semien",
-   "team": "NYM",
-   "opp_sp": "Mart\u00edn P\u00e9rez",
-   "pa": 39,
-   "ab": 39,
-   "h": 10,
+   "batter": "Cole Young",
+   "team": "SEA",
+   "opp_sp": "Kumar Rocker",
+   "pa": 21,
+   "ab": 20,
+   "h": 5,
    "hr": 1,
-   "avg": ".256",
-   "slg": ".436"
+   "avg": ".250",
+   "slg": ".450"
   },
   {
-   "batter": "Corbin Carroll",
-   "team": "AZ",
-   "opp_sp": "Mitch Keller",
-   "pa": 14,
-   "ab": 12,
-   "h": 2,
+   "batter": "Julio Rodr\u00edguez",
+   "team": "SEA",
+   "opp_sp": "Kumar Rocker",
+   "pa": 21,
+   "ab": 20,
+   "h": 5,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".417"
+   "avg": ".250",
+   "slg": ".450"
   },
   {
-   "batter": "Nolan Arenado",
-   "team": "AZ",
-   "opp_sp": "Mitch Keller",
-   "pa": 29,
-   "ab": 27,
-   "h": 4,
+   "batter": "Dominic Canzone",
+   "team": "SEA",
+   "opp_sp": "Kumar Rocker",
+   "pa": 21,
+   "ab": 20,
+   "h": 5,
    "hr": 1,
-   "avg": ".148",
-   "slg": ".296"
+   "avg": ".250",
+   "slg": ".450"
+  },
+  {
+   "batter": "Randy Arozarena",
+   "team": "SEA",
+   "opp_sp": "Kumar Rocker",
+   "pa": 21,
+   "ab": 20,
+   "h": 5,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".450"
+  },
+  {
+   "batter": "Josh Naylor",
+   "team": "SEA",
+   "opp_sp": "Kumar Rocker",
+   "pa": 21,
+   "ab": 20,
+   "h": 5,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".450"
   }
  ]
 }
