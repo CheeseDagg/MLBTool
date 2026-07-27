@@ -534,3 +534,33 @@ date,player,team,opp_sp,slot,lu,hr_pct,hr_raw,fair,book_price,ev_pct,park,temp,p
 2026-07-26,JJ Bleday,CIN,Kyle Leahy,3,card,18.4,20.3,+442,,,park -7%,97F · wind out 5,LvR +8%,heat +2%,-3.2,floor
 2026-07-26,Miguel Vargas,CHW,Ronel Blanco *,3,card,18.4,20.2,+443,,,park +9%,no wx,RvR -3%,,-2.5,floor
 2026-07-26,Kody Clemens,MIN,Jeffrey Springs,5,card,18.3,20.1,+446,,,park -2%,93F,LvL -22%,heat -6%,-2.8,floor
+2026-07-27,Yordan Alvarez,HOU,Walbert Ureña *,1,proj,27.8,36.2,+260,,,park +4%,74F,LvR +8%,heat +1%,4.9,STANDOUT
+2026-07-27,James Wood,WSN,Max Scherzer,1,proj,26.2,33.9,+282,,,park avg,83F,LvR +8%,heat +6%,3.5,STANDOUT
+2026-07-27,Ben Rice,NYY,Noah Schultz,1,proj,26.1,33.7,+284,,,park +9%,84F,LvL -22%,heat +10%,2.2,
+2026-07-27,Sal Stewart,CIN,Slade Cecconi,1,proj,23.0,29.4,+336,,,park +25%,78F,RvR -3%,heat +2%,0.8,
+2026-07-27,Kyle Schwarber,PHI,Tyler Phillips,2,proj,21.7,26.8,+361,,,park -9%,86F · wind out 3 (roof: half),LvR +8%,heat -0%,-1.1,
+2026-07-27,CJ Abrams,WSN,Max Scherzer,2,proj,21.5,26.1,+366,,,park avg,83F,LvR +8%,heat -2%,0.6,
+2026-07-27,Matt Olson,ATL,Zac Thornton,1,proj,21.0,24.6,+377,,,park -4%,83F · wind out 4,LvL -22%,heat -2%,0.4,
+2026-07-27,Nick Kurtz,ATH,Payton Tolle,1,proj,20.8,24.0,+382,,,park +6% [low-conf],66F,LvL -22%,heat +10%,-0.1,
+2026-07-27,Brandon Lowe,PIT,Merrill Kelly,2,proj,20.5,23.2,+388,,,park -9%,80F · wind out 5,LvR +8%,heat -9%,-0.6,
+2026-07-27,Kazuma Okamoto,TOR,Andrew Alvarez,2,proj,20.5,23.3,+387,,,park avg,83F,RvL +12%,heat +7%,,new
+2026-07-27,Miguel Vargas,CHW,Max Fried,1,proj,20.4,23.0,+390,,,park +9%,84F,RvL +12%,heat +6%,-0.4,
+2026-07-27,Elly De La Cruz,CIN,Slade Cecconi,3,proj,20.3,22.6,+393,,,park +25%,78F,SvR +8%,heat +7%,-1.8,
+2026-07-27,Wilyer Abreu,BOS,Jack Perkins,1,proj,20.3,22.5,+394,,,park +6% [low-conf],66F,LvR +8%,heat +8%,,new
+2026-07-27,Ketel Marte,ARI,Mitch Keller,1,proj,20.2,22.4,+394,,,park -9%,80F · wind out 5,SvR +8%,heat +5%,-0.3,
+2026-07-27,Willson Contreras,BOS,Jack Perkins,4,proj,20.2,22.3,+395,,,park +6% [low-conf],66F,RvR -3%,heat +7%,-0.2,
+2026-07-27,Rafael Devers,SFG,Brandon Sproat,1,proj,20.1,22.1,+396,,,park -14%,60F · wind out 7,LvR +8%,heat -3%,,new
+2026-07-27,Jordan Walker,STL,David Peterson,3,proj,19.9,21.8,+403,,,park -7%,85F · wind out 8,RvL +12%,heat -3%,-0.5,
+2026-07-27,Joc Pederson,TEX,George Kirby,4,proj,19.5,21.3,+414,,,park +2%,90F (roof: half),LvR +8%,heat +6%,-2.1,floor
+2026-07-27,Spencer Steer,CIN,Slade Cecconi,2,proj,19.5,21.4,+412,,,park +25%,78F,RvR -3%,heat +1%,-1.8,
+2026-07-27,Dillon Dingler,DET,Kyle Bradish,4,proj,19.3,21.2,+418,,,park -5%,83F · wind in 3,RvR -3%,heat -10%,-0.8,
+2026-07-27,Riley Greene,DET,Kyle Bradish,2,proj,19.1,20.9,+424,,,park -5%,83F · wind in 3,LvR +8%,heat -4%,1.0,
+2026-07-27,Zach Neto,LAA,Tatsuya Imai,1,proj,19.1,20.9,+424,,,park +4%,74F,RvR -3%,heat +2%,-1.9,
+2026-07-27,JJ Bleday,CIN,Slade Cecconi,4,proj,18.9,20.8,+429,,,park +25%,78F,LvR +8%,heat +2%,-2.5,floor
+2026-07-27,Mike Trout,LAA,Tatsuya Imai,3,proj,18.7,20.5,+436,,,park +4%,74F,RvR -3%,heat +3%,-2.7,floor
+2026-07-27,Colson Montgomery,CHW,Max Fried,3,proj,18.6,20.4,+438,,,park +9%,84F,LvL -22%,,-1.9,
+2026-07-27,Paul Goldschmidt,NYY,Noah Schultz,4,proj,18.6,20.4,+438,,,park +9%,84F,RvL +12%,heat +3%,-1.8,
+2026-07-27,Pete Crow-Armstrong,CHC,TBD *,3,proj,18.0,19.8,+454,,,park -7%,85F · wind out 8,,,-2.6,floor
+2026-07-27,Jake Burger,TEX,George Kirby,2,proj,17.8,19.5,+463,,,park +2%,90F (roof: half),RvR -3%,heat +13%,,new
+2026-07-27,Pete Alonso,BAL,Keider Montero,3,proj,17.7,19.5,+465,,,park -5%,83F · wind in 3,RvR -3%,heat +8%,-2.9,floor
+2026-07-27,Christian Walker,HOU,Walbert Ureña *,3,proj,17.5,19.3,+472,,,park +4%,74F,RvR -3%,heat -0%,-2.8,floor
