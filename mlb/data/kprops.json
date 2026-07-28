@@ -1,43 +1,43 @@
 {
- "generated": "2026-07-28T19:01+00:00",
+ "generated": "2026-07-28T19:46+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
    "opp": "Cincinnati Reds",
-   "lam": 7.54,
+   "lam": 7.55,
    "k9_regressed": 10.57,
    "exp_ip": 6.02,
-   "opp_mult": 1.067,
+   "opp_mult": 1.069,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8709,
-     "fair_over": -674,
-     "fair_under": 674
+     "p_over": 0.8717,
+     "fair_over": -679,
+     "fair_under": 679
     },
     {
      "line": 5.5,
-     "p_over": 0.763,
-     "fair_over": -322,
-     "fair_under": 322
+     "p_over": 0.7642,
+     "fair_over": -324,
+     "fair_under": 324
     },
     {
      "line": 6.5,
-     "p_over": 0.6274,
-     "fair_over": -168,
-     "fair_under": 168
+     "p_over": 0.6289,
+     "fair_over": -169,
+     "fair_under": 169
     },
     {
      "line": 7.5,
-     "p_over": 0.4813,
-     "fair_over": 108,
-     "fair_under": -108
+     "p_over": 0.4829,
+     "fair_over": 107,
+     "fair_under": -107
     },
     {
      "line": 8.5,
-     "p_over": 0.3436,
-     "fair_over": 191,
-     "fair_under": -191
+     "p_over": 0.3451,
+     "fair_over": 190,
+     "fair_under": -190
     }
    ]
   },
@@ -84,40 +84,40 @@
   {
    "pitcher": "Chase Burns",
    "opp": "Cleveland Guardians",
-   "lam": 6.14,
-   "k9_regressed": 9.85,
-   "exp_ip": 5.58,
+   "lam": 6.19,
+   "k9_regressed": 9.84,
+   "exp_ip": 5.63,
    "opp_mult": 1.005,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7333,
-     "fair_over": -275,
-     "fair_under": 275
+     "p_over": 0.7397,
+     "fair_over": -284,
+     "fair_under": 284
     },
     {
      "line": 5.5,
-     "p_over": 0.5767,
-     "fair_over": -136,
-     "fair_under": 136
+     "p_over": 0.5845,
+     "fair_over": -141,
+     "fair_under": 141
     },
     {
      "line": 6.5,
-     "p_over": 0.4163,
-     "fair_over": 140,
-     "fair_under": -140
+     "p_over": 0.4244,
+     "fair_over": 136,
+     "fair_under": -136
     },
     {
      "line": 7.5,
-     "p_over": 0.2756,
-     "fair_over": 263,
-     "fair_under": -263
+     "p_over": 0.2827,
+     "fair_over": 254,
+     "fair_under": -254
     },
     {
      "line": 8.5,
-     "p_over": 0.1676,
-     "fair_over": 497,
-     "fair_under": -497
+     "p_over": 0.1731,
+     "fair_over": 478,
+     "fair_under": -478
     }
    ]
   },
@@ -765,39 +765,39 @@
    "pitcher": "Slade Cecconi",
    "opp": "Cincinnati Reds",
    "lam": 4.51,
-   "k9_regressed": 7.46,
-   "exp_ip": 5.1,
-   "opp_mult": 1.067,
+   "k9_regressed": 7.43,
+   "exp_ip": 5.11,
+   "opp_mult": 1.069,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4696,
+     "p_over": 0.4695,
      "fair_over": 113,
      "fair_under": -113
     },
     {
      "line": 5.5,
-     "p_over": 0.2986,
+     "p_over": 0.2985,
      "fair_over": 235,
      "fair_under": -235
     },
     {
      "line": 6.5,
-     "p_over": 0.1701,
+     "p_over": 0.17,
      "fair_over": 488,
      "fair_under": -488
     },
     {
      "line": 7.5,
      "p_over": 0.0873,
-     "fair_over": 1045,
-     "fair_under": -1045
+     "fair_over": 1046,
+     "fair_under": -1046
     },
     {
      "line": 8.5,
-     "p_over": 0.0407,
-     "fair_over": 2358,
-     "fair_under": -2358
+     "p_over": 0.0406,
+     "fair_over": 2360,
+     "fair_under": -2360
     }
    ]
   },
@@ -1122,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 23, '429': 1} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 28} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
