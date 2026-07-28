@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-28T21:38+00:00",
+ "generated": "2026-07-28T22:12+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -482,46 +482,6 @@
    ]
   },
   {
-   "pitcher": "Logan Henderson",
-   "opp": "San Francisco Giants",
-   "lam": 5.26,
-   "k9_regressed": 9.87,
-   "exp_ip": 4.79,
-   "opp_mult": 1.0,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6033,
-     "fair_over": -152,
-     "fair_under": 152
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4289,
-     "fair_over": 133,
-     "fair_under": -133
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2762,
-     "fair_over": 262,
-     "fair_under": -262
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1615,
-     "fair_over": 519,
-     "fair_under": -519
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0861,
-     "fair_over": 1061,
-     "fair_under": -1061
-    }
-   ]
-  },
-  {
    "pitcher": "Justin Wrobleski",
    "opp": "Seattle Mariners",
    "lam": 5.24,
@@ -678,6 +638,46 @@
      "p_over": 0.0748,
      "fair_over": 1237,
      "fair_under": -1237
+    }
+   ]
+  },
+  {
+   "pitcher": "Logan Henderson",
+   "opp": "San Francisco Giants",
+   "lam": 5.09,
+   "k9_regressed": 9.87,
+   "exp_ip": 4.79,
+   "opp_mult": 0.969,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.576,
+     "fair_over": -136,
+     "fair_under": 136
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4007,
+     "fair_over": 150,
+     "fair_under": -150
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2518,
+     "fair_over": 297,
+     "fair_under": -297
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1435,
+     "fair_over": 597,
+     "fair_under": -597
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0745,
+     "fair_over": 1243,
+     "fair_under": -1243
     }
    ]
   },
@@ -1082,6 +1082,46 @@
    ]
   },
   {
+   "pitcher": "Bubba Chandler",
+   "opp": "Arizona Diamondbacks",
+   "lam": 4.21,
+   "k9_regressed": 8.19,
+   "exp_ip": 5.02,
+   "opp_mult": 0.921,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4113,
+     "fair_over": 143,
+     "fair_under": -143
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2478,
+     "fair_over": 304,
+     "fair_under": -304
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1332,
+     "fair_over": 651,
+     "fair_under": -651
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0643,
+     "fair_over": 1454,
+     "fair_under": -1454
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0281,
+     "fair_over": 3454,
+     "fair_under": -3454
+    }
+   ]
+  },
+  {
    "pitcher": "Michael McGreevy",
    "opp": "Chicago Cubs",
    "lam": 4.07,
@@ -1242,7 +1282,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 25, 'URLError': 3} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:29 rows",
+ "diag": "errors {'401': 28} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
