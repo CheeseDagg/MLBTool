@@ -1,0 +1,41 @@
+name: MLB contact-form experiment
+# Rolling barrel/hard-hit form vs a hitter's own norm — does recent contact
+# quality add HR signal beyond season line + hot-hand? Statcast pulled in
+# weekly chunks, aggregated to batter-day, cached. Fire by touching
+# experiments/RUN-CONTACTFORM.txt.
+on:
+  push:
+    paths: ['experiments/RUN-CONTACTFORM.txt']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  contactform:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install deps
+        run: pip install pybaseball pandas
+      - name: Selftest (planted form, shuffled null, leak checks)
+        working-directory: mlb
+        run: python mlb_contactform_experiment.py --selftest
+      - name: Build contact cache + run experiment
+        working-directory: mlb
+        run: python mlb_contactform_experiment.py
+      - name: Commit cache + verdict
+        run: |
+          git config user.name mlb-bot
+          git config user.email actions@github.com
+          for f in mlb/data/contact_daily.json experiments/MLB-CONTACTFORM-VERDICT.md; do
+            git add "$f" 2>/dev/null || true
+          done
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "contact-form experiment verdict $(date -u +%F)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push race - retry $i"; sleep 3
+          done
+          exit 1
