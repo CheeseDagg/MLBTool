@@ -51,15 +51,19 @@ def build_contact():
             try:
                 df = statcast(start_dt=cur.isoformat(), end_dt=wend.isoformat(),
                               verbose=False)
-                bb = df[(df["type"] == "X") & df["launch_speed"].notna()]
-                for _, r in bb.iterrows():
-                    cell = daily[int(r["batter"])][str(r["game_date"])[:10]]
-                    cell[0] += 1
-                    if r.get("launch_speed_angle") == 6:
-                        cell[1] += 1
-                    if r["launch_speed"] >= 95:
-                        cell[2] += 1
-                print(f"  {cur}..{wend}: {len(bb)} batted balls")
+                bb = df[(df["type"] == "X") & df["launch_speed"].notna()].copy()
+                # vectorized: iterrows over ~90k pitches/week was the timeout
+                bb["gd"] = bb["game_date"].astype(str).str[:10]
+                bb["is_brl"] = (bb["launch_speed_angle"] == 6).astype(int)
+                bb["is_hh"] = (bb["launch_speed"] >= 95).astype(int)
+                grp = bb.groupby(["batter", "gd"]).agg(
+                    bbe=("is_brl", "size"), brl=("is_brl", "sum"),
+                    hh=("is_hh", "sum"))
+                for (b, gd), row in grp.iterrows():
+                    cell = daily[int(b)][gd]
+                    cell[0] += int(row["bbe"]); cell[1] += int(row["brl"])
+                    cell[2] += int(row["hh"])
+                print(f"  {cur}..{wend}: {len(bb)} batted balls", flush=True)
             except Exception as e:
                 print(f"  {cur}..{wend}: {type(e).__name__} — week skipped")
             cur = wend + dt.timedelta(days=1)
