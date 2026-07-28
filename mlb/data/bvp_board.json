@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-28T18:43:15+00:00",
+ "generated": "2026-07-28T21:21:19+00:00",
  "date": "2026-07-28",
  "min_pa": 6,
  "rows": [
@@ -35,6 +35,17 @@
    "hr": 3,
    "avg": ".326",
    "slg": ".609"
+  },
+  {
+   "batter": "Michael Busch",
+   "team": "CHC",
+   "opp_sp": "Michael McGreevy",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
+   "hr": 2,
+   "avg": ".375",
+   "slg": "1.250"
   },
   {
    "batter": "Luis Rengifo",
@@ -92,17 +103,6 @@
    "slg": ".542"
   },
   {
-   "batter": "J.T. Realmuto",
-   "team": "PHI",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 40,
-   "ab": 39,
-   "h": 12,
-   "hr": 2,
-   "avg": ".308",
-   "slg": ".513"
-  },
-  {
    "batter": "Marcell Ozuna",
    "team": "PIT",
    "opp_sp": "Brandon Pfaadt",
@@ -111,17 +111,6 @@
    "h": 5,
    "hr": 1,
    "avg": ".500",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Nathaniel Lowe",
-   "team": "CIN",
-   "opp_sp": "Slade Cecconi",
-   "pa": 6,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
    "slg": "1.000"
   },
   {
@@ -158,15 +147,26 @@
    "slg": ".800"
   },
   {
-   "batter": "Kyle Tucker",
-   "team": "LAD",
-   "opp_sp": "Luis Castillo",
-   "pa": 12,
-   "ab": 12,
-   "h": 3,
+   "batter": "Seiya Suzuki",
+   "team": "CHC",
+   "opp_sp": "Michael McGreevy",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".714"
+  },
+  {
+   "batter": "Cedric Mullins",
+   "team": "TB",
+   "opp_sp": "Cal Quantrill",
+   "pa": 9,
+   "ab": 8,
+   "h": 2,
    "hr": 1,
    "avg": ".250",
-   "slg": ".583"
+   "slg": ".625"
   }
  ]
 }
