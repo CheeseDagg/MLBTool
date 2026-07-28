@@ -37,6 +37,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, "data", "hrangles_dataset.json")
 START, END = "2025-04-01", "2025-06-30"
 TRAIN_END = "2025-05-31"
+# RUN 2: full-2024 burn-in. Run 1 (in-season only) returned NULL on all four,
+# but park-hand / batter-split cells barely fill in two months — that tested
+# learning speed, not the effect. Burn-in matures the cells; scoring windows
+# are unchanged so run-2 verdicts are directly comparable to run 1.
+BURN_START, BURN_END = "2024-03-20", "2024-09-30"
+BURN_CACHE = os.path.join(HERE, "data", "hrangles_burnin_2024.json")
 API = "https://statsapi.mlb.com/api/v1"
 
 # ---------------------------------------------------------------- dataset
@@ -57,8 +63,9 @@ def _pa(bat):
             int(bat.get("hitByPitch", 0)) + int(bat.get("sacFlies", 0)) +
             int(bat.get("sacBunts", 0)))
 
-def build_dataset():
-    sched = _get(f"{API}/schedule?sportId=1&startDate={START}&endDate={END}&gameType=R")
+def build_dataset(d0=None, d1=None, cache=None):
+    d0, d1, cache = d0 or START, d1 or END, cache or CACHE
+    sched = _get(f"{API}/schedule?sportId=1&startDate={d0}&endDate={d1}&gameType=R")
     games = []
     for d in sched.get("dates", []):
         for g in d.get("games", []):
@@ -67,7 +74,7 @@ def build_dataset():
             games.append({"pk": g["gamePk"], "date": d["date"],
                           "venue": g.get("venue", {}).get("id"),
                           "dn": g.get("dayNight", "night")})
-    print(f"schedule: {len(games)} final games {START}..{END}")
+    print(f"schedule: {len(games)} final games {d0}..{d1}")
     rows, people = [], set()
     for i, g in enumerate(games):
         try:
@@ -127,11 +134,11 @@ def build_dataset():
     for r in rows:
         r["bh"] = hands.get(r["bat"], {}).get("bat", "")
         r["ph"] = hands.get(r["sp"], {}).get("throw", "")
-    ds = {"start": START, "end": END, "rows": rows}
-    os.makedirs(os.path.dirname(CACHE), exist_ok=True)
-    with open(CACHE, "w") as f:
+    ds = {"start": d0, "end": d1, "rows": rows}
+    os.makedirs(os.path.dirname(cache), exist_ok=True)
+    with open(cache, "w") as f:
         json.dump(ds, f)
-    print(f"dataset cached -> {CACHE} ({len(rows)} batter-games)")
+    print(f"dataset cached -> {cache} ({len(rows)} batter-games)")
     return ds
 
 # ---------------------------------------------------------------- features
@@ -349,7 +356,18 @@ def main():
                   "(touch experiments/RUN-HRANGLES.txt)")
             return 0
         ds = build_dataset()
-    rows = [r for r in ds["rows"] if r.get("bh") and r.get("ph") and r.get("slot", 0) > 0]
+    if os.path.exists(BURN_CACHE):
+        burn = json.load(open(BURN_CACHE))
+        print(f"burn-in cache: {len(burn['rows'])} batter-games (2024)")
+    else:
+        try:
+            urllib.request.urlopen(f"{API}/teams?sportId=1", timeout=10)
+            burn = build_dataset(BURN_START, BURN_END, BURN_CACHE)
+        except Exception:
+            print("burn-in unavailable offline — running in-season-only (run-1 mode)")
+            burn = {"rows": []}
+    rows = [r for r in burn["rows"] + ds["rows"]
+            if r.get("bh") and r.get("ph") and r.get("slot", 0) > 0]
     print(f"scorable rows (known hands, in lineup): {len(rows)}")
     feat = attach_features(rows)
     lines = []

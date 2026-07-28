@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name mlb-bot
           git config user.email actions@github.com
-          for f in mlb/data/hrangles_dataset.json experiments/MLB-HRANGLES-VERDICT.md; do
+          for f in mlb/data/hrangles_dataset.json mlb/data/hrangles_burnin_2024.json experiments/MLB-HRANGLES-VERDICT.md; do
             git add "$f" 2>/dev/null || true
           done
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
