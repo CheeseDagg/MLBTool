@@ -977,7 +977,7 @@ def _statsapi_fetch(params):
         except Exception: pass
         raise RuntimeError(f"statsapi HTTP {e.code}: {body}") from None
 
-def _statsapi_rows(group):
+def _statsapi_rows(group, season=None):
     """Season stats for ALL players from MLB's own StatsAPI (statsapi.mlb.com)
     — the same host mlb_pitchers.py / mlb_data.py hit successfully from this
     Action daily, so it can't be IP-blocked like FanGraphs/BREF. Paginated.
@@ -985,10 +985,11 @@ def _statsapi_rows(group):
     group: 'hitting' -> [{name, fg_team, pa, hr}]  |  'pitching' -> [{name, bf, hr}]"""
     pool_variants = [{"playerPool": "All"}, {"playerPool": "ALL"}, {}]
     out, offset, limit, pool, last_err = [], 0, 500, None, None
+    season = season or YEAR
     while True:
         data = None
         for pv in ([pool] if pool is not None else pool_variants):
-            params = {"stats": "season", "group": group, "season": YEAR,
+            params = {"stats": "season", "group": group, "season": season,
                       "sportId": 1, "limit": limit, "offset": offset}
             params.update(pv)
             try:
@@ -1045,6 +1046,35 @@ def pull_batters():
     print(f"   batters: {len(out)} with 30+ PA  [{src}]")
     return out, src
 
+PRIOR_W = 1.0   # prior-season count weight in the pitcher pools. VALIDATED
+                # 2026-07-28 (HR angles run 1 vs run 2): the starter HR-allowed
+                # factor is NOT robust on in-season data alone but is a ROBUST
+                # WIN (holdout +0.00074 LL/game, 3/3 June periods) once a full
+                # prior season matures the cells. Straight pooling is what was
+                # tested; the component shrinks (K_CT/K_FB/K_HRFB) still apply.
+
+def merge_prior_pitching(cur, prior, w=PRIOR_W):
+    """Blend prior-season pitching counts into current rows (never creates a
+    row — retired/demoted arms can't haunt the board). A pitcher is blended
+    only when the prior row carries every stat key his current row has, so
+    component rates never mix blended denominators with unblended numerators."""
+    pv = {}
+    for p in prior or []:
+        pv.setdefault(norm(p.get("name", "")), p)
+    KEYS = ("bf", "hr", "so", "bb", "ao")
+    n = 0
+    for c in cur:
+        p = pv.get(norm(c.get("name", "")))
+        if not p:
+            continue
+        mine = [k for k in KEYS if k in c]
+        if any(k not in p for k in mine):
+            continue
+        for k in mine:
+            c[k] = c[k] + type(c[k])(w * p[k])
+        n += 1
+    return n
+
 def pull_pitchers():
     try:
         from pybaseball import pitching_stats
@@ -1057,6 +1087,16 @@ def pull_pitchers():
         except Exception as e2:
             print(f"   BREF unavailable ({type(e2).__name__}) -> MLB StatsAPI")
             out = _statsapi_rows("pitching"); src = "MLB StatsAPI"
+    try:
+        try:
+            from pybaseball import pitching_stats
+            prior = _rows_from_pitching(pitching_stats(YEAR - 1, qual=0))
+        except Exception:
+            prior = _statsapi_rows("pitching", season=YEAR - 1)
+        nb = merge_prior_pitching(out, prior)
+        src += f" +{YEAR-1} prior ({nb} blended)"
+    except Exception as e:
+        print(f"   prior-season blend off ({type(e).__name__}) — in-season only")
     print(f"   pitchers: {len(out)} with 40+ BF  [{src}]")
     return out, src
 
@@ -1424,6 +1464,19 @@ def selftest():
     assert f_heart > 1.0 > f_chase, (f_heart, f_chase)
     legacy = {"z": bpc["z"], "ov": 0.011, "n": 2500}
     assert heat_factor(legacy, {"w": dict(diet), "n": 1500}) is not None
+    # --- prior-season blend (validated 2026-07-28, HR angles run 2) ---
+    _cur = [{"name": "Vet Arm", "bf": 100, "hr": 5, "so": 30, "bb": 8},
+            {"name": "Rookie",  "bf": 90,  "hr": 3, "so": 25, "bb": 7},
+            {"name": "Mismatch","bf": 80,  "hr": 4, "so": 20, "bb": 6}]
+    _pri = [{"name": "Vet Arm", "bf": 700, "hr": 21, "so": 190, "bb": 55},
+            {"name": "Mismatch","bf": 650, "hr": 30},                    # lacks so/bb
+            {"name": "Retired", "bf": 500, "hr": 40, "so": 100, "bb": 40}]
+    _n = merge_prior_pitching(_cur, _pri, w=1.0)
+    assert _n == 1, _n                                   # only the clean match blends
+    assert _cur[0]["bf"] == 800 and _cur[0]["hr"] == 26 and _cur[0]["so"] == 220
+    assert _cur[1]["bf"] == 90                           # rookie untouched
+    assert _cur[2]["bf"] == 80                           # key-mismatch skipped whole
+    assert len(_cur) == 3                                # retired arm creates no row
     print(f"SELFTEST PASS — {len(rows)} rows, top: {rows[0]['player']} "
           f"{rows[0]['hr_pct']}% (fair {rows[0]['fair']})")
     return 0

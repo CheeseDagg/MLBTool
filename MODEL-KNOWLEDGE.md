@@ -18,16 +18,21 @@ temperature + wind direction vs park orientation · platoon (when handedness kno
 opposing-starter composite (K/BB/flyball, league-centered; neutral if TBD/small) ·
 bullpen HR rate · Savant barrels · bat-vs-pitch-zone heat (demoted weight) · batting-
 order slot (PA share + hitter-quality gradient) · HOT HAND: homered in last graded
-game = +0.18 logit (only the most recent game carries signal) · monthly recalibration
+game = +0.18 logit (only the most recent game carries signal) · starter HR-allowed
+pools seeded with his FULL PRIOR SEASON (validated: in-season-only was noise, prior-
+year-matured cells are a robust 3/3-period holdout win) · monthly recalibration
 (leak-free, holdout-gated).
 
 **TESTED & DEAD:** month/season phase · day of week · small-sample pitcher shrink
 changes · pitcher residual momentum · recency-weighted calibration · umpire (for K;
-never showed for HR context either).
+never showed for HR context either) · day vs night game (null even with full data) ·
+individual batter platoon splits beyond the flat league factors (null BOTH in-season
+and with a full prior season maturing the cells — the flat factors already carry it) ·
+handedness-split park factors (flickered, never robust, even with 2024 burn-in).
 
-**BLIND SPOTS:** day vs night game · umpire assignment · batter vs-hand splits beyond
-the platoon tag · travel/getaway days · lineup changes after build (spot tags flag
-rookies/new bats, not scratches) · anything intra-day (board is pregame).
+**BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
+(spot tags flag rookies/new bats, not scratches) · rolling contact-quality form (next
+in the experiment queue) · anything intra-day (board is pregame).
 
 ## MLB — K props (mlb_kprops*.py)
 
