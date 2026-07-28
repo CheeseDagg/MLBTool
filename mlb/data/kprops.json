@@ -1,43 +1,43 @@
 {
- "generated": "2026-07-28T15:40+00:00",
+ "generated": "2026-07-28T19:01+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
    "opp": "Cincinnati Reds",
-   "lam": 7.55,
+   "lam": 7.54,
    "k9_regressed": 10.57,
    "exp_ip": 6.02,
-   "opp_mult": 1.069,
+   "opp_mult": 1.067,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8716,
-     "fair_over": -679,
-     "fair_under": 679
+     "p_over": 0.8709,
+     "fair_over": -674,
+     "fair_under": 674
     },
     {
      "line": 5.5,
-     "p_over": 0.764,
-     "fair_over": -324,
-     "fair_under": 324
+     "p_over": 0.763,
+     "fair_over": -322,
+     "fair_under": 322
     },
     {
      "line": 6.5,
-     "p_over": 0.6287,
-     "fair_over": -169,
-     "fair_under": 169
+     "p_over": 0.6274,
+     "fair_over": -168,
+     "fair_under": 168
     },
     {
      "line": 7.5,
-     "p_over": 0.4827,
-     "fair_over": 107,
-     "fair_under": -107
+     "p_over": 0.4813,
+     "fair_over": 108,
+     "fair_under": -108
     },
     {
      "line": 8.5,
-     "p_over": 0.3449,
-     "fair_over": 190,
-     "fair_under": -190
+     "p_over": 0.3436,
+     "fair_over": 191,
+     "fair_under": -191
     }
    ]
   },
@@ -84,40 +84,40 @@
   {
    "pitcher": "Chase Burns",
    "opp": "Cleveland Guardians",
-   "lam": 6.29,
-   "k9_regressed": 9.93,
-   "exp_ip": 5.67,
-   "opp_mult": 1.006,
+   "lam": 6.14,
+   "k9_regressed": 9.85,
+   "exp_ip": 5.58,
+   "opp_mult": 1.005,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7521,
-     "fair_over": -303,
-     "fair_under": 303
+     "p_over": 0.7333,
+     "fair_over": -275,
+     "fair_under": 275
     },
     {
      "line": 5.5,
-     "p_over": 0.6,
-     "fair_over": -150,
-     "fair_under": 150
+     "p_over": 0.5767,
+     "fair_over": -136,
+     "fair_under": 136
     },
     {
      "line": 6.5,
-     "p_over": 0.4404,
-     "fair_over": 127,
-     "fair_under": -127
+     "p_over": 0.4163,
+     "fair_over": 140,
+     "fair_under": -140
     },
     {
      "line": 7.5,
-     "p_over": 0.2971,
-     "fair_over": 237,
-     "fair_under": -237
+     "p_over": 0.2756,
+     "fair_over": 263,
+     "fair_under": -263
     },
     {
      "line": 8.5,
-     "p_over": 0.1843,
-     "fair_over": 443,
-     "fair_under": -443
+     "p_over": 0.1676,
+     "fair_over": 497,
+     "fair_under": -497
     }
    ]
   },
@@ -722,46 +722,6 @@
    ]
   },
   {
-   "pitcher": "Slade Cecconi",
-   "opp": "Cincinnati Reds",
-   "lam": 4.61,
-   "k9_regressed": 7.49,
-   "exp_ip": 5.18,
-   "opp_mult": 1.069,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4891,
-     "fair_over": 104,
-     "fair_under": -104
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3163,
-     "fair_over": 216,
-     "fair_under": -216
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1836,
-     "fair_over": 445,
-     "fair_under": -445
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0961,
-     "fair_over": 940,
-     "fair_under": -940
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0457,
-     "fair_over": 2089,
-     "fair_under": -2089
-    }
-   ]
-  },
-  {
    "pitcher": "Seth Lugo",
    "opp": "Minnesota Twins",
    "lam": 4.61,
@@ -798,6 +758,46 @@
      "p_over": 0.0453,
      "fair_over": 2105,
      "fair_under": -2105
+    }
+   ]
+  },
+  {
+   "pitcher": "Slade Cecconi",
+   "opp": "Cincinnati Reds",
+   "lam": 4.51,
+   "k9_regressed": 7.46,
+   "exp_ip": 5.1,
+   "opp_mult": 1.067,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4696,
+     "fair_over": 113,
+     "fair_under": -113
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2986,
+     "fair_over": 235,
+     "fair_under": -235
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1701,
+     "fair_over": 488,
+     "fair_under": -488
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0873,
+     "fair_over": 1045,
+     "fair_under": -1045
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0407,
+     "fair_over": 2358,
+     "fair_under": -2358
     }
    ]
   },
@@ -1122,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 16} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 23, '429': 1} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
