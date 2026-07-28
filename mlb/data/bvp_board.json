@@ -1,61 +1,116 @@
 {
- "generated": "2026-07-27T21:21:51+00:00",
- "date": "2026-07-27",
+ "generated": "2026-07-28T00:10:33+00:00",
+ "date": "2026-07-28",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Luis Garc\u00eda Jr.",
-   "team": "WSH",
-   "opp_sp": "Max Scherzer",
-   "pa": 11,
-   "ab": 11,
-   "h": 6,
-   "hr": 2,
-   "avg": ".545",
-   "slg": "1.182"
-  },
-  {
-   "batter": "Brandon Marsh",
-   "team": "PHI",
-   "opp_sp": "Tyler Phillips",
-   "pa": 7,
-   "ab": 5,
-   "h": 3,
-   "hr": 1,
-   "avg": ".600",
-   "slg": "1.400"
-  },
-  {
-   "batter": "Jordan Walker",
-   "team": "STL",
-   "opp_sp": "David Peterson",
-   "pa": 7,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.167"
-  },
-  {
-   "batter": "Alec Bohm",
-   "team": "PHI",
-   "opp_sp": "Tyler Phillips",
+   "batter": "Kody Clemens",
+   "team": "MIN",
+   "opp_sp": "Seth Lugo",
    "pa": 6,
    "ab": 6,
    "h": 4,
-   "hr": 1,
+   "hr": 3,
    "avg": ".667",
-   "slg": "1.167"
+   "slg": "2.167"
   },
   {
-   "batter": "Brandon Lowe",
+   "batter": "Marcus Semien",
+   "team": "NYM",
+   "opp_sp": "Chris Sale",
+   "pa": 20,
+   "ab": 18,
+   "h": 6,
+   "hr": 3,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Bryce Harper",
+   "team": "PHI",
+   "opp_sp": "Sandy Alcantara",
+   "pa": 57,
+   "ab": 46,
+   "h": 15,
+   "hr": 3,
+   "avg": ".326",
+   "slg": ".609"
+  },
+  {
+   "batter": "Luis Rengifo",
+   "team": "SD",
+   "opp_sp": "Michael Lorenzen",
+   "pa": 12,
+   "ab": 11,
+   "h": 4,
+   "hr": 2,
+   "avg": ".364",
+   "slg": ".909"
+  },
+  {
+   "batter": "Francisco Lindor",
+   "team": "NYM",
+   "opp_sp": "Chris Sale",
+   "pa": 42,
+   "ab": 41,
+   "h": 16,
+   "hr": 2,
+   "avg": ".390",
+   "slg": ".585"
+  },
+  {
+   "batter": "Trea Turner",
+   "team": "PHI",
+   "opp_sp": "Sandy Alcantara",
+   "pa": 46,
+   "ab": 44,
+   "h": 17,
+   "hr": 2,
+   "avg": ".386",
+   "slg": ".568"
+  },
+  {
+   "batter": "Andrew Benintendi",
+   "team": "CWS",
+   "opp_sp": "Gerrit Cole",
+   "pa": 21,
+   "ab": 18,
+   "h": 4,
+   "hr": 2,
+   "avg": ".222",
+   "slg": ".556"
+  },
+  {
+   "batter": "Jose Altuve",
+   "team": "HOU",
+   "opp_sp": "Reid Detmers",
+   "pa": 27,
+   "ab": 24,
+   "h": 7,
+   "hr": 2,
+   "avg": ".292",
+   "slg": ".542"
+  },
+  {
+   "batter": "J.T. Realmuto",
+   "team": "PHI",
+   "opp_sp": "Sandy Alcantara",
+   "pa": 40,
+   "ab": 39,
+   "h": 12,
+   "hr": 2,
+   "avg": ".308",
+   "slg": ".513"
+  },
+  {
+   "batter": "Marcell Ozuna",
    "team": "PIT",
-   "opp_sp": "Merrill Kelly",
-   "pa": 6,
-   "ab": 5,
-   "h": 2,
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 10,
+   "ab": 10,
+   "h": 5,
    "hr": 1,
-   "avg": ".400",
+   "avg": ".500",
    "slg": "1.000"
   },
   {
@@ -70,10 +125,10 @@
    "slg": "1.000"
   },
   {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Tyler Phillips",
-   "pa": 8,
+   "batter": "Tyrone Taylor",
+   "team": "NYM",
+   "opp_sp": "Chris Sale",
+   "pa": 7,
    "ab": 6,
    "h": 2,
    "hr": 1,
@@ -81,9 +136,20 @@
    "slg": ".833"
   },
   {
-   "batter": "Nelson Vel\u00e1zquez",
-   "team": "STL",
-   "opp_sp": "David Peterson",
+   "batter": "Shohei Ohtani",
+   "team": "LAD",
+   "opp_sp": "Luis Castillo",
+   "pa": 13,
+   "ab": 11,
+   "h": 4,
+   "hr": 1,
+   "avg": ".364",
+   "slg": ".818"
+  },
+  {
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Michael Lorenzen",
    "pa": 7,
    "ab": 5,
    "h": 1,
@@ -92,81 +158,15 @@
    "slg": ".800"
   },
   {
-   "batter": "Michael Busch",
-   "team": "CHC",
-   "opp_sp": "Matthew Liberatore",
-   "pa": 10,
-   "ab": 9,
+   "batter": "Kyle Tucker",
+   "team": "LAD",
+   "opp_sp": "Luis Castillo",
+   "pa": 12,
+   "ab": 12,
    "h": 3,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".778"
-  },
-  {
-   "batter": "Ketel Marte",
-   "team": "AZ",
-   "opp_sp": "Mitch Keller",
-   "pa": 14,
-   "ab": 14,
-   "h": 4,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".500"
-  },
-  {
-   "batter": "Cole Young",
-   "team": "SEA",
-   "opp_sp": "Kumar Rocker",
-   "pa": 21,
-   "ab": 20,
-   "h": 5,
-   "hr": 1,
    "avg": ".250",
-   "slg": ".450"
-  },
-  {
-   "batter": "Julio Rodr\u00edguez",
-   "team": "SEA",
-   "opp_sp": "Kumar Rocker",
-   "pa": 21,
-   "ab": 20,
-   "h": 5,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".450"
-  },
-  {
-   "batter": "Dominic Canzone",
-   "team": "SEA",
-   "opp_sp": "Kumar Rocker",
-   "pa": 21,
-   "ab": 20,
-   "h": 5,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".450"
-  },
-  {
-   "batter": "Randy Arozarena",
-   "team": "SEA",
-   "opp_sp": "Kumar Rocker",
-   "pa": 21,
-   "ab": 20,
-   "h": 5,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".450"
-  },
-  {
-   "batter": "Josh Naylor",
-   "team": "SEA",
-   "opp_sp": "Kumar Rocker",
-   "pa": 21,
-   "ab": 20,
-   "h": 5,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".450"
+   "slg": ".583"
   }
  ]
 }
