@@ -600,3 +600,7 @@ date,player,team,opp_sp,slot,lu,hr_pct,fair,book_price,ev_pct,park,temp,plat,hea
 2026-07-27,Matt Olson,ATL,Zac Thornton,3,card,19.4,21.3,+414,,,park -4%,80F · wind out 5,LvL -22%,heat -2%,no,0
 2026-07-27,Paul Goldschmidt,NYY,Noah Schultz,3,card,19.2,21.0,+421,,,park +9%,74F · wind in 5,RvL +12%,heat +3%,no,0
 2026-07-27,Eugenio Suárez,CIN,Slade Cecconi,4,card,18.9,20.8,+428,,,park +25%,88F · wind out 4,RvR -3%,heat +4%,void,
+2026-07-28,Sal Stewart,CIN,Slade Cecconi,1,proj,24.9,32.1,+302,,,park +25%,88F · wind out 7,RvR -3%,heat +2%,hr,1
+2026-07-28,Elly De La Cruz,CIN,Slade Cecconi,2,proj,21.7,26.7,+362,,,park +25%,88F · wind out 7,SvR +8%,heat +7%,no,0
+2026-07-28,JJ Bleday,CIN,Slade Cecconi,3,proj,20.9,24.4,+378,,,park +25%,88F · wind out 7,LvR +8%,heat +2%,no,0
+2026-07-28,Nathaniel Lowe,CIN,Slade Cecconi,5,proj,20.3,22.7,+392,,,park +25%,88F · wind out 7,LvR +8%,heat +3%,no,0
