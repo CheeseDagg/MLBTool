@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-28T19:46+00:00",
+ "generated": "2026-07-28T20:28+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -35,7 +35,7 @@
     },
     {
      "line": 8.5,
-     "p_over": 0.3451,
+     "p_over": 0.3452,
      "fair_over": 190,
      "fair_under": -190
     }
@@ -84,40 +84,40 @@
   {
    "pitcher": "Chase Burns",
    "opp": "Cleveland Guardians",
-   "lam": 6.19,
+   "lam": 6.18,
    "k9_regressed": 9.84,
    "exp_ip": 5.63,
-   "opp_mult": 1.005,
+   "opp_mult": 1.004,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7397,
-     "fair_over": -284,
-     "fair_under": 284
+     "p_over": 0.7386,
+     "fair_over": -282,
+     "fair_under": 282
     },
     {
      "line": 5.5,
-     "p_over": 0.5845,
-     "fair_over": -141,
-     "fair_under": 141
+     "p_over": 0.5831,
+     "fair_over": -140,
+     "fair_under": 140
     },
     {
      "line": 6.5,
-     "p_over": 0.4244,
+     "p_over": 0.4229,
      "fair_over": 136,
      "fair_under": -136
     },
     {
      "line": 7.5,
-     "p_over": 0.2827,
-     "fair_over": 254,
-     "fair_under": -254
+     "p_over": 0.2814,
+     "fair_over": 255,
+     "fair_under": -255
     },
     {
      "line": 8.5,
-     "p_over": 0.1731,
-     "fair_over": 478,
-     "fair_under": -478
+     "p_over": 0.1721,
+     "fair_over": 481,
+     "fair_under": -481
     }
    ]
   },
@@ -482,6 +482,46 @@
    ]
   },
   {
+   "pitcher": "Justin Wrobleski",
+   "opp": "Seattle Mariners",
+   "lam": 5.24,
+   "k9_regressed": 7.21,
+   "exp_ip": 6.42,
+   "opp_mult": 1.02,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.601,
+     "fair_over": -151,
+     "fair_under": 151
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4266,
+     "fair_over": 134,
+     "fair_under": -134
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2741,
+     "fair_over": 265,
+     "fair_under": -265
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1599,
+     "fair_over": 525,
+     "fair_under": -525
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0851,
+     "fair_over": 1075,
+     "fair_under": -1075
+    }
+   ]
+  },
+  {
    "pitcher": "Aaron Nola",
    "opp": "Miami Marlins",
    "lam": 5.18,
@@ -795,7 +835,7 @@
     },
     {
      "line": 8.5,
-     "p_over": 0.0406,
+     "p_over": 0.0407,
      "fair_over": 2360,
      "fair_under": -2360
     }
@@ -1042,6 +1082,46 @@
    ]
   },
   {
+   "pitcher": "Michael McGreevy",
+   "opp": "Chicago Cubs",
+   "lam": 4.07,
+   "k9_regressed": 6.48,
+   "exp_ip": 5.72,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3841,
+     "fair_over": 160,
+     "fair_under": -160
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2253,
+     "fair_over": 344,
+     "fair_under": -344
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1177,
+     "fair_over": 750,
+     "fair_under": -750
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0552,
+     "fair_over": 1712,
+     "fair_under": -1712
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0234,
+     "fair_over": 4172,
+     "fair_under": -4172
+    }
+   ]
+  },
+  {
    "pitcher": "Colin Rea",
    "opp": "St. Louis Cardinals",
    "lam": 4.04,
@@ -1120,9 +1200,49 @@
      "fair_under": -5176
     }
    ]
+  },
+  {
+   "pitcher": "Cal Quantrill",
+   "opp": "Tampa Bay Rays",
+   "lam": 2.85,
+   "k9_regressed": 6.67,
+   "exp_ip": 4.2,
+   "opp_mult": 0.915,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1597,
+     "fair_over": 526,
+     "fair_under": -526
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0693,
+     "fair_over": 1344,
+     "fair_under": -1344
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0264,
+     "fair_over": 3692,
+     "fair_under": -3692
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0089,
+     "fair_over": 11109,
+     "fair_under": -11109
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0027,
+     "fair_over": 36776,
+     "fair_under": -36776
+    }
+   ]
   }
  ],
- "diag": "errors {'401': 28} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 29} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
