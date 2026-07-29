@@ -149,9 +149,68 @@ temperature, dome, surface · Thursday/short-week beyond rest · playoff tempera
 late-season dead-rubber (favorites actually do BETTER) · bye-week nonlinearity ·
 parameter retunes.
 
-**BLIND SPOTS:** who the quarterback actually is (injuries/benchings — the team rating
-carries it with a lag) · all injuries · weather as game-total context · market prices
-(deliberately excluded; disagreement vs market is the displayed edge).
+**QB CHANGE IS REAL, AND IT IS THE FIRST NFL ANGLE TO CLEAR ALL FOUR GATES
+(2026-07-29, `nfl_qb_experiment.py`).** The absorption theorem says exactly which QB
+question is worth asking. Team Elo can write itself as R_t = β·(QB quality)_t + skill_t,
+so QB QUALITY is absorbable — which is why the EPA batch's per-QB EPA blend died 1/6
+seasons and why that death said nothing about the blind spot. What a running average
+over a team's history provably CANNOT represent is that the man who earned the rating is
+not playing tonight. That is a CHANGE, not a level, and it is not absorbable.
+
+`QBNEW` = share of the last 8 starts taken by someone other than tonight's starter,
+signed home-minus-away. Panel 4,350 non-tie games 2010-2025, train 2,662 / holdout
+1,688, baseline byte-identical to production (asserted: p_base reproduces
+`nfl_model.run_elo` to max |dp| = 0). 18.6% of games carry a starter change on one
+side; 65.5% carry some discontinuity in the 8-game window.
+
+- GATE 3 (replication): +0.00685 holdout LL/game, 5/6 seasons, ROBUST WIN. With raw QB
+  experience moved INTO the baseline (pass 2, the test that kills a change term that was
+  really impersonating "the backup is inexperienced") it survives at +0.00447, still 5/6.
+- GATE 1 (power): oracle at plant b=0.60 is +0.01015 and a planted effect was recovered
+  3/3. The measured +0.00685 sits UNDER the oracle, so it is not a power artefact — the
+  ceiling is not the binding constraint here. This is the first batch where gate 1 came
+  back PASSED rather than DEAD or UNINFORMATIVE.
+- GATE 2 (placebo): 0/200 within-season shuffles reached the measured gain, p=0.0050.
+- GATE 4 (shape): on the 2,070 games with a discontinuity on exactly ONE side the effect
+  is 2.5× stronger — +0.01134, and 6/6 seasons. The effect lives where the claim says.
+
+`QBCHG` (plain since-last-game flag) also clears three gates (+0.00377 → +0.00240 pass 2,
+p_eff 0.0050) but its shape read is only 4/6, and QBNEW beats it on both the real panel
+and the synthetic one — a benching or injury costs a team for a STRETCH, and a window
+fraction reads a stretch while a since-last-game flag only reads its first game.
+`QBEARN` (new QB × how far the rating sits above 1500 — the absorption-aware version,
+charging only teams whose rating was actually earned) is 6/6 in both passes at +0.00435,
+which is the cleanest per-season record of the four, but it is nearly collinear with
+QBNEW and buys nothing on top. `QBRES` (per-QB Elo minus team Elo) is a *level* dressed
+as a residual: the refit baseline absorbs a plant at every strength down to b=0.15, so
+its probe is uninformative and its 3/6 pass-2 record is not a verdict. **To ship: QBNEW,
+one term.**
+
+**THREE READER BUGS FOUND BY THE FIRST NFL ANGLE THAT ACTUALLY WON.** Every gate-reading
+routine in this project was written against batches where the measured effect was ~zero,
+and all three broke the first time a real one came through. (1) The ceiling reader's
+last rung said "a planted effect was recovered 3/3, so a real one would have shown →
+DEAD" — valid logic about a NULL, nonsense about a robust win, and it labelled QBNEW's
++0.00685 DEAD. It now takes gate 3's verdict as an argument. (2) The placebo counted how
+often a shuffled column earned a ROBUST WIN, which is the SHIP RULE's false-positive
+rate — a property of the gate, not the angle. That is why four angles with measured gains
+spanning 7× all came back p ≈ 0.065-0.10. It now reports both: `alpha` (the gate's FPR,
+~0.06-0.10 here, so a ROBUST WIN on its own is worth about p=0.08 and no more) and
+`p_eff` (how often a shuffle reached the MEASURED gain — 0.0050 for the three
+candidates). Read p_eff. (3) The plant ladder only stepped DOWN, for absorbed probes. An
+oracle can also land BELOW the measured gain when the column is zero on most rows — that
+is a probe calibrated too weakly, not a noisy measurement, and it mislabelled QBEARN
+"noise by construction". The ladder now escalates to 0.90/1.40/2.00 until the bound
+actually bounds. **All three were silent, all three read as "dead angle", and the fix in
+each case makes the file MORE likely to report a win — which is the direction a
+reader bug is least likely to be noticed from.**
+
+**BLIND SPOTS:** all injuries other than the QB · WHICH backup (QBNEW knows a change
+happened, not whether the replacement is competent — the natural next angle, and note
+that the replacement's own quality is a level and therefore partly absorbable) · weather
+as game-total context · market prices (deliberately excluded; disagreement vs market is
+the displayed edge). QB change came OFF this list on 2026-07-29 — it was the #1 entry,
+it is now measured, and it ships.
 
 ## Soccer (soccer_model/publish)
 
