@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-29T00:08:12+00:00",
+ "generated": "2026-07-29T18:15:19+00:00",
  "date": "2026-07-29",
  "min_pa": 6,
  "rows": [
@@ -51,12 +51,12 @@
    "batter": "Esteury Ruiz",
    "team": "MIA",
    "opp_sp": "Jes\u00fas Luzardo",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
+   "pa": 9,
+   "ab": 9,
+   "h": 5,
    "hr": 2,
-   "avg": ".500",
-   "slg": "1.500"
+   "avg": ".556",
+   "slg": "1.333"
   },
   {
    "batter": "Daulton Varsho",
@@ -114,17 +114,6 @@
    "slg": "1.000"
   },
   {
-   "batter": "Vladimir Guerrero Jr.",
-   "team": "TOR",
-   "opp_sp": "Zack Littell",
-   "pa": 12,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": ".875"
-  },
-  {
    "batter": "Alejandro Kirk",
    "team": "TOR",
    "opp_sp": "Zack Littell",
@@ -158,9 +147,20 @@
    "slg": ".833"
   },
   {
-   "batter": "Tyler O'Neill",
-   "team": "BAL",
-   "opp_sp": "Tarik Skubal",
+   "batter": "Rafael Devers",
+   "team": "SF",
+   "opp_sp": "Thomas Pannone",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "J.T. Realmuto",
+   "team": "PHI",
+   "opp_sp": "Ryan Gusto",
    "pa": 6,
    "ab": 5,
    "h": 1,
