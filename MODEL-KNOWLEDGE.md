@@ -283,6 +283,22 @@ main effects, and adding the true coefficient double-counts and HURTS. Both curr
 experiment files walk the plant strength down looking for one the baseline cannot
 absorb, and print PROBE UNINFORMATIVE rather than a verdict when none exists.
 
+**THERE IS NO PRIME (2026-07-29).** Age was validated on the subset with DOB *and
+reach* for both corners — right when age and reach were one experiment, wrong now
+that reach is dead, because it was still reporting "46% coverage" when DOB coverage
+was 97%. Re-read on the wide panel: AGE HOLDS, −0.0088 Brier on 2,144 holdout bouts
+(was 1,768), 3/3 periods, bootstrap [−0.0114, −0.0061]. But the age *curve* is not a
+curve. The fitted quadratic peaks at −15.5 years against an observed range of
+21.9–41.0, and buys −0.0002 Brier over a plain linear term. Over every age anyone
+actually fights at, aging is a straight decline: there is no peak, no protected
+prime window, and the shipped `age2_diff` is inert. A hinge sweep (does aging
+ACCELERATE, in a shape the data can express) puts the best knot at 29 for −0.0005
+over linear — an interior optimum, so real, but far too small to ship — and the
+extra slope reverses at knot 38, which is survivorship: the men still fighting at
+38 are the exceptional ones. Practical read for a card: a 24-year-old has no bonus
+for being "in his prime", and a 34-year-old's decline is not a cliff. It is one
+straight line, and Elo does not already know it.
+
 **DATA GAP — CLOSED (round 7–8 backfill).** DOB coverage went from 47% of bouts with
 BOTH ages to 97% (8,439 of 8,686 unique bouts, 1994-03-11..2026-06-14), and stance
 from effectively nothing to 82% overall / 91.8% on the holdout. Every UFC verdict
