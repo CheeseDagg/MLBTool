@@ -104,7 +104,9 @@ def contact_series(contact):
         out[int(b)] = sorted((d, v[0], v[1], v[2]) for d, v in days.items())
     return out
 
-def form_lookup(series, bat, date, window, norm_days=200):
+MIN_PRIOR_BBE = 40      # below this the window-excluded norm is noise itself
+
+def form_lookup(series, bat, date, window, norm_days=365):
     """(win_bbe, win_brl, win_hh, norm_bbe, norm_brl, norm_hh) — all STRICTLY
     before `date`. Returns None when the batter has no prior batted balls."""
     s = series.get(bat)
@@ -126,10 +128,20 @@ def form_lookup(series, bat, date, window, norm_days=200):
     return (wb, wr, wh, nb, nr, nh)
 
 def form_factor(fl, P, metric):
-    """Shrunk ratio of windowed rate vs the batter's own norm."""
+    """Shrunk ratio of windowed rate vs the batter's own norm.
+
+    The norm EXCLUDES the window (subtraction — the window is a subset of the
+    norm span). At W=7 vs a 365d norm that is a 2% correction and irrelevant,
+    but at W=60 the window would otherwise be a sixth of its own comparison
+    baseline, which mechanically drags the ratio toward 1.0 and would make a
+    long window look dead for a reason that has nothing to do with the hitter.
+    Falls back to the full norm when the window-excluded prior is too thin."""
     if fl is None:
         return 1.0
     wb, wr, wh, nb, nr, nh = fl
+    pb, pr, ph = nb - wb, nr - wr, nh - wh
+    if pb >= MIN_PRIOR_BBE:
+        nb, nr, nh = pb, pr, ph
     num = wr if metric == "brl" else wh
     den = nr if metric == "brl" else nh
     norm_rate = den / nb if nb else 0.0
@@ -171,7 +183,7 @@ def run(feat_rows, series, out=print):
     results = {}
     for metric in ("brl", "hh"):
         bt = (-9e9, None, None)
-        for W in (7, 14, 21):
+        for W in (7, 14, 21, 30, 45, 60):
             for tau_c in (10, 25, 50):
                 for w_c in (0.3, 0.6, 1.0):
                     Pf = {"tau_c": tau_c, "w_c": w_c}
@@ -194,6 +206,27 @@ def run(feat_rows, series, out=print):
         out(f"{'BARRELS' if metric == 'brl' else 'HARD-HIT':8s} W={W}d {Pf}  "
             f"train_win={train_win}  holdout dLL {hv-base_h:+.5f}  "
             f"periods {wins}/3  coverage {cov}/{nh}  -> {verdict}")
+    # DIAGNOSTIC ONLY — not a ship decision. The keyhole hypothesis says a
+    # 7-14d window is too few batted balls to measure form at all. If that is
+    # right, dLL should climb monotonically with W as the sample thickens. If
+    # every W sits flat at zero, the window was never the problem: there is no
+    # form signal beyond the season line and the hot-hand flag.
+    out("--- window sweep (train-tuned knobs per W, holdout dLL — DIAGNOSTIC)")
+    for metric in ("brl", "hh"):
+        line = []
+        for W in (7, 14, 21, 30, 45, 60):
+            bt = (-9e9, None)
+            for tau_c in (10, 25, 50):
+                for w_c in (0.3, 0.6, 1.0):
+                    Pf = {"tau_c": tau_c, "w_c": w_c}
+                    ll, _, _ = loglik_form(feat_rows, series, P0, Pf, metric, W,
+                                           START, TRAIN_END)
+                    if ll > bt[0]:
+                        bt = (ll, Pf)
+            hv, _, _ = loglik_form(feat_rows, series, P0, bt[1], metric, W,
+                                   "2025-06-01", END)
+            line.append(f"{W}d {hv-base_h:+.5f}")
+        out(f"  {'BARRELS' if metric == 'brl' else 'HARD-HIT':8s} " + "  ".join(line))
     return results
 
 # ------------------------------------------------------------ selftest
@@ -209,9 +242,17 @@ def selftest():
     # Hot state is per-batter Markov (mean run ~25d, unsynchronized): hot
     # doubles BOTH barrel rate and true HR rate, so the ratio->multiplier
     # mapping the factor fits is honest.
+    #
+    # The panel carries a 180-day BURN-IN before the scored span. That is not
+    # padding: the form factor compares a window against the hitter's own norm
+    # with the window EXCLUDED, so the norm has to be long-run. Hot runs last
+    # ~25 days, so if the norm is only the adjacent few weeks it is usually in
+    # the SAME state as the window, the ratio collapses to 1.0, and a real
+    # planted effect reads as nothing. Real data has 2024 behind it; the
+    # synthetic panel must too, or the selftest measures the panel's shortness.
     rows, daily = [], defaultdict(lambda: defaultdict(lambda: [0, 0, 0]))
     days = []
-    d = dt.date(2025, 4, 1)
+    d = dt.date(2024, 10, 3)
     while d <= dt.date(2025, 6, 6):
         days.append(d.isoformat()); d += dt.timedelta(days=1)
     for b in range(150):

@@ -29,12 +29,19 @@ never showed for HR context either) · day vs night game (null even with full da
 individual batter platoon splits beyond the flat league factors (null BOTH in-season
 and with a full prior season maturing the cells — the flat factors already carry it) ·
 handedness-split park factors (flickered, never robust, even with 2024 burn-in) ·
-ROLLING CONTACT-QUALITY FORM — recent barrel rate vs the hitter's own norm was flat
-NULL (holdout −0.00016, 0/3 periods); the hard-hit variant won train but only 2/3
-holdout periods, not robust. 99% coverage, so a real null, not a data hole. Keyhole
-caveat worth keeping: a 14-day window is only ~40 batted balls, so even a TRUE
-doubling of form moves ~+0.001 LL/game — the window may be the limit, not the idea.
-Season line + hot-hand already carry what's there.
+ROLLING CONTACT-QUALITY FORM — dead at every window from 7 to 60 days. Barrels are a
+flat NULL (best holdout −0.00016, 0/3 periods). Hard-hit at a 60-day window technically
+cleared the ship rule (train win, holdout +0.00013, 3/3) and even beat a 24-trial
+shuffled placebo, but it does NOT ship: the 3/3 evaporates to 2/3 if the period cut
+moves four days, and the window sweep is non-monotone (7d +0.00012, 14-45d ≈ 0, 60d
++0.00013) — a real form signal thickens with the window, it does not spike at both
+ends of the grid with a dead middle. The KEYHOLE HYPOTHESIS IS NOW ANSWERED AND DEAD:
+the short window was never the problem, there is simply nothing here beyond the season
+line and the hot-hand flag. Two method upgrades came out of it and are permanent: the
+form norm now EXCLUDES its own window (at W=60 vs a 200d norm the window was a sixth
+of its own baseline, mechanically dragging the ratio to 1.0), and `contactform_placebo.py`
+re-runs the entire tune-and-verdict pipeline on batter-shuffled contact — the standard
+gate for any future win under ~+0.0005.
 
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
 (spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
@@ -99,8 +106,20 @@ automatically against production every card.
 **TESTED & DEAD:** reach · finish-aware K updates · opponent-adjusted striking ·
 heavyweight-variance myth (HW favorites are RELIABLE; middleweight is the chaos
 division) · win-streak momentum (beats Elo-only but only 2/3 age-adjusted — it's
-mostly a youth/quality proxy, age already carries it) · Abu-Dhabi-judges style
-regional lean (unmeasured, treat as ±1-2% at most).
+mostly a youth/quality proxy, age already carries it) · WEAR-AND-TEAR BATCH, all
+four dead on the age-complete subset: knockdowns ABSORBED (finer-grained than chin,
+which only counts KO *losses*) 1/3 periods · career MILEAGE in hours fought 2/3 ·
+significant strikes ABSORBED per minute 1/3 · weight-class CHANGE vs last bout, NULL
+both ways. Read: **chin is the accrued-damage variable** — once chin and age are both
+honestly in the baseline, finer trauma proxies add nothing. Method note that cost an
+hour: a plain .lower() name join matched only 51% of fighters, which silently zeroed
+the age term and made three of these look like ROBUST WINS. A diluted control is not
+a control; the verdict is the AGE-COMPLETE subset (n=4,041 bouts, 1,486 holdout —
+small, so these are "no evidence", not "proven zero").
+
+**DATA GAP (fixable, highest-value UFC work):** the DOB cache covers 1,637 fighters
+but the bout file has 2,678 names, so only 47% of bouts have BOTH ages. Every UFC
+experiment runs against a half-strength age control until that pull is widened.
 
 **BLIND SPOTS:** short-notice replacements (Guskov-type — huge, manual) · weight-cut /
 camp news · suspensions & why (the Temirov TMZ read was yours, not the model's) ·
