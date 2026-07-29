@@ -43,6 +43,16 @@ of its own baseline, mechanically dragging the ratio to 1.0), and `contactform_p
 re-runs the entire tune-and-verdict pipeline on batter-shuffled contact — the standard
 gate for any future win under ~+0.0005.
 
+Career FAMILIARITY (Nth time a batter has faced this starter) is a clean null —
++0.00082 power ceiling, measured +0.00000.
+
+**CANNOT BE SEEN AT THIS SAMPLE (not the same as dead — do not bury):** batter REST
+days and 7-day WORKLOAD. Both read ≈ −0.0002, but their power ceilings are only
++0.00033 and +0.00046, because ~83% of games follow a game so the term is 1.0 on most
+rows. Even a true ±40% effect would sit in the noise. Answerable only with a
+multi-season panel. Same for within-season familiarity: 4% of rows are repeat
+meetings, ceiling ≈ 0.
+
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
 (spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
 pregame).
@@ -129,3 +139,19 @@ southpaw/style matchups · round-by-round and method (blend prices win% only).
 *The graders behind all four are leak-free and self-testing; every claim above traces
 to an experiment verdict in the repos' experiments/ folders or a commit message.
 When in doubt: the model handles the base rates — YOU own the blind-spot reads.*
+
+**HOW A WIN IS NOW JUDGED (added after two fake ROBUST WINS in two days).** The old
+gate was train win + holdout win + 3/3 sub-periods. At margins under ~+0.0005 that is
+not enough, because the tuning grid can find a lucky cell. Two cheap checks now run
+alongside it:
+1. **POWER CEILING** (`power_ceiling()`) — re-roll the outcomes on the REAL panel so
+   the angle IS true at a generous strength, then score at the true value. No fitted
+   model can beat that number. A result at or above its own ceiling is noise by
+   definition; that is how within-season familiarity was caught. A null far BELOW its
+   ceiling means "we could not have seen it", which is not the same instruction as
+   "it is not there" and must not be filed as dead.
+2. **SHUFFLED PLACEBO** (`contactform_placebo.py` pattern) — permute the feature
+   across subjects and re-run the entire tune-and-verdict pipeline N times. Reports
+   how often the ship rule fires on pure noise.
+Also: check whether the effect's shape makes sense. Rolling contact form spiked at 7d
+and 60d with a dead middle — a real signal does not do that.
