@@ -58,6 +58,10 @@ days and 7-day WORKLOAD. Both read ≈ −0.0002, but their power ceilings are o
 rows. Even a true ±40% effect would sit in the noise. Answerable only with a
 multi-season panel. Same for within-season familiarity: 4% of rows are repeat
 meetings, ceiling ≈ 0.
+> **SUPERSEDED 2026-07-29 — see the fatigue-four block at the end of this section.**
+> On the wide panel WORKLOAD and both familiarity terms are now **DEAD**, not
+> invisible. REST stays invisible, but for a structural reason (70% of rows are
+> exactly one day off), so a wider panel will not rescue it either.
 
 **RE-READ ON THE WIDE PANEL (2026-07-29, holdout 24,332 rows — 3× the old one).** All
 seven HR angles from batches 1 and 2 were re-scored across two seasons. Only pitcher-HR
@@ -70,6 +74,43 @@ one angle that was NULL on a single-June holdout is a clean cross-season win on 
 wide panel, so **any verdict filed on the narrow panel is provisional** — batter REST,
 7-day WORKLOAD, within-season familiarity and rolling contact form all deserve the same
 re-read before anyone treats them as settled.
+
+**THAT RE-READ IS NOW DONE FOR THE FATIGUE FOUR** (`mlb_fatigue_wide.py`, 2026-07-29,
+holdout 24,332). Three of them are no longer "cannot be seen" — they are **DEAD**, and
+that is a real result, not a shrug. 7-day WORKLOAD, within-season FAMILIARITY and
+career FAMILIARITY all had a planted +30% effect recovered *robustly* by the full
+tune-and-verdict pipeline (3/3, 2/3 and 2/3 seeds), so the panel demonstrably can see
+an effect that size — and all three measured negative (−0.00001, −0.00040, −0.00007).
+When the panel can see it and it is not there, it is not there. Close them.
+
+**Batter REST is the exception, and for a structural reason worth remembering.** Its
+oracle is +0.00006 and a planted +30% effect was recovered **0 of 3 times** — the
+pipeline cannot find rest even when rest is true by construction. The mechanism is in
+the feature, not the sample: of 24,332 holdout rows, **17,018 are exactly one day off**
+and 23,959 are three days or fewer. There is almost no contrast to fit, so tripling the
+rows again will not help. Rest is not under-powered, it is nearly **constant**. Do not
+re-run it on a wider panel; if anyone wants it, it needs a different feature (in-game
+workload, catcher starts, day-after-night travel), not more rows.
+
+Two harness lessons from this run, both of which cost a full re-run:
+
+**A magic number was doing the detectability test.** The ceiling ladder read
+`oracle < 0.0004 → cannot be seen`. LOAD's oracle is +0.00038 — a hair under — so it
+printed "cannot be seen" on the same run where the fitted pipeline had just recovered a
+planted LOAD effect 3/3. Detectability is *measured* by the plant; never hard-code a
+cutoff next to an experiment that already answers the question. This is the THIRD bug
+in this ladder (twice the ordering, once the cutoff), so it is now a tested function,
+`read_ceiling()`, with LOAD's real numbers pinned as a regression case. **Any logic
+that decides a verdict belongs in a function with a test, not in an if-chain inside
+`main()` that only runs during a six-minute job.**
+
+**Two bugs that only bite on a multi-season panel** were found while porting: within-
+season familiarity was hard-coded to `d >= "2025-01-01"`, so every 2024 row carried
+fam=0 — the feature was constant in exactly the holdout meant to measure it — and rest
+was *capped* at 5 days rather than excluded, so a 183-day offseason gap read identically
+to a Sunday off, which would have made all of April look like league-wide peak freshness.
+Both live on in `mlb_fatigue_experiment.py`. When porting a narrow-panel angle wide,
+**re-read its feature builder for season-boundary assumptions before trusting the port.**
 
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
 (spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
