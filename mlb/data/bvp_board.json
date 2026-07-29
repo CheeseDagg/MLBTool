@@ -1,19 +1,8 @@
 {
- "generated": "2026-07-28T21:21:19+00:00",
- "date": "2026-07-28",
+ "generated": "2026-07-29T00:08:12+00:00",
+ "date": "2026-07-29",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Kody Clemens",
-   "team": "MIN",
-   "opp_sp": "Seth Lugo",
-   "pa": 6,
-   "ab": 6,
-   "h": 4,
-   "hr": 3,
-   "avg": ".667",
-   "slg": "2.167"
-  },
   {
    "batter": "Marcus Semien",
    "team": "NYM",
@@ -26,37 +15,59 @@
    "slg": ".833"
   },
   {
-   "batter": "Bryce Harper",
-   "team": "PHI",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 57,
-   "ab": 46,
-   "h": 15,
+   "batter": "Brandon Lowe",
+   "team": "PIT",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 18,
+   "ab": 17,
+   "h": 4,
    "hr": 3,
-   "avg": ".326",
-   "slg": ".609"
+   "avg": ".235",
+   "slg": ".765"
   },
   {
-   "batter": "Michael Busch",
-   "team": "CHC",
-   "opp_sp": "Michael McGreevy",
-   "pa": 8,
-   "ab": 8,
-   "h": 3,
-   "hr": 2,
-   "avg": ".375",
-   "slg": "1.250"
+   "batter": "Jos\u00e9 Ram\u00edrez",
+   "team": "CLE",
+   "opp_sp": "Brady Singer",
+   "pa": 40,
+   "ab": 31,
+   "h": 12,
+   "hr": 3,
+   "avg": ".387",
+   "slg": ".742"
   },
   {
-   "batter": "Luis Rengifo",
-   "team": "SD",
-   "opp_sp": "Michael Lorenzen",
-   "pa": 12,
-   "ab": 11,
+   "batter": "Eli White",
+   "team": "ATL",
+   "opp_sp": "Sean Manaea",
+   "pa": 7,
+   "ab": 7,
    "h": 4,
    "hr": 2,
-   "avg": ".364",
-   "slg": ".909"
+   "avg": ".571",
+   "slg": "1.571"
+  },
+  {
+   "batter": "Esteury Ruiz",
+   "team": "MIA",
+   "opp_sp": "Jes\u00fas Luzardo",
+   "pa": 6,
+   "ab": 6,
+   "h": 3,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.500"
+  },
+  {
+   "batter": "Daulton Varsho",
+   "team": "TOR",
+   "opp_sp": "Zack Littell",
+   "pa": 12,
+   "ab": 11,
+   "h": 5,
+   "hr": 2,
+   "avg": ".455",
+   "slg": "1.091"
   },
   {
    "batter": "Francisco Lindor",
@@ -70,48 +81,59 @@
    "slg": ".585"
   },
   {
-   "batter": "Trea Turner",
-   "team": "PHI",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 46,
-   "ab": 44,
-   "h": 17,
-   "hr": 2,
-   "avg": ".386",
-   "slg": ".568"
-  },
-  {
-   "batter": "Andrew Benintendi",
-   "team": "CWS",
-   "opp_sp": "Gerrit Cole",
-   "pa": 21,
-   "ab": 18,
+   "batter": "Brayan Rocchio",
+   "team": "CLE",
+   "opp_sp": "Brady Singer",
+   "pa": 6,
+   "ab": 4,
    "h": 4,
-   "hr": 2,
-   "avg": ".222",
-   "slg": ".556"
+   "hr": 1,
+   "avg": "1.000",
+   "slg": "1.750"
   },
   {
-   "batter": "Jose Altuve",
-   "team": "HOU",
-   "opp_sp": "Reid Detmers",
-   "pa": 27,
-   "ab": 24,
-   "h": 7,
-   "hr": 2,
-   "avg": ".292",
-   "slg": ".542"
+   "batter": "Kyle Manzardo",
+   "team": "CLE",
+   "opp_sp": "Brady Singer",
+   "pa": 9,
+   "ab": 9,
+   "h": 6,
+   "hr": 1,
+   "avg": ".667",
+   "slg": "1.333"
   },
   {
-   "batter": "Marcell Ozuna",
-   "team": "PIT",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 10,
-   "ab": 10,
-   "h": 5,
+   "batter": "Gabriel Arias",
+   "team": "CLE",
+   "opp_sp": "Brady Singer",
+   "pa": 8,
+   "ab": 5,
+   "h": 2,
+   "hr": 1,
+   "avg": ".400",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Vladimir Guerrero Jr.",
+   "team": "TOR",
+   "opp_sp": "Zack Littell",
+   "pa": 12,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
    "avg": ".500",
-   "slg": "1.000"
+   "slg": ".875"
+  },
+  {
+   "batter": "Alejandro Kirk",
+   "team": "TOR",
+   "opp_sp": "Zack Littell",
+   "pa": 7,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
   },
   {
    "batter": "Tyrone Taylor",
@@ -125,48 +147,26 @@
    "slg": ".833"
   },
   {
-   "batter": "Shohei Ohtani",
-   "team": "LAD",
-   "opp_sp": "Luis Castillo",
-   "pa": 13,
-   "ab": 11,
-   "h": 4,
+   "batter": "Ben Rice",
+   "team": "NYY",
+   "opp_sp": "Davis Martin",
+   "pa": 7,
+   "ab": 6,
+   "h": 2,
    "hr": 1,
-   "avg": ".364",
-   "slg": ".818"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Michael Lorenzen",
-   "pa": 7,
+   "batter": "Tyler O'Neill",
+   "team": "BAL",
+   "opp_sp": "Tarik Skubal",
+   "pa": 6,
    "ab": 5,
    "h": 1,
    "hr": 1,
    "avg": ".200",
    "slg": ".800"
-  },
-  {
-   "batter": "Seiya Suzuki",
-   "team": "CHC",
-   "opp_sp": "Michael McGreevy",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Cal Quantrill",
-   "pa": 9,
-   "ab": 8,
-   "h": 2,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".625"
   }
  ]
 }
