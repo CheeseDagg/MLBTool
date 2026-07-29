@@ -85,12 +85,16 @@ weather.
 
 **IN:** Elo (K=96) · striking + grappling margin EMAs · control · sub-threat EMA ·
 experience & layoff · **AGE from DOB** (validated: −0.0095 Brier, the biggest UFC
-finding) · namesake guard (no more 2006 Rick Davis) · A/B graded automatically against
-production every card.
+finding) · **CHIN — cumulative KO/TKO losses** (validated vs Elo-only +0.0089
+LL/bout AND vs Elo+age +0.0052, 3/3 periods both: damage accrual is real beyond
+the age curve) · namesake guard (no more 2006 Rick Davis) · A/B graded
+automatically against production every card.
 
 **TESTED & DEAD:** reach · finish-aware K updates · opponent-adjusted striking ·
 heavyweight-variance myth (HW favorites are RELIABLE; middleweight is the chaos
-division) · Abu-Dhabi-judges style regional lean (unmeasured, treat as ±1-2% at most).
+division) · win-streak momentum (beats Elo-only but only 2/3 age-adjusted — it's
+mostly a youth/quality proxy, age already carries it) · Abu-Dhabi-judges style
+regional lean (unmeasured, treat as ±1-2% at most).
 
 **BLIND SPOTS:** short-notice replacements (Guskov-type — huge, manual) · weight-cut /
 camp news · suspensions & why (the Temirov TMZ read was yours, not the model's) ·
