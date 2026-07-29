@@ -38,12 +38,31 @@ START, TRAIN_END, END = HX.START, HX.TRAIN_END, HX.END
 PULLS = [("2024-03-20", "2024-09-30"), ("2025-03-27", "2025-06-30")]
 
 # ------------------------------------------------------------ contact pulls
-def build_contact():
+def _load_cache():
+    """{"ranges": [[d0,d1],...], "batters": {id: {date: [bbe,brl,hh]}}} —
+    ranges recorded so chained/resumed pulls never double-count a week."""
+    if not os.path.exists(CCACHE):
+        return {"ranges": [], "batters": {}}
+    raw = json.load(open(CCACHE))
+    if "batters" not in raw:                      # legacy flat format
+        return {"ranges": [], "batters": raw}
+    return raw
+
+def build_contact(ranges=None):
     """Savant statcast via pybaseball, weekly chunks, aggregated per batter-day
-    to [batted_balls, barrels, hard_hit] and cached. Pitch rows discarded."""
+    to [batted_balls, barrels, hard_hit], MERGED into the cache. Pitch rows
+    discarded. Ranges already in the cache are skipped."""
     from pybaseball import statcast
+    cache = _load_cache()
+    done = {tuple(r) for r in cache["ranges"]}
     daily = defaultdict(lambda: defaultdict(lambda: [0, 0, 0]))
-    for d0, d1 in PULLS:
+    for b, days in cache["batters"].items():
+        for d, v in days.items():
+            daily[int(b)][d] = list(v)
+    for d0, d1 in (ranges or PULLS):
+        if (d0, d1) in done:
+            print(f"  range {d0}..{d1} already cached — skipped")
+            continue
         cur = dt.date.fromisoformat(d0)
         stop = dt.date.fromisoformat(d1)
         while cur <= stop:
@@ -67,12 +86,15 @@ def build_contact():
             except Exception as e:
                 print(f"  {cur}..{wend}: {type(e).__name__} — week skipped")
             cur = wend + dt.timedelta(days=1)
-    out = {str(b): dict(days) for b, days in daily.items()}
+        done.add((d0, d1))
+    out = {"ranges": sorted(list(r) for r in done),
+           "batters": {str(b): dict(days) for b, days in daily.items()}}
     os.makedirs(os.path.dirname(CCACHE), exist_ok=True)
     with open(CCACHE, "w") as f:
         json.dump(out, f)
-    print(f"contact cache -> {CCACHE} ({len(out)} batters)")
-    return out
+    print(f"contact cache -> {CCACHE} ({len(out['batters'])} batters, "
+          f"ranges {out['ranges']})")
+    return out["batters"]
 
 # ------------------------------------------------------------ form features
 def contact_series(contact):
@@ -248,18 +270,20 @@ def main():
     if not (os.path.exists(HX.CACHE) and os.path.exists(HX.BURN_CACHE)):
         print("hrangles dataset caches missing — run the HR angles experiment first")
         return 0
-    if os.path.exists(CCACHE):
-        contact = json.load(open(CCACHE))
-        print(f"contact cache: {len(contact)} batters")
+    cache = _load_cache()
+    missing = [list(r) for r in PULLS if list(r) not in cache["ranges"]]
+    if not missing:
+        contact = cache["batters"]
+        print(f"contact cache complete: {len(contact)} batters")
     else:
         try:
             import urllib.request
             urllib.request.urlopen("https://baseballsavant.mlb.com", timeout=10)
         except Exception:
-            print("Savant UNREACHABLE from this network — run on GitHub Actions "
-                  "(touch experiments/RUN-CONTACTFORM.txt)")
+            print(f"Savant UNREACHABLE and cache missing ranges {missing} — "
+                  "run on GitHub Actions (touch experiments/RUN-CONTACTFORM.txt)")
             return 0
-        contact = build_contact()
+        contact = build_contact([tuple(r) for r in missing])
     ds = json.load(open(HX.CACHE)); burn = json.load(open(HX.BURN_CACHE))
     rows = [r for r in burn["rows"] + ds["rows"]
             if r.get("bh") and r.get("ph") and r.get("slot", 0) > 0]
@@ -282,4 +306,9 @@ def main():
     return 0
 
 if __name__ == "__main__":
+    if "--pull" in sys.argv:                     # chained-job mode: pull only
+        spec = sys.argv[sys.argv.index("--pull") + 1]
+        d0, d1 = spec.split(":")
+        build_contact([(d0, d1)])
+        sys.exit(0)
     sys.exit(selftest() if "--selftest" in sys.argv else main())

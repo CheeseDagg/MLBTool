@@ -3,16 +3,26 @@ name: MLB contact-form experiment
 # quality add HR signal beyond season line + hot-hand? Statcast pulled in
 # weekly chunks, aggregated to batter-day, cached. Fire by touching
 # experiments/RUN-CONTACTFORM.txt.
+#
+# SPLIT ACROSS TWO JOBS on purpose. Two single-job runs (120-min timeout) both
+# died mid-pull: Baseball Savant's download rate — not our code — is the
+# bottleneck, and the 2024+2025 pull does not fit one runner. Job A pulls and
+# COMMITS the 2024 cache; job B checks out that commit, pulls only 2025, and
+# analyzes. build_contact() records completed ranges in the cache, so B can
+# never re-pull or double-count what A already stored.
 on:
   push:
     paths: ['experiments/RUN-CONTACTFORM.txt']
   workflow_dispatch: {}
 permissions:
   contents: write
+concurrency:
+  group: mlb-contactform
+  cancel-in-progress: false
 jobs:
-  contactform:
+  pull2024:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,9 +32,50 @@ jobs:
       - name: Selftest (planted form, shuffled null, leak checks)
         working-directory: mlb
         run: python mlb_contactform_experiment.py --selftest
-      - name: Build contact cache + run experiment
+      - name: Pull 2024 contact cache only
         working-directory: mlb
-        run: python mlb_contactform_experiment.py
+        run: python mlb_contactform_experiment.py --pull 2024-03-20:2024-09-30
+      - name: Commit 2024 cache
+        run: |
+          git config user.name mlb-bot
+          git config user.email actions@github.com
+          git add mlb/data/contact_daily.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "2024 cache already current"; exit 0; fi
+          git commit -m "contact cache: 2024 burn-in pull"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push race - retry $i"; sleep 3
+          done
+          exit 1
+
+  analyze:
+    needs: pull2024
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main          # fresh tip: must include job A's cache commit
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install deps
+        run: pip install pybaseball pandas
+      - name: Confirm the 2024 cache arrived
+        working-directory: mlb
+        run: |
+          python - <<'PY'
+          import json, sys
+          c = json.load(open("data/contact_daily.json"))
+          rng = c.get("ranges", [])
+          print("cached ranges:", rng, "batters:", len(c.get("batters", {})))
+          if ["2024-03-20", "2024-09-30"] not in rng:
+              sys.exit("::error::job A's 2024 range is missing from the cache")
+          PY
+      - name: Pull 2025 + run the experiment
+        working-directory: mlb
+        run: |
+          python mlb_contactform_experiment.py --pull 2025-03-27:2025-06-30
+          python mlb_contactform_experiment.py
       - name: Commit cache + verdict
         run: |
           git config user.name mlb-bot
