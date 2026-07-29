@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-29T21:19+00:00",
+ "generated": "2026-07-29T22:08+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -485,39 +485,39 @@
    "pitcher": "Logan Webb",
    "opp": "Milwaukee Brewers",
    "lam": 4.96,
-   "k9_regressed": 7.44,
-   "exp_ip": 6.21,
+   "k9_regressed": 7.39,
+   "exp_ip": 6.26,
    "opp_mult": 0.965,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5516,
-     "fair_over": -123,
-     "fair_under": 123
+     "p_over": 0.5528,
+     "fair_over": -124,
+     "fair_under": 124
     },
     {
      "line": 5.5,
-     "p_over": 0.3762,
-     "fair_over": 166,
-     "fair_under": -166
+     "p_over": 0.3773,
+     "fair_over": 165,
+     "fair_under": -165
     },
     {
      "line": 6.5,
-     "p_over": 0.2313,
-     "fair_over": 332,
-     "fair_under": -332
+     "p_over": 0.2322,
+     "fair_over": 331,
+     "fair_under": -331
     },
     {
      "line": 7.5,
-     "p_over": 0.1287,
-     "fair_over": 677,
-     "fair_under": -677
+     "p_over": 0.1294,
+     "fair_over": 673,
+     "fair_under": -673
     },
     {
      "line": 8.5,
-     "p_over": 0.0652,
-     "fair_over": 1434,
-     "fair_under": -1434
+     "p_over": 0.0656,
+     "fair_over": 1424,
+     "fair_under": -1424
     }
    ]
   },
@@ -558,6 +558,46 @@
      "p_over": 0.0627,
      "fair_over": 1494,
      "fair_under": -1494
+    }
+   ]
+  },
+  {
+   "pitcher": "Gabriel Hughes",
+   "opp": "San Diego Padres",
+   "lam": 4.89,
+   "k9_regressed": 8.26,
+   "exp_ip": 5.33,
+   "opp_mult": 0.999,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5395,
+     "fair_over": -117,
+     "fair_under": 117
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3643,
+     "fair_over": 175,
+     "fair_under": -175
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2215,
+     "fair_over": 351,
+     "fair_under": -351
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1219,
+     "fair_over": 721,
+     "fair_under": -721
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.061,
+     "fair_over": 1540,
+     "fair_under": -1540
     }
    ]
   },
@@ -638,46 +678,6 @@
      "p_over": 0.052,
      "fair_over": 1823,
      "fair_under": -1823
-    }
-   ]
-  },
-  {
-   "pitcher": "Gabriel Hughes",
-   "opp": "San Diego Padres",
-   "lam": 4.67,
-   "k9_regressed": 8.55,
-   "exp_ip": 4.92,
-   "opp_mult": 1.0,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4998,
-     "fair_over": 100,
-     "fair_under": -100
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3263,
-     "fair_over": 206,
-     "fair_under": -206
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1913,
-     "fair_over": 423,
-     "fair_under": -423
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1012,
-     "fair_over": 888,
-     "fair_under": -888
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0486,
-     "fair_over": 1956,
-     "fair_under": -1956
     }
    ]
   },
@@ -1127,37 +1127,37 @@
    "lam": 2.8,
    "k9_regressed": 8.26,
    "exp_ip": 3.0,
-   "opp_mult": 1.017,
+   "opp_mult": 1.018,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1525,
-     "fair_over": 556,
-     "fair_under": -556
+     "p_over": 0.1527,
+     "fair_over": 555,
+     "fair_under": -555
     },
     {
      "line": 5.5,
-     "p_over": 0.0652,
-     "fair_over": 1434,
-     "fair_under": -1434
+     "p_over": 0.0653,
+     "fair_over": 1431,
+     "fair_under": -1431
     },
     {
      "line": 6.5,
      "p_over": 0.0245,
-     "fair_over": 3989,
-     "fair_under": -3989
+     "fair_over": 3981,
+     "fair_under": -3981
     },
     {
      "line": 7.5,
-     "p_over": 0.0081,
-     "fair_over": 12173,
-     "fair_under": -12173
+     "p_over": 0.0082,
+     "fair_over": 12141,
+     "fair_under": -12141
     },
     {
      "line": 8.5,
      "p_over": 0.0024,
-     "fair_over": 40902,
-     "fair_under": -40902
+     "fair_over": 40779,
+     "fair_under": -40779
     }
    ]
   },
@@ -1167,37 +1167,37 @@
    "lam": 2.71,
    "k9_regressed": 8.39,
    "exp_ip": 3.0,
-   "opp_mult": 0.969,
+   "opp_mult": 0.968,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1389,
-     "fair_over": 620,
-     "fair_under": -620
+     "p_over": 0.1385,
+     "fair_over": 622,
+     "fair_under": -622
     },
     {
      "line": 5.5,
-     "p_over": 0.0577,
-     "fair_over": 1632,
-     "fair_under": -1632
+     "p_over": 0.0575,
+     "fair_over": 1639,
+     "fair_under": -1639
     },
     {
      "line": 6.5,
-     "p_over": 0.021,
-     "fair_over": 4658,
-     "fair_under": -4658
+     "p_over": 0.0209,
+     "fair_over": 4682,
+     "fair_under": -4682
     },
     {
      "line": 7.5,
      "p_over": 0.0068,
-     "fair_over": 14619,
-     "fair_under": -14619
+     "fair_over": 14708,
+     "fair_under": -14708
     },
     {
      "line": 8.5,
      "p_over": 0.002,
-     "fair_over": 50609,
-     "fair_under": -50609
+     "fair_over": 50965,
+     "fair_under": -50965
     }
    ]
   },
