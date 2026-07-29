@@ -113,6 +113,26 @@ LL/bout AND vs Elo+age +0.0052, 3/3 periods both: damage accrual is real beyond
 the age curve) · namesake guard (no more 2006 Rick Davis) · A/B graded
 automatically against production every card.
 
+**LAYOFF × AGE — the first angle to clear all three gates (2026-07-29).** Time off
+costs an older fighter more than a younger one: layoff × (age − 30), holdout
++0.00213 on the age-complete subset, 3/3 periods, negative sign. Ceiling +0.00645,
+so it is measuring at a third of what the panel could possibly show — the profile
+of a real, modest effect. 0/24 shuffled placebos fired the ship rule and none beat
+it. Shape holds: 3.4× stronger per bout where a long gap actually exists (+0.00413
+vs +0.00120 on even turnarounds), 3/3 when someone is 33+, 2/3 when both are under
+31, and the pivot sweep peaks near 33 and decays to negative by 50 rather than
+climbing forever — so it is not quietly repairing the layoff main effect. Pivot
+stays at 30; the sweep is a shape check, not a tuning run.
+
+**WHY MOST UFC ANGLES DIE — Elo absorbs any FIXED per-fighter trait.** Elo estimates
+*total* strength, so a constant per-fighter contribution to winning is folded into
+the rating within a handful of bouts and leaves no residual for a second term. A
+synthetic plant of a fixed trait is unrecoverable over an Elo baseline — the harness
+refusing it is correct behaviour, not a bug. Only things that move WITHIN a career
+(mileage, layoff, age, activity) are visible at all. This is the common thread under
+win-streak momentum, KDABS, ABSORB and KO-power all failing, and it is the reason
+LAYAGE — two inputs that both move within a career — is the one that lived.
+
 **TESTED & DEAD:** reach · finish-aware K updates · opponent-adjusted striking ·
 heavyweight-variance myth (HW favorites are RELIABLE; middleweight is the chaos
 division) · win-streak momentum (beats Elo-only but only 2/3 age-adjusted — it's
@@ -125,7 +145,14 @@ honestly in the baseline, finer trauma proxies add nothing. Method note that cos
 hour: a plain .lower() name join matched only 51% of fighters, which silently zeroed
 the age term and made three of these look like ROBUST WINS. A diluted control is not
 a control; the verdict is the AGE-COMPLETE subset (n=4,041 bouts, 1,486 holdout —
-small, so these are "no evidence", not "proven zero").
+small, so these are "no evidence", not "proven zero"). Re-read at 49% DOB coverage:
+all four still non-robust, so the verdict holds at higher power. Batch 3 added two
+more deaths — career KO SHARE OF WINS (0/3, and it reads "cannot be seen" on the
+full sample, so it is filed as unanswered rather than dead) and SIG STRIKES LANDED
+PER MINUTE (2/3, against a fat +0.0204 ceiling — the panel could easily have seen
+pace and did not). ACTIVITY (bouts in the last 365 days) is the instructive one: a
+ROBUST WIN on the full sample that collapsed to 0/3 NULL on the age-complete subset.
+It was an age proxy. That is precisely what the subset test is for.
 
 **DATA GAP (fixable, highest-value UFC work):** the DOB cache covers 1,637 fighters
 but the bout file has 2,678 names, so only 47% of bouts have BOTH ages. Every UFC
