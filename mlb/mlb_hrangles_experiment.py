@@ -159,8 +159,16 @@ def attach_features(rows):
     pit = defaultdict(lambda: [0, 0])             # HR allowed by starter
     plat = defaultdict(lambda: [0, 0])            # 'opp' / 'same' league-wide
     out = []
-    for day in sorted({r["date"] for r in rows}):
-        todays = [r for r in rows if r["date"] == day]
+    # group once. The original re-scanned every row for every day, which is
+    # O(days x rows) — invisible at 24k rows, but the burn-in panel is 74k
+    # rows over 276 days and the power-ceiling work in batch 2 re-runs this
+    # pass dozens of times. Same days in the same order, same rows in the same
+    # order within each day: this is a speed change only.
+    by_day = defaultdict(list)
+    for r in rows:
+        by_day[r["date"]].append(r)
+    for day in sorted(by_day):
+        todays = by_day[day]
         for r in todays:
             h = eff_hand(r["bh"], r["ph"])
             opp = (h != r["ph"]) if r["ph"] else True
