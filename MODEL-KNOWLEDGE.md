@@ -177,20 +177,46 @@ costs an older fighter more than a younger one: layoff × (age − 30), holdout
 +0.00213 on the age-complete subset, 3/3 periods, negative sign. Ceiling +0.00645,
 so it is measuring at a third of what the panel could possibly show — the profile
 of a real, modest effect. 0/24 shuffled placebos fired the ship rule and none beat
-it. Shape holds: 3.4× stronger per bout where a long gap actually exists (+0.00413
+it — extended to 300 within-year permutations the joint placebo gives p=0.0033, and
+it is a robust win in all three independent eras. Gate 1 (the power ceiling) is
+structurally UNREADABLE for this term: the refit baseline absorbs any plant built
+out of layoff and age, so the oracle comes back non-positive at every strength. That
+is a broken probe, not a dead angle — gates 2 and 3 carry it. Shape holds: 3.4×
+stronger per bout where a long gap actually exists (+0.00413
 vs +0.00120 on even turnarounds), 3/3 when someone is 33+, 2/3 when both are under
 31, and the pivot sweep peaks near 33 and decays to negative by 50 rather than
 climbing forever — so it is not quietly repairing the layoff main effect. Pivot
 stays at 30; the sweep is a shape check, not a tuning run.
 
-**WHY MOST UFC ANGLES DIE — Elo absorbs any FIXED per-fighter trait.** Elo estimates
-*total* strength, so a constant per-fighter contribution to winning is folded into
-the rating within a handful of bouts and leaves no residual for a second term. A
-synthetic plant of a fixed trait is unrecoverable over an Elo baseline — the harness
-refusing it is correct behaviour, not a bug. Only things that move WITHIN a career
-(mileage, layoff, age, activity) are visible at all. This is the common thread under
-win-streak momentum, KDABS, ABSORB and KO-power all failing, and it is the reason
-LAYAGE — two inputs that both move within a career — is the one that lived.
+**WHY MOST UFC ANGLES DIE — THE ABSORPTION THEOREM.** Elo scores a bout on
+`r_i − r_j`. If the truth is `z = β·(x_i − x_j)` for ANY per-fighter quantity x, then
+`r_i = β·x_i + skill_i` reproduces it exactly and the ratings converge there unaided.
+So Elo absorbs any per-fighter *difference* term, not merely a fixed offset. A null on
+a raw trait therefore says almost nothing about the sport — it says Elo already knows.
+Only terms that vary WITHIN a career (mileage, layoff, age, activity), or that key on
+where Elo is not yet informed, can leave a residual. This is the common thread under
+win-streak momentum, KDABS, ABSORB, KO-power and raw reach all failing, and it is the
+reason LAYAGE — two inputs that both move within a career — is the one that lived.
+
+**THE THEOREM EXTENDS TO TYPES, AND THERE IT LEAVES A GAP (batch 5, 2026-07-29).**
+Stance is not a number, it is a type, so a stance effect is an antisymmetric 3×3
+matchup matrix M(s_i,s_j) with THREE free values: M(O,S), M(O,W), M(S,W). Everything
+Elo can absorb has the form f(s_i) − f(s_j), which has only TWO free values and
+therefore satisfies `M(O,W) = M(O,S) + M(S,W)`. The failure of that identity is the
+one direction no Elo-family rating can ever hold: a rock-paper-scissors CYCLE. With k
+types the absorbable subspace is k−1 dimensional inside a k(k−1)/2 dimensional space,
+so every categorical feature with 3+ levels has a non-absorbable residual worth
+testing. That is the general lesson; the specific UFC answer is under TESTED & DEAD.
+
+**ABSORPTION IS A LIMIT, NOT AN INSTANT.** Every fighter debuts at 1500 regardless of
+his frame or his stance, careers are short, and the inflow of debutants never stops —
+so a fraction of any panel is always un-absorbed. Measured, not assumed: a 0.55-logit
+per-fighter southpaw bonus planted into a synthetic roster with realistic turnover
+comes back as a genuine ROBUST WIN on the plain indicator (+0.0063), and the
+ignorance-weighted version reads it better still (+0.0068). Practical consequence: a
+win on an "absorbable" control is evidence about Elo's convergence SPEED, not about
+the trait — and the `TAU/(TAU + bouts)` weighting is the right way to isolate the
+un-absorbed part.
 
 **TESTED & DEAD:** reach · finish-aware K updates · opponent-adjusted striking ·
 heavyweight-variance myth (HW favorites are RELIABLE; middleweight is the chaos
@@ -211,15 +237,62 @@ full sample, so it is filed as unanswered rather than dead) and SIG STRIKES LAND
 PER MINUTE (2/3, against a fat +0.0204 ceiling — the panel could easily have seen
 pace and did not). ACTIVITY (bouts in the last 365 days) is the instructive one: a
 ROBUST WIN on the full sample that collapsed to 0/3 NULL on the age-complete subset.
-It was an age proxy. That is precisely what the subset test is for.
+It was an age proxy. That is precisely what the subset test is for. Re-run once more
+at 97% DOB coverage, ACTIV is positive in 3/3 eras with a joint placebo of p=0.0133 —
+a real candidate, but it does not clear the bar to ship, so it stays out.
 
-**DATA GAP (fixable, highest-value UFC work):** the DOB cache covers 1,637 fighters
-but the bout file has 2,678 names, so only 47% of bouts have BOTH ages. Every UFC
-experiment runs against a half-strength age control until that pull is widened.
+**REACH IS DEAD (batch 4, 2026-07-29).** Five reach angles, two passes. Raw reach,
+reach × grappling, reach × age and the height-adjusted version all die against
+ceilings several times the measured gain. RCHNEW (reach weighted toward fighters Elo
+has barely seen) looked like a robust win in the first pass and evaporated in the
+second: once raw reach itself is in the baseline, RCHNEW is raw reach in a wig. Only
+RCHENV — reach advantage conditioned on the environment it is used in — is genuinely
+invisible rather than dead (a planted effect of its own size was recovered only 1/3),
+so it is unanswered, not buried. The two-pass design is what caught this: any term
+built on top of a main effect will impersonate that main effect unless the main
+effect is already spoken for.
+
+**STANCE IS DEAD (batch 5, 2026-07-29) — including the one direction Elo cannot
+represent.** The round-8 sweep took holdout stance coverage from 1.0% (18 bouts, no
+panel at all) to 91.8% (1,626 of 1,771), so the oldest folk claim in the sport was
+finally testable on the decisive subset (n=7,108 age- AND stance-complete). Six
+angles: the southpaw indicator −0.00012 against an oracle of +0.01351; the switch
+indicator −0.00040 vs +0.00712; SPFAM (he has not seen that look, keyed on the
+opponent's exposure to the stance rather than on stance itself) +0.00011 vs +0.01101;
+and the CYCLE — orthodox > southpaw > switch > orthodox, the rock-paper-scissors
+component that provably cannot be written as f(i) − f(j) and that no Elo-family
+rating can hold — +0.00026 against an oracle of +0.01818. A planted effect of each of
+those sizes was recovered 3/3, so a real one would have shown. Southpaw advantage is
+not in this panel and the panel had 50–140× the power needed to see it. Two
+caveats kept honest: SPNEW (stance where Elo is blind) reads NULL but a planted
+effect of its own size was itself only recovered 1/3, so it is invisible, not dead;
+and XSTNC's probe is uninformative because the refit baseline absorbs the plant at
+every strength. Confirmation that the algebra is right: CYCLE's verdict barely moved
+between the two passes (+0.00026 → −0.00013), which is exactly what orthogonality to
+both indicators predicts.
+
+**TWO METHOD LESSONS THAT COST REAL TIME.** (1) GRID EDGES. If a baseline
+coefficient fits to the boundary of its search grid, the optimum was never searched
+and the baseline is handicapped — any correlated angle then inherits credit that is
+not its own. Every experiment now flags boundary fits, and a fit pinned at a grid
+maximum is a CENSORED estimate that cannot be compared to another censored estimate.
+(2) A NON-POSITIVE ORACLE IS A BROKEN PROBE, NOT A DEAD ANGLE. The ceiling probe
+refits the baseline on the synthetic panel; if the plant correlates with baseline
+terms, a well-specified baseline absorbs it, the refit carries it through inflated
+main effects, and adding the true coefficient double-counts and HURTS. Both current
+experiment files walk the plant strength down looking for one the baseline cannot
+absorb, and print PROBE UNINFORMATIVE rather than a verdict when none exists.
+
+**DATA GAP — CLOSED (round 7–8 backfill).** DOB coverage went from 47% of bouts with
+BOTH ages to 97% (8,439 of 8,686 unique bouts, 1994-03-11..2026-06-14), and stance
+from effectively nothing to 82% overall / 91.8% on the holdout. Every UFC verdict
+above the batch-2 line was re-read at the higher power. Remaining: the shipped AGE
+term and model A were tuned at 47% coverage and have not been re-validated at 97%.
 
 **BLIND SPOTS:** short-notice replacements (Guskov-type — huge, manual) · weight-cut /
 camp news · suspensions & why (the Temirov TMZ read was yours, not the model's) ·
-southpaw/style matchups · round-by-round and method (blend prices win% only).
+round-by-round and method (blend prices win% only). Stance/southpaw matchups came
+OFF this list on 2026-07-29 — they were tested four ways and are dead, not blind.
 
 ---
 *The graders behind all four are leak-free and self-testing; every claim above traces
