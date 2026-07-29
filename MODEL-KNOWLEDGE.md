@@ -28,11 +28,17 @@ changes · pitcher residual momentum · recency-weighted calibration · umpire (
 never showed for HR context either) · day vs night game (null even with full data) ·
 individual batter platoon splits beyond the flat league factors (null BOTH in-season
 and with a full prior season maturing the cells — the flat factors already carry it) ·
-handedness-split park factors (flickered, never robust, even with 2024 burn-in).
+handedness-split park factors (flickered, never robust, even with 2024 burn-in) ·
+ROLLING CONTACT-QUALITY FORM — recent barrel rate vs the hitter's own norm was flat
+NULL (holdout −0.00016, 0/3 periods); the hard-hit variant won train but only 2/3
+holdout periods, not robust. 99% coverage, so a real null, not a data hole. Keyhole
+caveat worth keeping: a 14-day window is only ~40 batted balls, so even a TRUE
+doubling of form moves ~+0.001 LL/game — the window may be the limit, not the idea.
+Season line + hot-hand already carry what's there.
 
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
-(spot tags flag rookies/new bats, not scratches) · rolling contact-quality form (next
-in the experiment queue) · anything intra-day (board is pregame).
+(spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
+pregame).
 
 ## MLB — K props (mlb_kprops*.py)
 
