@@ -20,7 +20,13 @@ bullpen HR rate · Savant barrels · bat-vs-pitch-zone heat (demoted weight) · 
 order slot (PA share + hitter-quality gradient) · HOT HAND: homered in last graded
 game = +0.18 logit (only the most recent game carries signal) · starter HR-allowed
 pools seeded with his FULL PRIOR SEASON (validated: in-season-only was noise, prior-
-year-matured cells are a robust 3/3-period holdout win) · monthly recalibration
+year-matured cells are a robust 3/3-period holdout win; RE-CONFIRMED 2026-07-29 on the
+two-season wide panel at +0.00025 pooled, winning 2024 and 2025 separately, 4/4 slices,
+and a 20-trial start-level placebo fired 0/20 with max noise +0.00003. The effect is
+MONOTONE IN CELL MATURITY — thin cells under 200 batters faced −0.00001, 200-600
++0.00014, 600+ **+0.00044 and robust** — which is the mechanism behind "needs a full
+prior season", and the weight sweep has an interior optimum (rises to 0.45, plateaus to
+0.60, −0.00092 by 1.40), so it is not a knife edge) · monthly recalibration
 (leak-free, holdout-gated).
 
 **TESTED & DEAD:** month/season phase · day of week · small-sample pitcher shrink
@@ -52,6 +58,18 @@ days and 7-day WORKLOAD. Both read ≈ −0.0002, but their power ceilings are o
 rows. Even a true ±40% effect would sit in the noise. Answerable only with a
 multi-season panel. Same for within-season familiarity: 4% of rows are repeat
 meetings, ceiling ≈ 0.
+
+**RE-READ ON THE WIDE PANEL (2026-07-29, holdout 24,332 rows — 3× the old one).** All
+seven HR angles from batches 1 and 2 were re-scored across two seasons. Only pitcher-HR
+flipped (see IN, above). The other six lost again — indiv platoon −0.00028, handed park
+−0.00010, day/night −0.00002, travel +0.00000 (1/4 slices), home/away −0.00004, slot
+shift −0.00007 — but their ORACLES are +0.00005 to +0.00023, meaning a generous
+planted 15-18% effect would still be near-invisible even at 3× the rows. They are
+filed CANNOT BE SEEN, not dead. The instructive part is the harness, not the baseball:
+one angle that was NULL on a single-June holdout is a clean cross-season win on the
+wide panel, so **any verdict filed on the narrow panel is provisional** — batter REST,
+7-day WORKLOAD, within-season familiarity and rolling contact form all deserve the same
+re-read before anyone treats them as settled.
 
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
 (spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
@@ -180,5 +198,34 @@ alongside it:
 2. **SHUFFLED PLACEBO** (`contactform_placebo.py` pattern) — permute the feature
    across subjects and re-run the entire tune-and-verdict pipeline N times. Reports
    how often the ship rule fires on pure noise.
+3. **CROSS-SEASON REPLICATION** (`mlb_widepanel_experiment.py`, added 2026-07-29) —
+   the win must clear baseline in the 2024 holdout AND the 2025 holdout SEPARATELY,
+   not just pooled. Three consecutive ten-day slices of one June share a weather
+   regime, a league ball, hot bats and park conditions; two different Augusts do not.
+   This is the tooth that more rows alone cannot buy: it would have killed the 60-day
+   hard-hit result without needing a placebo.
 Also: check whether the effect's shape makes sense. Rolling contact form spiked at 7d
 and 60d with a dead middle — a real signal does not do that.
+
+**READ THE CEILING IN THE RIGHT ORDER (this bug has now been shipped and fixed twice,
+once in UFC and once in MLB).** Test "did it win" BEFORE "is the oracle too small to
+see". Getting it backwards prints a genuine cross-season robust win — one measuring
+six times its own detection threshold — as "cannot be seen". The correct ladder:
+measured ≥ oracle → noise by construction; measured inside the oracle's seed spread →
+unproven, needs a placebo; won and above the FITTED threshold → live; did not win and
+oracle tiny → cannot be seen, do not bury; otherwise dead.
+
+**ONE RE-ROLL IS NOT A CEILING.** On an identical planted truth, four seeds gave
++0.00076 / +0.00451 / +0.00290 / +0.00396 — a 5× spread. Ceilings are averaged over
+seeds with the spread reported, and a measured result that lands inside that spread is
+UNPROVEN, not confirmed. Two more mechanics that bite: plants must be mean-normalised
+(or the plant shifts the league level and the baseline re-fit steals the credit), and
+plant randomness must use `zlib.crc32`, never `hash()` — CPython salts string hashing
+per process, so ceiling seeds would silently measure different planted worlds.
+
+**SCORE EVERY ROW YOU OWN.** Every MLB HR verdict through batch 2 was decided on ONE
+holdout — June 2025, 8,037 batter-games — while 49,562 rows of 2024 sat on disk used
+only to WARM the shrinkage cells, never scored. Widening the scoring windows
+(warm 2024-03-20..05-31; train 2024-06..07 + 2025-04..05; hold 2024-08..09 + 2025-06)
+quadrupled the holdout to 24,332 rows with ZERO new data pull. Before filing anything
+as dead, check that the panel is actually being scored, not just warmed.
