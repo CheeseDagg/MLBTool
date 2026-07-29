@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-29T18:45+00:00",
+ "generated": "2026-07-29T19:37+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -11,7 +11,7 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8459,
+     "p_over": 0.8458,
      "fair_over": -549,
      "fair_under": 549
     },
@@ -23,19 +23,19 @@
     },
     {
      "line": 6.5,
-     "p_over": 0.5821,
+     "p_over": 0.582,
      "fair_over": -139,
      "fair_under": 139
     },
     {
      "line": 7.5,
-     "p_over": 0.4336,
+     "p_over": 0.4335,
      "fair_over": 131,
      "fair_under": -131
     },
     {
      "line": 8.5,
-     "p_over": 0.2996,
+     "p_over": 0.2995,
      "fair_over": 234,
      "fair_under": -234
     }
@@ -84,40 +84,40 @@
   {
    "pitcher": "Chris Sale",
    "opp": "New York Mets",
-   "lam": 6.72,
+   "lam": 6.73,
    "k9_regressed": 10.32,
    "exp_ip": 5.84,
-   "opp_mult": 1.003,
+   "opp_mult": 1.004,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8,
-     "fair_over": -400,
-     "fair_under": 400
+     "p_over": 0.8006,
+     "fair_over": -402,
+     "fair_under": 402
     },
     {
      "line": 5.5,
-     "p_over": 0.6623,
-     "fair_over": -196,
-     "fair_under": 196
+     "p_over": 0.6631,
+     "fair_over": -197,
+     "fair_under": 197
     },
     {
      "line": 6.5,
-     "p_over": 0.508,
-     "fair_over": -103,
-     "fair_under": 103
+     "p_over": 0.5089,
+     "fair_over": -104,
+     "fair_under": 104
     },
     {
      "line": 7.5,
-     "p_over": 0.3598,
-     "fair_over": 178,
-     "fair_under": -178
+     "p_over": 0.3607,
+     "fair_over": 177,
+     "fair_under": -177
     },
     {
      "line": 8.5,
-     "p_over": 0.2353,
-     "fair_over": 325,
-     "fair_under": -325
+     "p_over": 0.2361,
+     "fair_over": 324,
+     "fair_under": -324
     }
    ]
   },
@@ -322,6 +322,46 @@
    ]
   },
   {
+   "pitcher": "Trey Yesavage",
+   "opp": "Washington Nationals",
+   "lam": 5.18,
+   "k9_regressed": 8.84,
+   "exp_ip": 5.39,
+   "opp_mult": 0.977,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5898,
+     "fair_over": -144,
+     "fair_under": 144
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4148,
+     "fair_over": 141,
+     "fair_under": -141
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2639,
+     "fair_over": 279,
+     "fair_under": -279
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1524,
+     "fair_over": 556,
+     "fair_under": -556
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0802,
+     "fair_over": 1147,
+     "fair_under": -1147
+    }
+   ]
+  },
+  {
    "pitcher": "MacKenzie Gore",
    "opp": "Tampa Bay Rays",
    "lam": 5.13,
@@ -362,82 +402,42 @@
    ]
   },
   {
-   "pitcher": "Trey Yesavage",
-   "opp": "Washington Nationals",
-   "lam": 5.11,
-   "k9_regressed": 8.89,
-   "exp_ip": 5.29,
-   "opp_mult": 0.977,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5785,
-     "fair_over": -137,
-     "fair_under": 137
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4033,
-     "fair_over": 148,
-     "fair_under": -148
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.254,
-     "fair_over": 294,
-     "fair_under": -294
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1451,
-     "fair_over": 589,
-     "fair_under": -589
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0755,
-     "fair_over": 1225,
-     "fair_under": -1225
-    }
-   ]
-  },
-  {
    "pitcher": "Sean Manaea",
    "opp": "Atlanta Braves",
-   "lam": 5.07,
+   "lam": 5.06,
    "k9_regressed": 8.63,
    "exp_ip": 5.41,
    "opp_mult": 0.977,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5709,
+     "p_over": 0.5706,
      "fair_over": -133,
      "fair_under": 133
     },
     {
      "line": 5.5,
-     "p_over": 0.3955,
+     "p_over": 0.3952,
      "fair_over": 153,
      "fair_under": -153
     },
     {
      "line": 6.5,
-     "p_over": 0.2475,
-     "fair_over": 304,
-     "fair_under": -304
+     "p_over": 0.2472,
+     "fair_over": 305,
+     "fair_under": -305
     },
     {
      "line": 7.5,
-     "p_over": 0.1403,
-     "fair_over": 613,
-     "fair_under": -613
+     "p_over": 0.1401,
+     "fair_over": 614,
+     "fair_under": -614
     },
     {
      "line": 8.5,
-     "p_over": 0.0725,
-     "fair_over": 1280,
-     "fair_under": -1280
+     "p_over": 0.0723,
+     "fair_over": 1282,
+     "fair_under": -1282
     }
    ]
   },
@@ -491,33 +491,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5611,
+     "p_over": 0.5608,
      "fair_over": -128,
      "fair_under": 128
     },
     {
      "line": 5.5,
-     "p_over": 0.3857,
+     "p_over": 0.3854,
      "fair_over": 159,
      "fair_under": -159
     },
     {
      "line": 6.5,
-     "p_over": 0.2392,
-     "fair_over": 318,
-     "fair_under": -318
+     "p_over": 0.2389,
+     "fair_over": 319,
+     "fair_under": -319
     },
     {
      "line": 7.5,
-     "p_over": 0.1343,
-     "fair_over": 644,
-     "fair_under": -644
+     "p_over": 0.1342,
+     "fair_over": 645,
+     "fair_under": -645
     },
     {
      "line": 8.5,
-     "p_over": 0.0687,
-     "fair_over": 1356,
-     "fair_under": -1356
+     "p_over": 0.0686,
+     "fair_over": 1358,
+     "fair_under": -1358
     }
    ]
   },
@@ -651,15 +651,15 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5126,
+     "p_over": 0.5127,
      "fair_over": -105,
      "fair_under": 105
     },
     {
      "line": 5.5,
-     "p_over": 0.3384,
-     "fair_over": 196,
-     "fair_under": -196
+     "p_over": 0.3385,
+     "fair_over": 195,
+     "fair_under": -195
     },
     {
      "line": 6.5,
@@ -676,8 +676,8 @@
     {
      "line": 8.5,
      "p_over": 0.0524,
-     "fair_over": 1809,
-     "fair_under": -1809
+     "fair_over": 1808,
+     "fair_under": -1808
     }
    ]
   },
@@ -807,37 +807,37 @@
    "lam": 4.14,
    "k9_regressed": 8.57,
    "exp_ip": 4.33,
-   "opp_mult": 1.003,
+   "opp_mult": 1.004,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3981,
+     "p_over": 0.3988,
      "fair_over": 151,
      "fair_under": -151
     },
     {
      "line": 5.5,
-     "p_over": 0.2368,
-     "fair_over": 322,
-     "fair_under": -322
+     "p_over": 0.2374,
+     "fair_over": 321,
+     "fair_under": -321
     },
     {
      "line": 6.5,
-     "p_over": 0.1256,
-     "fair_over": 696,
-     "fair_under": -696
+     "p_over": 0.126,
+     "fair_over": 694,
+     "fair_under": -694
     },
     {
      "line": 7.5,
-     "p_over": 0.0598,
-     "fair_over": 1573,
-     "fair_under": -1573
+     "p_over": 0.06,
+     "fair_over": 1566,
+     "fair_under": -1566
     },
     {
      "line": 8.5,
-     "p_over": 0.0258,
-     "fair_over": 3781,
-     "fair_under": -3781
+     "p_over": 0.0259,
+     "fair_over": 3763,
+     "fair_under": -3763
     }
    ]
   },
@@ -1051,33 +1051,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2188,
+     "p_over": 0.2186,
      "fair_over": 357,
      "fair_under": -357
     },
     {
      "line": 5.5,
-     "p_over": 0.105,
-     "fair_over": 852,
-     "fair_under": -852
+     "p_over": 0.1049,
+     "fair_over": 853,
+     "fair_under": -853
     },
     {
      "line": 6.5,
      "p_over": 0.0444,
-     "fair_over": 2152,
-     "fair_under": -2152
+     "fair_over": 2154,
+     "fair_under": -2154
     },
     {
      "line": 7.5,
      "p_over": 0.0167,
-     "fair_over": 5876,
-     "fair_under": -5876
+     "fair_over": 5884,
+     "fair_under": -5884
     },
     {
      "line": 8.5,
      "p_over": 0.0057,
-     "fair_over": 17519,
-     "fair_under": -17519
+     "fair_over": 17546,
+     "fair_under": -17546
     }
    ]
   },
@@ -1091,33 +1091,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2023,
-     "fair_over": 394,
-     "fair_under": -394
+     "p_over": 0.2022,
+     "fair_over": 395,
+     "fair_under": -395
     },
     {
      "line": 5.5,
      "p_over": 0.0946,
-     "fair_over": 957,
-     "fair_under": -957
+     "fair_over": 958,
+     "fair_under": -958
     },
     {
      "line": 6.5,
      "p_over": 0.0389,
-     "fair_over": 2468,
-     "fair_under": -2468
+     "fair_over": 2469,
+     "fair_under": -2469
     },
     {
      "line": 7.5,
      "p_over": 0.0143,
-     "fair_over": 6905,
-     "fair_under": -6905
+     "fair_over": 6911,
+     "fair_under": -6911
     },
     {
      "line": 8.5,
      "p_over": 0.0047,
-     "fair_over": 21143,
-     "fair_under": -21143
+     "fair_over": 21162,
+     "fair_under": -21162
     }
    ]
   },
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 22} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 24} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
