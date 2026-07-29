@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-29T18:15:19+00:00",
+ "generated": "2026-07-29T21:11:04+00:00",
  "date": "2026-07-29",
  "min_pa": 6,
  "rows": [
@@ -51,12 +51,12 @@
    "batter": "Esteury Ruiz",
    "team": "MIA",
    "opp_sp": "Jes\u00fas Luzardo",
-   "pa": 9,
-   "ab": 9,
-   "h": 5,
+   "pa": 6,
+   "ab": 6,
+   "h": 3,
    "hr": 2,
-   "avg": ".556",
-   "slg": "1.333"
+   "avg": ".500",
+   "slg": "1.500"
   },
   {
    "batter": "Daulton Varsho",
