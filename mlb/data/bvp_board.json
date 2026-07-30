@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-30T00:08:52+00:00",
+ "generated": "2026-07-30T18:42:54+00:00",
  "date": "2026-07-30",
  "min_pa": 6,
  "rows": [
@@ -37,17 +37,6 @@
    "slg": ".526"
   },
   {
-   "batter": "Freddie Freeman",
-   "team": "LAD",
-   "opp_sp": "Bryce Miller",
-   "pa": 7,
-   "ab": 5,
-   "h": 3,
-   "hr": 1,
-   "avg": ".600",
-   "slg": "1.400"
-  },
-  {
    "batter": "Masyn Winn",
    "team": "STL",
    "opp_sp": "Javier Assad",
@@ -57,6 +46,17 @@
    "hr": 1,
    "avg": ".857",
    "slg": "1.286"
+  },
+  {
+   "batter": "Shohei Ohtani",
+   "team": "LAD",
+   "opp_sp": "Bryan Woo",
+   "pa": 8,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.000"
   },
   {
    "batter": "James Wood",
@@ -112,17 +112,6 @@
    "hr": 1,
    "avg": ".250",
    "slg": ".583"
-  },
-  {
-   "batter": "Kyle Tucker",
-   "team": "LAD",
-   "opp_sp": "Bryce Miller",
-   "pa": 13,
-   "ab": 10,
-   "h": 1,
-   "hr": 1,
-   "avg": ".100",
-   "slg": ".400"
   },
   {
    "batter": "Michael Massey",
