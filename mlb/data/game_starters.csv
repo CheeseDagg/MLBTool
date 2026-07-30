@@ -1,1 +1,2024 @@
 date,away,home,away_SP,home_SP,away_score,home_score,status
+2026-03-01,Baltimore Orioles,Boston Red Sox,Chris Bassitt,Ranger Suarez,8,7,Final
+2026-03-01,Pittsburgh Pirates,St. Louis Cardinals,Hunter Barco,Kyle Leahy,6,1,Final
+2026-03-01,Toronto Blue Jays,Detroit Tigers,Grant Rogers,Tarik Skubal,4,4,Final
+2026-03-01,Tampa Bay Rays,Atlanta Braves,Drew Rasmussen,Reynaldo López,3,5,Final
+2026-03-01,Atlanta Braves,Minnesota Twins,Grant Holmes,Mick Abel,2,2,Final
+2026-03-01,Miami Marlins,Washington Nationals,Chris Paddack,Brad Lord,3,0,Final
+2026-03-01,New York Yankees,Philadelphia Phillies,Will Warren,Andrew Painter,5,3,Final
+2026-03-01,Houston Astros,New York Mets,Jason Alexander,Clay Holmes,3,4,Final
+2026-03-01,Colorado Rockies,Cleveland Guardians,Chase Dollander,Gavin Williams,3,8,Final
+2026-03-01,Los Angeles Angels,Los Angeles Dodgers,Reid Detmers,Landon Knack,3,4,Final
+2026-03-01,Cincinnati Reds,Athletics,Andrew Abbott,J.T. Ginn,4,12,Final
+2026-03-01,San Diego Padres,San Francisco Giants,Germán Márquez,Logan Webb,1,9,Final
+2026-03-01,Chicago White Sox,Chicago Cubs,Anthony Kay,Shota Imanaga,5,1,Final
+2026-03-01,Milwaukee Brewers,Kansas City Royals,Chad Patrick,Kris Bubic,1,3,Final
+2026-03-01,Cleveland Guardians,Arizona Diamondbacks,Daniel Espino,Michael Soroka,6,9,Final
+2026-03-01,Texas Rangers,Seattle Mariners,Jacob Latz,Logan Gilbert,9,4,Final
+2026-03-02,Washington Nationals,Houston Astros,Josiah Gray,Hunter Brown,3,3,Final
+2026-03-02,Tampa Bay Rays,Pittsburgh Pirates,Mason Englert,Mike Clevinger,1,4,Final
+2026-03-02,Atlanta Braves,Detroit Tigers,Bryce Elder,Framber Valdez,5,2,Final
+2026-03-02,Miami Marlins,St. Louis Cardinals,Adam Mazur,Andre Pallante,2,3,Final
+2026-03-02,Boston Red Sox,Toronto Blue Jays,Johan Oviedo,Cody Ponce,7,6,Final
+2026-03-02,Chicago Cubs,Cincinnati Reds,Jameson Taillon,Brady Singer,9,17,Final
+2026-03-02,Cleveland Guardians,Texas Rangers,Slade Cecconi,Austin Gomber,1,3,Final
+2026-03-02,San Francisco Giants,Chicago White Sox,Landen Roupp,Davis Martin,6,5,Final
+2026-03-02,Kansas City Royals,Los Angeles Angels,Noah Cameron,Grayson Rodriguez,4,5,Final
+2026-03-02,Los Angeles Dodgers,Colorado Rockies,Ryder Ryan,Jimmy Herget,7,5,Final
+2026-03-02,Athletics,San Diego Padres,Mason Barnett,Michael King,7,2,Final
+2026-03-03,Tampa Bay Rays,Minnesota Twins,Brody Hopkins,Simeon Woods Richardson,5,3,Final
+2026-03-03,Philadelphia Phillies,Tampa Bay Rays,Alan Rangel,Shane McClanahan,1,3,Final
+2026-03-03,Colombia,Pittsburgh Pirates,Julio Teheran,José Urquidy,1,7,Final
+2026-03-03,Kingdom of the Netherlands,Baltimore Orioles,Ryjeteri Merite,Trevor Rogers,8,5,Final
+2026-03-03,Panama,New York Yankees,Jorge Garcia,Max Fried,1,11,Completed Early
+2026-03-03,Canada,Toronto Blue Jays,Logan Allen,Kevin Gausman,7,10,Final
+2026-03-03,Israel,Miami Marlins,Robert Stock,Braxton Garrett,1,0,Final
+2026-03-03,Nicaragua,New York Mets,Erasmo Ramírez,Jonah Tong,3,6,Final
+2026-03-03,Los Angeles Dodgers,Cleveland Guardians,Roki Sasaki,Joey Cantillo,5,4,Final
+2026-03-03,San Diego Padres,Chicago White Sox,Nick Pivetta,Sean Newcomb,4,3,Final
+2026-03-03,Brazil,Athletics,,Aaron Civale,4,14,Completed Early
+2026-03-03,Cuba,Kansas City Royals,,Ryan Bergert,0,4,Final
+2026-03-03,Italy,Chicago Cubs,,Cade Horton,9,4,Final
+2026-03-03,United States,San Francisco Giants,Paul Skenes,Adrian Houser,15,1,Final
+2026-03-03,Los Angeles Angels,Seattle Mariners,George Klassen,Bryan Woo,7,6,Final
+2026-03-03,Great Britain,Milwaukee Brewers,,Jacob Misiorowski,7,3,Final
+2026-03-03,Mexico,Arizona Diamondbacks,,Zac Gallen,6,3,Final
+2026-03-03,Detroit Tigers,Dominican Republic,Ty Madden,Luis Severino,4,12,Final
+2026-03-03,Puerto Rico,Boston Red Sox,Elmer Rodríguez,Jake Bennett,5,3,Final
+2026-03-03,Venezuela,Houston Astros,Eduard Bazardo,Cristian Javier,1,3,Final
+2026-03-04,Houston Astros,Baltimore Orioles,Colton Gordon,Shane Baz,4,2,Final
+2026-03-04,New York Yankees,Boston Red Sox,Luis Gil,Garrett Crochet,4,0,Final
+2026-03-04,Canada,Philadelphia Phillies,Cal Quantrill,Aaron Nola,5,3,Final
+2026-03-04,Colombia,Atlanta Braves,Luis Patiño,Elieser Hernández,1,9,Final
+2026-03-04,Kingdom of the Netherlands,Tampa Bay Rays,Juan Carlos Sulbaran,Jake Woodford,11,8,Completed Early
+2026-03-04,Nicaragua,St. Louis Cardinals,Dilmer Mejia,Matthew Liberatore,2,1,Final
+2026-03-04,Panama,Detroit Tigers,Jaime Barria,Jack Flaherty,1,2,Final
+2026-03-04,Puerto Rico,Minnesota Twins,Raymond Burgos,Zebby Matthews,3,6,Final
+2026-03-04,Israel,New York Mets,Ben Simon,David Peterson,2,5,Final
+2026-03-04,Detroit Tigers,Dominican Republic,Burch Smith,Brayan Bello,4,4,Final
+2026-03-04,Arizona Diamondbacks,Athletics,Brandon Pfaadt,Jeffrey Springs,3,1,Final
+2026-03-04,Brazil,Texas Rangers,Enzo Sawayama,Jacob deGrom,2,13,Completed Early
+2026-03-04,Cincinnati Reds,Cuba,,Rhett Lowder,19,2,Completed Early
+2026-03-04,Mexico,Los Angeles Dodgers,,Tyler Glasnow,5,7,Final
+2026-03-04,Chicago Cubs,Milwaukee Brewers,Edward Cabrera,Brandon Sproat,4,1,Final
+2026-03-04,Great Britain,San Diego Padres,,Joe Musgrove,2,2,Final
+2026-03-04,Italy,Los Angeles Angels,Gabriele Quattrini,Mitch Farris,3,4,Final
+2026-03-04,United States,Colorado Rockies,Ryan Yarbrough,Kyle Freeland,14,4,Completed Early
+2026-03-04,Venezuela,Washington Nationals,Eduardo Rodriguez,Foster Griffin,1,5,Final
+2026-03-04,Seattle Mariners,San Francisco Giants,Cooper Criswell,Robbie Ray,4,9,Final
+2026-03-05,New York Mets,Washington Nationals,Justin Hagenman,Miles Mikolas,4,7,Final
+2026-03-05,St. Louis Cardinals,Pittsburgh Pirates,Dustin May,Mitch Keller,3,2,Final
+2026-03-05,Baltimore Orioles,Tampa Bay Rays,Zach Eflin,Ryan Pepiot,4,3,Final
+2026-03-05,Boston Red Sox,Philadelphia Phillies,T.J. Sikkema,Jesús Luzardo,2,6,Final
+2026-03-05,Toronto Blue Jays,Atlanta Braves,Eric Lauer,Chris Sale,5,9,Final
+2026-03-05,Minnesota Twins,New York Yankees,Taj Bradley,Paul Blackburn,15,0,Completed Early
+2026-03-05,Houston Astros,Miami Marlins,Tatsuya Imai,Sandy Alcantara,0,2,Final
+2026-03-05,Arizona Diamondbacks,Chicago Cubs,Ryne Nelson,Colin Rea,1,8,Final
+2026-03-05,Los Angeles Dodgers,Cincinnati Reds,Cole Irvin,Jose Franco,13,14,Final
+2026-03-05,Athletics,Los Angeles Angels,Luis Morales,Alek Manoah,16,11,Final
+2026-03-05,San Diego Padres,Seattle Mariners,Walker Buehler,Luis Castillo,27,6,Final
+2026-03-05,Milwaukee Brewers,Colorado Rockies,Robert Gasser,Michael Lorenzen,10,8,Final
+2026-03-05,Texas Rangers,Kansas City Royals,MacKenzie Gore,Cole Ragans,15,9,Final
+2026-03-05,Cleveland Guardians,Chicago White Sox,Tanner Bibee,Sean Burke,12,3,Final
+2026-03-06,Boston Red Sox,Detroit Tigers,Connelly Early,Justin Verlander,3,11,Final
+2026-03-06,Washington Nationals,Houston Astros,Cade Cavalli,Mike Burrows,1,7,Final
+2026-03-06,St. Louis Cardinals,Baltimore Orioles,Michael McGreevy,Chris Bassitt,10,2,Final
+2026-03-06,Philadelphia Phillies,Pittsburgh Pirates,Jean Cabrera,Braxton Ashcraft,14,10,Final
+2026-03-06,Pittsburgh Pirates,Toronto Blue Jays,Bubba Chandler,José Berríos,2,9,Final
+2026-03-06,Los Angeles Angels,Cleveland Guardians,Reid Detmers,Gavin Williams,3,5,Final
+2026-03-06,Colorado Rockies,Athletics,Chase Dollander,J.T. Ginn,11,6,Final
+2026-03-06,Cincinnati Reds,San Francisco Giants,Andrew Abbott,Tyler Mahle,3,6,Final
+2026-03-06,Seattle Mariners,Texas Rangers,Kade Anderson,Jack Leiter,5,1,Final
+2026-03-06,Chicago White Sox,Arizona Diamondbacks,Anthony Kay,Daniel Eagen,6,0,Final
+2026-03-06,Arizona Diamondbacks,Milwaukee Brewers,Mitch Bratt,Chad Patrick,2,6,Final
+2026-03-06,Atlanta Braves,Minnesota Twins,Reynaldo López,Bailey Ober,4,1,Final
+2026-03-06,Tampa Bay Rays,New York Yankees,Joe Boyle,Cam Schlittler,0,3,Final
+2026-03-06,New York Mets,Miami Marlins,Sean Manaea,Max Meyer,0,2,Final
+2026-03-06,Kansas City Royals,Los Angeles Dodgers,Mitch Spence,Ryder Ryan,0,6,Final
+2026-03-06,Chicago Cubs,San Diego Padres,Ben Brown,Germán Márquez,0,3,Final
+2026-03-07,Miami Marlins,Houston Astros,Chris Paddack,Jason Alexander,4,5,Final
+2026-03-07,Pittsburgh Pirates,Detroit Tigers,Hunter Barco,Casey Mize,5,3,Final
+2026-03-07,New York Mets,St. Louis Cardinals,Kodai Senga,Kyle Leahy,3,2,Final
+2026-03-07,Tampa Bay Rays,Boston Red Sox,Ty Johnson,Johan Oviedo,0,2,Completed Early
+2026-03-07,Minnesota Twins,Baltimore Orioles,Mick Abel,Cade Povich,2,3,Final
+2026-03-07,Toronto Blue Jays,Philadelphia Phillies,Max Scherzer,Andrew Painter,1,0,Final
+2026-03-07,Baltimore Orioles,Atlanta Braves,Luis De León,Grant Holmes,2,2,Final
+2026-03-07,Cincinnati Reds,Kansas City Royals,Nick Lodolo,Kris Bubic,2,6,Final
+2026-03-07,Athletics,Chicago Cubs,Mason Barnett,Shota Imanaga,3,4,Final
+2026-03-07,San Diego Padres,Cleveland Guardians,Michael King,Slade Cecconi,1,7,Final
+2026-03-07,Texas Rangers,San Francisco Giants,Jacob Latz,Carson Whisenhunt,5,7,Final
+2026-03-07,San Francisco Giants,Arizona Diamondbacks,JT Brubaker,Kohl Drake,7,4,Final
+2026-03-07,Chicago White Sox,Seattle Mariners,Grant Taylor,Logan Gilbert,5,1,Final
+2026-03-07,Milwaukee Brewers,Los Angeles Angels,Brandon Woodruff,Grayson Rodriguez,7,1,Final
+2026-03-07,Los Angeles Angels,Athletics,Ryan Johnson,Gage Jump,3,0,Final
+2026-03-07,New York Yankees,Washington Nationals,Will Warren,Josiah Gray,0,3,Final
+2026-03-07,Colorado Rockies,Los Angeles Dodgers,Sean Sullivan,Landon Knack,6,4,Final
+2026-03-08,Houston Astros,Washington Nationals,Hunter Brown,Andrew Alvarez,1,3,Final
+2026-03-08,Boston Red Sox,Pittsburgh Pirates,Jake Bennett,Carmen Mlodzinski,7,9,Final
+2026-03-08,Toronto Blue Jays,Baltimore Orioles,Cody Ponce,Tyler Wells,1,0,Final
+2026-03-08,Philadelphia Phillies,Minnesota Twins,Alan Rangel,Simeon Woods Richardson,6,7,Final
+2026-03-08,Atlanta Braves,Tampa Bay Rays,Bryce Elder,Logan Workman,8,9,Final
+2026-03-08,Detroit Tigers,Toronto Blue Jays,Bryan Sammons,Kevin Gausman,0,5,Final
+2026-03-08,St. Louis Cardinals,Miami Marlins,Andre Pallante,Braxton Garrett,2,2,Final
+2026-03-08,New York Yankees,New York Mets,Ryan Weathers,Freddy Peralta,4,10,Final
+2026-03-08,Arizona Diamondbacks,Cincinnati Reds,Drey Jameson,Brady Singer,4,13,Final
+2026-03-08,Los Angeles Angels,Athletics,Jack Kochanowicz,Aaron Civale,4,7,Final
+2026-03-08,Los Angeles Dodgers,Athletics,Justin Wrobleski,Jacob Lopez,7,11,Final
+2026-03-08,San Francisco Giants,Chicago Cubs,Landen Roupp,Caleb Thielbar,9,5,Final
+2026-03-08,Los Angeles Angels,Texas Rangers,Victor Mederos,Nathan Eovaldi,10,7,Final
+2026-03-08,Kansas City Royals,Chicago White Sox,Noah Cameron,Jordan Hicks,4,5,Final
+2026-03-08,Cleveland Guardians,Colorado Rockies,Joey Cantillo,Eiberson Castellano,4,4,Final
+2026-03-08,Cincinnati Reds,San Diego Padres,Chase Burns,Logan Gillaspie,3,14,Final
+2026-03-08,Seattle Mariners,Milwaukee Brewers,George Kirby,Kyle Harrison,3,6,Final
+2026-03-09,Baltimore Orioles,St. Louis Cardinals,Trey Gibson,Matthew Liberatore,2,7,Final
+2026-03-09,St. Louis Cardinals,Houston Astros,Richard Fitts,Cristian Javier,3,10,Final
+2026-03-09,Tampa Bay Rays,Detroit Tigers,Shane McClanahan,Framber Valdez,4,4,Final
+2026-03-09,Philadelphia Phillies,Boston Red Sox,Bryse Wilson,Garrett Crochet,3,5,Final
+2026-03-09,Minnesota Twins,Atlanta Braves,Zebby Matthews,Carlos Carrasco,8,9,Final
+2026-03-09,Cleveland Guardians,Kansas City Royals,Parker Messick,Ryan Bergert,6,2,Final
+2026-03-09,Athletics,Cincinnati Reds,Jack Perkins,Rhett Lowder,9,7,Final
+2026-03-09,Los Angeles Angels,San Francisco Giants,José Soriano,Robbie Ray,2,0,Final
+2026-03-09,Colorado Rockies,Chicago White Sox,Kyle Freeland,Jedixson Paez,3,12,Final
+2026-03-09,Seattle Mariners,Arizona Diamondbacks,Bryan Woo,Zac Gallen,1,2,Final
+2026-03-09,Texas Rangers,San Diego Padres,Trey Supak,Randy Vásquez,4,1,Final
+2026-03-09,Los Angeles Dodgers,Milwaukee Brewers,Emmet Sheehan,Aaron Ashby,4,3,Final
+2026-03-09,Miami Marlins,New York Mets,Tyler Phillips,Zac Thornton,0,9,Final
+2026-03-09,Pittsburgh Pirates,New York Yankees,José Urquidy,Max Fried,5,3,Final
+2026-03-10,Detroit Tigers,Boston Red Sox,Ty Madden,Sonny Gray,7,2,Final
+2026-03-10,Baltimore Orioles,Houston Astros,Levi Wells,Lance McCullers Jr.,6,7,Final
+2026-03-10,Minnesota Twins,Tampa Bay Rays,Joe Ryan,Steven Matz,6,5,Final
+2026-03-10,New York Yankees,Philadelphia Phillies,Luis Gil,Tanner Banks,4,2,Final
+2026-03-10,Atlanta Braves,Toronto Blue Jays,JR Ritchie,Dylan Cease,0,7,Final
+2026-03-10,St. Louis Cardinals,New York Mets,Jared Shuster,David Peterson,1,6,Final
+2026-03-10,Washington Nationals,Miami Marlins,Foster Griffin,Eury Pérez,7,5,Final
+2026-03-10,Arizona Diamondbacks,Los Angeles Dodgers,Brandon Pfaadt,Tyler Glasnow,1,4,Final
+2026-03-10,San Francisco Giants,Cleveland Guardians,Carson Seymour,Tanner Bibee,5,4,Final
+2026-03-10,Chicago Cubs,Texas Rangers,Cade Horton,Jacob deGrom,3,8,Final
+2026-03-10,Chicago White Sox,Athletics,Shane Smith,Jeffrey Springs,7,11,Final
+2026-03-10,Cincinnati Reds,Colorado Rockies,Brandon Williamson,Ryan Feltner,8,1,Final
+2026-03-10,San Diego Padres,Los Angeles Angels,Walker Buehler,Mitch Farris,10,2,Final
+2026-03-10,Kansas City Royals,Seattle Mariners,Cole Ragans,Cooper Criswell,3,4,Final
+2026-03-11,Pittsburgh Pirates,Baltimore Orioles,Noah Davis,Kyle Bradish,2,7,Final
+2026-03-11,St. Louis Cardinals,Washington Nationals,Dustin May,Cade Cavalli,1,3,Final
+2026-03-11,Detroit Tigers,Minnesota Twins,Tanner Rainey,Taj Bradley,1,2,Final
+2026-03-11,Tampa Bay Rays,Atlanta Braves,Nick Martinez,Spencer Strider,3,5,Final
+2026-03-11,Houston Astros,Miami Marlins,Tatsuya Imai,Max Meyer,4,1,Final
+2026-03-11,Kansas City Royals,Chicago Cubs,Mitch Spence,Colin Rea,8,9,Final
+2026-03-11,San Francisco Giants,Kansas City Royals,Tyler Mahle,Bailey Falter,5,2,Final
+2026-03-11,Los Angeles Angels,Chicago White Sox,Alek Manoah,Anthony Kay,8,4,Final
+2026-03-11,Milwaukee Brewers,Cincinnati Reds,Robert Gasser,Andrew Abbott,3,6,Final
+2026-03-11,Athletics,Arizona Diamondbacks,Luis Morales,Ryne Nelson,13,3,Final
+2026-03-11,Colorado Rockies,Seattle Mariners,Chase Dollander,Luis Castillo,11,7,Final
+2026-03-11,Toronto Blue Jays,New York Yankees,Eric Lauer,Cam Schlittler,1,8,Final
+2026-03-12,New York Mets,St. Louis Cardinals,Sean Manaea,Michael McGreevy,1,3,Final
+2026-03-12,Boston Red Sox,Minnesota Twins,Connelly Early,Bailey Ober,5,8,Final
+2026-03-12,Toronto Blue Jays,Philadelphia Phillies,CJ Van Eyk,Jesús Luzardo,5,8,Completed Early
+2026-03-12,New York Yankees,Detroit Tigers,Will Warren,Justin Verlander,4,3,Final
+2026-03-12,Seattle Mariners,Chicago Cubs,Emerson Hancock,Edward Cabrera,4,7,Final
+2026-03-12,Athletics,Texas Rangers,J.T. Ginn,Jack Leiter,6,7,Final
+2026-03-12,Colorado Rockies,Arizona Diamondbacks,Sean Sullivan,Taylor Clarke,13,2,Final
+2026-03-12,Washington Nationals,Houston Astros,Jake Irvin,Mike Burrows,3,2,Final
+2026-03-12,Atlanta Braves,Pittsburgh Pirates,Grant Holmes,Bubba Chandler,2,5,Final
+2026-03-12,Cincinnati Reds,Los Angeles Dodgers,Nick Lodolo,Cole Irvin,5,9,Final
+2026-03-12,Chicago White Sox,San Francisco Giants,Ryan Borucki,Trevor McDonald,3,3,Final
+2026-03-12,Milwaukee Brewers,Cleveland Guardians,DL Hall,Slade Cecconi,0,1,Final
+2026-03-12,Kansas City Royals,San Diego Padres,Kris Bubic,Germán Márquez,10,1,Final
+2026-03-13,Tampa Bay Rays,Boston Red Sox,Drew Rasmussen,Johan Oviedo,6,7,Final
+2026-03-13,Baltimore Orioles,Philadelphia Phillies,Cade Povich,Andrew Painter,8,11,Final
+2026-03-13,New York Yankees,Atlanta Braves,Ryan Weathers,Didier Fuentes,6,7,Final
+2026-03-13,Minnesota Twins,Toronto Blue Jays,Mick Abel,Cody Ponce,1,6,Final
+2026-03-13,San Diego Padres,Athletics,Michael King,Aaron Civale,13,9,Final
+2026-03-13,Chicago Cubs,Chicago White Sox,Riley Martin,Davis Martin,2,4,Final
+2026-03-13,Cleveland Guardians,Los Angeles Angels,Joey Cantillo,Grayson Rodriguez,2,5,Final
+2026-03-13,Texas Rangers,Colorado Rockies,Jacob Latz,Jose Quintana,9,4,Final
+2026-03-13,Athletics,Milwaukee Brewers,Gage Jump,Kyle Harrison,13,4,Final
+2026-03-13,New York Mets,Washington Nationals,Carl Edwards Jr.,Zack Littell,8,3,Final
+2026-03-13,Pittsburgh Pirates,Detroit Tigers,Mike Clevinger,Casey Mize,7,5,Final
+2026-03-13,Houston Astros,St. Louis Cardinals,Kai-Wei Teng,Kyle Leahy,4,5,Final
+2026-03-13,Miami Marlins,New York Mets,Chris Paddack,Kodai Senga,1,0,Final
+2026-03-13,Cincinnati Reds,San Francisco Giants,Chase Burns,Landen Roupp,6,1,Final
+2026-03-13,Arizona Diamondbacks,Kansas City Royals,Merrill Kelly,Michael Wacha,11,5,Final
+2026-03-13,San Francisco Giants,Cincinnati Reds,Carson Whisenhunt,Brady Singer,0,1,Final
+2026-03-13,Los Angeles Dodgers,Seattle Mariners,Landon Knack,Kade Anderson,10,7,Final
+2026-03-14,Miami Marlins,Washington Nationals,,Alex Clemmey,4,1,Final
+2026-03-14,Baltimore Orioles,Pittsburgh Pirates,Trevor Rogers,Carmen Mlodzinski,6,8,Final
+2026-03-14,Tampa Bay Rays,Minnesota Twins,Jake Woodford,Simeon Woods Richardson,9,6,Final
+2026-03-14,Philadelphia Phillies,New York Yankees,Bryse Wilson,Max Fried,6,4,Final
+2026-03-14,Detroit Tigers,Toronto Blue Jays,Tarik Skubal,Max Scherzer,6,1,Final
+2026-03-14,St. Louis Cardinals,Miami Marlins,Andre Pallante,,7,7,Final
+2026-03-14,Kansas City Royals,Athletics,Ryan Bergert,Jacob Lopez,1,12,Final
+2026-03-14,Arizona Diamondbacks,San Francisco Giants,Zac Gallen,Adrian Houser,8,7,Final
+2026-03-14,Texas Rangers,Cincinnati Reds,Austin Gomber,Rhett Lowder,3,4,Final
+2026-03-14,San Diego Padres,Texas Rangers,Marco Gonzales,Nathan Eovaldi,2,22,Final
+2026-03-14,Los Angeles Dodgers,Chicago White Sox,Justin Wrobleski,Mike Vasil,2,7,Final
+2026-03-14,Chicago Cubs,Colorado Rockies,Ben Brown,Kyle Freeland,3,4,Final
+2026-03-14,Cleveland Guardians,San Diego Padres,Logan Allen,Nick Pivetta,5,8,Final
+2026-03-14,Seattle Mariners,Los Angeles Angels,Logan Gilbert,Walbert Ureña,2,6,Final
+2026-03-14,Colorado Rockies,Milwaukee Brewers,Zach Agnos,Jacob Misiorowski,4,8,Final
+2026-03-14,New York Mets,Houston Astros,Freddy Peralta,Ryan Weiss,2,8,Final
+2026-03-14,Boston Red Sox,Atlanta Braves,Brayan Bello,Bryce Elder,1,10,Final
+2026-03-15,Washington Nationals,St. Louis Cardinals,Miles Mikolas,Richard Fitts,3,6,Final
+2026-03-15,Pittsburgh Pirates,Tampa Bay Rays,José Urquidy,Shane McClanahan,1,6,Final
+2026-03-15,Minnesota Twins,Boston Red Sox,Zebby Matthews,Kyle Keller,2,7,Final
+2026-03-15,Atlanta Braves,Philadelphia Phillies,José Suarez,Taijuan Walker,1,0,Final
+2026-03-15,Miami Marlins,Houston Astros,Eury Pérez,Cristian Javier,0,1,Final
+2026-03-15,Detroit Tigers,New York Yankees,Framber Valdez,Luis Gil,12,1,Final
+2026-03-15,Toronto Blue Jays,New York Mets,Grant Rogers,Zac Thornton,1,8,Completed Early
+2026-03-15,Los Angeles Dodgers,Chicago Cubs,Emmet Sheehan,Jameson Taillon,14,8,Final
+2026-03-15,Athletics,Cleveland Guardians,Wei-En Lin,Tanner Bibee,6,12,Final
+2026-03-15,Texas Rangers,Los Angeles Dodgers,Trey Supak,River Ryan,3,5,Final
+2026-03-15,Chicago White Sox,Kansas City Royals,Hagen Smith,Cole Ragans,4,10,Final
+2026-03-15,Milwaukee Brewers,San Francisco Giants,Shane Drohan,Robbie Ray,1,7,Final
+2026-03-15,Colorado Rockies,Los Angeles Angels,Tanner Gordon,Austin Gordon,5,6,Final
+2026-03-15,San Diego Padres,Arizona Diamondbacks,Randy Vásquez,Brandon Pfaadt,4,4,Final
+2026-03-15,Cincinnati Reds,Seattle Mariners,Brandon Williamson,George Kirby,3,6,Final
+2026-03-15,New York Yankees,Baltimore Orioles,Paul Blackburn,Zach Eflin,0,0,Cancelled
+2026-03-16,Pittsburgh Pirates,Minnesota Twins,Noah Davis,Joe Ryan,1,5,Final
+2026-03-16,Philadelphia Phillies,Detroit Tigers,Chuck King,Jack Flaherty,6,13,Final
+2026-03-16,Tampa Bay Rays,Atlanta Braves,Nick Martinez,Chris Sale,2,11,Final
+2026-03-16,Toronto Blue Jays,Miami Marlins,Lazaro Estrada,Janson Junk,5,4,Completed Early
+2026-03-16,Los Angeles Angels,Athletics,George Klassen,Jeffrey Springs,0,3,Final
+2026-03-16,Milwaukee Brewers,Los Angeles Dodgers,Chad Patrick,Tyler Glasnow,24,9,Final
+2026-03-16,Cincinnati Reds,Arizona Diamondbacks,Andrew Abbott,Ryne Nelson,6,11,Final
+2026-03-16,San Francisco Giants,San Diego Padres,Tyler Mahle,Walker Buehler,1,3,Final
+2026-03-16,Washington Nationals,New York Mets,Zach Penrod,David Peterson,12,6,Final
+2026-03-16,Chicago White Sox,Texas Rangers,Sean Burke,MacKenzie Gore,2,3,Final
+2026-03-16,Chicago Cubs,Cleveland Guardians,Cade Horton,Gavin Williams,5,2,Final
+2026-03-16,Boston Red Sox,Baltimore Orioles,Sonny Gray,Kyle Bradish,0,0,Cancelled
+2026-03-17,Baltimore Orioles,Detroit Tigers,Chris Bassitt,Justin Verlander,1,1,Final
+2026-03-17,Houston Astros,Pittsburgh Pirates,Lance McCullers Jr.,Mitch Keller,10,2,Final
+2026-03-17,St. Louis Cardinals,Washington Nationals,Dustin May,Jake Irvin,0,1,Final
+2026-03-17,Minnesota Twins,Philadelphia Phillies,Bailey Ober,Jesús Luzardo,0,2,Final
+2026-03-17,Atlanta Braves,Boston Red Sox,Reynaldo López,Sonny Gray,3,4,Final
+2026-03-17,New York Yankees,Tampa Bay Rays,Will Warren,Ryan Pepiot,3,2,Final
+2026-03-17,New York Mets,Miami Marlins,Sean Manaea,Sandy Alcantara,5,5,Completed Early
+2026-03-17,Athletics,Chicago White Sox,Luis Morales,Anthony Kay,4,6,Final
+2026-03-17,Seattle Mariners,Colorado Rockies,Cooper Criswell,Chase Dollander,10,6,Final
+2026-03-17,San Diego Padres,Seattle Mariners,Germán Márquez,Luis Castillo,9,6,Final
+2026-03-17,Los Angeles Angels,Chicago Cubs,Alek Manoah,Shota Imanaga,6,8,Final
+2026-03-17,Cleveland Guardians,Cincinnati Reds,Kolby Allard,Nick Lodolo,8,6,Final
+2026-03-17,Los Angeles Dodgers,Kansas City Royals,Roki Sasaki,Aaron Sanchez,10,4,Final
+2026-03-18,Houston Astros,St. Louis Cardinals,J.P. France,Kyle Leahy,1,4,Final
+2026-03-18,Philadelphia Phillies,Atlanta Braves,Andrew Painter,Martín Pérez,2,3,Final
+2026-03-18,Boston Red Sox,New York Yankees,Connelly Early,Gerrit Cole,0,1,Final
+2026-03-18,Baltimore Orioles,Toronto Blue Jays,Albert Suárez,Josh Fleming,3,2,Final
+2026-03-18,Colorado Rockies,Cincinnati Reds,Jose Quintana,Brady Singer,8,6,Final
+2026-03-18,San Francisco Giants,Los Angeles Dodgers,Landen Roupp,Shohei Ohtani,1,5,Completed Early
+2026-03-18,Chicago Cubs,Arizona Diamondbacks,Edward Cabrera,Merrill Kelly,8,16,Final
+2026-03-18,Cincinnati Reds,Los Angeles Angels,Chase Burns,Jack Kochanowicz,4,7,Final
+2026-03-18,Los Angeles Angels,Milwaukee Brewers,Ryan Johnson,Kyle Harrison,4,3,Final
+2026-03-18,Milwaukee Brewers,Seattle Mariners,Carlos Rodriguez,Emerson Hancock,3,7,Final
+2026-03-18,Detroit Tigers,Pittsburgh Pirates,Casey Mize,Braxton Ashcraft,1,3,Final
+2026-03-18,Kansas City Royals,Texas Rangers,Michael Wacha,Kumar Rocker,3,12,Final
+2026-03-18,Miami Marlins,Washington Nationals,Braxton Garrett,Zack Littell,0,0,Cancelled
+2026-03-19,Washington Nationals,St. Louis Cardinals,Zack Littell,Quinn Mathews,1,5,Final
+2026-03-19,Tampa Bay Rays,Philadelphia Phillies,Drew Rasmussen,Tim Mayza,2,8,Final
+2026-03-19,Baltimore Orioles,New York Yankees,Dean Kremer,Max Fried,4,5,Final
+2026-03-19,New York Yankees,Toronto Blue Jays,Ryan Weathers,Cody Ponce,0,11,Final
+2026-03-19,New York Mets,Houston Astros,Kodai Senga,Peter Lambert,6,2,Final
+2026-03-19,Pittsburgh Pirates,Baltimore Orioles,Cam Sanders,Trevor Rogers,2,5,Final
+2026-03-19,Minnesota Twins,Boston Red Sox,Mick Abel,Brayan Bello,2,4,Final
+2026-03-19,Los Angeles Angels,Kansas City Royals,Yusei Kikuchi,Kris Bubic,4,3,Final
+2026-03-19,Kansas City Royals,Cleveland Guardians,Noah Cameron,Parker Messick,5,6,Final
+2026-03-19,Arizona Diamondbacks,Chicago White Sox,Michael Soroka,Davis Martin,2,4,Final
+2026-03-19,Seattle Mariners,Athletics,,Aaron Civale,6,4,Final
+2026-03-19,San Francisco Giants,Colorado Rockies,Logan Webb,Tomoyuki Sugano,14,11,Final
+2026-03-19,Chicago White Sox,San Diego Padres,Jonathan Cannon,Michael King,6,13,Final
+2026-03-19,Texas Rangers,Milwaukee Brewers,Jacob Latz,Brandon Woodruff,4,11,Final
+2026-03-20,Boston Red Sox,Tampa Bay Rays,Blake Wehunt,Shane McClanahan,0,2,Final
+2026-03-20,Toronto Blue Jays,Minnesota Twins,Max Scherzer,Simeon Woods Richardson,2,1,Final
+2026-03-20,Detroit Tigers,Philadelphia Phillies,Tarik Skubal,Cristopher Sánchez,4,4,Final
+2026-03-20,St. Louis Cardinals,New York Mets,Matthew Liberatore,Tobias Myers,4,3,Final
+2026-03-20,Chicago White Sox,Los Angeles Angels,Shane Smith,José Soriano,3,4,Final
+2026-03-20,Pittsburgh Pirates,Atlanta Braves,Yohan Ramírez,José Suarez,1,8,Final
+2026-03-20,Miami Marlins,Houston Astros,Eury Pérez,Hunter Brown,7,4,Final
+2026-03-20,Baltimore Orioles,New York Yankees,Zach Eflin,Luis Gil,1,3,Final
+2026-03-20,Washington Nationals,Miami Marlins,Foster Griffin,Chris Paddack,2,3,Final
+2026-03-20,Kansas City Royals,San Francisco Giants,Ryan Bergert,Adrian Houser,2,5,Final
+2026-03-20,Cincinnati Reds,Chicago Cubs,Brandon Williamson,Matthew Boyd,8,6,Final
+2026-03-20,San Diego Padres,Los Angeles Dodgers,Marco Gonzales,Yoshinobu Yamamoto,3,4,Final
+2026-03-20,Seattle Mariners,Cleveland Guardians,Gabe Mosser,Logan Allen,20,8,Final
+2026-03-20,San Francisco Giants,Texas Rangers,Spencer Bivens,Nathan Eovaldi,5,6,Final
+2026-03-20,Chicago Cubs,Athletics,Jameson Taillon,,2,6,Final
+2026-03-20,Colorado Rockies,San Diego Padres,Juan Mejia,Nick Pivetta,9,3,Final
+2026-03-20,Milwaukee Brewers,Arizona Diamondbacks,Jacob Misiorowski,Zac Gallen,7,8,Final
+2026-03-21,New York Mets,Washington Nationals,,Cade Cavalli,1,3,Final
+2026-03-21,Toronto Blue Jays,Pittsburgh Pirates,Kevin Gausman,Paul Skenes,3,8,Final
+2026-03-21,Minnesota Twins,Tampa Bay Rays,Joe Ryan,Jackson Baumeister,2,3,Final
+2026-03-21,Philadelphia Phillies,Baltimore Orioles,Ryan Cusick,Levi Wells,8,10,Final
+2026-03-21,Atlanta Braves,Boston Red Sox,Chris Sale,Garrett Crochet,6,1,Final
+2026-03-21,Miami Marlins,St. Louis Cardinals,Janson Junk,,4,7,Final
+2026-03-21,New York Yankees,Detroit Tigers,Cam Schlittler,Framber Valdez,1,3,Final
+2026-03-21,Houston Astros,New York Mets,Mike Burrows,Jonah Tong,7,5,Final
+2026-03-21,Athletics,Los Angeles Dodgers,Jacob Lopez,Emmet Sheehan,5,5,Final
+2026-03-21,Colorado Rockies,Kansas City Royals,Kyle Freeland,Cole Ragans,5,6,Final
+2026-03-21,Cleveland Guardians,San Francisco Giants,Tanner Bibee,Robbie Ray,7,10,Final
+2026-03-21,Texas Rangers,Arizona Diamondbacks,,Ryne Nelson,2,5,Final
+2026-03-21,San Diego Padres,Milwaukee Brewers,Randy Vásquez,Robert Gasser,1,6,Final
+2026-03-21,Chicago White Sox,Cincinnati Reds,Jedixson Paez,Andrew Abbott,7,11,Final
+2026-03-21,Chicago Cubs,Seattle Mariners,Colin Rea,,7,1,Final
+2026-03-22,St. Louis Cardinals,Houston Astros,Michael McGreevy,Cristian Javier,3,2,Final
+2026-03-22,Boston Red Sox,Pittsburgh Pirates,Sonny Gray,Mitch Keller,6,3,Final
+2026-03-22,Atlanta Braves,Minnesota Twins,Reynaldo López,Taj Bradley,3,7,Final
+2026-03-22,Philadelphia Phillies,New York Yankees,Aaron Nola,Will Warren,2,6,Final
+2026-03-22,Tampa Bay Rays,Toronto Blue Jays,Nick Martinez,Dylan Cease,1,14,Final
+2026-03-22,New York Mets,Miami Marlins,David Peterson,Sandy Alcantara,3,4,Final
+2026-03-22,Washington Nationals,Baltimore Orioles,Mitchell Parker,Kyle Bradish,1,8,Final
+2026-03-22,Cincinnati Reds,Cleveland Guardians,Nick Lodolo,Gavin Williams,2,8,Final
+2026-03-22,Milwaukee Brewers,Chicago Cubs,Chad Patrick,Cade Horton,0,12,Final
+2026-03-22,Athletics,Colorado Rockies,Jeffrey Springs,Michael Lorenzen,5,6,Final
+2026-03-22,San Francisco Giants,Sacramento River Cats,Tyler Mahle,John Michael Bertrand,1,2,Final
+2026-03-22,Seattle Mariners,Chicago White Sox,Bryan Woo,Sean Burke,4,2,Final
+2026-03-22,Los Angeles Dodgers,Los Angeles Angels,Tyler Glasnow,George Klassen,13,5,Final
+2026-03-22,Arizona Diamondbacks,San Diego Padres,Joe Ross,Walker Buehler,11,1,Final
+2026-03-23,Tampa Bay Rays,Philadelphia Phillies,Steven Matz,Jesús Luzardo,7,0,Final
+2026-03-23,Baltimore Orioles,Washington Nationals,Shane Baz,PJ Poulin,2,0,Final
+2026-03-23,Minnesota Twins,Boston Red Sox,Bailey Ober,Johan Oviedo,9,6,Final
+2026-03-23,Atlanta Braves,Pittsburgh Pirates,Didier Fuentes,Carson Fulmer,5,2,Final
+2026-03-23,Chicago White Sox,Athletics,Anthony Kay,Luis Morales,9,10,Final
+2026-03-23,New York Yankees,Chicago Cubs,Carlos Lagrange,Shota Imanaga,6,15,Final
+2026-03-23,Seattle Mariners,San Diego Padres,Luis Castillo,Germán Márquez,3,10,Final
+2026-03-23,St. Louis Cardinals,Springfield Cardinals,Dustin May,Brycen Mautz,3,2,Final
+2026-03-23,Cincinnati Reds,Milwaukee Brewers,Brady Singer,Aaron Ashby,1,9,Final
+2026-03-23,Kansas City Royals,Texas Rangers,Michael Wacha,MacKenzie Gore,2,3,Final
+2026-03-23,Sugar Land Space Cowboys,Houston Astros,,Tatsuya Imai,1,9,Completed Early
+2026-03-23,Detroit Tigers,Colorado Rockies,Jack Flaherty,,5,6,Final
+2026-03-23,Los Angeles Angels,Los Angeles Dodgers,Reid Detmers,Roki Sasaki,7,7,Final
+2026-03-23,Cleveland Guardians,Arizona Diamondbacks,Slade Cecconi,Merrill Kelly,7,0,Final
+2026-03-23,Sultanes de Monterrey,San Francisco Giants,Stephen Tarpley,Tristan Beck,2,10,Final
+2026-03-24,Tampa Bay Rays,Atlanta Braves,Cam Booser,Grant Holmes,2,3,Final
+2026-03-24,Boston Red Sox,Minnesota Twins,Ranger Suarez,Zak Kent,6,15,Final
+2026-03-24,Kansas City Royals,Texas Rangers,Seth Lugo,Jack Leiter,1,4,Final
+2026-03-24,New York Yankees,Chicago Cubs,Gerrit Cole,Edward Cabrera,8,3,Final
+2026-03-24,Detroit Tigers,Colorado Rockies,Justin Verlander,Tomoyuki Sugano,11,8,Final
+2026-03-24,Cleveland Guardians,Arizona Diamondbacks,Parker Messick,Michael Soroka,10,5,Final
+2026-03-24,Cincinnati Reds,Milwaukee Brewers,Chase Burns,Brandon Sproat,1,4,Final
+2026-03-24,Los Angeles Angels,Los Angeles Dodgers,Jack Kochanowicz,Shohei Ohtani,3,0,Final
+2026-03-24,Sugar Land Space Cowboys,Houston Astros,Miguel Ullola,Lance McCullers Jr.,5,6,Final
+2026-03-24,Sultanes de Monterrey,San Francisco Giants,Justus Sheffield,Landen Roupp,2,8,Final
+2026-03-25,New York Yankees,San Francisco Giants,Max Fried,Logan Webb,7,0,Final
+2026-03-26,Pittsburgh Pirates,New York Mets,Paul Skenes,Freddy Peralta,7,11,Final
+2026-03-26,Chicago White Sox,Milwaukee Brewers,Shane Smith,Jacob Misiorowski,2,14,Final
+2026-03-26,Washington Nationals,Chicago Cubs,Cade Cavalli,Matthew Boyd,10,4,Final
+2026-03-26,Minnesota Twins,Baltimore Orioles,Joe Ryan,Trevor Rogers,1,2,Final
+2026-03-26,Boston Red Sox,Cincinnati Reds,Garrett Crochet,Andrew Abbott,3,0,Final
+2026-03-26,Los Angeles Angels,Houston Astros,José Soriano,Hunter Brown,3,0,Final
+2026-03-26,Detroit Tigers,San Diego Padres,Tarik Skubal,Nick Pivetta,8,2,Final
+2026-03-26,Tampa Bay Rays,St. Louis Cardinals,Drew Rasmussen,Matthew Liberatore,7,9,Final
+2026-03-26,Texas Rangers,Philadelphia Phillies,Nathan Eovaldi,Cristopher Sánchez,3,5,Final
+2026-03-26,Arizona Diamondbacks,Los Angeles Dodgers,Zac Gallen,Yoshinobu Yamamoto,2,8,Final
+2026-03-26,Cleveland Guardians,Seattle Mariners,Tanner Bibee,Logan Gilbert,6,4,Final
+2026-03-27,New York Yankees,San Francisco Giants,Cam Schlittler,Robbie Ray,3,0,Final
+2026-03-27,Athletics,Toronto Blue Jays,Luis Severino,Kevin Gausman,2,3,Final
+2026-03-27,Colorado Rockies,Miami Marlins,Kyle Freeland,Sandy Alcantara,1,2,Final
+2026-03-27,Kansas City Royals,Atlanta Braves,Cole Ragans,Chris Sale,0,6,Final
+2026-03-27,Los Angeles Angels,Houston Astros,Yusei Kikuchi,Mike Burrows,6,2,Final
+2026-03-27,Detroit Tigers,San Diego Padres,Framber Valdez,Michael King,5,2,Final
+2026-03-27,Cleveland Guardians,Seattle Mariners,Gavin Williams,George Kirby,1,5,Final
+2026-03-27,Arizona Diamondbacks,Los Angeles Dodgers,Ryne Nelson,Emmet Sheehan,4,5,Final
+2026-03-28,Tampa Bay Rays,St. Louis Cardinals,Joe Boyle,Michael McGreevy,5,6,Final
+2026-03-28,Washington Nationals,Chicago Cubs,Miles Mikolas,Cade Horton,2,10,Final
+2026-03-28,Athletics,Toronto Blue Jays,Jeffrey Springs,Dylan Cease,7,8,Final
+2026-03-28,Minnesota Twins,Baltimore Orioles,Taj Bradley,Kyle Bradish,4,1,Final
+2026-03-28,Texas Rangers,Philadelphia Phillies,Jacob Latz,Aaron Nola,5,4,Final
+2026-03-28,Boston Red Sox,Cincinnati Reds,Sonny Gray,Brady Singer,5,6,Final
+2026-03-28,Pittsburgh Pirates,New York Mets,Mitch Keller,David Peterson,2,4,Final
+2026-03-28,Colorado Rockies,Miami Marlins,Michael Lorenzen,Eury Pérez,3,4,Final
+2026-03-28,Los Angeles Angels,Houston Astros,Reid Detmers,Cristian Javier,9,11,Final
+2026-03-28,Chicago White Sox,Milwaukee Brewers,Sean Burke,Chad Patrick,1,6,Final
+2026-03-28,Kansas City Royals,Atlanta Braves,Michael Wacha,Reynaldo López,2,6,Final
+2026-03-28,New York Yankees,San Francisco Giants,Will Warren,Tyler Mahle,3,1,Final
+2026-03-28,Detroit Tigers,San Diego Padres,Jack Flaherty,Randy Vásquez,0,3,Final
+2026-03-28,Arizona Diamondbacks,Los Angeles Dodgers,Eduardo Rodriguez,Tyler Glasnow,2,3,Final
+2026-03-28,Cleveland Guardians,Seattle Mariners,Joey Cantillo,Bryan Woo,6,5,Final
+2026-03-29,Minnesota Twins,Baltimore Orioles,Bailey Ober,Shane Baz,6,8,Final
+2026-03-29,Texas Rangers,Philadelphia Phillies,MacKenzie Gore,Jesús Luzardo,8,3,Final
+2026-03-29,Kansas City Royals,Atlanta Braves,Seth Lugo,Grant Holmes,4,1,Final
+2026-03-29,Athletics,Toronto Blue Jays,Luis Morales,Eric Lauer,2,5,Final
+2026-03-29,Boston Red Sox,Cincinnati Reds,Connelly Early,Rhett Lowder,2,3,Final
+2026-03-29,Pittsburgh Pirates,New York Mets,Carmen Mlodzinski,Nolan McLean,4,3,Final
+2026-03-29,Colorado Rockies,Miami Marlins,Jose Quintana,Max Meyer,3,4,Final
+2026-03-29,Los Angeles Angels,Houston Astros,Jack Kochanowicz,Tatsuya Imai,7,9,Final
+2026-03-29,Chicago White Sox,Milwaukee Brewers,Anthony Kay,Brandon Sproat,7,9,Final
+2026-03-29,Tampa Bay Rays,St. Louis Cardinals,Steven Matz,Dustin May,11,7,Final
+2026-03-29,Washington Nationals,Chicago Cubs,Jake Irvin,Shota Imanaga,6,3,Final
+2026-03-29,Cleveland Guardians,Seattle Mariners,Slade Cecconi,Emerson Hancock,0,8,Final
+2026-03-30,Minnesota Twins,Kansas City Royals,Simeon Woods Richardson,Kris Bubic,1,3,Final
+2026-03-30,Texas Rangers,Baltimore Orioles,Jack Leiter,Chris Bassitt,5,2,Final
+2026-03-30,Pittsburgh Pirates,Cincinnati Reds,Braxton Ashcraft,Chase Burns,0,2,Final
+2026-03-30,Washington Nationals,Philadelphia Phillies,Foster Griffin,Taijuan Walker,13,2,Final
+2026-03-30,Chicago White Sox,Miami Marlins,Davis Martin,Chris Paddack,9,4,Final
+2026-03-30,Colorado Rockies,Toronto Blue Jays,Tomoyuki Sugano,Cody Ponce,14,5,Final
+2026-03-30,Athletics,Atlanta Braves,Jacob Lopez,Bryce Elder,0,4,Final
+2026-03-30,Los Angeles Angels,Chicago Cubs,Ryan Johnson,Edward Cabrera,2,7,Final
+2026-03-30,Tampa Bay Rays,Milwaukee Brewers,Nick Martinez,Kyle Harrison,3,2,Final
+2026-03-30,New York Mets,St. Louis Cardinals,Clay Holmes,Kyle Leahy,4,2,Final
+2026-03-30,Boston Red Sox,Houston Astros,Ranger Suarez,Lance McCullers Jr.,1,8,Final
+2026-03-30,San Francisco Giants,San Diego Padres,Landen Roupp,Walker Buehler,3,2,Final
+2026-03-30,New York Yankees,Seattle Mariners,Ryan Weathers,Luis Castillo,1,2,Final
+2026-03-30,Detroit Tigers,Arizona Diamondbacks,Justin Verlander,Michael Soroka,6,9,Final
+2026-03-30,Cleveland Guardians,Los Angeles Dodgers,Parker Messick,Roki Sasaki,4,2,Final
+2026-03-31,Texas Rangers,Baltimore Orioles,Jacob deGrom,Zach Eflin,8,5,Final
+2026-03-31,Pittsburgh Pirates,Cincinnati Reds,Bubba Chandler,Brandon Williamson,8,3,Final
+2026-03-31,Washington Nationals,Philadelphia Phillies,PJ Poulin,Andrew Painter,2,3,Final
+2026-03-31,Chicago White Sox,Miami Marlins,Erick Fedde,Janson Junk,2,9,Final
+2026-03-31,Colorado Rockies,Toronto Blue Jays,Ryan Feltner,Max Scherzer,1,5,Final
+2026-03-31,Athletics,Atlanta Braves,Aaron Civale,José Suarez,5,2,Final
+2026-03-31,Los Angeles Angels,Chicago Cubs,José Soriano,Jameson Taillon,2,0,Final
+2026-03-31,Tampa Bay Rays,Milwaukee Brewers,Shane McClanahan,Brandon Woodruff,2,6,Final
+2026-03-31,New York Mets,St. Louis Cardinals,Kodai Senga,Andre Pallante,0,3,Final
+2026-03-31,Boston Red Sox,Houston Astros,Brayan Bello,Hunter Brown,2,9,Final
+2026-03-31,Detroit Tigers,Arizona Diamondbacks,Casey Mize,Brandon Pfaadt,5,7,Final
+2026-03-31,San Francisco Giants,San Diego Padres,Logan Webb,Germán Márquez,9,3,Final
+2026-03-31,New York Yankees,Seattle Mariners,Max Fried,Logan Gilbert,5,0,Final
+2026-03-31,Cleveland Guardians,Los Angeles Dodgers,Tanner Bibee,Shohei Ohtani,1,4,Final
+2026-04-01,Athletics,Atlanta Braves,Luis Severino,Chris Sale,1,5,Final
+2026-04-01,Texas Rangers,Baltimore Orioles,Nathan Eovaldi,Trevor Rogers,3,8,Final
+2026-04-01,Pittsburgh Pirates,Cincinnati Reds,Paul Skenes,Andrew Abbott,8,3,Final
+2026-04-01,Washington Nationals,Philadelphia Phillies,Cade Cavalli,Cristopher Sánchez,5,6,Final
+2026-04-01,Colorado Rockies,Toronto Blue Jays,Kyle Freeland,Kevin Gausman,2,1,Final
+2026-04-01,Chicago White Sox,Miami Marlins,Shane Smith,Sandy Alcantara,0,10,Final
+2026-04-01,New York Mets,St. Louis Cardinals,Freddy Peralta,Matthew Liberatore,1,2,Final
+2026-04-01,Tampa Bay Rays,Milwaukee Brewers,Drew Rasmussen,Jacob Misiorowski,2,8,Final
+2026-04-01,Boston Red Sox,Houston Astros,Garrett Crochet,Mike Burrows,4,6,Final
+2026-04-01,Los Angeles Angels,Chicago Cubs,Yusei Kikuchi,Matthew Boyd,2,6,Final
+2026-04-01,Detroit Tigers,Arizona Diamondbacks,Tarik Skubal,Zac Gallen,0,1,Final
+2026-04-01,San Francisco Giants,San Diego Padres,Adrian Houser,Nick Pivetta,1,7,Final
+2026-04-01,New York Yankees,Seattle Mariners,Cam Schlittler,George Kirby,5,3,Final
+2026-04-01,Minnesota Twins,Kansas City Royals,Joe Ryan,Noah Cameron,9,13,Final
+2026-04-01,Cleveland Guardians,Los Angeles Dodgers,Gavin Williams,Yoshinobu Yamamoto,4,1,Final
+2026-04-02,Minnesota Twins,Kansas City Royals,Taj Bradley,Cole Ragans,5,1,Final
+2026-04-02,Atlanta Braves,Arizona Diamondbacks,Reynaldo López,Ryne Nelson,17,2,Final
+2026-04-02,New York Mets,San Francisco Giants,David Peterson,Robbie Ray,2,7,Final
+2026-04-02,Toronto Blue Jays,Chicago White Sox,Dylan Cease,Sean Burke,0,0,Postponed
+2026-04-03,Los Angeles Dodgers,Washington Nationals,Emmet Sheehan,Miles Mikolas,13,6,Final
+2026-04-03,St. Louis Cardinals,Detroit Tigers,Michael McGreevy,Framber Valdez,0,4,Final
+2026-04-03,Miami Marlins,New York Yankees,Eury Pérez,Will Warren,2,8,Final
+2026-04-03,San Diego Padres,Boston Red Sox,Michael King,Sonny Gray,2,5,Final
+2026-04-03,Toronto Blue Jays,Chicago White Sox,Dylan Cease,Grant Taylor,4,5,Final
+2026-04-03,Cincinnati Reds,Texas Rangers,Brady Singer,MacKenzie Gore,5,3,Final
+2026-04-03,Chicago Cubs,Cleveland Guardians,Cade Horton,Joey Cantillo,1,4,Final
+2026-04-03,Tampa Bay Rays,Minnesota Twins,Joe Boyle,Bailey Ober,4,10,Final
+2026-04-03,Philadelphia Phillies,Colorado Rockies,Aaron Nola,Michael Lorenzen,10,1,Final
+2026-04-03,Baltimore Orioles,Pittsburgh Pirates,Kyle Bradish,Mitch Keller,4,5,Final
+2026-04-03,Seattle Mariners,Los Angeles Angels,Bryan Woo,Reid Detmers,3,1,Final
+2026-04-03,Houston Astros,Athletics,Cristian Javier,Jeffrey Springs,4,11,Final
+2026-04-03,Atlanta Braves,Arizona Diamondbacks,Grant Holmes,Eduardo Rodriguez,2,0,Final
+2026-04-03,New York Mets,San Francisco Giants,Nolan McLean,Tyler Mahle,10,3,Final
+2026-04-03,Milwaukee Brewers,Kansas City Royals,Chad Patrick,Luinder Avila,0,0,Postponed
+2026-04-04,St. Louis Cardinals,Detroit Tigers,Dustin May,Jack Flaherty,6,11,Completed Early
+2026-04-04,Toronto Blue Jays,Chicago White Sox,Mason Fluharty,Grant Taylor,3,6,Final
+2026-04-04,Milwaukee Brewers,Kansas City Royals,Chad Patrick,Luinder Avila,5,2,Final
+2026-04-04,Milwaukee Brewers,Kansas City Royals,Logan Henderson,Seth Lugo,2,8,Final
+2026-04-04,Los Angeles Dodgers,Washington Nationals,Tyler Glasnow,Jake Irvin,10,5,Final
+2026-04-04,Houston Astros,Athletics,Tatsuya Imai,Luis Morales,11,0,Final
+2026-04-04,Baltimore Orioles,Pittsburgh Pirates,Shane Baz,Carmen Mlodzinski,2,3,Final
+2026-04-04,San Diego Padres,Boston Red Sox,Randy Vásquez,Connelly Early,3,2,Final
+2026-04-04,Cincinnati Reds,Texas Rangers,Rhett Lowder,Kumar Rocker,2,0,Final
+2026-04-04,Miami Marlins,New York Yankees,Max Meyer,Ryan Weathers,7,9,Final
+2026-04-04,Tampa Bay Rays,Minnesota Twins,Steven Matz,Mick Abel,7,1,Final
+2026-04-04,Atlanta Braves,Arizona Diamondbacks,Bryce Elder,Michael Soroka,1,2,Final
+2026-04-04,Philadelphia Phillies,Colorado Rockies,Jesús Luzardo,Brennan Bernardino,2,1,Final
+2026-04-04,New York Mets,San Francisco Giants,Clay Holmes,Landen Roupp,9,0,Final
+2026-04-04,Seattle Mariners,Los Angeles Angels,Emerson Hancock,Jack Kochanowicz,0,1,Final
+2026-04-04,Chicago Cubs,Cleveland Guardians,Shota Imanaga,Slade Cecconi,0,0,Postponed
+2026-04-05,Chicago Cubs,Cleveland Guardians,Edward Cabrera,Slade Cecconi,1,0,Final
+2026-04-05,Chicago Cubs,Cleveland Guardians,Shota Imanaga,Parker Messick,5,6,Final
+2026-04-05,Los Angeles Dodgers,Washington Nationals,Roki Sasaki,Foster Griffin,8,6,Final
+2026-04-05,Baltimore Orioles,Pittsburgh Pirates,Chris Bassitt,Braxton Ashcraft,2,8,Final
+2026-04-05,San Diego Padres,Boston Red Sox,Walker Buehler,Ranger Suarez,8,6,Final
+2026-04-05,Miami Marlins,New York Yankees,Pete Fairbanks,Max Fried,7,6,Final
+2026-04-05,Tampa Bay Rays,Minnesota Twins,Nick Martinez,Simeon Woods Richardson,4,1,Final
+2026-04-05,Toronto Blue Jays,Chicago White Sox,Eric Lauer,Davis Martin,0,3,Final
+2026-04-05,Milwaukee Brewers,Kansas City Royals,Kyle Harrison,Kris Bubic,8,5,Final
+2026-04-05,Cincinnati Reds,Texas Rangers,Chase Burns,Jack Leiter,2,1,Final
+2026-04-05,Philadelphia Phillies,Colorado Rockies,Taijuan Walker,Tomoyuki Sugano,1,4,Final
+2026-04-05,Houston Astros,Athletics,Lance McCullers Jr.,Jacob Lopez,10,12,Final
+2026-04-05,New York Mets,San Francisco Giants,Kodai Senga,Logan Webb,5,2,Final
+2026-04-05,Seattle Mariners,Los Angeles Angels,Luis Castillo,George Klassen,7,8,Final
+2026-04-05,Atlanta Braves,Arizona Diamondbacks,Martín Pérez,Brandon Pfaadt,5,6,Final
+2026-04-05,St. Louis Cardinals,Detroit Tigers,Kyle Leahy,Keider Montero,5,3,Final
+2026-04-06,Chicago Cubs,Tampa Bay Rays,Jameson Taillon,Shane McClanahan,4,6,Final
+2026-04-06,Kansas City Royals,Cleveland Guardians,Michael Wacha,Tanner Bibee,4,2,Final
+2026-04-06,San Diego Padres,Pittsburgh Pirates,Germán Márquez,Bubba Chandler,5,0,Final
+2026-04-06,Cincinnati Reds,Miami Marlins,Brandon Williamson,Janson Junk,2,0,Final
+2026-04-06,St. Louis Cardinals,Washington Nationals,Andre Pallante,Zack Littell,6,9,Final
+2026-04-06,Milwaukee Brewers,Boston Red Sox,Brandon Woodruff,Brayan Bello,8,6,Final
+2026-04-06,Los Angeles Dodgers,Toronto Blue Jays,Justin Wrobleski,Max Scherzer,14,2,Final
+2026-04-06,Detroit Tigers,Minnesota Twins,Casey Mize,Joe Ryan,3,7,Final
+2026-04-06,Baltimore Orioles,Chicago White Sox,Brandon Young,Grant Taylor,2,1,Final
+2026-04-06,Seattle Mariners,Texas Rangers,Logan Gilbert,Jacob deGrom,1,2,Final
+2026-04-06,Houston Astros,Colorado Rockies,Cody Bolton,Ryan Feltner,7,9,Final
+2026-04-06,Atlanta Braves,Los Angeles Angels,Chris Sale,José Soriano,2,6,Final
+2026-04-06,Philadelphia Phillies,San Francisco Giants,Andrew Painter,Adrian Houser,6,4,Final
+2026-04-07,Kansas City Royals,Cleveland Guardians,Noah Cameron,Gavin Williams,1,2,Final
+2026-04-07,Baltimore Orioles,Chicago White Sox,Trevor Rogers,Shane Smith,4,2,Final
+2026-04-07,Arizona Diamondbacks,New York Mets,Zac Gallen,Freddy Peralta,3,4,Final
+2026-04-07,San Diego Padres,Pittsburgh Pirates,Nick Pivetta,Paul Skenes,1,7,Final
+2026-04-07,Chicago Cubs,Tampa Bay Rays,Javier Assad,Mason Englert,9,2,Final
+2026-04-07,Cincinnati Reds,Miami Marlins,Andrew Abbott,Sandy Alcantara,6,3,Final
+2026-04-07,St. Louis Cardinals,Washington Nationals,Matthew Liberatore,Cade Cavalli,7,6,Final
+2026-04-07,Milwaukee Brewers,Boston Red Sox,Jacob Misiorowski,Garrett Crochet,2,3,Final
+2026-04-07,Athletics,New York Yankees,Aaron Civale,Cam Schlittler,3,5,Final
+2026-04-07,Los Angeles Dodgers,Toronto Blue Jays,Yoshinobu Yamamoto,Kevin Gausman,4,1,Final
+2026-04-07,Detroit Tigers,Minnesota Twins,Tarik Skubal,Taj Bradley,2,4,Final
+2026-04-07,Seattle Mariners,Texas Rangers,George Kirby,Nathan Eovaldi,2,3,Final
+2026-04-07,Houston Astros,Colorado Rockies,Mike Burrows,Kyle Freeland,1,5,Final
+2026-04-07,Atlanta Braves,Los Angeles Angels,Reynaldo López,Yusei Kikuchi,7,2,Final
+2026-04-07,Philadelphia Phillies,San Francisco Giants,Cristopher Sánchez,Robbie Ray,0,6,Final
+2026-04-08,San Diego Padres,Pittsburgh Pirates,Michael King,Mitch Keller,8,2,Final
+2026-04-08,Kansas City Royals,Cleveland Guardians,Cole Ragans,Joey Cantillo,2,10,Final
+2026-04-08,Milwaukee Brewers,Boston Red Sox,Shane Drohan,Sonny Gray,0,5,Final
+2026-04-08,Baltimore Orioles,Chicago White Sox,Kyle Bradish,Sean Burke,5,3,Final
+2026-04-08,Seattle Mariners,Texas Rangers,Bryan Woo,MacKenzie Gore,0,3,Final
+2026-04-08,Los Angeles Dodgers,Toronto Blue Jays,Shohei Ohtani,Dylan Cease,3,4,Final
+2026-04-08,Houston Astros,Colorado Rockies,Cristian Javier,Michael Lorenzen,1,9,Final
+2026-04-08,Philadelphia Phillies,San Francisco Giants,Aaron Nola,Tyler Mahle,0,5,Final
+2026-04-08,St. Louis Cardinals,Washington Nationals,Michael McGreevy,Miles Mikolas,6,1,Final
+2026-04-08,Atlanta Braves,Los Angeles Angels,Grant Holmes,Reid Detmers,8,2,Final
+2026-04-08,Arizona Diamondbacks,New York Mets,Ryne Nelson,David Peterson,7,2,Final
+2026-04-08,Chicago Cubs,Tampa Bay Rays,Colin Rea,Joe Boyle,6,2,Final
+2026-04-08,Cincinnati Reds,Miami Marlins,Brady Singer,Eury Pérez,4,7,Final
+2026-04-08,Athletics,New York Yankees,Luis Severino,Will Warren,3,2,Final
+2026-04-08,Detroit Tigers,Minnesota Twins,Framber Valdez,Bailey Ober,6,8,Final
+2026-04-09,Cincinnati Reds,Miami Marlins,Rhett Lowder,Max Meyer,1,8,Final
+2026-04-09,Athletics,New York Yankees,Jeffrey Springs,Ryan Weathers,1,0,Final
+2026-04-09,Detroit Tigers,Minnesota Twins,Jack Flaherty,Mick Abel,1,3,Final
+2026-04-09,Arizona Diamondbacks,New York Mets,Eduardo Rodriguez,Nolan McLean,7,1,Final
+2026-04-09,Chicago White Sox,Kansas City Royals,Anthony Kay,Seth Lugo,2,0,Final
+2026-04-09,Colorado Rockies,San Diego Padres,Jimmy Herget,Randy Vásquez,3,7,Final
+2026-04-10,Pittsburgh Pirates,Chicago Cubs,Carmen Mlodzinski,Shota Imanaga,2,0,Final
+2026-04-10,Arizona Diamondbacks,Philadelphia Phillies,Michael Soroka,Jesús Luzardo,5,4,Final
+2026-04-10,Miami Marlins,Detroit Tigers,Chris Paddack,Keider Montero,0,2,Final
+2026-04-10,Los Angeles Angels,Cincinnati Reds,Jack Kochanowicz,Chase Burns,10,2,Final
+2026-04-10,Minnesota Twins,Toronto Blue Jays,Simeon Woods Richardson,Patrick Corbin,4,10,Final
+2026-04-10,Athletics,New York Mets,J.T. Ginn,Clay Holmes,4,0,Final
+2026-04-10,New York Yankees,Tampa Bay Rays,Luis Gil,Steven Matz,3,5,Final
+2026-04-10,San Francisco Giants,Baltimore Orioles,Landen Roupp,Shane Baz,6,3,Final
+2026-04-10,Cleveland Guardians,Atlanta Braves,Slade Cecconi,Bryce Elder,5,11,Final
+2026-04-10,Chicago White Sox,Kansas City Royals,Davis Martin,Kris Bubic,0,2,Final
+2026-04-10,Washington Nationals,Milwaukee Brewers,Jake Irvin,Aaron Ashby,7,3,Final
+2026-04-10,Boston Red Sox,St. Louis Cardinals,Connelly Early,Dustin May,2,3,Final
+2026-04-10,Colorado Rockies,San Diego Padres,Tomoyuki Sugano,Walker Buehler,2,5,Final
+2026-04-10,Houston Astros,Seattle Mariners,Tatsuya Imai,Emerson Hancock,6,9,Final
+2026-04-10,Texas Rangers,Los Angeles Dodgers,Kumar Rocker,Tyler Glasnow,7,8,Final
+2026-04-11,Arizona Diamondbacks,Philadelphia Phillies,Brandon Pfaadt,Taijuan Walker,3,4,Final
+2026-04-11,Miami Marlins,Detroit Tigers,Janson Junk,Casey Mize,1,6,Final
+2026-04-11,Pittsburgh Pirates,Chicago Cubs,Braxton Ashcraft,Edward Cabrera,4,3,Final
+2026-04-11,Minnesota Twins,Toronto Blue Jays,Joe Ryan,Eric Lauer,7,4,Final
+2026-04-11,Los Angeles Angels,Cincinnati Reds,George Klassen,Brandon Williamson,3,7,Final
+2026-04-11,Athletics,New York Mets,Jacob Lopez,Kodai Senga,11,6,Final
+2026-04-11,Chicago White Sox,Kansas City Royals,Erick Fedde,Michael Wacha,0,2,Final
+2026-04-11,New York Yankees,Tampa Bay Rays,Max Fried,Nick Martinez,4,5,Final
+2026-04-11,Washington Nationals,Milwaukee Brewers,Foster Griffin,Kyle Harrison,3,1,Final
+2026-04-11,San Francisco Giants,Baltimore Orioles,Logan Webb,Chris Bassitt,2,6,Final
+2026-04-11,Boston Red Sox,St. Louis Cardinals,Ranger Suarez,Kyle Leahy,7,1,Final
+2026-04-11,Cleveland Guardians,Atlanta Braves,Parker Messick,Martín Pérez,6,0,Final
+2026-04-11,Colorado Rockies,San Diego Padres,Ryan Feltner,Germán Márquez,5,9,Final
+2026-04-11,Texas Rangers,Los Angeles Dodgers,Jack Leiter,Emmet Sheehan,3,6,Final
+2026-04-11,Houston Astros,Seattle Mariners,Lance McCullers Jr.,Luis Castillo,7,8,Final
+2026-04-12,San Francisco Giants,Baltimore Orioles,Adrian Houser,Cade Povich,2,6,Final
+2026-04-12,Arizona Diamondbacks,Philadelphia Phillies,Zac Gallen,Zach Pop,4,3,Final
+2026-04-12,Minnesota Twins,Toronto Blue Jays,Taj Bradley,Max Scherzer,8,2,Final
+2026-04-12,Los Angeles Angels,Cincinnati Reds,José Soriano,Andrew Abbott,9,6,Final
+2026-04-12,Athletics,New York Mets,Aaron Civale,Freddy Peralta,1,0,Final
+2026-04-12,Miami Marlins,Detroit Tigers,Sandy Alcantara,Tarik Skubal,2,8,Final
+2026-04-12,New York Yankees,Tampa Bay Rays,Cam Schlittler,Drew Rasmussen,4,5,Final
+2026-04-12,Chicago White Sox,Kansas City Royals,Grant Taylor,Noah Cameron,6,5,Final
+2026-04-12,Washington Nationals,Milwaukee Brewers,Zack Littell,Brandon Woodruff,8,6,Final
+2026-04-12,Boston Red Sox,St. Louis Cardinals,Brayan Bello,Andre Pallante,9,3,Final
+2026-04-12,Pittsburgh Pirates,Chicago Cubs,Bubba Chandler,Jameson Taillon,6,7,Final
+2026-04-12,Colorado Rockies,San Diego Padres,Kyle Freeland,Nick Pivetta,2,7,Final
+2026-04-12,Houston Astros,Seattle Mariners,Cody Bolton,Logan Gilbert,1,6,Final
+2026-04-12,Texas Rangers,Los Angeles Dodgers,Jacob deGrom,Roki Sasaki,5,2,Final
+2026-04-12,Cleveland Guardians,Atlanta Braves,Tanner Bibee,Chris Sale,1,13,Final
+2026-04-13,Houston Astros,Seattle Mariners,Mike Burrows,George Kirby,2,6,Final
+2026-04-13,Arizona Diamondbacks,Baltimore Orioles,Ryne Nelson,Dean Kremer,7,9,Final
+2026-04-13,Washington Nationals,Pittsburgh Pirates,PJ Poulin,Paul Skenes,5,16,Final
+2026-04-13,Chicago Cubs,Philadelphia Phillies,Javier Assad,Cristopher Sánchez,7,13,Final
+2026-04-13,Los Angeles Angels,New York Yankees,Yusei Kikuchi,Will Warren,10,11,Final
+2026-04-13,Miami Marlins,Atlanta Braves,Eury Pérez,Grant Holmes,10,4,Final
+2026-04-13,Boston Red Sox,Minnesota Twins,Garrett Crochet,Bailey Ober,6,13,Final
+2026-04-13,Cleveland Guardians,St. Louis Cardinals,Gavin Williams,Matthew Liberatore,9,3,Final
+2026-04-13,Texas Rangers,Athletics,Nathan Eovaldi,Luis Severino,8,1,Final
+2026-04-13,New York Mets,Los Angeles Dodgers,David Peterson,Justin Wrobleski,0,4,Final
+2026-04-14,Arizona Diamondbacks,Baltimore Orioles,Merrill Kelly,Trevor Rogers,4,3,Final
+2026-04-14,Kansas City Royals,Detroit Tigers,Cole Ragans,Framber Valdez,1,2,Final
+2026-04-14,Washington Nationals,Pittsburgh Pirates,PJ Poulin,Mitch Keller,5,4,Final
+2026-04-14,San Francisco Giants,Cincinnati Reds,Robbie Ray,Brady Singer,1,2,Final
+2026-04-14,Chicago Cubs,Philadelphia Phillies,Riley Martin,Aaron Nola,10,4,Final
+2026-04-14,Los Angeles Angels,New York Yankees,Reid Detmers,Ryan Weathers,7,1,Final
+2026-04-14,Miami Marlins,Atlanta Braves,Max Meyer,Reynaldo López,5,6,Final
+2026-04-14,Boston Red Sox,Minnesota Twins,Sonny Gray,Mick Abel,0,6,Final
+2026-04-14,Tampa Bay Rays,Chicago White Sox,Shane McClanahan,Noah Schultz,8,5,Final
+2026-04-14,Toronto Blue Jays,Milwaukee Brewers,Kevin Gausman,Jacob Misiorowski,9,7,Final
+2026-04-14,Cleveland Guardians,St. Louis Cardinals,Joey Cantillo,Michael McGreevy,5,6,Final
+2026-04-14,Colorado Rockies,Houston Astros,Michael Lorenzen,Spencer Arrighetti,6,7,Final
+2026-04-14,Seattle Mariners,San Diego Padres,Bryan Woo,Michael King,1,4,Final
+2026-04-14,Texas Rangers,Athletics,MacKenzie Gore,Jeffrey Springs,1,2,Final
+2026-04-14,New York Mets,Los Angeles Dodgers,Nolan McLean,Yoshinobu Yamamoto,1,2,Final
+2026-04-15,Arizona Diamondbacks,Baltimore Orioles,Eduardo Rodriguez,Kyle Bradish,8,5,Final
+2026-04-15,Cleveland Guardians,St. Louis Cardinals,Slade Cecconi,Dustin May,3,5,Final
+2026-04-15,Boston Red Sox,Minnesota Twins,Connelly Early,Simeon Woods Richardson,9,5,Final
+2026-04-15,Kansas City Royals,Detroit Tigers,Seth Lugo,Jack Flaherty,1,2,Final
+2026-04-15,Washington Nationals,Pittsburgh Pirates,Jake Irvin,Mason Montgomery,0,2,Final
+2026-04-15,San Francisco Giants,Cincinnati Reds,Tyler Mahle,Rhett Lowder,3,8,Final
+2026-04-15,Chicago Cubs,Philadelphia Phillies,Shota Imanaga,Jesús Luzardo,11,2,Final
+2026-04-15,Los Angeles Angels,New York Yankees,Jack Kochanowicz,Luis Gil,4,5,Final
+2026-04-15,Miami Marlins,Atlanta Braves,Chris Paddack,Bryce Elder,3,6,Final
+2026-04-15,Tampa Bay Rays,Chicago White Sox,Jesse Scholtens,Sean Burke,8,3,Final
+2026-04-15,Toronto Blue Jays,Milwaukee Brewers,Dylan Cease,Chad Patrick,1,2,Final
+2026-04-15,Colorado Rockies,Houston Astros,Jose Quintana,Spencer Arrighetti,1,3,Final
+2026-04-15,Seattle Mariners,San Diego Padres,Emerson Hancock,Randy Vásquez,6,7,Final
+2026-04-15,Texas Rangers,Athletics,Kumar Rocker,J.T. Ginn,5,6,Final
+2026-04-15,New York Mets,Los Angeles Dodgers,Clay Holmes,Shohei Ohtani,2,8,Final
+2026-04-16,Washington Nationals,Pittsburgh Pirates,Foster Griffin,Braxton Ashcraft,8,7,Final
+2026-04-16,San Francisco Giants,Cincinnati Reds,Landen Roupp,Chase Burns,3,0,Final
+2026-04-16,Kansas City Royals,Detroit Tigers,Kris Bubic,Keider Montero,9,10,Final
+2026-04-16,Los Angeles Angels,New York Yankees,Brent Suter,Max Fried,11,4,Final
+2026-04-16,Toronto Blue Jays,Milwaukee Brewers,Patrick Corbin,Brandon Sproat,1,2,Final
+2026-04-16,Tampa Bay Rays,Chicago White Sox,Steven Matz,Jordan Leasure,5,3,Final
+2026-04-16,Texas Rangers,Athletics,Jack Leiter,Jacob Lopez,9,6,Final
+2026-04-16,Baltimore Orioles,Cleveland Guardians,Shane Baz,Parker Messick,2,4,Final
+2026-04-16,Colorado Rockies,Houston Astros,Juan Mejia,Ryan Weiss,3,2,Final
+2026-04-16,Seattle Mariners,San Diego Padres,Luis Castillo,Walker Buehler,2,5,Final
+2026-04-17,New York Mets,Chicago Cubs,Kodai Senga,Edward Cabrera,4,12,Final
+2026-04-17,Baltimore Orioles,Cleveland Guardians,Chris Bassitt,Tanner Bibee,6,4,Final
+2026-04-17,Atlanta Braves,Philadelphia Phillies,Martín Pérez,Taijuan Walker,9,0,Final
+2026-04-17,San Francisco Giants,Washington Nationals,Logan Webb,Zack Littell,10,5,Final
+2026-04-17,Tampa Bay Rays,Pittsburgh Pirates,Nick Martinez,Bubba Chandler,1,5,Final
+2026-04-17,Kansas City Royals,New York Yankees,Michael Wacha,Cam Schlittler,2,4,Final
+2026-04-17,Milwaukee Brewers,Miami Marlins,Coleman Crow,Janson Junk,7,5,Final
+2026-04-17,Detroit Tigers,Boston Red Sox,Casey Mize,Ranger Suarez,0,1,Final
+2026-04-17,St. Louis Cardinals,Houston Astros,Kyle Leahy,Peter Lambert,9,4,Final
+2026-04-17,Cincinnati Reds,Minnesota Twins,Brandon Williamson,Joe Ryan,2,1,Final
+2026-04-17,Los Angeles Dodgers,Colorado Rockies,Tyler Glasnow,Tomoyuki Sugano,7,1,Final
+2026-04-17,San Diego Padres,Los Angeles Angels,Matt Waldron,José Soriano,0,8,Final
+2026-04-17,Texas Rangers,Seattle Mariners,Jacob deGrom,Logan Gilbert,5,0,Final
+2026-04-17,Toronto Blue Jays,Arizona Diamondbacks,Braydon Fisher,Michael Soroka,3,6,Final
+2026-04-17,Chicago White Sox,Athletics,Davis Martin,Aaron Civale,9,2,Final
+2026-04-18,Kansas City Royals,New York Yankees,Noah Cameron,Will Warren,4,13,Final
+2026-04-18,Cincinnati Reds,Minnesota Twins,Andrew Abbott,Taj Bradley,5,4,Final
+2026-04-18,New York Mets,Chicago Cubs,Freddy Peralta,Jameson Taillon,2,4,Final
+2026-04-18,Tampa Bay Rays,Pittsburgh Pirates,Drew Rasmussen,Paul Skenes,8,7,Final
+2026-04-18,San Francisco Giants,Washington Nationals,Adrian Houser,Cade Cavalli,7,6,Final
+2026-04-18,Chicago White Sox,Athletics,Erick Fedde,Luis Severino,6,7,Final
+2026-04-18,Detroit Tigers,Boston Red Sox,Tarik Skubal,Brayan Bello,4,1,Final
+2026-04-18,Milwaukee Brewers,Miami Marlins,Brandon Woodruff,Sandy Alcantara,5,2,Final
+2026-04-18,Baltimore Orioles,Cleveland Guardians,Dean Kremer,Gavin Williams,2,4,Final
+2026-04-18,St. Louis Cardinals,Houston Astros,Andre Pallante,Lance McCullers Jr.,7,5,Final
+2026-04-18,Texas Rangers,Seattle Mariners,Nathan Eovaldi,George Kirby,3,7,Final
+2026-04-18,Atlanta Braves,Philadelphia Phillies,Chris Sale,Cristopher Sánchez,3,1,Final
+2026-04-18,Los Angeles Dodgers,Colorado Rockies,Emmet Sheehan,Ryan Feltner,3,4,Final
+2026-04-18,Toronto Blue Jays,Arizona Diamondbacks,Max Scherzer,Zac Gallen,2,6,Final
+2026-04-18,San Diego Padres,Los Angeles Angels,Germán Márquez,Yusei Kikuchi,4,1,Final
+2026-04-19,San Francisco Giants,Washington Nationals,Robbie Ray,PJ Poulin,0,3,Final
+2026-04-19,Tampa Bay Rays,Pittsburgh Pirates,Shane McClanahan,Mitch Keller,3,6,Final
+2026-04-19,Kansas City Royals,New York Yankees,Cole Ragans,Ryan Weathers,0,7,Final
+2026-04-19,Baltimore Orioles,Cleveland Guardians,Trevor Rogers,Joey Cantillo,4,8,Final
+2026-04-19,Milwaukee Brewers,Miami Marlins,Jacob Misiorowski,Eury Pérez,3,5,Final
+2026-04-19,St. Louis Cardinals,Houston Astros,Matthew Liberatore,Mike Burrows,7,5,Final
+2026-04-19,Cincinnati Reds,Minnesota Twins,Brady Singer,Bailey Ober,7,4,Final
+2026-04-19,New York Mets,Chicago Cubs,Tobias Myers,Javier Assad,1,2,Final
+2026-04-19,Los Angeles Dodgers,Colorado Rockies,Roki Sasaki,Michael Lorenzen,6,9,Final
+2026-04-19,Chicago White Sox,Athletics,Noah Schultz,Jeffrey Springs,7,4,Final
+2026-04-19,San Diego Padres,Los Angeles Angels,Michael King,Walbert Ureña,2,1,Final
+2026-04-19,Texas Rangers,Seattle Mariners,MacKenzie Gore,Bryan Woo,2,5,Final
+2026-04-19,Toronto Blue Jays,Arizona Diamondbacks,Kevin Gausman,Ryne Nelson,10,4,Final
+2026-04-19,Detroit Tigers,Boston Red Sox,Framber Valdez,Garrett Crochet,6,2,Final
+2026-04-19,Atlanta Braves,Philadelphia Phillies,Grant Holmes,Andrew Painter,4,2,Final
+2026-04-20,Detroit Tigers,Boston Red Sox,Jack Flaherty,Sonny Gray,6,8,Final
+2026-04-20,Houston Astros,Cleveland Guardians,Spencer Arrighetti,Slade Cecconi,9,2,Final
+2026-04-20,Cincinnati Reds,Tampa Bay Rays,Rhett Lowder,Jesse Scholtens,6,1,Final
+2026-04-20,St. Louis Cardinals,Miami Marlins,Michael McGreevy,Max Meyer,3,5,Final
+2026-04-20,Atlanta Braves,Washington Nationals,Bryce Elder,Jake Irvin,9,4,Final
+2026-04-20,Baltimore Orioles,Kansas City Royals,Kyle Bradish,Seth Lugo,7,5,Final
+2026-04-20,Philadelphia Phillies,Chicago Cubs,Aaron Nola,Colin Rea,1,5,Final
+2026-04-20,Los Angeles Dodgers,Colorado Rockies,Justin Wrobleski,Jose Quintana,12,3,Final
+2026-04-20,Toronto Blue Jays,Los Angeles Angels,Dylan Cease,Reid Detmers,5,2,Final
+2026-04-20,Athletics,Seattle Mariners,J.T. Ginn,Emerson Hancock,6,4,Final
+2026-04-21,Houston Astros,Cleveland Guardians,Ryan Weiss,Parker Messick,5,8,Final
+2026-04-21,Cincinnati Reds,Tampa Bay Rays,Chase Burns,Steven Matz,12,6,Final
+2026-04-21,St. Louis Cardinals,Miami Marlins,Dustin May,Chris Paddack,5,3,Final
+2026-04-21,Milwaukee Brewers,Detroit Tigers,Kyle Harrison,Keider Montero,12,4,Final
+2026-04-21,Atlanta Braves,Washington Nationals,Reynaldo López,Foster Griffin,4,11,Final
+2026-04-21,New York Yankees,Boston Red Sox,Luis Gil,Connelly Early,4,0,Final
+2026-04-21,Minnesota Twins,New York Mets,Simeon Woods Richardson,Nolan McLean,5,3,Final
+2026-04-21,Baltimore Orioles,Kansas City Royals,Shane Baz,Kris Bubic,5,6,Final
+2026-04-21,Philadelphia Phillies,Chicago Cubs,Jesús Luzardo,Shota Imanaga,4,7,Final
+2026-04-21,Pittsburgh Pirates,Texas Rangers,Carmen Mlodzinski,Kumar Rocker,1,5,Final
+2026-04-21,San Diego Padres,Colorado Rockies,Randy Vásquez,Jimmy Herget,1,0,Final
+2026-04-21,Toronto Blue Jays,Los Angeles Angels,Patrick Corbin,Jack Kochanowicz,4,2,Final
+2026-04-21,Athletics,Seattle Mariners,Jacob Lopez,Luis Castillo,5,2,Final
+2026-04-21,Chicago White Sox,Arizona Diamondbacks,Sean Burke,Merrill Kelly,11,5,Final
+2026-04-21,Los Angeles Dodgers,San Francisco Giants,Yoshinobu Yamamoto,Landen Roupp,1,3,Final
+2026-04-22,St. Louis Cardinals,Miami Marlins,Kyle Leahy,Janson Junk,1,4,Final
+2026-04-22,Houston Astros,Cleveland Guardians,Peter Lambert,Tanner Bibee,2,0,Final
+2026-04-22,Cincinnati Reds,Tampa Bay Rays,Brandon Williamson,Nick Martinez,1,6,Final
+2026-04-22,Baltimore Orioles,Kansas City Royals,Chris Bassitt,Michael Wacha,8,6,Final
+2026-04-22,Toronto Blue Jays,Los Angeles Angels,Eric Lauer,José Soriano,3,7,Final
+2026-04-22,Athletics,Seattle Mariners,Aaron Civale,Logan Gilbert,4,5,Final
+2026-04-22,Milwaukee Brewers,Detroit Tigers,DL Hall,Casey Mize,2,5,Final
+2026-04-22,Atlanta Braves,Washington Nationals,Didier Fuentes,Zack Littell,8,6,Final
+2026-04-22,New York Yankees,Boston Red Sox,Max Fried,Ranger Suarez,4,1,Final
+2026-04-22,Minnesota Twins,New York Mets,Connor Prielipp,Clay Holmes,2,3,Final
+2026-04-22,Philadelphia Phillies,Chicago Cubs,Kyle Backhus,Matthew Boyd,2,7,Final
+2026-04-22,Pittsburgh Pirates,Texas Rangers,Braxton Ashcraft,Jack Leiter,8,4,Final
+2026-04-22,San Diego Padres,Colorado Rockies,Walker Buehler,Tomoyuki Sugano,3,8,Final
+2026-04-22,Chicago White Sox,Arizona Diamondbacks,Anthony Kay,Eduardo Rodriguez,7,11,Final
+2026-04-22,Los Angeles Dodgers,San Francisco Giants,Shohei Ohtani,Tyler Mahle,0,3,Final
+2026-04-23,Atlanta Braves,Washington Nationals,JR Ritchie,Cade Cavalli,7,2,Final
+2026-04-23,Milwaukee Brewers,Detroit Tigers,Brandon Sproat,Tarik Skubal,4,5,Final
+2026-04-23,Philadelphia Phillies,Chicago Cubs,Cristopher Sánchez,Edward Cabrera,7,8,Final
+2026-04-23,San Diego Padres,Colorado Rockies,Matt Waldron,Ryan Feltner,10,8,Final
+2026-04-23,Chicago White Sox,Arizona Diamondbacks,Davis Martin,Michael Soroka,4,1,Final
+2026-04-23,Los Angeles Dodgers,San Francisco Giants,Tyler Glasnow,Logan Webb,3,0,Final
+2026-04-23,New York Yankees,Boston Red Sox,Cam Schlittler,Payton Tolle,4,2,Final
+2026-04-23,Minnesota Twins,New York Mets,Joe Ryan,Christian Scott,8,10,Final
+2026-04-23,Pittsburgh Pirates,Texas Rangers,Bubba Chandler,Jacob deGrom,1,6,Final
+2026-04-24,Detroit Tigers,Cincinnati Reds,Framber Valdez,Andrew Abbott,8,9,Final
+2026-04-24,Boston Red Sox,Baltimore Orioles,Brayan Bello,Brandon Young,3,10,Final
+2026-04-24,Cleveland Guardians,Toronto Blue Jays,Gavin Williams,Max Scherzer,8,6,Final
+2026-04-24,Colorado Rockies,New York Mets,Michael Lorenzen,Freddy Peralta,4,3,Final
+2026-04-24,Minnesota Twins,Tampa Bay Rays,Taj Bradley,Drew Rasmussen,2,6,Final
+2026-04-24,Philadelphia Phillies,Atlanta Braves,Andrew Painter,Grant Holmes,3,5,Final
+2026-04-24,Los Angeles Angels,Kansas City Royals,Yusei Kikuchi,Noah Cameron,3,6,Final
+2026-04-24,Washington Nationals,Chicago White Sox,PJ Poulin,Bryan Hudson,4,5,Final
+2026-04-24,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,Brandon Woodruff,6,0,Final
+2026-04-24,Athletics,Texas Rangers,Luis Severino,Nathan Eovaldi,8,1,Final
+2026-04-24,New York Yankees,Houston Astros,Will Warren,Lance McCullers Jr.,12,4,Final
+2026-04-24,Seattle Mariners,St. Louis Cardinals,George Kirby,Andre Pallante,3,2,Final
+2026-04-24,Chicago Cubs,Los Angeles Dodgers,Jameson Taillon,Emmet Sheehan,6,4,Final
+2026-04-24,Miami Marlins,San Francisco Giants,Sandy Alcantara,Adrian Houser,9,4,Final
+2026-04-25,Boston Red Sox,Baltimore Orioles,Garrett Crochet,Trevor Rogers,17,1,Final
+2026-04-25,Seattle Mariners,St. Louis Cardinals,Bryan Woo,Matthew Liberatore,11,9,Final
+2026-04-25,Cleveland Guardians,Toronto Blue Jays,Joey Cantillo,Kevin Gausman,3,5,Final
+2026-04-25,Miami Marlins,San Francisco Giants,Eury Pérez,Robbie Ray,2,6,Final
+2026-04-25,Minnesota Twins,Tampa Bay Rays,Bailey Ober,Shane McClanahan,1,6,Final
+2026-04-25,Washington Nationals,Chicago White Sox,Jake Irvin,Noah Schultz,6,3,Final
+2026-04-25,San Diego Padres,Arizona Diamondbacks,Germán Márquez,Zac Gallen,6,4,Final
+2026-04-25,Athletics,Texas Rangers,Jeffrey Springs,MacKenzie Gore,3,4,Final
+2026-04-25,Los Angeles Angels,Kansas City Royals,Walbert Ureña,Cole Ragans,1,12,Final
+2026-04-25,New York Yankees,Houston Astros,Ryan Weathers,Mike Burrows,8,3,Final
+2026-04-25,Pittsburgh Pirates,Milwaukee Brewers,Mitch Keller,Jacob Misiorowski,6,3,Final
+2026-04-25,Detroit Tigers,Cincinnati Reds,Jack Flaherty,Brady Singer,2,9,Final
+2026-04-25,Chicago Cubs,Los Angeles Dodgers,Colin Rea,Roki Sasaki,4,12,Final
+2026-04-25,Philadelphia Phillies,Atlanta Braves,Zack Wheeler,Bryce Elder,8,5,Final
+2026-04-25,Colorado Rockies,New York Mets,Jose Quintana,Kodai Senga,0,0,Postponed
+2026-04-26,Boston Red Sox,Baltimore Orioles,Connelly Early,Kyle Bradish,5,3,Final
+2026-04-26,Philadelphia Phillies,Atlanta Braves,Aaron Nola,Chris Sale,2,6,Final
+2026-04-26,Cleveland Guardians,Toronto Blue Jays,Slade Cecconi,Patrick Corbin,2,4,Final
+2026-04-26,Detroit Tigers,Cincinnati Reds,Keider Montero,Rhett Lowder,8,3,Final
+2026-04-26,Colorado Rockies,New York Mets,Jose Quintana,Nolan McLean,3,1,Final
+2026-04-26,Colorado Rockies,New York Mets,Chase Dollander,Kodai Senga,3,0,Final
+2026-04-26,Minnesota Twins,Tampa Bay Rays,Simeon Woods Richardson,Griffin Jax,2,4,Final
+2026-04-26,Washington Nationals,Chicago White Sox,Foster Griffin,Bryan Hudson,2,1,Final
+2026-04-26,New York Yankees,Houston Astros,Luis Gil,Spencer Arrighetti,4,7,Final
+2026-04-26,Pittsburgh Pirates,Milwaukee Brewers,Carmen Mlodzinski,Kyle Harrison,0,5,Final
+2026-04-26,Seattle Mariners,St. Louis Cardinals,Emerson Hancock,Michael McGreevy,3,2,Final
+2026-04-26,Athletics,Texas Rangers,J.T. Ginn,Kumar Rocker,2,1,Final
+2026-04-26,San Diego Padres,Arizona Diamondbacks,Michael King,Ryne Nelson,7,12,Final
+2026-04-26,Miami Marlins,San Francisco Giants,Max Meyer,Landen Roupp,3,6,Final
+2026-04-26,Los Angeles Angels,Kansas City Royals,Reid Detmers,Seth Lugo,9,11,Final
+2026-04-26,Chicago Cubs,Los Angeles Dodgers,Shota Imanaga,Justin Wrobleski,0,6,Final
+2026-04-27,Tampa Bay Rays,Cleveland Guardians,Steven Matz,Parker Messick,3,2,Final
+2026-04-27,St. Louis Cardinals,Pittsburgh Pirates,Dustin May,Mason Montgomery,4,2,Final
+2026-04-27,Boston Red Sox,Toronto Blue Jays,Ranger Suarez,Dylan Cease,5,0,Final
+2026-04-27,Seattle Mariners,Minnesota Twins,Luis Castillo,Connor Prielipp,4,11,Final
+2026-04-27,Los Angeles Angels,Chicago White Sox,Jack Kochanowicz,Anthony Kay,7,8,Final
+2026-04-27,New York Yankees,Texas Rangers,Max Fried,Jack Leiter,4,2,Final
+2026-04-27,Chicago Cubs,San Diego Padres,Matthew Boyd,Randy Vásquez,7,9,Final
+2026-04-27,Miami Marlins,Los Angeles Dodgers,Chris Paddack,Yoshinobu Yamamoto,4,5,Final
+2026-04-28,Tampa Bay Rays,Cleveland Guardians,Nick Martinez,Tanner Bibee,1,0,Final
+2026-04-28,Houston Astros,Baltimore Orioles,Kai-Wei Teng,Shane Baz,3,5,Final
+2026-04-28,Colorado Rockies,Cincinnati Reds,Kyle Freeland,Chase Burns,2,7,Final
+2026-04-28,St. Louis Cardinals,Pittsburgh Pirates,Kyle Leahy,Braxton Ashcraft,11,7,Final
+2026-04-28,San Francisco Giants,Philadelphia Phillies,Tyler Mahle,Jesús Luzardo,0,7,Final
+2026-04-28,Boston Red Sox,Toronto Blue Jays,Payton Tolle,Trey Yesavage,0,3,Final
+2026-04-28,Washington Nationals,New York Mets,Zack Littell,Clay Holmes,0,8,Final
+2026-04-28,Detroit Tigers,Atlanta Braves,Casey Mize,Martín Pérez,2,5,Final
+2026-04-28,Seattle Mariners,Minnesota Twins,Logan Gilbert,Joe Ryan,7,1,Final
+2026-04-28,Los Angeles Angels,Chicago White Sox,José Soriano,Davis Martin,2,5,Final
+2026-04-28,Arizona Diamondbacks,Milwaukee Brewers,Merrill Kelly,Chad Patrick,2,13,Final
+2026-04-28,New York Yankees,Texas Rangers,Cam Schlittler,Jacob deGrom,3,2,Final
+2026-04-28,Kansas City Royals,Athletics,Kris Bubic,Aaron Civale,4,1,Final
+2026-04-28,Chicago Cubs,San Diego Padres,Edward Cabrera,Walker Buehler,8,3,Final
+2026-04-28,Miami Marlins,Los Angeles Dodgers,Janson Junk,Shohei Ohtani,2,1,Final
+2026-04-29,Tampa Bay Rays,Cleveland Guardians,Drew Rasmussen,Gavin Williams,1,3,Final
+2026-04-29,Los Angeles Angels,Chicago White Sox,Yusei Kikuchi,Erick Fedde,2,3,Final
+2026-04-29,Seattle Mariners,Minnesota Twins,George Kirby,Taj Bradley,5,3,Final
+2026-04-29,New York Yankees,Texas Rangers,Elmer Rodríguez,Nathan Eovaldi,0,3,Final
+2026-04-29,Boston Red Sox,Toronto Blue Jays,Brayan Bello,Eric Lauer,1,8,Final
+2026-04-29,Miami Marlins,Los Angeles Dodgers,Sandy Alcantara,Tyler Glasnow,3,2,Final
+2026-04-29,Chicago Cubs,San Diego Padres,Jameson Taillon,Matt Waldron,5,4,Final
+2026-04-29,Colorado Rockies,Cincinnati Reds,Tomoyuki Sugano,Brandon Williamson,13,2,Final
+2026-04-29,St. Louis Cardinals,Pittsburgh Pirates,Andre Pallante,Bubba Chandler,5,4,Final
+2026-04-29,Washington Nationals,New York Mets,Cade Cavalli,David Peterson,14,2,Final
+2026-04-29,Detroit Tigers,Atlanta Braves,Tarik Skubal,JR Ritchie,3,4,Final
+2026-04-29,Arizona Diamondbacks,Milwaukee Brewers,Eduardo Rodriguez,Brandon Sproat,6,2,Final
+2026-04-29,Kansas City Royals,Athletics,Michael Wacha,Luis Severino,2,5,Final
+2026-04-29,San Francisco Giants,Philadelphia Phillies,Logan Webb,Cristopher Sánchez,0,0,Postponed
+2026-04-29,Houston Astros,Baltimore Orioles,Peter Lambert,Chris Bassitt,0,0,Postponed
+2026-04-30,Detroit Tigers,Atlanta Braves,Framber Valdez,Bryce Elder,5,2,Final
+2026-04-30,Houston Astros,Baltimore Orioles,Peter Lambert,Chris Bassitt,3,10,Final
+2026-04-30,Houston Astros,Baltimore Orioles,Lance McCullers Jr.,Brandon Young,11,5,Final
+2026-04-30,St. Louis Cardinals,Pittsburgh Pirates,Hunter Dobbins,Paul Skenes,10,5,Final
+2026-04-30,San Francisco Giants,Philadelphia Phillies,Logan Webb,Cristopher Sánchez,2,3,Final
+2026-04-30,San Francisco Giants,Philadelphia Phillies,Adrian Houser,Tim Mayza,5,6,Final
+2026-04-30,Colorado Rockies,Cincinnati Reds,Michael Lorenzen,Andrew Abbott,4,6,Final
+2026-04-30,Washington Nationals,New York Mets,Miles Mikolas,Freddy Peralta,5,4,Final
+2026-04-30,Arizona Diamondbacks,Milwaukee Brewers,Michael Soroka,Brandon Woodruff,1,13,Final
+2026-04-30,Kansas City Royals,Athletics,Noah Cameron,Jeffrey Springs,3,6,Final
+2026-04-30,Toronto Blue Jays,Minnesota Twins,Kevin Gausman,Bailey Ober,1,7,Final
+2026-05-01,Arizona Diamondbacks,Chicago Cubs,Zac Gallen,Colin Rea,5,6,Final
+2026-05-01,Texas Rangers,Detroit Tigers,MacKenzie Gore,Jack Flaherty,5,4,Final
+2026-05-01,Cincinnati Reds,Pittsburgh Pirates,Brady Singer,Mitch Keller,1,9,Final
+2026-05-01,Milwaukee Brewers,Washington Nationals,Jacob Misiorowski,Jake Irvin,6,1,Final
+2026-05-01,Baltimore Orioles,New York Yankees,Cade Povich,Will Warren,2,7,Final
+2026-05-01,Houston Astros,Boston Red Sox,Mike Burrows,Jake Bennett,1,3,Final
+2026-05-01,San Francisco Giants,Tampa Bay Rays,Robbie Ray,Shane McClanahan,0,3,Final
+2026-05-01,Philadelphia Phillies,Miami Marlins,Zack Wheeler,Eury Pérez,6,5,Final
+2026-05-01,Toronto Blue Jays,Minnesota Twins,Patrick Corbin,Simeon Woods Richardson,7,3,Final
+2026-05-01,Los Angeles Dodgers,St. Louis Cardinals,Emmet Sheehan,Matthew Liberatore,2,7,Final
+2026-05-01,Atlanta Braves,Colorado Rockies,Grant Holmes,Jose Quintana,8,6,Final
+2026-05-01,New York Mets,Los Angeles Angels,Christian Scott,Walbert Ureña,4,3,Final
+2026-05-01,Cleveland Guardians,Athletics,Joey Cantillo,J.T. Ginn,8,5,Final
+2026-05-01,Chicago White Sox,San Diego Padres,Noah Schultz,Germán Márquez,8,2,Final
+2026-05-01,Kansas City Royals,Seattle Mariners,Cole Ragans,Bryan Woo,7,6,Final
+2026-05-02,Baltimore Orioles,New York Yankees,Kyle Bradish,Ryan Weathers,4,9,Final
+2026-05-02,Toronto Blue Jays,Minnesota Twins,Dylan Cease,Connor Prielipp,11,4,Final
+2026-05-02,Arizona Diamondbacks,Chicago Cubs,Ryne Nelson,Shota Imanaga,0,2,Final
+2026-05-02,Cleveland Guardians,Athletics,Slade Cecconi,Jacob Lopez,14,6,Final
+2026-05-02,Cincinnati Reds,Pittsburgh Pirates,Rhett Lowder,Carmen Mlodzinski,7,17,Final
+2026-05-02,Milwaukee Brewers,Washington Nationals,Kyle Harrison,Foster Griffin,4,1,Final
+2026-05-02,Houston Astros,Boston Red Sox,Spencer Arrighetti,Connelly Early,6,3,Final
+2026-05-02,Philadelphia Phillies,Miami Marlins,Andrew Painter,Max Meyer,0,4,Final
+2026-05-02,San Francisco Giants,Tampa Bay Rays,Landen Roupp,Griffin Jax,1,5,Final
+2026-05-02,Los Angeles Dodgers,St. Louis Cardinals,Roki Sasaki,Michael McGreevy,2,3,Final
+2026-05-02,Texas Rangers,Detroit Tigers,Kumar Rocker,Keider Montero,1,5,Final
+2026-05-02,Atlanta Braves,Colorado Rockies,Chris Sale,Brennan Bernardino,9,1,Final
+2026-05-02,Chicago White Sox,San Diego Padres,Sean Burke,Michael King,4,0,Final
+2026-05-02,New York Mets,Los Angeles Angels,Nolan McLean,Reid Detmers,3,4,Final
+2026-05-02,Kansas City Royals,Seattle Mariners,Seth Lugo,Emerson Hancock,3,2,Final
+2026-05-03,Toronto Blue Jays,Minnesota Twins,Trey Yesavage,Joe Ryan,3,4,Final
+2026-05-03,Houston Astros,Boston Red Sox,Cody Bolton,Ranger Suarez,3,1,Final
+2026-05-03,Cincinnati Reds,Pittsburgh Pirates,Chase Burns,Braxton Ashcraft,0,1,Final
+2026-05-03,Baltimore Orioles,New York Yankees,Trey Gibson,Max Fried,3,11,Final
+2026-05-03,Milwaukee Brewers,Washington Nationals,Logan Henderson,PJ Poulin,2,3,Final
+2026-05-03,San Francisco Giants,Tampa Bay Rays,Tyler Mahle,Steven Matz,1,2,Final
+2026-05-03,Philadelphia Phillies,Miami Marlins,Jesús Luzardo,Chris Paddack,7,2,Final
+2026-05-03,Los Angeles Dodgers,St. Louis Cardinals,Justin Wrobleski,Dustin May,4,1,Final
+2026-05-03,Arizona Diamondbacks,Chicago Cubs,Merrill Kelly,Matthew Boyd,4,8,Final
+2026-05-03,Atlanta Braves,Colorado Rockies,Spencer Strider,Kyle Freeland,11,6,Final
+2026-05-03,Cleveland Guardians,Athletics,Parker Messick,Aaron Civale,1,7,Final
+2026-05-03,New York Mets,Los Angeles Angels,Clay Holmes,Jack Kochanowicz,5,1,Final
+2026-05-03,Kansas City Royals,Seattle Mariners,Kris Bubic,Luis Castillo,4,1,Final
+2026-05-03,Chicago White Sox,San Diego Padres,Anthony Kay,Griffin Canning,3,4,Final
+2026-05-03,Texas Rangers,Detroit Tigers,Jack Leiter,Tyler Holton,1,7,Final
+2026-05-04,New York Mets,Colorado Rockies,Huascar Brazobán,Tomoyuki Sugano,4,2,Final
+2026-05-04,Boston Red Sox,Detroit Tigers,Payton Tolle,Tyler Holton,5,4,Final
+2026-05-04,Toronto Blue Jays,Tampa Bay Rays,Eric Lauer,Nick Martinez,1,5,Final
+2026-05-04,Philadelphia Phillies,Miami Marlins,Aaron Nola,Janson Junk,1,0,Final
+2026-05-04,Baltimore Orioles,New York Yankees,Shane Baz,Cam Schlittler,1,12,Final
+2026-05-04,Cincinnati Reds,Chicago Cubs,Chase Petty,Edward Cabrera,4,5,Final
+2026-05-04,Cleveland Guardians,Kansas City Royals,Tanner Bibee,Michael Wacha,2,6,Final
+2026-05-04,Milwaukee Brewers,St. Louis Cardinals,Chad Patrick,Kyle Leahy,3,6,Final
+2026-05-04,Los Angeles Dodgers,Houston Astros,Yoshinobu Yamamoto,Steven Okert,8,3,Final
+2026-05-04,Chicago White Sox,Los Angeles Angels,Davis Martin,José Soriano,6,0,Final
+2026-05-04,Atlanta Braves,Seattle Mariners,JR Ritchie,Logan Gilbert,4,5,Final
+2026-05-04,San Diego Padres,San Francisco Giants,Randy Vásquez,Trevor McDonald,2,3,Final
+2026-05-05,Boston Red Sox,Detroit Tigers,Jovani Morán,Framber Valdez,10,3,Final
+2026-05-05,Toronto Blue Jays,Tampa Bay Rays,Kevin Gausman,Drew Rasmussen,3,4,Final
+2026-05-05,Athletics,Philadelphia Phillies,Luis Severino,Cristopher Sánchez,1,9,Final
+2026-05-05,Baltimore Orioles,Miami Marlins,Chris Bassitt,Sandy Alcantara,9,7,Final
+2026-05-05,Minnesota Twins,Washington Nationals,Taj Bradley,Cade Cavalli,11,3,Final
+2026-05-05,Texas Rangers,New York Yankees,Jacob deGrom,Elmer Rodríguez,4,7,Final
+2026-05-05,Cincinnati Reds,Chicago Cubs,Andrew Abbott,Jameson Taillon,2,3,Final
+2026-05-05,Cleveland Guardians,Kansas City Royals,Gavin Williams,Stephen Kolek,3,5,Final
+2026-05-05,Los Angeles Dodgers,Houston Astros,Shohei Ohtani,Peter Lambert,1,2,Final
+2026-05-05,Chicago White Sox,Los Angeles Angels,Erick Fedde,Sam Aldegheri,3,4,Final
+2026-05-05,Pittsburgh Pirates,Arizona Diamondbacks,Bubba Chandler,Eduardo Rodriguez,0,9,Final
+2026-05-05,Atlanta Braves,Seattle Mariners,Bryce Elder,George Kirby,3,2,Final
+2026-05-05,San Diego Padres,San Francisco Giants,Walker Buehler,Logan Webb,10,5,Final
+2026-05-05,Milwaukee Brewers,St. Louis Cardinals,Brandon Sproat,Andre Pallante,0,0,Postponed
+2026-05-05,New York Mets,Colorado Rockies,Freddy Peralta,Michael Lorenzen,0,0,Postponed
+2026-05-06,Toronto Blue Jays,Tampa Bay Rays,Patrick Corbin,Shane McClanahan,0,3,Final
+2026-05-06,Milwaukee Brewers,St. Louis Cardinals,Brandon Sproat,Andre Pallante,6,2,Final
+2026-05-06,Los Angeles Dodgers,Houston Astros,Tyler Glasnow,Lance McCullers Jr.,12,2,Final
+2026-05-06,San Diego Padres,San Francisco Giants,Bradgley Rodriguez,Adrian Houser,5,1,Final
+2026-05-06,Chicago White Sox,Los Angeles Angels,Noah Schultz,Walbert Ureña,2,8,Final
+2026-05-06,Atlanta Braves,Seattle Mariners,Martín Pérez,Bryan Woo,1,3,Final
+2026-05-06,Boston Red Sox,Detroit Tigers,Sonny Gray,Jack Flaherty,4,0,Final
+2026-05-06,Athletics,Philadelphia Phillies,Jeffrey Springs,Zack Wheeler,3,6,Final
+2026-05-06,Baltimore Orioles,Miami Marlins,Brandon Young,Eury Pérez,7,4,Final
+2026-05-06,Minnesota Twins,Washington Nationals,Bailey Ober,Miles Mikolas,2,15,Final
+2026-05-06,Texas Rangers,New York Yankees,Nathan Eovaldi,Will Warren,6,1,Final
+2026-05-06,Cincinnati Reds,Chicago Cubs,Brady Singer,Colin Rea,6,7,Final
+2026-05-06,Cleveland Guardians,Kansas City Royals,Joey Cantillo,Cole Ragans,3,1,Final
+2026-05-06,New York Mets,Colorado Rockies,Freddy Peralta,Michael Lorenzen,10,5,Final
+2026-05-06,Pittsburgh Pirates,Arizona Diamondbacks,Paul Skenes,Michael Soroka,1,0,Final
+2026-05-07,Texas Rangers,New York Yankees,MacKenzie Gore,Paul Blackburn,2,9,Final
+2026-05-07,Minnesota Twins,Washington Nationals,Simeon Woods Richardson,Jake Irvin,5,7,Final
+2026-05-07,Cleveland Guardians,Kansas City Royals,Slade Cecconi,Seth Lugo,8,5,Final
+2026-05-07,Cincinnati Reds,Chicago Cubs,Rhett Lowder,Shota Imanaga,3,8,Final
+2026-05-07,New York Mets,Colorado Rockies,Christian Scott,Jose Quintana,2,6,Final
+2026-05-07,Pittsburgh Pirates,Arizona Diamondbacks,Mitch Keller,Zac Gallen,4,2,Final
+2026-05-07,Athletics,Philadelphia Phillies,J.T. Ginn,Andrew Painter,12,1,Final
+2026-05-07,Baltimore Orioles,Miami Marlins,Cade Povich,Max Meyer,3,4,Final
+2026-05-07,Tampa Bay Rays,Boston Red Sox,Griffin Jax,Jake Bennett,8,4,Final
+2026-05-07,St. Louis Cardinals,San Diego Padres,Matthew Liberatore,Michael King,2,1,Final
+2026-05-08,Houston Astros,Cincinnati Reds,Mike Burrows,Nick Lodolo,10,0,Final
+2026-05-08,Colorado Rockies,Philadelphia Phillies,Chase Dollander,Jesús Luzardo,9,7,Final
+2026-05-08,Athletics,Baltimore Orioles,Jacob Lopez,Kyle Bradish,4,3,Final
+2026-05-08,Los Angeles Angels,Toronto Blue Jays,Reid Detmers,Dylan Cease,0,2,Final
+2026-05-08,Tampa Bay Rays,Boston Red Sox,Jesse Scholtens,Connelly Early,0,2,Final
+2026-05-08,Washington Nationals,Miami Marlins,Foster Griffin,Robby Snelling,3,2,Final
+2026-05-08,Minnesota Twins,Cleveland Guardians,Connor Prielipp,Parker Messick,4,6,Final
+2026-05-08,Detroit Tigers,Kansas City Royals,Keider Montero,Kris Bubic,3,4,Final
+2026-05-08,Seattle Mariners,Chicago White Sox,Emerson Hancock,Sean Burke,12,8,Final
+2026-05-08,New York Yankees,Milwaukee Brewers,Max Fried,Jacob Misiorowski,0,6,Final
+2026-05-08,Chicago Cubs,Texas Rangers,Ben Brown,Kumar Rocker,7,1,Final
+2026-05-08,New York Mets,Arizona Diamondbacks,Nolan McLean,Ryne Nelson,3,1,Final
+2026-05-08,St. Louis Cardinals,San Diego Padres,Michael McGreevy,Griffin Canning,6,0,Final
+2026-05-08,Atlanta Braves,Los Angeles Dodgers,Chris Sale,Emmet Sheehan,1,3,Final
+2026-05-08,Pittsburgh Pirates,San Francisco Giants,Carmen Mlodzinski,Robbie Ray,2,5,Final
+2026-05-09,Los Angeles Angels,Toronto Blue Jays,Jack Kochanowicz,Trey Yesavage,1,14,Final
+2026-05-09,Athletics,Baltimore Orioles,Aaron Civale,Shane Baz,6,2,Final
+2026-05-09,Houston Astros,Cincinnati Reds,Spencer Arrighetti,Chase Burns,1,3,Final
+2026-05-09,Washington Nationals,Miami Marlins,Richard Lovelady,Janson Junk,7,8,Final
+2026-05-09,Colorado Rockies,Philadelphia Phillies,Kyle Freeland,Aaron Nola,3,9,Final
+2026-05-09,Minnesota Twins,Cleveland Guardians,Joe Ryan,Tanner Bibee,2,1,Final
+2026-05-09,Chicago Cubs,Texas Rangers,Edward Cabrera,Jack Leiter,0,6,Final
+2026-05-09,Detroit Tigers,Kansas City Royals,Burch Smith,Michael Wacha,1,5,Final
+2026-05-09,Seattle Mariners,Chicago White Sox,Luis Castillo,Anthony Kay,1,6,Final
+2026-05-09,New York Yankees,Milwaukee Brewers,Cam Schlittler,Kyle Harrison,3,4,Final
+2026-05-09,New York Mets,Arizona Diamondbacks,Clay Holmes,Merrill Kelly,1,2,Final
+2026-05-09,St. Louis Cardinals,San Diego Padres,Dustin May,Randy Vásquez,2,4,Final
+2026-05-09,Pittsburgh Pirates,San Francisco Giants,Braxton Ashcraft,Landen Roupp,13,3,Final
+2026-05-09,Atlanta Braves,Los Angeles Dodgers,Spencer Strider,Blake Snell,7,2,Final
+2026-05-09,Tampa Bay Rays,Boston Red Sox,Nick Martinez,Payton Tolle,0,0,Postponed
+2026-05-10,Washington Nationals,Miami Marlins,Cade Cavalli,Sandy Alcantara,2,5,Final
+2026-05-10,Athletics,Baltimore Orioles,Luis Severino,Keegan Akin,1,2,Final
+2026-05-10,Tampa Bay Rays,Boston Red Sox,Nick Martinez,Payton Tolle,4,1,Final
+2026-05-10,Colorado Rockies,Philadelphia Phillies,Tomoyuki Sugano,Cristopher Sánchez,0,6,Final
+2026-05-10,Los Angeles Angels,Toronto Blue Jays,José Soriano,Spencer Miles,6,1,Final
+2026-05-10,Houston Astros,Cincinnati Reds,Kai-Wei Teng,Andrew Abbott,0,5,Final
+2026-05-10,Minnesota Twins,Cleveland Guardians,Andrew Morris,Gavin Williams,5,4,Final
+2026-05-10,Seattle Mariners,Chicago White Sox,Logan Gilbert,Davis Martin,1,2,Final
+2026-05-10,New York Yankees,Milwaukee Brewers,Carlos Rodón,Logan Henderson,3,4,Final
+2026-05-10,Chicago Cubs,Texas Rangers,Jameson Taillon,Jacob deGrom,0,3,Final
+2026-05-10,Pittsburgh Pirates,San Francisco Giants,Bubba Chandler,Tyler Mahle,6,7,Final
+2026-05-10,New York Mets,Arizona Diamondbacks,Huascar Brazobán,Eduardo Rodriguez,1,5,Final
+2026-05-10,St. Louis Cardinals,San Diego Padres,Kyle Leahy,Walker Buehler,2,3,Final
+2026-05-10,Atlanta Braves,Los Angeles Dodgers,Bryce Elder,Justin Wrobleski,7,2,Final
+2026-05-10,Detroit Tigers,Kansas City Royals,Brenan Hanifee,Noah Cameron,6,3,Final
+2026-05-11,Los Angeles Angels,Cleveland Guardians,Brent Suter,Joey Cantillo,2,7,Final
+2026-05-11,New York Yankees,Baltimore Orioles,Ryan Weathers,Brandon Young,2,3,Final
+2026-05-11,Tampa Bay Rays,Toronto Blue Jays,Drew Rasmussen,Kevin Gausman,8,5,Final
+2026-05-11,Arizona Diamondbacks,Texas Rangers,Michael Soroka,Jakob Junis,1,0,Final
+2026-05-11,Seattle Mariners,Houston Astros,George Kirby,Peter Lambert,3,1,Final
+2026-05-11,San Francisco Giants,Los Angeles Dodgers,Trevor McDonald,Roki Sasaki,9,3,Final
+2026-05-12,Los Angeles Angels,Cleveland Guardians,Walbert Ureña,Slade Cecconi,2,3,Final
+2026-05-12,New York Yankees,Baltimore Orioles,Will Warren,Trevor Rogers,6,2,Final
+2026-05-12,Washington Nationals,Cincinnati Reds,Miles Mikolas,Brady Singer,10,4,Final
+2026-05-12,Colorado Rockies,Pittsburgh Pirates,Michael Lorenzen,Paul Skenes,1,3,Final
+2026-05-12,Philadelphia Phillies,Boston Red Sox,Zack Wheeler,Jovani Morán,2,1,Final
+2026-05-12,Tampa Bay Rays,Toronto Blue Jays,Shane McClanahan,Patrick Corbin,7,6,Final
+2026-05-12,Detroit Tigers,New York Mets,Jack Flaherty,Freddy Peralta,2,10,Final
+2026-05-12,Chicago Cubs,Atlanta Braves,Colin Rea,Grant Holmes,2,5,Final
+2026-05-12,Kansas City Royals,Chicago White Sox,Stephen Kolek,Erick Fedde,5,6,Final
+2026-05-12,Miami Marlins,Minnesota Twins,Eury Pérez,Bailey Ober,0,3,Final
+2026-05-12,San Diego Padres,Milwaukee Brewers,Bradgley Rodriguez,Brandon Sproat,4,6,Final
+2026-05-12,Arizona Diamondbacks,Texas Rangers,Zac Gallen,MacKenzie Gore,4,7,Final
+2026-05-12,Seattle Mariners,Houston Astros,Bryan Woo,Tatsuya Imai,10,2,Final
+2026-05-12,St. Louis Cardinals,Athletics,Andre Pallante,Jeffrey Springs,6,4,Final
+2026-05-12,San Francisco Giants,Los Angeles Dodgers,Adrian Houser,Yoshinobu Yamamoto,6,2,Final
+2026-05-13,New York Yankees,Baltimore Orioles,Max Fried,Kyle Bradish,0,7,Final
+2026-05-13,Los Angeles Angels,Cleveland Guardians,Reid Detmers,Parker Messick,2,4,Final
+2026-05-13,Washington Nationals,Cincinnati Reds,Jake Irvin,Nick Lodolo,8,7,Final
+2026-05-13,Colorado Rockies,Pittsburgh Pirates,Jose Quintana,Mitch Keller,10,4,Final
+2026-05-13,Philadelphia Phillies,Boston Red Sox,Andrew Painter,Sonny Gray,1,3,Final
+2026-05-13,Tampa Bay Rays,Toronto Blue Jays,Griffin Jax,Dylan Cease,3,5,Final
+2026-05-13,Detroit Tigers,New York Mets,Framber Valdez,Christian Scott,2,3,Final
+2026-05-13,Chicago Cubs,Atlanta Braves,Shota Imanaga,JR Ritchie,1,4,Final
+2026-05-13,Kansas City Royals,Chicago White Sox,Seth Lugo,Noah Schultz,5,6,Final
+2026-05-13,Miami Marlins,Minnesota Twins,Max Meyer,Simeon Woods Richardson,9,5,Final
+2026-05-13,San Diego Padres,Milwaukee Brewers,Michael King,Jacob Misiorowski,3,1,Final
+2026-05-13,Arizona Diamondbacks,Texas Rangers,Ryne Nelson,Kumar Rocker,5,6,Final
+2026-05-13,Seattle Mariners,Houston Astros,Bryce Miller,Lance McCullers Jr.,3,4,Final
+2026-05-13,St. Louis Cardinals,Athletics,Matthew Liberatore,J.T. Ginn,2,6,Final
+2026-05-13,San Francisco Giants,Los Angeles Dodgers,Robbie Ray,Shohei Ohtani,0,4,Final
+2026-05-14,Colorado Rockies,Pittsburgh Pirates,Chase Dollander,Mason Montgomery,2,7,Final
+2026-05-14,Washington Nationals,Cincinnati Reds,Foster Griffin,Chase Burns,1,15,Final
+2026-05-14,Detroit Tigers,New York Mets,Keider Montero,Nolan McLean,4,9,Final
+2026-05-14,Miami Marlins,Minnesota Twins,Braxton Garrett,Zebby Matthews,1,9,Final
+2026-05-14,San Diego Padres,Milwaukee Brewers,Griffin Canning,Kyle Harrison,1,7,Final
+2026-05-14,Seattle Mariners,Houston Astros,Luis Castillo,Mike Burrows,8,3,Final
+2026-05-14,St. Louis Cardinals,Athletics,Michael McGreevy,Jacob Lopez,5,4,Final
+2026-05-14,Philadelphia Phillies,Boston Red Sox,Jesús Luzardo,Ranger Suarez,3,1,Final
+2026-05-14,Chicago Cubs,Atlanta Braves,Ben Brown,Chris Sale,2,0,Final
+2026-05-14,Kansas City Royals,Chicago White Sox,Kris Bubic,Anthony Kay,2,6,Final
+2026-05-14,San Francisco Giants,Los Angeles Dodgers,Landen Roupp,Emmet Sheehan,2,5,Final
+2026-05-15,Philadelphia Phillies,Pittsburgh Pirates,Aaron Nola,Braxton Ashcraft,11,9,Final
+2026-05-15,Baltimore Orioles,Washington Nationals,Shane Baz,Zack Littell,2,3,Final
+2026-05-15,Toronto Blue Jays,Detroit Tigers,Trey Yesavage,Brenan Hanifee,2,3,Final
+2026-05-15,Cincinnati Reds,Cleveland Guardians,Andrew Abbott,Tanner Bibee,7,6,Final
+2026-05-15,Miami Marlins,Tampa Bay Rays,Janson Junk,Ian Seymour,2,7,Final
+2026-05-15,Milwaukee Brewers,Minnesota Twins,Coleman Crow,Joe Ryan,3,2,Final
+2026-05-15,Boston Red Sox,Atlanta Braves,Connelly Early,Spencer Strider,2,3,Final
+2026-05-15,New York Yankees,New York Mets,Cam Schlittler,Clay Holmes,5,2,Final
+2026-05-15,Chicago Cubs,Chicago White Sox,Edward Cabrera,Sean Burke,10,5,Final
+2026-05-15,Texas Rangers,Houston Astros,Jack Leiter,Spencer Arrighetti,0,2,Final
+2026-05-15,Kansas City Royals,St. Louis Cardinals,Michael Wacha,Dustin May,4,5,Final
+2026-05-15,Arizona Diamondbacks,Colorado Rockies,Merrill Kelly,Kyle Freeland,9,1,Final
+2026-05-15,Los Angeles Dodgers,Los Angeles Angels,Will Klein,Jack Kochanowicz,6,0,Final
+2026-05-15,San Diego Padres,Seattle Mariners,Randy Vásquez,Emerson Hancock,2,0,Final
+2026-05-15,San Francisco Giants,Athletics,Tyler Mahle,Aaron Civale,2,5,Final
+2026-05-16,Toronto Blue Jays,Detroit Tigers,Mason Fluharty,Casey Mize,2,1,Final
+2026-05-16,Kansas City Royals,St. Louis Cardinals,Noah Cameron,Kyle Leahy,2,4,Final
+2026-05-16,Arizona Diamondbacks,Colorado Rockies,Eduardo Rodriguez,Tomoyuki Sugano,2,4,Final
+2026-05-16,Baltimore Orioles,Washington Nationals,Chris Bassitt,Cade Cavalli,3,13,Final
+2026-05-16,Philadelphia Phillies,Pittsburgh Pirates,Cristopher Sánchez,Bubba Chandler,6,0,Final
+2026-05-16,Miami Marlins,Tampa Bay Rays,Sandy Alcantara,Nick Martinez,10,5,Final
+2026-05-16,Cincinnati Reds,Cleveland Guardians,Chris Paddack,Joey Cantillo,4,7,Final
+2026-05-16,Texas Rangers,Houston Astros,Jacob deGrom,Kai-Wei Teng,1,4,Final
+2026-05-16,Chicago Cubs,Chicago White Sox,Jameson Taillon,Davis Martin,3,8,Final
+2026-05-16,Milwaukee Brewers,Minnesota Twins,Logan Henderson,Connor Prielipp,2,1,Final
+2026-05-16,San Diego Padres,Seattle Mariners,Walker Buehler,Logan Gilbert,7,4,Final
+2026-05-16,Boston Red Sox,Atlanta Braves,Payton Tolle,Bryce Elder,3,2,Final
+2026-05-16,New York Yankees,New York Mets,Carlos Rodón,Huascar Brazobán,3,6,Final
+2026-05-16,Los Angeles Dodgers,Los Angeles Angels,Justin Wrobleski,José Soriano,15,2,Final
+2026-05-16,San Francisco Giants,Athletics,Trevor McDonald,Luis Severino,6,4,Final
+2026-05-17,Miami Marlins,Tampa Bay Rays,Eury Pérez,Drew Rasmussen,3,6,Final
+2026-05-17,Baltimore Orioles,Washington Nationals,Brandon Young,Richard Lovelady,7,3,Final
+2026-05-17,Philadelphia Phillies,Pittsburgh Pirates,Zack Wheeler,Paul Skenes,6,0,Final
+2026-05-17,Boston Red Sox,Atlanta Braves,Brayan Bello,Grant Holmes,1,8,Final
+2026-05-17,Cincinnati Reds,Cleveland Guardians,Brady Singer,Gavin Williams,3,10,Final
+2026-05-17,Toronto Blue Jays,Detroit Tigers,Kevin Gausman,Jack Flaherty,4,1,Final
+2026-05-17,New York Yankees,New York Mets,Elmer Rodríguez,Freddy Peralta,6,7,Final
+2026-05-17,Texas Rangers,Houston Astros,Nathan Eovaldi,Peter Lambert,8,0,Final
+2026-05-17,Chicago Cubs,Chicago White Sox,Colin Rea,Erick Fedde,8,9,Final
+2026-05-17,Milwaukee Brewers,Minnesota Twins,Robert Gasser,Bailey Ober,4,5,Final
+2026-05-17,Kansas City Royals,St. Louis Cardinals,Stephen Kolek,Andre Pallante,2,0,Final
+2026-05-17,Arizona Diamondbacks,Colorado Rockies,Michael Soroka,Michael Lorenzen,8,6,Final
+2026-05-17,San Francisco Giants,Athletics,Adrian Houser,Jeffrey Springs,10,1,Final
+2026-05-17,Los Angeles Dodgers,Los Angeles Angels,Roki Sasaki,Grayson Rodriguez,10,1,Final
+2026-05-17,San Diego Padres,Seattle Mariners,Lucas Giolito,George Kirby,8,3,Final
+2026-05-18,Cleveland Guardians,Detroit Tigers,Slade Cecconi,Framber Valdez,8,2,Final
+2026-05-18,Baltimore Orioles,Tampa Bay Rays,Trevor Rogers,Shane McClanahan,6,16,Final
+2026-05-18,Cincinnati Reds,Philadelphia Phillies,Nick Lodolo,Andrew Painter,4,5,Final
+2026-05-18,Atlanta Braves,Miami Marlins,JR Ritchie,Max Meyer,0,12,Final
+2026-05-18,New York Mets,Washington Nationals,Christian Scott,Jake Irvin,16,7,Final
+2026-05-18,Toronto Blue Jays,New York Yankees,Patrick Corbin,Ryan Weathers,6,7,Final
+2026-05-18,Boston Red Sox,Kansas City Royals,Sonny Gray,Seth Lugo,3,1,Final
+2026-05-18,Houston Astros,Minnesota Twins,Tatsuya Imai,Kendry Rojas,3,6,Final
+2026-05-18,Milwaukee Brewers,Chicago Cubs,Brandon Sproat,Shota Imanaga,9,3,Final
+2026-05-18,Texas Rangers,Colorado Rockies,MacKenzie Gore,Jose Quintana,6,7,Final
+2026-05-18,Athletics,Los Angeles Angels,J.T. Ginn,Walbert Ureña,1,2,Final
+2026-05-18,Los Angeles Dodgers,San Diego Padres,Yoshinobu Yamamoto,Michael King,0,1,Final
+2026-05-18,San Francisco Giants,Arizona Diamondbacks,Robbie Ray,Zac Gallen,2,12,Final
+2026-05-18,Chicago White Sox,Seattle Mariners,Noah Schultz,Bryan Woo,1,6,Final
+2026-05-19,Atlanta Braves,Miami Marlins,Martín Pérez,Braxton Garrett,8,4,Final
+2026-05-19,Cleveland Guardians,Detroit Tigers,Parker Messick,Keider Montero,4,3,Final
+2026-05-19,Baltimore Orioles,Tampa Bay Rays,Kyle Bradish,Griffin Jax,1,4,Final
+2026-05-19,Cincinnati Reds,Philadelphia Phillies,Chase Burns,Jesús Luzardo,4,1,Final
+2026-05-19,New York Mets,Washington Nationals,Nolan McLean,Foster Griffin,6,9,Final
+2026-05-19,Toronto Blue Jays,New York Yankees,Dylan Cease,Will Warren,4,5,Final
+2026-05-19,Boston Red Sox,Kansas City Royals,Ranger Suarez,Bailey Falter,7,1,Final
+2026-05-19,Houston Astros,Minnesota Twins,Jason Alexander,Zebby Matthews,2,1,Final
+2026-05-19,Milwaukee Brewers,Chicago Cubs,Jacob Misiorowski,Ben Brown,5,2,Final
+2026-05-19,Pittsburgh Pirates,St. Louis Cardinals,Mitch Keller,Matthew Liberatore,6,9,Final
+2026-05-19,Texas Rangers,Colorado Rockies,Tyler Alexander,Sammy Peralta,10,0,Final
+2026-05-19,Athletics,Los Angeles Angels,Jacob Lopez,Reid Detmers,14,6,Final
+2026-05-19,Los Angeles Dodgers,San Diego Padres,Emmet Sheehan,Griffin Canning,5,4,Final
+2026-05-19,San Francisco Giants,Arizona Diamondbacks,Landen Roupp,Ryne Nelson,3,5,Final
+2026-05-19,Chicago White Sox,Seattle Mariners,Anthony Kay,Bryce Miller,2,1,Final
+2026-05-20,Cincinnati Reds,Philadelphia Phillies,Andrew Abbott,Aaron Nola,9,4,Final
+2026-05-20,Baltimore Orioles,Tampa Bay Rays,Shane Baz,Steven Matz,3,5,Final
+2026-05-20,Houston Astros,Minnesota Twins,Mike Burrows,Joe Ryan,1,4,Final
+2026-05-20,Texas Rangers,Colorado Rockies,Jack Leiter,Kyle Freeland,5,4,Final
+2026-05-20,San Francisco Giants,Arizona Diamondbacks,Tyler Mahle,Merrill Kelly,3,6,Final
+2026-05-20,Chicago White Sox,Seattle Mariners,Sean Burke,Emerson Hancock,4,5,Final
+2026-05-20,Cleveland Guardians,Detroit Tigers,Tanner Bibee,,3,2,Final
+2026-05-20,Atlanta Braves,Miami Marlins,Chris Sale,Janson Junk,9,1,Final
+2026-05-20,New York Mets,Washington Nationals,Zac Thornton,Zack Littell,4,8,Final
+2026-05-20,Toronto Blue Jays,New York Yankees,Trey Yesavage,Cam Schlittler,2,1,Final
+2026-05-20,Boston Red Sox,Kansas City Royals,Connelly Early,Michael Wacha,4,3,Final
+2026-05-20,Milwaukee Brewers,Chicago Cubs,Kyle Harrison,Edward Cabrera,5,0,Final
+2026-05-20,Pittsburgh Pirates,St. Louis Cardinals,Carmen Mlodzinski,Michael McGreevy,7,0,Final
+2026-05-20,Los Angeles Dodgers,San Diego Padres,Shohei Ohtani,Randy Vásquez,4,0,Final
+2026-05-20,Athletics,Los Angeles Angels,Aaron Civale,Jack Kochanowicz,6,5,Final
+2026-05-21,Cleveland Guardians,Detroit Tigers,Joey Cantillo,Casey Mize,3,1,Final
+2026-05-21,Pittsburgh Pirates,St. Louis Cardinals,Braxton Ashcraft,Dustin May,6,2,Final
+2026-05-21,New York Mets,Washington Nationals,David Peterson,Cade Cavalli,2,1,Final
+2026-05-21,Atlanta Braves,Miami Marlins,Spencer Strider,Sandy Alcantara,9,3,Final
+2026-05-21,Toronto Blue Jays,New York Yankees,Braydon Fisher,Carlos Rodón,2,0,Final
+2026-05-21,Athletics,Los Angeles Angels,Luis Severino,José Soriano,3,2,Final
+2026-05-21,Colorado Rockies,Arizona Diamondbacks,Zach Agnos,Eduardo Rodriguez,1,2,Final
+2026-05-22,Houston Astros,Chicago Cubs,Spencer Arrighetti,Jameson Taillon,4,2,Final
+2026-05-22,Cleveland Guardians,Philadelphia Phillies,Gavin Williams,Cristopher Sánchez,1,0,Final
+2026-05-22,Tampa Bay Rays,New York Yankees,Nick Martinez,Gerrit Cole,4,2,Final
+2026-05-22,Pittsburgh Pirates,Toronto Blue Jays,Bubba Chandler,Kevin Gausman,2,6,Final
+2026-05-22,Minnesota Twins,Boston Red Sox,Connor Prielipp,Payton Tolle,8,6,Final
+2026-05-22,New York Mets,Miami Marlins,Tobias Myers,Eury Pérez,1,2,Final
+2026-05-22,Detroit Tigers,Baltimore Orioles,Jack Flaherty,Keegan Akin,4,7,Final
+2026-05-22,Washington Nationals,Atlanta Braves,Richard Lovelady,Bryce Elder,4,5,Final
+2026-05-22,Seattle Mariners,Kansas City Royals,Logan Gilbert,Noah Cameron,2,0,Final
+2026-05-22,Los Angeles Dodgers,Milwaukee Brewers,Justin Wrobleski,Logan Henderson,1,5,Final
+2026-05-22,Texas Rangers,Los Angeles Angels,Jacob deGrom,Grayson Rodriguez,6,9,Final
+2026-05-22,Colorado Rockies,Arizona Diamondbacks,Tomoyuki Sugano,Michael Soroka,3,2,Final
+2026-05-22,Athletics,San Diego Padres,Jeffrey Springs,Walker Buehler,3,7,Final
+2026-05-22,Chicago White Sox,San Francisco Giants,Davis Martin,Trevor McDonald,9,4,Final
+2026-05-22,St. Louis Cardinals,Cincinnati Reds,Kyle Leahy,Chris Paddack,0,0,Postponed
+2026-05-23,St. Louis Cardinals,Cincinnati Reds,Andre Pallante,Chris Paddack,8,1,Final
+2026-05-23,St. Louis Cardinals,Cincinnati Reds,Kyle Leahy,Chase Petty,6,7,Final
+2026-05-23,Houston Astros,Chicago Cubs,Kai-Wei Teng,Colin Rea,3,0,Final
+2026-05-23,Pittsburgh Pirates,Toronto Blue Jays,Paul Skenes,Patrick Corbin,2,5,Final
+2026-05-23,Cleveland Guardians,Philadelphia Phillies,Slade Cecconi,Zack Wheeler,0,3,Final
+2026-05-23,Chicago White Sox,San Francisco Giants,Bryan Hudson,Adrian Houser,3,10,Final
+2026-05-23,Seattle Mariners,Kansas City Royals,George Kirby,Stephen Kolek,0,5,Final
+2026-05-23,Minnesota Twins,Boston Red Sox,Taj Bradley,Jovani Morán,4,2,Final
+2026-05-23,Washington Nationals,Atlanta Braves,Jake Irvin,Grant Holmes,2,0,Final
+2026-05-23,New York Mets,Miami Marlins,Freddy Peralta,Max Meyer,1,4,Final
+2026-05-23,Los Angeles Dodgers,Milwaukee Brewers,Roki Sasaki,Robert Gasser,11,3,Final
+2026-05-23,Athletics,San Diego Padres,J.T. Ginn,Lucas Giolito,0,2,Final
+2026-05-23,Texas Rangers,Los Angeles Angels,Nathan Eovaldi,Walbert Ureña,2,5,Final
+2026-05-23,Colorado Rockies,Arizona Diamondbacks,Michael Lorenzen,Zac Gallen,4,5,Final
+2026-05-23,Tampa Bay Rays,New York Yankees,Drew Rasmussen,Ryan Weathers,0,0,Postponed
+2026-05-23,Detroit Tigers,Baltimore Orioles,Framber Valdez,Brandon Young,0,0,Postponed
+2026-05-24,Pittsburgh Pirates,Toronto Blue Jays,Mitch Keller,Dylan Cease,4,1,Final
+2026-05-24,Detroit Tigers,Baltimore Orioles,Framber Valdez,Brandon Young,3,5,Final
+2026-05-24,Detroit Tigers,Baltimore Orioles,Troy Melton,Trevor Rogers,4,1,Final
+2026-05-24,Minnesota Twins,Boston Red Sox,Bailey Ober,Sonny Gray,6,5,Final
+2026-05-24,Cleveland Guardians,Philadelphia Phillies,Parker Messick,Andrew Painter,3,1,Final
+2026-05-24,Tampa Bay Rays,New York Yankees,Drew Rasmussen,Ryan Weathers,0,2,Final
+2026-05-24,New York Mets,Miami Marlins,Christian Scott,Tyler Phillips,0,4,Final
+2026-05-24,Seattle Mariners,Kansas City Royals,Bryan Woo,Seth Lugo,6,8,Final
+2026-05-24,Los Angeles Dodgers,Milwaukee Brewers,Yoshinobu Yamamoto,Brandon Sproat,5,1,Final
+2026-05-24,Houston Astros,Chicago Cubs,Peter Lambert,Shota Imanaga,8,5,Final
+2026-05-24,Chicago White Sox,San Francisco Giants,Noah Schultz,Robbie Ray,5,8,Final
+2026-05-24,Colorado Rockies,Arizona Diamondbacks,Jose Quintana,Ryne Nelson,1,9,Final
+2026-05-24,Athletics,San Diego Padres,Luis Medina,Michael King,5,2,Final
+2026-05-24,Washington Nationals,Atlanta Braves,Foster Griffin,Martín Pérez,2,1,Final
+2026-05-24,Texas Rangers,Los Angeles Angels,MacKenzie Gore,Reid Detmers,1,2,Final
+2026-05-24,St. Louis Cardinals,Cincinnati Reds,Brycen Mautz,Brady Singer,0,0,Postponed
+2026-05-25,Chicago Cubs,Pittsburgh Pirates,Ben Brown,Carmen Mlodzinski,1,2,Final
+2026-05-25,Tampa Bay Rays,Baltimore Orioles,Shane McClanahan,Kyle Bradish,7,9,Final
+2026-05-25,Minnesota Twins,Chicago White Sox,Zebby Matthews,Anthony Kay,1,3,Final
+2026-05-25,St. Louis Cardinals,Milwaukee Brewers,Matthew Liberatore,Jacob Misiorowski,1,5,Final
+2026-05-25,New York Yankees,Kansas City Royals,Will Warren,Michael Wacha,4,3,Final
+2026-05-25,Cincinnati Reds,New York Mets,Nick Lodolo,Nolan McLean,7,2,Final
+2026-05-25,Arizona Diamondbacks,San Francisco Giants,Merrill Kelly,Landen Roupp,6,2,Final
+2026-05-25,Washington Nationals,Cleveland Guardians,PJ Poulin,Tanner Bibee,10,2,Final
+2026-05-25,Philadelphia Phillies,San Diego Padres,Jesús Luzardo,Griffin Canning,3,0,Final
+2026-05-25,Houston Astros,Texas Rangers,Tatsuya Imai,Kumar Rocker,9,0,Final
+2026-05-25,Miami Marlins,Toronto Blue Jays,Janson Junk,Trey Yesavage,8,2,Final
+2026-05-25,Colorado Rockies,Los Angeles Dodgers,Tanner Gordon,Emmet Sheehan,3,5,Final
+2026-05-25,Seattle Mariners,Athletics,Luis Castillo,Aaron Civale,9,2,Final
+2026-05-26,Washington Nationals,Cleveland Guardians,Cade Cavalli,Joey Cantillo,6,3,Final
+2026-05-26,Tampa Bay Rays,Baltimore Orioles,Griffin Jax,Shane Baz,1,6,Final
+2026-05-26,Los Angeles Angels,Detroit Tigers,Jack Kochanowicz,Keider Montero,10,6,Final
+2026-05-26,Chicago Cubs,Pittsburgh Pirates,Jordan Wicks,Mitch Keller,1,12,Final
+2026-05-26,Atlanta Braves,Boston Red Sox,Spencer Strider,Ranger Suarez,7,6,Final
+2026-05-26,Miami Marlins,Toronto Blue Jays,Sandy Alcantara,Braydon Fisher,1,8,Final
+2026-05-26,Cincinnati Reds,New York Mets,Chase Burns,David Peterson,7,2,Final
+2026-05-26,Minnesota Twins,Chicago White Sox,Joe Ryan,Sean Burke,5,3,Final
+2026-05-26,New York Yankees,Kansas City Royals,Cam Schlittler,Bailey Falter,15,1,Final
+2026-05-26,St. Louis Cardinals,Milwaukee Brewers,Michael McGreevy,Kyle Harrison,0,6,Final
+2026-05-26,Houston Astros,Texas Rangers,Jason Alexander,Jack Leiter,7,10,Final
+2026-05-26,Seattle Mariners,Athletics,Emerson Hancock,Gage Jump,4,1,Final
+2026-05-26,Philadelphia Phillies,San Diego Padres,Aaron Nola,Randy Vásquez,4,3,Final
+2026-05-26,Arizona Diamondbacks,San Francisco Giants,Eduardo Rodriguez,Tyler Mahle,7,5,Final
+2026-05-26,Colorado Rockies,Los Angeles Dodgers,Kyle Freeland,Eric Lauer,6,15,Final
+2026-05-27,Miami Marlins,Toronto Blue Jays,Eury Pérez,Kevin Gausman,1,2,Final
+2026-05-27,Washington Nationals,Cleveland Guardians,PJ Poulin,Gavin Williams,2,3,Final
+2026-05-27,St. Louis Cardinals,Milwaukee Brewers,Dustin May,Chad Patrick,1,2,Final
+2026-05-27,Seattle Mariners,Athletics,Logan Gilbert,Jeffrey Springs,9,1,Final
+2026-05-27,Arizona Diamondbacks,San Francisco Giants,Michael Soroka,Trevor McDonald,3,2,Final
+2026-05-27,Philadelphia Phillies,San Diego Padres,Cristopher Sánchez,Walker Buehler,3,0,Final
+2026-05-27,Tampa Bay Rays,Baltimore Orioles,Steven Matz,Trey Gibson,2,11,Final
+2026-05-27,Los Angeles Angels,Detroit Tigers,José Soriano,Casey Mize,0,4,Final
+2026-05-27,Chicago Cubs,Pittsburgh Pirates,Jameson Taillon,Braxton Ashcraft,10,4,Final
+2026-05-27,Atlanta Braves,Boston Red Sox,Bryce Elder,Connelly Early,0,8,Final
+2026-05-27,Cincinnati Reds,New York Mets,Andrew Abbott,Huascar Brazobán,2,4,Final
+2026-05-27,Minnesota Twins,Chicago White Sox,Connor Prielipp,David Sandlin,2,15,Final
+2026-05-27,New York Yankees,Kansas City Royals,Gerrit Cole,Noah Cameron,7,0,Final
+2026-05-27,Houston Astros,Texas Rangers,Mike Burrows,Jacob deGrom,4,3,Final
+2026-05-27,Colorado Rockies,Los Angeles Dodgers,Tomoyuki Sugano,Shohei Ohtani,1,4,Final
+2026-05-28,Los Angeles Angels,Detroit Tigers,Grayson Rodriguez,Jack Flaherty,7,1,Final
+2026-05-28,Minnesota Twins,Chicago White Sox,Simeon Woods Richardson,Davis Martin,2,6,Final
+2026-05-28,Atlanta Braves,Boston Red Sox,Chris Sale,Payton Tolle,10,2,Final
+2026-05-28,Toronto Blue Jays,Baltimore Orioles,Patrick Corbin,Chris Bassitt,2,1,Final
+2026-05-28,Chicago Cubs,Pittsburgh Pirates,Colin Rea,Paul Skenes,7,2,Final
+2026-05-28,Houston Astros,Texas Rangers,Spencer Arrighetti,Nathan Eovaldi,5,1,Final
+2026-05-29,Atlanta Braves,Cincinnati Reds,Grant Holmes,Chris Paddack,8,3,Final
+2026-05-29,San Diego Padres,Washington Nationals,Lucas Giolito,Paxton Schultz,7,5,Final
+2026-05-29,Minnesota Twins,Pittsburgh Pirates,Taj Bradley,Jared Jones,5,6,Final
+2026-05-29,Toronto Blue Jays,Baltimore Orioles,Adam Macko,Trevor Rogers,6,5,Final
+2026-05-29,Boston Red Sox,Cleveland Guardians,Tyler Samaniego,Slade Cecconi,3,4,Final
+2026-05-29,Los Angeles Angels,Tampa Bay Rays,Walbert Ureña,Nick Martinez,5,8,Final
+2026-05-29,Miami Marlins,New York Mets,Max Meyer,Freddy Peralta,7,9,Final
+2026-05-29,Chicago Cubs,St. Louis Cardinals,Shota Imanaga,Andre Pallante,5,6,Final
+2026-05-29,Detroit Tigers,Chicago White Sox,Troy Melton,Erick Fedde,3,4,Final
+2026-05-29,Kansas City Royals,Texas Rangers,Stephen Kolek,MacKenzie Gore,1,9,Final
+2026-05-29,Milwaukee Brewers,Houston Astros,Coleman Crow,Kai-Wei Teng,5,4,Final
+2026-05-29,San Francisco Giants,Colorado Rockies,Logan Webb,Michael Lorenzen,6,8,Final
+2026-05-29,New York Yankees,Athletics,Carlos Rodón,Luis Severino,8,2,Final
+2026-05-29,Arizona Diamondbacks,Seattle Mariners,Zac Gallen,George Kirby,6,7,Final
+2026-05-29,Philadelphia Phillies,Los Angeles Dodgers,Zack Wheeler,Justin Wrobleski,2,4,Final
+2026-05-30,Detroit Tigers,Chicago White Sox,Framber Valdez,Anthony Kay,1,7,Final
+2026-05-30,San Diego Padres,Washington Nationals,Michael King,Foster Griffin,4,9,Final
+2026-05-30,Kansas City Royals,Texas Rangers,Seth Lugo,Kumar Rocker,6,7,Final
+2026-05-30,Toronto Blue Jays,Baltimore Orioles,Trey Yesavage,Brandon Young,5,6,Final
+2026-05-30,Minnesota Twins,Pittsburgh Pirates,Bailey Ober,Mitch Keller,9,10,Final
+2026-05-30,Boston Red Sox,Cleveland Guardians,Sonny Gray,Parker Messick,9,1,Final
+2026-05-30,Los Angeles Angels,Tampa Bay Rays,Reid Detmers,Drew Rasmussen,14,3,Final
+2026-05-30,Miami Marlins,New York Mets,Tyler Phillips,Christian Scott,1,6,Final
+2026-05-30,Milwaukee Brewers,Houston Astros,Brandon Sproat,Peter Lambert,2,9,Final
+2026-05-30,Chicago Cubs,St. Louis Cardinals,Ben Brown,Kyle Leahy,6,1,Final
+2026-05-30,Atlanta Braves,Cincinnati Reds,Martín Pérez,Brady Singer,5,2,Final
+2026-05-30,San Francisco Giants,Colorado Rockies,Adrian Houser,Ryan Feltner,3,8,Final
+2026-05-30,New York Yankees,Athletics,Ryan Weathers,J.T. Ginn,4,6,Final
+2026-05-30,Arizona Diamondbacks,Seattle Mariners,Ryne Nelson,Bryan Woo,1,5,Final
+2026-05-30,Philadelphia Phillies,Los Angeles Dodgers,Jesús Luzardo,Roki Sasaki,4,3,Final
+2026-05-31,Toronto Blue Jays,Baltimore Orioles,Spencer Miles,Kyle Bradish,5,9,Final
+2026-05-31,San Diego Padres,Washington Nationals,Griffin Canning,Zack Littell,2,4,Final
+2026-05-31,Minnesota Twins,Pittsburgh Pirates,Zebby Matthews,Braxton Ashcraft,3,9,Final
+2026-05-31,Boston Red Sox,Cleveland Guardians,Ranger Suarez,Tanner Bibee,9,4,Final
+2026-05-31,Los Angeles Angels,Tampa Bay Rays,Jack Kochanowicz,Shane McClanahan,2,5,Final
+2026-05-31,Atlanta Braves,Cincinnati Reds,Spencer Strider,Nick Lodolo,4,6,Final
+2026-05-31,Miami Marlins,New York Mets,John King,Nolan McLean,1,10,Final
+2026-05-31,Detroit Tigers,Chicago White Sox,Keider Montero,Sean Burke,1,2,Final
+2026-05-31,Milwaukee Brewers,Houston Astros,Jacob Misiorowski,Tatsuya Imai,2,0,Final
+2026-05-31,Kansas City Royals,Texas Rangers,Michael Wacha,Jack Leiter,3,6,Final
+2026-05-31,San Francisco Giants,Colorado Rockies,Robbie Ray,Tanner Gordon,19,6,Final
+2026-05-31,New York Yankees,Athletics,Will Warren,Jacob Lopez,13,8,Final
+2026-05-31,Arizona Diamondbacks,Seattle Mariners,Merrill Kelly,Bryce Miller,2,3,Final
+2026-05-31,Philadelphia Phillies,Los Angeles Dodgers,Andrew Painter,Yoshinobu Yamamoto,1,9,Final
+2026-05-31,Chicago Cubs,St. Louis Cardinals,Jordan Wicks,Matthew Liberatore,1,5,Final
+2026-06-01,Detroit Tigers,Tampa Bay Rays,Ty Madden,Griffin Jax,10,9,Final
+2026-06-01,Miami Marlins,Washington Nationals,Sandy Alcantara,Cade Cavalli,7,3,Final
+2026-06-01,Kansas City Royals,Cincinnati Reds,Luinder Avila,Lyon Richardson,9,2,Final
+2026-06-01,Chicago White Sox,Minnesota Twins,David Sandlin,Joe Ryan,6,9,Final
+2026-06-01,San Francisco Giants,Milwaukee Brewers,Landen Roupp,Shane Drohan,2,16,Final
+2026-06-01,Texas Rangers,St. Louis Cardinals,Jacob deGrom,Michael McGreevy,2,1,Final
+2026-06-01,Colorado Rockies,Los Angeles Angels,Kyle Freeland,José Soriano,9,8,Final
+2026-06-01,Los Angeles Dodgers,Arizona Diamondbacks,Emmet Sheehan,Eduardo Rodriguez,1,4,Final
+2026-06-01,New York Mets,Seattle Mariners,Austin Warren,Emerson Hancock,2,3,Final
+2026-06-02,Detroit Tigers,Tampa Bay Rays,Jack Flaherty,Steven Matz,8,0,Final
+2026-06-02,San Diego Padres,Philadelphia Phillies,Randy Vásquez,Aaron Nola,2,3,Final
+2026-06-02,Baltimore Orioles,Boston Red Sox,Shane Baz,Connelly Early,4,2,Final
+2026-06-02,Miami Marlins,Washington Nationals,Lake Bachar,Richard Lovelady,7,3,Final
+2026-06-02,Cleveland Guardians,New York Yankees,Joey Cantillo,Cam Schlittler,9,4,Final
+2026-06-02,Kansas City Royals,Cincinnati Reds,Noah Cameron,Andrew Abbott,3,4,Final
+2026-06-02,Toronto Blue Jays,Atlanta Braves,Kevin Gausman,Bryce Elder,3,4,Final
+2026-06-02,Chicago White Sox,Minnesota Twins,Davis Martin,Connor Prielipp,4,6,Final
+2026-06-02,San Francisco Giants,Milwaukee Brewers,Trevor McDonald,Kyle Harrison,3,8,Final
+2026-06-02,Texas Rangers,St. Louis Cardinals,Nathan Eovaldi,Dustin May,7,4,Final
+2026-06-02,Athletics,Chicago Cubs,Gage Jump,Jameson Taillon,2,1,Final
+2026-06-02,Pittsburgh Pirates,Houston Astros,Bubba Chandler,Mike Burrows,10,6,Final
+2026-06-02,Colorado Rockies,Los Angeles Angels,Tomoyuki Sugano,Grayson Rodriguez,8,2,Final
+2026-06-02,Los Angeles Dodgers,Arizona Diamondbacks,Eric Lauer,Michael Soroka,6,5,Final
+2026-06-02,New York Mets,Seattle Mariners,Huascar Brazobán,Logan Gilbert,3,8,Final
+2026-06-03,Miami Marlins,Washington Nationals,Max Meyer,Andrew Alvarez,4,1,Final
+2026-06-03,Detroit Tigers,Tampa Bay Rays,Troy Melton,Nick Martinez,7,2,Final
+2026-06-03,Chicago White Sox,Minnesota Twins,Erick Fedde,Taj Bradley,8,0,Final
+2026-06-03,New York Mets,Seattle Mariners,Freddy Peralta,George Kirby,7,1,Final
+2026-06-03,San Diego Padres,Philadelphia Phillies,Walker Buehler,Cristopher Sánchez,2,3,Final
+2026-06-03,Baltimore Orioles,Boston Red Sox,Chris Bassitt,Payton Tolle,1,8,Final
+2026-06-03,Cleveland Guardians,New York Yankees,Gavin Williams,Gerrit Cole,5,4,Final
+2026-06-03,Kansas City Royals,Cincinnati Reds,Stephen Kolek,Chase Burns,5,2,Final
+2026-06-03,Toronto Blue Jays,Atlanta Braves,Patrick Corbin,Grant Holmes,3,7,Final
+2026-06-03,San Francisco Giants,Milwaukee Brewers,Logan Webb,Robert Gasser,1,0,Final
+2026-06-03,Texas Rangers,St. Louis Cardinals,MacKenzie Gore,Andre Pallante,3,5,Final
+2026-06-03,Athletics,Chicago Cubs,Jeffrey Springs,Colin Rea,5,4,Final
+2026-06-03,Pittsburgh Pirates,Houston Astros,Paul Skenes,Spencer Arrighetti,9,11,Final
+2026-06-03,Colorado Rockies,Los Angeles Angels,Michael Lorenzen,Walbert Ureña,4,11,Final
+2026-06-03,Los Angeles Dodgers,Arizona Diamondbacks,Shohei Ohtani,Zac Gallen,7,0,Final
+2026-06-04,San Diego Padres,Philadelphia Phillies,Lucas Giolito,Zack Wheeler,4,6,Final
+2026-06-04,Baltimore Orioles,Boston Red Sox,Trevor Rogers,Brayan Bello,8,2,Final
+2026-06-04,Cleveland Guardians,New York Yankees,Slade Cecconi,Carlos Rodón,1,2,Final
+2026-06-04,San Francisco Giants,Milwaukee Brewers,Adrian Houser,Coleman Crow,12,9,Final
+2026-06-04,Toronto Blue Jays,Atlanta Braves,Mason Fluharty,Chris Sale,7,2,Final
+2026-06-04,Kansas City Royals,Minnesota Twins,Seth Lugo,Andrew Morris,8,6,Final
+2026-06-04,Athletics,Chicago Cubs,J.T. Ginn,Shota Imanaga,6,7,Final
+2026-06-04,Pittsburgh Pirates,Houston Astros,Jared Jones,Kai-Wei Teng,5,1,Final
+2026-06-04,Los Angeles Dodgers,Arizona Diamondbacks,Justin Wrobleski,Ryne Nelson,2,3,Final
+2026-06-05,San Francisco Giants,Chicago Cubs,Robbie Ray,Edward Cabrera,18,3,Final
+2026-06-05,Seattle Mariners,Detroit Tigers,Bryan Woo,Framber Valdez,3,7,Final
+2026-06-05,Chicago White Sox,Philadelphia Phillies,Anthony Kay,Jesús Luzardo,6,8,Final
+2026-06-05,Boston Red Sox,New York Yankees,Sonny Gray,Ryan Weathers,5,3,Final
+2026-06-05,Baltimore Orioles,Toronto Blue Jays,Brandon Young,Trey Yesavage,13,3,Final
+2026-06-05,Tampa Bay Rays,Miami Marlins,Drew Rasmussen,Ryan Gusto,6,0,Final
+2026-06-05,Pittsburgh Pirates,Atlanta Braves,Mitch Keller,Martín Pérez,3,6,Final
+2026-06-05,Athletics,Houston Astros,Jack Perkins,Peter Lambert,1,5,Final
+2026-06-05,Cincinnati Reds,St. Louis Cardinals,Brady Singer,Kyle Leahy,3,10,Final
+2026-06-05,Cleveland Guardians,Texas Rangers,Parker Messick,Kumar Rocker,2,3,Final
+2026-06-05,Kansas City Royals,Minnesota Twins,Michael Wacha,Zebby Matthews,3,5,Final
+2026-06-05,Milwaukee Brewers,Colorado Rockies,Brandon Sproat,Ryan Feltner,9,7,Final
+2026-06-05,Washington Nationals,Arizona Diamondbacks,Foster Griffin,Merrill Kelly,14,1,Final
+2026-06-05,New York Mets,San Diego Padres,Christian Scott,Michael King,5,0,Final
+2026-06-05,Los Angeles Angels,Los Angeles Dodgers,Reid Detmers,Roki Sasaki,0,1,Final
+2026-06-06,Seattle Mariners,Detroit Tigers,Bryce Miller,Keider Montero,4,0,Final
+2026-06-06,Kansas City Royals,Minnesota Twins,Luinder Avila,Joe Ryan,3,2,Final
+2026-06-06,Cincinnati Reds,St. Louis Cardinals,Nick Lodolo,Matthew Liberatore,5,6,Final
+2026-06-06,San Francisco Giants,Chicago Cubs,Landen Roupp,Ben Brown,2,3,Final
+2026-06-06,Baltimore Orioles,Toronto Blue Jays,Kyle Bradish,Braydon Fisher,4,6,Final
+2026-06-06,Chicago White Sox,Philadelphia Phillies,Brandon Eisert,Andrew Painter,6,3,Final
+2026-06-06,Washington Nationals,Arizona Diamondbacks,Zack Littell,Eduardo Rodriguez,6,1,Final
+2026-06-06,Athletics,Houston Astros,Kade Morris,Tatsuya Imai,2,13,Final
+2026-06-06,Pittsburgh Pirates,Atlanta Braves,Braxton Ashcraft,Spencer Strider,3,6,Final
+2026-06-06,Tampa Bay Rays,Miami Marlins,Shane McClanahan,Lake Bachar,3,4,Final
+2026-06-06,Cleveland Guardians,Texas Rangers,Tanner Bibee,Jack Leiter,6,0,Final
+2026-06-06,Milwaukee Brewers,Colorado Rockies,Jacob Misiorowski,Zach Agnos,7,1,Final
+2026-06-06,Los Angeles Angels,Los Angeles Dodgers,Jack Kochanowicz,Yoshinobu Yamamoto,2,9,Final
+2026-06-06,New York Mets,San Diego Padres,Nolan McLean,Griffin Canning,2,3,Final
+2026-06-06,Boston Red Sox,New York Yankees,Ranger Suarez,Will Warren,0,0,Postponed
+2026-06-07,Pittsburgh Pirates,Atlanta Braves,Mason Montgomery,Bryce Elder,2,3,Final
+2026-06-07,Chicago White Sox,Philadelphia Phillies,Tyler Gilbert,Aaron Nola,5,9,Final
+2026-06-07,Boston Red Sox,New York Yankees,Ranger Suarez,Cam Schlittler,1,6,Final
+2026-06-07,Baltimore Orioles,Toronto Blue Jays,Shane Baz,Kevin Gausman,4,6,Final
+2026-06-07,Seattle Mariners,Detroit Tigers,Luis Castillo,Jack Flaherty,4,5,Final
+2026-06-07,Tampa Bay Rays,Miami Marlins,Griffin Jax,Sandy Alcantara,1,4,Final
+2026-06-07,Athletics,Houston Astros,Gage Jump,Mike Burrows,5,0,Final
+2026-06-07,Kansas City Royals,Minnesota Twins,Noah Cameron,Connor Prielipp,6,5,Final
+2026-06-07,Cincinnati Reds,St. Louis Cardinals,Rhett Lowder,Michael McGreevy,3,5,Final
+2026-06-07,Cleveland Guardians,Texas Rangers,Joey Cantillo,Jacob deGrom,0,10,Final
+2026-06-07,Milwaukee Brewers,Colorado Rockies,Shane Drohan,Kyle Freeland,12,4,Final
+2026-06-07,Washington Nationals,Arizona Diamondbacks,Cade Cavalli,Michael Soroka,1,5,Final
+2026-06-07,Los Angeles Angels,Los Angeles Dodgers,José Soriano,Emmet Sheehan,13,5,Final
+2026-06-07,New York Mets,San Diego Padres,Huascar Brazobán,Randy Vásquez,7,3,Final
+2026-06-07,San Francisco Giants,Chicago Cubs,Trevor McDonald,Jameson Taillon,2,1,Final
+2026-06-08,Seattle Mariners,Baltimore Orioles,Emerson Hancock,Trey Gibson,6,3,Final
+2026-06-08,Boston Red Sox,Tampa Bay Rays,Connelly Early,Ian Seymour,1,3,Final
+2026-06-08,New York Yankees,Cleveland Guardians,Will Warren,Gavin Williams,7,5,Final
+2026-06-08,Philadelphia Phillies,Toronto Blue Jays,Cristopher Sánchez,Patrick Corbin,5,2,Final
+2026-06-08,Houston Astros,Los Angeles Angels,Spencer Arrighetti,Grayson Rodriguez,5,4,Final
+2026-06-08,Cincinnati Reds,San Diego Padres,Andrew Abbott,Walker Buehler,2,6,Final
+2026-06-08,Washington Nationals,San Francisco Giants,Richard Lovelady,Logan Webb,4,3,Final
+2026-06-08,Milwaukee Brewers,Athletics,Kyle Harrison,Jeffrey Springs,15,14,Final
+2026-06-09,Seattle Mariners,Baltimore Orioles,Logan Gilbert,Trevor Rogers,6,5,Final
+2026-06-09,Los Angeles Dodgers,Pittsburgh Pirates,Eric Lauer,Paul Skenes,12,3,Final
+2026-06-09,Boston Red Sox,Tampa Bay Rays,Payton Tolle,Nick Martinez,3,4,Final
+2026-06-09,Minnesota Twins,Detroit Tigers,Taj Bradley,Troy Melton,4,10,Final
+2026-06-09,Arizona Diamondbacks,Miami Marlins,Zac Gallen,Max Meyer,6,10,Final
+2026-06-09,New York Yankees,Cleveland Guardians,Gerrit Cole,Slade Cecconi,3,2,Final
+2026-06-09,Philadelphia Phillies,Toronto Blue Jays,Zack Wheeler,Dylan Cease,2,3,Final
+2026-06-09,St. Louis Cardinals,New York Mets,Dustin May,Freddy Peralta,7,0,Final
+2026-06-09,Texas Rangers,Kansas City Royals,Nathan Eovaldi,Stephen Kolek,3,5,Final
+2026-06-09,Atlanta Braves,Chicago White Sox,Grant Holmes,Brandon Eisert,5,6,Final
+2026-06-09,Chicago Cubs,Colorado Rockies,Colin Rea,Tomoyuki Sugano,3,7,Final
+2026-06-09,Houston Astros,Los Angeles Angels,Kai-Wei Teng,Walbert Ureña,1,10,Final
+2026-06-09,Cincinnati Reds,San Diego Padres,Chase Burns,Lucas Giolito,5,3,Final
+2026-06-09,Washington Nationals,San Francisco Giants,Andrew Alvarez,Adrian Houser,6,3,Final
+2026-06-09,Milwaukee Brewers,Athletics,Robert Gasser,J.T. Ginn,5,7,Final
+2026-06-10,Boston Red Sox,Tampa Bay Rays,Jake Bennett,Drew Rasmussen,5,7,Final
+2026-06-10,New York Yankees,Cleveland Guardians,Carlos Rodón,Parker Messick,8,4,Final
+2026-06-10,Washington Nationals,San Francisco Giants,Foster Griffin,Robbie Ray,10,11,Final
+2026-06-10,Cincinnati Reds,San Diego Padres,Brady Singer,Michael King,4,5,Final
+2026-06-10,Seattle Mariners,Baltimore Orioles,George Kirby,Brandon Young,2,7,Final
+2026-06-10,Los Angeles Dodgers,Pittsburgh Pirates,Shohei Ohtani,Jared Jones,8,9,Final
+2026-06-10,Minnesota Twins,Detroit Tigers,Mike Paredes,Framber Valdez,6,4,Final
+2026-06-10,Arizona Diamondbacks,Miami Marlins,Ryne Nelson,Ryan Gusto,0,8,Final
+2026-06-10,Philadelphia Phillies,Toronto Blue Jays,Jesús Luzardo,Max Scherzer,7,4,Final
+2026-06-10,St. Louis Cardinals,New York Mets,Andre Pallante,Austin Warren,9,2,Final
+2026-06-10,Texas Rangers,Kansas City Royals,MacKenzie Gore,Seth Lugo,6,4,Final
+2026-06-10,Atlanta Braves,Chicago White Sox,Chris Sale,Davis Martin,1,2,Final
+2026-06-10,Chicago Cubs,Colorado Rockies,Shota Imanaga,Michael Lorenzen,2,3,Final
+2026-06-10,Milwaukee Brewers,Athletics,Brandon Sproat,Jack Perkins,3,4,Final
+2026-06-10,Houston Astros,Los Angeles Angels,Peter Lambert,Reid Detmers,2,3,Final
+2026-06-11,St. Louis Cardinals,New York Mets,Hunter Dobbins,Christian Scott,4,5,Final
+2026-06-11,Minnesota Twins,Detroit Tigers,Zebby Matthews,Keider Montero,0,11,Final
+2026-06-11,Arizona Diamondbacks,Miami Marlins,Merrill Kelly,Tyler Phillips,0,2,Final
+2026-06-11,Texas Rangers,Kansas City Royals,Kumar Rocker,Michael Wacha,4,2,Final
+2026-06-11,Chicago Cubs,Colorado Rockies,Edward Cabrera,Ryan Feltner,9,3,Final
+2026-06-11,Los Angeles Dodgers,Pittsburgh Pirates,Justin Wrobleski,Mitch Keller,8,6,Final
+2026-06-11,Seattle Mariners,Baltimore Orioles,Bryan Woo,Kyle Bradish,5,7,Final
+2026-06-11,Atlanta Braves,Chicago White Sox,Martín Pérez,Anthony Kay,0,0,Postponed
+2026-06-12,Miami Marlins,Pittsburgh Pirates,Sandy Alcantara,Braxton Ashcraft,8,3,Final
+2026-06-12,Seattle Mariners,Washington Nationals,Bryce Miller,Zack Littell,10,2,Final
+2026-06-12,San Diego Padres,Baltimore Orioles,Griffin Canning,Shane Baz,3,7,Final
+2026-06-12,Detroit Tigers,Cleveland Guardians,Jack Flaherty,Tanner Bibee,2,3,Final
+2026-06-12,Texas Rangers,Boston Red Sox,Jack Leiter,Sonny Gray,1,10,Final
+2026-06-12,Arizona Diamondbacks,Cincinnati Reds,Eduardo Rodriguez,Nick Lodolo,5,2,Final
+2026-06-12,Atlanta Braves,New York Mets,Spencer Strider,Nolan McLean,5,7,Final
+2026-06-12,New York Yankees,Toronto Blue Jays,Ryan Weathers,Trey Yesavage,5,8,Final
+2026-06-12,Los Angeles Dodgers,Chicago White Sox,Roki Sasaki,Anthony Kay,2,8,Final
+2026-06-12,Philadelphia Phillies,Milwaukee Brewers,Tanner Banks,Jacob Misiorowski,0,6,Final
+2026-06-12,Houston Astros,Kansas City Royals,Tatsuya Imai,Luinder Avila,10,8,Final
+2026-06-12,St. Louis Cardinals,Minnesota Twins,Kyle Leahy,Joe Ryan,8,9,Final
+2026-06-12,Tampa Bay Rays,Los Angeles Angels,Shane McClanahan,Sam Aldegheri,3,4,Final
+2026-06-12,Colorado Rockies,Athletics,Sean Sullivan,Gage Jump,4,6,Final
+2026-06-12,Chicago Cubs,San Francisco Giants,Javier Assad,Landen Roupp,5,1,Final
+2026-06-13,St. Louis Cardinals,Minnesota Twins,Matthew Liberatore,Connor Prielipp,9,6,Final
+2026-06-13,New York Yankees,Toronto Blue Jays,Cam Schlittler,Kevin Gausman,3,1,Final
+2026-06-13,San Diego Padres,Baltimore Orioles,Randy Vásquez,Trey Gibson,9,3,Final
+2026-06-13,Seattle Mariners,Washington Nationals,Luis Castillo,Cade Cavalli,3,8,Final
+2026-06-13,Miami Marlins,Pittsburgh Pirates,Lake Bachar,Bubba Chandler,2,3,Final
+2026-06-13,Arizona Diamondbacks,Cincinnati Reds,Michael Soroka,Rhett Lowder,1,2,Final
+2026-06-13,Detroit Tigers,Cleveland Guardians,Tarik Skubal,Joey Cantillo,1,3,Final
+2026-06-13,Texas Rangers,Boston Red Sox,Jacob deGrom,Ranger Suarez,3,6,Final
+2026-06-13,Atlanta Braves,New York Mets,Martín Pérez,Sean Manaea,3,1,Final
+2026-06-13,Los Angeles Dodgers,Chicago White Sox,Yoshinobu Yamamoto,Sean Burke,7,1,Final
+2026-06-13,Houston Astros,Kansas City Royals,Mike Burrows,Noah Cameron,8,7,Final
+2026-06-13,Philadelphia Phillies,Milwaukee Brewers,Aaron Nola,Shane Drohan,9,8,Final
+2026-06-13,Colorado Rockies,Athletics,Kyle Freeland,Joey Estes,5,7,Final
+2026-06-13,Chicago Cubs,San Francisco Giants,Ben Brown,Trevor McDonald,6,1,Final
+2026-06-13,Tampa Bay Rays,Los Angeles Angels,Griffin Jax,José Soriano,0,8,Final
+2026-06-14,Miami Marlins,Pittsburgh Pirates,Max Meyer,Paul Skenes,4,2,Final
+2026-06-14,San Diego Padres,Baltimore Orioles,Walker Buehler,Trevor Rogers,5,2,Final
+2026-06-14,Seattle Mariners,Washington Nationals,Emerson Hancock,PJ Poulin,1,10,Final
+2026-06-14,New York Yankees,Toronto Blue Jays,Will Warren,Patrick Corbin,8,3,Final
+2026-06-14,Arizona Diamondbacks,Cincinnati Reds,Zac Gallen,Andrew Abbott,5,3,Final
+2026-06-14,Atlanta Braves,New York Mets,Bryce Elder,Freddy Peralta,1,8,Final
+2026-06-14,Houston Astros,Kansas City Royals,Spencer Arrighetti,Stephen Kolek,0,4,Final
+2026-06-14,St. Louis Cardinals,Minnesota Twins,Michael McGreevy,Taj Bradley,4,5,Final
+2026-06-14,Los Angeles Dodgers,Chicago White Sox,Emmet Sheehan,Bryan Hudson,4,6,Final
+2026-06-14,Philadelphia Phillies,Milwaukee Brewers,Cristopher Sánchez,Kyle Harrison,0,4,Final
+2026-06-14,Colorado Rockies,Athletics,Tomoyuki Sugano,Jeffrey Springs,23,9,Final
+2026-06-14,Chicago Cubs,San Francisco Giants,Ryan Rolison,Logan Webb,1,5,Final
+2026-06-14,Tampa Bay Rays,Los Angeles Angels,Casey Legumina,Grayson Rodriguez,8,3,Final
+2026-06-14,Texas Rangers,Boston Red Sox,Nathan Eovaldi,Connelly Early,6,4,Final
+2026-06-14,Detroit Tigers,Cleveland Guardians,Casey Mize,Gavin Williams,0,0,Postponed
+2026-06-15,Miami Marlins,Philadelphia Phillies,Ryan Gusto,Zack Wheeler,0,7,Final
+2026-06-15,Kansas City Royals,Washington Nationals,Mitch Spence,Andrew Alvarez,3,7,Final
+2026-06-15,New York Mets,Cincinnati Reds,Tobias Myers,Chase Burns,0,12,Final
+2026-06-15,San Diego Padres,St. Louis Cardinals,Wandy Peralta,Dustin May,0,3,Final
+2026-06-15,Colorado Rockies,Chicago Cubs,Michael Lorenzen,Shota Imanaga,4,5,Final
+2026-06-15,Minnesota Twins,Texas Rangers,Mike Paredes,MacKenzie Gore,4,2,Final
+2026-06-15,Detroit Tigers,Houston Astros,Drew Anderson,Kai-Wei Teng,9,3,Final
+2026-06-15,Los Angeles Angels,Arizona Diamondbacks,Walbert Ureña,Ryne Nelson,3,4,Final
+2026-06-15,Pittsburgh Pirates,Athletics,Jared Jones,J.T. Ginn,2,11,Final
+2026-06-15,Tampa Bay Rays,Los Angeles Dodgers,Nick Martinez,Eric Lauer,3,4,Final
+2026-06-16,Miami Marlins,Philadelphia Phillies,Tyler Phillips,Jesús Luzardo,2,8,Final
+2026-06-16,Kansas City Royals,Washington Nationals,Michael Wacha,Foster Griffin,4,6,Final
+2026-06-16,Toronto Blue Jays,Boston Red Sox,Dylan Cease,Payton Tolle,6,1,Final
+2026-06-16,Chicago White Sox,New York Yankees,Davis Martin,Gerrit Cole,2,12,Final
+2026-06-16,New York Mets,Cincinnati Reds,Kodai Senga,Brady Singer,3,5,Final
+2026-06-16,San Francisco Giants,Atlanta Braves,Adrian Houser,Grant Holmes,7,2,Final
+2026-06-16,Cleveland Guardians,Milwaukee Brewers,Slade Cecconi,Robert Gasser,1,2,Final
+2026-06-16,San Diego Padres,St. Louis Cardinals,Michael King,Andre Pallante,2,3,Final
+2026-06-16,Colorado Rockies,Chicago Cubs,Ryan Feltner,Edward Cabrera,5,2,Final
+2026-06-16,Minnesota Twins,Texas Rangers,Zebby Matthews,Kumar Rocker,12,2,Final
+2026-06-16,Detroit Tigers,Houston Astros,Framber Valdez,Hunter Brown,2,4,Final
+2026-06-16,Los Angeles Angels,Arizona Diamondbacks,Reid Detmers,Merrill Kelly,7,0,Final
+2026-06-16,Pittsburgh Pirates,Athletics,Mitch Keller,Jack Perkins,6,5,Final
+2026-06-16,Baltimore Orioles,Seattle Mariners,Brandon Young,Logan Gilbert,1,3,Final
+2026-06-16,Tampa Bay Rays,Los Angeles Dodgers,Drew Rasmussen,Justin Wrobleski,0,1,Final
+2026-06-17,New York Mets,Cincinnati Reds,Nolan McLean,Nick Lodolo,9,1,Final
+2026-06-17,Kansas City Royals,Washington Nationals,Luinder Avila,Zack Littell,6,2,Final
+2026-06-17,Miami Marlins,Philadelphia Phillies,Sandy Alcantara,Andrew Painter,12,4,Final
+2026-06-17,San Francisco Giants,Atlanta Braves,Adrian Houser,Grant Holmes,7,2,Final
+2026-06-17,Detroit Tigers,Houston Astros,Casey Mize,Peter Lambert,2,4,Final
+2026-06-17,San Diego Padres,St. Louis Cardinals,Bradgley Rodriguez,Kyle Leahy,6,1,Final
+2026-06-17,Tampa Bay Rays,Los Angeles Dodgers,Shane McClanahan,Shohei Ohtani,4,5,Final
+2026-06-17,Los Angeles Angels,Arizona Diamondbacks,Sam Aldegheri,Eduardo Rodriguez,1,8,Final
+2026-06-17,Toronto Blue Jays,Boston Red Sox,Braydon Fisher,Jake Bennett,3,0,Final
+2026-06-17,Chicago White Sox,New York Yankees,Anthony Kay,Carlos Rodón,5,10,Final
+2026-06-17,San Francisco Giants,Atlanta Braves,Carson Whisenhunt,JR Ritchie,7,5,Final
+2026-06-17,Cleveland Guardians,Milwaukee Brewers,Gavin Williams,Brandon Sproat,4,9,Final
+2026-06-17,Colorado Rockies,Chicago Cubs,Sean Sullivan,Javier Assad,6,8,Final
+2026-06-17,Pittsburgh Pirates,Athletics,Braxton Ashcraft,Aaron Civale,12,4,Final
+2026-06-17,Baltimore Orioles,Seattle Mariners,Kyle Bradish,George Kirby,5,3,Final
+2026-06-18,Toronto Blue Jays,Boston Red Sox,Trey Yesavage,Sonny Gray,4,3,Final
+2026-06-18,Cleveland Guardians,Milwaukee Brewers,Parker Messick,Shane Drohan,4,2,Final
+2026-06-18,Minnesota Twins,Texas Rangers,Joe Ryan,Jack Leiter,9,3,Final
+2026-06-18,Baltimore Orioles,Seattle Mariners,Shane Baz,Bryan Woo,0,3,Final
+2026-06-18,New York Mets,Philadelphia Phillies,Sean Manaea,Aaron Nola,6,4,Final
+2026-06-18,Chicago White Sox,New York Yankees,Bryan Hudson,Ryan Weathers,5,1,Final
+2026-06-18,St. Louis Cardinals,Kansas City Royals,Matthew Liberatore,Noah Cameron,6,14,Final
+2026-06-18,Los Angeles Angels,Athletics,Ryan Johnson,Gage Jump,0,5,Final
+2026-06-18,San Francisco Giants,Atlanta Braves,Landen Roupp,Martín Pérez,0,0,Postponed
+2026-06-19,Toronto Blue Jays,Chicago Cubs,Kevin Gausman,Ben Brown,2,16,Final
+2026-06-19,Chicago White Sox,Detroit Tigers,Brandon Eisert,Tarik Skubal,3,4,Final
+2026-06-19,Cincinnati Reds,New York Yankees,Rhett Lowder,Cam Schlittler,0,5,Final
+2026-06-19,Washington Nationals,Tampa Bay Rays,PJ Poulin,Griffin Jax,2,5,Final
+2026-06-19,San Francisco Giants,Miami Marlins,Landen Roupp,Lake Bachar,3,4,Final
+2026-06-19,Milwaukee Brewers,Atlanta Braves,Jacob Misiorowski,Martín Pérez,2,3,Final
+2026-06-19,San Diego Padres,Texas Rangers,Randy Vásquez,Jacob deGrom,7,9,Final
+2026-06-19,Cleveland Guardians,Houston Astros,Tanner Bibee,Tatsuya Imai,3,9,Final
+2026-06-19,St. Louis Cardinals,Kansas City Royals,Michael McGreevy,Seth Lugo,5,6,Final
+2026-06-19,Pittsburgh Pirates,Colorado Rockies,Bubba Chandler,Kyle Freeland,3,4,Final
+2026-06-19,Los Angeles Angels,Athletics,José Soriano,Jeffrey Springs,11,12,Final
+2026-06-19,Minnesota Twins,Arizona Diamondbacks,Connor Prielipp,Michael Soroka,5,9,Final
+2026-06-19,Baltimore Orioles,Los Angeles Dodgers,Trey Gibson,Roki Sasaki,5,6,Final
+2026-06-19,Boston Red Sox,Seattle Mariners,Ranger Suarez,Bryce Miller,6,2,Final
+2026-06-20,Chicago White Sox,Detroit Tigers,Sean Newcomb,Troy Melton,1,4,Final
+2026-06-20,Cincinnati Reds,New York Yankees,Andrew Abbott,Will Warren,10,2,Final
+2026-06-20,Toronto Blue Jays,Chicago Cubs,Patrick Corbin,Colin Rea,8,6,Final
+2026-06-20,San Diego Padres,Texas Rangers,Walker Buehler,MacKenzie Gore,6,4,Final
+2026-06-20,Washington Nationals,Tampa Bay Rays,Cade Cavalli,Ian Seymour,4,3,Final
+2026-06-20,San Francisco Giants,Miami Marlins,Trevor McDonald,Max Meyer,3,6,Final
+2026-06-20,Milwaukee Brewers,Atlanta Braves,Kyle Harrison,Chris Sale,3,4,Final
+2026-06-20,Cleveland Guardians,Houston Astros,Joey Cantillo,Spencer Arrighetti,8,1,Final
+2026-06-20,New York Mets,Philadelphia Phillies,Freddy Peralta,Cristopher Sánchez,3,15,Final
+2026-06-20,Pittsburgh Pirates,Colorado Rockies,Paul Skenes,Tomoyuki Sugano,1,2,Final
+2026-06-20,Los Angeles Angels,Athletics,Walbert Ureña,J.T. Ginn,7,0,Final
+2026-06-20,Baltimore Orioles,Los Angeles Dodgers,Trevor Rogers,Yoshinobu Yamamoto,3,2,Final
+2026-06-20,Boston Red Sox,Seattle Mariners,Connelly Early,Emerson Hancock,5,1,Final
+2026-06-20,Minnesota Twins,Arizona Diamondbacks,Taj Bradley,Zac Gallen,16,8,Final
+2026-06-21,Cincinnati Reds,New York Yankees,Chase Burns,Elmer Rodríguez,4,1,Final
+2026-06-21,Milwaukee Brewers,Atlanta Braves,Robert Gasser,Bryce Elder,9,4,Final
+2026-06-21,Washington Nationals,Tampa Bay Rays,Andrew Alvarez,Nick Martinez,3,4,Final
+2026-06-21,Chicago White Sox,Detroit Tigers,Davis Martin,Keider Montero,4,5,Final
+2026-06-21,San Francisco Giants,Miami Marlins,Logan Webb,Ryan Gusto,1,2,Final
+2026-06-21,Cleveland Guardians,Houston Astros,Slade Cecconi,Kai-Wei Teng,1,2,Final
+2026-06-21,St. Louis Cardinals,Kansas City Royals,Dustin May,Stephen Kolek,12,10,Final
+2026-06-21,San Diego Padres,Texas Rangers,Wandy Peralta,Nathan Eovaldi,3,4,Final
+2026-06-21,Pittsburgh Pirates,Colorado Rockies,Jared Jones,Michael Lorenzen,8,6,Final
+2026-06-21,Minnesota Twins,Arizona Diamondbacks,Mike Paredes,Jose Cabrera,4,2,Final
+2026-06-21,Los Angeles Angels,Athletics,Reid Detmers,Jack Perkins,9,7,Final
+2026-06-21,Baltimore Orioles,Los Angeles Dodgers,Brandon Young,Emmet Sheehan,12,1,Final
+2026-06-21,Boston Red Sox,Seattle Mariners,Payton Tolle,Logan Gilbert,1,3,Final
+2026-06-21,New York Mets,Philadelphia Phillies,David Peterson,Zack Wheeler,2,6,Final
+2026-06-21,Toronto Blue Jays,Chicago Cubs,Dylan Cease,Shota Imanaga,0,0,Postponed
+2026-06-22,New York Yankees,Detroit Tigers,Gerrit Cole,Framber Valdez,3,5,Final
+2026-06-22,Kansas City Royals,Tampa Bay Rays,Michael Wacha,Drew Rasmussen,2,1,Final
+2026-06-22,Texas Rangers,Miami Marlins,Tyler Alexander,Tyler Phillips,4,3,Final
+2026-06-22,Philadelphia Phillies,Washington Nationals,Tim Mayza,Foster Griffin,1,4,Final
+2026-06-22,Houston Astros,Toronto Blue Jays,Hunter Brown,Dylan Cease,2,4,Final
+2026-06-22,Milwaukee Brewers,Cincinnati Reds,Brandon Woodruff,Brady Singer,2,1,Final
+2026-06-22,Los Angeles Dodgers,Minnesota Twins,Will Klein,Zebby Matthews,2,1,Final
+2026-06-22,Cleveland Guardians,Chicago White Sox,Gavin Williams,Anthony Kay,5,6,Final
+2026-06-22,Arizona Diamondbacks,St. Louis Cardinals,Merrill Kelly,Andre Pallante,2,3,Final
+2026-06-22,Boston Red Sox,Colorado Rockies,Jake Bennett,Ryan Feltner,2,3,Final
+2026-06-22,Baltimore Orioles,Los Angeles Angels,Kyle Bradish,Sam Aldegheri,6,1,Final
+2026-06-22,Atlanta Braves,San Diego Padres,Grant Holmes,Michael King,0,1,Final
+2026-06-22,Chicago Cubs,New York Mets,Shota Imanaga,Kodai Senga,0,0,Postponed
+2026-06-23,Houston Astros,Toronto Blue Jays,Peter Lambert,Shane Bieber,9,7,Final
+2026-06-23,Seattle Mariners,Pittsburgh Pirates,George Kirby,Mitch Keller,3,2,Final
+2026-06-23,Kansas City Royals,Tampa Bay Rays,Luinder Avila,Shane McClanahan,12,5,Final
+2026-06-23,Texas Rangers,Miami Marlins,Cal Quantrill,Sandy Alcantara,4,6,Final
+2026-06-23,New York Yankees,Detroit Tigers,Carlos Rodón,Casey Mize,4,3,Final
+2026-06-23,Philadelphia Phillies,Washington Nationals,Jesús Luzardo,PJ Poulin,14,9,Final
+2026-06-23,Chicago Cubs,New York Mets,Edward Cabrera,Kodai Senga,9,6,Final
+2026-06-23,Milwaukee Brewers,Cincinnati Reds,Brandon Sproat,Nick Lodolo,2,0,Final
+2026-06-23,Los Angeles Dodgers,Minnesota Twins,Justin Wrobleski,Kendry Rojas,12,3,Final
+2026-06-23,Cleveland Guardians,Chicago White Sox,Parker Messick,Sean Burke,1,2,Final
+2026-06-23,Arizona Diamondbacks,St. Louis Cardinals,Eduardo Rodriguez,Kyle Leahy,4,3,Final
+2026-06-23,Boston Red Sox,Colorado Rockies,Sonny Gray,Sean Sullivan,5,2,Final
+2026-06-23,Baltimore Orioles,Los Angeles Angels,Shane Baz,Ryan Johnson,1,5,Final
+2026-06-23,Atlanta Braves,San Diego Padres,JR Ritchie,Wandy Peralta,6,7,Final
+2026-06-23,Athletics,San Francisco Giants,Aaron Civale,Robbie Ray,1,3,Final
+2026-06-24,Texas Rangers,Miami Marlins,Jacob deGrom,Eury Pérez,2,4,Final
+2026-06-24,Chicago Cubs,New York Mets,Javier Assad,Nolan McLean,10,3,Final
+2026-06-24,Chicago Cubs,New York Mets,Shota Imanaga,Sean Manaea,10,5,Final
+2026-06-24,Cleveland Guardians,Chicago White Sox,Tanner Bibee,Erick Fedde,4,3,Final
+2026-06-24,Boston Red Sox,Colorado Rockies,Ranger Suarez,Kyle Freeland,6,8,Final
+2026-06-24,Baltimore Orioles,Los Angeles Angels,Trey Gibson,José Soriano,6,7,Final
+2026-06-24,Seattle Mariners,Pittsburgh Pirates,Bryan Woo,Braxton Ashcraft,1,11,Final
+2026-06-24,Kansas City Royals,Tampa Bay Rays,Noah Cameron,Griffin Jax,3,5,Final
+2026-06-24,New York Yankees,Detroit Tigers,Ryan Weathers,Tarik Skubal,4,2,Final
+2026-06-24,Philadelphia Phillies,Washington Nationals,Aaron Nola,Carson Palmquist,5,4,Final
+2026-06-24,Houston Astros,Toronto Blue Jays,Mike Burrows,Trey Yesavage,3,1,Final
+2026-06-24,Milwaukee Brewers,Cincinnati Reds,Shane Drohan,Rhett Lowder,6,5,Final
+2026-06-24,Los Angeles Dodgers,Minnesota Twins,Shohei Ohtani,Joe Ryan,4,3,Final
+2026-06-24,Arizona Diamondbacks,St. Louis Cardinals,Mitch Bratt,Matthew Liberatore,9,4,Final
+2026-06-24,Atlanta Braves,San Diego Padres,Martín Pérez,JP Sears,2,5,Final
+2026-06-24,Athletics,San Francisco Giants,Gage Jump,Tyler Mahle,1,2,Final
+2026-06-25,Kansas City Royals,Tampa Bay Rays,Seth Lugo,Casey Legumina,2,13,Final
+2026-06-25,Seattle Mariners,Pittsburgh Pirates,Bryce Miller,Bubba Chandler,1,5,Final
+2026-06-25,Athletics,San Francisco Giants,Jeffrey Springs,Landen Roupp,9,6,Final
+2026-06-25,Houston Astros,Detroit Tigers,Tatsuya Imai,Troy Melton,2,1,Final
+2026-06-25,Philadelphia Phillies,Washington Nationals,Cristopher Sánchez,Cade Cavalli,10,5,Final
+2026-06-25,Texas Rangers,Toronto Blue Jays,MacKenzie Gore,Kevin Gausman,6,5,Final
+2026-06-25,Chicago Cubs,New York Mets,Matthew Boyd,Freddy Peralta,4,3,Final
+2026-06-25,New York Yankees,Boston Red Sox,Cam Schlittler,Connelly Early,3,6,Final
+2026-06-25,Arizona Diamondbacks,St. Louis Cardinals,Zac Gallen,Michael McGreevy,0,0,Postponed
+2026-06-26,Houston Astros,Detroit Tigers,Spencer Arrighetti,Keider Montero,0,8,Final
+2026-06-26,Cincinnati Reds,Pittsburgh Pirates,Andrew Abbott,Paul Skenes,6,4,Final
+2026-06-26,Washington Nationals,Baltimore Orioles,Andrew Alvarez,Trevor Rogers,1,3,Final
+2026-06-26,Texas Rangers,Toronto Blue Jays,Nathan Eovaldi,Patrick Corbin,5,4,Final
+2026-06-26,Seattle Mariners,Cleveland Guardians,Luis Castillo,Joey Cantillo,3,1,Final
+2026-06-26,Arizona Diamondbacks,Tampa Bay Rays,Zac Gallen,Nick Martinez,1,6,Final
+2026-06-26,Philadelphia Phillies,New York Mets,Zack Wheeler,Zac Thornton,2,1,Final
+2026-06-26,New York Yankees,Boston Red Sox,Will Warren,Payton Tolle,1,6,Final
+2026-06-26,Kansas City Royals,Chicago White Sox,Steven Cruz,David Sandlin,1,22,Final
+2026-06-26,Chicago Cubs,Milwaukee Brewers,Colin Rea,Jacob Misiorowski,2,6,Final
+2026-06-26,Colorado Rockies,Minnesota Twins,Tomoyuki Sugano,Taj Bradley,8,9,Final
+2026-06-26,Miami Marlins,St. Louis Cardinals,Max Meyer,Michael McGreevy,4,0,Final
+2026-06-26,Athletics,Los Angeles Angels,J.T. Ginn,Walbert Ureña,9,3,Final
+2026-06-26,Los Angeles Dodgers,San Diego Padres,Roki Sasaki,Walker Buehler,1,7,Final
+2026-06-26,Atlanta Braves,San Francisco Giants,Reynaldo López,Trevor McDonald,3,1,Final
+2026-06-27,Houston Astros,Detroit Tigers,Kai-Wei Teng,Framber Valdez,8,6,Final
+2026-06-27,New York Yankees,Boston Red Sox,Gerrit Cole,Jake Bennett,1,4,Final
+2026-06-27,Texas Rangers,Toronto Blue Jays,Cal Quantrill,Dylan Cease,7,4,Final
+2026-06-27,Cincinnati Reds,Pittsburgh Pirates,Chase Burns,Jared Jones,9,7,Final
+2026-06-27,Philadelphia Phillies,New York Mets,Tim Mayza,Christian Scott,2,6,Final
+2026-06-27,Kansas City Royals,Chicago White Sox,Michael Wacha,Davis Martin,1,2,Final
+2026-06-27,Arizona Diamondbacks,Tampa Bay Rays,Jose Cabrera,Cole Sulser,2,4,Final
+2026-06-27,Washington Nationals,Baltimore Orioles,Foster Griffin,Brandon Young,4,3,Final
+2026-06-27,Seattle Mariners,Cleveland Guardians,Logan Gilbert,Slade Cecconi,3,4,Final
+2026-06-27,Colorado Rockies,Minnesota Twins,Michael Lorenzen,Mike Paredes,8,5,Final
+2026-06-27,Chicago Cubs,Milwaukee Brewers,David Peterson,Kyle Harrison,8,2,Final
+2026-06-27,Miami Marlins,St. Louis Cardinals,Ryan Gusto,Andre Pallante,5,1,Final
+2026-06-27,Los Angeles Dodgers,San Diego Padres,Yoshinobu Yamamoto,Kyle Hart,15,3,Final
+2026-06-27,Atlanta Braves,San Francisco Giants,Bryce Elder,Logan Webb,0,5,Final
+2026-06-27,Athletics,Los Angeles Angels,Jack Perkins,Reid Detmers,2,5,Final
+2026-06-28,Washington Nationals,Baltimore Orioles,Zack Littell,Kyle Bradish,6,4,Final
+2026-06-28,Cincinnati Reds,Pittsburgh Pirates,Brady Singer,Mitch Keller,4,9,Final
+2026-06-28,Texas Rangers,Toronto Blue Jays,Kumar Rocker,Shane Bieber,3,2,Final
+2026-06-28,Houston Astros,Detroit Tigers,Hunter Brown,Jack Flaherty,7,5,Final
+2026-06-28,Seattle Mariners,Cleveland Guardians,Emerson Hancock,Gavin Williams,5,6,Final
+2026-06-28,Arizona Diamondbacks,Tampa Bay Rays,Merrill Kelly,Drew Rasmussen,1,5,Final
+2026-06-28,Philadelphia Phillies,New York Mets,Jesús Luzardo,Cionel Pérez,5,4,Final
+2026-06-28,Colorado Rockies,Minnesota Twins,Ryan Feltner,Connor Prielipp,2,3,Final
+2026-06-28,Kansas City Royals,Chicago White Sox,Luinder Avila,Anthony Kay,5,4,Final
+2026-06-28,Chicago Cubs,Milwaukee Brewers,Ryan Rolison,Brandon Woodruff,4,3,Final
+2026-06-28,Miami Marlins,St. Louis Cardinals,Tyler Phillips,Kyle Leahy,1,2,Final
+2026-06-28,Athletics,Los Angeles Angels,Aaron Civale,Sam Aldegheri,1,4,Final
+2026-06-28,Atlanta Braves,San Francisco Giants,Chris Sale,Robbie Ray,2,3,Final
+2026-06-28,Los Angeles Dodgers,San Diego Padres,Emmet Sheehan,Michael King,4,2,Final
+2026-06-28,New York Yankees,Boston Red Sox,Carlos Rodón,Sonny Gray,4,5,Final
+2026-06-29,Chicago White Sox,Baltimore Orioles,Sean Burke,Shane Baz,8,2,Final
+2026-06-29,Pittsburgh Pirates,Philadelphia Phillies,Braxton Ashcraft,Aaron Nola,11,7,Final
+2026-06-29,Detroit Tigers,New York Yankees,Casey Mize,Ryan Weathers,7,3,Final
+2026-06-29,New York Mets,Toronto Blue Jays,Sean Manaea,Trey Yesavage,1,2,Final
+2026-06-29,Washington Nationals,Boston Red Sox,Miles Mikolas,Ranger Suarez,3,6,Final
+2026-06-29,Texas Rangers,Cleveland Guardians,Tyler Alexander,Parker Messick,6,3,Final
+2026-06-29,Cincinnati Reds,Milwaukee Brewers,Nick Lodolo,Robert Gasser,3,5,Final
+2026-06-29,San Diego Padres,Chicago Cubs,Griffin Canning,Shota Imanaga,2,3,Final
+2026-06-29,Minnesota Twins,Houston Astros,Zebby Matthews,Peter Lambert,5,4,Final
+2026-06-29,Miami Marlins,Colorado Rockies,Sandy Alcantara,Sean Sullivan,10,7,Final
+2026-06-29,Los Angeles Dodgers,Athletics,Eric Lauer,Gage Jump,9,4,Final
+2026-06-29,Los Angeles Angels,Seattle Mariners,Ryan Johnson,George Kirby,2,6,Final
+2026-06-29,San Francisco Giants,Arizona Diamondbacks,Tyler Mahle,Eduardo Rodriguez,4,5,Final
+2026-06-30,Chicago White Sox,Baltimore Orioles,Erick Fedde,Trey Gibson,9,3,Final
+2026-06-30,Texas Rangers,Cleveland Guardians,Jacob deGrom,Tanner Bibee,4,2,Final
+2026-06-30,Pittsburgh Pirates,Philadelphia Phillies,Bubba Chandler,Cristopher Sánchez,0,8,Final
+2026-06-30,Detroit Tigers,New York Yankees,Tarik Skubal,Cam Schlittler,9,3,Final
+2026-06-30,New York Mets,Toronto Blue Jays,Nolan McLean,Kevin Gausman,3,0,Final
+2026-06-30,Washington Nationals,Boston Red Sox,Cade Cavalli,Connelly Early,8,1,Final
+2026-06-30,St. Louis Cardinals,Atlanta Braves,Matthew Liberatore,Martín Pérez,5,3,Final
+2026-06-30,Tampa Bay Rays,Kansas City Royals,Griffin Jax,Noah Cameron,10,4,Final
+2026-06-30,Cincinnati Reds,Milwaukee Brewers,Rhett Lowder,Brandon Sproat,2,7,Final
+2026-06-30,San Diego Padres,Chicago Cubs,JP Sears,Matthew Boyd,7,9,Final
+2026-06-30,Minnesota Twins,Houston Astros,Joe Ryan,Mike Burrows,4,6,Final
+2026-06-30,Miami Marlins,Colorado Rockies,Eury Pérez,Tanner Gordon,14,3,Final
+2026-06-30,Los Angeles Dodgers,Athletics,Justin Wrobleski,Jeffrey Springs,9,3,Final
+2026-06-30,Los Angeles Angels,Seattle Mariners,José Soriano,Bryan Woo,3,8,Final
+2026-06-30,San Francisco Giants,Arizona Diamondbacks,Landen Roupp,Brandon Pfaadt,2,8,Final
+2026-07-01,Chicago White Sox,Baltimore Orioles,Noah Schultz,Dean Kremer,1,6,Final
+2026-07-01,Texas Rangers,Cleveland Guardians,MacKenzie Gore,Joey Cantillo,4,9,Final
+2026-07-01,Washington Nationals,Boston Red Sox,Brad Lord,Payton Tolle,10,2,Final
+2026-07-01,Detroit Tigers,New York Yankees,Troy Melton,Will Warren,6,2,Final
+2026-07-01,San Diego Padres,Chicago Cubs,Walker Buehler,Colin Rea,3,23,Final
+2026-07-01,New York Mets,Toronto Blue Jays,Freddy Peralta,Braydon Fisher,3,9,Final
+2026-07-01,Pittsburgh Pirates,Philadelphia Phillies,Paul Skenes,Zack Wheeler,6,10,Final
+2026-07-01,St. Louis Cardinals,Atlanta Braves,Michael McGreevy,Reynaldo López,1,5,Final
+2026-07-01,Tampa Bay Rays,Kansas City Royals,Shane McClanahan,Seth Lugo,4,0,Final
+2026-07-01,Minnesota Twins,Houston Astros,Taj Bradley,Tatsuya Imai,8,3,Final
+2026-07-01,Cincinnati Reds,Milwaukee Brewers,Andrew Abbott,Shane Drohan,2,4,Final
+2026-07-01,Miami Marlins,Colorado Rockies,Max Meyer,Kyle Freeland,3,6,Final
+2026-07-01,Los Angeles Dodgers,Athletics,,J.T. Ginn,1,7,Final
+2026-07-01,San Francisco Giants,Arizona Diamondbacks,Trevor McDonald,Zac Gallen,6,4,Final
+2026-07-02,Pittsburgh Pirates,Philadelphia Phillies,Jared Jones,Alan Rangel,6,1,Final
+2026-07-02,Cincinnati Reds,Milwaukee Brewers,Chase Burns,Jacob Misiorowski,7,2,Final
+2026-07-02,Miami Marlins,Colorado Rockies,Ryan Gusto,Michael Lorenzen,4,14,Final
+2026-07-02,Chicago White Sox,Cleveland Guardians,Davis Martin,Slade Cecconi,5,6,Final
+2026-07-02,St. Louis Cardinals,Atlanta Braves,Dustin May,Hurston Waldrep,11,5,Final
+2026-07-02,Tampa Bay Rays,Kansas City Royals,Ian Seymour,Stephen Kolek,5,2,Final
+2026-07-02,Detroit Tigers,Texas Rangers,Framber Valdez,Nathan Eovaldi,4,10,Final
+2026-07-02,Los Angeles Angels,Seattle Mariners,Walbert Ureña,Bryce Miller,0,1,Final
+2026-07-02,San Diego Padres,Los Angeles Dodgers,Randy Vásquez,Roki Sasaki,7,12,Final
+2026-07-03,St. Louis Cardinals,Chicago Cubs,Andre Pallante,David Peterson,17,1,Final
+2026-07-03,Pittsburgh Pirates,Washington Nationals,Mitch Keller,Foster Griffin,5,9,Final
+2026-07-03,Minnesota Twins,New York Yankees,Mike Paredes,Gerrit Cole,2,5,Final
+2026-07-03,Baltimore Orioles,Cincinnati Reds,Trevor Rogers,Brady Singer,3,0,Final
+2026-07-03,Chicago White Sox,Cleveland Guardians,Anthony Kay,Gavin Williams,3,4,Final
+2026-07-03,New York Mets,Atlanta Braves,Christian Scott,Grant Holmes,3,5,Final
+2026-07-03,San Francisco Giants,Colorado Rockies,Logan Webb,Ryan Feltner,3,15,Final
+2026-07-03,Tampa Bay Rays,Houston Astros,Nick Martinez,Spencer Arrighetti,3,1,Final
+2026-07-03,Boston Red Sox,Los Angeles Angels,Jake Bennett,Reid Detmers,5,2,Final
+2026-07-03,Miami Marlins,Athletics,Tyler Phillips,Jack Perkins,12,5,Final
+2026-07-03,Milwaukee Brewers,Arizona Diamondbacks,Kyle Harrison,Jose Cabrera,7,4,Final
+2026-07-03,San Diego Padres,Los Angeles Dodgers,Michael King,Shohei Ohtani,3,4,Final
+2026-07-03,Toronto Blue Jays,Seattle Mariners,Dylan Cease,Luis Castillo,2,0,Final
+2026-07-04,Pittsburgh Pirates,Washington Nationals,Braxton Ashcraft,Carson Palmquist,7,1,Final
+2026-07-04,Minnesota Twins,New York Yankees,Zebby Matthews,Brendan Beck,11,4,Final
+2026-07-04,Detroit Tigers,Texas Rangers,Jack Flaherty,Cal Quantrill,3,0,Final
+2026-07-04,Toronto Blue Jays,Seattle Mariners,Shane Bieber,Logan Gilbert,0,11,Final
+2026-07-04,Baltimore Orioles,Cincinnati Reds,Brandon Young,Hunter Greene,8,5,Final
+2026-07-04,Tampa Bay Rays,Houston Astros,Drew Rasmussen,Hunter Brown,8,10,Final
+2026-07-04,Chicago White Sox,Cleveland Guardians,Sean Burke,Parker Messick,3,1,Final
+2026-07-04,St. Louis Cardinals,Chicago Cubs,Kyle Leahy,Shota Imanaga,3,0,Final
+2026-07-04,New York Mets,Atlanta Braves,Sean Manaea,Chris Sale,3,14,Final
+2026-07-04,San Francisco Giants,Colorado Rockies,Robbie Ray,Sean Sullivan,6,4,Final
+2026-07-04,Philadelphia Phillies,Kansas City Royals,Jesús Luzardo,Michael Wacha,6,1,Final
+2026-07-04,Boston Red Sox,Los Angeles Angels,Sonny Gray,Sam Aldegheri,8,1,Final
+2026-07-04,Miami Marlins,Athletics,Sandy Alcantara,Aaron Civale,7,2,Final
+2026-07-04,Milwaukee Brewers,Arizona Diamondbacks,Brandon Woodruff,Merrill Kelly,3,4,Final
+2026-07-04,San Diego Padres,Los Angeles Dodgers,Wandy Peralta,Yoshinobu Yamamoto,0,3,Final
+2026-07-05,New York Mets,Atlanta Braves,Nolan McLean,Martín Pérez,10,9,Final
+2026-07-05,Pittsburgh Pirates,Washington Nationals,Bubba Chandler,Cade Cavalli,11,5,Final
+2026-07-05,Baltimore Orioles,Cincinnati Reds,Kyle Bradish,Nick Lodolo,2,3,Final
+2026-07-05,Minnesota Twins,New York Yankees,Joe Ryan,Ryan Weathers,6,1,Final
+2026-07-05,Chicago White Sox,Cleveland Guardians,Chris Murphy,Tanner Bibee,7,6,Final
+2026-07-05,St. Louis Cardinals,Chicago Cubs,Matthew Liberatore,Javier Assad,4,6,Final
+2026-07-05,Philadelphia Phillies,Kansas City Royals,Aaron Nola,Luinder Avila,2,5,Final
+2026-07-05,Tampa Bay Rays,Houston Astros,Mason Englert,Peter Lambert,0,2,Final
+2026-07-05,Detroit Tigers,Texas Rangers,Casey Mize,Kumar Rocker,6,3,Final
+2026-07-05,San Francisco Giants,Colorado Rockies,Tyler Mahle,Tanner Gordon,6,7,Final
+2026-07-05,Milwaukee Brewers,Arizona Diamondbacks,Brandon Sproat,Eduardo Rodriguez,3,2,Final
+2026-07-05,Miami Marlins,Athletics,Eury Pérez,Gage Jump,9,8,Final
+2026-07-05,Toronto Blue Jays,Seattle Mariners,Trey Yesavage,Emerson Hancock,0,4,Final
+2026-07-05,San Diego Padres,Los Angeles Dodgers,JP Sears,Emmet Sheehan,5,2,Final
+2026-07-05,Boston Red Sox,Los Angeles Angels,Ranger Suarez,Ryan Johnson,7,5,Final
+2026-07-06,Philadelphia Phillies,Kansas City Royals,Cristopher Sánchez,Noah Cameron,1,15,Final
+2026-07-06,New York Yankees,Tampa Bay Rays,Cam Schlittler,Griffin Jax,5,1,Final
+2026-07-06,Houston Astros,Washington Nationals,Mike Burrows,Miles Mikolas,11,12,Final
+2026-07-06,New York Mets,Atlanta Braves,Freddy Peralta,Reynaldo López,7,6,Final
+2026-07-06,Milwaukee Brewers,St. Louis Cardinals,Shane Drohan,Dustin May,4,3,Final
+2026-07-06,Arizona Diamondbacks,San Diego Padres,Brandon Pfaadt,Walker Buehler,8,0,Final
+2026-07-06,Toronto Blue Jays,San Francisco Giants,Kevin Gausman,Landen Roupp,1,10,Final
+2026-07-06,Colorado Rockies,Los Angeles Dodgers,Kyle Freeland,Eric Lauer,7,8,Final
+2026-07-07,Milwaukee Brewers,St. Louis Cardinals,Jacob Misiorowski,Matt Svanson,4,3,Final
+2026-07-07,Milwaukee Brewers,St. Louis Cardinals,Robert Gasser,Hunter Dobbins,10,2,Final
+2026-07-07,Chicago Cubs,Baltimore Orioles,Matthew Boyd,Shane Baz,5,2,Final
+2026-07-07,Athletics,Detroit Tigers,J.T. Ginn,Tarik Skubal,2,6,Final
+2026-07-07,Atlanta Braves,Pittsburgh Pirates,Hurston Waldrep,Paul Skenes,4,12,Final
+2026-07-07,Seattle Mariners,Miami Marlins,Bryan Woo,Max Meyer,5,6,Final
+2026-07-07,New York Yankees,Tampa Bay Rays,Will Warren,Ian Seymour,4,6,Final
+2026-07-07,Houston Astros,Washington Nationals,Tatsuya Imai,Andrew Alvarez,6,3,Final
+2026-07-07,Kansas City Royals,New York Mets,Seth Lugo,Cionel Pérez,16,12,Final
+2026-07-07,Philadelphia Phillies,Cincinnati Reds,Zack Wheeler,Andrew Abbott,4,1,Final
+2026-07-07,Cleveland Guardians,Minnesota Twins,Joey Cantillo,Taj Bradley,1,3,Final
+2026-07-07,Boston Red Sox,Chicago White Sox,Payton Tolle,Noah Schultz,8,1,Final
+2026-07-07,Los Angeles Angels,Texas Rangers,José Soriano,Jacob deGrom,3,8,Final
+2026-07-07,Arizona Diamondbacks,San Diego Padres,Zac Gallen,Germán Márquez,1,4,Final
+2026-07-07,Toronto Blue Jays,San Francisco Giants,Spencer Miles,Trevor McDonald,9,3,Final
+2026-07-07,Colorado Rockies,Los Angeles Dodgers,Michael Lorenzen,Justin Wrobleski,4,3,Final
+2026-07-08,Toronto Blue Jays,San Francisco Giants,Dylan Cease,Logan Webb,10,0,Final
+2026-07-08,Chicago Cubs,Baltimore Orioles,Colin Rea,Dean Kremer,9,7,Final
+2026-07-08,Athletics,Detroit Tigers,Jeffrey Springs,Troy Melton,1,6,Final
+2026-07-08,Atlanta Braves,Pittsburgh Pirates,Grant Holmes,Jared Jones,3,0,Final
+2026-07-08,Seattle Mariners,Miami Marlins,George Kirby,Tyler Phillips,0,2,Final
+2026-07-08,New York Yankees,Tampa Bay Rays,Gerrit Cole,Shane McClanahan,0,3,Final
+2026-07-08,Houston Astros,Washington Nationals,Spencer Arrighetti,Foster Griffin,2,8,Final
+2026-07-08,Kansas City Royals,New York Mets,Steven Cruz,Christian Scott,2,6,Final
+2026-07-08,Philadelphia Phillies,Cincinnati Reds,Alan Rangel,Chase Burns,5,11,Final
+2026-07-08,Cleveland Guardians,Minnesota Twins,Slade Cecconi,Connor Prielipp,5,6,Final
+2026-07-08,Boston Red Sox,Chicago White Sox,Jake Bennett,Davis Martin,5,0,Final
+2026-07-08,Milwaukee Brewers,St. Louis Cardinals,Kyle Harrison,Michael McGreevy,1,5,Final
+2026-07-08,Los Angeles Angels,Texas Rangers,Walbert Ureña,MacKenzie Gore,13,1,Final
+2026-07-08,Colorado Rockies,Los Angeles Dodgers,Gabriel Hughes,Roki Sasaki,3,4,Final
+2026-07-08,Arizona Diamondbacks,San Diego Padres,Jose Cabrera,Michael King,4,10,Final
+2026-07-09,Atlanta Braves,Pittsburgh Pirates,Bryce Elder,Mitch Keller,10,5,Final
+2026-07-09,Kansas City Royals,New York Mets,Michael Wacha,Sean Manaea,3,7,Final
+2026-07-09,New York Yankees,Tampa Bay Rays,Paul Blackburn,Drew Rasmussen,12,4,Final
+2026-07-09,Chicago Cubs,Baltimore Orioles,David Peterson,Trevor Rogers,2,3,Final
+2026-07-09,Cleveland Guardians,Minnesota Twins,Gavin Williams,Bailey Ober,5,2,Final
+2026-07-09,Boston Red Sox,Chicago White Sox,Patrick Sandoval,Anthony Kay,2,1,Final
+2026-07-09,Athletics,Detroit Tigers,José Suarez,Framber Valdez,1,4,Final
+2026-07-09,Seattle Mariners,Miami Marlins,Bryce Miller,Janson Junk,4,8,Final
+2026-07-09,Philadelphia Phillies,Cincinnati Reds,Jesús Luzardo,Brady Singer,1,0,Final
+2026-07-09,Milwaukee Brewers,St. Louis Cardinals,Logan Henderson,Andre Pallante,8,4,Final
+2026-07-09,Los Angeles Angels,Texas Rangers,Reid Detmers,Nathan Eovaldi,6,7,Final
+2026-07-09,Arizona Diamondbacks,San Diego Padres,Merrill Kelly,Griffin Canning,3,1,Final
+2026-07-09,Colorado Rockies,San Francisco Giants,Ryan Feltner,Carson Whisenhunt,2,8,Final
+2026-07-10,Philadelphia Phillies,Detroit Tigers,Aaron Nola,Jack Flaherty,2,10,Final
+2026-07-10,New York Yankees,Washington Nationals,Ryan Weathers,Carson Palmquist,5,3,Final
+2026-07-10,Kansas City Royals,Baltimore Orioles,Luinder Avila,Brandon Young,3,5,Final
+2026-07-10,Chicago Cubs,Cincinnati Reds,Shota Imanaga,Hunter Greene,0,4,Final
+2026-07-10,Seattle Mariners,Tampa Bay Rays,Luis Castillo,Nick Martinez,2,7,Final
+2026-07-10,Cleveland Guardians,Miami Marlins,Parker Messick,Sandy Alcantara,3,2,Final
+2026-07-10,Boston Red Sox,New York Mets,Sonny Gray,Nolan McLean,6,2,Final
+2026-07-10,Athletics,Chicago White Sox,Jacob Lopez,Sean Burke,1,14,Final
+2026-07-10,Houston Astros,Texas Rangers,Hunter Brown,Cal Quantrill,3,7,Final
+2026-07-10,Los Angeles Angels,Minnesota Twins,Grayson Rodriguez,Zebby Matthews,4,3,Final
+2026-07-10,Atlanta Braves,St. Louis Cardinals,Chris Sale,Kyle Leahy,1,2,Final
+2026-07-10,Toronto Blue Jays,San Diego Padres,Shane Bieber,JP Sears,5,3,Final
+2026-07-10,Arizona Diamondbacks,Los Angeles Dodgers,Eduardo Rodriguez,Kyle Hurt,9,3,Final
+2026-07-10,Colorado Rockies,San Francisco Giants,Tanner Gordon,Robbie Ray,4,3,Final
+2026-07-10,Milwaukee Brewers,Pittsburgh Pirates,Brandon Sproat,Braxton Ashcraft,0,0,Postponed
+2026-07-11,Milwaukee Brewers,Pittsburgh Pirates,Brandon Sproat,Braxton Ashcraft,6,7,Final
+2026-07-11,Milwaukee Brewers,Pittsburgh Pirates,Shane Drohan,Bubba Chandler,2,3,Final
+2026-07-11,Los Angeles Angels,Minnesota Twins,Ryan Johnson,Joe Ryan,3,5,Final
+2026-07-11,Athletics,Chicago White Sox,Gage Jump,Bryan Hudson,0,1,Final
+2026-07-11,Colorado Rockies,San Francisco Giants,Kyle Freeland,Tyler Mahle,2,4,Final
+2026-07-11,New York Yankees,Washington Nationals,Cam Schlittler,PJ Poulin,4,2,Final
+2026-07-11,Boston Red Sox,New York Mets,Eduardo Rivera,Freddy Peralta,4,0,Final
+2026-07-11,Seattle Mariners,Tampa Bay Rays,Logan Gilbert,Griffin Jax,1,6,Final
+2026-07-11,Cleveland Guardians,Miami Marlins,Tanner Bibee,Eury Pérez,4,1,Final
+2026-07-11,Philadelphia Phillies,Detroit Tigers,Cristopher Sánchez,Casey Mize,4,2,Final
+2026-07-11,Kansas City Royals,Baltimore Orioles,Noah Cameron,Kyle Bradish,1,6,Final
+2026-07-11,Houston Astros,Texas Rangers,Peter Lambert,Kumar Rocker,9,3,Final
+2026-07-11,Chicago Cubs,Cincinnati Reds,Javier Assad,Nick Lodolo,5,3,Final
+2026-07-11,Atlanta Braves,St. Louis Cardinals,Reynaldo López,Matthew Liberatore,1,4,Final
+2026-07-11,Toronto Blue Jays,San Diego Padres,Trey Yesavage,Walker Buehler,7,8,Final
+2026-07-11,Arizona Diamondbacks,Los Angeles Dodgers,Brandon Pfaadt,Yoshinobu Yamamoto,9,2,Final
+2026-07-12,Milwaukee Brewers,Pittsburgh Pirates,Robert Gasser,Paul Skenes,5,14,Final
+2026-07-12,Kansas City Royals,Baltimore Orioles,Seth Lugo,Shane Baz,2,8,Final
+2026-07-12,New York Yankees,Washington Nationals,Will Warren,Cade Cavalli,5,3,Final
+2026-07-12,Chicago Cubs,Cincinnati Reds,Matthew Boyd,Andrew Abbott,8,4,Final
+2026-07-12,Boston Red Sox,New York Mets,Payton Tolle,Zac Thornton,3,2,Final
+2026-07-12,Seattle Mariners,Tampa Bay Rays,Emerson Hancock,Ian Seymour,8,2,Final
+2026-07-12,Philadelphia Phillies,Detroit Tigers,Zack Wheeler,Tarik Skubal,5,0,Final
+2026-07-12,Cleveland Guardians,Miami Marlins,Joey Cantillo,Tyler Phillips,5,2,Final
+2026-07-12,Los Angeles Angels,Minnesota Twins,José Soriano,Taj Bradley,2,4,Final
+2026-07-12,Athletics,Chicago White Sox,J.T. Ginn,Noah Schultz,1,9,Final
+2026-07-12,Atlanta Braves,St. Louis Cardinals,Danny Young,Dustin May,4,3,Final
+2026-07-12,Houston Astros,Texas Rangers,Cristian Javier,MacKenzie Gore,5,6,Final
+2026-07-12,Colorado Rockies,San Francisco Giants,Michael Lorenzen,Trevor McDonald,1,3,Final
+2026-07-12,Arizona Diamondbacks,Los Angeles Dodgers,Mitch Bratt,Emmet Sheehan,5,3,Final
+2026-07-12,Toronto Blue Jays,San Diego Padres,Kevin Gausman,Germán Márquez,4,5,Final
+2026-07-14,American League All-Stars,National League All-Stars,Dylan Cease,Cristopher Sánchez,4,0,Final
+2026-07-16,New York Mets,Philadelphia Phillies,Christian Scott,Aaron Nola,4,1,Final
+2026-07-17,Tampa Bay Rays,Boston Red Sox,Griffin Jax,Jake Bennett,0,10,Final
+2026-07-17,Tampa Bay Rays,Boston Red Sox,Mason Englert,Eduardo Rivera,3,5,Final
+2026-07-17,Los Angeles Dodgers,New York Yankees,Roki Sasaki,Gerrit Cole,2,1,Final
+2026-07-17,Texas Rangers,Atlanta Braves,Cal Quantrill,Chris Sale,1,15,Final
+2026-07-17,Chicago White Sox,Toronto Blue Jays,Anthony Kay,Spencer Miles,12,4,Final
+2026-07-17,Miami Marlins,Milwaukee Brewers,Sandy Alcantara,Logan Henderson,1,2,Final
+2026-07-17,Minnesota Twins,Chicago Cubs,Bailey Ober,Colin Rea,5,2,Final
+2026-07-17,Baltimore Orioles,Houston Astros,Dean Kremer,Peter Lambert,3,2,Final
+2026-07-17,San Diego Padres,Kansas City Royals,Michael King,Seth Lugo,6,7,Final
+2026-07-17,Cincinnati Reds,Colorado Rockies,Brady Singer,Gabriel Hughes,7,2,Final
+2026-07-17,Detroit Tigers,Los Angeles Angels,Troy Melton,Reid Detmers,2,1,Final
+2026-07-17,Washington Nationals,Athletics,Cade Cavalli,Gage Jump,23,4,Final
+2026-07-17,St. Louis Cardinals,Arizona Diamondbacks,Michael McGreevy,Merrill Kelly,5,4,Final
+2026-07-17,San Francisco Giants,Seattle Mariners,Landen Roupp,Bryce Miller,7,0,Final
+2026-07-17,Pittsburgh Pirates,Cleveland Guardians,Jared Jones,Gavin Williams,0,0,Postponed
+2026-07-18,Pittsburgh Pirates,Cleveland Guardians,Jared Jones,Gavin Williams,7,1,Final
+2026-07-18,Pittsburgh Pirates,Cleveland Guardians,Mason Montgomery,Logan Allen,3,5,Final
+2026-07-18,Minnesota Twins,Chicago Cubs,Taj Bradley,Matthew Boyd,2,6,Final
+2026-07-18,New York Mets,Philadelphia Phillies,Sean Manaea,Jesús Luzardo,1,6,Final
+2026-07-18,Chicago White Sox,Toronto Blue Jays,Davis Martin,Shane Bieber,0,1,Final
+2026-07-18,Cincinnati Reds,Colorado Rockies,Rhett Lowder,Tomoyuki Sugano,3,10,Final
+2026-07-18,Baltimore Orioles,Houston Astros,Trevor Rogers,Spencer Arrighetti,4,2,Final
+2026-07-18,San Diego Padres,Kansas City Royals,Griffin Canning,Randy Dobnak,1,6,Final
+2026-07-18,St. Louis Cardinals,Arizona Diamondbacks,Dustin May,Brandon Pfaadt,3,5,Final
+2026-07-18,Tampa Bay Rays,Boston Red Sox,Ian Seymour,Patrick Sandoval,6,7,Final
+2026-07-18,Texas Rangers,Atlanta Braves,MacKenzie Gore,Owen Murphy,7,6,Final
+2026-07-18,Miami Marlins,Milwaukee Brewers,Max Meyer,Shane Drohan,6,8,Final
+2026-07-18,San Francisco Giants,Seattle Mariners,Logan Webb,Bryan Woo,3,4,Final
+2026-07-18,Washington Nationals,Athletics,Zack Littell,J.T. Ginn,1,15,Final
+2026-07-18,Detroit Tigers,Los Angeles Angels,Tarik Skubal,Grayson Rodriguez,7,0,Final
+2026-07-18,Los Angeles Dodgers,New York Yankees,Emmet Sheehan,Ryan Weathers,0,0,Postponed
+2026-07-19,Chicago White Sox,Toronto Blue Jays,Sean Burke,Trey Yesavage,3,0,Final
+2026-07-19,Los Angeles Dodgers,New York Yankees,Yoshinobu Yamamoto,Cam Schlittler,8,2,Final
+2026-07-19,Los Angeles Dodgers,New York Yankees,Will Klein,Ryan Yarbrough,1,2,Final
+2026-07-19,Tampa Bay Rays,Boston Red Sox,Shane McClanahan,Sonny Gray,1,6,Final
+2026-07-19,New York Mets,Philadelphia Phillies,Nolan McLean,Alan Rangel,6,1,Final
+2026-07-19,Texas Rangers,Atlanta Braves,Nathan Eovaldi,Grant Holmes,5,8,Final
+2026-07-19,Pittsburgh Pirates,Cleveland Guardians,Paul Skenes,Joey Cantillo,7,1,Final
+2026-07-19,Baltimore Orioles,Houston Astros,Brandon Young,Hunter Brown,5,2,Final
+2026-07-19,San Diego Padres,Kansas City Royals,Germán Márquez,Noah Cameron,19,2,Final
+2026-07-19,Miami Marlins,Milwaukee Brewers,Eury Pérez,Robert Gasser,1,3,Final
+2026-07-19,Minnesota Twins,Chicago Cubs,Zebby Matthews,Shota Imanaga,1,10,Final
+2026-07-19,Cincinnati Reds,Colorado Rockies,Hunter Greene,Ryan Feltner,9,6,Final
+2026-07-19,Washington Nationals,Athletics,Foster Griffin,Jacob Lopez,5,2,Final
+2026-07-19,Detroit Tigers,Los Angeles Angels,Casey Mize,Ryan Johnson,2,3,Final
+2026-07-19,San Francisco Giants,Seattle Mariners,Robbie Ray,Logan Gilbert,3,6,Final
+2026-07-19,St. Louis Cardinals,Arizona Diamondbacks,Andre Pallante,Eduardo Rodriguez,7,8,Final
+2026-07-20,Minnesota Twins,Cleveland Guardians,Joe Ryan,Tanner Bibee,4,13,Final
+2026-07-20,Pittsburgh Pirates,New York Yankees,Braxton Ashcraft,Ryan Weathers,5,8,Final
+2026-07-20,Tampa Bay Rays,Toronto Blue Jays,Nick Martinez,Dylan Cease,7,1,Final
+2026-07-20,Baltimore Orioles,Boston Red Sox,Shane Baz,Payton Tolle,5,6,Final
+2026-07-20,Los Angeles Dodgers,Philadelphia Phillies,Emmet Sheehan,Cristopher Sánchez,7,10,Final
+2026-07-20,San Diego Padres,Atlanta Braves,JP Sears,Bryce Elder,2,3,Final
+2026-07-20,San Francisco Giants,Kansas City Royals,Trevor McDonald,Michael Wacha,3,4,Final
+2026-07-20,New York Mets,Milwaukee Brewers,Freddy Peralta,Jacob Misiorowski,3,8,Final
+2026-07-20,Detroit Tigers,Chicago Cubs,Jack Flaherty,Jameson Taillon,8,6,Final
+2026-07-20,Chicago White Sox,Texas Rangers,Erick Fedde,Jacob deGrom,10,3,Final
+2026-07-20,Miami Marlins,Houston Astros,Janson Junk,Ronel Blanco,5,8,Final
+2026-07-20,Washington Nationals,Colorado Rockies,Andrew Alvarez,Kyle Freeland,7,3,Final
+2026-07-20,Athletics,Arizona Diamondbacks,Jeffrey Springs,Mitch Bratt,5,2,Final
+2026-07-20,Cincinnati Reds,Seattle Mariners,Andrew Abbott,George Kirby,0,8,Final
+2026-07-20,St. Louis Cardinals,Los Angeles Angels,Kyle Leahy,José Soriano,2,3,Final
+2026-07-21,Minnesota Twins,Cleveland Guardians,Kendry Rojas,Parker Messick,2,5,Final
+2026-07-21,Los Angeles Dodgers,Philadelphia Phillies,Justin Wrobleski,Zack Wheeler,2,1,Final
+2026-07-21,Tampa Bay Rays,Toronto Blue Jays,Drew Rasmussen,Kevin Gausman,12,2,Final
+2026-07-21,San Diego Padres,Atlanta Braves,Walker Buehler,Reynaldo López,8,3,Final
+2026-07-21,San Francisco Giants,Kansas City Royals,Tyler Mahle,Luinder Avila,2,3,Final
+2026-07-21,New York Mets,Milwaukee Brewers,Zac Thornton,Brandon Sproat,4,0,Final
+2026-07-21,Detroit Tigers,Chicago Cubs,Framber Valdez,David Peterson,2,11,Final
+2026-07-21,Chicago White Sox,Texas Rangers,Noah Schultz,Kumar Rocker,0,10,Final
+2026-07-21,Miami Marlins,Houston Astros,Tyler Phillips,Tatsuya Imai,3,5,Final
+2026-07-21,Washington Nationals,Colorado Rockies,Carson Palmquist,Michael Lorenzen,7,8,Final
+2026-07-21,St. Louis Cardinals,Los Angeles Angels,Matthew Liberatore,Walbert Ureña,1,5,Final
+2026-07-21,Athletics,Arizona Diamondbacks,Jack Perkins,Kohl Drake,5,6,Final
+2026-07-21,Cincinnati Reds,Seattle Mariners,Chase Burns,Luis Castillo,4,2,Final
+2026-07-21,Pittsburgh Pirates,New York Yankees,Bubba Chandler,Will Warren,0,0,Postponed
+2026-07-21,Baltimore Orioles,Boston Red Sox,Kyle Bradish,Eduardo Rivera,0,0,Postponed
+2026-07-22,Pittsburgh Pirates,New York Yankees,Mitch Keller,Gerrit Cole,5,3,Final
+2026-07-22,Pittsburgh Pirates,New York Yankees,Bubba Chandler,Max Fried,0,2,Final
+2026-07-22,Baltimore Orioles,Boston Red Sox,Dean Kremer,Jake Bennett,3,6,Final
+2026-07-22,Baltimore Orioles,Boston Red Sox,Kyle Bradish,Eduardo Rivera,5,1,Final
+2026-07-22,San Francisco Giants,Kansas City Royals,Landen Roupp,Seth Lugo,4,5,Final
+2026-07-22,New York Mets,Milwaukee Brewers,Christian Scott,Logan Henderson,3,4,Final
+2026-07-22,Washington Nationals,Colorado Rockies,Cade Cavalli,Gabriel Hughes,8,0,Final
+2026-07-22,Athletics,Arizona Diamondbacks,Gage Jump,Merrill Kelly,5,15,Final
+2026-07-22,Cincinnati Reds,Seattle Mariners,Brady Singer,Emerson Hancock,5,3,Final
+2026-07-22,St. Louis Cardinals,Los Angeles Angels,Hunter Dobbins,Reid Detmers,1,0,Final
+2026-07-22,Minnesota Twins,Cleveland Guardians,Bailey Ober,Slade Cecconi,10,6,Final
+2026-07-22,Los Angeles Dodgers,Philadelphia Phillies,Eric Lauer,Aaron Nola,9,5,Final
+2026-07-22,Tampa Bay Rays,Toronto Blue Jays,Griffin Jax,Braydon Fisher,4,2,Final
+2026-07-22,San Diego Padres,Atlanta Braves,Michael King,Martín Pérez,6,7,Final
+2026-07-22,Chicago White Sox,Texas Rangers,Anthony Kay,Tyler Alexander,4,2,Final
+2026-07-22,Detroit Tigers,Chicago Cubs,Keider Montero,Colin Rea,5,1,Final
+2026-07-22,Miami Marlins,Houston Astros,Sandy Alcantara,Peter Lambert,2,5,Final
+2026-07-23,San Diego Padres,Atlanta Braves,Kyle Hart,Chris Sale,5,6,Final
+2026-07-23,Minnesota Twins,Cleveland Guardians,Taj Bradley,Gavin Williams,3,1,Final
+2026-07-23,Tampa Bay Rays,Toronto Blue Jays,Casey Legumina,Shane Bieber,1,3,Final
+2026-07-23,Arizona Diamondbacks,St. Louis Cardinals,Brandon Pfaadt,Michael McGreevy,10,6,Final
+2026-07-23,Kansas City Royals,Detroit Tigers,Randy Dobnak,Troy Melton,3,4,Final
+2026-07-24,Colorado Rockies,Milwaukee Brewers,Tomoyuki Sugano,Shane Drohan,5,2,Final
+2026-07-24,Kansas City Royals,Detroit Tigers,Beck Way,Tarik Skubal,1,2,Final
+2026-07-24,Chicago Cubs,Pittsburgh Pirates,Matthew Boyd,Jared Jones,3,2,Final
+2026-07-24,Arizona Diamondbacks,Washington Nationals,Eduardo Rodriguez,Carson Palmquist,3,2,Final
+2026-07-24,New York Yankees,Philadelphia Phillies,Cam Schlittler,Jesús Luzardo,1,0,Final
+2026-07-24,Atlanta Braves,Baltimore Orioles,Grant Holmes,Trevor Rogers,7,6,Final
+2026-07-24,Los Angeles Dodgers,New York Mets,Roki Sasaki,Sean Manaea,4,2,Final
+2026-07-24,Cleveland Guardians,Tampa Bay Rays,Joey Cantillo,Shane McClanahan,3,11,Final
+2026-07-24,San Diego Padres,Miami Marlins,Germán Márquez,Ryan Gusto,4,2,Final
+2026-07-24,Toronto Blue Jays,Boston Red Sox,Trey Yesavage,Patrick Sandoval,4,6,Final
+2026-07-24,Houston Astros,Chicago White Sox,Spencer Arrighetti,Davis Martin,9,5,Final
+2026-07-24,Seattle Mariners,Texas Rangers,Bryce Miller,MacKenzie Gore,4,5,Final
+2026-07-24,Athletics,Minnesota Twins,Jacob Lopez,Zebby Matthews,2,0,Final
+2026-07-24,Cincinnati Reds,St. Louis Cardinals,Rhett Lowder,Dustin May,4,2,Final
+2026-07-24,Los Angeles Angels,San Francisco Giants,Grayson Rodriguez,Logan Webb,6,7,Final
+2026-07-25,Kansas City Royals,Detroit Tigers,Michael Wacha,Casey Mize,3,2,Final
+2026-07-25,Arizona Diamondbacks,Washington Nationals,Mitch Bratt,Foster Griffin,3,5,Final
+2026-07-25,Los Angeles Angels,San Francisco Giants,Ryan Johnson,Robbie Ray,2,9,Final
+2026-07-25,Toronto Blue Jays,Boston Red Sox,Dylan Cease,Sonny Gray,6,0,Final
+2026-07-25,San Diego Padres,Miami Marlins,Randy Vásquez,Eury Pérez,7,2,Final
+2026-07-25,New York Yankees,Philadelphia Phillies,Ryan Weathers,Tim Mayza,3,1,Final
+2026-07-25,Cleveland Guardians,Tampa Bay Rays,Tanner Bibee,Nick Martinez,0,3,Final
+2026-07-25,Chicago Cubs,Pittsburgh Pirates,Shota Imanaga,Paul Skenes,11,0,Final
+2026-07-25,Atlanta Braves,Baltimore Orioles,Bryce Elder,Brandon Young,2,3,Final
+2026-07-25,Athletics,Minnesota Twins,Brady Basso,Kendry Rojas,0,2,Final
+2026-07-25,Houston Astros,Chicago White Sox,Hunter Brown,Sean Burke,4,1,Final
+2026-07-25,Colorado Rockies,Milwaukee Brewers,Ryan Feltner,Robert Gasser,5,8,Final
+2026-07-25,Los Angeles Dodgers,New York Mets,Yoshinobu Yamamoto,Nolan McLean,4,3,Final
+2026-07-25,Cincinnati Reds,St. Louis Cardinals,Hunter Greene,Andre Pallante,0,7,Final
+2026-07-25,Seattle Mariners,Texas Rangers,Bryan Woo,Nathan Eovaldi,1,7,Final
+2026-07-26,Cleveland Guardians,Tampa Bay Rays,Parker Messick,Drew Rasmussen,0,1,Final
+2026-07-26,Arizona Diamondbacks,Washington Nationals,Kohl Drake,Miles Mikolas,7,10,Final
+2026-07-26,Chicago Cubs,Pittsburgh Pirates,Jameson Taillon,Braxton Ashcraft,7,8,Final
+2026-07-26,Toronto Blue Jays,Boston Red Sox,Kevin Gausman,Ranger Suarez,1,6,Final
+2026-07-26,Atlanta Braves,Baltimore Orioles,Reynaldo López,Shane Baz,3,2,Final
+2026-07-26,Kansas City Royals,Detroit Tigers,Luinder Avila,Framber Valdez,5,4,Final
+2026-07-26,Los Angeles Dodgers,New York Mets,Emmet Sheehan,Freddy Peralta,3,8,Final
+2026-07-26,San Diego Padres,Miami Marlins,Walker Buehler,Janson Junk,5,3,Final
+2026-07-26,Athletics,Minnesota Twins,Jeffrey Springs,Connor Prielipp,8,11,Final
+2026-07-26,Houston Astros,Chicago White Sox,Ronel Blanco,Erick Fedde,3,12,Final
+2026-07-26,Colorado Rockies,Milwaukee Brewers,Kyle Freeland,Jacob Misiorowski,2,11,Final
+2026-07-26,Cincinnati Reds,St. Louis Cardinals,Andrew Abbott,Kyle Leahy,5,3,Final
+2026-07-26,Seattle Mariners,Texas Rangers,Logan Gilbert,Jacob deGrom,6,4,Final
+2026-07-26,Los Angeles Angels,San Francisco Giants,José Soriano,Carson Whisenhunt,4,3,Final
+2026-07-26,New York Yankees,Philadelphia Phillies,Will Warren,Cristopher Sánchez,4,11,Final
+2026-07-27,Seattle Mariners,Texas Rangers,George Kirby,Kumar Rocker,3,7,Final
+2026-07-27,Baltimore Orioles,Detroit Tigers,Kyle Bradish,Keider Montero,8,5,Final
+2026-07-27,Arizona Diamondbacks,Pittsburgh Pirates,Merrill Kelly,Mitch Keller,2,3,Final
+2026-07-27,Philadelphia Phillies,Miami Marlins,Zack Wheeler,Tyler Phillips,7,8,Final
+2026-07-27,Toronto Blue Jays,Washington Nationals,Max Scherzer,Eddy Yean,3,2,Final
+2026-07-27,Atlanta Braves,New York Mets,Martín Pérez,Zac Thornton,3,14,Final
+2026-07-27,New York Yankees,Chicago White Sox,Max Fried,Noah Schultz,9,5,Final
+2026-07-27,Chicago Cubs,St. Louis Cardinals,David Peterson,Matthew Liberatore,7,3,Final
+2026-07-27,Houston Astros,Los Angeles Angels,Tatsuya Imai,Walbert Ureña,6,4,Final
+2026-07-27,Boston Red Sox,Athletics,Payton Tolle,Jack Perkins,4,2,Final
+2026-07-27,Milwaukee Brewers,San Francisco Giants,Brandon Sproat,Tyler Mahle,0,3,Final
+2026-07-27,Cleveland Guardians,Cincinnati Reds,Slade Cecconi,Chase Burns,0,0,Postponed
+2026-07-28,Cleveland Guardians,Cincinnati Reds,Slade Cecconi,Chase Burns,6,5,Final
+2026-07-28,Cleveland Guardians,Cincinnati Reds,Gavin Williams,Caleb Ferguson,0,2,Final
+2026-07-28,Baltimore Orioles,Detroit Tigers,Dean Kremer,Troy Melton,0,14,Final
+2026-07-28,Arizona Diamondbacks,Pittsburgh Pirates,Brandon Pfaadt,Bubba Chandler,8,7,Final
+2026-07-28,Texas Rangers,Tampa Bay Rays,Cal Quantrill,Griffin Jax,4,1,Final
+2026-07-28,Philadelphia Phillies,Miami Marlins,Aaron Nola,Sandy Alcantara,0,1,Final
+2026-07-28,Toronto Blue Jays,Washington Nationals,Shane Bieber,Cade Cavalli,6,8,Final
+2026-07-28,Kansas City Royals,Minnesota Twins,Seth Lugo,Taj Bradley,2,3,Final
+2026-07-28,New York Yankees,Chicago White Sox,Gerrit Cole,Anthony Kay,3,2,Final
+2026-07-28,Chicago Cubs,St. Louis Cardinals,Colin Rea,Michael McGreevy,10,2,Final
+2026-07-28,Houston Astros,Los Angeles Angels,Peter Lambert,Reid Detmers,3,2,Final
+2026-07-28,Boston Red Sox,Athletics,Jake Bennett,Gage Jump,3,4,Final
+2026-07-28,Colorado Rockies,San Diego Padres,Michael Lorenzen,Michael King,7,8,Final
+2026-07-28,Milwaukee Brewers,San Francisco Giants,Logan Henderson,Landen Roupp,8,2,Final
+2026-07-28,Seattle Mariners,Los Angeles Dodgers,Luis Castillo,Justin Wrobleski,7,6,Final
+2026-07-28,Atlanta Braves,New York Mets,Chris Sale,Christian Scott,0,0,Postponed
+2026-07-29,Philadelphia Phillies,Miami Marlins,Jesús Luzardo,Ryan Gusto,6,8,Final
+2026-07-29,Arizona Diamondbacks,Pittsburgh Pirates,Eduardo Rodriguez,Jared Jones,3,0,Final
+2026-07-29,Toronto Blue Jays,Washington Nationals,Trey Yesavage,Zack Littell,5,2,Final
+2026-07-29,Baltimore Orioles,Detroit Tigers,Trevor Rogers,Tarik Skubal,10,9,Final
+2026-07-29,Atlanta Braves,New York Mets,AJ Smith-Shawver,Sean Manaea,2,3,Final
+2026-07-29,Atlanta Braves,New York Mets,Chris Sale,Christian Scott,1,0,Final
+2026-07-29,Milwaukee Brewers,San Francisco Giants,Thomas Pannone,Logan Webb,3,16,Final
+2026-07-29,Colorado Rockies,San Diego Padres,Gabriel Hughes,Kyle Hart,1,3,Final
+2026-07-29,Texas Rangers,Tampa Bay Rays,MacKenzie Gore,Casey Legumina,0,3,Final
+2026-07-29,Cleveland Guardians,Cincinnati Reds,Joey Cantillo,Brady Singer,6,1,Final
+2026-07-29,Kansas City Royals,Minnesota Twins,Randy Dobnak,Joe Ryan,4,0,Final
+2026-07-29,New York Yankees,Chicago White Sox,Cam Schlittler,Davis Martin,5,6,Final
+2026-07-29,Chicago Cubs,St. Louis Cardinals,Matthew Boyd,Dustin May,2,3,Final
+2026-07-29,Houston Astros,Los Angeles Angels,Hayden Wesneski,Grayson Rodriguez,7,4,Final
+2026-07-29,Boston Red Sox,Athletics,Patrick Sandoval,Jacob Lopez,4,2,Final
+2026-07-29,Seattle Mariners,Los Angeles Dodgers,Emerson Hancock,Eric Lauer,2,4,Final
+2026-07-30,Texas Rangers,Tampa Bay Rays,Cole Winn,Shane McClanahan,2,3,Final
+2026-07-30,Kansas City Royals,Minnesota Twins,Noah Cameron,Bailey Ober,3,4,Final
+2026-07-30,New York Yankees,Chicago White Sox,Ryan Weathers,Sean Burke,1,2,Final
+2026-07-30,Chicago Cubs,St. Louis Cardinals,Javier Assad,Andre Pallante,4,2,Final
+2026-07-30,Pittsburgh Pirates,Cincinnati Reds,Yohan Ramírez,Rhett Lowder,0,0,Pre-Game
+2026-07-30,Miami Marlins,New York Mets,Eury Pérez,Nolan McLean,0,0,Pre-Game
+2026-07-30,Washington Nationals,Atlanta Braves,Jake Irvin,Grant Holmes,0,0,Pre-Game
+2026-07-30,Boston Red Sox,Athletics,Sonny Gray,Mason Barnett,0,0,Scheduled
+2026-07-30,San Francisco Giants,San Diego Padres,,JP Sears,0,0,Pre-Game
+2026-07-30,Seattle Mariners,Los Angeles Dodgers,Bryan Woo,Roki Sasaki,0,0,Scheduled
