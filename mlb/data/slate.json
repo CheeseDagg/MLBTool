@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-30T14:45:24+00:00",
+ "generated": "2026-07-30T14:53:38+00:00",
  "slate_date": "2026-07-30",
  "games": [
   {
@@ -24,9 +24,9 @@
    "home_sp": "Bailey Ober",
    "p_home": 60.7,
    "raw_total": 9.45,
-   "adj_total": 9.45,
+   "adj_total": 9.35,
    "park": "park -1%",
-   "wx": "80F, wind 8mph"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "New York Yankees",
@@ -1083,17 +1083,15 @@
    "spot": "floor"
   }
  ],
- "hr_note": "stats: Baseball-Reference/Baseball-Reference +2025 prior (430 blended) \u00b7 lineups: 1/10 cards posted (rest = season-usage) \u00b7 platoon on (1331 players) (league factors, starter share) \u00b7 heat on (70 bats x 36 pitcher-sides, 1 pulls, 0 fails) \u00b7 bullpen on (30 pens) \u00b7 barrel blend 35% (505 bats) \u00b7 wind: direction x park bearing (conf-shrunk) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props off: plan/market unavailable (HTTP 401) \u00b7 sorted by model HR% (no props matched)",
+ "hr_note": "stats: Baseball-Reference/Baseball-Reference +2025 prior (430 blended) \u00b7 lineups: 1/10 cards posted (rest = season-usage) \u00b7 platoon on (1331 players) (league factors, starter share) \u00b7 heat on (70 bats x 36 pitcher-sides, 0 pulls, 0 fails) \u00b7 bullpen on (30 pens) \u00b7 barrel blend 35% (505 bats) \u00b7 wind: direction x park bearing (conf-shrunk) \u00b7 park HR factors are seed approximations (conf-shrunk; refresh from Savant) \u00b7 temp vs flat 70F baseline (mildly double-counts warm-climate open parks) \u00b7 props off: plan/market unavailable (HTTP 401) \u00b7 sorted by model HR% (no props matched)",
  "hr_cal": {
   "n": 552,
   "voids": 110,
   "dates": 21,
   "league": {
-   "hr_pa": 0.02676,
-   "season_hr_pa": 0.02676,
-   "rel": 1.0,
-   "days": 1,
-   "season_days": 1
+   "building": true,
+   "season_days": 1,
+   "need": 10
   },
   "pred_mean": 21.0,
   "actual": 17.6,
