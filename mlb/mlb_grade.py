@@ -101,6 +101,40 @@ def league_context(dates):
     return {"hr_pa": round(a, 5), "season_hr_pa": round(b, 5),
             "rel": round(a / b, 3), "days": len(sel), "season_days": len(rows)}
 
+BACKFILL_PER_RUN = 5
+
+def backfill_league(preds, limit=BACKFILL_PER_RUN, today=None):
+    """Fill league rates for dates the grader has already settled.
+
+    grade_all only fetches a date that still has UNGRADED rows, so once the ledger
+    caught up, league_daily.csv would gain exactly one date per day and the control
+    would not have a usable baseline until ~10 days out. This walks the prediction
+    log's own dates, newest first, and fetches the few that are missing.
+
+    Bounded at `limit` per run on purpose: three runs a day makes ~15 dates/day, so
+    a season backfills in a couple of days without ever issuing a burst that looks
+    like abuse to statsapi. Failures are skipped, not retried in-loop — the next
+    run picks them up because they are still missing.
+    """
+    today = today or dt.date.today().isoformat()
+    have = set()
+    if os.path.exists(LEAGUE):
+        with open(LEAGUE, newline="") as f:
+            have = {r["date"] for r in csv.DictReader(f)}
+    want = sorted({r["date"] for r in preds if r["date"] < today} - have, reverse=True)
+    if not want: return 0
+    done = 0
+    for d in want[:limit]:
+        try:
+            games, fin = fetch_day_results(d)
+        except Exception as e:
+            print(f"  league backfill {d}: fetch failed ({type(e).__name__})"); continue
+        if not games or not fin: continue
+        record_league(d, games); done += 1
+    if done:
+        print(f"  league backfill: +{done} date(s), {len(want)-done} still missing")
+    return done
+
 def _rows_by_width(path):
     """Parse a graded CSV whose header may be STALE, one row at a time by width.
 
@@ -462,6 +496,7 @@ def grade_all():
             rec["outcome"], rec["hr_n"] = o, hn
             new.append(rec); settled += 1
         print(f"  {d}: settled {settled}/{len(rows)}")
+    backfill_league(preds)
     migrate_graded()
     if new:
         exists = os.path.exists(GRADED)
@@ -630,6 +665,30 @@ def selftest():
         _c2 = league_context(["2026-07-24"])
         assert _c2["rel"] > 1.0, ("a hot window must read rel>1 against the season, got %r" % _c2)
         assert league_context(["2099-01-01"]) is None   # no data -> no claim
+        # BACKFILL: bounded, skips dates already recorded, never touches today
+        # (today's slate is still live and its denominator would be partial).
+        global fetch_day_results
+        _of = fetch_day_results
+        _calls = []
+        def _fake(d):
+            _calls.append(d)
+            return [{"teams": {"A": {"bat": {"x": {"pa": 40, "hr": 1}}}}}], True
+        try:
+            fetch_day_results = _fake
+            _p = [{"date": "2026-08-%02d" % i} for i in range(14, 26)]
+            _p += [{"date": "2026-08-26"}]                    # == today below
+            n1 = backfill_league(_p, limit=5, today="2026-08-26")
+            assert n1 == 5 and len(_calls) == 5, (n1, _calls)
+            assert "2026-08-26" not in _calls, "must not backfill today's live slate"
+            assert _calls == sorted(_calls, reverse=True), \
+                "newest-first, so the freshest window becomes usable first: %r" % _calls
+            before = set(_calls)
+            _calls.clear()
+            backfill_league(_p, limit=5, today="2026-08-26")
+            assert not (set(_calls) & before), \
+                "a second run must not re-fetch dates already recorded: %r" % _calls
+        finally:
+            fetch_day_results = _of
     finally:
         LEAGUE = _olg
     # SAME-DAY GRADING: today's finished game settles now; unfinished stays pending
