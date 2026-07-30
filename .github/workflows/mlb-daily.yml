@@ -63,9 +63,19 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --mixed origin/main
-            for f in mlb/data/slate.json mlb/data/zone_cache.json mlb/data/hr_predictions.csv mlb/data/hr_graded.csv mlb/data/futures.json mlb/data/kprops.json; do
-              git add "$f" 2>/dev/null || true
-            done
+            # Stage every ALREADY-TRACKED file under mlb/data that this run changed.
+            # The previous version listed six paths by hand, which meant lineshop.json,
+            # bvp_board.json and recalib_report.json were regenerated each run and then
+            # thrown away -- and any file added later inherited the same fate silently.
+            # `-u` is deliberately scoped to tracked files so a stray cache or a large
+            # experiment dump can never ride along uninvited.
+            git add -u mlb/data/ 2>/dev/null || true
+            # New daily artifacts must be named ONCE here, the first time they exist;
+            # after that -u carries them. league_daily.csv is the league HR/PA control
+            # and is worthless unless it ACCUMULATES across runs -- an Actions checkout
+            # is fresh every time, so a file that is never committed is a file that
+            # never has more than one day in it.
+            git add mlb/data/league_daily.csv 2>/dev/null || true
             if git diff --cached --quiet; then
               echo "Slate unchanged vs published -- nothing to commit."
               exit 0

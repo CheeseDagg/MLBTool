@@ -81,6 +81,14 @@ def league_context(dates):
     with open(LEAGUE, newline="") as f:
         rows = [r for r in csv.DictReader(f) if (r.get("pa") or "").isdigit()]
     if not rows: return None
+    # A ratio needs a baseline to be a ratio. With one recorded day the window IS
+    # the season and rel comes back exactly 1.000 — a number that looks like a
+    # clean reading and carries no information at all. Say nothing until the
+    # denominator is real; the file backfills one day per Actions run.
+    MIN_SEASON_DAYS = 10
+    if len({r["date"] for r in rows}) < MIN_SEASON_DAYS:
+        return {"building": True, "season_days": len({r["date"] for r in rows}),
+                "need": MIN_SEASON_DAYS}
     sel = [r for r in rows if r["date"] in set(dates)]
     def rate(rs):
         pa = sum(int(r["pa"]) for r in rs); hr = sum(int(r["hr"]) for r in rs)
@@ -611,8 +619,14 @@ def selftest():
         _r = list(csv.DictReader(open(LEAGUE)))
         assert len(_r) == 1 and _r[0]["pa"] == "12", _r
         record_league("2026-07-25", [{"teams": {"A": {"bat": {"x": {"pa": 10, "hr": 0}}}}}])
+        # Two days is not a baseline: the control must REFUSE to report a ratio.
+        assert league_context(["2026-07-25"]) == {"building": True, "season_days": 2,
+                                                  "need": 10}
+        for i in range(3, 13):                      # fill past MIN_SEASON_DAYS
+            record_league("2026-08-%02d" % i,
+                          [{"teams": {"A": {"bat": {"x": {"pa": 100, "hr": 3}}}}}])
         _c = league_context(["2026-07-25"])
-        assert _c["days"] == 1 and _c["hr_pa"] == 0.0 and _c["season_days"] == 2
+        assert _c["days"] == 1 and _c["hr_pa"] == 0.0, _c
         _c2 = league_context(["2026-07-24"])
         assert _c2["rel"] > 1.0, ("a hot window must read rel>1 against the season, got %r" % _c2)
         assert league_context(["2099-01-01"]) is None   # no data -> no claim
