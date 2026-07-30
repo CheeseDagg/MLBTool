@@ -35,8 +35,12 @@ def load(path):
     s = s.dropna(subset=["home_score", "away_score", "home_SP", "away_SP"])
     s["date"] = pd.to_datetime(s["date"], errors="coerce")
     s = s.dropna(subset=["date"])
-    # regular season only (drop spring training)
-    s = s[s["date"] >= pd.Timestamp(f"{s['date'].dt.year.mode()[0]}-03-25")]
+    # Regular season only (drop spring training). Cut against March 25 OF EACH ROW'S
+    # OWN YEAR: the old form took the modal year's cutoff and applied it to every row,
+    # which silently deleted an entire earlier season the moment the file spanned two.
+    if len(s):
+        cut = pd.to_datetime(s["date"].dt.year.astype(str) + "-03-25")
+        s = s[s["date"] >= cut]
     s = s.sort_values("date").reset_index(drop=True)
     s["home_win"] = (s["home_score"] > s["away_score"]).astype(int)
     return s

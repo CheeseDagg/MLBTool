@@ -184,5 +184,64 @@ def main():
           f"{len(hr_rows)} HR-board rows")
 
 
+def selftest():
+    """Offline checks. `--selftest` used to fall straight through to main(), which
+    needed a live schedule pull and a populated game_starters.csv and so died with a
+    KeyError deep in pandas — a test that can only run on a day the pipeline already
+    worked is not a test. These use synthetic inputs only."""
+    import tempfile
+    ok = [0, 0]
+
+    def chk(c, msg):
+        ok[1] += 1
+        ok[0] += bool(c)
+        print(("PASS  " if c else "FAIL  ") + msg)
+
+    # _scrub: the poisoned-slate tripwire
+    bad = {"a": float("nan"), "b": [1.0, float("inf")], "c": {"d": float("-inf")}}
+    sc = _scrub(bad)
+    chk(sc["a"] is None and sc["b"][1] is None and sc["c"]["d"] is None,
+        "_scrub nulls every non-finite float, at any depth")
+    chk(json.dumps(_scrub(bad), allow_nan=False) is not None,
+        "scrubbed payload survives allow_nan=False")
+
+    hdr = "date,away,home,away_SP,home_SP,away_score,home_score,status\n"
+    with tempfile.TemporaryDirectory() as td:
+        # header-only game_starters must return an empty frame, not crash. This is the
+        # exact shape that produced the old KeyError: .dt.year.mode()[0] on no rows.
+        p = os.path.join(td, "gs.csv")
+        open(p, "w").write(hdr)
+        try:
+            s = M.load(p)
+            chk(len(s) == 0, "header-only game_starters loads as empty, does not raise")
+        except Exception as e:                                 # noqa: BLE001
+            chk(False, f"header-only game_starters raised {type(e).__name__}: {e}")
+
+        # season boundary: two seasons in one file must BOTH survive, and spring
+        # training must be cut in each of them, not just the modal year.
+        rows = [("2025-03-01", 0), ("2025-06-01", 1), ("2026-03-01", 0),
+                ("2026-06-01", 1)]
+        with open(p, "w") as f:
+            f.write(hdr)
+            for d, _ in rows:
+                f.write(f"{d},AAA,BBB,SPa,SPh,3,5,Final\n")
+        s = M.load(p)
+        kept = sorted(str(x)[:10] for x in s["date"])
+        chk(kept == ["2025-06-01", "2026-06-01"],
+            f"both seasons kept, spring cut in each (got {kept})")
+
+    # the live level factor must be flat: it may move numbers, never the order
+    import mlb_hr as H
+    board = [42.0, 31.0, 25.5, 22.1, 22.0, 18.0, 9.0, 3.0]
+    after = [H.live_level_pct(H.calibrate_pct(x)) for x in board]
+    chk(after == sorted(after, reverse=True),
+        "LIVE_LEVEL + anchors preserve board order (flat correction)")
+    chk(0.5 <= H.LIVE_LEVEL <= 1.0,
+        f"LIVE_LEVEL={H.LIVE_LEVEL} is a shrink toward zero, in range")
+
+    print(f"\n{ok[0]}/{ok[1]} checks pass")
+    return 0 if ok[0] == ok[1] else 1
+
+
 if __name__ == "__main__":
-    main()
+    sys.exit(selftest() if "--selftest" in sys.argv else (main() or 0))

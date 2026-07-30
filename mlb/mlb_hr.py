@@ -243,6 +243,39 @@ def calibrate_pct(p_pct):
     slope = (y1 - y0) / (x1 - x0) if x1 > x0 else 1.0
     return y1 + slope * (p_pct - x1)
 
+# --- LIVE level factor: the gap between the backtest REPLAY and PRODUCTION -----
+# CALIB_ANCHORS are fit on 25k backtest rows and are the SHAPE of the curve. They
+# cannot carry the level gap between replaying a season and publishing a board the
+# night before, because the monthly refit pools 25k replay rows with ~550 live ones
+# -- live is 2% of that pool and moves the anchors by nothing.
+#
+# Measured on the production log (hr_graded.csv, 20 days, n=552, 2026-07-07..29):
+#   predicted 20.96%   actual 17.51%   ratio 0.838   95% CI [0.683, 1.002] (day-
+#   clustered bootstrap, 4000 draws)   P(model runs hot) = 0.973
+# The gap is a LEVEL gap, not a shape gap. With day fixed effects the slope on
+# logit(p) fits 1.39, CI [0.32, 2.88] -- no evidence the within-day spread is wrong,
+# so this is a flat multiplier and NOT a re-shaping of the anchors. It therefore
+# does not reorder the board by a single position; it makes the number honest.
+# (A bucket table appears to show the bias concentrated at 10-20% predicted. It is
+# not: those rows are two low-slate days, and the day-fixed-effect fit removes it.)
+#
+# The shipped value is SHRUNK toward 1, chosen OUT OF SAMPLE by leave-one-day-out:
+#   no change (k=1)          LL -0.46192
+#   LOO shrink 0.25          LL -0.46086
+#   LOO shrink 0.50          LL -0.46023
+#   LOO shrink 0.75          LL -0.46006   <- shipped, k = 1 + 0.75*(0.84-1) = 0.88
+#   LOO shrink 1.00          LL -0.46038   (the full correction overshoots)
+# Per-day LOO fits sit in 0.81-0.88 on all 20 days, so no single day carries this.
+# Re-derive with mlb_livelevel.py; move it toward 1.00 as the gap closes.
+#
+# NOTE for mlb_recalibrate.py: hr_raw is logged PRE-calibration and is unaffected by
+# this factor, so the monthly anchor refit reads clean raws and never double-counts.
+LIVE_LEVEL = 0.88            # measured 2026-07-30 on n=552
+
+def live_level_pct(p_pct):
+    """Apply the production-vs-replay level factor. Flat: ranking is unchanged."""
+    return p_pct * LIVE_LEVEL
+
 # ---- "spot" READABILITY layer (NOT a probability change) -------------------
 # The board is calibrated by park (verified on the 25k-prediction backtest: high-HR
 # parks project 12.0% -> 11.7% actual, gap -0.3, inside 2SE). So a bat like a Coors
@@ -885,7 +918,7 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                         _lg += HOT_B         # homered in his most recent graded board game
                     p_game = 1.0 / (1.0 + math.exp(-_lg))
                 _raw_pct = round(p_game * 100, 1)               # pre-calibration % (leak-free recalib input)
-                p_game = calibrate_pct(p_game * 100) / 100      # backtest recalibration
+                p_game = live_level_pct(calibrate_pct(p_game * 100)) / 100  # backtest shape, then live level
                 sp_disp = opp_sp_name if isinstance(opp_sp_name, str) and opp_sp_name.strip() else "TBD"
                 row = {
                     "player": b["name"], "team": fg(team_full) or team_full,

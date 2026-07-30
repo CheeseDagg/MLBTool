@@ -43,6 +43,16 @@ MIN_HOLDOUT   = 400     # don't trust a verdict on less than this
 MIN_GAIN      = 1e-4    # Brier must improve by at least this to ship
 MIN_NEW_ROWS  = 500     # need this much fresh graded data since the anchors were last fit
 
+# The live level factor lives in mlb_hr.py and is applied AFTER the anchors. Read it
+# rather than copy it, and fail soft (1.0) so this script never depends on the engine
+# importing cleanly. See row_raw for why the date matters.
+LIVE_LEVEL_FROM = "2026-07-31"
+try:
+    sys.path.insert(0, HERE)
+    from mlb_hr import LIVE_LEVEL
+except Exception:                                              # noqa: BLE001
+    LIVE_LEVEL = 1.0
+
 
 # ---------- current anchors: read from mlb_hr.py (single source of truth) ----------
 # Matches the assignment across MULTIPLE physical lines (the live file wraps it) by
@@ -103,11 +113,21 @@ def row_raw(r, anchors):
     leak-free source. Fall back to inverting `hr_pct` through `anchors` ONLY for legacy
     rows written before hr_raw existed. (Inversion is exact only within one anchor
     epoch; after a refit, inverting an old row through the NEW anchors recovers a wrong
-    raw and biases the next fit — which is exactly what hr_raw removes.)"""
+    raw and biases the next fit — which is exactly what hr_raw removes.)
+
+    LIVE_LEVEL: since 2026-07-31 the published hr_pct is anchors THEN a flat live
+    level factor, so inverting hr_pct through the anchors alone would recover a raw
+    that is too low and would drag the next anchor fit down — the level correction
+    would get baked into the shape and then re-applied on top of itself. Rows from
+    that date carry hr_raw, so the fallback never fires for them; the divide below is
+    belt-and-braces in case a row ever lands without one."""
     hr_raw = r.get("hr_raw")
     if hr_raw is not None and str(hr_raw).strip() != "":
         return float(hr_raw)
-    return invert_map(anchors, float(r["hr_pct"]))
+    pct = float(r["hr_pct"])
+    if str(r.get("date") or "") >= LIVE_LEVEL_FROM and LIVE_LEVEL:
+        pct = pct / LIVE_LEVEL
+    return invert_map(anchors, pct)
 
 def graded_dates():
     """Dates of PRODUCTION graded rows only (excludes the static backtest replay), for
