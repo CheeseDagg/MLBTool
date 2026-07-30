@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-30T18:42:54+00:00",
+ "generated": "2026-07-30T21:21:01+00:00",
  "date": "2026-07-30",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Michael Busch",
    "team": "CHC",
    "opp_sp": "Andre Pallante",
-   "pa": 9,
-   "ab": 9,
-   "h": 7,
+   "pa": 12,
+   "ab": 12,
+   "h": 8,
    "hr": 2,
-   "avg": ".778",
-   "slg": "1.556"
+   "avg": ".667",
+   "slg": "1.250"
   },
   {
    "batter": "Salvador Perez",
