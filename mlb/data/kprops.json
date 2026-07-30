@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-30T21:39+00:00",
+ "generated": "2026-07-30T22:14+00:00",
  "board": [
   {
    "pitcher": "Nolan McLean",
@@ -762,7 +762,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 18} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 17} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
