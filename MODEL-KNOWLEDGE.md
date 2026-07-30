@@ -346,6 +346,47 @@ vs +0.00120 on even turnarounds), 3/3 when someone is 33+, 2/3 when both are und
 climbing forever — so it is not quietly repairing the layoff main effect. Pivot
 stays at 30; the sweep is a shape check, not a tuning run.
 
+**LAYAGE IS THE ONLY SURVIVOR IN SIX ROUNDS, AND ACTIV IS RETROACTIVELY DEAD
+(2026-07-30).** The ceiling ladder had been planting effects at the STRONGEST grid
+value and stepping DOWN only when the oracle came back non-positive — which answers
+"could an effect ten times what the data claims be seen?", a question nobody asked.
+Planting at the FITTED magnitude and stepping UP is the correct ladder. Under it ACTIV
+measured +0.00063 against an oracle of +0.00014 for a true effect of its own size —
+i.e. four times what FULL KNOWLEDGE of that effect is worth, which is noise by
+construction. LAYAGE is unaffected (it already fit at the smallest magnitude on its
+grid, so the old ladder had already stepped down to it). **A measured gain ABOVE the
+oracle bound is not a strong result, it is a disproof.**
+
+**ROUND 6 — SIX ACCUMULATORS, NOTHING SHIPS, AND THE TWO NEGATIVES ARE THE VALUE.**
+CAGE (career cage time) won the holdout 3/3 and became a 0/3 NULL the instant plain
+fight count entered the baseline: it was **experience in a wig**. Every accumulator
+round from here must carry EXPER underneath it. MILEAGE (strikes absorbed) is the
+sharper lesson: holdout +0.00322, 3/3 periods, 240 placebo shuffles never once reached
+it (p=0.0083), and a perfectly monotone shape (quintile win rates 59.5 / 54.8 / 49.1 /
+43.7 / 36.2). It still fails, on the two gates that decide: a true effect of its own
+fitted size is recovered **0/12** seeded plants, so the gain cannot be one being
+detected; and it replicates in exactly ONE era — the one the ship rule tunes on.
+**An era-specific miscalibration of the BASELINE that happens to correlate with a
+career accumulator will pass a placebo and pass a shape check and still not be real.**
+That is what gate 3 is for. (KDABS unreadable; WTUP/WTNEW dead; QUICK unreadable
+rather than refuted — only 287 of 6283 rows are non-zero.)
+
+**PRODUCTION'S LEDGER p1 IS MIS-SCALED — IT EMITS ~0.5 FOR EVERYTHING (2026-07-30).**
+`build_site.py` logs `p1 = σ(s1 − s2)` from `model_score` in `ufc_ratings.json`. That
+treats a skill index as a log-odds with an implicit coefficient of exactly 1.0, and
+nobody ever fit it. `model_score` has SD 0.421 over 1228 fighters, so a matched pair
+differs by well under a logit and 13 of 14 logged predictions land between 0.45 and
+0.66 (full range 0.269–0.657, SD 0.087). Regressing logit(model) on logit(market)
+gives slope **0.152, SE 0.116** — production's number barely responds to the market's
+at all. The research blend on the same card gives slope 0.688, SE 0.136, range
+0.204–0.822: it is genuinely discriminating and merely shrunk. **Consequence: the live
+A/B is not a fair contest between two models, it is a model versus a broken readout,
+and production's apparent "disagreements with the market" are ignorance, not signal —
+they must never be traded on.** The fix is blocked, not merely undone: `model_score`
+is CURRENT-state, so fitting the coefficient on bout history leaks (that leaky fit
+wants β≈2.3 and is an upper bound). It needs a walk-forward score or a market-anchored
+scale, and until then the blend is the only UFC number worth reading.
+
 **WHY MOST UFC ANGLES DIE — THE ABSORPTION THEOREM.** Elo scores a bout on
 `r_i − r_j`. If the truth is `z = β·(x_i − x_j)` for ANY per-fighter quantity x, then
 `r_i = β·x_i + skill_i` reproduces it exactly and the ratings converge there unaided.
