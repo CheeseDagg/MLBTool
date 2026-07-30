@@ -112,9 +112,71 @@ to a Sunday off, which would have made all of April look like league-wide peak f
 Both live on in `mlb_fatigue_experiment.py`. When porting a narrow-panel angle wide,
 **re-read its feature builder for season-boundary assumptions before trusting the port.**
 
+**THE CALIBRATION PANEL WAS LYING FOR A WEEK, AND THE WAY IT LIED IS THE LESSON
+(2026-07-30).** On 2026-07-23 commit `1bbf7c9` added `hr_raw` to `GCOLS`. The append
+path in `mlb_grade.py` writes `GCOLS`; the header line is written ONCE, at file
+creation. So from that commit on, every row carried 17 fields under a 16-field
+header, `csv.DictReader` shifted every column past the insertion point by one, and
+`outcome` came back holding the neighbouring column's text (`heat +3%`). `summarize()`
+keeps only `outcome in ("hr","no")` — so **217 of 662 rows, seven full days of
+grading, were discarded in total silence** while the board went on publishing a
+healthy-looking `n`. `migrate_graded()` existed and should have caught it, but it was
+keyed on `"hr_n" in header` — the one migration it was born for — so it returned early
+and stayed blind to every later column. Fixes: rows are now parsed by **their own
+width** against known schema generations (`_rows_by_width`), the migration keys on
+`header == GCOLS` exactly, and any row whose outcome is outside the vocabulary
+surfaces as `panel["unparsed"]` instead of vanishing. **The general rule: an
+append-only file whose header is written once is a schema-drift trap, and a
+filter-then-aggregate step is where the evidence gets destroyed. Every silent drop
+must become a counter.**
+
+**AND THE MISS I WENT LOOKING FOR WAS AN ARTEFACT OF THAT BUG.** The flag that
+started this was the 21-date panel showing the 12-16% bucket 0-for-15 and 16-20%
+1-for-29 — "the middle of the board is broken." On the repaired panel (n 347 → 552)
+those become 2/35 and 7/79, and the honest verdict is **no shape evidence at all.**
+Fitting the recalibration `a·logit(p)+b` on the live panel gives slope **a=1.448,
+95% CI [0.564, 2.750]** — the point estimate is on the wrong side of 1 for the
+"middle sags" story and the interval is useless. The reason is structural and worth
+keeping: **the board only publishes rows in a ~15–30% band, so it has almost no
+leverage to estimate calibration SHAPE.** Bucket-by-bucket readings on the live
+ledger are not interpretable, ever. Shape has to come from the backtest panel.
+
+**WHAT IS REAL: a modest LEVEL miss, marginal.** Live out-of-sample, actual − pred =
+**−3.39 pts, date-block-bootstrap 95% CI [−6.68, −0.07]** (20 dates, n=552). A −0.219
+logit shift would fix it (a 21.0% row prints 17.6%). Two independent methods agree on
+direction: the recalibrator's own fit on the repaired ledger tops out at anchor
+(21.6 → 18.3). Design effect from date clustering is **1.0×** — the day-to-day swings
+(3.2% to 30.0% actual) look dramatic but are ordinary binomial noise at ~28 rows/day,
+so naive SEs were not wrong here. **Do not read the swings as signal.**
+
+**SELECTION / WINNER'S CURSE IS RULED OUT.** The obvious suspect was that publishing
+only the top ~35 rows/day selects on noise. It does not: on the backtest, calibrated,
+the top-35-per-day slice reads **pred 17.88% vs actual 18.01%** (n=3,675) and every
+slice from top-50 down to top-5 is flat-to-favourable. The board's selection is clean;
+the level miss is not selection.
+
+**THE CONTROL THAT WAS MISSING, NOW BUILT.** The whole cold-week question — did the
+model drift, or did the league go quiet? — was unanswerable because nothing recorded
+the league's own rate. `league_day`/`record_league`/`league_context` now compute
+league HR/PA per date **from the boxscores the grader already fetches** (zero extra
+requests), write them idempotently to `mlb/data/league_daily.csv`, and surface
+`panel["league"]["rel"]` — the window's rate over the season's. `rel < 1` is the share
+of a board miss that is **not the model's fault**. It backfills from the next Actions
+run; statsapi is blocked from the sandbox, so this could not be answered locally.
+Guard worth noting: `league_context` tests `a is None`, not `not a`, because a window
+where the league hit **zero** home runs is precisely what the control exists to catch.
+
+**DO NOT APPLY THE PENDING RECALIBRATION YET.** `mlb_recalibrate.py --dry-run` on the
+repaired ledger says APPLY (holdout Brier 0.13809 → 0.13762) — but that gain is
+0.00047 against a `MIN_GAIN` of 0.0001, and **the holdout is the most recent 21 days,
+which contains the anomalously cold 07-23..29 window.** A candidate curve that simply
+predicts lower will win on a cold week whether or not it is right. That is exactly the
+variance-chasing the recalibrator's own docstring warns against. Wait for
+`league_daily.csv` to say whether that week was the league or the model.
+
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
 (spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
-pregame).
+pregame) · calibration SHAPE from the live ledger (no leverage — see above).
 
 ## MLB — K props (mlb_kprops*.py)
 

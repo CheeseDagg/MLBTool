@@ -33,24 +33,123 @@ GRADED = os.path.join(DATA, "hr_graded.csv")
 GCOLS = ["date","player","team","opp_sp","slot","lu","hr_pct","hr_raw","fair",
          "book_price","ev_pct","park","temp","plat","heat","outcome","hr_n"]
 
+LEAGUE = os.path.join(DATA, "league_daily.csv")
+LCOLS = ["date", "games", "pa", "hr"]
+
+def league_day(games):
+    """League-wide HR and PA for a settled date, from boxes the grader ALREADY has.
+
+    This is the control that separates 'the model broke' from 'the ball wasn't
+    flying'. Without it a cold week is unattributable: on 2026-07-23..29 the board
+    predicted 20.2% and hit 13.7%, and nothing on hand could say whether that was
+    the model drifting or the league going quiet under it. Costs zero extra
+    fetches — every boxscore is already parsed for settlement.
+
+    Counts each player once per game. Pitchers who never bat contribute pa=0 and
+    so are harmless; the denominator is plate appearances, not roster slots.
+    """
+    pa = hr = 0
+    for g in games:
+        for t in (g.get("teams") or {}).values():
+            for st in (t.get("bat") or {}).values():
+                pa += int(st.get("pa", 0) or 0)
+                hr += int(st.get("hr", 0) or 0)
+    return {"games": len(games), "pa": pa, "hr": hr}
+
+def record_league(date_iso, games):
+    """Append one date's league rate, idempotently (re-grading must not double it)."""
+    if not games: return
+    prev = {}
+    if os.path.exists(LEAGUE):
+        with open(LEAGUE, newline="") as f:
+            prev = {r["date"]: r for r in csv.DictReader(f)}
+    d = league_day(games)
+    if d["pa"] <= 0: return
+    prev[date_iso] = dict(date=date_iso, **{k: str(v) for k, v in d.items()})
+    tmp = LEAGUE + ".tmp"
+    with open(tmp, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=LCOLS); w.writeheader()
+        for k in sorted(prev):
+            w.writerow({c: prev[k].get(c, "") for c in LCOLS})
+    os.replace(tmp, LEAGUE)
+
+def league_context(dates):
+    """-> {'hr_pa': rate over `dates`, 'season_hr_pa': rate over all recorded dates,
+           'rel': ratio}. rel < 1 means the league itself was quiet in that window,
+    which is the amount of a board miss that is NOT the model's fault."""
+    if not os.path.exists(LEAGUE): return None
+    with open(LEAGUE, newline="") as f:
+        rows = [r for r in csv.DictReader(f) if (r.get("pa") or "").isdigit()]
+    if not rows: return None
+    sel = [r for r in rows if r["date"] in set(dates)]
+    def rate(rs):
+        pa = sum(int(r["pa"]) for r in rs); hr = sum(int(r["hr"]) for r in rs)
+        return (hr / pa) if pa else None
+    a, b = rate(sel), rate(rows)
+    # `is None` deliberately, not truthiness: a window in which the league hit ZERO
+    # home runs is the single most interesting window this control exists to catch,
+    # and `if not a` would throw it away as if the data were missing.
+    if a is None or b is None or not b: return None
+    return {"hr_pa": round(a, 5), "season_hr_pa": round(b, 5),
+            "rel": round(a / b, 3), "days": len(sel), "season_days": len(rows)}
+
+def _rows_by_width(path):
+    """Parse a graded CSV whose header may be STALE, one row at a time by width.
+
+    The append path writes GCOLS; the header line is only ever written once, at
+    file creation. So adding a column to GCOLS silently desynchronises the two:
+    every subsequent row carries the new field under a header that does not name
+    it, csv.DictReader shifts every column past the insertion point by one, and
+    `outcome` comes back holding whatever the neighbouring column said. That is
+    not a parse error anybody sees — summarize() keeps only outcome in
+    ("hr","no"), so the shifted rows are DISCARDED IN SILENCE and calibration
+    quietly freezes at the last pre-drift date. It happened on 2026-07-23 when
+    hr_raw was added: 217 of 662 rows, a full week of grading, vanished from the
+    panel while the board went on reporting a healthy-looking n.
+
+    So: never trust the header for a row it may not describe. A row is mapped by
+    its OWN width against the known schema generations, newest first.
+    """
+    gens = [GCOLS, [c for c in GCOLS if c != "hr_raw"]]
+    by_w = {len(g): g for g in gens}
+    out, unknown = [], 0
+    with open(path, newline="") as f:
+        rd = csv.reader(f)
+        try: next(rd)
+        except StopIteration: return [], 0
+        for rec in rd:
+            if not rec: continue
+            cols = by_w.get(len(rec))
+            if cols is None:
+                unknown += 1; continue
+            out.append({k: v for k, v in zip(cols, rec)})
+    return out, unknown
+
 def migrate_graded():
-    """One-time: add hr_n column to a pre-existing graded file (blank = uncounted era).
-    Reads the file directly (never via load_csv) and writes atomically, so test
-    monkeypatching or a mid-write crash can never corrupt the ledger."""
+    """Bring the graded ledger's header into line with GCOLS, non-destructively.
+
+    Keyed on the header matching GCOLS EXACTLY rather than on the presence of one
+    named column. The previous version returned early whenever "hr_n" appeared in
+    the header line, which meant it was blind to every later column addition —
+    the check was written against the one migration it was born for. Rows are
+    re-read by width (see _rows_by_width) so pre-drift and post-drift rows both
+    land on the right fields, and missing columns fill blank."""
     if not os.path.exists(GRADED): return
     with open(GRADED, newline="") as f:
-        header = f.readline()
-        if "hr_n" in header: return
-        f.seek(0)
-        rows = list(csv.DictReader(f))
+        try: header = next(csv.reader(f))
+        except StopIteration: return
+    if header == GCOLS: return
+    rows, unknown = _rows_by_width(GRADED)
     tmp = GRADED + ".tmp"
     with open(tmp, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=GCOLS); w.writeheader()
         for r in rows:
-            r["hr_n"] = ""
-            w.writerow({k: r.get(k,"") for k in GCOLS})
+            w.writerow({k: r.get(k, "") for k in GCOLS})
     os.replace(tmp, GRADED)
-    print(f"  migrated {len(rows)} legacy rows -> hr_n column added (blank = pre-counting)")
+    added = [c for c in GCOLS if c not in header]
+    print(f"  migrated {len(rows)} rows -> header realigned"
+          + (f", added {added}" if added else "")
+          + (f" ({unknown} rows of unknown width dropped)" if unknown else ""))
 
 def norm(s):
     if not isinstance(s, str): return ""
@@ -183,6 +282,18 @@ def summarize(rows):
     voids = sum(1 for r in rows if r.get("outcome") == "void")
     n = len(live)
     panel = {"n": n, "voids": voids, "dates": len({r["date"] for r in rows}) if rows else 0}
+    # Anything whose outcome is not in the vocabulary is a PARSE failure, not a
+    # grading state, and it must be visible. Dropping it quietly is how a week of
+    # grading disappeared from this panel on 2026-07-23 while n kept looking fine.
+    bad = [r for r in rows if r.get("outcome") not in ("hr","no","void","pending")]
+    if bad:
+        panel["unparsed"] = len(bad)
+        panel["unparsed_dates"] = sorted({r.get("date","?") for r in bad})[:5]
+    try:
+        lc = league_context({r["date"] for r in live}) if live else None
+        if lc: panel["league"] = lc
+    except Exception:
+        pass
     if not n: return panel
     p = [float(r["hr_pct"])/100 for r in live]
     y = [1.0 if r["outcome"]=="hr" else 0.0 for r in live]
@@ -327,6 +438,13 @@ def grade_all():
             games, _fin = fetch_day_results(d)
         except Exception as e:
             print(f"  {d}: results fetch failed ({type(e).__name__}) — retry next run"); continue
+        # Record the league rate only once the day is fully final; a partial slate
+        # would log a denominator that later grows, and the ratio would be wrong
+        # in a way no later run corrects (record_league overwrites, but a date
+        # settled early then never revisited would keep its partial count).
+        if _fin:
+            try: record_league(d, games)
+            except Exception as e: print(f"  {d}: league rate not recorded ({type(e).__name__})")
         settled = 0
         for r in rows:
             o = settle_row(r, games, _fin)
@@ -359,6 +477,9 @@ def panel_for_publish():
 
 # ---------------------------------------------------------------------------
 def selftest():
+    # Hoisted: two separate blocks below repoint GRADED at a temp ledger, and a
+    # `global` may not follow the first use of the name in the same scope.
+    global load_csv, fetch_day_results, GRADED
     G = [{"teams": {
         "New York Yankees": {"opp_sp": "gopher gary",
             "bat": {"slug mcpower": {"pa":4,"hr":1},
@@ -441,10 +562,66 @@ def selftest():
     tt = p["top_tier"]
     assert tt["n"]==2 and tt["hits"]==1 and tt["roi"]==50.0, tt
     json.dumps(p)
+    # HEADER DRIFT: a ledger written under an OLD header, then appended to under a
+    # NEW GCOLS, must survive. This is the 2026-07-23 hr_raw incident pinned: the
+    # old migration keyed on "hr_n" in the header and so was blind to any later
+    # column, DictReader shifted every post-drift row, and summarize() discarded
+    # 217 rows without a word. Both halves must come back with real outcomes, and
+    # a shifted row must be COUNTED as unparsed rather than silently dropped.
+    import tempfile as _tf0
+    _drift = os.path.join(_tf0.mkdtemp(), "hr_graded_drift.csv")
+    _old = [c for c in GCOLS if c != "hr_raw"]
+    with open(_drift, "w", newline="") as f:
+        w = csv.writer(f); w.writerow(_old)
+        w.writerow(["2026-07-22","Old Guy","NYY","arm","3","card","20.0","+400","",
+                    "","park +2%","80F","RvL +5%","heat +3%","hr","1"])
+        w.writerow(["2026-07-23","New Guy","BOS","arm","4","card","22.0","19.1","+380",
+                    "","","park -1%","78F","RvR -2%","heat +1%","no","0"])
+    _pre, _ = _rows_by_width(_drift)
+    assert [r["outcome"] for r in _pre] == ["hr","no"], \
+        "width-keyed parse must recover both schema generations, got %r" % [r["outcome"] for r in _pre]
+    assert _pre[1]["hr_raw"] == "19.1" and _pre[1]["hr_pct"] == "22.0", _pre[1]
+    _og = GRADED
+    try:
+        GRADED = _drift
+        migrate_graded()
+        with open(_drift, newline="") as f: assert next(csv.reader(f)) == GCOLS
+        _after = list(csv.DictReader(open(_drift)))
+        assert [r["outcome"] for r in _after] == ["hr","no"], _after
+        assert summarize(_after)["n"] == 2 and "unparsed" not in summarize(_after)
+        assert migrate_graded() is None      # idempotent: header now matches, no-op
+    finally:
+        GRADED = _og
+    _shift = [{"date":"2026-07-23","hr_pct":"20","outcome":"heat +1%"}]
+    assert summarize(_shift).get("unparsed") == 1, \
+        "a shifted row must surface as unparsed, not vanish"
+    # LEAGUE CONTROL: counts every batter's pa/hr across both sides of every game,
+    # and record_league must be idempotent under re-grading (the grader re-settles
+    # dates, and a league rate that doubled on the second pass would be worse than
+    # none at all — it would look like a live signal).
+    _lg = [{"teams": {"A": {"bat": {"x": {"pa": 4, "hr": 1}, "y": {"pa": 3, "hr": 0}}},
+                      "B": {"bat": {"z": {"pa": 5, "hr": 2}, "arm": {"pa": 0, "hr": 0}}}}}]
+    assert league_day(_lg) == {"games": 1, "pa": 12, "hr": 3}, league_day(_lg)
+    global LEAGUE
+    _olg = LEAGUE
+    try:
+        LEAGUE = os.path.join(_tf0.mkdtemp(), "league_daily.csv")
+        record_league("2026-07-24", _lg)
+        record_league("2026-07-24", _lg)          # re-grade of the same date
+        _r = list(csv.DictReader(open(LEAGUE)))
+        assert len(_r) == 1 and _r[0]["pa"] == "12", _r
+        record_league("2026-07-25", [{"teams": {"A": {"bat": {"x": {"pa": 10, "hr": 0}}}}}])
+        _c = league_context(["2026-07-25"])
+        assert _c["days"] == 1 and _c["hr_pa"] == 0.0 and _c["season_days"] == 2
+        _c2 = league_context(["2026-07-24"])
+        assert _c2["rel"] > 1.0, ("a hot window must read rel>1 against the season, got %r" % _c2)
+        assert league_context(["2099-01-01"]) is None   # no data -> no claim
+    finally:
+        LEAGUE = _olg
     # SAME-DAY GRADING: today's finished game settles now; unfinished stays pending
     import datetime as _dt
     _today = _dt.date.today().isoformat()
-    global load_csv, fetch_day_results, GRADED
+
     _orig_load, _orig_fetch, _orig_graded = load_csv, fetch_day_results, GRADED
     import tempfile as _tf
     GRADED = os.path.join(_tf.mkdtemp(), "hr_graded_selftest.csv")
