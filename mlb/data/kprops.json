@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-29T22:08+00:00",
+ "generated": "2026-07-30T00:06+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -44,80 +44,40 @@
   {
    "pitcher": "Cam Schlittler",
    "opp": "Chicago White Sox",
-   "lam": 7.09,
-   "k9_regressed": 10.37,
-   "exp_ip": 5.92,
-   "opp_mult": 1.039,
+   "lam": 6.87,
+   "k9_regressed": 10.41,
+   "exp_ip": 5.71,
+   "opp_mult": 1.04,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8353,
-     "fair_over": -507,
-     "fair_under": 507
+     "p_over": 0.815,
+     "fair_over": -441,
+     "fair_under": 441
     },
     {
      "line": 5.5,
-     "p_over": 0.7109,
-     "fair_over": -246,
-     "fair_under": 246
+     "p_over": 0.6826,
+     "fair_over": -215,
+     "fair_under": 215
     },
     {
      "line": 6.5,
-     "p_over": 0.5639,
-     "fair_over": -129,
-     "fair_under": 129
+     "p_over": 0.531,
+     "fair_over": -113,
+     "fair_under": 113
     },
     {
      "line": 7.5,
-     "p_over": 0.415,
-     "fair_over": 141,
-     "fair_under": -141
+     "p_over": 0.3822,
+     "fair_over": 162,
+     "fair_under": -162
     },
     {
      "line": 8.5,
-     "p_over": 0.283,
-     "fair_over": 253,
-     "fair_under": -253
-    }
-   ]
-  },
-  {
-   "pitcher": "Chris Sale",
-   "opp": "New York Mets",
-   "lam": 6.73,
-   "k9_regressed": 10.32,
-   "exp_ip": 5.84,
-   "opp_mult": 1.004,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.8006,
-     "fair_over": -402,
-     "fair_under": 402
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.6631,
-     "fair_over": -197,
-     "fair_under": 197
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.5089,
-     "fair_over": -104,
-     "fair_under": 104
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.3607,
-     "fair_over": 177,
-     "fair_under": -177
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.2361,
-     "fair_over": 324,
-     "fair_under": -324
+     "p_over": 0.2544,
+     "fair_over": 293,
+     "fair_under": -293
     }
    ]
   },
@@ -162,122 +122,162 @@
    ]
   },
   {
+   "pitcher": "Chris Sale",
+   "opp": "New York Mets",
+   "lam": 6.65,
+   "k9_regressed": 10.35,
+   "exp_ip": 5.75,
+   "opp_mult": 1.005,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7922,
+     "fair_over": -381,
+     "fair_under": 381
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.6518,
+     "fair_over": -187,
+     "fair_under": 187
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4963,
+     "fair_over": 101,
+     "fair_under": -101
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.3487,
+     "fair_over": 187,
+     "fair_under": -187
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.2261,
+     "fair_over": 342,
+     "fair_under": -342
+    }
+   ]
+  },
+  {
    "pitcher": "Joe Ryan",
    "opp": "Kansas City Royals",
-   "lam": 5.89,
-   "k9_regressed": 9.91,
-   "exp_ip": 5.44,
+   "lam": 5.73,
+   "k9_regressed": 9.96,
+   "exp_ip": 5.27,
    "opp_mult": 0.982,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6995,
-     "fair_over": -233,
-     "fair_under": 233
+     "p_over": 0.6778,
+     "fair_over": -210,
+     "fair_under": 210
     },
     {
      "line": 5.5,
-     "p_over": 0.536,
-     "fair_over": -116,
-     "fair_under": 116
+     "p_over": 0.5107,
+     "fair_over": -104,
+     "fair_under": 104
     },
     {
      "line": 6.5,
-     "p_over": 0.3755,
-     "fair_over": 166,
-     "fair_under": -166
+     "p_over": 0.3511,
+     "fair_over": 185,
+     "fair_under": -185
     },
     {
      "line": 7.5,
-     "p_over": 0.2406,
-     "fair_over": 316,
-     "fair_under": -316
+     "p_over": 0.2203,
+     "fair_over": 354,
+     "fair_under": -354
     },
     {
      "line": 8.5,
-     "p_over": 0.1413,
-     "fair_over": 608,
-     "fair_under": -608
+     "p_over": 0.1266,
+     "fair_over": 690,
+     "fair_under": -690
     }
    ]
   },
   {
    "pitcher": "Joey Cantillo",
    "opp": "Cincinnati Reds",
-   "lam": 5.53,
-   "k9_regressed": 9.3,
-   "exp_ip": 4.98,
-   "opp_mult": 1.074,
+   "lam": 5.55,
+   "k9_regressed": 9.47,
+   "exp_ip": 4.9,
+   "opp_mult": 1.077,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6476,
-     "fair_over": -184,
-     "fair_under": 184
+     "p_over": 0.6504,
+     "fair_over": -186,
+     "fair_under": 186
     },
     {
      "line": 5.5,
-     "p_over": 0.4767,
-     "fair_over": 110,
-     "fair_under": -110
+     "p_over": 0.4798,
+     "fair_over": 108,
+     "fair_under": -108
     },
     {
      "line": 6.5,
-     "p_over": 0.3192,
-     "fair_over": 213,
-     "fair_under": -213
+     "p_over": 0.322,
+     "fair_over": 211,
+     "fair_under": -211
     },
     {
      "line": 7.5,
-     "p_over": 0.1946,
-     "fair_over": 414,
-     "fair_under": -414
+     "p_over": 0.1969,
+     "fair_over": 408,
+     "fair_under": -408
     },
     {
      "line": 8.5,
-     "p_over": 0.1085,
-     "fair_over": 822,
-     "fair_under": -822
+     "p_over": 0.11,
+     "fair_over": 809,
+     "fair_under": -809
     }
    ]
   },
   {
    "pitcher": "Davis Martin",
    "opp": "New York Yankees",
-   "lam": 5.37,
+   "lam": 5.19,
    "k9_regressed": 8.23,
-   "exp_ip": 5.55,
+   "exp_ip": 5.37,
    "opp_mult": 1.058,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6217,
-     "fair_over": -164,
-     "fair_under": 164
+     "p_over": 0.5927,
+     "fair_over": -146,
+     "fair_under": 146
     },
     {
      "line": 5.5,
-     "p_over": 0.4485,
-     "fair_over": 123,
-     "fair_under": -123
+     "p_over": 0.4178,
+     "fair_over": 139,
+     "fair_under": -139
     },
     {
      "line": 6.5,
-     "p_over": 0.2935,
-     "fair_over": 241,
-     "fair_under": -241
+     "p_over": 0.2665,
+     "fair_over": 275,
+     "fair_under": -275
     },
     {
      "line": 7.5,
-     "p_over": 0.1746,
-     "fair_over": 473,
-     "fair_under": -473
+     "p_over": 0.1543,
+     "fair_over": 548,
+     "fair_under": -548
     },
     {
      "line": 8.5,
-     "p_over": 0.0949,
-     "fair_over": 954,
-     "fair_under": -954
+     "p_over": 0.0814,
+     "fair_over": 1128,
+     "fair_under": -1128
     }
    ]
   },
@@ -324,40 +324,40 @@
   {
    "pitcher": "MacKenzie Gore",
    "opp": "Tampa Bay Rays",
-   "lam": 5.13,
-   "k9_regressed": 9.58,
-   "exp_ip": 5.26,
-   "opp_mult": 0.917,
+   "lam": 5.15,
+   "k9_regressed": 9.62,
+   "exp_ip": 5.25,
+   "opp_mult": 0.918,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5825,
-     "fair_over": -139,
-     "fair_under": 139
+     "p_over": 0.5857,
+     "fair_over": -141,
+     "fair_under": 141
     },
     {
      "line": 5.5,
-     "p_over": 0.4073,
-     "fair_over": 146,
-     "fair_under": -146
+     "p_over": 0.4106,
+     "fair_over": 144,
+     "fair_under": -144
     },
     {
      "line": 6.5,
-     "p_over": 0.2574,
-     "fair_over": 288,
-     "fair_under": -288
+     "p_over": 0.2603,
+     "fair_over": 284,
+     "fair_under": -284
     },
     {
      "line": 7.5,
-     "p_over": 0.1476,
-     "fair_over": 578,
-     "fair_under": -578
+     "p_over": 0.1497,
+     "fair_over": 568,
+     "fair_under": -568
     },
     {
      "line": 8.5,
-     "p_over": 0.0771,
-     "fair_over": 1197,
-     "fair_under": -1197
+     "p_over": 0.0784,
+     "fair_over": 1175,
+     "fair_under": -1175
     }
    ]
   },
@@ -367,117 +367,37 @@
    "lam": 5.07,
    "k9_regressed": 8.63,
    "exp_ip": 5.41,
-   "opp_mult": 0.977,
+   "opp_mult": 0.978,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5708,
+     "p_over": 0.5716,
      "fair_over": -133,
      "fair_under": 133
     },
     {
      "line": 5.5,
-     "p_over": 0.3954,
-     "fair_over": 153,
-     "fair_under": -153
+     "p_over": 0.3962,
+     "fair_over": 152,
+     "fair_under": -152
     },
     {
      "line": 6.5,
-     "p_over": 0.2474,
-     "fair_over": 304,
-     "fair_under": -304
+     "p_over": 0.248,
+     "fair_over": 303,
+     "fair_under": -303
     },
     {
      "line": 7.5,
-     "p_over": 0.1402,
-     "fair_over": 613,
-     "fair_under": -613
+     "p_over": 0.1407,
+     "fair_over": 611,
+     "fair_under": -611
     },
     {
      "line": 8.5,
-     "p_over": 0.0724,
-     "fair_over": 1281,
-     "fair_under": -1281
-    }
-   ]
-  },
-  {
-   "pitcher": "Dustin May",
-   "opp": "Chicago Cubs",
-   "lam": 5.05,
-   "k9_regressed": 8.83,
-   "exp_ip": 5.2,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5676,
-     "fair_over": -131,
-     "fair_under": 131
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3922,
-     "fair_over": 155,
-     "fair_under": -155
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2446,
-     "fair_over": 309,
-     "fair_under": -309
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1383,
-     "fair_over": 623,
-     "fair_under": -623
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0712,
-     "fair_over": 1305,
-     "fair_under": -1305
-    }
-   ]
-  },
-  {
-   "pitcher": "Christian Scott",
-   "opp": "Atlanta Braves",
-   "lam": 5.01,
-   "k9_regressed": 10.2,
-   "exp_ip": 4.52,
-   "opp_mult": 0.977,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5611,
-     "fair_over": -128,
-     "fair_under": 128
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3856,
-     "fair_over": 159,
-     "fair_under": -159
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2391,
-     "fair_over": 318,
-     "fair_under": -318
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1343,
-     "fair_over": 645,
-     "fair_under": -645
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0687,
-     "fair_over": 1356,
-     "fair_under": -1356
+     "p_over": 0.0727,
+     "fair_over": 1275,
+     "fair_under": -1275
     }
    ]
   },
@@ -491,33 +411,73 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5528,
+     "p_over": 0.5526,
      "fair_over": -124,
      "fair_under": 124
     },
     {
      "line": 5.5,
-     "p_over": 0.3773,
+     "p_over": 0.3771,
      "fair_over": 165,
      "fair_under": -165
     },
     {
      "line": 6.5,
-     "p_over": 0.2322,
+     "p_over": 0.2321,
      "fair_over": 331,
      "fair_under": -331
     },
     {
      "line": 7.5,
-     "p_over": 0.1294,
+     "p_over": 0.1293,
      "fair_over": 673,
      "fair_under": -673
     },
     {
      "line": 8.5,
      "p_over": 0.0656,
-     "fair_over": 1424,
-     "fair_under": -1424
+     "fair_over": 1425,
+     "fair_under": -1425
+    }
+   ]
+  },
+  {
+   "pitcher": "Christian Scott",
+   "opp": "Atlanta Braves",
+   "lam": 4.95,
+   "k9_regressed": 10.15,
+   "exp_ip": 4.49,
+   "opp_mult": 0.978,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5509,
+     "fair_over": -123,
+     "fair_under": 123
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3755,
+     "fair_over": 166,
+     "fair_under": -166
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2308,
+     "fair_over": 333,
+     "fair_under": -333
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1284,
+     "fair_over": 679,
+     "fair_under": -679
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.065,
+     "fair_over": 1439,
+     "fair_under": -1439
     }
    ]
   },
@@ -567,77 +527,77 @@
    "lam": 4.89,
    "k9_regressed": 8.26,
    "exp_ip": 5.33,
-   "opp_mult": 0.999,
+   "opp_mult": 0.998,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5395,
+     "p_over": 0.5393,
      "fair_over": -117,
      "fair_under": 117
     },
     {
      "line": 5.5,
-     "p_over": 0.3643,
+     "p_over": 0.3641,
      "fair_over": 175,
      "fair_under": -175
     },
     {
      "line": 6.5,
-     "p_over": 0.2215,
-     "fair_over": 351,
-     "fair_under": -351
+     "p_over": 0.2214,
+     "fair_over": 352,
+     "fair_under": -352
     },
     {
      "line": 7.5,
-     "p_over": 0.1219,
+     "p_over": 0.1218,
      "fair_over": 721,
      "fair_under": -721
     },
     {
      "line": 8.5,
-     "p_over": 0.061,
-     "fair_over": 1540,
-     "fair_under": -1540
+     "p_over": 0.0609,
+     "fair_over": 1542,
+     "fair_under": -1542
     }
    ]
   },
   {
-   "pitcher": "Matthew Boyd",
-   "opp": "St. Louis Cardinals",
-   "lam": 4.78,
-   "k9_regressed": 8.47,
-   "exp_ip": 5.36,
-   "opp_mult": 0.948,
+   "pitcher": "Dustin May",
+   "opp": "Chicago Cubs",
+   "lam": 4.88,
+   "k9_regressed": 8.84,
+   "exp_ip": 5.03,
+   "opp_mult": 0.988,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5206,
-     "fair_over": -109,
-     "fair_under": 109
+     "p_over": 0.5387,
+     "fair_over": -117,
+     "fair_under": 117
     },
     {
      "line": 5.5,
-     "p_over": 0.346,
-     "fair_over": 189,
-     "fair_under": -189
+     "p_over": 0.3635,
+     "fair_over": 175,
+     "fair_under": -175
     },
     {
      "line": 6.5,
-     "p_over": 0.2068,
-     "fair_over": 383,
-     "fair_under": -383
+     "p_over": 0.2209,
+     "fair_over": 353,
+     "fair_under": -353
     },
     {
      "line": 7.5,
-     "p_over": 0.1117,
-     "fair_over": 795,
-     "fair_under": -795
+     "p_over": 0.1214,
+     "fair_over": 724,
+     "fair_under": -724
     },
     {
      "line": 8.5,
-     "p_over": 0.0548,
-     "fair_over": 1723,
-     "fair_under": -1723
+     "p_over": 0.0607,
+     "fair_over": 1547,
+     "fair_under": -1547
     }
    ]
   },
@@ -722,46 +682,6 @@
    ]
   },
   {
-   "pitcher": "Brady Singer",
-   "opp": "Cleveland Guardians",
-   "lam": 4.55,
-   "k9_regressed": 7.9,
-   "exp_ip": 5.17,
-   "opp_mult": 1.003,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4773,
-     "fair_over": 110,
-     "fair_under": -110
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3056,
-     "fair_over": 227,
-     "fair_under": -227
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1754,
-     "fair_over": 470,
-     "fair_under": -470
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0907,
-     "fair_over": 1002,
-     "fair_under": -1002
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0426,
-     "fair_over": 2247,
-     "fair_under": -2247
-    }
-   ]
-  },
-  {
    "pitcher": "Patrick Sandoval",
    "opp": "Athletics",
    "lam": 4.48,
@@ -802,42 +722,122 @@
    ]
   },
   {
-   "pitcher": "AJ Smith-Shawver",
-   "opp": "New York Mets",
-   "lam": 4.14,
-   "k9_regressed": 8.57,
-   "exp_ip": 4.33,
-   "opp_mult": 1.004,
+   "pitcher": "Matthew Boyd",
+   "opp": "St. Louis Cardinals",
+   "lam": 4.46,
+   "k9_regressed": 8.47,
+   "exp_ip": 5.0,
+   "opp_mult": 0.948,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3988,
-     "fair_over": 151,
-     "fair_under": -151
+     "p_over": 0.4607,
+     "fair_over": 117,
+     "fair_under": -117
     },
     {
      "line": 5.5,
-     "p_over": 0.2374,
-     "fair_over": 321,
-     "fair_under": -321
+     "p_over": 0.2906,
+     "fair_over": 244,
+     "fair_under": -244
     },
     {
      "line": 6.5,
-     "p_over": 0.126,
-     "fair_over": 694,
-     "fair_under": -694
+     "p_over": 0.1641,
+     "fair_over": 509,
+     "fair_under": -509
     },
     {
      "line": 7.5,
-     "p_over": 0.06,
-     "fair_over": 1566,
-     "fair_under": -1566
+     "p_over": 0.0835,
+     "fair_over": 1097,
+     "fair_under": -1097
     },
     {
      "line": 8.5,
-     "p_over": 0.0259,
-     "fair_over": 3763,
-     "fair_under": -3763
+     "p_over": 0.0385,
+     "fair_over": 2495,
+     "fair_under": -2495
+    }
+   ]
+  },
+  {
+   "pitcher": "Brady Singer",
+   "opp": "Cleveland Guardians",
+   "lam": 4.43,
+   "k9_regressed": 7.86,
+   "exp_ip": 5.06,
+   "opp_mult": 1.002,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.455,
+     "fair_over": 120,
+     "fair_under": -120
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2855,
+     "fair_over": 250,
+     "fair_under": -250
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1603,
+     "fair_over": 524,
+     "fair_under": -524
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0811,
+     "fair_over": 1133,
+     "fair_under": -1133
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0372,
+     "fair_over": 2589,
+     "fair_under": -2589
+    }
+   ]
+  },
+  {
+   "pitcher": "AJ Smith-Shawver",
+   "opp": "New York Mets",
+   "lam": 4.15,
+   "k9_regressed": 8.57,
+   "exp_ip": 4.33,
+   "opp_mult": 1.005,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3999,
+     "fair_over": 150,
+     "fair_under": -150
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2383,
+     "fair_over": 320,
+     "fair_under": -320
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1266,
+     "fair_over": 690,
+     "fair_under": -690
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0604,
+     "fair_over": 1556,
+     "fair_under": -1556
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0261,
+     "fair_over": 3734,
+     "fair_under": -3734
     }
    ]
   },
@@ -918,46 +918,6 @@
      "p_over": 0.0141,
      "fair_over": 6998,
      "fair_under": -6998
-    }
-   ]
-  },
-  {
-   "pitcher": "Randy Dobnak",
-   "opp": "Minnesota Twins",
-   "lam": 3.69,
-   "k9_regressed": 7.24,
-   "exp_ip": 4.67,
-   "opp_mult": 0.982,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3102,
-     "fair_over": 222,
-     "fair_under": -222
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.168,
-     "fair_over": 495,
-     "fair_under": -495
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0807,
-     "fair_over": 1140,
-     "fair_under": -1140
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0346,
-     "fair_over": 2788,
-     "fair_under": -2788
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0134,
-     "fair_over": 7351,
-     "fair_under": -7351
     }
    ]
   },
@@ -1084,165 +1044,205 @@
   {
    "pitcher": "Eduardo Rodriguez",
    "opp": "Pittsburgh Pirates",
-   "lam": 3.1,
-   "k9_regressed": 8.86,
+   "lam": 3.12,
+   "k9_regressed": 8.9,
    "exp_ip": 3.0,
    "opp_mult": 1.05,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2022,
-     "fair_over": 395,
-     "fair_under": -395
+     "p_over": 0.2045,
+     "fair_over": 389,
+     "fair_under": -389
     },
     {
      "line": 5.5,
-     "p_over": 0.0946,
-     "fair_over": 958,
-     "fair_under": -958
+     "p_over": 0.096,
+     "fair_over": 942,
+     "fair_under": -942
     },
     {
      "line": 6.5,
-     "p_over": 0.0389,
-     "fair_over": 2469,
-     "fair_under": -2469
+     "p_over": 0.0397,
+     "fair_over": 2421,
+     "fair_under": -2421
     },
     {
      "line": 7.5,
-     "p_over": 0.0143,
-     "fair_over": 6911,
-     "fair_under": -6911
+     "p_over": 0.0146,
+     "fair_over": 6752,
+     "fair_under": -6752
     },
     {
      "line": 8.5,
-     "p_over": 0.0047,
-     "fair_over": 21162,
-     "fair_under": -21162
+     "p_over": 0.0048,
+     "fair_over": 20597,
+     "fair_under": -20597
     }
    ]
   },
   {
    "pitcher": "Kyle Hart",
    "opp": "Colorado Rockies",
-   "lam": 2.8,
+   "lam": 2.81,
    "k9_regressed": 8.26,
    "exp_ip": 3.0,
-   "opp_mult": 1.018,
+   "opp_mult": 1.02,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1527,
-     "fair_over": 555,
-     "fair_under": -555
+     "p_over": 0.1537,
+     "fair_over": 550,
+     "fair_under": -550
     },
     {
      "line": 5.5,
-     "p_over": 0.0653,
-     "fair_over": 1431,
-     "fair_under": -1431
+     "p_over": 0.0659,
+     "fair_over": 1417,
+     "fair_under": -1417
     },
     {
      "line": 6.5,
-     "p_over": 0.0245,
-     "fair_over": 3981,
-     "fair_under": -3981
+     "p_over": 0.0248,
+     "fair_over": 3936,
+     "fair_under": -3936
     },
     {
      "line": 7.5,
-     "p_over": 0.0082,
-     "fair_over": 12141,
-     "fair_under": -12141
+     "p_over": 0.0083,
+     "fair_over": 11979,
+     "fair_under": -11979
     },
     {
      "line": 8.5,
-     "p_over": 0.0024,
-     "fair_over": 40779,
-     "fair_under": -40779
+     "p_over": 0.0025,
+     "fair_over": 40147,
+     "fair_under": -40147
     }
    ]
   },
   {
    "pitcher": "Thomas Pannone",
    "opp": "San Francisco Giants",
-   "lam": 2.71,
+   "lam": 2.7,
    "k9_regressed": 8.39,
    "exp_ip": 3.0,
-   "opp_mult": 0.968,
+   "opp_mult": 0.967,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1385,
-     "fair_over": 622,
-     "fair_under": -622
+     "p_over": 0.1378,
+     "fair_over": 626,
+     "fair_under": -626
     },
     {
      "line": 5.5,
-     "p_over": 0.0575,
-     "fair_over": 1639,
-     "fair_under": -1639
+     "p_over": 0.0571,
+     "fair_over": 1650,
+     "fair_under": -1650
     },
     {
      "line": 6.5,
-     "p_over": 0.0209,
-     "fair_over": 4682,
-     "fair_under": -4682
+     "p_over": 0.0208,
+     "fair_over": 4719,
+     "fair_under": -4719
     },
     {
      "line": 7.5,
-     "p_over": 0.0068,
-     "fair_over": 14708,
-     "fair_under": -14708
+     "p_over": 0.0067,
+     "fair_over": 14845,
+     "fair_under": -14845
     },
     {
      "line": 8.5,
-     "p_over": 0.002,
-     "fair_over": 50965,
-     "fair_under": -50965
+     "p_over": 0.0019,
+     "fair_over": 51520,
+     "fair_under": -51520
+    }
+   ]
+  },
+  {
+   "pitcher": "Randy Dobnak",
+   "opp": "Minnesota Twins",
+   "lam": 2.67,
+   "k9_regressed": 7.11,
+   "exp_ip": 3.44,
+   "opp_mult": 0.982,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1327,
+     "fair_over": 653,
+     "fair_under": -653
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0544,
+     "fair_over": 1738,
+     "fair_under": -1738
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0195,
+     "fair_over": 5022,
+     "fair_under": -5022
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0062,
+     "fair_over": 15977,
+     "fair_under": -15977
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0018,
+     "fair_over": 56110,
+     "fair_under": -56110
     }
    ]
   },
   {
    "pitcher": "Casey Legumina",
    "opp": "Texas Rangers",
-   "lam": 2.49,
-   "k9_regressed": 7.4,
+   "lam": 2.44,
+   "k9_regressed": 7.25,
    "exp_ip": 3.0,
    "opp_mult": 1.009,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1075,
-     "fair_over": 830,
-     "fair_under": -830
+     "p_over": 0.1006,
+     "fair_over": 894,
+     "fair_under": -894
     },
     {
      "line": 5.5,
-     "p_over": 0.0414,
-     "fair_over": 2317,
-     "fair_under": -2317
+     "p_over": 0.038,
+     "fair_over": 2533,
+     "fair_under": -2533
     },
     {
      "line": 6.5,
-     "p_over": 0.0139,
-     "fair_over": 7085,
-     "fair_under": -7085
+     "p_over": 0.0125,
+     "fair_over": 7885,
+     "fair_under": -7885
     },
     {
      "line": 7.5,
-     "p_over": 0.0042,
-     "fair_over": 23992,
-     "fair_under": -23992
+     "p_over": 0.0037,
+     "fair_over": 27222,
+     "fair_under": -27222
     },
     {
      "line": 8.5,
-     "p_over": 0.0011,
-     "fair_over": 89965,
-     "fair_under": -89965
+     "p_over": 0.001,
+     "fair_over": 104158,
+     "fair_under": -104158
     }
    ]
   }
  ],
- "diag": "errors {'401': 21} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 19} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
