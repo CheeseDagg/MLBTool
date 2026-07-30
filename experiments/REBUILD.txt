@@ -1,1 +1,1 @@
-rebuild 2026-07-30T14:40:59Z (grader schema-drift fix + league control)
+rebuild 2026-07-30T14:49:00Z (workflow staging fix)

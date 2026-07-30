@@ -130,6 +130,16 @@ append-only file whose header is written once is a schema-drift trap, and a
 filter-then-aggregate step is where the evidence gets destroyed. Every silent drop
 must become a counter.**
 
+**THE SAME BUG WAS ALSO IN THE WORKFLOW, WHICH IS HOW YOU KNOW IT IS A CLASS AND NOT
+AN ACCIDENT.** `.github/workflows/mlb-daily.yml` staged six `mlb/data` paths **by
+name**. So `lineshop.json`, `bvp_board.json` and `recalib_report.json` were rebuilt
+every run and thrown away, and `league_daily.csv` — a file that is worthless unless it
+ACCUMULATES, since an Actions checkout is fresh every time — would never have held more
+than one day. Now `git add -u mlb/data/` (tracked-only, so no stray cache or 9 MB
+experiment dump rides along) plus a one-time explicit add for genuinely new artifacts.
+**Hand-maintained lists of things-to-include rot silently and always in the direction
+of dropping data.** Two independent instances of it in one codebase in one week.
+
 **AND THE MISS I WENT LOOKING FOR WAS AN ARTEFACT OF THAT BUG.** The flag that
 started this was the 21-date panel showing the 12-16% bucket 0-for-15 and 16-20%
 1-for-29 — "the middle of the board is broken." On the repaired panel (n 347 → 552)
