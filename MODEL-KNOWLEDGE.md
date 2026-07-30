@@ -184,6 +184,33 @@ predicts lower will win on a cold week whether or not it is right. That is exact
 variance-chasing the recalibrator's own docstring warns against. Wait for
 `league_daily.csv` to say whether that week was the league or the model.
 
+**RESOLVED 07-30 — it was BOTH, and they separate cleanly.** Regressing daily
+(actual − predicted) on the league HR index: **slope +20.33pt per unit index, 95% CI
+[+7.19, +32.60], P(slope>0)=0.996** — theory says ~21pt because the mean prediction is
+21%, so *day-to-day board swing is essentially the league environment* and is not a
+model fault. What SURVIVES that control is a level bias: intercept −4.29pt, and
+directly on the ledger the board predicted 20.97% and hit 17.57% over 20 days (n=552),
+ratio 0.838, day-clustered 95% CI [0.683, 1.002], P(hot)=0.973. Shipped as
+`LIVE_LEVEL` = 0.88 in `mlb_hr.py`, shrunk toward 1 by leave-one-day-out.
+
+**THE CLASS OF BUG, worth carrying to every other sport:** a level gap between the
+BACKTEST REPLAY and PRODUCTION is invisible to any refit that pools them. The monthly
+recalibrator mixes 25k replay rows with ~550 live ones; live is 2% of the pool, so it
+cannot move the anchors no matter how wrong production is. Shape and level need
+separate estimators fit on separate data. Also: bucketing the live board by predicted
+% made the bias look like a *shape* problem concentrated at 10–20%. It is not — those
+rows were two thin-slate days, and with day fixed effects the slope on logit(p) is
+1.39, CI [0.32, 2.88]. **Bucket tables on day-clustered data lie about shape.**
+
+**07-27 (residual −15.58) is variance, not signal** — no park, temperature or team
+cluster; P(≤1 of 25 at 21%) ≈ 2%, i.e. expected about once across 21 board days.
+
+**AND A MISS:** slate temperature was flagged 07-29 as a live nowcast for the league
+index (r=+0.469, R²=0.220). It does not survive leave-one-day-out — worth +0.00016 LL
+at best shrinkage and actively harmful unshrunk. The R² was overfit on 13 days. The
+oracle gap says a *working* league-index nowcast is worth ~+0.012 LL; temperature is
+not it.
+
 **BLIND SPOTS:** umpire assignment · travel/getaway days · lineup changes after build
 (spot tags flag rookies/new bats, not scratches) · anything intra-day (board is
 pregame) · calibration SHAPE from the live ledger (no leverage — see above).
