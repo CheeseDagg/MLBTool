@@ -672,3 +672,23 @@ date,player,team,opp_sp,slot,lu,hr_pct,hr_raw,fair,book_price,ev_pct,park,temp,p
 2026-07-30,Jac Caglianone,KCR,Bailey Ober,3,card,19.3,21.1,+419,,,park -2%,89F,LvR +8%,heat +11%,hr,1
 2026-07-30,Randal Grichuk,CHW,Ryan Weathers,4,card,19.3,21.1,+419,,,park +9%,79F · wind in 5,RvL +12%,heat -2%,no,0
 2026-07-30,Carter Jensen,KCR,Bailey Ober,1,card,18.8,20.6,+433,,,park -2%,89F,LvR +8%,heat -0%,no,0
+2026-07-30,Matt Olson,ATL,Jake Irvin,3,card,22.6,33.2,+343,,,park +4%,88F · wind out 7,LvR +8%,heat +7%,no,0
+2026-07-30,Drake Baldwin,ATL,Jake Irvin,1,card,21.2,30.9,+373,,,park +4%,88F · wind out 7,LvR +8%,heat +7%,no,0
+2026-07-30,James Wood,WSN,Grant Holmes,1,card,21.0,30.7,+376,,,park +4%,88F · wind out 7,LvR +8%,heat -6%,no,0
+2026-07-30,Nick Kurtz,ATH,Sonny Gray,1,proj,19.6,28.5,+409,,,park +6% [low-conf],94F,LvR +8%,heat +4%,no,0
+2026-07-30,Elly De La Cruz,CIN,Yohan Ramírez *,1,card,18.9,26.3,+428,,,park +25%,85F · wind out 3,SvR +8%,heat -0%,no,0
+2026-07-30,Brandon Lowe,PIT,Rhett Lowder,2,proj,18.8,25.9,+431,,,park +25%,85F · wind out 3,LvR +8%,heat +3%,hr,1
+2026-07-30,Shohei Ohtani,LAD,Bryan Woo,2,proj,18.7,25.5,+434,,,park +5%,87F · wind out 5,LvR +8%,heat +5%,void,
+2026-07-30,Sal Stewart,CIN,Yohan Ramírez *,2,card,18.6,25.2,+437,,,park +25%,85F · wind out 3,RvR -3%,heat -1%,no,0
+2026-07-30,Wilyer Abreu,BOS,Mason Barnett,1,proj,18.3,24.1,+446,,,park +6% [low-conf],94F,LvR +8%,,hr,1
+2026-07-30,JJ Bleday,CIN,Yohan Ramírez *,3,card,18.2,23.7,+450,,,park +25%,85F · wind out 3,LvR +8%,heat +1%,no,0
+2026-07-30,Willson Contreras,BOS,Mason Barnett,4,proj,18.2,23.7,+449,,,park +6% [low-conf],94F,RvR -3%,,hr,1
+2026-07-30,CJ Abrams,WSN,Grant Holmes,4,card,18.1,23.5,+452,,,park +4%,88F · wind out 7,LvR +8%,heat -3%,no,0
+2026-07-30,Michael Harris II,ATL,Jake Irvin,4,card,18.1,23.4,+452,,,park +4%,88F · wind out 7,LvR +8%,heat +7%,no,0
+2026-07-30,Ronald Acuña Jr.,ATL,Jake Irvin,2,card,17.9,22.7,+459,,,park +4%,88F · wind out 7,RvR -3%,heat +3%,hr,1
+2026-07-30,Rafael Devers,SFG,JP Sears,1,proj,17.8,22.5,+461,,,park -4%,80F,LvL -22%,heat -1%,no,0
+2026-07-30,Tyler Soderstrom,ATH,Sonny Gray,2,proj,17.8,22.4,+462,,,park +6% [low-conf],94F,LvR +8%,heat -0%,no,0
+2026-07-30,Luis García Jr.,WSN,Grant Holmes,2,card,17.7,22.2,+464,,,park +4%,88F · wind out 7,LvR +8%,heat -6%,hr,1
+2026-07-30,Bryan Reynolds,PIT,Rhett Lowder,1,proj,16.9,21.1,+490,,,park +25%,85F · wind out 3,SvR +8%,heat +1%,no,0
+2026-07-30,Dominic Canzone,SEA,Roki Sasaki,6,proj,16.8,20.9,+495,,,park +5%,87F · wind out 5,LvR +8%,heat -3%,no,0
+2026-07-30,Ty France,SDP,TBD *,4,card,16.6,20.7,+502,,,park -4%,80F,,,no,0
