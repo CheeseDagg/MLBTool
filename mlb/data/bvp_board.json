@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T18:43:26+00:00",
+ "generated": "2026-07-31T21:19:17+00:00",
  "date": "2026-07-31",
  "min_pa": 6,
  "rows": [
@@ -92,17 +92,6 @@
    "slg": ".750"
   },
   {
-   "batter": "Paul Goldschmidt",
-   "team": "NYY",
-   "opp_sp": "Shota Imanaga",
-   "pa": 10,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".700"
-  },
-  {
    "batter": "Joc Pederson",
    "team": "TEX",
    "opp_sp": "Hunter Brown",
@@ -134,6 +123,17 @@
    "hr": 1,
    "avg": ".353",
    "slg": ".588"
+  },
+  {
+   "batter": "Corey Seager",
+   "team": "TEX",
+   "opp_sp": "Hunter Brown",
+   "pa": 18,
+   "ab": 16,
+   "h": 4,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".500"
   },
   {
    "batter": "Max Muncy",
