@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T14:41+00:00",
+ "generated": "2026-07-31T15:35+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -318,46 +318,6 @@
      "p_over": 0.0958,
      "fair_over": 944,
      "fair_under": -944
-    }
-   ]
-  },
-  {
-   "pitcher": "Casey Mize",
-   "opp": "Athletics",
-   "lam": 5.35,
-   "k9_regressed": 8.76,
-   "exp_ip": 5.42,
-   "opp_mult": 1.015,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6193,
-     "fair_over": -163,
-     "fair_under": 163
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.446,
-     "fair_over": 124,
-     "fair_under": -124
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2912,
-     "fair_over": 243,
-     "fair_under": -243
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1729,
-     "fair_over": 478,
-     "fair_under": -478
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0937,
-     "fair_over": 967,
-     "fair_under": -967
     }
    ]
   },
