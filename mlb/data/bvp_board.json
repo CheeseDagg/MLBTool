@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T00:14:55+00:00",
+ "generated": "2026-07-31T18:43:26+00:00",
  "date": "2026-07-31",
  "min_pa": 6,
  "rows": [
@@ -15,10 +15,10 @@
    "slg": ".929"
   },
   {
-   "batter": "Liam Hicks",
-   "team": "MIA",
-   "opp_sp": "Freddy Peralta",
-   "pa": 9,
+   "batter": "Spencer Torkelson",
+   "team": "DET",
+   "opp_sp": "Jeffrey Springs",
+   "pa": 7,
    "ab": 6,
    "h": 2,
    "hr": 2,
@@ -70,17 +70,6 @@
    "slg": ".750"
   },
   {
-   "batter": "Kyle Stowers",
-   "team": "MIA",
-   "opp_sp": "Freddy Peralta",
-   "pa": 9,
-   "ab": 8,
-   "h": 3,
-   "hr": 1,
-   "avg": ".375",
-   "slg": "1.000"
-  },
-  {
    "batter": "Andrew Benintendi",
    "team": "CWS",
    "opp_sp": "Nick Martinez",
@@ -101,17 +90,6 @@
    "hr": 1,
    "avg": ".375",
    "slg": ".750"
-  },
-  {
-   "batter": "Nelson Vel\u00e1zquez",
-   "team": "STL",
-   "opp_sp": "Dylan Cease",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
   },
   {
    "batter": "Paul Goldschmidt",
@@ -167,6 +145,28 @@
    "hr": 1,
    "avg": ".125",
    "slg": ".500"
+  },
+  {
+   "batter": "James Wood",
+   "team": "WSH",
+   "opp_sp": "Bryce Elder",
+   "pa": 12,
+   "ab": 11,
+   "h": 2,
+   "hr": 1,
+   "avg": ".182",
+   "slg": ".455"
+  },
+  {
+   "batter": "Gleyber Torres",
+   "team": "DET",
+   "opp_sp": "Jeffrey Springs",
+   "pa": 16,
+   "ab": 13,
+   "h": 2,
+   "hr": 1,
+   "avg": ".154",
+   "slg": ".385"
   }
  ]
 }
