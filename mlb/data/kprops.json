@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T15:35+00:00",
+ "generated": "2026-07-31T19:03+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -162,46 +162,6 @@
    ]
   },
   {
-   "pitcher": "Shota Imanaga",
-   "opp": "New York Yankees",
-   "lam": 5.73,
-   "k9_regressed": 8.45,
-   "exp_ip": 5.76,
-   "opp_mult": 1.059,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6769,
-     "fair_over": -209,
-     "fair_under": 209
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5097,
-     "fair_over": -104,
-     "fair_under": 104
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3501,
-     "fair_over": 186,
-     "fair_under": -186
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2195,
-     "fair_over": 356,
-     "fair_under": -356
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.126,
-     "fair_over": 694,
-     "fair_under": -694
-    }
-   ]
-  },
-  {
    "pitcher": "Bryce Miller",
    "opp": "Minnesota Twins",
    "lam": 5.72,
@@ -238,6 +198,46 @@
      "p_over": 0.1251,
      "fair_over": 699,
      "fair_under": -699
+    }
+   ]
+  },
+  {
+   "pitcher": "Shota Imanaga",
+   "opp": "New York Yankees",
+   "lam": 5.7,
+   "k9_regressed": 8.57,
+   "exp_ip": 5.64,
+   "opp_mult": 1.061,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6721,
+     "fair_over": -205,
+     "fair_under": 205
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5042,
+     "fair_over": -102,
+     "fair_under": 102
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3448,
+     "fair_over": 190,
+     "fair_under": -190
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2152,
+     "fair_over": 365,
+     "fair_under": -365
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1229,
+     "fair_over": 714,
+     "fair_under": -714
     }
    ]
   },
@@ -522,46 +522,6 @@
    ]
   },
   {
-   "pitcher": "Freddy Peralta",
-   "opp": "Miami Marlins",
-   "lam": 5.03,
-   "k9_regressed": 8.87,
-   "exp_ip": 5.17,
-   "opp_mult": 0.988,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5641,
-     "fair_over": -129,
-     "fair_under": 129
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3887,
-     "fair_over": 157,
-     "fair_under": -157
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2417,
-     "fair_over": 314,
-     "fair_under": -314
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1361,
-     "fair_over": 635,
-     "fair_under": -635
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0698,
-     "fair_over": 1332,
-     "fair_under": -1332
-    }
-   ]
-  },
-  {
    "pitcher": "Zebby Matthews",
    "opp": "Seattle Mariners",
    "lam": 4.97,
@@ -602,46 +562,6 @@
    ]
   },
   {
-   "pitcher": "Will Warren",
-   "opp": "Chicago Cubs",
-   "lam": 4.94,
-   "k9_regressed": 8.9,
-   "exp_ip": 5.07,
-   "opp_mult": 0.986,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5484,
-     "fair_over": -121,
-     "fair_under": 121
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.373,
-     "fair_over": 168,
-     "fair_under": -168
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2287,
-     "fair_over": 337,
-     "fair_under": -337
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1269,
-     "fair_over": 688,
-     "fair_under": -688
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0641,
-     "fair_over": 1461,
-     "fair_under": -1461
-    }
-   ]
-  },
-  {
    "pitcher": "Bryce Elder",
    "opp": "Washington Nationals",
    "lam": 4.9,
@@ -678,6 +598,46 @@
      "p_over": 0.0617,
      "fair_over": 1521,
      "fair_under": -1521
+    }
+   ]
+  },
+  {
+   "pitcher": "Will Warren",
+   "opp": "Chicago Cubs",
+   "lam": 4.83,
+   "k9_regressed": 8.9,
+   "exp_ip": 4.95,
+   "opp_mult": 0.987,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5297,
+     "fair_over": -113,
+     "fair_under": 113
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3547,
+     "fair_over": 182,
+     "fair_under": -182
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2138,
+     "fair_over": 368,
+     "fair_under": -368
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1165,
+     "fair_over": 758,
+     "fair_under": -758
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0577,
+     "fair_over": 1633,
+     "fair_under": -1633
     }
    ]
   },
@@ -1122,7 +1082,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 15} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 29} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
