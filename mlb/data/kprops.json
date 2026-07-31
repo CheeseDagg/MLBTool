@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-30T22:14+00:00",
+ "generated": "2026-07-31T00:11+00:00",
  "board": [
   {
    "pitcher": "Nolan McLean",
@@ -118,46 +118,6 @@
      "p_over": 0.1589,
      "fair_over": 529,
      "fair_under": -529
-    }
-   ]
-  },
-  {
-   "pitcher": "Yohan Ram\u00edrez",
-   "opp": "Cincinnati Reds",
-   "lam": 6.0,
-   "k9_regressed": 9.44,
-   "exp_ip": 5.3,
-   "opp_mult": 1.079,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7146,
-     "fair_over": -250,
-     "fair_under": 250
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5539,
-     "fair_over": -124,
-     "fair_under": 124
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3932,
-     "fair_over": 154,
-     "fair_under": -154
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2556,
-     "fair_over": 291,
-     "fair_under": -291
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1525,
-     "fair_over": 556,
-     "fair_under": -556
     }
    ]
   },
@@ -402,46 +362,6 @@
    ]
   },
   {
-   "pitcher": "Jake Irvin",
-   "opp": "Atlanta Braves",
-   "lam": 4.86,
-   "k9_regressed": 9.5,
-   "exp_ip": 4.7,
-   "opp_mult": 0.98,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5339,
-     "fair_over": -115,
-     "fair_under": 115
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3588,
-     "fair_over": 179,
-     "fair_under": -179
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2171,
-     "fair_over": 361,
-     "fair_under": -361
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1188,
-     "fair_over": 742,
-     "fair_under": -742
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0591,
-     "fair_over": 1592,
-     "fair_under": -1592
-    }
-   ]
-  },
-  {
    "pitcher": "Shane McClanahan",
    "opp": "Texas Rangers",
    "lam": 4.65,
@@ -478,6 +398,46 @@
      "p_over": 0.0478,
      "fair_over": 1990,
      "fair_under": -1990
+    }
+   ]
+  },
+  {
+   "pitcher": "Jake Irvin",
+   "opp": "Atlanta Braves",
+   "lam": 4.63,
+   "k9_regressed": 9.18,
+   "exp_ip": 4.64,
+   "opp_mult": 0.979,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4922,
+     "fair_over": 103,
+     "fair_under": -103
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3192,
+     "fair_over": 213,
+     "fair_under": -213
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1858,
+     "fair_over": 438,
+     "fair_under": -438
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0976,
+     "fair_over": 925,
+     "fair_under": -925
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0465,
+     "fair_over": 2049,
+     "fair_under": -2049
     }
    ]
   },
@@ -522,46 +482,6 @@
    ]
   },
   {
-   "pitcher": "Rhett Lowder",
-   "opp": "Pittsburgh Pirates",
-   "lam": 4.31,
-   "k9_regressed": 7.91,
-   "exp_ip": 4.67,
-   "opp_mult": 1.05,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4309,
-     "fair_over": 132,
-     "fair_under": -132
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2644,
-     "fair_over": 278,
-     "fair_under": -278
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.145,
-     "fair_over": 590,
-     "fair_under": -590
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0715,
-     "fair_over": 1298,
-     "fair_under": -1298
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.032,
-     "fair_over": 3029,
-     "fair_under": -3029
-    }
-   ]
-  },
-  {
    "pitcher": "JP Sears",
    "opp": "San Francisco Giants",
    "lam": 4.27,
@@ -602,42 +522,42 @@
    ]
   },
   {
-   "pitcher": "Grant Holmes",
-   "opp": "Washington Nationals",
-   "lam": 4.22,
-   "k9_regressed": 7.92,
-   "exp_ip": 4.91,
-   "opp_mult": 0.976,
+   "pitcher": "Rhett Lowder",
+   "opp": "Pittsburgh Pirates",
+   "lam": 4.23,
+   "k9_regressed": 7.94,
+   "exp_ip": 4.56,
+   "opp_mult": 1.05,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.414,
-     "fair_over": 142,
-     "fair_under": -142
+     "p_over": 0.4153,
+     "fair_over": 141,
+     "fair_under": -141
     },
     {
      "line": 5.5,
-     "p_over": 0.2501,
-     "fair_over": 300,
-     "fair_under": -300
+     "p_over": 0.2512,
+     "fair_over": 298,
+     "fair_under": -298
     },
     {
      "line": 6.5,
-     "p_over": 0.1348,
-     "fair_over": 642,
-     "fair_under": -642
+     "p_over": 0.1356,
+     "fair_over": 638,
+     "fair_under": -638
     },
     {
      "line": 7.5,
-     "p_over": 0.0653,
-     "fair_over": 1431,
-     "fair_under": -1431
+     "p_over": 0.0658,
+     "fair_over": 1420,
+     "fair_under": -1420
     },
     {
      "line": 8.5,
-     "p_over": 0.0287,
-     "fair_over": 3390,
-     "fair_under": -3390
+     "p_over": 0.0289,
+     "fair_over": 3360,
+     "fair_under": -3360
     }
    ]
   },
@@ -682,6 +602,46 @@
    ]
   },
   {
+   "pitcher": "Grant Holmes",
+   "opp": "Washington Nationals",
+   "lam": 4.12,
+   "k9_regressed": 7.82,
+   "exp_ip": 4.87,
+   "opp_mult": 0.975,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3951,
+     "fair_over": 153,
+     "fair_under": -153
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2343,
+     "fair_over": 327,
+     "fair_under": -327
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1239,
+     "fair_over": 707,
+     "fair_under": -707
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0588,
+     "fair_over": 1601,
+     "fair_under": -1601
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0252,
+     "fair_over": 3861,
+     "fair_under": -3861
+    }
+   ]
+  },
+  {
    "pitcher": "Javier Assad",
    "opp": "St. Louis Cardinals",
    "lam": 3.8,
@@ -718,6 +678,46 @@
      "p_over": 0.0161,
      "fair_over": 6118,
      "fair_under": -6118
+    }
+   ]
+  },
+  {
+   "pitcher": "Yohan Ram\u00edrez",
+   "opp": "Cincinnati Reds",
+   "lam": 3.46,
+   "k9_regressed": 9.62,
+   "exp_ip": 3.0,
+   "opp_mult": 1.08,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2678,
+     "fair_over": 273,
+     "fair_under": -273
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1377,
+     "fair_over": 626,
+     "fair_under": -626
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0625,
+     "fair_over": 1499,
+     "fair_under": -1499
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0254,
+     "fair_over": 3841,
+     "fair_under": -3841
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0093,
+     "fair_over": 10675,
+     "fair_under": -10675
     }
    ]
   },
@@ -762,7 +762,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 17} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 19} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
