@@ -1,7 +1,18 @@
 name: MLB daily slate
 on:
   schedule:
-    - cron: "17 13 * * *"   # 8:17am CT — off-peak minute, board ready by 9 even with GitHub cron drift
+    # MEASURED drift on this repo, not assumed: scheduled runs land +58 to +83
+    # minutes after their cron, consistently, across every workflow here. The
+    # times below are the cron; the board appears about an hour and a quarter later.
+    #
+    # TWO morning crons, deliberately. The 13:17 run failed to publish a board on
+    # 07-28, 07-30 and 07-31 while the 17:47 and 20:17 runs published every day --
+    # so a morning slate was arriving only when it was triggered by hand. Whether
+    # GitHub dropped the schedule or the run errored, one attempt is not enough for
+    # the run that matters most, and a second attempt is nearly free: publishing is
+    # idempotent, so a redundant run that finds no diff exits 0 without a commit.
+    - cron: "27 12 * * *"   # 7:27am CT -> board by ~8:45am CT
+    - cron: "17 13 * * *"   # 8:17am CT -> retry; publishes only if the 12:27 run didn't
     - cron: "47 17 * * *"   # 12:47pm CT — day-game cards before early first pitches
     - cron: "17 20 * * *"   # 3:17pm CT — cards reprice, ready by 4
   workflow_dispatch: {}
@@ -36,7 +47,7 @@ jobs:
           python mlb_hr.py || true
           python mlb_publish.py
       - name: Pull futures (morning run only — odds move slowly, saves API quota)
-        if: github.event.schedule == '17 13 * * *' || github.event_name == 'workflow_dispatch'
+        if: github.event.schedule == '27 12 * * *' || github.event.schedule == '17 13 * * *' || github.event_name == 'workflow_dispatch'
         working-directory: mlb
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}

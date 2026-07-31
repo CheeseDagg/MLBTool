@@ -3,6 +3,13 @@ name: MLB staleness alarm
 # A silent dead cron can no longer go unnoticed.
 on:
   schedule:
+    # 15:30 UTC = 10:30am CT. The morning build's worst measured landing time is
+    # 14:40 UTC, so by 15:30 a missing board is missing, not late. The 18:30 check
+    # alone was too forgiving to be useful in the morning: it ran at 1:30pm CT,
+    # four hours after the board should have been up, and by then the 17:47 run
+    # was about to paper over the gap anyway. On 07-31 the user spotted the stale
+    # board himself, hours before this alarm would have said a word.
+    - cron: "30 15 * * *"
     - cron: "30 18 * * *"
   workflow_dispatch: {}
 permissions:
