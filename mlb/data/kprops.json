@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T19:46+00:00",
+ "generated": "2026-07-31T21:37+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -165,39 +165,39 @@
    "pitcher": "Shota Imanaga",
    "opp": "New York Yankees",
    "lam": 5.76,
-   "k9_regressed": 8.47,
-   "exp_ip": 5.77,
-   "opp_mult": 1.06,
+   "k9_regressed": 8.43,
+   "exp_ip": 5.8,
+   "opp_mult": 1.059,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6809,
-     "fair_over": -213,
-     "fair_under": 213
+     "p_over": 0.6815,
+     "fair_over": -214,
+     "fair_under": 214
     },
     {
      "line": 5.5,
-     "p_over": 0.5143,
+     "p_over": 0.515,
      "fair_over": -106,
      "fair_under": 106
     },
     {
      "line": 6.5,
-     "p_over": 0.3545,
+     "p_over": 0.3552,
      "fair_over": 182,
      "fair_under": -182
     },
     {
      "line": 7.5,
-     "p_over": 0.2231,
-     "fair_over": 348,
-     "fair_under": -348
+     "p_over": 0.2237,
+     "fair_over": 347,
+     "fair_under": -347
     },
     {
      "line": 8.5,
-     "p_over": 0.1286,
-     "fair_over": 678,
-     "fair_under": -678
+     "p_over": 0.129,
+     "fair_over": 675,
+     "fair_under": -675
     }
    ]
   },
@@ -525,39 +525,39 @@
    "pitcher": "Will Warren",
    "opp": "Chicago Cubs",
    "lam": 5.04,
-   "k9_regressed": 8.99,
-   "exp_ip": 5.11,
-   "opp_mult": 0.987,
+   "k9_regressed": 8.92,
+   "exp_ip": 5.14,
+   "opp_mult": 0.988,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5663,
-     "fair_over": -131,
-     "fair_under": 131
+     "p_over": 0.5658,
+     "fair_over": -130,
+     "fair_under": 130
     },
     {
      "line": 5.5,
-     "p_over": 0.3908,
+     "p_over": 0.3904,
      "fair_over": 156,
      "fair_under": -156
     },
     {
      "line": 6.5,
-     "p_over": 0.2435,
+     "p_over": 0.2431,
      "fair_over": 311,
      "fair_under": -311
     },
     {
      "line": 7.5,
-     "p_over": 0.1375,
-     "fair_over": 628,
-     "fair_under": -628
+     "p_over": 0.1372,
+     "fair_over": 629,
+     "fair_under": -629
     },
     {
      "line": 8.5,
-     "p_over": 0.0707,
-     "fair_over": 1315,
-     "fair_under": -1315
+     "p_over": 0.0705,
+     "fair_over": 1319,
+     "fair_under": -1319
     }
    ]
   },
@@ -802,6 +802,46 @@
    ]
   },
   {
+   "pitcher": "Kodai Senga",
+   "opp": "Miami Marlins",
+   "lam": 4.25,
+   "k9_regressed": 9.81,
+   "exp_ip": 3.95,
+   "opp_mult": 0.988,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4205,
+     "fair_over": 138,
+     "fair_under": -138
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2556,
+     "fair_over": 291,
+     "fair_under": -291
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1387,
+     "fair_over": 621,
+     "fair_under": -621
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0676,
+     "fair_over": 1378,
+     "fair_under": -1378
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0299,
+     "fair_over": 3246,
+     "fair_under": -3246
+    }
+   ]
+  },
+  {
    "pitcher": "Kyle Leahy",
    "opp": "Toronto Blue Jays",
    "lam": 4.18,
@@ -838,6 +878,46 @@
      "p_over": 0.0272,
      "fair_over": 3575,
      "fair_under": -3575
+    }
+   ]
+  },
+  {
+   "pitcher": "Andrew Painter",
+   "opp": "Baltimore Orioles",
+   "lam": 4.17,
+   "k9_regressed": 7.78,
+   "exp_ip": 4.58,
+   "opp_mult": 1.051,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4035,
+     "fair_over": 148,
+     "fair_under": -148
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2413,
+     "fair_over": 314,
+     "fair_under": -314
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1287,
+     "fair_over": 677,
+     "fair_under": -677
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0616,
+     "fair_over": 1523,
+     "fair_under": -1523
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0267,
+     "fair_over": 3642,
+     "fair_under": -3642
     }
    ]
   },
@@ -1082,7 +1162,7 @@
    ]
   }
  ],
- "diag": "errors {'401': 29} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
+ "diag": "errors {'401': 28} \u00b7 credits remaining 0 (used 500) \u00b7 whiff rest:30 rows",
  "n_markets": 0,
  "n_plays": 0,
  "plays": [],
