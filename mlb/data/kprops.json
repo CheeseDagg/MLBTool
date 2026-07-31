@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T19:03+00:00",
+ "generated": "2026-07-31T19:46+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -162,6 +162,46 @@
    ]
   },
   {
+   "pitcher": "Shota Imanaga",
+   "opp": "New York Yankees",
+   "lam": 5.76,
+   "k9_regressed": 8.47,
+   "exp_ip": 5.77,
+   "opp_mult": 1.06,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6809,
+     "fair_over": -213,
+     "fair_under": 213
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5143,
+     "fair_over": -106,
+     "fair_under": 106
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3545,
+     "fair_over": 182,
+     "fair_under": -182
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2231,
+     "fair_over": 348,
+     "fair_under": -348
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1286,
+     "fair_over": 678,
+     "fair_under": -678
+    }
+   ]
+  },
+  {
    "pitcher": "Bryce Miller",
    "opp": "Minnesota Twins",
    "lam": 5.72,
@@ -198,46 +238,6 @@
      "p_over": 0.1251,
      "fair_over": 699,
      "fair_under": -699
-    }
-   ]
-  },
-  {
-   "pitcher": "Shota Imanaga",
-   "opp": "New York Yankees",
-   "lam": 5.7,
-   "k9_regressed": 8.57,
-   "exp_ip": 5.64,
-   "opp_mult": 1.061,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6721,
-     "fair_over": -205,
-     "fair_under": 205
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5042,
-     "fair_over": -102,
-     "fair_under": 102
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3448,
-     "fair_over": 190,
-     "fair_under": -190
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2152,
-     "fair_over": 365,
-     "fair_under": -365
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1229,
-     "fair_over": 714,
-     "fair_under": -714
     }
    ]
   },
@@ -522,6 +522,46 @@
    ]
   },
   {
+   "pitcher": "Will Warren",
+   "opp": "Chicago Cubs",
+   "lam": 5.04,
+   "k9_regressed": 8.99,
+   "exp_ip": 5.11,
+   "opp_mult": 0.987,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5663,
+     "fair_over": -131,
+     "fair_under": 131
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3908,
+     "fair_over": 156,
+     "fair_under": -156
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2435,
+     "fair_over": 311,
+     "fair_under": -311
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1375,
+     "fair_over": 628,
+     "fair_under": -628
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0707,
+     "fair_over": 1315,
+     "fair_under": -1315
+    }
+   ]
+  },
+  {
    "pitcher": "Zebby Matthews",
    "opp": "Seattle Mariners",
    "lam": 4.97,
@@ -598,46 +638,6 @@
      "p_over": 0.0617,
      "fair_over": 1521,
      "fair_under": -1521
-    }
-   ]
-  },
-  {
-   "pitcher": "Will Warren",
-   "opp": "Chicago Cubs",
-   "lam": 4.83,
-   "k9_regressed": 8.9,
-   "exp_ip": 4.95,
-   "opp_mult": 0.987,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5297,
-     "fair_over": -113,
-     "fair_under": 113
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3547,
-     "fair_over": 182,
-     "fair_under": -182
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2138,
-     "fair_over": 368,
-     "fair_under": -368
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1165,
-     "fair_over": 758,
-     "fair_under": -758
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0577,
-     "fair_over": 1633,
-     "fair_under": -1633
     }
    ]
   },
