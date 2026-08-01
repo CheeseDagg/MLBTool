@@ -2023,17 +2023,32 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-07-30,San Francisco Giants,San Diego Padres,Robbie Ray,JP Sears,4,1,Final
 2026-07-30,Seattle Mariners,Los Angeles Dodgers,Bryan Woo,Roki Sasaki,2,6,Final
 2026-07-31,New York Yankees,Chicago Cubs,Will Warren,Shota Imanaga,2,0,Final
-2026-07-31,Pittsburgh Pirates,Cincinnati Reds,Paul Skenes,Hunter Greene,0,0,Pre-Game
-2026-07-31,Philadelphia Phillies,Baltimore Orioles,Andrew Painter,Brandon Young,0,0,Pre-Game
-2026-07-31,St. Louis Cardinals,Toronto Blue Jays,Kyle Leahy,Dylan Cease,0,0,Pre-Game
-2026-07-31,Arizona Diamondbacks,Cleveland Guardians,Mitch Bratt,Tanner Bibee,0,0,Pre-Game
-2026-07-31,Chicago White Sox,Tampa Bay Rays,Erick Fedde,Nick Martinez,0,0,Pre-Game
-2026-07-31,Miami Marlins,New York Mets,Janson Junk,Kodai Senga,0,0,Pre-Game
-2026-07-31,Washington Nationals,Atlanta Braves,Foster Griffin,Bryce Elder,0,0,Pre-Game
-2026-07-31,Texas Rangers,Houston Astros,Nathan Eovaldi,Hunter Brown,0,0,Pre-Game
-2026-07-31,Kansas City Royals,Colorado Rockies,Michael Wacha,Tomoyuki Sugano,0,0,Pre-Game
-2026-07-31,Milwaukee Brewers,Los Angeles Angels,Shane Drohan,Ryan Johnson,0,0,Pre-Game
-2026-07-31,Detroit Tigers,Athletics,,Jeffrey Springs,0,0,Scheduled
-2026-07-31,San Francisco Giants,San Diego Padres,Carson Whisenhunt,Bradgley Rodriguez,0,0,Pre-Game
-2026-07-31,Boston Red Sox,Los Angeles Dodgers,Ranger Suarez,Edgardo Henriquez,0,0,Scheduled
-2026-07-31,Minnesota Twins,Seattle Mariners,Zebby Matthews,Bryce Miller,0,0,Scheduled
+2026-07-31,Pittsburgh Pirates,Cincinnati Reds,Paul Skenes,Hunter Greene,7,8,Final
+2026-07-31,Philadelphia Phillies,Baltimore Orioles,Andrew Painter,Brandon Young,4,6,Final
+2026-07-31,St. Louis Cardinals,Toronto Blue Jays,Kyle Leahy,Dylan Cease,1,3,Final
+2026-07-31,Arizona Diamondbacks,Cleveland Guardians,Mitch Bratt,Tanner Bibee,4,1,Final
+2026-07-31,Chicago White Sox,Tampa Bay Rays,Erick Fedde,Nick Martinez,6,1,Final
+2026-07-31,Miami Marlins,New York Mets,Janson Junk,Kodai Senga,5,2,Final
+2026-07-31,Washington Nationals,Atlanta Braves,Foster Griffin,Bryce Elder,2,6,Final
+2026-07-31,Texas Rangers,Houston Astros,Nathan Eovaldi,Hunter Brown,2,11,Final
+2026-07-31,Kansas City Royals,Colorado Rockies,Michael Wacha,Tomoyuki Sugano,1,3,Final
+2026-07-31,Milwaukee Brewers,Los Angeles Angels,Shane Drohan,Ryan Johnson,6,2,Final
+2026-07-31,Detroit Tigers,Athletics,Tyler Holton,Jeffrey Springs,13,1,Final
+2026-07-31,San Francisco Giants,San Diego Padres,Carson Whisenhunt,Bradgley Rodriguez,0,7,Final
+2026-07-31,Boston Red Sox,Los Angeles Dodgers,Ranger Suarez,Edgardo Henriquez,9,4,Final
+2026-07-31,Minnesota Twins,Seattle Mariners,Zebby Matthews,Bryce Miller,5,3,Final
+2026-08-01,St. Louis Cardinals,Toronto Blue Jays,Quinn Mathews,Kevin Gausman,0,0,Scheduled
+2026-08-01,Minnesota Twins,Seattle Mariners,Connor Prielipp,Logan Gilbert,0,0,Scheduled
+2026-08-01,Chicago White Sox,Tampa Bay Rays,Jordan Hicks,Drew Rasmussen,0,0,Scheduled
+2026-08-01,Miami Marlins,New York Mets,Tyler Phillips,Zac Thornton,0,0,Scheduled
+2026-08-01,Pittsburgh Pirates,Cincinnati Reds,Braxton Ashcraft,Andrew Abbott,0,0,Scheduled
+2026-08-01,Philadelphia Phillies,Baltimore Orioles,Cristopher Sánchez,Shane Baz,0,0,Scheduled
+2026-08-01,Texas Rangers,Houston Astros,Jacob deGrom,Ronel Blanco,0,0,Scheduled
+2026-08-01,Arizona Diamondbacks,Cleveland Guardians,Kohl Drake,Parker Messick,0,0,Scheduled
+2026-08-01,Washington Nationals,Atlanta Braves,Miles Mikolas,Reynaldo López,0,0,Scheduled
+2026-08-01,New York Yankees,Chicago Cubs,Max Fried,David Peterson,0,0,Scheduled
+2026-08-01,Kansas City Royals,Colorado Rockies,Luinder Avila,Ryan Feltner,0,0,Scheduled
+2026-08-01,San Francisco Giants,San Diego Padres,Tyler Mahle,Walker Buehler,0,0,Scheduled
+2026-08-01,Boston Red Sox,Los Angeles Dodgers,Payton Tolle,Yoshinobu Yamamoto,0,0,Scheduled
+2026-08-01,Milwaukee Brewers,Los Angeles Angels,Robert Gasser,José Soriano,0,0,Scheduled
+2026-08-01,Detroit Tigers,Athletics,Framber Valdez,Jack Perkins,0,0,Scheduled

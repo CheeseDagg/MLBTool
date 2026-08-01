@@ -1,6 +1,307 @@
 {
- "generated": "2026-07-31T15:34:06+00:00",
+ "generated": "2026-08-01T14:09:47+00:00",
  "market": "World Series",
- "rows": [],
- "note": "futures off (HTTPError: HTTP Error 401: Unauthorized)"
+ "rows": [
+  {
+   "team": "Los Angeles Dodgers",
+   "cons_pct": 30.2,
+   "fair": "+232",
+   "best_price": 200,
+   "book": "betonlineag",
+   "edge_pct": -9.5,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "New York Yankees",
+   "cons_pct": 12.8,
+   "fair": "+683",
+   "best_price": 550,
+   "book": "betrivers",
+   "edge_pct": -17.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Milwaukee Brewers",
+   "cons_pct": 8.7,
+   "fair": "+1043",
+   "best_price": 900,
+   "book": "draftkings",
+   "edge_pct": -12.5,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Atlanta Braves",
+   "cons_pct": 6.9,
+   "fair": "+1341",
+   "best_price": 1200,
+   "book": "betonlineag",
+   "edge_pct": -9.8,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Tampa Bay Rays",
+   "cons_pct": 4.9,
+   "fair": "+1948",
+   "best_price": 1700,
+   "book": "betmgm",
+   "edge_pct": -12.1,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Philadelphia Phillies",
+   "cons_pct": 4.5,
+   "fair": "+2122",
+   "best_price": 1900,
+   "book": "fanduel",
+   "edge_pct": -10.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Seattle Mariners",
+   "cons_pct": 4.5,
+   "fair": "+2122",
+   "best_price": 2500,
+   "book": "fanduel",
+   "edge_pct": 17.0,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Boston Red Sox",
+   "cons_pct": 4.0,
+   "fair": "+2369",
+   "best_price": 2200,
+   "book": "betmgm",
+   "edge_pct": -6.9,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Chicago Cubs",
+   "cons_pct": 4.0,
+   "fair": "+2429",
+   "best_price": 2200,
+   "book": "fanduel",
+   "edge_pct": -9.1,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Texas Rangers",
+   "cons_pct": 3.9,
+   "fair": "+2479",
+   "best_price": 2500,
+   "book": "fanduel",
+   "edge_pct": 0.8,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Houston Astros",
+   "cons_pct": 2.3,
+   "fair": "+4236",
+   "best_price": 6000,
+   "book": "betmgm",
+   "edge_pct": 40.7,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Cleveland Guardians",
+   "cons_pct": 2.3,
+   "fair": "+4236",
+   "best_price": 3500,
+   "book": "betrivers",
+   "edge_pct": -17.0,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Chicago White Sox",
+   "cons_pct": 2.2,
+   "fair": "+4345",
+   "best_price": 5000,
+   "book": "betrivers",
+   "edge_pct": 14.7,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Pittsburgh Pirates",
+   "cons_pct": 1.1,
+   "fair": "+9234",
+   "best_price": 12500,
+   "book": "fanduel",
+   "edge_pct": 35.0,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Arizona Diamondbacks",
+   "cons_pct": 1.1,
+   "fair": "+9044",
+   "best_price": 8000,
+   "book": "betmgm",
+   "edge_pct": -11.4,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Baltimore Orioles",
+   "cons_pct": 1.1,
+   "fair": "+9234",
+   "best_price": 8000,
+   "book": "betonlineag",
+   "edge_pct": -13.2,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Detroit Tigers",
+   "cons_pct": 1.0,
+   "fair": "+9901",
+   "best_price": 15000,
+   "book": "fanduel",
+   "edge_pct": 51.0,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "San Diego Padres",
+   "cons_pct": 1.0,
+   "fair": "+9656",
+   "best_price": 10000,
+   "book": "betmgm",
+   "edge_pct": 3.5,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Minnesota Twins",
+   "cons_pct": 0.9,
+   "fair": "+10824",
+   "best_price": 10000,
+   "book": "betrivers",
+   "edge_pct": -7.5,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Toronto Blue Jays",
+   "cons_pct": 0.7,
+   "fair": "+15026",
+   "best_price": 12500,
+   "book": "betrivers",
+   "edge_pct": -16.7,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Miami Marlins",
+   "cons_pct": 0.4,
+   "fair": "+24082",
+   "best_price": 25000,
+   "book": "betmgm",
+   "edge_pct": 3.8,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "St. Louis Cardinals",
+   "cons_pct": 0.3,
+   "fair": "+30032",
+   "best_price": 30000,
+   "book": "fanduel",
+   "edge_pct": -0.1,
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Washington Nationals",
+   "cons_pct": 0.3,
+   "fair": "+36153",
+   "best_price": 40000,
+   "book": "draftkings",
+   "edge_pct": 10.6,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Athletics",
+   "cons_pct": 0.2,
+   "fair": "+61429",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 62.7,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "New York Mets",
+   "cons_pct": 0.2,
+   "fair": "+61429",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 62.7,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Cincinnati Reds",
+   "cons_pct": 0.2,
+   "fair": "+60242",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 65.9,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Los Angeles Angels",
+   "cons_pct": 0.2,
+   "fair": "+61429",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 62.7,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "San Francisco Giants",
+   "cons_pct": 0.2,
+   "fair": "+61429",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 62.7,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Kansas City Royals",
+   "cons_pct": 0.2,
+   "fair": "+61758",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 61.8,
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Colorado Rockies",
+   "cons_pct": 0.1,
+   "fair": "+120066",
+   "best_price": 100000,
+   "book": "betonlineag",
+   "edge_pct": -16.7,
+   "books_n": 5,
+   "shop": false
+  }
+ ],
+ "note": "World Series outrights \u00b7 30 teams priced \u00b7 consensus = median no-vig across books \u00b7 shop flag = best price beats consensus by 1.5%+ (3+ books)"
 }
