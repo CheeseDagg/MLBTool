@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-01T18:09:38+00:00",
+ "generated": "2026-08-01T21:08:18+00:00",
  "date": "2026-08-01",
  "min_pa": 6,
  "rows": [
@@ -125,17 +125,6 @@
    "slg": ".857"
   },
   {
-   "batter": "Joey Bart",
-   "team": "ATL",
-   "opp_sp": "Miles Mikolas",
-   "pa": 8,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
    "batter": "Marcell Ozuna",
    "team": "PIT",
    "opp_sp": "Andrew Abbott",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".333",
    "slg": ".667"
+  },
+  {
+   "batter": "Jeremy Pe\u00f1a",
+   "team": "HOU",
+   "opp_sp": "Jacob deGrom",
+   "pa": 13,
+   "ab": 13,
+   "h": 4,
+   "hr": 1,
+   "avg": ".308",
+   "slg": ".615"
   }
  ]
 }
