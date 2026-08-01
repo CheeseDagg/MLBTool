@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-01T18:45+00:00",
+ "generated": "2026-08-01T19:22+00:00",
  "board": [
   {
    "pitcher": "Cristopher S\u00e1nchez",
@@ -442,46 +442,6 @@
    ]
   },
   {
-   "pitcher": "Kevin Gausman",
-   "opp": "St. Louis Cardinals",
-   "lam": 5.26,
-   "k9_regressed": 8.99,
-   "exp_ip": 5.53,
-   "opp_mult": 0.952,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6036,
-     "fair_over": -152,
-     "fair_under": 152
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4292,
-     "fair_over": 133,
-     "fair_under": -133
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2764,
-     "fair_over": 262,
-     "fair_under": -262
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1617,
-     "fair_over": 519,
-     "fair_under": -519
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0862,
-     "fair_over": 1059,
-     "fair_under": -1059
-    }
-   ]
-  },
-  {
    "pitcher": "Jack Perkins",
    "opp": "Detroit Tigers",
    "lam": 5.21,
@@ -678,6 +638,46 @@
      "p_over": 0.0755,
      "fair_over": 1225,
      "fair_under": -1225
+    }
+   ]
+  },
+  {
+   "pitcher": "Kevin Gausman",
+   "opp": "St. Louis Cardinals",
+   "lam": 5.07,
+   "k9_regressed": 8.99,
+   "exp_ip": 5.33,
+   "opp_mult": 0.952,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5719,
+     "fair_over": -134,
+     "fair_under": 134
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3966,
+     "fair_over": 152,
+     "fair_under": -152
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2483,
+     "fair_over": 303,
+     "fair_under": -303
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1409,
+     "fair_over": 610,
+     "fair_under": -610
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0729,
+     "fair_over": 1273,
+     "fair_under": -1273
     }
    ]
   },
@@ -1160,9 +1160,49 @@
      "fair_under": -37134
     }
    ]
+  },
+  {
+   "pitcher": "Quinn Mathews",
+   "opp": "Toronto Blue Jays",
+   "lam": 2.68,
+   "k9_regressed": 8.69,
+   "exp_ip": 3.0,
+   "opp_mult": 0.925,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1339,
+     "fair_over": 647,
+     "fair_under": -647
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.055,
+     "fair_over": 1718,
+     "fair_under": -1718
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0198,
+     "fair_over": 4950,
+     "fair_under": -4950
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0063,
+     "fair_over": 15707,
+     "fair_under": -15707
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0018,
+     "fair_over": 55011,
+     "fair_under": -55011
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 credits remaining 373 (used 127) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 credits remaining 343 (used 157) \u00b7 whiff rest:30 rows",
  "n_markets": 29,
  "n_plays": 0,
  "plays": [],
