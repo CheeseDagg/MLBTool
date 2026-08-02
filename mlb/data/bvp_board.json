@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-02T18:09:52+00:00",
+ "generated": "2026-08-02T21:08:48+00:00",
  "date": "2026-08-02",
  "min_pa": 6,
  "rows": [
@@ -62,111 +62,111 @@
    "batter": "Francisco Lindor",
    "team": "NYM",
    "opp_sp": "Sandy Alcantara",
-   "pa": 38,
-   "ab": 33,
+   "pa": 41,
+   "ab": 36,
    "h": 10,
    "hr": 2,
-   "avg": ".303",
-   "slg": ".545"
+   "avg": ".278",
+   "slg": ".500"
   },
   {
-   "batter": "Ernie Clement",
-   "team": "TOR",
-   "opp_sp": "Matthew Liberatore",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.167"
-  },
-  {
-   "batter": "Ezequiel Duran",
-   "team": "TEX",
-   "opp_sp": "Peter Lambert",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.167"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Anthony Kay",
+   "batter": "Sam Antonacci",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
    "pa": 7,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Marcus Semien",
-   "team": "NYM",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 10,
-   "ab": 10,
-   "h": 4,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".700"
-  },
-  {
-   "batter": "Julio Rodr\u00edguez",
-   "team": "SEA",
-   "opp_sp": "Taj Bradley",
-   "pa": 12,
-   "ab": 12,
-   "h": 4,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
-  },
-  {
-   "batter": "Trevor Larnach",
-   "team": "MIN",
-   "opp_sp": "George Kirby",
-   "pa": 10,
-   "ab": 9,
+   "ab": 6,
    "h": 3,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
+   "avg": ".500",
+   "slg": "1.167"
   },
   {
-   "batter": "Gavin Sheets",
-   "team": "SD",
-   "opp_sp": "Landen Roupp",
-   "pa": 9,
+   "batter": "Munetaka Murakami",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
    "ab": 6,
-   "h": 1,
+   "h": 3,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
+   "avg": ".500",
+   "slg": "1.167"
   },
   {
-   "batter": "Brandon Lowe",
-   "team": "PIT",
-   "opp_sp": "Chase Burns",
-   "pa": 8,
+   "batter": "Miguel Vargas",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
    "ab": 6,
-   "h": 1,
+   "h": 3,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
+   "avg": ".500",
+   "slg": "1.167"
   },
   {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Kyle Bradish",
-   "pa": 6,
+   "batter": "Colson Montgomery",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
    "ab": 6,
-   "h": 1,
+   "h": 3,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
+   "avg": ".500",
+   "slg": "1.167"
+  },
+  {
+   "batter": "Andrew Benintendi",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
+  },
+  {
+   "batter": "Tristan Peters",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
+  },
+  {
+   "batter": "Chase Meidroth",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
+  },
+  {
+   "batter": "Everson Pereira",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
+  },
+  {
+   "batter": "Drew Romo",
+   "team": "CWS",
+   "opp_sp": "Griffin Jax",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
   }
  ]
 }
