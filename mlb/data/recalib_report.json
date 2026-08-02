@@ -1,10 +1,10 @@
 {
- "ran": "2026-07-30T21:23+00:00",
- "rows": 25682,
- "train": 25234,
- "holdout": 448,
- "brier_current": 0.143147,
- "brier_candidate": 0.142737,
+ "ran": "2026-08-02T16:29+00:00",
+ "rows": 25776,
+ "train": 25287,
+ "holdout": 489,
+ "brier_current": 0.143492,
+ "brier_candidate": 0.143349,
  "verdict": "APPLY",
  "candidate": [
   [
@@ -33,11 +33,11 @@
   ],
   [
    15.6,
-   14.7
+   14.9
   ],
   [
-   21.7,
-   18.6
+   21.8,
+   18.7
   ]
  ],
  "current": [
