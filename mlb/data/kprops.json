@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-02T14:10+00:00",
+ "generated": "2026-08-02T14:48+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -1162,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 credits remaining 234 (used 266) \u00b7 whiff rest:30 rows",
- "n_markets": 34,
+ "diag": "errors {} \u00b7 credits remaining 202 (used 298) \u00b7 whiff rest:30 rows",
+ "n_markets": 33,
  "n_plays": 0,
  "plays": [],
  "books": [
