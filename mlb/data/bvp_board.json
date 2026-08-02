@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-02T00:09:41+00:00",
+ "generated": "2026-08-02T18:09:52+00:00",
  "date": "2026-08-02",
  "min_pa": 6,
  "rows": [
@@ -24,17 +24,6 @@
    "hr": 2,
    "avg": ".333",
    "slg": "1.333"
-  },
-  {
-   "batter": "Rafael Devers",
-   "team": "SF",
-   "opp_sp": "Michael King",
-   "pa": 15,
-   "ab": 11,
-   "h": 5,
-   "hr": 2,
-   "avg": ".455",
-   "slg": "1.000"
   },
   {
    "batter": "Dansby Swanson",
@@ -79,6 +68,17 @@
    "hr": 2,
    "avg": ".303",
    "slg": ".545"
+  },
+  {
+   "batter": "Ernie Clement",
+   "team": "TOR",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 6,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
   },
   {
    "batter": "Ezequiel Duran",
