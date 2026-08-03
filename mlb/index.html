@@ -125,6 +125,21 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     <div id="hrVerdict" style="margin-top:10px"></div>
     <div id="hrRelNote" class="sub" style="margin-top:6px;border:1px solid var(--hair);border-radius:8px;padding:7px 10px"></div>
     <div id="hrNote" class="sub" style="margin-top:6px"></div>
+    <!-- The SPOT column got its own visible legend after its meaning had to be
+         asked for out loud. Every definition on this page lived in hover
+         tooltips, and nobody hovers — a column that needs explaining on the
+         page it appears on, explains itself on the page it appears on. -->
+    <div class="sub" style="margin-top:6px;border:1px solid var(--hair);border-radius:8px;padding:7px 10px">
+      <b style="color:var(--acc)">What "spot" means:</b> is <i>today</i> a better day than usual <i>for this
+      hitter</i>? It compares today's number to his own last 8 board days.
+      <b style="color:var(--acc2)">STANDOUT</b> = today is well above his own norm (the matchup/park/weather
+      lined up — this is the interesting one) ·
+      <span>normal</span> = a typical day for him ·
+      <b style="color:var(--red)">floor</b> = he's only high on the board because he always is — big name,
+      nothing special about today ·
+      <span class="dim">new</span> = not enough history yet. It does not change his HR% — it tells you whether
+      today is the reason he's listed, or his reputation is.
+    </div>
     <div id="hrFilters" style="display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 10px">
       <button class="filt" data-f="heat" onclick="toggleFilt('heat')">heat+ only</button>
       <button class="filt" data-f="p25" onclick="toggleFilt('p25')">25%+ only</button>
@@ -602,23 +617,42 @@ function render(d){
       `<div style="margin-bottom:4px">Over <b>${cal.n.toLocaleString()}</b> graded rows this board said `
       + `<b>${cal.pred_mean}%</b> on average and <b style="color:${gap<-2?'var(--red)':'inherit'}">${cal.actual}%</b> actually homered`
       + `${gap<-2?` — it still runs <b>${Math.abs(gap).toFixed(1)} points hot</b>`:` — calibrated to within ${Math.abs(gap).toFixed(1)} points`}.</div>`;
-    // Does betting the price beat the price? Two independent screens, both logged.
-    const tiers=[['the +EV screen',cal.ev_tier],['the top-of-board screen',cal.top_tier]]
+    // Does betting the price beat the price? Three screens, all logged.
+    const tiers=[['chasing "value" (+EV screen)',cal.ev_tier],['top of board',cal.top_tier],
+                 ['model+FanDuel agree',cal.agree_tier]]
       .filter(t=>t[1]&&t[1].n);
     const tierLine = !tiers.length ? '' :
       `<div>` + tiers.map(([lab,t])=>
         `${lab}: <b>${t.hits}/${t.n}</b> (${(100*t.hits/t.n).toFixed(1)}%), `
-        + `flat-stake ROI <b style="color:${t.roi<0?'var(--red)':'var(--acc2)'}">${t.roi>0?'+':''}${t.roi}%</b>`
+        + `ROI <b style="color:${t.roi<0?'var(--red)':'var(--acc2)'}">${t.roi>0?'+':''}${t.roi}%</b>`
       ).join(' · ') + `</div>`;
+    // The claimed-edge curve. If the model's "edge" over the book were real,
+    // hit rate would hold as claimed edge rises. It decays instead — the
+    // winner's-curse signature — and that is the single most useful fact on
+    // this panel, so it renders as its own line rather than living in a CSV.
+    const curveLine = !(cal.ev_curve&&cal.ev_curve.length) ? '' :
+      `<div style="margin-top:4px" class="dim">hit rate by how much edge the model claimed: `
+      + cal.ev_curve.map(b=>`${b.band} <b style="color:inherit">${b.hit_pct}%</b> <span class="dim">(${b.n})</span>`).join(' → ')
+      + `</div>`;
     const losing=tiers.filter(t=>t[1].roi<0).length;
-    const warn = losing===tiers.length && tiers.length
-      ? `<div style="margin-top:6px"><b style="color:var(--red)">Every screen on this board is losing money.</b> `
-        + `Neither picking on price nor picking on likelihood has cleared the vig over the logged sample. `
-        + `This board is a calibrated read of <b>who is most likely to homer</b>. On this evidence it is `
-        + `<b>not</b> a way to beat the book's price, and it is not being presented as one.</div>`
+    // WHAT TO DO, not just what failed. The old banner stopped at "every screen
+    // is losing money" — true, and useless to someone standing at the window.
+    const verdict = losing>=2
+      ? `<div style="margin-top:6px"><b style="color:var(--red)">Do not bet this board for value.</b> `
+        + `The model cannot beat FanDuel's homer prices — and the curve above shows the pattern: `
+        + `<b>the bigger the edge the model claims over the book, the LESS often the guy homers</b>. `
+        + `A big claimed edge is the model being wrong, not the book. `
+        + `What this board is good for: the <b>order</b> is real (the calibration line above) — the top names really are `
+        + `the most likely homers tonight. If you want a homer leg that <b>hits</b>, take a top-of-board name `
+        + `<b>only when FanDuel also makes him a favorite to that tier</b> (short HR price, +250 or less): that is the `
+        + `"model+FanDuel agree" screen, the only one above water — and at its sample size read it as `
+        + `"~30%, market rate", not as an edge.</div>`
+        + `<div style="margin-top:4px" class="dim">ROI history note: prices logged before 2026-08-03 could attach a `
+        + `batter's price from the WRONG GAME (the odds pull had no date filter — fixed). These screens re-prove `
+        + `themselves on clean prices from here forward.</div>`
       : '';
-    el.innerHTML=`<div class="sub" style="border:1px solid ${losing===tiers.length&&tiers.length?'var(--red)':'var(--hair)'};`
-      + `border-radius:8px;padding:9px 11px;margin:0">${calLine}${tierLine}${warn}</div>`;
+    el.innerHTML=`<div class="sub" style="border:1px solid ${losing>=2?'var(--red)':'var(--hair)'};`
+      + `border-radius:8px;padding:9px 11px;margin:0">${calLine}${tierLine}${curveLine}${verdict}</div>`;
   }
   function renderCal(cal, BT){
     let h=`<div class="sub"><b>${cal.n}</b> graded batter-games over <b>${cal.dates}</b> day(s): the model predicted each batter&apos;s homer chance, then we checked the box score. It said <b>${cal.pred_mean}%</b> on average — <b>${cal.actual}%</b> actually homered · precision ${cal.brier} (lower = sharper) · ${cal.voids} voided</div>

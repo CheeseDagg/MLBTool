@@ -49,9 +49,29 @@ def _get(url):
             QUOTA["used"] = h.get("x-requests-used")
         return json.loads(r.read())
 
+def _today_et_window_utc():
+    """(from, to) UTC stamps bracketing today's ET calendar day — the slate day."""
+    try:
+        from zoneinfo import ZoneInfo
+        et = ZoneInfo("America/New_York")
+    except Exception:
+        et = dt.timezone(dt.timedelta(hours=-4))
+    day = dt.datetime.now(et).date()
+    lo = dt.datetime.combine(day, dt.time.min).replace(tzinfo=et).astimezone(dt.timezone.utc)
+    hi = dt.datetime.combine(day, dt.time.max).replace(tzinfo=et).astimezone(dt.timezone.utc)
+    f = "%Y-%m-%dT%H:%M:%SZ"
+    return lo.strftime(f), hi.strftime(f)
+
 def list_events():
+    # TODAY only, filtered server-side. Unbounded, this returned every upcoming
+    # game, and because players are matched to the board BY NAME a batter with a
+    # game tonight and another tomorrow was analyzed once per event — his
+    # tomorrow price against tonight's fair. Bounding the pull also stops paying
+    # API credits to fetch odds for games the board has no fair for.
+    lo, hi = _today_et_window_utc()
     url = (f"https://api.the-odds-api.com/v4/sports/{SPORT}/events"
-           f"?apiKey={API_KEY}&dateFormat=iso")
+           f"?apiKey={API_KEY}&dateFormat=iso"
+           f"&commenceTimeFrom={lo}&commenceTimeTo={hi}")
     return _get(url)
 
 def event_hr_odds(event_id):

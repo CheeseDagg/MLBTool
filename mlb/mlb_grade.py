@@ -548,6 +548,41 @@ def summarize(rows):
         panel["top_tier"] = {"n": len(tops),
                              "hits": sum(1 for r in tops if r["outcome"]=="hr"),
                              "roi": round(100*pl/len(tops),1)}
+    # The claimed-edge curve: hit rate bucketed by the model's OWN claimed EV at
+    # the logged price. This is the winner's-curse detector. If "edge" were
+    # real, hit rate would hold (or rise) as claimed EV rises; what the first
+    # 163 priced rows actually showed was monotone DECAY — 16.4% at negative EV,
+    # 8.7% at 0-15, 8.0% at 15-30, 5.0% above 30. The bigger the model's
+    # disagreement with the book, the more often the book was right. The board
+    # renders this curve so nobody has to take that sentence on faith.
+    pr = [r for r in live if r.get("ev_pct") not in ("", None)
+          and r.get("book_price") not in ("", None)]
+    curve = []
+    for lo, hi, lab in [(-1e9, 0, "book likes it more"), (0, 15, "claimed edge 0-15%"),
+                        (15, 30, "claimed edge 15-30%"), (30, 1e9, "claimed edge 30%+")]:
+        ss = [r for r in pr if lo <= float(r["ev_pct"]) < hi]
+        if not ss:
+            continue
+        h = sum(1 for r in ss if r["outcome"] == "hr")
+        curve.append({"band": lab, "n": len(ss), "hits": h,
+                      "hit_pct": round(100 * h / len(ss), 1)})
+    if len(curve) >= 2:
+        panel["ev_curve"] = curve
+    # The agreement screen: model AND market both call him a top homer threat
+    # (model >= 20% and price no longer than +300). This is the only priced
+    # subset that has ever been above water here (7/22, +7.5% on the first
+    # sample) — consistent with "short prices hit", NOT proof of an edge. It is
+    # tracked so its sample can grow into a verdict instead of an anecdote.
+    ag = [r for r in pr if float(r["hr_pct"]) >= 20 and (_dec(r["book_price"]) or 99) <= _dec(300)]
+    if ag:
+        pl = 0.0
+        for r in ag:
+            d = _dec(r["book_price"])
+            if d is None: continue
+            pl += (d - 1) if r["outcome"] == "hr" else -1.0
+        panel["agree_tier"] = {"n": len(ag),
+                               "hits": sum(1 for r in ag if r["outcome"] == "hr"),
+                               "roi": round(100 * pl / len(ag), 1)}
     return panel
 
 # ---------------------------------------------------------------------------

@@ -1331,6 +1331,23 @@ def pull_lineups(sched):
 # best and is what EV is computed against.
 MY_BOOK = "fanduel"
 
+def _today_et():
+    """Today's date on the US East Coast — the canonical MLB slate day."""
+    try:
+        from zoneinfo import ZoneInfo
+        return dt.datetime.now(ZoneInfo("America/New_York")).date()
+    except Exception:
+        return dt.datetime.now(dt.timezone.utc).date()
+
+def _et_date(iso):
+    """ISO commence_time -> its ET calendar date, or None if unparseable."""
+    try:
+        t = dt.datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+        from zoneinfo import ZoneInfo
+        return t.astimezone(ZoneInfo("America/New_York")).date()
+    except Exception:
+        return None
+
 def pull_props():
     """batter_home_runs Yes/Over-0.5 per player -> best price across books AND
     the MY_BOOK price, kept separately. Fails soft: returns ({}, reason).
@@ -1345,6 +1362,15 @@ def pull_props():
             events = json.loads(r.read().decode())
     except Exception as e:
         return {}, f"props off: events list failed ({type(e).__name__})"
+    # TODAY'S events only. The events endpoint returns every upcoming game and
+    # prices are matched to the board BY PLAYER NAME, so without this filter a
+    # batter playing tonight AND tomorrow got his best price across BOTH games:
+    # tomorrow's number, quoted against tonight's fair, graded against tonight's
+    # box score. Every priced row in the ledger before 2026-08-03 carries that
+    # contamination risk, which is why the screens' ROI history restarts then.
+    n_all = len(events)
+    events = [ev for ev in events if _et_date(ev.get("commence_time")) == _today_et()]
+    dropped = n_all - len(events)
     best = {}
     tried = hit = 0
     for ev in events[:16]:
@@ -1388,7 +1414,8 @@ def pull_props():
         if data.get("bookmakers"): hit += 1
     n_my = sum(1 for v in best.values() if "my_price" in v)
     note = (f"props: {len(best)} players priced across {hit}/{tried} events"
-            f" · {n_my} available at {MY_BOOK}")
+            f" · {n_my} available at {MY_BOOK}"
+            + (f" · {dropped} non-today event(s) excluded" if dropped else ""))
     return best, note
 
 def load_board(data_dir):

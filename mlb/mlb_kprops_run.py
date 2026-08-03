@@ -155,8 +155,28 @@ def _get(url):
             QUOTA["used"] = h.get("x-requests-used")
         return json.loads(r.read())
 
+def _today_et_window_utc():
+    """(from, to) UTC stamps bracketing today's ET calendar day — the slate day."""
+    try:
+        from zoneinfo import ZoneInfo
+        et = ZoneInfo("America/New_York")
+    except Exception:
+        et = dt.timezone(dt.timedelta(hours=-4))
+    day = dt.datetime.now(et).date()
+    lo = dt.datetime.combine(day, dt.time.min).replace(tzinfo=et).astimezone(dt.timezone.utc)
+    hi = dt.datetime.combine(day, dt.time.max).replace(tzinfo=et).astimezone(dt.timezone.utc)
+    f = "%Y-%m-%dT%H:%M:%SZ"
+    return lo.strftime(f), hi.strftime(f)
+
 def list_events():
-    return _get(f"https://api.the-odds-api.com/v4/sports/{SPORT}/events?apiKey={API_KEY}&dateFormat=iso")
+    # TODAY only, filtered server-side — same defect and same fix as the HR
+    # line shop: unbounded, this pulled every upcoming game, and name-keyed
+    # matching let a pitcher starting tonight and again in five days carry the
+    # wrong game's strikeout ladder. Also stops spending API credits on events
+    # the slate has no starter for.
+    lo, hi = _today_et_window_utc()
+    return _get(f"https://api.the-odds-api.com/v4/sports/{SPORT}/events?apiKey={API_KEY}"
+                f"&dateFormat=iso&commenceTimeFrom={lo}&commenceTimeTo={hi}")
 
 def event_k_odds(event_id):
     """{(pitcher_norm, line): {'over': {book: am}, 'under': {book: am}}}"""
