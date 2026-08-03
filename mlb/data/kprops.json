@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-03T15:28+00:00",
+ "generated": "2026-08-03T15:57+00:00",
  "board": [
   {
    "pitcher": "Cam Schlittler",
@@ -242,46 +242,6 @@
    ]
   },
   {
-   "pitcher": "Andrew Alvarez",
-   "opp": "Philadelphia Phillies",
-   "lam": 4.54,
-   "k9_regressed": 8.88,
-   "exp_ip": 4.43,
-   "opp_mult": 1.038,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4748,
-     "fair_over": 111,
-     "fair_under": -111
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3033,
-     "fair_over": 230,
-     "fair_under": -230
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1737,
-     "fair_over": 476,
-     "fair_under": -476
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0896,
-     "fair_over": 1016,
-     "fair_under": -1016
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.042,
-     "fair_over": 2282,
-     "fair_under": -2282
-    }
-   ]
-  },
-  {
    "pitcher": "Ian Seymour",
    "opp": "Colorado Rockies",
    "lam": 4.54,
@@ -318,6 +278,46 @@
      "p_over": 0.042,
      "fair_over": 2281,
      "fair_under": -2281
+    }
+   ]
+  },
+  {
+   "pitcher": "Andrew Alvarez",
+   "opp": "Philadelphia Phillies",
+   "lam": 4.54,
+   "k9_regressed": 8.88,
+   "exp_ip": 4.43,
+   "opp_mult": 1.038,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4748,
+     "fair_over": 111,
+     "fair_under": -111
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3033,
+     "fair_over": 230,
+     "fair_under": -230
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1737,
+     "fair_over": 476,
+     "fair_under": -476
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0896,
+     "fair_over": 1016,
+     "fair_under": -1016
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.042,
+     "fair_over": 2282,
+     "fair_under": -2282
     }
    ]
   },
@@ -562,8 +562,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 credits remaining 103 (used 397) \u00b7 whiff rest:30 rows",
- "n_markets": 18,
+ "diag": "errors {} \u00b7 credits remaining 85 (used 415) \u00b7 whiff rest:30 rows",
+ "n_markets": 17,
  "n_plays": 0,
  "plays": [],
  "books": [
