@@ -30,7 +30,7 @@ import urllib.request, urllib.parse
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 PLOG = os.path.join(DATA, "hr_predictions.csv")
 GRADED = os.path.join(DATA, "hr_graded.csv")
-GCOLS = ["date","player","team","opp_sp","slot","lu","hr_pct","hr_raw","fair",
+GCOLS = ["date","player","team","game_id","opp_sp","slot","lu","hr_pct","hr_raw","fair",
          "book_price","ev_pct","park","temp","plat","heat","outcome","hr_n"]
 
 LEAGUE = os.path.join(DATA, "league_daily.csv")
@@ -135,6 +135,17 @@ def backfill_league(preds, limit=BACKFILL_PER_RUN, today=None):
         print(f"  league backfill: +{done} date(s), {len(want)-done} still missing")
     return done
 
+def _gens():
+    """Every schema the graded ledger has ever been written in, NEWEST FIRST.
+
+    Each must have a DISTINCT width — that is the only thing that lets a row be
+    identified without trusting the header line. Add a column here when you add one
+    to GCOLS; the assert in _rows_by_width fires if two generations ever collide.
+    """
+    return [GCOLS,                                                  # 18: +game_id (2026-08-03)
+            [c for c in GCOLS if c != "game_id"],                   # 17: +hr_raw  (2026-07-23)
+            [c for c in GCOLS if c not in ("game_id", "hr_raw")]]   # 16: original
+
 def _rows_by_width(path):
     """Parse a graded CSV whose header may be STALE, one row at a time by width.
 
@@ -152,8 +163,9 @@ def _rows_by_width(path):
     So: never trust the header for a row it may not describe. A row is mapped by
     its OWN width against the known schema generations, newest first.
     """
-    gens = [GCOLS, [c for c in GCOLS if c != "hr_raw"]]
+    gens = _gens()
     by_w = {len(g): g for g in gens}
+    assert len(by_w) == len(gens), "graded schema generations must have distinct widths"
     out, unknown = [], 0
     with open(path, newline="") as f:
         rd = csv.reader(f)
@@ -166,6 +178,34 @@ def _rows_by_width(path):
                 unknown += 1; continue
             out.append({k: v for k, v in zip(cols, rec)})
     return out, unknown
+
+def read_graded(path=None):
+    """PUBLIC width-safe reader for hr_graded.csv. Use this, never csv.DictReader.
+
+    Every other module that reads this ledger (mlb_recalibrate, mlb_livelevel) runs
+    in its OWN workflow and never calls migrate_graded(), so it can meet the file in
+    the window where the header is a generation behind the rows. csv.DictReader
+    would then shift every field past the newest column and the module would read
+    `outcome` out of `heat`, drop every row as un-graded, and refit — or decline to
+    refit — on a silently truncated sample. _rows_by_width does not care what the
+    header says.
+    """
+    p = path or GRADED
+    if not os.path.exists(p): return []
+    with open(p, newline="") as f:
+        try: header = next(csv.reader(f))
+        except StopIteration: return []
+    # Width-mapping is ONLY valid for a file this module wrote. Applied to some other
+    # CSV -- a test fixture, a hand-made export -- every row would land in the "unknown
+    # width" bucket and be silently dropped, which is the exact failure this function
+    # exists to prevent. So: bypass the header only when the header is itself a known
+    # generation of OUR schema. Anything else is somebody else's file; trust its header.
+    if header not in _gens():
+        with open(p, newline="") as f: return list(csv.DictReader(f))
+    rows, unknown = _rows_by_width(p)
+    if unknown:
+        print(f"  read_graded: {unknown} row(s) of unknown width skipped in {os.path.basename(p)}")
+    return rows
 
 def migrate_graded():
     """Bring the graded ledger's header into line with GCOLS, non-destructively.
@@ -192,6 +232,60 @@ def migrate_graded():
     print(f"  migrated {len(rows)} rows -> header realigned"
           + (f", added {added}" if added else "")
           + (f" ({unknown} rows of unknown width dropped)" if unknown else ""))
+
+def drop_tbd_shadows():
+    """One-time repair: remove ledger rows that are a re-probe of a game already graded.
+
+    WHAT THE BUG WAS. Before game_id, a settled row was keyed on the announced
+    OPPOSING STARTER. That name changes during the day, so a game first boarded with
+    a "TBD *" probable and later re-boarded with the real name graded TWICE — same
+    player, same game, same outcome, a slightly different hr_pct — and both copies
+    counted in calibration and in the reliability buckets.
+
+    WHAT IT IS NOT. Most same-(date, player) pairs in this ledger are NOT that bug and
+    must be left alone. Verified against game_starters.csv: 2026-07-11 PIT, 07-17
+    TBR@BOS, 07-18 PIT@CLE, 07-19 LAD@NYY, 07-22 PIT@NYY, 07-28 CLE@CIN and 07-29
+    ATL@NYM were all real doubleheaders, and the two Max Muncys on 07-22 (LAD and ATH)
+    are two different men. Deleting those would destroy real, correctly-graded results
+    — including JJ Bleday, who went `no` in game one on 07-28 and `hr` in game two.
+
+    THE RULE. A team plays at most two games in a day, so a player cannot legitimately
+    hold three rows on one date. Where he does, and one of them is the TBD placeholder
+    while the others are named, the TBD row is the shadow. That is the entire test:
+    exact, needs no schedule lookup, and cannot touch a two-row doubleheader. On the
+    2026 ledger it matches exactly two rows (Junior Caminero 07-17, Ben Rice 07-19) out
+    of 812 — 0.25%. The mechanism was real; the measured damage was small.
+
+    A two-row (TBD, named) pair is deliberately NOT touched. Shohei Ohtani and Max
+    Muncy on 07-19 each have one TBD and one named row against a real LAD@NYY
+    doubleheader, so the TBD is most likely the second game whose probable was never
+    announced — a legitimate row, not a duplicate. Guessing there could delete a real
+    result to remove a maybe. game_id makes the question moot going forward.
+
+    Idempotent: a second call finds nothing to drop and rewrites nothing.
+    """
+    if not os.path.exists(GRADED): return 0
+    rows, _ = _rows_by_width(GRADED)
+    groups = {}
+    for i, r in enumerate(rows):
+        groups.setdefault((r.get("date",""), norm(r.get("player",""))), []).append(i)
+    kill = set()
+    for _, idx in groups.items():
+        if len(idx) < 3: continue                      # <= 2 is a legal doubleheader
+        tbd = [i for i in idx if (rows[i].get("opp_sp") or "").startswith("TBD")]
+        if tbd and len(idx) - len(tbd) >= 2:           # keep the two named games
+            kill.update(tbd)
+    if not kill: return 0
+    keep = [r for i, r in enumerate(rows) if i not in kill]
+    tmp = GRADED + ".tmp"
+    with open(tmp, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=GCOLS); w.writeheader()
+        for r in keep: w.writerow({k: r.get(k, "") for k in GCOLS})
+    os.replace(tmp, GRADED)
+    for i in sorted(kill):
+        print(f"  dropped re-probe shadow: {rows[i].get('date')} {rows[i].get('player')} "
+              f"(opp_sp {rows[i].get('opp_sp')!r}, a 3rd row on a 2-game day)")
+    return len(kill)
 
 def norm(s):
     if not isinstance(s, str): return ""
@@ -461,11 +555,50 @@ def load_csv(path):
     if not os.path.exists(path): return []
     with open(path) as f: return list(csv.DictReader(f))
 
+def _done_keys(graded):
+    """Which (date, player, game) triples the ledger has already settled.
+
+    TWO key spaces, deliberately. The ledger used to be deduped on
+    (date, player, opp_sp) — the ANNOUNCED OPPOSING STARTER. opp_sp is in the key
+    because it separates the two halves of a doubleheader, but it is a field that
+    CHANGES during the day: a probable firms up from "TBD *" to a name, or is
+    swapped. Each change minted a fresh key, so the same player in the same game
+    was graded and appended a SECOND time — same outcome, slightly different
+    hr_pct — and both copies then counted in calibration and in the reliability
+    buckets. Ben Rice on 2026-07-19 is in there three times.
+
+    game_id is MLB's gamePk: unique per game, distinct across the halves of a
+    doubleheader, and it does not move. It is the key going forward.
+
+    The opp_sp set is kept as a fallback for rows written before game_id existed,
+    which have no gamePk to match on. A row is "done" if EITHER key hits, so the
+    new key can only ever dedupe more than the old one, never less.
+    """
+    by_gid, by_sp = set(), set()
+    for r in graded:
+        k = (r.get("date",""), norm(r.get("player","")))
+        gid = (r.get("game_id") or "").strip()
+        if gid: by_gid.add(k + (gid,))
+        by_sp.add(k + (r.get("opp_sp",""),))
+    return by_gid, by_sp
+
+def _is_done(r, by_gid, by_sp):
+    k = (r.get("date",""), norm(r.get("player","")))
+    gid = (r.get("game_id") or "").strip()
+    if gid and k + (gid,) in by_gid: return True
+    return k + (r.get("opp_sp",""),) in by_sp
+
 def grade_all():
     preds = load_csv(PLOG)
     if not preds:
         print("no prediction log yet"); return
-    done = {(r["date"], norm(r["player"]), r.get("opp_sp","")) for r in load_csv(GRADED)}
+    # Migrate BEFORE reading the ledger. load_csv is a DictReader and trusts the
+    # header line; on a file whose header is a generation behind, inserting a
+    # column shifts every field past it, so opp_sp would come back holding the
+    # game_id and every historical row would look un-graded and be re-appended.
+    migrate_graded()
+    drop_tbd_shadows()
+    by_gid, by_sp = _done_keys(load_csv(GRADED))
     today = dt.date.today().isoformat()
     # settle every date through today. Prior days are fully final; today's games
     # that aren't Final yet come back 'pending' from settle_row and retry next run,
@@ -473,8 +606,7 @@ def grade_all():
     dates = sorted({r["date"] for r in preds if r["date"] <= today})
     new = []
     for d in dates:
-        rows = [r for r in preds if r["date"]==d
-                and (d, norm(r["player"]), r.get("opp_sp","")) not in done]
+        rows = [r for r in preds if r["date"]==d and not _is_done(r, by_gid, by_sp)]
         if not rows: continue
         try:
             games, _fin = fetch_day_results(d)
@@ -497,7 +629,8 @@ def grade_all():
             new.append(rec); settled += 1
         print(f"  {d}: settled {settled}/{len(rows)}")
     backfill_league(preds)
-    migrate_graded()
+    # migrate_graded() already ran at the top of this function, before the ledger
+    # was read — it has to, or the dedup key is parsed off a stale header.
     if new:
         exists = os.path.exists(GRADED)
         with open(GRADED, "a", newline="") as f:
@@ -711,9 +844,13 @@ def selftest():
     # a shifted row must be COUNTED as unparsed rather than silently dropped.
     import tempfile as _tf0
     _drift = os.path.join(_tf0.mkdtemp(), "hr_graded_drift.csv")
-    _old = [c for c in GCOLS if c != "hr_raw"]
+    # The header written here is the ORIGINAL 16-column generation. Beneath it sit
+    # one 16-wide row (which it describes) and one 17-wide row from after hr_raw was
+    # added (which it does not) — the exact on-disk state that lost a week of grading.
+    _gen16 = [c for c in GCOLS if c not in ("game_id", "hr_raw")]
+    assert len(_gen16) == 16, _gen16
     with open(_drift, "w", newline="") as f:
-        w = csv.writer(f); w.writerow(_old)
+        w = csv.writer(f); w.writerow(_gen16)
         w.writerow(["2026-07-22","Old Guy","NYY","arm","3","card","20.0","+400","",
                     "","park +2%","80F","RvL +5%","heat +3%","hr","1"])
         w.writerow(["2026-07-23","New Guy","BOS","arm","4","card","22.0","19.1","+380",
@@ -722,6 +859,8 @@ def selftest():
     assert [r["outcome"] for r in _pre] == ["hr","no"], \
         "width-keyed parse must recover both schema generations, got %r" % [r["outcome"] for r in _pre]
     assert _pre[1]["hr_raw"] == "19.1" and _pre[1]["hr_pct"] == "22.0", _pre[1]
+    assert _pre[0].get("game_id","") == "" and _pre[1].get("game_id","") == "", \
+        "neither legacy generation carries a gamePk; it must fill blank, not shift"
     _og = GRADED
     try:
         GRADED = _drift
@@ -865,6 +1004,98 @@ def selftest():
     finally:
         GRADED, BACKTEST = _og2, _ob
     print("HONEST-CONFIDENCE PASS — 5-pt buckets, live-first, season de-duped, <30 suppressed")
+
+    # ---- game_id dedup key --------------------------------------------------
+    # The old key was (date, player, opp_sp) — the ANNOUNCED opposing starter, a field
+    # that changes during the day. These checks pin the two properties that matter:
+    # a re-probe of one game must be recognised as already done, and the two halves of
+    # a doubleheader must NOT be.
+    by_gid, by_sp = _done_keys([
+        {"date":"2026-07-19","player":"Ben Rice","game_id":"778001","opp_sp":"Yoshinobu Yamamoto"},
+        {"date":"2026-07-19","player":"Ben Rice","game_id":"778002","opp_sp":"Will Klein"},
+        {"date":"2026-07-01","player":"Old Row","game_id":"","opp_sp":"Some Arm"},   # pre-migration
+    ])
+    reprobe = {"date":"2026-07-19","player":"Ben Rice","game_id":"778002","opp_sp":"TBD *"}
+    assert _is_done(reprobe, by_gid, by_sp), \
+        "a game already graded must stay done when its probable is re-announced"
+    dh_new = {"date":"2026-07-19","player":"Ben Rice","game_id":"778003","opp_sp":"Ryan Yarbrough"}
+    assert not _is_done(dh_new, by_gid, by_sp), \
+        "a THIRD distinct gamePk is a new game and must still be graded"
+    assert _is_done({"date":"2026-07-19","player":"Ben Rice","game_id":"778001",
+                     "opp_sp":"Yoshinobu Yamamoto"}, by_gid, by_sp)
+    # legacy rows with no gamePk fall back to the old opp_sp key, unchanged
+    assert _is_done({"date":"2026-07-01","player":"Old Row","game_id":"","opp_sp":"Some Arm"},
+                    by_gid, by_sp), "pre-migration rows must still dedupe on opp_sp"
+    assert not _is_done({"date":"2026-07-01","player":"Old Row","game_id":"","opp_sp":"Other Arm"},
+                        by_gid, by_sp)
+    # accents/suffixes normalised on BOTH sides of the key
+    b2, s2 = _done_keys([{"date":"2026-07-01","player":"Julio Rodríguez Jr.","game_id":"9","opp_sp":"x"}])
+    assert _is_done({"date":"2026-07-01","player":"Julio Rodriguez","game_id":"9","opp_sp":"y"}, b2, s2)
+    print("DEDUP-KEY PASS — re-probe collapses on gamePk, DH halves stay distinct, legacy falls back")
+
+    # ---- schema generations must stay unambiguous ---------------------------
+    assert len({len(g) for g in _gens()}) == len(_gens()), \
+        "graded schema generations collided on width — _rows_by_width cannot disambiguate"
+    assert "game_id" in GCOLS and GCOLS[-2:] == ["outcome","hr_n"], GCOLS
+
+    # ---- read_graded must not eat a file it did not write -------------------
+    # Width-mapping is right for OUR ledger and catastrophic for anything else: a
+    # narrow fixture would land every row in the unknown-width bucket and vanish,
+    # which is precisely the silent-data-loss failure this reader exists to stop.
+    _fk = os.path.join(_tf.mkdtemp(), "foreign.csv")
+    with open(_fk, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["date","player","hr_pct","outcome"]); w.writeheader()
+        w.writerow({"date":"2026-07-01","player":"A","hr_pct":"20","outcome":"hr"})
+        w.writerow({"date":"2026-07-01","player":"B","hr_pct":"18","outcome":"no"})
+    _fr = read_graded(_fk)
+    assert [r["outcome"] for r in _fr] == ["hr","no"], \
+        "a foreign header must be trusted, not width-mapped into oblivion: %r" % _fr
+    # and a file with OUR header but drifted row widths must still be width-mapped
+    _dr = os.path.join(os.path.dirname(_fk), "ours.csv")
+    with open(_dr, "w", newline="") as f:
+        w = csv.writer(f); w.writerow([c for c in GCOLS if c not in ("game_id","hr_raw")])
+        w.writerow(["2026-07-23","New Guy","BOS","arm","4","card","22.0","19.1","+380",
+                    "","","park -1%","78F","RvR -2%","heat +1%","no","0"])
+    assert [r["outcome"] for r in read_graded(_dr)] == ["no"], \
+        "our own stale header must still be bypassed in favour of row width"
+
+    # ---- the shadow-row repair ----------------------------------------------
+    # It must remove a 3rd row on a 2-game day and must leave a real doubleheader,
+    # a lone TBD row, and a (TBD, named) pair completely alone.
+    _og3 = GRADED
+    GRADED = os.path.join(_tf.mkdtemp(), "shadow.csv")
+    try:
+        def _wg(rows):
+            with open(GRADED, "w", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=GCOLS); w.writeheader()
+                for r in rows: w.writerow({k: r.get(k,"") for k in GCOLS})
+        base = lambda **k: dict({"date":"2026-07-17","outcome":"no","hr_pct":"20"}, **k)
+        _wg([base(player="Junior Caminero", opp_sp="Jake Bennett"),
+             base(player="Junior Caminero", opp_sp="TBD *"),
+             base(player="Junior Caminero", opp_sp="Eduardo Rivera *"),
+             base(player="JJ Bleday", opp_sp="Slade Cecconi"),          # real DH, keep both
+             base(player="JJ Bleday", opp_sp="Gavin Williams", outcome="hr"),
+             base(player="Ty France", opp_sp="TBD *"),                  # lone TBD, keep
+             base(player="Shohei Ohtani", opp_sp="TBD *"),              # (TBD, named) pair,
+             base(player="Shohei Ohtani", opp_sp="Cam Schlittler")])    # ambiguous -> keep both
+        import io as _io, contextlib as _cl
+        _b = _io.StringIO()
+        with _cl.redirect_stdout(_b): n = drop_tbd_shadows()
+        assert n == 1, f"expected exactly 1 shadow dropped, got {n}"
+        left, _ = _rows_by_width(GRADED)
+        assert len(left) == 7, len(left)
+        cam = [r["opp_sp"] for r in left if r["player"] == "Junior Caminero"]
+        assert cam == ["Jake Bennett","Eduardo Rivera *"], cam
+        bl = sorted(r["outcome"] for r in left if r["player"] == "JJ Bleday")
+        assert bl == ["hr","no"], f"a real doubleheader was collapsed: {bl}"
+        assert sum(1 for r in left if r["player"] == "Ty France") == 1
+        assert sum(1 for r in left if r["player"] == "Shohei Ohtani") == 2, \
+            "an ambiguous (TBD, named) pair must not be guessed at"
+        with _cl.redirect_stdout(_io.StringIO()):
+            assert drop_tbd_shadows() == 0, "repair is not idempotent"
+    finally:
+        GRADED = _og3
+    print("SHADOW-REPAIR PASS — 3rd-row re-probe dropped, doubleheaders and lone TBDs untouched")
 
     print("GRADER SELFTEST PASS — settle/void/pending/DH + Brier/buckets/lift/ROI all exact")
     return 0

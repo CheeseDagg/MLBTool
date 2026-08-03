@@ -140,16 +140,32 @@ def row_raw(r, anchors):
         pct = pct / LIVE_LEVEL
     return invert_map(anchors, pct)
 
+def _graded_rows():
+    """Read hr_graded.csv WIDTH-SAFELY, not by header.
+
+    This workflow is monthly and separate from the daily grade job, so it can meet
+    the ledger in the window where mlb_grade has appended rows of a new width under
+    a header written a generation ago. csv.DictReader trusts the header, shifts
+    every field past the new column, and hands back rows whose `outcome` is really
+    the neighbouring value — which are then all discarded as un-graded, silently
+    shrinking the refit sample. mlb_grade.read_graded maps each row by its own
+    width instead. Falls back to DictReader only if that import fails.
+    """
+    gr = os.path.join(DATA, "hr_graded.csv")
+    if not os.path.exists(gr): return []
+    try:
+        import mlb_grade
+        return mlb_grade.read_graded(gr)
+    except Exception as e:
+        print(f"  width-safe graded read unavailable ({type(e).__name__}); "
+              f"falling back to header parse")
+        return list(csv.DictReader(open(gr)))
+
 def graded_dates():
     """Dates of PRODUCTION graded rows only (excludes the static backtest replay), for
     measuring how much genuinely-new data has arrived since the last refit."""
-    out = []
-    gr = os.path.join(DATA, "hr_graded.csv")
-    if os.path.exists(gr):
-        for r in csv.DictReader(open(gr)):
-            if r.get("outcome") in ("hr", "no") and r.get("date"):
-                out.append(r["date"])
-    return out
+    return [r["date"] for r in _graded_rows()
+            if r.get("outcome") in ("hr", "no") and r.get("date")]
 
 def load_rows(anchors):
     """[(date, raw_pct, hit)] from backtest (raw already) + graded (stored hr_raw, else
@@ -164,16 +180,14 @@ def load_rows(anchors):
                 rows.append((r["date"], float(r["hr_pct"]), 1 if r["outcome"] == "hr" else 0))
             except (KeyError, ValueError):
                 continue
-    gr = os.path.join(DATA, "hr_graded.csv")
-    if os.path.exists(gr):
-        for r in csv.DictReader(open(gr)):
-            if r.get("outcome") not in ("hr", "no"):
-                continue
-            try:
-                raw = row_raw(r, anchors)
-                rows.append((r["date"], raw, 1 if r["outcome"] == "hr" else 0))
-            except (KeyError, ValueError):
-                continue
+    for r in _graded_rows():
+        if r.get("outcome") not in ("hr", "no"):
+            continue
+        try:
+            raw = row_raw(r, anchors)
+            rows.append((r["date"], raw, 1 if r["outcome"] == "hr" else 0))
+        except (KeyError, ValueError):
+            continue
     rows.sort(key=lambda x: x[0])
     return rows
 

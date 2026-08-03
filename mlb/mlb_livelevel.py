@@ -50,7 +50,17 @@ def load_days(path=GRADED):
     by = collections.defaultdict(list)
     if not os.path.exists(path):
         return {}
-    for r in csv.DictReader(open(path)):
+    # WIDTH-SAFE read, not csv.DictReader. The ledger's header is written once, at
+    # file creation, so a column added to GCOLS makes every later row one field wider
+    # than the header names it. DictReader would shift `outcome` past the insertion
+    # point and EVERY row would fail the ("hr","no") test below — load_days returns
+    # {}, the live-level fit falls back to its default, and nothing anywhere errors.
+    try:
+        import mlb_grade
+        src = mlb_grade.read_graded(path)
+    except Exception:
+        src = list(csv.DictReader(open(path)))
+    for r in src:
         if r.get("outcome") not in ("hr", "no"):
             continue
         try:

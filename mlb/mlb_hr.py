@@ -746,14 +746,24 @@ def build_hot_map(graded_path, today_iso):
     and the rebuilt board republishes his row already knowing it."""
     import csv as _csv
     latest = {}
-    with open(graded_path) as f:
-        for r in _csv.DictReader(f):
-            d = r.get("date")
-            if r.get("outcome") not in ("hr", "no") or not d or d >= today_iso:
-                continue
-            k = norm(r.get("player", ""))
-            if k and (k not in latest or d > latest[k][0]):
-                latest[k] = (d, r["outcome"])
+    # Width-safe, not csv.DictReader: mlb_grade writes the graded header once at file
+    # creation, so a column added to GCOLS leaves every later row one field wider than
+    # the header names. DictReader shifts `outcome` past the insertion point, every row
+    # then fails the ("hr","no") test, and the hot map comes back EMPTY — no error, the
+    # term just quietly stops existing. read_graded maps each row by its own width.
+    try:
+        import mlb_grade as _G
+        _src = _G.read_graded(graded_path)
+    except Exception:
+        with open(graded_path) as f:
+            _src = list(_csv.DictReader(f))
+    for r in _src:
+        d = r.get("date")
+        if r.get("outcome") not in ("hr", "no") or not d or d >= today_iso:
+            continue
+        k = norm(r.get("player", ""))
+        if k and (k not in latest or d > latest[k][0]):
+            latest[k] = (d, r["outcome"])
     return {k: 1 for k, (d, o) in latest.items() if o == "hr"}
 
 
@@ -763,7 +773,8 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
     """
     batters : list of {name, fg_team, pa, hr}
     pitchers: list of {name, bf, hr}
-    sched   : list of {home, away, venue, home_sp, away_sp}   (full team names)
+    sched   : list of {home, away, venue, home_sp, away_sp[, game_id]}  (full team names;
+              game_id is MLB's gamePk and is optional — absent in the selftest stubs)
     temps   : {venue: (temp_f or None, roof)}
     props   : {norm_name: {"price": int, "book": str}} or None
     hands   : {norm_name: (batSide, pitchHand)} or None -> platoon off
@@ -992,6 +1003,10 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 row = {
                     "player": b["name"], "team": fg(team_full) or team_full,
                     "opp": fg(opp_full) or opp_full,
+                    # MLB's gamePk, carried through so the graded ledger can key on the
+                    # GAME rather than on the announced opposing starter (which changes
+                    # during the day and minted a duplicate ledger row each time it did).
+                    "game_id": g.get("game_id", ""),
                     "opp_sp": sp_disp + ("" if matched else " *"),
                     "venue": g["venue"], "slot": slot,
                     "hr_pct": round(p_game * 100, 1),
@@ -1225,7 +1240,19 @@ def todays_sched():
     for _, r in sc.iterrows():
         home, away = _cs(r.get("home")), _cs(r.get("away"))
         if not home or not away: continue
-        out.append({"home": home, "away": away,
+        # game_id is MLB's gamePk. It was being dropped here, and the whole
+        # downstream pipeline then had to identify a game by its ANNOUNCED STARTER
+        # -- a field that changes during the day. When a probable firmed up from
+        # "TBD" to a name, or was swapped, the graded ledger's dedup key changed
+        # with it and the same game was logged and settled a SECOND time, at a
+        # slightly different hr_pct but the identical outcome. That double-counts
+        # those players in calibration and in the reliability buckets. gamePk is
+        # unique per game and distinguishes the two halves of a doubleheader,
+        # which the starter's name only does by accident.
+        gid = r.get("game_id")
+        try: gid = "" if gid is None or (isinstance(gid, float) and gid != gid) else str(int(gid))
+        except (TypeError, ValueError): gid = _cs(str(gid)) or ""
+        out.append({"home": home, "away": away, "game_id": gid,
                     "venue": _cs(r.get("venue")) or "",
                     "home_sp": _cs(r.get("home_prob_pitcher")),
                     "away_sp": _cs(r.get("away_prob_pitcher"))})
@@ -1756,7 +1783,7 @@ def _build():
         import csv
         plog = os.path.join(DATA, "hr_predictions.csv")
         today = dt.date.today().isoformat()
-        hdr = ["date","player","team","opp_sp","slot","lu","hr_pct","hr_raw","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
+        hdr = ["date","player","team","game_id","opp_sp","slot","lu","hr_pct","hr_raw","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
         old_rows = []
         if os.path.exists(plog):
             with open(plog) as f:
@@ -1766,6 +1793,7 @@ def _build():
             for r in old_rows: w.writerow({k: r.get(k, "") for k in hdr})
             for r in rows:
                 w.writerow({"date": today, "player": r["player"], "team": r["team"],
+                            "game_id": r.get("game_id",""),
                             "opp_sp": r["opp_sp"], "slot": r["slot"], "lu": r.get("lu",""),
                             "hr_pct": r["hr_pct"], "hr_raw": r.get("hr_raw",""), "fair": r["fair"],
                             "book_price": r.get("book_price",""), "ev_pct": r.get("ev_pct",""),
