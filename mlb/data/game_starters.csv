@@ -2052,18 +2052,26 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-01,Boston Red Sox,Los Angeles Dodgers,Payton Tolle,Yoshinobu Yamamoto,3,2,Final
 2026-08-01,Milwaukee Brewers,Los Angeles Angels,Robert Gasser,Brent Suter,3,1,Final
 2026-08-01,Detroit Tigers,Athletics,Framber Valdez,Jack Perkins,8,6,Final
-2026-08-02,Philadelphia Phillies,Baltimore Orioles,Zack Wheeler,Kyle Bradish,7,0,In Progress
+2026-08-02,Philadelphia Phillies,Baltimore Orioles,Zack Wheeler,Kyle Bradish,8,0,Completed Early
 2026-08-02,Washington Nationals,Atlanta Braves,Cade Cavalli,JR Ritchie,2,4,Final
 2026-08-02,St. Louis Cardinals,Toronto Blue Jays,Matthew Liberatore,Max Scherzer,5,1,Final
-2026-08-02,Arizona Diamondbacks,Cleveland Guardians,Merrill Kelly,Gavin Williams,0,5,In Progress
-2026-08-02,Pittsburgh Pirates,Cincinnati Reds,Mitch Keller,Chase Burns,2,10,Game Over
+2026-08-02,Arizona Diamondbacks,Cleveland Guardians,Merrill Kelly,Gavin Williams,0,5,Final
+2026-08-02,Pittsburgh Pirates,Cincinnati Reds,Mitch Keller,Chase Burns,2,10,Final
 2026-08-02,Chicago White Sox,Tampa Bay Rays,Anthony Kay,Griffin Jax,9,1,Final
 2026-08-02,Miami Marlins,New York Mets,Sandy Alcantara,Robert Stock,2,0,Final
-2026-08-02,Texas Rangers,Houston Astros,Kumar Rocker,Peter Lambert,3,7,Game Over
-2026-08-02,New York Yankees,Chicago Cubs,Gerrit Cole,Colin Rea,2,1,Game Over
-2026-08-02,Kansas City Royals,Colorado Rockies,Seth Lugo,Kyle Freeland,1,8,In Progress
-2026-08-02,Milwaukee Brewers,Los Angeles Angels,Jacob Misiorowski,Walbert Ureña,0,2,In Progress
-2026-08-02,Detroit Tigers,Athletics,Keider Montero,Gage Jump,4,0,In Progress
-2026-08-02,San Francisco Giants,San Diego Padres,Landen Roupp,Kyle Hart,0,4,In Progress
-2026-08-02,Minnesota Twins,Seattle Mariners,Taj Bradley,George Kirby,0,2,In Progress
-2026-08-02,Boston Red Sox,Los Angeles Dodgers,Jake Bennett,Emmet Sheehan,0,0,Pre-Game
+2026-08-02,Texas Rangers,Houston Astros,Kumar Rocker,Peter Lambert,3,7,Final
+2026-08-02,New York Yankees,Chicago Cubs,Gerrit Cole,Colin Rea,2,1,Final
+2026-08-02,Kansas City Royals,Colorado Rockies,Seth Lugo,Kyle Freeland,1,8,Final
+2026-08-02,Milwaukee Brewers,Los Angeles Angels,Jacob Misiorowski,Walbert Ureña,0,3,Final
+2026-08-02,Detroit Tigers,Athletics,Keider Montero,Gage Jump,11,0,Final
+2026-08-02,San Francisco Giants,San Diego Padres,Landen Roupp,Kyle Hart,4,5,Final
+2026-08-02,Minnesota Twins,Seattle Mariners,Taj Bradley,George Kirby,6,7,Final
+2026-08-02,Boston Red Sox,Los Angeles Dodgers,Jake Bennett,Emmet Sheehan,8,4,Final
+2026-08-03,Washington Nationals,Philadelphia Phillies,Andrew Alvarez,Aaron Nola,0,0,Scheduled
+2026-08-03,St. Louis Cardinals,New York Yankees,Michael McGreevy,Cam Schlittler,0,0,Scheduled
+2026-08-03,Pittsburgh Pirates,Milwaukee Brewers,Bubba Chandler,Brandon Sproat,0,0,Scheduled
+2026-08-03,Los Angeles Dodgers,Chicago Cubs,,Matthew Boyd,0,0,Scheduled
+2026-08-03,San Francisco Giants,Texas Rangers,Logan Webb,,0,0,Scheduled
+2026-08-03,Toronto Blue Jays,Houston Astros,Shane Bieber,Cristian Javier,0,0,Scheduled
+2026-08-03,Tampa Bay Rays,Colorado Rockies,Ian Seymour,Michael Lorenzen,0,0,Scheduled
+2026-08-03,San Diego Padres,Arizona Diamondbacks,Michael King,Brandon Pfaadt,0,0,Scheduled
