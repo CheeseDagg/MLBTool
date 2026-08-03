@@ -102,12 +102,40 @@ SLOT_B   = -0.066  # logit slope of the residual batting-order HR gradient (walk
 PARK_LOWCONF_B = 0.07  # logit bump for [low-conf] parks (walk-forward validated, 6/6 split
                        # stability, all 4 such venues over-perform): the conf-shrink toward
                        # neutral is too aggressive there. Conservative end of the tested range.
-HOT_B = 0.18  # logit bump when the bat HOMERED in his most recent GRADED board game.
-              # Walk-forward validated (25,128 preds): +0.20 raw, 6/6 split-sign-stable,
-              # holdout Brier AND log-loss improve at all 6 splits, survives player-quality
-              # controls (actual 18.0% vs predicted 13.6% on last1 rows). 0.18 = the
-              # control-adjusted conservative estimate. Only the MOST RECENT game counts —
-              # HRs 2-3 games back carry nothing.
+HOT_B = 0.0   # logit bump when the bat HOMERED in his most recent GRADED board game.
+              #
+              # WAS 0.18, ON A VALIDATION THAT DOES NOT REPLICATE. The claim was
+              # "walk-forward validated (25,128 preds): +0.20 raw, 6/6 split-sign-stable
+              # ... survives player-quality controls (actual 18.0% vs predicted 13.6% on
+              # last1 rows)". Re-run against the file it names, data/hr_backtest.csv,
+              # pairing each bat's row with his own previous dated row:
+              #
+              #   raw:  hot 15.74% vs cold 10.49%  -> +5.25pp, z = +8.19
+              #
+              # which looks overwhelming and is the number the 0.18 came from. It is a
+              # player-quality confound, and the model already prices it: on the same
+              # rows the model PREDICTED 15.36% for hot bats and 10.94% for cold ones.
+              # A logit bump sits on top of the model, so the only quantity that can
+              # justify one is the offset that remains AFTER conditioning on the model's
+              # own number. Fitting exactly that, one parameter by Newton:
+              #
+              #   b = +0.0295, se 0.0536, z = +0.55        (0.18 is outside 2 SE)
+              #
+              # and it is not sign-stable either — chronological sixths run +0.055,
+              # +0.043, -0.287, -0.023, +0.235, -0.042. Three positive, three negative,
+              # two of them individually significant in OPPOSITE directions. That is
+              # noise with a trend line drawn through it, not a 6/6 stable effect.
+              #
+              # The production log cannot rescue it: leak-free, hot bats went 16.04% on
+              # n=106 against a 21.60% prediction — under-performing, wrong sign, and far
+              # too thin to mean anything (z = -0.59). The "actual 18.0% vs predicted
+              # 13.6%" line in the old comment is the shape the LEAKED flag produces
+              # (see the hot-map builder below, where it scored 98.3%), which is very
+              # likely where it came from.
+              #
+              # Set to zero rather than deleted: the flag is now built correctly, so
+              # re-testing this on real forward data is one constant away. Do not raise
+              # it again on a raw rate difference. Condition on the model first.
 SEASON_W  = 0.6   # weight on the bat's CURRENT-SEASON rate vs the model's talent-prior projection.
                   # Walk-forward validated on the 25,128-prediction backtest: w=0.6 is the Brier
                   # minimum on train AND unseen test independently (base .108573 -> .108249);
@@ -702,6 +730,32 @@ def fetch_zone_profiles(bat_ids, pit_ids, hands):
     ok_b = sum(1 for v in bats.values() if v); ok_p = sum(1 for v in pits.values() if v)
     return bats, pits, (f"heat on ({ok_b} bats x {ok_p} pitcher-sides, "
                         f"{pulled} pulls, {failed} fails)")
+
+# ---------------------------------------------------------------------------
+def build_hot_map(graded_path, today_iso):
+    """{norm(player): 1} for bats who homered in their last graded game BEFORE today.
+
+    A free function, not four lines inline in main(), for one reason: the `< today`
+    is the only thing standing between this term and a same-day answer key, and a
+    guard that cannot be asserted is a guard that comes back. selftest() calls this
+    with a fixture where a bat homered THIS MORNING and must still read cold.
+
+    Strictly `<`, never `<=`. mlb_grade.py settles every date `<= today` by design so
+    afternoon day-games settle on the 3:17pm build, and mlb-daily.yml runs this script
+    in the next line of the same step — so `<=` hands a day-game bat his own result
+    and the rebuilt board republishes his row already knowing it."""
+    import csv as _csv
+    latest = {}
+    with open(graded_path) as f:
+        for r in _csv.DictReader(f):
+            d = r.get("date")
+            if r.get("outcome") not in ("hr", "no") or not d or d >= today_iso:
+                continue
+            k = norm(r.get("player", ""))
+            if k and (k not in latest or d > latest[k][0]):
+                latest[k] = (d, r["outcome"])
+    return {k: 1 for k, (d, o) in latest.items() if o == "hr"}
+
 
 # ---------------------------------------------------------------------------
 # pure compute — shared by live build and selftest
@@ -1324,6 +1378,35 @@ def load_board(data_dir):
 
 # ---------------------------------------------------------------------------
 def selftest():
+    # ---- HOT-HAND LEAK GUARD ------------------------------------------------
+    # The board is rebuilt four times a day and mlb_grade.py settles TODAY's
+    # finished day-games in the line above it, so "most recent graded game" will
+    # happily hand a 1:10pm bat his own 1:10pm result at the 3:17pm build. On the
+    # production log that scored 118/120 -- 98.3% actual against 21.3% predicted.
+    # Fixture: Morning Bat homered today and yesterday's game says no; he must read
+    # COLD, because today is not information the board is allowed to have.
+    import tempfile as _tf0, os as _os0
+    _hp = _os0.path.join(_tf0.mkdtemp(), "graded.csv")
+    with open(_hp, "w", newline="") as _f:
+        _f.write("date,player,outcome\n"
+                 "2026-08-02,Morning Bat,no\n"
+                 "2026-08-03,Morning Bat,hr\n"      # today -- must be invisible
+                 "2026-08-02,Steady Bat,hr\n"
+                 "2026-08-01,Steady Bat,no\n"
+                 "2026-08-03,Debut Bat,hr\n")       # only ever played today
+    _hm = build_hot_map(_hp, "2026-08-03")
+    assert norm("Morning Bat") not in _hm, \
+        "LEAK: today's own graded result set the hot flag on today's board"
+    assert _hm.get(norm("Steady Bat")) == 1, \
+        "yesterday's homer must still count -- the guard is on the date, not the term"
+    assert norm("Debut Bat") not in _hm, \
+        "a bat with only a same-day row must be neutral, not hot"
+    assert build_hot_map(_hp, "2026-08-04").get(norm("Morning Bat")) == 1, \
+        "once the day is past, that same homer must count"
+    assert HOT_B == 0.0, \
+        "HOT_B is non-zero again -- re-read the constant's comment: the fit is " \
+        "+0.030 +/- 0.054 and the chronological sixths alternate sign"
+
     bat = [
         {"name": "Slug McPower",  "fg_team": "NYY", "pa": 350, "hr": 28},  # elite
         {"name": "Mid Bat",       "fg_team": "NYY", "pa": 300, "hr": 10},
@@ -1611,22 +1694,33 @@ def _build():
         print(f"   Marcel talent: {len(marcel)} hitters (generated {mp.get('generated','?')})")
     except Exception as _e:
         print(f"   Marcel talent: not available ({type(_e).__name__}) — using single-season base")
-    # HOT HAND: did each bat homer in his most recent GRADED board game? (validated
-    # residual signal — see HOT_B). Built from hr_graded.csv, which only ever contains
-    # settled prior games, so this is leak-free by construction. Fail-soft to no-bump.
-    hot = {}
+    # HOT HAND: did each bat homer in his most recent graded board game BEFORE today?
+    #
+    # THE `< _today` IS THE WHOLE POINT. This comment used to read "hr_graded.csv only
+    # ever contains settled prior games, so this is leak-free by construction" — and
+    # that was false. mlb_grade.py settles every date `<= today` on purpose, so early
+    # day-games settle on the 3:17pm build; mlb-daily.yml then runs mlb_hr.py in the
+    # very next line of the same step. So on the 12:47 and 3:17 rebuilds the "most
+    # recent graded game" for a day-game bat was HIS OWN GAME THAT AFTERNOON, and the
+    # board republished his row — the same date, overwriting the morning's entry in
+    # hr_predictions.csv — with a bump derived from the result it was predicting.
+    #
+    # Measured on the production log (24 dates, 2026-07-07..08-02): 198 rows had a
+    # different hot flag under `<= today` than under `< today`, and 98.5% of them
+    # agreed with that row's own realized outcome. Scored as they shipped, the leaked
+    # hot rows went 118/120 — actual 98.3% against a predicted 21.3%. That is not a
+    # model that found something; that is a model reading the answer. It flattered
+    # every downstream number the board is judged by, and the forward log is the one
+    # thing that is supposed to catch this model being wrong.
+    #
+    # Fail-soft to no-bump.
+    _today = dt.date.today().isoformat()
     try:
-        import csv as _csv
-        _gr = {}
-        with open(os.path.join(DATA, "hr_graded.csv")) as f:
-            for r in _csv.DictReader(f):
-                if r.get("outcome") in ("hr", "no") and r.get("date"):
-                    k = norm(r.get("player", ""))
-                    if k and (k not in _gr or r["date"] > _gr[k][0]):
-                        _gr[k] = (r["date"], r["outcome"])
-        hot = {k: 1 for k, (d, o) in _gr.items() if o == "hr"}
-        print(f"   hot-hand: {len(hot)} bats homered in their last graded board game")
+        hot = build_hot_map(os.path.join(DATA, "hr_graded.csv"), _today)
+        print(f"   hot-hand: {len(hot)} bats homered in their last graded board game "
+              f"before {_today}")
     except Exception as _e:
+        hot = {}
         print(f"   hot-hand: unavailable ({type(_e).__name__}) — neutral")
     rows, have_ev = build_board(bat, pit, sched, temps, props or None, hands or None, heats or None, cards or None, pens or None, barrels or None, marcel=marcel, hot=hot or None)
     rows = select_rows(rows, have_ev)
