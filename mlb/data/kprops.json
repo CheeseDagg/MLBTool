@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-03T19:49+00:00",
+ "generated": "2026-08-03T21:37+00:00",
  "board": [
   {
    "pitcher": "Cam Schlittler",
@@ -78,6 +78,46 @@
      "p_over": 0.0838,
      "fair_over": 1094,
      "fair_under": -1094
+    }
+   ]
+  },
+  {
+   "pitcher": "Justin Wrobleski",
+   "opp": "Chicago Cubs",
+   "lam": 5.15,
+   "k9_regressed": 7.34,
+   "exp_ip": 6.39,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5863,
+     "fair_over": -142,
+     "fair_under": 142
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4112,
+     "fair_over": 143,
+     "fair_under": -143
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2608,
+     "fair_over": 283,
+     "fair_under": -283
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.15,
+     "fair_over": 566,
+     "fair_under": -566
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0787,
+     "fair_over": 1171,
+     "fair_under": -1171
     }
    ]
   },
@@ -522,6 +562,46 @@
    ]
   },
   {
+   "pitcher": "Cal Quantrill",
+   "opp": "San Francisco Giants",
+   "lam": 3.27,
+   "k9_regressed": 6.96,
+   "exp_ip": 4.39,
+   "opp_mult": 0.964,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2323,
+     "fair_over": 331,
+     "fair_under": -331
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1137,
+     "fair_over": 779,
+     "fair_under": -779
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0491,
+     "fair_over": 1936,
+     "fair_under": -1936
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0189,
+     "fair_over": 5189,
+     "fair_under": -5189
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0066,
+     "fair_over": 15157,
+     "fair_under": -15157
+    }
+   ]
+  },
+  {
    "pitcher": "Cristian Javier",
    "opp": "Toronto Blue Jays",
    "lam": 2.75,
@@ -562,8 +642,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 43 (used 457) \u00b7 whiff rest:30 rows",
- "n_markets": 14,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 26 (used 474) \u00b7 whiff rest:30 rows",
+ "n_markets": 16,
  "n_plays": 0,
  "plays": [],
  "books": [
