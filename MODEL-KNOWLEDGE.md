@@ -354,6 +354,45 @@ home advantage · rescheduled matches settle within ±45 days · market anchors 
 manager changes · promoted teams start near league-average · congestion/fatigue ·
 weather.
 
+**THE MEASURED VERDICT — read this before trusting any soccer number.** Walk-forward
+over 3,223 matches: model called **51.6%** of results, closing market called **54.5%**.
+On the **467** matches where the two picked different sides, the model was right **24.8%**
+of the time. Per league the story is the same (E0 50.6 vs 54.0, disagreements 23.5%;
+SP1 52.1 vs 55.3, 23.4%; D1 51.8 vs 54.9, 22.6%; F1 52.1 vs 53.7, 31.5%). **The market
+is the better forecaster and fading it with this model loses.** The numbers are a
+calibrated read of what is LIKELY — which is what they are good at, and what the boards
+are ranked on — and are not an edge over the price. The verdict banner says this on the
+Legs, Builder, Lab and Calibration tabs; do not build a screen that quietly contradicts it.
+
+**WHAT THE PUBLISHER EMITS (2026-08-03).** Per fixture `lh`/`la` at 6dp; per league `mu`
+at 6dp alongside `home_adv`, `rho` and the att/dfn table at 3dp. `(lh, la, rho)` IS the
+model — every derived market (any total line, any correct score, any handicap, clean
+sheets, win-to-nil, same-game correlation) is `score_grid(lh, la, rho)` summed over a
+different region of the same 9×9 matrix (MAX_GOALS=8). `mu` is what makes a hypothetical
+matchup computable client-side: `lh = exp(mu + home_adv + att_h − dfn_a)`. Before these
+three fields, every new question meant a Python rebuild and a redeploy.
+
+**JS/PYTHON ENGINE PARITY IS A STANDING REQUIREMENT.** The browser re-implements
+`score_grid` so the boards can price arbitrary markets. It is validated against the
+Python across 3,800 market values on 100 (lh, la, rho) triples — max divergence 1.0e-15.
+Same kmax, same tau, same renormalisation. If the two ever drift, the graded record is
+measuring something the screen never showed, which is worse than having no engine.
+Re-run the parity check after any change to `score_grid` or `marketsFor`.
+
+**SAME-FIXTURE LEGS ARE NOT INDEPENDENT.** Joint probability must be summed over grid
+cells where every leg on that fixture is true; only cross-fixture legs may be multiplied.
+The sharp test: home win + over 0.5 on one match must return exactly P(home win) (a home
+win entails a goal). It returns 60.47% where naive multiplication says 57.5%.
+
+**RECONSTRUCTED ≠ PUBLISHED.** Ratings reach the browser at 3dp, `lh`/`la` at 6dp, so
+rebuilding rates from att/dfn drifts ~0.1% from the publisher's own numbers. The Matchup
+Lab therefore uses the published rates whenever the pairing is a real scheduled fixture
+and only reconstructs for hypotheticals — otherwise the Lab and the fixture table print
+two different numbers for the same match.
+
+**Offseason is not breakage.** Between seasons the slate carries 0 fixtures in all four
+leagues; ratings, backtests and the Lab stay live. Every empty state names its real cause.
+
 ## UFC — research blend (ufc_blend_predict.py, in live A/B vs production)
 
 **IN:** Elo (K=96) · striking + grappling margin EMAs · control · sub-threat EMA ·
