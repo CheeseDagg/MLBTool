@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-03T18:57:54+00:00",
+ "generated": "2026-08-03T21:19:46+00:00",
  "date": "2026-08-03",
  "min_pa": 6,
  "rows": [
@@ -35,6 +35,17 @@
    "hr": 1,
    "avg": ".400",
    "slg": "1.000"
+  },
+  {
+   "batter": "Rafael Devers",
+   "team": "SF",
+   "opp_sp": "Cal Quantrill",
+   "pa": 15,
+   "ab": 14,
+   "h": 7,
+   "hr": 1,
+   "avg": ".500",
+   "slg": ".929"
   },
   {
    "batter": "Ty France",
@@ -156,17 +167,6 @@
    "hr": 1,
    "avg": ".150",
    "slg": ".350"
-  },
-  {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 30,
-   "ab": 29,
-   "h": 6,
-   "hr": 1,
-   "avg": ".207",
-   "slg": ".345"
   }
  ]
 }
