@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-03T22:13+00:00",
+ "generated": "2026-08-03T23:11+00:00",
  "board": [
   {
    "pitcher": "Cam Schlittler",
@@ -122,46 +122,6 @@
    ]
   },
   {
-   "pitcher": "Aaron Nola",
-   "opp": "Washington Nationals",
-   "lam": 5.07,
-   "k9_regressed": 9.03,
-   "exp_ip": 5.18,
-   "opp_mult": 0.975,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5713,
-     "fair_over": -133,
-     "fair_under": 133
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3959,
-     "fair_over": 153,
-     "fair_under": -153
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2478,
-     "fair_over": 304,
-     "fair_under": -304
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1405,
-     "fair_over": 612,
-     "fair_under": -612
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0726,
-     "fair_over": 1278,
-     "fair_under": -1278
-    }
-   ]
-  },
-  {
    "pitcher": "Brandon Sproat",
    "opp": "Pittsburgh Pirates",
    "lam": 5.04,
@@ -198,6 +158,46 @@
      "p_over": 0.0706,
      "fair_over": 1316,
      "fair_under": -1316
+    }
+   ]
+  },
+  {
+   "pitcher": "Aaron Nola",
+   "opp": "Washington Nationals",
+   "lam": 4.97,
+   "k9_regressed": 9.09,
+   "exp_ip": 5.04,
+   "opp_mult": 0.976,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5539,
+     "fair_over": -124,
+     "fair_under": 124
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3784,
+     "fair_over": 164,
+     "fair_under": -164
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2332,
+     "fair_over": 329,
+     "fair_under": -329
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1301,
+     "fair_over": 669,
+     "fair_under": -669
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.066,
+     "fair_over": 1414,
+     "fair_under": -1414
     }
    ]
   },
@@ -322,46 +322,6 @@
    ]
   },
   {
-   "pitcher": "Andrew Alvarez",
-   "opp": "Philadelphia Phillies",
-   "lam": 4.54,
-   "k9_regressed": 8.88,
-   "exp_ip": 4.43,
-   "opp_mult": 1.038,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4748,
-     "fair_over": 111,
-     "fair_under": -111
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3033,
-     "fair_over": 230,
-     "fair_under": -230
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1737,
-     "fair_over": 476,
-     "fair_under": -476
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0896,
-     "fair_over": 1016,
-     "fair_under": -1016
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.042,
-     "fair_over": 2282,
-     "fair_under": -2282
-    }
-   ]
-  },
-  {
    "pitcher": "Bubba Chandler",
    "opp": "Milwaukee Brewers",
    "lam": 4.35,
@@ -478,6 +438,46 @@
      "p_over": 0.0295,
      "fair_over": 3290,
      "fair_under": -3290
+    }
+   ]
+  },
+  {
+   "pitcher": "Andrew Alvarez",
+   "opp": "Philadelphia Phillies",
+   "lam": 4.23,
+   "k9_regressed": 8.98,
+   "exp_ip": 4.08,
+   "opp_mult": 1.039,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4162,
+     "fair_over": 140,
+     "fair_under": -140
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2519,
+     "fair_over": 297,
+     "fair_under": -297
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1361,
+     "fair_over": 635,
+     "fair_under": -635
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0661,
+     "fair_over": 1413,
+     "fair_under": -1413
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0291,
+     "fair_over": 3341,
+     "fair_under": -3341
     }
    ]
   },
@@ -642,8 +642,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10 (used 490) \u00b7 whiff rest:30 rows",
- "n_markets": 16,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 427 (used 73) \u00b7 whiff rest:30 rows",
+ "n_markets": 14,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -655,6 +655,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
