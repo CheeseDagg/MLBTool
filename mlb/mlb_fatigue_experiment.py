@@ -57,46 +57,80 @@ REGULAR_PA = 300
 
 
 # ------------------------------------------------------------ prior-only state
+def season_of(r):
+    """The season a row belongs to.
+
+    The panel rows carry no explicit season/year column, only an ISO `date`.
+    An MLB season never straddles a calendar-year boundary, so the leading
+    four characters ARE the season — no month heuristics, and no need to know
+    where opening day fell in a given year. Kept as a named function so every
+    season-scoped accumulator below resets off the same definition.
+    """
+    return r["date"][:4]
+
+
 def build_history(rows):
     """For each row, features computed from STRICTLY EARLIER games only.
 
     Returns {row_id: {...}} keyed by id(row) is fragile across processes, so
     this instead returns a parallel list in the same order as `rows`.
+
+    Everything here is scoped to a SEASON, because this panel is a 2024
+    burn-in bolted onto 2025 and the winter between them is not baseball. A
+    raw calendar gap across that boundary reads as ~180 days of rest, i.e. the
+    most rested a batter can possibly be, on the opening rows of a season —
+    which is where the entirety of April 2025 lives. That is not an extreme
+    observation of the thing this file measures, it is a different thing
+    wearing its clothes, so those rows get NO opinion rather than a big number.
     """
     rows = sorted(rows, key=lambda r: (r["date"], r.get("pk", 0)))
-    last_game = {}                       # bat -> last date played
-    recent = defaultdict(list)           # bat -> [(date, pa)]
-    seen_sp_season = defaultdict(int)    # (bat, sp) -> meetings so far, 2025
+    last_game = {}                       # (bat, season) -> last date played
+    recent = defaultdict(list)           # (bat, season) -> [(date, pa)]
+    seen_sp_season = defaultdict(int)    # (bat, sp, season) -> meetings so far
     seen_sp_career = defaultdict(int)    # (bat, sp) -> meetings so far, all
     total_pa = defaultdict(int)          # bat -> panel PA so far
     out = []
     for r in rows:
         b, sp, d = r["bat"], r.get("sp"), r["date"]
+        yr = season_of(r)
         dd = dt.date.fromisoformat(d)
-        prev = last_game.get(b)
+        # keyed by (batter, season): a batter's first appearance OF A SEASON
+        # finds nothing here and so has no defined prior gap, exactly like his
+        # first appearance in the panel. Dropping the row from the feature is
+        # the honest answer; capping the gap would still let it vote, and vote
+        # at the maximum, on the least informative rows in the panel.
+        prev = last_game.get((b, yr))
         rest = (dd - dt.date.fromisoformat(prev)).days if prev else None
-        # trailing 7d / 30d PA, strictly before today
-        w7 = sum(p for dt_, p in recent[b]
+        # trailing 7d / 30d PA, strictly before today. The date filters alone
+        # would already exclude last season (the offseason is far longer than
+        # 30 days), but the accumulator is season-keyed anyway so that the
+        # window can be widened later without silently reaching over a winter.
+        w7 = sum(p for dt_, p in recent[(b, yr)]
                  if 0 < (dd - dt.date.fromisoformat(dt_)).days <= 7)
-        w30 = sum(p for dt_, p in recent[b]
+        w30 = sum(p for dt_, p in recent[(b, yr)]
                   if 0 < (dd - dt.date.fromisoformat(dt_)).days <= 30)
         out.append({
             "rest": rest,
             "pa7": w7,
             "pa30": w30,
-            "fam": seen_sp_season[(b, sp)] if d >= "2025-01-01" else 0,
+            # keyed on the season itself rather than a hardcoded "is it 2025
+            # yet" date: the old form pinned every burn-in row to fam=0, so
+            # the within-season count was constant by construction on a third
+            # of the panel and could never be scored there.
+            "fam": seen_sp_season[(b, sp, yr)],
             "famcar": seen_sp_career[(b, sp)],
             "prior_pa": total_pa[b],
         })
         # advance state AFTER emitting — this is the leak boundary
-        last_game[b] = d
-        recent[b].append((d, r["pa"]))
-        if len(recent[b]) > 60:
-            recent[b] = recent[b][-60:]
+        last_game[(b, yr)] = d
+        recent[(b, yr)].append((d, r["pa"]))
+        if len(recent[(b, yr)]) > 60:
+            recent[(b, yr)] = recent[(b, yr)][-60:]
         if sp is not None:
-            if d >= "2025-01-01":
-                seen_sp_season[(b, sp)] += 1
+            seen_sp_season[(b, sp, yr)] += 1
             seen_sp_career[(b, sp)] += 1
+        # NOT season-scoped, on purpose: prior_pa is the "is this a regular or
+        # a bench bat" gate, and a man's standing carries over the winter.
         total_pa[b] += r["pa"]
     return rows, out
 
@@ -276,8 +310,31 @@ def selftest():
 
     # rest itself must never see today or later
     assert all(h["rest"] is None or h["rest"] > 0 for h in hist)
+
+    # SEASON BOUNDARY. The panel is a 2024 burn-in plus 2025, so the regression
+    # this pins is a real one that shipped: the winter used to be measured as
+    # ~180 days of rest, which put every season-opening row in the top bucket.
+    tmpl = {"venue": 1, "dn": "night", "home": True, "bat": 1, "name": "B",
+            "slot": 3, "pa": 4, "hr": 0, "sp": 900, "bh": "R", "ph": "R"}
+    winter = [dict(tmpl, date="2024-09-28", pk=1),
+              dict(tmpl, date="2025-04-01", pk=2),
+              dict(tmpl, date="2025-04-03", pk=3)]
+    _s, hw = build_history(winter)
+    assert hw[0]["rest"] is None, "first panel row invented a gap"
+    assert hw[1]["rest"] is None, f"offseason scored as rest: {hw[1]['rest']}"
+    assert hw[2]["rest"] == 2, hw[2]              # within-season still counts
+    # the trailing workload window must not reach back over the winter either
+    assert hw[1]["pa30"] == 0, f"pa30 crossed the offseason: {hw[1]['pa30']}"
+    assert hw[2]["pa30"] == 4, hw[2]
+    # within-season familiarity RESETS in the new year; career does not
+    assert [h["fam"] for h in hw] == [0, 0, 1], [h["fam"] for h in hw]
+    assert [h["famcar"] for h in hw] == [0, 1, 2], [h["famcar"] for h in hw]
+    # prior_pa is deliberately NOT season-scoped — it is the regulars gate
+    assert hw[1]["prior_pa"] == 4, hw[1]
+
     print(f"FATIGUE SELFTEST PASS — planted rest recovered (oracle dLL "
-          f"{d_rest:+.5f}, null {d_null:+.5f}), leak-free across a poisoned cutoff")
+          f"{d_rest:+.5f}, null {d_null:+.5f}), leak-free across a poisoned "
+          f"cutoff, offseason excluded from rest/workload/familiarity")
     return 0
 
 
@@ -326,12 +383,18 @@ def main():
 
     known_rest = sum(1 for h in hist if h["rest"] is not None)
     fam_any = sum(1 for h in hist if h["fam"] > 0)
+    # printed because it is the size of the old bug: these are the rows that
+    # used to carry a ~180-day "rest" and are now silent.
+    openers = sum(1 for h in hist if h["rest"] is None) - len(
+        {r["bat"] for r in rows})
     tee("=" * 70)
     tee("MLB HR ANGLES 3 — FATIGUE (rest, workload) and FAMILIARITY (Nth look)")
     tee("baseline = shipped run-2 analog incl. prior-seeded pitcher HR")
     tee("=" * 70)
     tee(f"rows {len(rows)}  rest known {known_rest} ({100*known_rest/len(rows):.0f}%)  "
         f"repeat-starter meetings {fam_any} ({100*fam_any/len(rows):.0f}%)")
+    tee(f"season-opening rows with no defined prior gap: {openers} "
+        f"(these used to score as ~180 days of rest)")
     tee("")
     tee("--- FULL SAMPLE")
     experiment(feat, hist, dm, out=tee)

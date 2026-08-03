@@ -52,7 +52,13 @@ def find_edges(odds_path, bankroll=1000.0, frac=FRAC, min_books=3):
                              "book": book, "n_books": len(g), "fair": fair,
                              "ev": ev, "stake": stake})
     df = pd.DataFrame(rows)
-    return df.sort_values("stake", ascending=False) if len(df) else df
+    # RANKED BY HIT PROBABILITY, not by edge. The EV/Kelly numbers are still computed
+    # and still shipped as columns — they are just no longer the ordering key, because
+    # ordering by stake puts the longest shots on top (a +900 dog with a 2% price gap
+    # outranks a -180 favourite with a 1% one) and the top of the board is what gets
+    # bet. `fair` is the no-vig consensus chance this side actually wins; publish
+    # re-ranks with the model's own win% where it has one.
+    return df.sort_values(["fair", "ev"], ascending=False) if len(df) else df
 
 def main():
     bankroll = float(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].replace(".","").isdigit() else 1000.0
@@ -62,7 +68,8 @@ def main():
     sk = getattr(find_edges, "_skipped", 0)
     print(f"LINE-SHOP EDGES  (bankroll ${bankroll:.0f}, quarter Kelly)")
     if sk: print(f"  [skipped {sk} game(s) already in progress -- live lines aren't bettable value]")
-    print("  sizes best price vs consensus fair; model win%% intentionally NOT used\n")
+    print("  sizes best price vs consensus fair; model win%% intentionally NOT used")
+    print("  ordered MOST LIKELY TO HIT first (consensus fair %) -- edge sizes the bet, it does not rank it\n")
     if not len(df):
         print("  no side is beating the consensus fair line right now -- nothing to bet.")
         return

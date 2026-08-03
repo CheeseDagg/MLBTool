@@ -139,7 +139,19 @@ def build_contexts(starts, team_bat):
                 "n_prior": len(prior),
                 "lg": lg,
                 "opp_so": oso, "opp_pa": opa,
-                "rest_days": (date - prior[-1][0]).days if prior else None,
+                # Rest is UNDEFINED across a season boundary, not "long". The
+                # gap from a September start to the following April is ~190
+                # days, which rest_bucket() files under "long" alongside a
+                # genuine 8-day layoff -- and a season opener genuinely IS a
+                # fresh arm, so the contamination does not merely add noise, it
+                # FLATTERS the rest term it is being used to measure. The panel
+                # is single-season today, so this is currently unreachable; it
+                # stops being unreachable the moment anyone widens the window,
+                # which is exactly when nobody would think to look here.
+                # (Same bug, same fix, as mlb_fatigue_experiment.py.)
+                "rest_days": ((date - prior[-1][0]).days
+                              if prior and prior[-1][0].year == date.year
+                              else None),
             })
         # 2) FOLD this date's rows into state (visible to LATER dates only)
         for s in starts_by_date.get(date, []):

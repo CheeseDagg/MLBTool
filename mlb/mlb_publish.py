@@ -66,7 +66,32 @@ def todays_games():
     return pd.DataFrame()
 
 
-def edges_block():
+def model_win_pct(games):
+    """{(game_label, team): model win %} for every side on today's slate.
+
+    The edge rows come out of the market layer, which by design never sees the model.
+    The board is ranked by the chance a bet HITS, so each row needs the model's own
+    number attached — without this the only likelihood available is the market's, and
+    the tab could not be ordered on the model at all."""
+    out = {}
+    for g in games:
+        lab = f"{g['away']} @ {g['home']}"
+        try:
+            ph = float(g["p_home"])
+        except (TypeError, ValueError, KeyError):
+            continue
+        out[(lab, g["home"])] = round(ph, 1)
+        out[(lab, g["away"])] = round(100.0 - ph, 1)
+    return out
+
+
+def by_likelihood(r):
+    """Sort key for a bet row: the chance it HITS, descending. Model number when the
+    row has one, consensus fair when it doesn't — never the edge."""
+    return -(r["p_model"] if r.get("p_model") is not None else float(r["fair"]) * 100.0)
+
+
+def edges_block(games=()):
     """Run the edge-finder if odds exist; return [] otherwise."""
     path = os.path.join(DATA, "mlb_odds.csv")
     if not os.path.exists(path):
@@ -78,9 +103,20 @@ def edges_block():
         note = f"{skipped} in-progress game(s) skipped" if skipped else ""
         if df is None or not len(df):
             return [], note or "no +EV sides vs consensus right now"
+        mp = model_win_pct(games)
         rows = [{"game": r.game, "bet": r.bet, "price": int(r.price), "book": r.book,
                  "fair": round(float(r.fair), 4), "ev_pct": round(float(r.ev) * 100, 2),
-                 "kelly_frac": round(float(r.stake) / 1000.0, 5)} for r in df.itertuples()]
+                 "kelly_frac": round(float(r.stake) / 1000.0, 5),
+                 "p_model": mp.get((r.game, r.bet))} for r in df.itertuples()]
+        # LIKELIHOOD-FIRST ORDER (house rule): most likely to hit at the top, model
+        # number where we have one, consensus fair where we don't (team names that
+        # don't line up between the odds feed and the schedule). EV and Kelly are
+        # still on every row — they size the bet, they no longer rank it.
+        rows.sort(key=by_likelihood)
+        if any(r["p_model"] is None for r in rows):
+            n_miss = sum(1 for r in rows if r["p_model"] is None)
+            note = (note + " · " if note else "") + \
+                   f"{n_miss} side(s) with no model number — ranked on consensus fair"
         return rows, note
     except Exception as e:
         return [], f"edge-finder error: {type(e).__name__}"
@@ -139,7 +175,12 @@ def main():
           "net": round(M._O(m, t) / M._D(m, t), 3)} for t in m["N"]],
         key=lambda x: -x["net"])
 
-    edge_rows, edge_note = edges_block()
+    # Likelihood-first: the slate table leads with the games the model is most sure
+    # about, so the top of the page is the highest-probability read, not the first
+    # first-pitch of the day. (The favourite's own chance, either side.)
+    games.sort(key=lambda g: -max(float(g["p_home"]), 100.0 - float(g["p_home"])))
+
+    edge_rows, edge_note = edges_block(games)
     parlays, near_parlays = parlay_block()
     try:
         import mlb_hr
@@ -149,8 +190,13 @@ def main():
     try:
         import mlb_grade
         hr_cal = mlb_grade.panel_for_publish()
+        # Per-bucket settled hit rate, so every board row can carry what the model's
+        # own numbers at that level have actually done. Ships even when it's mostly
+        # empty — an absent bucket renders as "—", which is the honest answer.
+        hr_rel = mlb_grade.reliability_for_publish()
     except Exception as e:
         hr_cal = {"n": 0, "error": type(e).__name__}
+        hr_rel = {"buckets": [], "error": type(e).__name__}
     futures = None
     try:
         fp = os.path.join(DATA, "futures.json")
@@ -171,7 +217,8 @@ def main():
         "games": games, "ratings": ratings,
         "edges": edge_rows, "edge_note": edge_note,
         "parlays": parlays, "near_parlays": near_parlays,
-        "hr_board": hr_rows, "hr_note": hr_note, "hr_cal": hr_cal, "futures": futures,
+        "hr_board": hr_rows, "hr_note": hr_note, "hr_cal": hr_cal,
+        "hr_reliability": hr_rel, "futures": futures,
         "backtest": backtest_block(s),
         "league_rpg": round(float(m["L"]), 2),
         "xwoba_pitchers": len(xw),
@@ -229,6 +276,32 @@ def selftest():
         kept = sorted(str(x)[:10] for x in s["date"])
         chk(kept == ["2025-06-01", "2026-06-01"],
             f"both seasons kept, spring cut in each (got {kept})")
+
+    # LIKELIHOOD-FIRST ORDERING. The board exists to answer "what hits", so the
+    # ranking key is probability and nothing else. These pin that: both sides of a
+    # game get a model number, and a fat edge on a longshot must NOT outrank a
+    # likelier bet (the old stake-ordered board did exactly that).
+    gms = [{"away": "A", "home": "B", "p_home": 40.0},
+           {"away": "C", "home": "D", "p_home": 71.0}]
+    mp = model_win_pct(gms)
+    chk(mp[("A @ B", "A")] == 60.0 and mp[("A @ B", "B")] == 40.0 and
+        mp[("C @ D", "D")] == 71.0, "model_win_pct gives every side its own win%")
+    bets = [{"bet": "longshot", "p_model": 18.0, "fair": 0.20, "ev_pct": 22.0},
+            {"bet": "likely",   "p_model": 66.0, "fair": 0.63, "ev_pct": 1.1},
+            {"bet": "no model", "p_model": None, "fair": 0.44, "ev_pct": 9.0}]
+    chk([b["bet"] for b in sorted(bets, key=by_likelihood)] ==
+        ["likely", "no model", "longshot"],
+        "edges rank by hit probability, not by edge (fair% when model is missing)")
+    chk(sorted(gms, key=lambda g: -max(g["p_home"], 100 - g["p_home"]))[0]["home"] == "D",
+        "slate leads with the game the model is most sure of")
+
+    # the honest-confidence table must ship, and must refuse to print thin buckets
+    import mlb_grade as _G
+    rel = _G.reliability_for_publish()
+    chk(isinstance(rel.get("buckets"), list) and rel.get("min_n", 0) >= 30,
+        f"reliability table publishes with a >=30-row floor ({len(rel.get('buckets', []))} buckets)")
+    chk(all(b["actual"] is None or b["n"] >= rel["min_n"] for b in rel.get("buckets", [])),
+        "no bucket under the floor is allowed to show a hit rate")
 
     # the live level factor must be flat: it may move numbers, never the order
     import mlb_hr as H

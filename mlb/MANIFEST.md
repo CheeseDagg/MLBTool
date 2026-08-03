@@ -28,13 +28,14 @@ Covers the files that matter for running/deploying. Not every data blob is liste
 
 | File | What it does |
 |---|---|
-| `index.html` | The tool UI (homers / edges / parlays / slate / ratings / K-props / futures tabs). Fetches `data/slate.json` + `data/bvp_board.json` + `data/lineshop.json` + `data/kprops.json`. The homers tab shows the HR board, the **spot** tags, and the **Best HR history vs today's starter** (BvP) panel. |
+| `index.html` | The tool UI (homers / edges / parlays / slate / ratings / K-props / futures tabs). Fetches `data/slate.json` + `data/bvp_board.json` + `data/lineshop.json` + `data/kprops.json`. The homers tab shows the HR board, the **spot** tags, the **has hit** honest-confidence column, and the **Best HR history vs today's starter** (BvP) panel. Every board on the page is ranked **likelihood-first** (model HR%, model win%, joint fair%); edge/EV stays a column and headers are click-to-sort. |
 
 ## Data (`mlb/data/*` — produced by the scripts, consumed by the dashboard)
 
 | File | Produced by | Used for |
 |---|---|---|
-| `slate.json` | `mlb_publish.py` | master file the dashboard reads (games, hr_board, hr_cal, backtest, ratings, edges, futures) |
+| `slate.json` | `mlb_publish.py` | master file the dashboard reads (games, hr_board, hr_cal, `hr_reliability`, backtest, ratings, edges, futures) |
+| `slate.json` → `hr_reliability` | `mlb_grade.reliability()` | the **has hit** column: settled hit rate per 5-point probability band (live ledger first, season replay only where live is thin; bands under 30 rows publish `null` and render "—") |
 | `hr_board.json` | `mlb_hr.py` | the HR board rows |
 | `bvp_board.json` | `mlb_bvp.py` | the BvP panel |
 | `hr_predictions.csv` | `mlb_hr.py` | dated daily board log (the spot baseline reads this) |

@@ -109,8 +109,32 @@ season familiarity was hard-coded to `d >= "2025-01-01"`, so every 2024 row carr
 fam=0 — the feature was constant in exactly the holdout meant to measure it — and rest
 was *capped* at 5 days rather than excluded, so a 183-day offseason gap read identically
 to a Sunday off, which would have made all of April look like league-wide peak freshness.
-Both live on in `mlb_fatigue_experiment.py`. When porting a narrow-panel angle wide,
-**re-read its feature builder for season-boundary assumptions before trusting the port.**
+When porting a narrow-panel angle wide, **re-read its feature builder for season-boundary
+assumptions before trusting the port.**
+
+> **BACKPORTED 2026-08-03.** Both bugs are now fixed in `mlb_fatigue_experiment.py` too,
+> which is where they originated. `build_history()` keys every within-season accumulator
+> — last-game, the 7d/30d workload list, and the familiarity counter — on
+> `(entity, season)`, so the rest gap is simply **undefined** across a winter rather than
+> capped at a big number. Sizes: **636 gaps over 45 days before, 128 after**; the 508 that
+> disappeared were every returning batter's first game of 2025, all of them voting at the
+> top of a scale that caps at 5. **No verdict moved** — REST −0.00020 → −0.00022 full
+> sample, −0.00016 → −0.00008 on regulars, still NULL — but the direction is the warning:
+> a season-opener genuinely IS a fresh bat, so the contamination was correlated with the
+> effect under test, not clean noise. It flattered the term rather than diluting it.
+>
+> One claim above was itself a symptom and is now **withdrawn**: "4% of rows are repeat
+> meetings" was produced by the `d >= "2025-01-01"` bug pinning every burn-in row to
+> fam=0. Season-keyed, the panel is 17% and the scored June-2025 holdout was always
+> 19.6%. FAMIL's verdict is unchanged (measured still exceeds its own ceiling, so it is
+> still noise) but **it is not noise for lack of coverage** — do not quote the 4%.
+>
+> Still latent elsewhere, not a live bug and deliberately left alone: `build_contexts()`
+> in `mlb_kfactors_experiment.py:142` computes pitcher `rest_days` the same raw way, and
+> `rest_bucket()` sends anything over 5 days to `"long"`. Its dataset builder is pinned to
+> a single season, so the path is unreachable today — but widening that panel the way the
+> wide-panel work widened this one would drop every opening-day start into the `"long"`
+> bucket and fit a ratio to it.
 
 **THE CALIBRATION PANEL WAS LYING FOR A WEEK, AND THE WAY IT LIED IS THE LESSON
 (2026-07-30).** On 2026-07-23 commit `1bbf7c9` added `hr_raw` to `GCOLS`. The append
@@ -247,6 +271,15 @@ preseason reversion.
 temperature, dome, surface · Thursday/short-week beyond rest · playoff temperature ·
 late-season dead-rubber (favorites actually do BETTER) · bye-week nonlinearity ·
 parameter retunes.
+
+> **SUPERSEDED 2026-08-03 — READ THIS FIRST.** Everything below about QB change
+> is still measured correctly. It is also **NOT SHIPPABLE**, and the four gates
+> below could not see why. `QBNEW` reads `home_qb_id`, which is populated on
+> 7,276 / 7,276 PLAYED games and **0 / 272 UNPLAYED** ones. It is perfectly
+> time-ordered and completely unavailable at the moment a prediction is actually
+> made. A new **GATE 0: AVAILABILITY** now vetoes it. Keep the absorption
+> reasoning; discard the conclusion that it was ready. See the 2026-08-03 entry
+> at the end of this document.
 
 **QB CHANGE IS REAL, AND IT IS THE FIRST NFL ANGLE TO CLEAR ALL FOUR GATES
 (2026-07-29, `nfl_qb_experiment.py`).** The absorption theorem says exactly which QB
@@ -558,3 +591,117 @@ only to WARM the shrinkage cells, never scored. Widening the scoring windows
 (warm 2024-03-20..05-31; train 2024-06..07 + 2025-04..05; hold 2024-08..09 + 2025-06)
 quadrupled the holdout to 24,332 rows with ZERO new data pull. Before filing anything
 as dead, check that the panel is actually being scored, not just warmed.
+
+---
+
+## 2026-08-03 — five findings from a full-day pass over every tool
+
+**A FEATURE CAN BE PERFECTLY TIME-ORDERED AND STILL BE A PHANTOM. GATE 0:
+AVAILABILITY.** Every leak proof written before today tested one thing: does a
+future result move a past feature. That is necessary and it is not sufficient.
+`QBNEW` passed all four gates — +0.00447 after the hardest baseline, 5/6
+seasons, placebo 0/200, effect 2.5× stronger where the claim says it lives —
+and reads `home_qb_id`, a column that is populated on **7,276 of 7,276 played
+games and 0 of 272 unplayed games**. Nothing in the harness could see that,
+because the harness only ever scored rows that had already been played. A
+feature like this is not wrong in backtest; it is inert live, which is worse,
+because the backtest keeps promising a gain the shipped model never delivers.
+
+The gate is `columns_touched()` in `nfl_qb_experiment.py`: it intercepts
+`itertuples`, `__getitem__`, `__setitem__` and `merge(on=/left_on=)` to
+discover STRUCTURALLY which raw columns a feature builder reads, then verifies
+that trace by BLANKING each un-traced suspect column and re-running — if the
+feature moves, the trace missed a `.loc`/`.iloc` path and the run fails. It is
+built on interception rather than declaration because a future feature cannot
+forget to register itself. `verdict_of()` raises rather than judging an
+unaudited column. Same gate now on `nfl_experiment.py` and
+`nfl_epa_experiment.py`. Audit result: **no currently-shipped model input is
+unavailable** (`spread_line` is 75.4% null but is display-only and already
+guarded at `nfl_model.py:135`).
+
+Side effect worth noting: separating the calibration counters while wiring this
+in fixed a pre-existing degeneracy and flipped probe plant recovery 0/3 → 3/3,
+turning one verdict from "STILL CANNOT BE SEEN — do not bury" into "DEAD".
+
+**A SCORE IS NOT A LOG-ODDS, AND A TOOL THAT NEVER HAS AN OPINION CANNOT BE
+CAUGHT BEING WRONG.** `model_score` in `ufc_ratings.json` is documented as
+"logit units". It is an opponent-adjusted ridge coefficient normalised within
+division; sd = 0.421. Every consumer fed it to a bare sigmoid, i.e. an implicit
+temperature of 1 — the ledger in `build_site.py`, the ledger in
+`refresh_odds.py`, and **six independent inline sites in the front end**. Across
+24 logged bouts the mean distance from a coin flip was **0.049**; the most
+lopsided call the tool had ever published was 65.7% while the market on the same
+card ran to 80.8%. The production ledger read n=11, accuracy 36.4%, and the
+model was right on 0.0% of its 5 disagreements with the market. The page copy
+explained the flatness away as MMA variance.
+
+Nothing threw. This is the failure mode a validator has to be *told* to look
+for, so `validate_build.py` now hard-errors on a missing T, on `|T-1| < 0.05`,
+and on "the widest score gap in the whole file still prices under 70%".
+
+**TO PICK A CALIBRATION CONSTANT, FIT IT ERA BY ERA AND WATCH FOR A GRADIENT.**
+`calibration.json` carried T=3.17 and applying it would have overshot by ~60%.
+The ratings are recency-weighted AND fit on the same bout history they are
+scored against, so a fight's own result is partly baked into its participants'
+current scores — more so the fresher the fight. Fitting T per era exposes it:
+
+    2005-2012  T=2.05  acc 62.0%      2020-2022  T=2.14  acc 68.2%
+    2013-2016  T=2.02  acc 65.2%      2023-2024  T=2.87  acc 75.5%
+    2017-2019  T=1.91  acc 67.1%      2025-2027  T=3.86  acc 76.8%
+
+T and accuracy climbing together is memory, not skill. So T is fit on the
+OLDEST cohort (`FIT_ERA = (2005, 2019)`, T=1.981), which biases it DOWN, and
+down is the safe direction for a betting tool. Sanity check that it landed:
+the honest walk-forward reports 60.7% accuracy and the fit era reports 62–65% —
+the same model, not the 76% fantasy of the recent slice. `load_T()` **raises**
+rather than defaulting to 1.0, because a silent default here is invisible.
+
+**SEASON-BOUNDARY CONTAMINATION DOES NOT DILUTE THE EFFECT UNDER TEST — IT
+FLATTERS IT.** `mlb_fatigue_experiment.py` computed rest-day gaps across the
+winter, filing a ~190-day layoff in the same bucket as a genuine 8-day one. The
+reflex is to call that noise. It is not: a season opener genuinely IS a fresh
+bat, so the contaminated rows agreed with the hypothesis for the wrong reason.
+636 → 128 contaminated observations, 508 → 0 season-crossing. Rows carry no
+`year`, only an ISO `date`; an MLB season never straddles a calendar year, so
+`date[:4]` IS the season. The identical pattern on pitchers at
+`mlb_kfactors_experiment.py:142` is now fixed too — it was unreachable on a
+single-season panel, which is exactly why nobody would have looked there after
+widening the window.
+
+**RANK BY WHAT HITS, NOT BY WHAT IS CHEAP — AND PUBLISH THE HIT RATE NEXT TO
+IT.** Every MLB board sorted by edge/EV/Kelly. All four now rank by hit
+probability with edge retained as a sortable column, and each row carries a
+`has hit` column: the historical settle rate of the bucket that row falls in
+(5-point buckets, suppressed to "—" under 30 graded observations rather than
+printing a misleading small-sample rate). The first thing it showed:
+**the board's 30–35% calls have historically come in at 18.1%.**
+
+**PARLAY ARITHMETIC BELONGS IN ONE FILE (`parlay/slips.py`).** Slips were being
+graded by throwaway scripts that each re-implemented the de-vig. Three things
+are now permanent and tested (25/25):
+
+- **Power de-vig is the default** (`board.py METHOD`, changed from `mult`).
+  Multiplicative de-vig splits the overround in proportion to implied price,
+  but books load margin onto the LONGSHOT side. A -5000 leg de-vigs to .9363
+  under `mult` and .9737 under `power`. On a board that is nothing but heavy
+  favourites, that bias is largest exactly where the tickets differ.
+- **Same-market outcomes are handled exactly, not simulated.** Two outcomes of
+  one market either nest (by-points ⊂ wins the fight → the intersection is the
+  narrower one) or are disjoint (→ zero). P(at least one slip cashes) is
+  inclusion–exclusion over the slips, exact, with `1 - ∏(1-pᵢ)` printed beside
+  it so the cost of shared legs is visible. Cross-checked against a Monte Carlo
+  that lays each market out on one uniform interval — rolling an independent
+  coin per outcome lets a fighter both win and lose the same fight, which makes
+  the simulation *more optimistic* than the arithmetic it is checking.
+- **E[slips killed]** per shared leg = (tickets carrying it) × P(it loses). On
+  the 2026-08-01 set of five, that number said 1.20 for one fighter before the
+  card started; all five tickets died together on that fight. Kept as the
+  regression case in `slips_2026-08-01.json`.
+
+**STILL OPEN — THE UFC COVERAGE HOLE.** Only 2 of 13 bouts on the 2026-08-01
+card resolve into the ledger; the other 11 fall outside the `ufc_bouts >= 5`
+rating floor, and those are precisely the fighters actually being bet. The tool
+silently OMITS them rather than saying "no opinion", which reads as coverage it
+does not have. Raising the floor means inventing a prior for debutants — a real
+modelling decision. Surfacing "no opinion" explicitly in the UI does not, and
+should happen first.

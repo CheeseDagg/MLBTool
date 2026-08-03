@@ -519,6 +519,104 @@ def panel_for_publish():
         return {"n": 0, "error": type(e).__name__}
 
 # ---------------------------------------------------------------------------
+# HONEST CONFIDENCE — what a board number has historically been worth
+# ---------------------------------------------------------------------------
+# A published 23% is only usable if the reader knows what THIS model's 23%s have
+# actually done. Same idea as the calibration panel, but per-row instead of buried
+# in a tab: every board row carries the settled hit rate of its own bucket.
+# Deliberately 5-point buckets (fine enough to be about that row, coarse enough to
+# fill) and hard-suppressed under REL_MIN_N — a 9-row bucket moves 11 points on one
+# homer, and a number that precise-looking is worse than no number at all.
+REL_WIDTH = 5      # bucket width in probability points
+REL_MIN_N = 30     # below this the bucket publishes actual=None -> board shows "—"
+BACKTEST = os.path.join(DATA, "hr_backtest.csv")
+
+def _rel_key(r):
+    """Identity of a graded prediction, for de-duping the season replay against the
+    live ledger (they overlap on the days the replay ran through)."""
+    return (str(r.get("date", ""))[:10], norm(r.get("player", "")), norm(r.get("opp_sp", "")))
+
+def _rel_tally(rows, width=REL_WIDTH, skip=None):
+    """settled rows -> {bucket_lo: [n, hits, sum_predicted]}. Voids/pending excluded:
+    a void is not a miss, and counting it as one would understate every bucket."""
+    out = {}
+    for r in rows:
+        if r.get("outcome") not in ("hr", "no"):
+            continue
+        if skip and _rel_key(r) in skip:
+            continue
+        try:
+            p = float(r.get("hr_pct"))
+        except (TypeError, ValueError):
+            continue
+        if not (0.0 <= p <= 100.0):
+            continue
+        e = out.setdefault(int(p // width) * width, [0, 0, 0.0])
+        e[0] += 1
+        e[1] += 1 if r["outcome"] == "hr" else 0
+        e[2] += p
+    return out
+
+def reliability(min_n=REL_MIN_N, width=REL_WIDTH):
+    """Per-bucket historical hit rate for the board's own numbers -> JSON-safe dict.
+
+    Two graded sources, kept SEPARATE on purpose rather than pooled:
+      live   — hr_graded.csv, the board exactly as it published, settled next morning.
+               This is the honest read of the deployed model, and it is what a bucket
+               shows whenever it has the rows.
+      season — hr_backtest.csv, the 25k-prediction walk-forward replay. Deeper, but a
+               pre-recalibration scale, so it is only the fallback for buckets the live
+               ledger cannot fill (the 30%+ tail, where the board is at its loudest and
+               the live ledger is at its thinnest). Rows already in the live ledger are
+               dropped from it so nothing is counted twice.
+    Each bucket reports which source it came from; the UI says so on hover, because a
+    number whose provenance is hidden is the thing this column exists to prevent.
+    """
+    live_rows = load_csv(GRADED)
+    try:
+        season_rows = load_csv(BACKTEST)
+    except Exception:
+        season_rows = []
+    live = _rel_tally(live_rows, width)
+    season = _rel_tally(season_rows, width, skip={_rel_key(r) for r in live_rows})
+
+    def _stat(e):
+        n, hits, s = e
+        return {"n": n, "pred": round(s / n, 1), "actual": round(100.0 * hits / n, 1)}
+
+    buckets = []
+    for lo in sorted(set(live) | set(season)):
+        b = {"lo": lo, "hi": lo + width}
+        lv = _stat(live[lo]) if lo in live else {"n": 0}
+        sn = _stat(season[lo]) if lo in season else {"n": 0}
+        b["live"], b["season"] = lv, sn
+        if lv["n"] >= min_n:
+            src = ("live", lv)
+        elif sn["n"] >= min_n:
+            src = ("season", sn)
+        else:
+            src = (None, None)
+        b["src"] = src[0]
+        b["n"] = src[1]["n"] if src[1] else (lv["n"] + sn["n"])
+        b["pred"] = src[1]["pred"] if src[1] else None
+        b["actual"] = src[1]["actual"] if src[1] else None   # None -> the board prints "—"
+        buckets.append(b)
+
+    ld = sorted({str(r.get("date", ""))[:10] for r in live_rows if r.get("outcome") in ("hr", "no")})
+    return {"width": width, "min_n": min_n, "buckets": buckets,
+            "n_live": sum(v[0] for v in live.values()),
+            "n_season": sum(v[0] for v in season.values()),
+            "live_from": ld[0] if ld else None, "live_to": ld[-1] if ld else None}
+
+def reliability_for_publish():
+    """publish hook — never raises; an empty table just means the column shows "—"."""
+    try:
+        return reliability()
+    except Exception as e:
+        return {"width": REL_WIDTH, "min_n": REL_MIN_N, "buckets": [],
+                "n_live": 0, "n_season": 0, "error": type(e).__name__}
+
+# ---------------------------------------------------------------------------
 def selftest():
     # Hoisted: two separate blocks below repoint GRADED at a temp ledger, and a
     # `global` may not follow the first use of the name in the same scope.
@@ -723,6 +821,50 @@ def selftest():
     finally:
         load_csv, fetch_day_results, GRADED = _orig_load, _orig_fetch, _orig_graded
     print("SAME-DAY PARTIAL SLATE PASS — final game settles, in-progress stays pending")
+
+    # ---- honest-confidence table -------------------------------------------
+    # The whole point of this column is that a thin bucket must NOT print a number,
+    # and that the season replay must never be double-counted against the live
+    # ledger. Both are checked on synthetic ledgers, not on whatever today's data
+    # happens to look like.
+    global BACKTEST
+    _og2, _ob = GRADED, BACKTEST
+    _rd = _tf.mkdtemp()
+    GRADED  = os.path.join(_rd, "g.csv")
+    BACKTEST = os.path.join(_rd, "b.csv")
+    try:
+        def _w(path, rows):
+            with open(path, "w", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=["date","player","opp_sp","hr_pct","outcome"])
+                w.writeheader()
+                for r in rows: w.writerow(r)
+        # live: 40 rows at 21% (10 hr = 25%), 4 rows at 31% (all hr) -> thin, must suppress
+        lv  = [{"date":"2026-07-01","player":f"L{i}","opp_sp":"arm","hr_pct":"21.0",
+                "outcome":("hr" if i < 10 else "no")} for i in range(40)]
+        lv += [{"date":"2026-07-02","player":f"H{i}","opp_sp":"arm","hr_pct":"31.0",
+                "outcome":"hr"} for i in range(4)]
+        lv += [{"date":"2026-07-03","player":"V","opp_sp":"arm","hr_pct":"21.0","outcome":"void"}]
+        # season: the SAME 40 live 21% rows re-listed (must be de-duped away) plus 50
+        # fresh 31% rows at a 20% hit rate -> fills the bucket live can't
+        bt  = [dict(r) for r in lv[:40]]
+        bt += [{"date":"2026-06-01","player":f"S{i}","opp_sp":"arm","hr_pct":"31.0",
+                "outcome":("hr" if i < 10 else "no")} for i in range(50)]
+        _w(GRADED, lv); _w(BACKTEST, bt)
+        rel = reliability()
+        bk = {b["lo"]: b for b in rel["buckets"]}
+        assert rel["n_live"] == 44, rel["n_live"]
+        assert bk[20]["src"] == "live" and bk[20]["n"] == 40 and bk[20]["actual"] == 25.0, bk[20]
+        assert bk[20]["season"]["n"] == 0, "season rows already in the live ledger were double-counted"
+        assert bk[30]["src"] == "season" and bk[30]["n"] == 50 and bk[30]["actual"] == 20.0, bk[30]
+        assert bk[30]["live"]["n"] == 4, bk[30]
+        # a bucket no source can fill must publish nothing at all
+        _w(BACKTEST, [])
+        thin = {b["lo"]: b for b in reliability()["buckets"]}
+        assert thin[30]["src"] is None and thin[30]["actual"] is None, thin[30]
+        json.dumps(rel)
+    finally:
+        GRADED, BACKTEST = _og2, _ob
+    print("HONEST-CONFIDENCE PASS — 5-pt buckets, live-first, season de-duped, <30 suppressed")
 
     print("GRADER SELFTEST PASS — settle/void/pending/DH + Brier/buckets/lift/ROI all exact")
     return 0

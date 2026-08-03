@@ -62,6 +62,7 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <div class="card">
     <h3>Today's Slate</h3>
     <div class="sub">Model win probability (team ratings + starter xwOBA) and projected totals.
+    <b>Ordered by how sure the model is</b> — the clearest sides first, not first-pitch order.
     <b>Adj total</b> = model total × park factor × live weather. Tags show exactly what was applied.</div>
     <div id="slateBody"><div class="empty">no slate loaded</div></div>
   </div>
@@ -71,9 +72,10 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <div class="card">
     <h3>Line-Shop Edges</h3>
     <div class="sub">Best available price vs the multi-book no-vig consensus — the only layer with a real
-    long-term edge. Sizes are fraction-of-bankroll (quarter Kelly). The model's win% is deliberately
-    <b>not</b> used here: validated at ~56%, it is less accurate than the market.
-    Most days this table is empty — that's it working, not failing.</div>
+    long-term edge. Sizes are fraction-of-bankroll (quarter Kelly). <b>Ranked by chance it hits</b>, not by
+    edge: the model's win% picks the order, the price gap only picks the stake. (The win% still doesn't decide
+    <b>whether</b> a row qualifies — that stays a pure market screen; validated at ~56%, the model is less
+    accurate than the market at <i>pricing</i>.) Most days this table is empty — that's it working, not failing.</div>
     <div id="edgeBody"><div class="empty">no odds loaded</div></div>
   </div>
 </section>
@@ -82,7 +84,9 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <div class="card">
     <h3>+EV Parlays</h3>
     <div class="sub">Cross-game combos built <b>only</b> from legs that individually beat the no-vig
-    consensus — the joint edge compounds the line-shop edge, it doesn't manufacture one. Ordinary parlays
+    consensus — the joint edge compounds the line-shop edge, it doesn't manufacture one.
+    <b>Ranked by the chance the whole ticket cashes</b>, biggest first; joint EV is a column, because ranking
+    on EV floats the longest combos to the top and those are the tickets that never come in. Ordinary parlays
     multiply vig and are always -EV; this tab is empty unless 2+ real edges exist today. <b>ONE BOOK</b>
     combos are placeable as a single ticket; "split" combos are better bet as singles.</div>
     <div id="parlayBody"><div class="empty">needs 2+ line-shop edges today</div></div>
@@ -100,9 +104,11 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
   <div class="card">
     <h3>Home Run Board — best HR bets of the day</h3>
     <div class="sub">P(player homers today) = shrunk season HR/PA &times; starter's HR-allowed factor (62% weight)
-    &times; <b>HR-specific</b> park index &times; live temperature. Ranked by EV when props price in, else by model HR%.
+    &times; <b>HR-specific</b> park index &times; live temperature. <b>Ranked by model HR% — most likely to hit
+    first, always.</b> EV vs the book is a column, not the ranking: click any header to re-sort if you want it.
     <b>Props carry 8-15% hold</b> — a gap vs fair is the entry ticket, not the win. Lineups are season-usage
     projections until cards post (~1-4h pre-game); a scratch voids that row.</div>
+    <div id="hrRelNote" class="sub" style="margin-top:6px;border:1px solid var(--hair);border-radius:8px;padding:7px 10px"></div>
     <div id="hrNote" class="sub" style="margin-top:6px"></div>
     <div id="hrFilters" style="display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 10px">
       <button class="filt" data-f="heat" onclick="toggleFilt('heat')">heat+ only</button>
@@ -194,6 +200,43 @@ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
 const pct=x=>x.toFixed(1)+'%';
 function bar(p){return `<div class="bar"><i style="width:${p}%"></i></div>`}
 let HRD=null, HRSORT={key:null, dir:-1}, HRFILT={heat:false, p25:false, card:false};
+// HOUSE RULE: every board on this page ranks by the chance a bet HITS. hr_pct here,
+// model win% on the edges tab, joint fair% on parlays. Edge/EV stays visible as a
+// column — it is information, it is not the ordering key. Click any header to re-sort.
+const HRSORT_DEFAULT='hr_pct';
+// Honest confidence: what the model's numbers at this level have ACTUALLY done, from
+// the graded ledger (hr_reliability in slate.json). Buckets under its own min_n
+// publish actual:null and render "—" — a 9-row bucket is noise wearing a percentage.
+let HRREL=null;
+function relFor(p){
+  if(!HRREL||!HRREL.buckets||p===undefined||p===null) return null;
+  const w=HRREL.width||5, lo=Math.floor(Number(p)/w)*w;
+  return HRREL.buckets.find(b=>b.lo===lo)||null;
+}
+function relCell(p){
+  const b=relFor(p), min=(HRREL&&HRREL.min_n)||30;
+  if(!b||b.actual===null||b.actual===undefined){
+    const n=b?((b.live&&b.live.n||0)+(b.season&&b.season.n||0)):0;
+    return `<td class="num dim" title="only ${n} graded row${n===1?'':'s'} where the model said ${b?b.lo+'-'+b.hi:'this'}% — under the ${min}-row floor, so there is no honest number to show">—</td>`;
+  }
+  const gap=b.actual-Number(p);
+  const col = gap<=-3 ? 'var(--red)' : (gap>=3 ? 'var(--acc2)' : 'var(--ink)');
+  const src = b.src==='live' ? 'live board rows, settled next morning'
+                             : 'season replay (deeper, pre-recalibration scale) — the live ledger is too thin here';
+  return `<td class="num" title="the model has said ${b.lo}-${b.hi}% ${b.n} times and it came in ${b.actual}% of the time (it predicted ${b.pred}% on those). Source: ${src}."><b style="color:${col}">${b.actual}%</b><br><span class="dim">of ${b.n}${b.src==='season'?' szn':''}</span></td>`;
+}
+// spot = today's HR% vs this bat's OWN recent median (last 8 boards), from mlb_hr.py.
+// It answers "is this a genuinely elevated day for him, or just his normal ceiling?" —
+// a Coors regular sits near the top every homestand, and only the STANDOUT days are new
+// information. It does not move hr_pct.
+function spotCell(r){
+  const s=r.spot||'', d=r.edge_self;
+  const t=(d===null||d===undefined)?'' : ` (${d>0?'+':''}${d} pts vs his own ${r.base_self}% norm)`;
+  if(s==='STANDOUT') return `<td title="today is well above this batter's own recent median${t}"><span class="pill" style="color:var(--acc2);border-color:var(--acc)">STANDOUT</span></td>`;
+  if(s==='floor')    return `<td title="today is at or below this batter's own recent median${t} — he is here on reputation, not on today's spot"><span class="pill" style="color:var(--red)">floor</span></td>`;
+  if(s==='new')      return `<td title="no recent board history for this batter — no own-norm baseline yet"><span class="dim">new</span></td>`;
+  return `<td title="a normal day for this batter${t}"><span class="dim">normal</span></td>`;
+}
 function toggleFilt(f){ HRFILT[f]=!HRFILT[f]; renderHomers(); }
 window.toggleFilt=toggleFilt;
 function hrSort(k){
@@ -214,26 +257,62 @@ function renderHomers(){
   if(!HRD.rows.length){ if(HRD.note) $('hrNote').textContent=HRD.note; return; }
   if(!rows.length){ $('hrNote').textContent=HRD.note; $('hrBody').innerHTML=`<div class="empty">no rows match the active filters</div>`; return; }
   const hasEV=rows.some(r=>r.ev_pct!==undefined);
-  const key=HRSORT.key||'hr_pct';
-  const val=r=>{ const v=r[key]; return (key==='fair')?parseInt(r.fair)||0:(v===undefined?-1e9:v); };
+  const key=HRSORT.key||HRSORT_DEFAULT;   // default = model HR%, most likely to hit first
+  const val=r=>{ const v=r[key]; return (key==='fair')?parseInt(r.fair)||0:(v===undefined||v===null?-1e9:v); };
   rows.sort((a,b)=>(val(b)-val(a))*(HRSORT.dir===-1?1:-1));
-  const arrow=k=>(HRSORT.key||'hr_pct')===k?(HRSORT.dir===-1?' ▾':' ▴'):'';
-  const th=(k,label,cls)=>`<th class="${cls}" style="cursor:pointer" title="click to sort" onclick="hrSort('${k}')">${label}${arrow(k)}</th>`;
+  const arrow=k=>(HRSORT.key||HRSORT_DEFAULT)===k?(HRSORT.dir===-1?' ▾':' ▴'):'';
+  const th=(k,label,cls,tip)=>`<th class="${cls}" style="cursor:pointer" title="${tip||'click to sort'}" onclick="hrSort('${k}')">${label}${arrow(k)}</th>`;
   $('hrNote').textContent=HRD.note;
   $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
-  ${th('hr_pct','model HR%','num')}<th></th>${th('fair','fair','num')}`+
-  (hasEV?`<th class="num">best book</th>${th('ev_pct','EV','num')}`:``)+
+  ${th('hr_pct','model HR%','num','the model\'s chance this batter homers today — the board is ranked on this. Click to sort.')}<th></th>
+  <th class="num" title="HAS HIT: of every graded row where the model said roughly this much, the share that actually homered. If the model says 30% and its 30%s have come in at 19%, you see 19%. — means fewer than ${(HRREL&&HRREL.min_n)||30} graded rows in that bucket, which is too few to quote.">has hit</th>
+  ${th('edge_self','spot','','SPOT: today vs this batter\'s OWN recent median (last 8 boards). STANDOUT = a genuinely elevated day; floor = a normal-or-worse day for a name that is always near the top; new = no history yet. Click to sort by how far above his own norm he is.')}
+  ${th('fair','fair','num')}`+
+  (hasEV?`<th class="num">best book</th>${th('ev_pct','EV','num','edge vs the book\'s price. Shown because it is information — it is NOT what the board is ranked on.')}`:``)+
   `<th class="hide-m">applied</th></tr>`+
   rows.map(r=>`<tr>
     <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
     <td class="hide-m dim">${r.opp_sp}<br>vs ${r.opp} <span class="dim" ${r.sp_small?`title="starter under 60 BF — components mostly league-average by design" style="color:var(--acc)"`:``}>(sp ${r.sp_fac}x${r.sp_small?` · small n`:``})</span></td>
     <td class="num"><b>${r.hr_pct}%</b></td>
     <td>${bar(Math.min(r.hr_pct*2.2,100))}</td>
+    ${relCell(r.hr_pct)}
+    ${spotCell(r)}
     <td class="num">${r.fair}</td>`+
     (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
     <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
     `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span>${r.plat?` <span class="pill">${r.plat}</span>`:``}${r.heat?` <span class="pill">${r.heat}</span>`:``}${r.pen?` <span class="pill">${r.pen}</span>`:``}${r.brl?` <span class="pill">${r.brl}</span>`:``}</td>
   </tr>`).join('')+`</table>`;
+}
+// EDGES TAB — same house rule as the HR board: likelihood first. `hit` is the model's
+// win% for that side when publish could match the game, and falls back to the market's
+// no-vig consensus when it could not (older slates have no p_model at all).
+let EDGES=[], EDGESORT={key:null, dir:-1};
+const EDGESORT_DEFAULT='hit';
+function edgeSort(k){
+  if(EDGESORT.key===k){ EDGESORT.dir*=-1; } else { EDGESORT={key:k, dir:-1}; }
+  renderEdges();
+}
+window.edgeSort=edgeSort;
+function renderEdges(){
+  if(!EDGES||!EDGES.length) return;
+  const hit=e=>(e.p_model!==undefined&&e.p_model!==null)?Number(e.p_model):Number(e.fair)*100;
+  const key=EDGESORT.key||EDGESORT_DEFAULT;
+  const val=e=>key==='hit'?hit(e):(e[key]===undefined||e[key]===null?-1e9:Number(e[key]));
+  const rows=EDGES.slice().sort((a,b)=>(val(b)-val(a))*(EDGESORT.dir===-1?1:-1));
+  const arrow=k=>(EDGESORT.key||EDGESORT_DEFAULT)===k?(EDGESORT.dir===-1?' ▾':' ▴'):'';
+  const th=(k,label,cls,tip)=>`<th class="${cls}" style="cursor:pointer" title="${tip||'click to sort'}" onclick="edgeSort('${k}')">${label}${arrow(k)}</th>`;
+  $('edgeBody').innerHTML=`<table><tr><th>bet</th>
+    ${th('hit','chance it hits','num','the model\'s win% for this side (market consensus where the model has no number). The table is ranked on this.')}
+    ${th('price','price','num')}<th>book</th>
+    ${th('fair','market fair','num','the vig-free consensus chance this side wins')}
+    ${th('ev_pct','edge','num','how much your price beats fair. Information, not the ranking.')}
+    ${th('kelly_frac','stake (of bank)','num')}</tr>`+
+    rows.map(e=>`<tr><td>${e.bet}<br><span class="dim">${e.game}</span></td>
+      <td class="num"><b>${hit(e).toFixed(1)}%</b>${(e.p_model===undefined||e.p_model===null)?'<br><span class="dim" title="publish could not match this side to a modelled game">market</span>':''}</td>
+      <td class="num"><b>${e.price>0?'+':''}${e.price}</b></td><td>${e.book}</td>
+      <td class="num dim">${(e.fair*100).toFixed(1)}%</td>
+      <td class="num pos">+${e.ev_pct}%</td>
+      <td class="num">${(e.kelly_frac*100).toFixed(2)}%</td></tr>`).join('')+`</table>`;
 }
 function renderBvp(){
   var el=document.getElementById('bvpBody'); if(!el) return;
@@ -280,23 +359,25 @@ function render(d){
       <td class="hide-m"><span class="pill">${g.park}</span> <span class="pill">${g.wx}</span></td>
     </tr>`).join('')+`</table>`;
   } else $('slateBody').innerHTML='<div class="empty">no games in the loaded slate</div>';
-  // edges
-  if(d.edges && d.edges.length){
-    $('edgeBody').innerHTML=`<table><tr><th>bet</th><th class="num">price</th><th>book</th>
-    <th class="num">fair</th><th class="num">edge</th><th class="num">stake (of bank)</th></tr>`+
-    d.edges.map(e=>`<tr><td>${e.bet}<br><span class="dim">${e.game}</span></td>
-      <td class="num"><b>${e.price>0?'+':''}${e.price}</b></td><td>${e.book}</td>
-      <td class="num dim">${(e.fair*100).toFixed(1)}%</td>
-      <td class="num pos">+${e.ev_pct}%</td>
-      <td class="num">${(e.kelly_frac*100).toFixed(2)}%</td></tr>`).join('')+`</table>`
-      +(d.edge_note?`<div class="note">${d.edge_note}</div>`:'');
-  } else $('edgeBody').innerHTML=`<div class="empty">no +EV sides vs consensus right now${d.edge_note?' · '+d.edge_note:''}</div>`;
+  // edges — ranked by the chance the bet HITS (model win% first, consensus fair where
+  // the model has no number for that side). Edge and stake are still columns; they size
+  // the bet, they no longer order the table. Sortable: click a header.
+  EDGES = d.edges||[];
+  renderEdges();
+  if(!(d.edges&&d.edges.length))
+    $('edgeBody').innerHTML=`<div class="empty">no +EV sides vs consensus right now${d.edge_note?' · '+d.edge_note:''}</div>`;
+  else if(d.edge_note) $('edgeBody').innerHTML+=`<div class="note">${d.edge_note}</div>`;
   // parlays
   if(d.parlays && d.parlays.length){
-    $('parlayBody').innerHTML=`<table><tr><th>combo</th><th class="num">payout</th><th class="num">fair</th><th class="num">joint EV</th><th>ticket</th></tr>`+
-    d.parlays.map(p=>`<tr><td>${p.legs.map(l=>`${l.bet} <span class="dim">${l.price>0?'+':''}${l.price} ${l.book}</span>`).join('<br>')}</td>
-      <td class="num"><b>${p.american>0?'+':''}${p.american}</b></td>
-      <td class="num dim">${p.fair_pct}%</td>
+    // ranked by fair_pct (chance the whole ticket cashes) — see mlb_parlay.build_parlays
+    $('parlayBody').innerHTML=`<table><tr><th>combo</th>
+    <th class="num" title="the chance every leg comes in — the table is ranked on this">chance it hits</th>
+    <th class="num">payout</th><th class="num" title="joint edge vs the books. Information, not the ranking.">joint EV</th><th>ticket</th></tr>`+
+    // re-sorted here as well as in mlb_parlay so a slate.json published by the old
+    // EV-ordered build still shows likeliest-first
+    d.parlays.slice().sort((a,b)=>(b.fair_pct-a.fair_pct)||(b.ev_pct-a.ev_pct)).map(p=>`<tr><td>${p.legs.map(l=>`${l.bet} <span class="dim">${l.price>0?'+':''}${l.price} ${l.book}</span>`).join('<br>')}</td>
+      <td class="num"><b>${p.fair_pct}%</b></td>
+      <td class="num dim">${p.american>0?'+':''}${p.american}</td>
       <td class="num pos">+${p.ev_pct}%</td>
       <td>${p.one_book?'<span class="pill" style="color:var(--acc2)">ONE BOOK · '+p.books[0]+'</span>':'<span class="pill">split — bet as singles</span>'}</td></tr>`).join('')+`</table>`;
   } else $('parlayBody').innerHTML='<div class="empty">needs 2+ line-shop edges today — none available</div>';
@@ -313,9 +394,23 @@ function render(d){
   d.ratings.map((r,i)=>`<tr><td class="dim">${i+1}</td><td>${r.team}</td>
     <td class="num">${r.O.toFixed(3)}</td><td class="num">${r.D.toFixed(3)}</td>
     <td class="num"><b>${r.net.toFixed(3)}</b></td><td>${bar(Math.min((r.net-0.8)/0.55*100,100))}</td></tr>`).join('')+`</table>`;
-  // homers (sortable)
+  // homers (sortable) — HRREL must be set BEFORE the first render or the honest-
+  // confidence column silently draws a full board of em-dashes.
+  HRREL = d.hr_reliability||null;
   HRD = {rows: d.hr_board||[], note: d.hr_note||''};
   renderHomers();
+  var _rl=$('hrRelNote');
+  // Only the bands today's board actually lands in — the ledger covers 0-45%, but a
+  // legend listing bands no row on this page occupies is noise the reader has to filter.
+  var _onBoard=new Set((d.hr_board||[]).map(r=>relFor(r.hr_pct)).filter(Boolean).map(b=>b.lo));
+  if(_rl) _rl.innerHTML = (HRREL&&HRREL.buckets&&HRREL.buckets.length)
+    ? `<b>has hit</b> = the settled record of the model's own numbers, in ${HRREL.width}-point bands: `
+      + HRREL.buckets.filter(b=>b.actual!==null&&b.actual!==undefined&&(!_onBoard.size||_onBoard.has(b.lo)))
+          .map(b=>`said ${b.lo}-${b.hi}% → hit <b>${b.actual}%</b> <span class="dim">(${b.n}${b.src==='season'?' szn':''})</span>`).join(' · ')
+      + `. From ${HRREL.n_live} graded board rows${HRREL.live_from?` (${HRREL.live_from} → ${HRREL.live_to})`:''}`
+      + (HRREL.n_season?` plus ${HRREL.n_season.toLocaleString()} season-replay rows where the live ledger is too thin`:'')
+      + `. Bands under ${HRREL.min_n} rows show — rather than a number.`
+    : `<b>has hit</b> column is empty — no graded history published yet (run the grader).`;
   // calibration (+ season backtest side-by-side)
   const cal=d.hr_cal;
   renderBvp();  // BvP list replaces the calibration/backtest/changelog panels

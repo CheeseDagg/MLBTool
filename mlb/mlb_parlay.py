@@ -52,7 +52,12 @@ def build_parlays(edges_df, max_legs=3, top=10):
                 b = (1/fair - 1)/(dec - 1) - 1
                 row["boost_to_flip_pct"] = round(b*100, 1)
                 near.append(row)
-    combos.sort(key=lambda x: -x["ev_pct"])
+    # Likelihood-first, the same house rule as the rest of the board: a combo is ranked
+    # by fair_pct — the chance the whole ticket actually comes in — not by joint EV.
+    # Ranking by EV floats the longest combos to the top (joint edge compounds fastest
+    # on legs that rarely land), which is precisely the ticket that never cashes. EV is
+    # still computed and still shown; it just breaks ties instead of setting the order.
+    combos.sort(key=lambda x: (-x["fair_pct"], -x["ev_pct"]))
     near.sort(key=lambda x: x["boost_to_flip_pct"])
     return combos[:top], near[:5]
 
