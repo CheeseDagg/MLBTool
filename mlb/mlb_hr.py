@@ -545,15 +545,31 @@ def _resolve_team_key(full, keys):
         if len(m) == 1: return m[0]
     return None
 
-def select_rows(rows, have_ev, n_hr=30, n_ev=10):
-    """Board selection, likelihood-first: the board IS the top-30 most likely
-    homers by model HR%. The top-10 EV gaps are appended as the value screen
-    (they're where the model disagrees with the book — informative, but the
-    known hot tail means treat them as screens, not truth). Sorted by HR%."""
+def select_rows(rows, have_ev, n_hr=30, n_ev=0):
+    """Board selection, likelihood-first: the board IS the top-N most likely
+    homers by model HR%. Nothing else gets on it.
+
+    n_ev used to be 10: the ten biggest EV gaps were appended as a "value
+    screen". That is switched off (n_ev=0) because the ledger settled the
+    question against it. Of 163 graded rows carrying a book price:
+
+        ev_pct >  0  ->  n=107,  7 hits,   6.5%,  flat-stake ROI -63.3%
+        ev_pct <= 0  ->  n= 56,           16.1%
+
+    Rows the model flagged as +EV hit at LESS THAN HALF the rate of the rows it
+    flagged as -EV, so the screen was not merely unprofitable, it was pointing
+    the wrong way. It was also appended REGARDLESS OF SIGN -- sorted by EV and
+    sliced, so on a day when only two rows were +EV the other eight arrivals
+    were negative-EV rows with single-digit HR%, sitting at the bottom of a page
+    headed "best HR bets of the day" having qualified under neither criterion.
+
+    Set n_ev>0 to bring it back; the code still works. The ledger is the reason
+    not to, and it is written down here so the reason outlives whoever next
+    wonders why the parameter is zero."""
     key = lambda r: (r["player"], r.get("team"), r.get("opp_sp"), r.get("slot"))
     sel = sorted(rows, key=lambda r: -r["hr_pct"])[:n_hr]
     seen = {key(r) for r in sel}
-    if have_ev:
+    if have_ev and n_ev:
         for r in sorted([r for r in rows if "ev_pct" in r],
                         key=lambda r: -r["ev_pct"])[:n_ev]:
             if key(r) not in seen:
@@ -932,16 +948,25 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                 }
                 if props:
                     pr = props.get(norm(b["name"]))
-                    if pr:
-                        dec = dec_from_am(pr["price"])
+                    if pr and "price" in pr:
                         row["book_price"] = int(pr["price"])
                         row["book"] = pr["book"]
-                        row["ev_pct"] = round((p_game * dec - 1) * 100, 1)
+                        if "my_price" in pr:
+                            row["my_price"] = int(pr["my_price"])
+                        # EV is priced off the book that can actually be bet, and
+                        # falls back to best only when MY_BOOK has no line. An EV
+                        # computed against a price you cannot take is a number
+                        # about somebody else's bet.
+                        use = pr.get("my_price", pr["price"])
+                        row["ev_pct"] = round((p_game * dec_from_am(use) - 1) * 100, 1)
                 rows.append(row)
 
     have_ev = any("ev_pct" in r for r in rows)
-    rows.sort(key=lambda r: (-(r.get("ev_pct", -999)), -r["hr_pct"]) if have_ev
-              else (-r["hr_pct"], r["player"]))
+    # Likelihood-first, always. Sorting by EV here was upstream of everything:
+    # select_rows sliced this order, the CSV logged it, and the board inherited
+    # it. The ledger says +EV rows hit 6.5% and -EV rows hit 16.1% on this board,
+    # so an EV-first order put the least likely rows on top.
+    rows.sort(key=lambda r: (-r["hr_pct"], r["player"]))
     return rows, have_ev
 
 # ---------------------------------------------------------------------------
@@ -1217,9 +1242,18 @@ def pull_lineups(sched):
                 if side == "home": posted += 1     # count per game via home card
     return cards, f"lineups: {posted}/{total} cards posted (rest = season-usage)"
 
+# The only book whose price can actually be acted on here. The board used to
+# report the best price across every US book, which reads as "this is where you
+# would place it" and is wrong whenever the best book is one you cannot bet:
+# on 2026-08-03 all 36 priced rows showed BetRivers. A price you cannot take is
+# not a better price, it is a distraction, so FanDuel is now reported alongside
+# best and is what EV is computed against.
+MY_BOOK = "fanduel"
+
 def pull_props():
-    """batter_home_runs Yes/Over-0.5 best price per player. Fails soft:
-    returns ({}, reason). Costs ~1 credit per event on The Odds API."""
+    """batter_home_runs Yes/Over-0.5 per player -> best price across books AND
+    the MY_BOOK price, kept separately. Fails soft: returns ({}, reason).
+    Costs ~1 credit per event on The Odds API."""
     key = os.environ.get("ODDS_API_KEY", "")
     if not key:
         return {}, "props off (ODDS_API_KEY secret not set)"
@@ -1258,11 +1292,22 @@ def pull_props():
                     player = norm(o.get("description", ""))
                     price = o.get("price")
                     if not player or price is None: continue
-                    cur = best.get(player)
-                    if cur is None or dec_from_am(price) > dec_from_am(cur["price"]):
-                        best[player] = {"price": int(price), "book": bk.get("key", "?")}
+                    bkey = bk.get("key", "?")
+                    cur = best.setdefault(player, {})
+                    if "price" not in cur or dec_from_am(price) > dec_from_am(cur["price"]):
+                        # Mutate in place. Rebinding the dict here would silently
+                        # drop a my_price already recorded from an earlier book,
+                        # which is exactly the ordering bug that makes a field
+                        # look intermittently missing.
+                        cur["price"], cur["book"] = int(price), bkey
+                    if bkey == MY_BOOK:
+                        # Recorded even when it is the worst number on the screen.
+                        # It is the only one that can be bet.
+                        best.setdefault(player, {})["my_price"] = int(price)
         if data.get("bookmakers"): hit += 1
-    note = f"props: {len(best)} players priced across {hit}/{tried} events"
+    n_my = sum(1 for v in best.values() if "my_price" in v)
+    note = (f"props: {len(best)} players priced across {hit}/{tried} events"
+            f" · {n_my} available at {MY_BOOK}")
     return best, note
 
 def load_board(data_dir):
@@ -1605,7 +1650,8 @@ def _build():
             "wind: direction x park bearing (conf-shrunk) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
             "warm-climate open parks) · " + pnote +
-            (" · sorted by model HR% · EV screen appended" if have_ev else " · sorted by model HR% (no props matched)"))
+            (" · ranked by model HR%, most likely first" if have_ev
+             else " · ranked by model HR%, most likely first (no props matched)"))
     out = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
            "note": note, "rows": rows}
     os.makedirs(DATA, exist_ok=True)

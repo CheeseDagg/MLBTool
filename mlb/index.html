@@ -31,6 +31,15 @@ tr:last-child td{border-bottom:0}
 .pos{color:var(--acc2)}.neg{color:var(--red)}.dim{color:var(--mut2);font-size:11.5px}
 .pill{display:inline-block;background:var(--panel2);border:1px solid var(--hair);border-radius:20px;
 padding:1px 9px;font-size:11px;color:var(--mut)}
+/* The filter buttons had NO rule at all. classList.toggle('on',...) fired
+   correctly on every click and changed nothing on screen, because the only .on
+   rules in the sheet were nav button.on and section.on -- and these live in a
+   plain div, not in <nav>. They rendered as default light-grey UA buttons on a
+   dark page, with no way to tell an active filter from an inactive one. */
+.filt{background:var(--panel2);border:1px solid var(--hair);color:var(--mut);font:inherit;
+font-size:12px;font-weight:600;padding:4px 11px;border-radius:20px;cursor:pointer}
+.filt:hover{color:var(--ink);border-color:var(--mut2)}
+.filt.on{background:var(--acc);border-color:var(--acc);color:#08120d}
 .bar{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden;min-width:80px}
 .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2))}
 .empty{color:var(--mut2);padding:26px;text-align:center;font-size:13px}
@@ -102,18 +111,25 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
 
 <section id="homers">
   <div class="card">
-    <h3>Home Run Board — best HR bets of the day</h3>
+    <!-- Was "best HR bets of the day". It is not that, and the verdict banner
+         three lines below said so in red: every screen on this board has lost
+         money against the price. What the board IS good at is ranking who is
+         most likely to go deep, which is a different and honest claim. A title
+         that contradicts the page's own headline finding is the first thing
+         that makes it unreadable. -->
+    <h3>Home Run Board — most likely to homer today</h3>
     <div class="sub">P(player homers today) = shrunk season HR/PA &times; starter's HR-allowed factor (62% weight)
     &times; <b>HR-specific</b> park index &times; live temperature. <b>Ranked by model HR% — most likely to hit
-    first, always.</b> EV vs the book is a column, not the ranking: click any header to re-sort if you want it.
-    <b>Props carry 8-15% hold</b> — a gap vs fair is the entry ticket, not the win. Lineups are season-usage
-    projections until cards post (~1-4h pre-game); a scratch voids that row.</div>
+    first, always.</b> <b>Props carry 8-15% hold</b>, which is why the record below looks the way it does.
+    Lineups are season-usage projections until cards post (~1-4h pre-game); a scratch voids that row.</div>
+    <div id="hrVerdict" style="margin-top:10px"></div>
     <div id="hrRelNote" class="sub" style="margin-top:6px;border:1px solid var(--hair);border-radius:8px;padding:7px 10px"></div>
     <div id="hrNote" class="sub" style="margin-top:6px"></div>
     <div id="hrFilters" style="display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 10px">
       <button class="filt" data-f="heat" onclick="toggleFilt('heat')">heat+ only</button>
       <button class="filt" data-f="p25" onclick="toggleFilt('p25')">25%+ only</button>
       <button class="filt" data-f="card" onclick="toggleFilt('card')">card only</button>
+      <button class="filt" data-f="fd" onclick="toggleFilt('fd')" title="hide every row FanDuel has not priced — those cannot go on a slip">on FanDuel</button>
       <span id="filtCount" class="sub" style="margin:0;align-self:center"></span>
     </div>
     <div id="hrBody"><div class="empty">no HR board — run mlb_hr.py (or wait for the daily Action)</div></div>
@@ -199,7 +215,7 @@ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
 });
 const pct=x=>x.toFixed(1)+'%';
 function bar(p){return `<div class="bar"><i style="width:${p}%"></i></div>`}
-let HRD=null, HRSORT={key:null, dir:-1}, HRFILT={heat:false, p25:false, card:false};
+let HRD=null, HRSORT={key:null, dir:-1}, HRFILT={heat:false, p25:false, card:false, fd:false};
 // HOUSE RULE: every board on this page ranks by the chance a bet HITS. hr_pct here,
 // model win% on the edges tab, joint fair% on parlays. Edge/EV stays visible as a
 // column — it is information, it is not the ordering key. Click any header to re-sort.
@@ -213,17 +229,36 @@ function relFor(p){
   const w=HRREL.width||5, lo=Math.floor(Number(p)/w)*w;
   return HRREL.buckets.find(b=>b.lo===lo)||null;
 }
+// THE TRACK-RECORD CELL.
+//
+// This is the column most likely to be misread, so it is rendered to defeat the
+// misreading. It is NOT a second opinion about this batter. It is a fact about
+// every PAST row that carried a similar number: "the model has said 10-15% fifty
+// times, and 6% of those homered."
+//
+// Rendered as a bare "6.0%" next to a bold "14.8%" in the adjacent cell, it looks
+// like two rival forecasts of the same event differing by 2.4x, and the honest
+// reader concludes the page is arguing with itself. So it renders as an arrow —
+// said 12.7 -> hit 6.0 — which is unmistakably a statement about a group of
+// settled rows, with the sample size directly underneath. The arrow is the whole
+// design: it converts a number that competes with hr_pct into a number that
+// GRADES it.
 function relCell(p){
   const b=relFor(p), min=(HRREL&&HRREL.min_n)||30;
   if(!b||b.actual===null||b.actual===undefined){
     const n=b?((b.live&&b.live.n||0)+(b.season&&b.season.n||0)):0;
     return `<td class="num dim" title="only ${n} graded row${n===1?'':'s'} where the model said ${b?b.lo+'-'+b.hi:'this'}% — under the ${min}-row floor, so there is no honest number to show">—</td>`;
   }
-  const gap=b.actual-Number(p);
+  const gap=b.actual-b.pred;   // graded against what the BUCKET said, not this row
   const col = gap<=-3 ? 'var(--red)' : (gap>=3 ? 'var(--acc2)' : 'var(--ink)');
-  const src = b.src==='live' ? 'live board rows, settled next morning'
-                             : 'season replay (deeper, pre-recalibration scale) — the live ledger is too thin here';
-  return `<td class="num" title="the model has said ${b.lo}-${b.hi}% ${b.n} times and it came in ${b.actual}% of the time (it predicted ${b.pred}% on those). Source: ${src}."><b style="color:${col}">${b.actual}%</b><br><span class="dim">of ${b.n}${b.src==='season'?' szn':''}</span></td>`;
+  const src = b.src==='live' ? 'live board rows, settled the next morning'
+                             : 'season replay (deeper, but a pre-recalibration scale) — the live ledger is too thin at this level';
+  // A 50-row bucket is a real number and a noisy one. Saying so on hover costs
+  // nothing and stops a 3-of-50 result being read as a law of nature.
+  const thin = b.n<100 ? ` Only ${b.n} rows, so treat the gap as a hint, not a measurement.` : '';
+  return `<td class="num" title="ROWS LIKE THIS ONE, NOT THIS ONE. The model has said ${b.lo}-${b.hi}% on ${b.n} graded rows. It predicted ${b.pred}% across them and ${b.actual}% actually homered. Source: ${src}.${thin}">`
+    + `<span class="dim">${b.pred}%</span> <span class="dim">&rarr;</span> <b style="color:${col}">${b.actual}%</b>`
+    + `<br><span class="dim">past ${b.n}${b.src==='season'?' szn':''}</span></td>`;
 }
 // spot = today's HR% vs this bat's OWN recent median (last 8 boards), from mlb_hr.py.
 // It answers "is this a genuinely elevated day for him, or just his normal ceiling?" —
@@ -236,6 +271,25 @@ function spotCell(r){
   if(s==='floor')    return `<td title="today is at or below this batter's own recent median${t} — he is here on reputation, not on today's spot"><span class="pill" style="color:var(--red)">floor</span></td>`;
   if(s==='new')      return `<td title="no recent board history for this batter — no own-norm baseline yet"><span class="dim">new</span></td>`;
   return `<td title="a normal day for this batter${t}"><span class="dim">normal</span></td>`;
+}
+// THE PRICE CELL.
+//
+// One book matters here, because only one book's legs can go on one slip. The
+// column used to print the best price across every US book: on 2026-08-03 that
+// meant thirty-six rows reading "+260 betrivers" on a board being used to build
+// FanDuel parlays. Every one of those numbers was unreachable, and none of them
+// said so. FanDuel now leads; anything else renders dimmed and explicitly
+// flagged as a different book, so an unavailable price can never be mistaken
+// for a live one.
+const MY_BOOK='fanduel', MY_BOOK_LABEL='FD';
+function priceCell(r){
+  const am=v=>(v>0?'+':'')+v;
+  if(r.my_price!==undefined && r.my_price!==null)
+    return `<td class="num" title="FanDuel's posted price — the one you can actually take."><b>${am(r.my_price)}</b> <span class="dim">${MY_BOOK_LABEL}</span></td>`;
+  if(r.book_price!==undefined && r.book_price!==null)
+    return `<td class="num dim" title="FanDuel has not posted this prop. ${am(r.book_price)} is the best number anywhere and it is at ${r.book}, so you cannot put it on a FanDuel slip. Shown for reference only.">`
+      + `<span style="text-decoration:line-through">${am(r.book_price)}</span> <span class="dim">${r.book}</span><br><span class="dim">not on FD</span></td>`;
+  return `<td class="num dim" title="no book has posted this prop">—</td>`;
 }
 function toggleFilt(f){ HRFILT[f]=!HRFILT[f]; renderHomers(); }
 window.toggleFilt=toggleFilt;
@@ -250,25 +304,39 @@ function renderHomers(){
   if(HRFILT.heat) rows=rows.filter(r=>String(r.heat||'').startsWith('heat +') && r.heat!=='heat +0%');
   if(HRFILT.p25)  rows=rows.filter(r=>Number(r.hr_pct)>=25);
   if(HRFILT.card) rows=rows.filter(r=>r.lu==='card');
+  if(HRFILT.fd)   rows=rows.filter(r=>r.my_price!==undefined&&r.my_price!==null);
   const active=Object.keys(HRFILT).filter(k=>HRFILT[k]);
   const fc=document.getElementById('filtCount');
   if(fc) fc.textContent = active.length ? `${rows.length} of ${total} rows match` : '';
   document.querySelectorAll('.filt').forEach(b=>b.classList.toggle('on', !!HRFILT[b.dataset.f]));
   if(!HRD.rows.length){ if(HRD.note) $('hrNote').textContent=HRD.note; return; }
-  if(!rows.length){ $('hrNote').textContent=HRD.note; $('hrBody').innerHTML=`<div class="empty">no rows match the active filters</div>`; return; }
-  const hasEV=rows.some(r=>r.ev_pct!==undefined);
+  if(!rows.length){
+    $('hrNote').textContent=HRD.note;
+    // "no rows match" is a lie when the field the filter reads was never
+    // published. Say which it is.
+    const noFd = HRFILT.fd && !HRD.rows.some(r=>r.my_price!==undefined&&r.my_price!==null);
+    $('hrBody').innerHTML=`<div class="empty">`+(noFd
+      ? `this build carries no FanDuel prices at all — every row was priced from another book, so the FanDuel filter has nothing to keep. It will work on the next build.`
+      : `no rows match the active filters`)+`</div>`;
+    return; }
+  const hasBook=rows.some(r=>r.book_price!==undefined);
   const key=HRSORT.key||HRSORT_DEFAULT;   // default = model HR%, most likely to hit first
-  const val=r=>{ const v=r[key]; return (key==='fair')?parseInt(r.fair)||0:(v===undefined||v===null?-1e9:v); };
+  // `fair` is a strictly decreasing function of hr_pct (it IS am_from_p(hr_pct)),
+  // so it sorts on hr_pct. Sorting on the printed string was the bug: parseInt
+  // turns "+1328" into 1328 and "-150" into -150, so a descending sort put the
+  // LONGEST price -- the least likely batter on the board -- at the top, exactly
+  // inverting every other column on the page.
+  const val=r=>{ const v=(key==='fair')?r.hr_pct:r[key]; return (v===undefined||v===null?-1e9:v); };
   rows.sort((a,b)=>(val(b)-val(a))*(HRSORT.dir===-1?1:-1));
   const arrow=k=>(HRSORT.key||HRSORT_DEFAULT)===k?(HRSORT.dir===-1?' ▾':' ▴'):'';
   const th=(k,label,cls,tip)=>`<th class="${cls}" style="cursor:pointer" title="${tip||'click to sort'}" onclick="hrSort('${k}')">${label}${arrow(k)}</th>`;
   $('hrNote').textContent=HRD.note;
   $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
   ${th('hr_pct','model HR%','num','the model\'s chance this batter homers today — the board is ranked on this. Click to sort.')}<th></th>
-  <th class="num" title="HAS HIT: of every graded row where the model said roughly this much, the share that actually homered. If the model says 30% and its 30%s have come in at 19%, you see 19%. — means fewer than ${(HRREL&&HRREL.min_n)||30} graded rows in that bucket, which is too few to quote.">has hit</th>
+  <th class="num" title="TRACK RECORD — this is about PAST rows, not about this batter. Read it as 'said X% &rarr; hit Y%': of every graded row where the model said roughly what it is saying here, that is what it predicted and that is how often one actually went out. Red means the model ran hot at this level. It is a report card on the number to its left, NOT a competing forecast. — means fewer than ${(HRREL&&HRREL.min_n)||30} graded rows in that bucket, too few to quote.">track record<br><span class="dim" style="font-weight:400">said &rarr; hit</span></th>
   ${th('edge_self','spot','','SPOT: today vs this batter\'s OWN recent median (last 8 boards). STANDOUT = a genuinely elevated day; floor = a normal-or-worse day for a name that is always near the top; new = no history yet. Click to sort by how far above his own norm he is.')}
-  ${th('fair','fair','num')}`+
-  (hasEV?`<th class="num">best book</th>${th('ev_pct','EV','num','edge vs the book\'s price. Shown because it is information — it is NOT what the board is ranked on.')}`:``)+
+  ${th('fair','fair','num','FAIR: the model\'s number written as a price. It is hr_pct in odds form and nothing more, so sorting it sorts the board identically to model HR%.')}`+
+  (hasBook?`<th class="num" title="PRICE: FanDuel's number, because that is the only one you can act on. If FanDuel has no line the cell shows the best price posted elsewhere, greyed and labelled with the book, so you know it is unavailable rather than missing. This column is where the bet lives — it is NOT a claim the bet is good.">price <span class="dim" style="font-weight:400">FD</span></th>`:``)+
   `<th class="hide-m">applied</th></tr>`+
   rows.map(r=>`<tr>
     <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
@@ -278,10 +346,27 @@ function renderHomers(){
     ${relCell(r.hr_pct)}
     ${spotCell(r)}
     <td class="num">${r.fair}</td>`+
-    (hasEV?`<td class="num">${r.book_price!==undefined?(r.book_price>0?'+':'')+r.book_price+' <span class="dim">'+r.book+'</span>':'<span class="dim">—</span>'}</td>
-    <td class="num">${r.ev_pct!==undefined?`<b style="color:${r.ev_pct>0?'var(--acc2)':'var(--red)'}">${r.ev_pct>0?'+':''}${r.ev_pct}%</b>`:'<span class="dim">—</span>'}</td>`:``)+
-    `<td class="hide-m"><span class="pill">${(r.park||'').replace('park ~','park avg')}</span> <span class="pill">${r.temp}</span>${r.plat?` <span class="pill">${r.plat}</span>`:``}${r.heat?` <span class="pill">${r.heat}</span>`:``}${r.pen?` <span class="pill">${r.pen}</span>`:``}${r.brl?` <span class="pill">${r.brl}</span>`:``}</td>
+    (hasBook?priceCell(r):``)+
+    `<td class="hide-m">${pills(r)}</td>
   </tr>`).join('')+`</table>`;
+}
+// Every pill carries its own definition. These are the only place the model shows
+// its work on a row, and until now they were bare strings -- "RvL +12%", "pen 1.10x",
+// "brl +7%" -- with no glossary anywhere on the page. A number whose units the
+// reader has to guess at is not evidence, it is decoration.
+const PILLTIP={
+  park:'PARK: this venue\'s home-run factor vs a league-average park. Confidence-shrunk, and seed approximations until refreshed from Savant.',
+  temp:'WEATHER: game-time temperature and wind, measured against a flat 70F baseline. Wind is direction crossed with the park\'s bearing, then shrunk by confidence.',
+  plat:'PLATOON: batter hand vs pitcher hand. "RvL +12%" = a right-handed bat facing a lefty, worth +12% on his home-run rate. Built from league-wide splits and the starter\'s share of the game.',
+  heat:'HEAT: overlap between where this batter does damage and where this pitcher lives in the zone. Higher = the pitcher works in the batter\'s hot area.',
+  pen:'BULLPEN: the opposing relief corps\' home-run factor, applied to the innings the starter will not pitch. 1.10x = that pen gives up 10% more homers than average.',
+  brl:'BARREL: Statcast barrel rate blended in at 35% weight, as a check on the rate-based estimate.',
+  szn:'SEASON ANCHOR: how far this number was pulled toward the batter\'s full-season rate. "szn -20%" means the raw daily estimate was cut by 20% because his season says the day-level read is running hot. This is the single largest correction on most rows.'
+};
+function pills(r){
+  const p=(k,txt)=>txt?`<span class="pill" title="${PILLTIP[k]}">${txt}</span> `:'';
+  return p('park',(r.park||'').replace('park ~','park avg'))+p('temp',r.temp)+p('plat',r.plat)
+       + p('heat',r.heat)+p('pen',r.pen)+p('brl',r.brl)+p('szn',r.szn);
 }
 // EDGES TAB — same house rule as the HR board: likelihood first. `hit` is the model's
 // win% for that side when publish could match the game, and falls back to the market's
@@ -404,15 +489,16 @@ function render(d){
   // legend listing bands no row on this page occupies is noise the reader has to filter.
   var _onBoard=new Set((d.hr_board||[]).map(r=>relFor(r.hr_pct)).filter(Boolean).map(b=>b.lo));
   if(_rl) _rl.innerHTML = (HRREL&&HRREL.buckets&&HRREL.buckets.length)
-    ? `<b>has hit</b> = the settled record of the model's own numbers, in ${HRREL.width}-point bands: `
+    ? `<b>track record</b> = the settled record of the model's own numbers, in ${HRREL.width}-point bands: `
       + HRREL.buckets.filter(b=>b.actual!==null&&b.actual!==undefined&&(!_onBoard.size||_onBoard.has(b.lo)))
           .map(b=>`said ${b.lo}-${b.hi}% → hit <b>${b.actual}%</b> <span class="dim">(${b.n}${b.src==='season'?' szn':''})</span>`).join(' · ')
       + `. From ${HRREL.n_live} graded board rows${HRREL.live_from?` (${HRREL.live_from} → ${HRREL.live_to})`:''}`
       + (HRREL.n_season?` plus ${HRREL.n_season.toLocaleString()} season-replay rows where the live ledger is too thin`:'')
       + `. Bands under ${HRREL.min_n} rows show — rather than a number.`
-    : `<b>has hit</b> column is empty — no graded history published yet (run the grader).`;
+    : `<b>track record</b> is empty because slate.json carries no <code>hr_reliability</code> key — the grader has not published a table into this build. This says nothing about whether graded rows exist.`;
   // calibration (+ season backtest side-by-side)
   const cal=d.hr_cal;
+  renderVerdict(cal);
   renderBvp();  // BvP list replaces the calibration/backtest/changelog panels
 
   // A gap only means something if it is bigger than the noise in its own sample.
@@ -467,6 +553,44 @@ function render(d){
         <span class="dim" style="font-size:11px"> \u00b1${v.band.toFixed(1)}</span></td>
       <td class="num"><span style="color:${col};font-size:11px;font-weight:${v.real?'700':'400'}">${tag}</span>${
         v.need&&v.need<1e6?`<br><span class="dim" style="font-size:10px">need ~${v.need.toLocaleString()}</span>`:''}</td></tr>`;
+  }
+  // THE VERDICT BANNER.
+  //
+  // This exists because the single most decision-relevant fact the system knows
+  // was, for months, computed correctly and then rendered into a DOM node that
+  // does not exist: renderCal() ends with $('hrCal').innerHTML=h, there is no
+  // element with that id, and nothing ever called renderCal at all. hr_cal.ev_tier
+  // and hr_cal.top_tier were shipped in slate.json on every build and read by
+  // nobody. A number nobody can see is not a safeguard.
+  //
+  // So the verdict now renders ABOVE the board rather than below it, in three
+  // lines, before the reader has scrolled past a single row.
+  function renderVerdict(cal){
+    const el=$('hrVerdict'); if(!el) return;
+    if(!cal || !cal.n){ el.innerHTML=''; return; }
+    const gap=(cal.actual!=null&&cal.pred_mean!=null)?(cal.actual-cal.pred_mean):null;
+    // Is the board's own headline number honest? Graded against itself, not the book.
+    const calLine = gap==null ? '' :
+      `<div style="margin-bottom:4px">Over <b>${cal.n.toLocaleString()}</b> graded rows this board said `
+      + `<b>${cal.pred_mean}%</b> on average and <b style="color:${gap<-2?'var(--red)':'inherit'}">${cal.actual}%</b> actually homered`
+      + `${gap<-2?` — it still runs <b>${Math.abs(gap).toFixed(1)} points hot</b>`:` — calibrated to within ${Math.abs(gap).toFixed(1)} points`}.</div>`;
+    // Does betting the price beat the price? Two independent screens, both logged.
+    const tiers=[['the +EV screen',cal.ev_tier],['the top-of-board screen',cal.top_tier]]
+      .filter(t=>t[1]&&t[1].n);
+    const tierLine = !tiers.length ? '' :
+      `<div>` + tiers.map(([lab,t])=>
+        `${lab}: <b>${t.hits}/${t.n}</b> (${(100*t.hits/t.n).toFixed(1)}%), `
+        + `flat-stake ROI <b style="color:${t.roi<0?'var(--red)':'var(--acc2)'}">${t.roi>0?'+':''}${t.roi}%</b>`
+      ).join(' · ') + `</div>`;
+    const losing=tiers.filter(t=>t[1].roi<0).length;
+    const warn = losing===tiers.length && tiers.length
+      ? `<div style="margin-top:6px"><b style="color:var(--red)">Every screen on this board is losing money.</b> `
+        + `Neither picking on price nor picking on likelihood has cleared the vig over the logged sample. `
+        + `This board is a calibrated read of <b>who is most likely to homer</b>. On this evidence it is `
+        + `<b>not</b> a way to beat the book's price, and it is not being presented as one.</div>`
+      : '';
+    el.innerHTML=`<div class="sub" style="border:1px solid ${losing===tiers.length&&tiers.length?'var(--red)':'var(--hair)'};`
+      + `border-radius:8px;padding:9px 11px;margin:0">${calLine}${tierLine}${warn}</div>`;
   }
   function renderCal(cal, BT){
     let h=`<div class="sub"><b>${cal.n}</b> graded batter-games over <b>${cal.dates}</b> day(s): the model predicted each batter&apos;s homer chance, then we checked the box score. It said <b>${cal.pred_mean}%</b> on average — <b>${cal.actual}%</b> actually homered · precision ${cal.brier} (lower = sharper) · ${cal.voids} voided</div>
