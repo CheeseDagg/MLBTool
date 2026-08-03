@@ -691,7 +691,7 @@ function render(d){
     <td class="num"><b>${r.cons_pct}%</b></td><td>${bar(Math.min(r.cons_pct*4,100))}</td>
     <td class="num dim">${r.fair}</td>
     <td class="num">${r.best_price!=null?(r.best_price>0?'+':'')+r.best_price:'—'}</td>
-    <td class="hide-m dim">${r.book||''} <span class="pill">${r.books_n} books</span></td>
+    <td class="hide-m dim">${r.book||'<span title="no price at a book you can bet">not offered</span>'} <span class="pill">${r.books_n} books</span>${r.any_price!=null?` <span class="pill" title="best number anywhere in the field — shown so the cost of betting one book is visible; it is not a play and is not priced above">${r.any_book} ${r.any_price>0?'+':''}${r.any_price}</span>`:''}</td>
     <td class="num">${r.edge_pct!=null?`<b style="color:${r.edge_pct>=0?'var(--acc2)':'var(--red)'}">${r.edge_pct>=0?'+':''}${r.edge_pct}%</b>`:'—'}</td>
     <td>${r.shop?'<span class="pill" style="color:var(--acc2)">SHOP</span>':''}</td></tr>`).join('')+`</table>`;
   } else if(fu&&fu.note){ $('futBody').innerHTML=`<div class="empty">${fu.note}</div>`; }
@@ -732,7 +732,7 @@ fetch('data/lineshop.json',{cache:'no-store'}).then(r=>r.json()).then(function(l
     var gap=(p.model_market_gap_pts!=null)?(p.model_market_gap_pts+' pts'):'—';
     return '<tr><td>'+p.player+stale+'</td>'+
       '<td class="num">'+(p.fair_prob*100).toFixed(1)+'%</td>'+
-      '<td><b>'+p.best_book+'</b></td>'+
+      '<td><b>'+p.best_book+'</b>'+(p.any_price!=null?'<span style="opacity:.5;font-size:11px"> · '+p.any_book+' '+(p.any_price>0?'+':'')+p.any_price+' n/a</span>':'')+'</td>'+
       '<td class="num"><b>'+(p.best_price>0?'+':'')+p.best_price+'</b></td>'+
       '<td class="num" style="color:var(--acc2)"><b>'+p.conservative_ev_pct+'%</b></td>'+
       '<td class="num">'+p.ev_vs_fair_pct+'%</td>'+
@@ -740,12 +740,16 @@ fetch('data/lineshop.json',{cache:'no-store'}).then(r=>r.json()).then(function(l
       '<td class="num">'+p.n_books+'</td></tr>';
   }).join('');
   el.innerHTML='<div class="sub" style="opacity:.7;margin-bottom:6px">'+ls.n_plays+' plays from '+ls.n_analyzed+
-    ' player-markets · books: '+(ls.books||[]).join(', ')+' · '+(ls.generated||'')+'</div>'+
+    ' player-markets · priced at '+(ls.bettable||['fanduel']).join('/')+' only'+
+    (ls.n_unbettable?' ('+ls.n_unbettable+' markets dropped for no bettable price)':'')+
+    ' · consensus from '+(ls.books||[]).join(', ')+' · '+(ls.generated||'')+'</div>'+
     '<table class="tbl"><tr><th>batter</th><th class="num">our fair</th><th>best book</th><th class="num">best price</th>'+
     '<th class="num">EV (min)</th><th class="num">vs fair</th><th class="num">vs mkt</th><th class="num">books</th></tr>'+
     rows+'</table>'+
     '<div class="sub" style="opacity:.6;margin-top:6px">EV (min) is the conservative edge — the smaller of vs-fair and vs-market. '+
-    'Bet the best-book price. This is line shopping + stale-line catching, not a model-vs-market opinion.</div>';
+    'Every price here is one you can actually take: quotes come from '+(ls.bettable||['fanduel']).join('/')+' only, while the fair number '+
+    'and the stale test still pool every book in the pull. A greyed book/price beside the quote is the field\'s best number — shown so the '+
+    'cost of betting one book is visible, never as a play. This is line shopping + stale-line catching, not a model-vs-market opinion.</div>';
 }).catch(function(){});
 </script>
 
@@ -754,10 +758,13 @@ fetch('data/kprops.json',{cache:'no-store'}).then(r=>r.json()).then(function(kp)
   var el=document.getElementById('kpropsBody'); if(!el) return;
   var h='';
   if(kp.plays && kp.plays.length){
-    h+='<div class="sub" style="color:var(--acc2)"><b>'+kp.n_plays+' +EV plays</b> from '+kp.n_markets+' markets shopped</div>';
+    h+='<div class="sub" style="color:var(--acc2)"><b>'+kp.n_plays+' +EV plays</b> from '+kp.n_markets+' markets shopped'+
+       '<span style="opacity:.6;font-weight:400"> · priced at '+(kp.bettable||['fanduel']).join('/')+' only'+
+       (kp.n_unbettable?', '+kp.n_unbettable+' dropped for no bettable price':'')+'</span></div>';
     h+='<table class="tbl"><tr><th>market</th><th>best book</th><th class="num">price</th><th class="num">EV (min)</th><th class="num">vs fair</th><th class="num">vs mkt</th></tr>';
     kp.plays.forEach(function(p){
-      h+='<tr><td>'+p.player+(p.stale_flag?' <b style="color:var(--acc)">*STALE*</b>':'')+'</td><td><b>'+p.best_book+'</b></td>'+
+      h+='<tr><td>'+p.player+(p.stale_flag?' <b style="color:var(--acc)">*STALE*</b>':'')+'</td><td><b>'+p.best_book+'</b>'+
+         (p.any_price!=null?'<span style="opacity:.5;font-size:11px"> · '+p.any_book+' '+(p.any_price>0?'+':'')+p.any_price+' n/a</span>':'')+'</td>'+
          '<td class="num"><b>'+(p.best_price>0?'+':'')+p.best_price+'</b></td>'+
          '<td class="num" style="color:var(--acc2)"><b>'+p.conservative_ev_pct+'%</b></td>'+
          '<td class="num">'+p.ev_vs_fair_pct+'%</td><td class="num">'+(p.ev_vs_consensus_pct!=null?p.ev_vs_consensus_pct+'%':'&mdash;')+'</td></tr>';

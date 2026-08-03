@@ -16,14 +16,20 @@ Key from ODDS_API_KEY secret only. Degrades gracefully: no key -> model board
 only (still useful — the fair ladder IS the read); no stats for a pitcher ->
 skip him rather than fake a number.
 """
-import os, json, time, urllib.request, urllib.parse, datetime as dt, unicodedata
+import os, sys, json, time, urllib.request, urllib.parse, datetime as dt, unicodedata
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
 import mlb_kprops as KP
 import mlb_lineshop as LS
+from mlb_books import BETTABLE, is_bettable
 
-HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 API_KEY = os.environ.get("ODDS_API_KEY", "")
+# Pull all four: LS.analyze_player quotes only mlb_books.BETTABLE, but consensus, the
+# field average and the stale test read the whole pull and improve with more books.
 BOOKS = ["draftkings", "fanduel", "betrivers", "williamhill_us"]
+_missing = sorted(b for b in BETTABLE if not any(is_bettable(x) for x in BOOKS))
+assert not _missing, f"BETTABLE book(s) {_missing} are not in BOOKS — nothing would be quotable"
 SPORT = "baseball_mlb"
 
 def norm(s):
@@ -230,6 +236,7 @@ def main():
     n_markets = 0
     err_counts = {}
     if API_KEY and board:
+        LS.analyze_player.skipped_unbettable = 0
         try:
             events = list_events()
         except Exception as e:
@@ -264,16 +271,20 @@ def main():
             time.sleep(0.3)
         plays = LS.rank_board(plays, min_ev_fair=0.0, min_books=2)
 
-    diag = (f"errors {err_counts if API_KEY else 'no-key'} · credits remaining {QUOTA['remaining']} (used {QUOTA['used']})"
+    unb = int(getattr(LS.analyze_player, "skipped_unbettable", 0))
+    diag = (f"errors {err_counts if API_KEY else 'no-key'} · unbettable markets dropped {unb}"
+            f" · credits remaining {QUOTA['remaining']} (used {QUOTA['used']})"
             f" · whiff {WHIFF_DIAG['method']}:{WHIFF_DIAG['rows']} rows" + (f" ({WHIFF_DIAG['err']})" if WHIFF_DIAG['err'] else ""))
     if WHIFF_DIAG['rows'] == 0:
         print("WARNING: opponent whiff pull returned 0 rows — multipliers will be flat 1.0")
     print("DIAG:", diag)
     out = {"generated": ts, "board": board, "diag": diag,
            "n_markets": n_markets, "n_plays": len(plays), "plays": plays,
-           "books": BOOKS,
+           "books": BOOKS, "bettable": sorted(BETTABLE), "n_unbettable": unb,
            "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH "
-                   "our fair AND the vig-free consensus at the book's exact line."}
+                   "our fair AND the vig-free consensus at the book's exact line. Prices are "
+                   f"quoted from {'/'.join(sorted(BETTABLE))} ONLY; consensus and the stale "
+                   "test still read every book in the pull."}
     json.dump(out, open(os.path.join(DATA, "kprops.json"), "w"), indent=1)
     print(f"\nK PROPS: {len(board)} starts projected | {n_markets} markets shopped | {len(plays)} plays")
     for p in plays[:8]:

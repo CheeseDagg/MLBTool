@@ -15,12 +15,23 @@ The API key is read from the ODDS_API_KEY env/secret — never hardcoded. If odd
 unavailable (no key, quota, off-hours) the runner writes an empty-but-valid file so the
 dashboard degrades gracefully.
 """
-import os, json, time, urllib.request, urllib.parse, datetime as dt
+import os, sys, json, time, urllib.request, urllib.parse, datetime as dt
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import mlb_lineshop as LS
+from mlb_books import BETTABLE, is_bettable
 
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 API_KEY = os.environ.get("ODDS_API_KEY", "")
+# ALL FOUR are pulled on purpose. analyze_player quotes only mlb_books.BETTABLE, but the
+# consensus devig, the field average and the stale/outlier test all read the full set, and
+# they get better the more books they pool. Narrowing this list to FanDuel would not make
+# the board safer, it would make the fair price it is measured against worse.
 BOOKS = ["draftkings", "fanduel", "betrivers", "williamhill_us"]
+# ...which only holds if the books we can actually bet are IN the pull. If BETTABLE ever
+# names a book missing from BOOKS, every market comes back unquotable and the board goes
+# silently empty — a bug that looks exactly like a quiet slate.
+_missing = sorted(b for b in BETTABLE if not any(is_bettable(x) for x in BOOKS))
+assert not _missing, f"BETTABLE book(s) {_missing} are not in BOOKS — nothing would be quotable"
 SPORT = "baseball_mlb"
 
 def norm(s):
@@ -100,6 +111,7 @@ def main():
 
     matched = 0
     err_counts = {}
+    LS.analyze_player.skipped_unbettable = 0
     for ev in events:
         eid = ev.get("id")
         if not eid: continue
@@ -124,12 +136,20 @@ def main():
         time.sleep(0.3)                          # polite; also spares API quota
 
     plays = LS.rank_board(analyses, min_ev_fair=0.0, min_books=2)
-    diag = f"events {len(events)} · errors {err_counts or 'none'} · credits remaining {QUOTA['remaining']} (used {QUOTA['used']})"
+    unb = int(getattr(LS.analyze_player, "skipped_unbettable", 0))
+    diag = (f"events {len(events)} · errors {err_counts or 'none'} · "
+            f"unbettable markets dropped {unb} · "
+            f"credits remaining {QUOTA['remaining']} (used {QUOTA['used']})")
     print("DIAG:", diag)
     out = {"generated": ts, "n_analyzed": matched, "n_plays": len(plays),
-           "books": BOOKS, "plays": plays, "diag": diag,
+           "books": BOOKS, "bettable": sorted(BETTABLE), "n_unbettable": unb,
+           "plays": plays, "diag": diag,
            "note": "Plays are +EV vs BOTH our fair number AND the vig-free market consensus. "
-                   "Best price shown is the book to bet. Stale flags = a book out of step with the field."}
+                   f"Prices are quoted from {'/'.join(sorted(BETTABLE))} ONLY — a price you "
+                   "cannot take is not a better price — while consensus, the field average "
+                   "and the stale test read every book in the pull. `any_price` shows the "
+                   "field's top number where it beats yours, so the cost of one book is "
+                   "visible. Stale flags = your book out of step with the field."}
     json.dump(out, open(os.path.join(DATA, "lineshop.json"), "w"), indent=1)
     print(f"\nLINE SHOP: analyzed {matched} player-markets -> {len(plays)} +EV plays")
     for p in plays[:10]:

@@ -44,14 +44,25 @@ MIN_GAIN      = 1e-4    # Brier must improve by at least this to ship
 MIN_NEW_ROWS  = 500     # need this much fresh graded data since the anchors were last fit
 
 # The live level factor lives in mlb_hr.py and is applied AFTER the anchors. Read it
-# rather than copy it, and fail soft (1.0) so this script never depends on the engine
-# importing cleanly. See row_raw for why the date matters.
+# rather than copy it. See row_raw for why the date matters, and brier() for why the
+# gate has to score through it.
+#
+# Fail-soft to 1.0 so this script never depends on the engine importing cleanly -- but
+# LOUDLY, and with the apply step disarmed. A silent fallback here does not degrade the
+# run, it inverts it: brier() would then gate on an objective production never ships and
+# would prefer whichever candidate has absorbed the level, which live_level_pct then
+# applies a second time. Reporting is still useful without the engine; rewriting
+# mlb_hr.py is not.
 LIVE_LEVEL_FROM = "2026-07-31"
+LIVE_LEVEL_OK = True
 try:
     sys.path.insert(0, HERE)
     from mlb_hr import LIVE_LEVEL
-except Exception:                                              # noqa: BLE001
-    LIVE_LEVEL = 1.0
+except Exception as _e:                                        # noqa: BLE001
+    LIVE_LEVEL, LIVE_LEVEL_OK = 1.0, False
+    print(f"! could not import mlb_hr ({type(_e).__name__}: {_e}) -- LIVE_LEVEL unknown, "
+          f"assuming 1.0. This run is REPORT-ONLY; it will not rewrite anchors.",
+          file=sys.stderr)
 
 
 # ---------- current anchors: read from mlb_hr.py (single source of truth) ----------
@@ -199,12 +210,33 @@ def fit_anchors(train):
     return [(x, y) for j, (x, y) in enumerate(out) if j == 0 or x > out[j - 1][0]]
 
 
-def brier(anchors, rows):
+def brier(anchors, rows, level=None):
+    """Holdout Brier of a candidate curve AS PRODUCTION WOULD SHIP IT.
+
+    `level` defaults to mlb_hr.LIVE_LEVEL because the published number is
+    calibrate_pct() THEN live_level_pct() -- anchors alone are a curve nothing
+    ever publishes. Scoring without it does not merely add a constant to both
+    sides: Brier is not scale-invariant, so the un-leveled objective has its
+    optimum in a different place, and the difference is exactly this factor.
+    Measured on the 2026-08-02 holdout (n=509, actual 16.50%), sweeping a single
+    scale k over the current anchors:
+
+        k the un-leveled gate picks   0.810   Brier 0.137432
+        k the shipped objective picks 0.920   Brier 0.137432
+        ratio 0.880 == LIVE_LEVEL, to three decimals
+
+    and shipping the gate's pick lands the board at 14.41% against 16.50%
+    actual, -2.09pp COLD. That is the level correction applied twice: the gate
+    rewards a candidate for absorbing it into the anchor shape, and then
+    live_level_pct multiplies by 0.88 again on top. Both curves are scored
+    through the same factor here, so the gate compares shapes, which is the only
+    thing the refit is allowed to change."""
     if not rows:
         return float("inf")
+    k = LIVE_LEVEL if level is None else level
     s = 0.0
     for _, raw, hit in rows:
-        p = max(0.0, min(1.0, apply_map(anchors, raw) / 100.0))
+        p = max(0.0, min(1.0, apply_map(anchors, raw) * k / 100.0))
         s += (p - hit) ** 2
     return s / len(rows)
 
@@ -240,24 +272,45 @@ def main(dry):
     train = [r for r in rows if r[0] <= cutoff]
     hold  = [r for r in rows if r[0] > cutoff]
     print(f"rows: {len(rows)} total | train {len(train)} (thru {cutoff}) | holdout {len(hold)}")
+    # PROVENANCE, printed every run because it is the honest size of this refit. The
+    # backtest replay is a FROZEN file (it ends the day the replay was generated), so
+    # month over month the training pool is the same rows plus a thin live slice. On
+    # 2026-08-02 that was 25,128 replay vs 183 production -- 99.3% / 0.7%. A "monthly
+    # recalibration" on a pool that is 99.3% unchanged cannot move the curve much, and
+    # it is not supposed to: the anchors are the SHAPE, fit on the replay, and the
+    # replay->production LEVEL gap is carried by mlb_hr.LIVE_LEVEL instead (see
+    # brier()). Printing it keeps a near-zero candidate delta from reading as
+    # confirmation that the curve is right.
+    _gcount = sum(1 for d in graded_dates() if d <= cutoff)
+    _bcount = len(train) - _gcount
+    print(f"  train provenance: {_bcount} frozen backtest-replay rows "
+          f"({100.0*_bcount/max(1,len(train)):.1f}%) | {_gcount} production graded rows "
+          f"({100.0*_gcount/max(1,len(train)):.1f}%)")
     if len(hold) < MIN_HOLDOUT:
         print(f"holdout too small (<{MIN_HOLDOUT}) - keeping current anchors"); return
 
     cand = fit_anchors(train)
     b_old, b_new = brier(cur, hold), brier(cand, hold)
     verdict = "APPLY" if b_new < b_old - MIN_GAIN else "KEEP"
-    print(f"holdout Brier  current {b_old:.5f}  vs  candidate {b_new:.5f}  ->  {verdict}")
+    print(f"holdout Brier (scored x LIVE_LEVEL={LIVE_LEVEL}, i.e. as published)  "
+          f"current {b_old:.5f}  vs  candidate {b_new:.5f}  ->  {verdict}")
     print("candidate anchors:", [[round(x,1), round(y,1)] for x, y in cand])
 
     report = {"ran": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
               "rows": len(rows), "train": len(train), "holdout": len(hold),
+              "train_backtest": _bcount, "train_graded": _gcount,
+              "live_level": LIVE_LEVEL, "live_level_ok": LIVE_LEVEL_OK,
               "brier_current": round(b_old, 6), "brier_candidate": round(b_new, 6),
               "verdict": verdict, "candidate": [[round(x,1), round(y,1)] for x, y in cand],
               "current": [[round(x,1), round(y,1)] for x, y in cur]}
     os.makedirs(DATA, exist_ok=True)
     json.dump(report, open(REPORT, "w"), indent=1)
 
-    if verdict == "APPLY" and not dry:
+    if verdict == "APPLY" and not LIVE_LEVEL_OK:
+        print("APPLY withheld: mlb_hr did not import, so LIVE_LEVEL is unknown and the "
+              "gate scored an objective that may not be the shipped one. Report written; "
+              "anchors untouched.")
+    elif verdict == "APPLY" and not dry:
         open(HR_PY, "w").write(write_anchors(src, cand))
         print("mlb_hr.py updated - new anchors live on the next board build")
     elif verdict == "APPLY":
@@ -284,12 +337,35 @@ def selftest():
         assert abs(y - 0.8 * x) < 2.0, f"fit off truth at ({x},{y})"
     ys = [y for _, y in fitted]
     assert all(b >= a for a, b in zip(ys, ys[1:])), "fit not monotonic"
-    # 3) gate: better curve wins, worse curve is kept out
+    # 3) gate: better curve wins, worse curve is kept out (level held at 1.0 so this
+    #    checks SHAPE selection only -- these synthetic rows have no replay/live gap)
     truth = fitted
     hold = rows[-3000:]
     too_high = [(x, min(100, y * 1.5)) for x, y in truth]
-    assert brier(truth, hold) < brier(too_high, hold) - MIN_GAIN, "gate should prefer truth"
-    assert not (brier(too_high, hold) < brier(truth, hold) - MIN_GAIN), "worse curve must not pass"
+    assert brier(truth, hold, 1.0) < brier(too_high, hold, 1.0) - MIN_GAIN, "gate should prefer truth"
+    assert not (brier(too_high, hold, 1.0) < brier(truth, hold, 1.0) - MIN_GAIN), \
+        "worse curve must not pass"
+    # 3b) THE LEVEL GUARD. Brier is not scale-invariant, so leaving LIVE_LEVEL out of
+    #     the gate does not just shift both sides -- it moves the optimum by exactly
+    #     that factor, and the winner then gets multiplied by it a second time in
+    #     live_level_pct. Fixture: rows generated at truth 0.8*raw, scored under a
+    #     level of 0.8. The best single scale k must come out at 1/0.8 = 1.25 (so that
+    #     k*0.8 == truth), NOT at 1.0. All 40k rows, not the 3k holdout slice: on 3k the
+    #     closed-form optimum is 1.174 purely from sampling noise, which is a fixture
+    #     problem, not a code one.
+    _lvl = 0.8
+    _base = [(v, 0.8 * v) for v in (0.0, 10.0, 20.0, 30.0, 40.0)]
+    _ks = [round(0.80 + 0.05 * i, 2) for i in range(13)]          # 0.80 .. 1.40
+    _best = min(_ks, key=lambda k: brier([(x, y * k) for x, y in _base], rows, _lvl))
+    assert abs(_best - 1.25) <= 0.06, \
+        f"level-aware gate should pick k~1.25 under level {_lvl}, picked {_best}"
+    _bestnolvl = min(_ks, key=lambda k: brier([(x, y * k) for x, y in _base], rows, 1.0))
+    assert abs(_bestnolvl - 1.00) <= 0.06, \
+        f"same curves ignoring the level pick k~1.00, picked {_bestnolvl}"
+    assert abs(_bestnolvl / _best - _lvl) < 0.06, \
+        "the two optima must differ by the level factor -- that is the whole defect"
+    assert brier(_base, hold) == brier(_base, hold, LIVE_LEVEL), \
+        "brier() default level must be LIVE_LEVEL, not 1.0"
     # 4) writer: single-line replace, refuses ambiguity
     # multi-line, tuple-style, trailing comment — the LIVE file's real shape
     fake = ("X = 1\nCALIB_ANCHORS = [(0.0, 0.0), (8.4, 8.8),\n"
@@ -311,7 +387,9 @@ def selftest():
     assert abs(row_raw({"hr_pct": legacy_cal}, A) - 20.0) < 1e-9, "legacy fallback must invert"
     assert row_raw({"hr_raw": "", "hr_pct": legacy_cal}, A) == row_raw({"hr_pct": legacy_cal}, A), \
         "empty hr_raw must fall back to inversion"
-    print("selftest OK: inversion exact | fit recovers truth & monotonic | gate blocks worse curves | writer assert-guarded | hr_raw leak-free")
+    print("selftest OK: inversion exact | fit recovers truth & monotonic | gate blocks "
+          "worse curves | gate scores through LIVE_LEVEL | writer assert-guarded | "
+          "hr_raw leak-free")
 
 
 if __name__ == "__main__":
