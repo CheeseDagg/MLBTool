@@ -19,9 +19,22 @@ Two honesty guarantees, enforced by the selftests below:
 The pricing core MIRRORS mlb_hr.build_board exactly:
     p_pa = base * park * sp_eff * platoon * heat        (weather term dropped)
     p_game = 1 - (1 - p_pa) ** pa_est
-with the same constants. Weather is omitted on purpose: Open-Meteo's archive can't
-give reliable first-pitch temps three months back, and a backtest padded with wrong
-temperatures would flatter the model. The panel is labeled "core model (no weather)".
+with the same constants. price_row() itself omits weather on purpose: Open-Meteo's
+archive can't give reliable first-pitch temps three months back, and a backtest
+padded with wrong temperatures would flatter the model.
+
+Weather can be folded back in AFTERWARDS by mlb_backtest_run, which pulls historical
+first-pitch conditions from Meteostat and calls mlb_backtest_weather.reprice_row.
+That is optional and it fails soft: if Meteostat is unreachable, or the park-day is
+missing, the row keeps its weather-free number and is tagged "no wx".
+
+So whether the panel actually includes weather is a PROPERTY OF THE DATA, not of
+this file, and summarize() must count it rather than assert it. It used to hard-code
+  {"weather": "included (historical first-pitch, Meteostat)"}
+unconditionally — true of nothing in particular, and false of every row this module
+prices on its own, since price_row emits no weather at all. The selftest "checked"
+it with `assert "included" in p["weather"] or "excluded" in p["weather"]`, which a
+constant string containing the word "included" can never fail.
 
 Runs on GitHub Actions (statsapi reachable there). One-shot: writes data/hr_backtest.csv
 and a panel consumed by the dashboard's Backtest tab.
@@ -188,11 +201,36 @@ def _heat_val(tag):
     except Exception: pass
     return None
 
+def _weather_label(live):
+    """Say what the priced rows ACTUALLY carry, counted, not asserted.
+
+    A row repriced by mlb_backtest_weather carries r["temp"] = the tag that
+    hr_weather_mult produced: "78F, wind 9mph out", "dome", or "no wx" when the
+    Meteostat pull missed. price_row() emits no "temp" key at all. Those three
+    states used to collapse into one hard-coded string reading "included", so a
+    replay that reached Meteostat and one that was egress-blocked for every single
+    park-day published the identical claim.
+
+    "dome" counts as priced: a closed roof genuinely has no weather term, so the
+    row is not missing anything. "no wx" and a missing key do not."""
+    if not live:
+        return "no graded rows"
+    def has_wx(r):
+        t = (r.get("temp") or "").strip().lower()
+        return bool(t) and t != "no wx"
+    k = sum(1 for r in live if has_wx(r))
+    if k == 0:
+        return "excluded (core model, no weather term on any row)"
+    if k == len(live):
+        return "included (historical first-pitch, Meteostat)"
+    return (f"partial: {k} of {len(live)} rows carry first-pitch weather "
+            f"({len(live)-k} priced weather-free)")
+
 def summarize(graded):
     """graded: [{hr_pct, outcome('hr'/'no'), hr_n, heat, plat, ...}] -> panel dict."""
     live = [r for r in graded if r["outcome"] in ("hr", "no")]
     n = len(live)
-    out = {"n": n, "weather": "included (historical first-pitch, Meteostat)"}
+    out = {"n": n, "weather": _weather_label(live)}
     if not n: return out
     p = [float(r["hr_pct"]) / 100 for r in live]
     y = [1.0 if r["outcome"] == "hr" else 0.0 for r in live]
@@ -328,7 +366,24 @@ def selftest():
     hb = {b["band"]: b for b in p["heat_bands"]}
     assert hb["+10 or more"]["n"] == 3 and hb["+10 or more"]["actual"] == round(200/3,1)
     assert p["multi"]["n"] == 7 and p["multi"]["two_plus"] == 1
-    assert "included" in p["weather"] or "excluded" in p["weather"]
+    # WEATHER LABEL MUST TRACK THE ROWS. The old check here was
+    #   assert "included" in p["weather"] or "excluded" in p["weather"]
+    # against a hard-coded constant containing the word "included" — a test that
+    # cannot fail and therefore tested nothing, while the panel told the dashboard
+    # that Meteostat first-pitch conditions were in a replay priced without them.
+    # None of the seven rows above carries a temp tag:
+    assert p["weather"].startswith("excluded"), p["weather"]
+    _wx  = [dict(r, temp="78F, wind 9mph out") for r in graded]
+    _dome= [dict(r, temp="dome") for r in graded]
+    _nowx= [dict(r, temp="no wx") for r in graded]
+    assert summarize(_wx)["weather"].startswith("included"), summarize(_wx)["weather"]
+    # a closed roof has no weather term to be missing — that is priced, not absent
+    assert summarize(_dome)["weather"].startswith("included"), summarize(_dome)["weather"]
+    # a failed Meteostat pull is NOT weather, however cheerfully it used to be labelled
+    assert summarize(_nowx)["weather"].startswith("excluded"), summarize(_nowx)["weather"]
+    _mix = summarize(_wx[:3] + graded[3:])["weather"]
+    assert _mix.startswith("partial: 3 of 7"), _mix
+    assert summarize([])["weather"] == "no graded rows"
     json.dumps(p)   # JSON-safe for the dashboard
 
     st2 = AsOfState(heat_window=10, heat_shrink_K=40.0)

@@ -34,6 +34,24 @@ jobs:
         with: { python-version: "3.12" }
       - name: Install deps
         run: pip install pybaseball MLB-StatsAPI pandas numpy
+      # FIFTEEN selftests on the publish path and NOTHING RAN THEM. Every module below
+      # ships a --selftest, all fifteen pass, and the job that actually puts the board
+      # in front of a reader was the one job with no check in front of it -- so a model
+      # change that broke shrinkage, the EV wiring or the live-level correction would
+      # have published a broken board silently and on schedule. node selftest.js covers
+      # the render layer, which had no test of any kind and is where the worst defect in
+      # this repo lived: 87 lines of calibration reporting written to a DOM id that did
+      # not exist, called by nobody, for months.
+      - name: Selftest gate
+        working-directory: mlb
+        run: |
+          for m in mlb_hr mlb_publish mlb_edge mlb_grade mlb_kprops mlb_lineshop \
+                   mlb_livelevel mlb_recalibrate mlb_bvp mlb_futures mlb_pitchers \
+                   mlb_marcel mlb_backtest mlb_backtest_weather mlb_pitcherhr_gate; do
+            echo "== $m"; python $m.py --selftest || exit 1
+          done
+      - name: Render-layer gate
+        run: node selftest.js
       - name: Pull data + publish slate
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}

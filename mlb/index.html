@@ -203,6 +203,22 @@ footer{color:var(--mut2);font-size:11px;text-align:center;padding:20px}
     monotonicity, EV wiring.
     </div>
   </div>
+  <!-- DOES IT WORK. These two panels were computed, published and rendered into DOM
+       nodes that did not exist. renderCal() ended with $('hrCal').innerHTML=h and there
+       was no hrCal on the page and nothing ever called renderCal; the btBody block was
+       guarded by `if(_bt)` so it no-op'd in silence. Meanwhile data/hr_backtest_panel.json
+       — the 25,128-batter-game, 105-day leak-free season replay, the single strongest
+       piece of evidence this repo owns — was published on every build and fetched by
+       nothing. The HR board's own graded record and the moneyline model's accuracy now
+       have somewhere to land, on the tab that claims to explain the method. -->
+  <div class="card">
+    <h3>Does the HR board work? (graded)</h3>
+    <div id="hrCal"><div class="empty">no graded calibration yet — needs hr_cal in slate.json</div></div>
+  </div>
+  <div class="card">
+    <h3>Does the win% model work? (season replay)</h3>
+    <div id="btBody"><div class="empty">no backtest in slate.json</div></div>
+  </div>
 </section>
 
 </main>
@@ -500,6 +516,18 @@ function render(d){
   const cal=d.hr_cal;
   renderVerdict(cal);
   renderBvp();  // BvP list replaces the calibration/backtest/changelog panels
+  // The season replay is a SEPARATE artifact from slate.json — mlb_backtest_run.py
+  // writes data/hr_backtest_panel.json on the backtest workflow, not the daily publish,
+  // so it cannot be folded into the slate. Nothing on this page ever fetched it, which
+  // is why renderCal's season column would have printed "no season data" in every row
+  // even if the element it writes to had existed. Fetch it, and render the panel with
+  // whatever we get — null is a legitimate answer (the replay has never run) and
+  // renderCal already degrades to the live-only view when BT is falsy.
+  if(cal && cal.n){
+    fetch('data/hr_backtest_panel.json',{cache:'no-store'})
+      .then(r=>r.ok?r.json():null).catch(()=>null)
+      .then(bt=>{ try{ renderCal(cal, bt); }catch(e){ console.error('renderCal', e); } });
+  }
 
   // A gap only means something if it is bigger than the noise in its own sample.
   // se = sqrt(p(1-p)/n); we show the 95% band (2*se) and grade |gap| against it.
@@ -677,10 +705,11 @@ function render(d){
         <b style="color:var(--red)">Both strategies are losing.</b> Neither picking on price nor picking on likelihood has cleared the vig over the logged sample.
         The board is a calibrated read of who is likely to homer — it is not, on this evidence, a way to beat the book's price.</div>`;
     }
-    $('hrCal').innerHTML=h;
+    // GUARD. This line was unguarded and $('hrCal') was null, so the only reason it
+    // never threw is that nothing called renderCal at all. Now that something does,
+    // a future edit that drops the element must degrade, not blank the page.
+    const _c=$('hrCal'); if(_c) _c.innerHTML=h;
   }
-  // backtest
-  // backtest
   // futures
   const fu=d.futures;
   if(fu&&fu.rows&&fu.rows.length){
@@ -696,17 +725,26 @@ function render(d){
     <td>${r.shop?'<span class="pill" style="color:var(--acc2)">SHOP</span>':''}</td></tr>`).join('')+`</table>`;
   } else if(fu&&fu.note){ $('futBody').innerHTML=`<div class="empty">${fu.note}</div>`; }
   const b=d.backtest;
-  var _bt=$('btBody'); if(_bt) _bt.innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
+  // `if(_bt)` alone was never a real guard — it was the reason a missing element made
+  // this whole block vanish silently. Now the element exists, so `b` has to be checked:
+  // a slate published before backtest_block ran carries no "backtest" key and b.n would
+  // throw, taking the rest of render() with it.
+  var _bt=$('btBody');
+  if(_bt && !(b && b.cal)){
+    _bt.innerHTML=`<div class="empty">slate.json carries no <code>backtest</code> block — run mlb_publish.py</div>`;
+  } else if(_bt) _bt.innerHTML=`<table><tr><th></th><th class="num">value</th></tr>
   <tr><td>games predicted</td><td class="num">${b.n}</td></tr>
   <tr><td>accuracy</td><td class="num"><b>${b.acc}%</b> <span class="dim">(home-always ${b.home_base}%)</span></td></tr>
   <tr><td>Brier score</td><td class="num">${b.brier}</td></tr></table>
-  ${cal.multi?`<div class="sub" style="margin-top:8px"><b>Two-homer games</b> (counted from Jul 9 on): A-tier bats ${cal.multi.a_two_plus} of ${cal.multi.a_n}${cal.multi.a_rate!=null?` (${cal.multi.a_rate}%)`:''} went deep twice · all graded bats ${cal.multi.two_plus} of ${cal.multi.n} (${cal.multi.rate}%). If A-tier keeps doubling up, "combine 2+" markets are the best-priced surface — verdict needs ~50 counted bets.</div>`:''}
+  ${cal&&cal.multi?`<div class="sub" style="margin-top:8px"><b>Two-homer games</b> (counted from Jul 9 on): A-tier bats ${cal.multi.a_two_plus} of ${cal.multi.a_n}${cal.multi.a_rate!=null?` (${cal.multi.a_rate}%)`:''} went deep twice · all graded bats ${cal.multi.two_plus} of ${cal.multi.n} (${cal.multi.rate}%). If A-tier keeps doubling up, "combine 2+" markets are the best-priced surface — verdict needs ~50 counted bets.</div>`:''}
   <div class="sub" style="margin-top:12px">calibration:</div>
   <table><tr><th>bucket</th><th class="num">predicted</th><th class="num">actual</th><th class="num">n</th></tr>`+
   b.cal.map(c=>`<tr><td>~${c.bucket}%</td><td class="num">${c.pred}%</td>
     <td class="num">${c.actual}%</td><td class="num dim">${c.n}</td></tr>`).join('')+`</table>`;
 }
-fetch('data/slate.json').then(r=>r.json()).then(render)
+// no-store like every other fetch on this page. Without it the browser happily serves
+// yesterday's slate from cache on a page whose entire value is that it is today's.
+fetch('data/slate.json',{cache:'no-store'}).then(r=>r.json()).then(render)
  .catch(()=>{$('meta').textContent='could not load slate.json — run mlb_publish.py (or wait for the daily Action)';});
 </script>
 

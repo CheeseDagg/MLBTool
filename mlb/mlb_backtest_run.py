@@ -193,7 +193,14 @@ def main():
 
     os.makedirs(DATA, exist_ok=True)
     if all_graded:
-        cols = ["date","player","opp_sp","slot","hr_pct","plat","heat","park","outcome","hr_n"]
+        # "temp" MUST be here. Every row is repriced by WX.reprice_row above, which
+        # folds the historical first-pitch multiplier into hr_pct and records the tag
+        # it used ("78F, wind 9mph out" / "dome" / "no wx" when Meteostat missed).
+        # Dropping the column meant the shipped 25,128-row CSV carried repriced
+        # probabilities with no record of what was applied — unauditable after the
+        # fact, and the only way to check the panel's weather claim was gone.
+        cols = ["date","player","opp_sp","slot","hr_pct","plat","heat","park","temp",
+                "outcome","hr_n"]
         with open(BT.OUT, "w", newline="") as f:
             w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
             for r in all_graded: w.writerow(r)
