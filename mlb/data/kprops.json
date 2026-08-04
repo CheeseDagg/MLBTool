@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T15:41+00:00",
+ "generated": "2026-08-04T19:15+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -118,6 +118,46 @@
      "p_over": 0.1321,
      "fair_over": 657,
      "fair_under": -657
+    }
+   ]
+  },
+  {
+   "pitcher": "Troy Melton",
+   "opp": "Seattle Mariners",
+   "lam": 5.7,
+   "k9_regressed": 8.25,
+   "exp_ip": 6.09,
+   "opp_mult": 1.021,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6722,
+     "fair_over": -205,
+     "fair_under": 205
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5044,
+     "fair_over": -102,
+     "fair_under": 102
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.345,
+     "fair_over": 190,
+     "fair_under": -190
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2153,
+     "fair_over": 364,
+     "fair_under": -364
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.123,
+     "fair_over": 713,
+     "fair_under": -713
     }
    ]
   },
@@ -322,46 +362,6 @@
    ]
   },
   {
-   "pitcher": "Emerson Hancock",
-   "opp": "Detroit Tigers",
-   "lam": 5.22,
-   "k9_regressed": 8.39,
-   "exp_ip": 5.52,
-   "opp_mult": 1.015,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5971,
-     "fair_over": -148,
-     "fair_under": 148
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4224,
-     "fair_over": 137,
-     "fair_under": -137
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2705,
-     "fair_over": 270,
-     "fair_under": -270
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1572,
-     "fair_over": 536,
-     "fair_under": -536
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0833,
-     "fair_over": 1100,
-     "fair_under": -1100
-    }
-   ]
-  },
-  {
    "pitcher": "Trey Yesavage",
    "opp": "Houston Astros",
    "lam": 5.22,
@@ -398,6 +398,46 @@
      "p_over": 0.0831,
      "fair_over": 1103,
      "fair_under": -1103
+    }
+   ]
+  },
+  {
+   "pitcher": "Emerson Hancock",
+   "opp": "Detroit Tigers",
+   "lam": 5.22,
+   "k9_regressed": 8.39,
+   "exp_ip": 5.52,
+   "opp_mult": 1.015,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5971,
+     "fair_over": -148,
+     "fair_under": 148
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4224,
+     "fair_over": 137,
+     "fair_under": -137
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2705,
+     "fair_over": 270,
+     "fair_under": -270
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1572,
+     "fair_over": 536,
+     "fair_under": -536
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0833,
+     "fair_over": 1100,
+     "fair_under": -1100
     }
    ]
   },
@@ -882,6 +922,46 @@
    ]
   },
   {
+   "pitcher": "Cade Povich",
+   "opp": "Los Angeles Angels",
+   "lam": 4.12,
+   "k9_regressed": 7.53,
+   "exp_ip": 4.56,
+   "opp_mult": 1.081,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3945,
+     "fair_over": 153,
+     "fair_under": -153
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2338,
+     "fair_over": 328,
+     "fair_under": -328
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1235,
+     "fair_over": 710,
+     "fair_under": -710
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0586,
+     "fair_over": 1608,
+     "fair_under": -1608
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0251,
+     "fair_over": 3879,
+     "fair_under": -3879
+    }
+   ]
+  },
+  {
    "pitcher": "Grayson Rodriguez",
    "opp": "Baltimore Orioles",
    "lam": 4.09,
@@ -958,46 +1038,6 @@
      "p_over": 0.0165,
      "fair_over": 5969,
      "fair_under": -5969
-    }
-   ]
-  },
-  {
-   "pitcher": "Zack Littell",
-   "opp": "Philadelphia Phillies",
-   "lam": 3.58,
-   "k9_regressed": 6.49,
-   "exp_ip": 4.79,
-   "opp_mult": 1.037,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.2894,
-     "fair_over": 246,
-     "fair_under": -246
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.1529,
-     "fair_over": 554,
-     "fair_under": -554
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0715,
-     "fair_over": 1299,
-     "fair_under": -1299
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0299,
-     "fair_over": 3248,
-     "fair_under": -3248
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0113,
-     "fair_over": 8781,
-     "fair_under": -8781
     }
    ]
   },
@@ -1120,10 +1160,50 @@
      "fair_under": -23530
     }
    ]
+  },
+  {
+   "pitcher": "Carson Palmquist",
+   "opp": "Philadelphia Phillies",
+   "lam": 2.95,
+   "k9_regressed": 8.55,
+   "exp_ip": 3.0,
+   "opp_mult": 1.037,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1771,
+     "fair_over": 465,
+     "fair_under": -465
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0794,
+     "fair_over": 1160,
+     "fair_under": -1160
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0313,
+     "fair_over": 3099,
+     "fair_under": -3099
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0109,
+     "fair_over": 9033,
+     "fair_under": -9033
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0034,
+     "fair_over": 28906,
+     "fair_under": -28906
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 7 \u00b7 credits remaining 139 (used 361) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 7 \u00b7 credits remaining 19909 (used 91) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
