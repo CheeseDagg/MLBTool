@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T00:11+00:00",
+ "generated": "2026-08-04T22:08+00:00",
  "n_analyzed": 0,
  "n_plays": 0,
  "books": [
@@ -11,8 +11,8 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 28,
+ "n_unbettable": 30,
  "plays": [],
- "diag": "events 8 \u00b7 errors none \u00b7 unbettable markets dropped 28 \u00b7 credits remaining 419 (used 81)",
+ "diag": "events 15 \u00b7 errors none \u00b7 unbettable markets dropped 30 \u00b7 credits remaining 19803 (used 197)",
  "note": "Plays are +EV vs BOTH our fair number AND the vig-free market consensus. Prices are quoted from fanduel ONLY \u2014 a price you cannot take is not a better price \u2014 while consensus, the field average and the stale test read every book in the pull. `any_price` shows the field's top number where it beats yours, so the cost of one book is visible. Stale flags = your book out of step with the field."
 }
