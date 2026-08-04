@@ -2067,11 +2067,26 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-02,San Francisco Giants,San Diego Padres,Landen Roupp,Kyle Hart,4,5,Final
 2026-08-02,Minnesota Twins,Seattle Mariners,Taj Bradley,George Kirby,6,7,Final
 2026-08-02,Boston Red Sox,Los Angeles Dodgers,Jake Bennett,Emmet Sheehan,8,4,Final
-2026-08-03,Washington Nationals,Philadelphia Phillies,Andrew Alvarez,Aaron Nola,0,0,Pre-Game
-2026-08-03,St. Louis Cardinals,New York Yankees,Michael McGreevy,Cam Schlittler,0,0,Pre-Game
-2026-08-03,Pittsburgh Pirates,Milwaukee Brewers,Bubba Chandler,Brandon Sproat,0,0,Pre-Game
-2026-08-03,Los Angeles Dodgers,Chicago Cubs,Justin Wrobleski,Matthew Boyd,0,0,Pre-Game
-2026-08-03,San Francisco Giants,Texas Rangers,Logan Webb,Cal Quantrill,0,0,Pre-Game
-2026-08-03,Toronto Blue Jays,Houston Astros,Shane Bieber,Cristian Javier,0,0,Scheduled
-2026-08-03,Tampa Bay Rays,Colorado Rockies,Ian Seymour,Michael Lorenzen,0,0,Scheduled
-2026-08-03,San Diego Padres,Arizona Diamondbacks,Michael King,Brandon Pfaadt,0,0,Scheduled
+2026-08-03,Washington Nationals,Philadelphia Phillies,Andrew Alvarez,Aaron Nola,3,6,Final
+2026-08-03,St. Louis Cardinals,New York Yankees,Michael McGreevy,Cam Schlittler,13,7,Final
+2026-08-03,Pittsburgh Pirates,Milwaukee Brewers,Bubba Chandler,Brandon Sproat,4,3,Final
+2026-08-03,Los Angeles Dodgers,Chicago Cubs,Justin Wrobleski,Matthew Boyd,5,10,Final
+2026-08-03,San Francisco Giants,Texas Rangers,Logan Webb,Cal Quantrill,5,1,Final
+2026-08-03,Toronto Blue Jays,Houston Astros,Shane Bieber,Cristian Javier,3,1,Final
+2026-08-03,Tampa Bay Rays,Colorado Rockies,Ian Seymour,Michael Lorenzen,13,9,Final
+2026-08-03,San Diego Padres,Arizona Diamondbacks,Michael King,Brandon Pfaadt,1,5,Final
+2026-08-04,Los Angeles Angels,Baltimore Orioles,Grayson Rodriguez,,0,0,Scheduled
+2026-08-04,New York Mets,Cleveland Guardians,Sean Manaea,Joey Cantillo,0,0,Scheduled
+2026-08-04,Athletics,Cincinnati Reds,J.T. Ginn,Brady Singer,0,0,Scheduled
+2026-08-04,Washington Nationals,Philadelphia Phillies,Zack Littell,Jesús Luzardo,0,0,Scheduled
+2026-08-04,St. Louis Cardinals,New York Yankees,Hunter Dobbins,Ryan Weathers,0,0,Scheduled
+2026-08-04,Chicago White Sox,Boston Red Sox,Davis Martin,Patrick Sandoval,0,0,Scheduled
+2026-08-04,Miami Marlins,Atlanta Braves,Ryan Gusto,Grant Holmes,0,0,Scheduled
+2026-08-04,Minnesota Twins,Kansas City Royals,Joe Ryan,Randy Dobnak,0,0,Scheduled
+2026-08-04,Pittsburgh Pirates,Milwaukee Brewers,Jared Jones,Logan Henderson,0,0,Scheduled
+2026-08-04,Los Angeles Dodgers,Chicago Cubs,Tarik Skubal,Javier Assad,0,0,Scheduled
+2026-08-04,San Francisco Giants,Texas Rangers,Blade Tidwell,MacKenzie Gore,0,0,Scheduled
+2026-08-04,Toronto Blue Jays,Houston Astros,Trey Yesavage,Hayden Wesneski,0,0,Scheduled
+2026-08-04,Tampa Bay Rays,Colorado Rockies,Freddy Peralta,Gabriel Hughes,0,0,Scheduled
+2026-08-04,San Diego Padres,Arizona Diamondbacks,Randy Vásquez,Eduardo Rodriguez,0,0,Scheduled
+2026-08-04,Detroit Tigers,Seattle Mariners,,Emerson Hancock,0,0,Scheduled
