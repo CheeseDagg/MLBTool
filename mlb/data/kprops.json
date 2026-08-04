@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T15:25+00:00",
+ "generated": "2026-08-04T15:41+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -1122,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 7 \u00b7 credits remaining 171 (used 329) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 7 \u00b7 credits remaining 139 (used 361) \u00b7 whiff rest:30 rows",
  "n_markets": 26,
  "n_plays": 0,
  "plays": [],

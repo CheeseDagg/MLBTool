@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T15:24:18+00:00",
+ "generated": "2026-08-04T15:40:50+00:00",
  "slate_date": "2026-08-04",
  "games": [
   {
@@ -11,9 +11,9 @@
    "home_sp": null,
    "p_home": 63.1,
    "raw_total": 9.69,
-   "adj_total": 9.76,
+   "adj_total": 9.86,
    "park": "park +1% [low-conf]",
-   "wx": "wx fetch failed (URLError)"
+   "wx": "80F, wind 6mph"
   },
   {
    "away": "San Diego Padres",
@@ -24,9 +24,9 @@
    "home_sp": "Eduardo Rodriguez",
    "p_home": 60.5,
    "raw_total": 9.33,
-   "adj_total": 9.62,
+   "adj_total": 9.63,
    "park": "park +2%",
-   "wx": "92F, wind 4mph (retract: halved)"
+   "wx": "95F, wind 2mph (retract: halved)"
   },
   {
    "away": "Miami Marlins",
@@ -52,7 +52,7 @@
    "raw_total": 9.02,
    "adj_total": 9.16,
    "park": "park +1%",
-   "wx": "78F, wind 10mph (retract: halved)"
+   "wx": "78F, wind 9mph (retract: halved)"
   },
   {
    "away": "Washington Nationals",
@@ -63,9 +63,9 @@
    "home_sp": "Jes\u00fas Luzardo",
    "p_home": 57.9,
    "raw_total": 9.68,
-   "adj_total": 10.34,
+   "adj_total": 10.36,
    "park": "park +6%",
-   "wx": "78F, wind 5mph"
+   "wx": "79F, wind 3mph"
   },
   {
    "away": "New York Mets",
@@ -76,9 +76,9 @@
    "home_sp": "Joey Cantillo",
    "p_home": 56.7,
    "raw_total": 8.24,
-   "adj_total": 8.19,
+   "adj_total": 8.2,
    "park": "park -1%",
-   "wx": "74F, wind 1mph"
+   "wx": "75F, wind 1mph"
   },
   {
    "away": "St. Louis Cardinals",
@@ -89,9 +89,9 @@
    "home_sp": "Ryan Weathers",
    "p_home": 56.4,
    "raw_total": 8.74,
-   "adj_total": 9.07,
+   "adj_total": 9.09,
    "park": "park +3%",
-   "wx": "77F, wind 3mph"
+   "wx": "80F, wind 4mph"
   },
   {
    "away": "Minnesota Twins",
@@ -102,7 +102,7 @@
    "home_sp": "Randy Dobnak",
    "p_home": 44.6,
    "raw_total": 9.08,
-   "adj_total": 9.25,
+   "adj_total": 9.24,
    "park": "park neutral [low-conf]",
    "wx": "83F, wind 8mph"
   },
@@ -117,7 +117,7 @@
    "raw_total": 9.3,
    "adj_total": 9.36,
    "park": "park neutral",
-   "wx": "77F, wind 7mph"
+   "wx": "76F, wind 5mph"
   },
   {
    "away": "San Francisco Giants",
@@ -128,9 +128,9 @@
    "home_sp": "MacKenzie Gore",
    "p_home": 53.8,
    "raw_total": 8.47,
-   "adj_total": 8.9,
+   "adj_total": 8.91,
    "park": "park +4%",
-   "wx": "91F, wind 7mph (retract: halved)"
+   "wx": "92F, wind 6mph (retract: halved)"
   },
   {
    "away": "Tampa Bay Rays",
@@ -143,7 +143,7 @@
    "raw_total": 9.04,
    "adj_total": 11.45,
    "park": "park +28%",
-   "wx": "59F, wind 5mph"
+   "wx": "60F, wind 5mph"
   },
   {
    "away": "Detroit Tigers",
@@ -154,9 +154,9 @@
    "home_sp": "Emerson Hancock",
    "p_home": 46.3,
    "raw_total": 8.16,
-   "adj_total": 7.4,
+   "adj_total": 7.43,
    "park": "park -9%",
-   "wx": "61F, wind 4mph (retract: halved)"
+   "wx": "wx fetch failed (URLError)"
   },
   {
    "away": "Toronto Blue Jays",
@@ -169,7 +169,7 @@
    "raw_total": 8.74,
    "adj_total": 8.64,
    "park": "park -2%",
-   "wx": "86F, wind 1mph (retract: halved)"
+   "wx": "87F, wind 2mph (retract: halved)"
   },
   {
    "away": "Athletics",
@@ -180,9 +180,9 @@
    "home_sp": "Brady Singer",
    "p_home": 53.5,
    "raw_total": 9.2,
-   "adj_total": 10.36,
+   "adj_total": 10.37,
    "park": "park +12%",
-   "wx": "75F, wind 2mph"
+   "wx": "76F, wind 3mph"
   },
   {
    "away": "Chicago White Sox",
@@ -193,9 +193,9 @@
    "home_sp": "Patrick Sandoval",
    "p_home": 51.5,
    "raw_total": 8.79,
-   "adj_total": 9.57,
+   "adj_total": 9.58,
    "park": "park +8%",
-   "wx": "78F, wind 7mph"
+   "wx": "79F, wind 6mph"
   }
  ],
  "ratings": [
@@ -394,6 +394,16 @@
  ],
  "edges": [
   {
+   "game": "Detroit Tigers @ Seattle Mariners",
+   "bet": "Detroit Tigers",
+   "price": 120,
+   "book": "FanDuel",
+   "fair": 0.4569,
+   "ev_pct": 0.51,
+   "kelly_frac": 0.00106,
+   "p_model": 53.7
+  },
+  {
    "game": "San Francisco Giants @ Texas Rangers",
    "bet": "San Francisco Giants",
    "price": 180,
@@ -439,6 +449,52 @@
   {
    "legs": [
     {
+     "bet": "Detroit Tigers",
+     "price": 120,
+     "book": "FanDuel"
+    },
+    {
+     "bet": "Kansas City Royals",
+     "price": 134,
+     "book": "FanDuel"
+    }
+   ],
+   "n_legs": 2,
+   "fair_pct": 19.57,
+   "dec": 5.148,
+   "american": 415,
+   "ev_pct": 0.77,
+   "one_book": true,
+   "books": [
+    "FanDuel"
+   ]
+  },
+  {
+   "legs": [
+    {
+     "bet": "Detroit Tigers",
+     "price": 120,
+     "book": "FanDuel"
+    },
+    {
+     "bet": "New York Mets",
+     "price": 140,
+     "book": "FanDuel"
+    }
+   ],
+   "n_legs": 2,
+   "fair_pct": 19.11,
+   "dec": 5.28,
+   "american": 428,
+   "ev_pct": 0.89,
+   "one_book": true,
+   "books": [
+    "FanDuel"
+   ]
+  },
+  {
+   "legs": [
+    {
      "bet": "Kansas City Royals",
      "price": 134,
      "book": "FanDuel"
@@ -454,6 +510,29 @@
    "dec": 5.616,
    "american": 462,
    "ev_pct": 0.64,
+   "one_book": true,
+   "books": [
+    "FanDuel"
+   ]
+  },
+  {
+   "legs": [
+    {
+     "bet": "Detroit Tigers",
+     "price": 120,
+     "book": "FanDuel"
+    },
+    {
+     "bet": "San Francisco Giants",
+     "price": 180,
+     "book": "FanDuel"
+    }
+   ],
+   "n_legs": 2,
+   "fair_pct": 16.36,
+   "dec": 6.16,
+   "american": 516,
+   "ev_pct": 0.81,
    "one_book": true,
    "books": [
     "FanDuel"
@@ -500,6 +579,29 @@
    "dec": 6.72,
    "american": 572,
    "ev_pct": 0.68,
+   "one_book": true,
+   "books": [
+    "FanDuel"
+   ]
+  },
+  {
+   "legs": [
+    {
+     "bet": "Detroit Tigers",
+     "price": 120,
+     "book": "FanDuel"
+    },
+    {
+     "bet": "Washington Nationals",
+     "price": 245,
+     "book": "FanDuel"
+    }
+   ],
+   "n_legs": 2,
+   "fair_pct": 13.24,
+   "dec": 7.59,
+   "american": 659,
+   "ev_pct": 0.53,
    "one_book": true,
    "books": [
     "FanDuel"
@@ -573,118 +675,6 @@
    "books": [
     "FanDuel"
    ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "Kansas City Royals",
-     "price": 134,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "New York Mets",
-     "price": 140,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "San Francisco Giants",
-     "price": 180,
-     "book": "FanDuel"
-    }
-   ],
-   "n_legs": 3,
-   "fair_pct": 6.42,
-   "dec": 15.725,
-   "american": 1472,
-   "ev_pct": 0.94,
-   "one_book": true,
-   "books": [
-    "FanDuel"
-   ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "Kansas City Royals",
-     "price": 134,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "New York Mets",
-     "price": 140,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "Washington Nationals",
-     "price": 245,
-     "book": "FanDuel"
-    }
-   ],
-   "n_legs": 3,
-   "fair_pct": 5.2,
-   "dec": 19.375,
-   "american": 1838,
-   "ev_pct": 0.66,
-   "one_book": true,
-   "books": [
-    "FanDuel"
-   ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "Kansas City Royals",
-     "price": 134,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "San Francisco Giants",
-     "price": 180,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "Washington Nationals",
-     "price": 245,
-     "book": "FanDuel"
-    }
-   ],
-   "n_legs": 3,
-   "fair_pct": 4.45,
-   "dec": 22.604,
-   "american": 2160,
-   "ev_pct": 0.58,
-   "one_book": true,
-   "books": [
-    "FanDuel"
-   ]
-  },
-  {
-   "legs": [
-    {
-     "bet": "New York Mets",
-     "price": 140,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "San Francisco Giants",
-     "price": 180,
-     "book": "FanDuel"
-    },
-    {
-     "bet": "Washington Nationals",
-     "price": 245,
-     "book": "FanDuel"
-    }
-   ],
-   "n_legs": 3,
-   "fair_pct": 4.34,
-   "dec": 23.184,
-   "american": 2218,
-   "ev_pct": 0.7,
-   "one_book": true,
-   "books": [
-    "FanDuel"
-   ]
   }
  ],
  "near_parlays": [],
@@ -698,25 +688,25 @@
    "venue": "Citizens Bank Park",
    "slot": 3,
    "hr_pct": 36.2,
-   "hr_raw": 32.0,
+   "hr_raw": 32.3,
    "fair": "+177",
    "park": "park +9%",
-   "temp": "78F",
+   "temp": "79F",
    "sp_fac": 1.52,
    "sp_small": false,
    "plat": "LvR +8%",
    "heat": "heat +4%",
    "pen": "pen 1.43x",
    "brl": "brl -7%",
-   "szn": "szn -27%",
+   "szn": "szn -28%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 148,
    "book": "betrivers",
-   "ev_pct": -45.6,
-   "hr_model": 21.9,
+   "ev_pct": -45.2,
+   "hr_model": 22.1,
    "base_self": 21.6,
-   "edge_self": 0.3,
+   "edge_self": 0.5,
    "spot": ""
   },
   {
@@ -728,25 +718,25 @@
    "venue": "Wrigley Field",
    "slot": 3,
    "hr_pct": 31.1,
-   "hr_raw": 25.3,
+   "hr_raw": 24.9,
    "fair": "+221",
    "park": "park avg",
-   "temp": "77F \u00b7 wind out 6",
+   "temp": "76F",
    "sp_fac": 1.11,
    "sp_small": false,
    "plat": "LvR +8%",
    "heat": "heat +11%",
    "pen": "pen 1.30x",
    "brl": "",
-   "szn": "szn -27%",
+   "szn": "szn -26%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 188,
    "book": "betrivers",
-   "ev_pct": -47.1,
-   "hr_model": 18.4,
+   "ev_pct": -47.8,
+   "hr_model": 18.1,
    "base_self": 19.9,
-   "edge_self": -1.5,
+   "edge_self": -1.8,
    "spot": ""
   },
   {
@@ -761,7 +751,7 @@
    "hr_raw": 29.0,
    "fair": "+246",
    "park": "park +3%",
-   "temp": "86F (roof: half)",
+   "temp": "87F (roof: half)",
    "sp_fac": 0.86,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -791,7 +781,7 @@
    "hr_raw": 26.7,
    "fair": "+251",
    "park": "park +9%",
-   "temp": "59F \u00b7 wind in 4",
+   "temp": "60F \u00b7 wind in 4",
    "sp_fac": 0.85,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -821,7 +811,7 @@
    "hr_raw": 28.2,
    "fair": "+290",
    "park": "park +9%",
-   "temp": "59F \u00b7 wind in 4",
+   "temp": "60F \u00b7 wind in 4",
    "sp_fac": 1.0,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -833,7 +823,7 @@
    "b_src": "mrc",
    "book_price": 250,
    "book": "betrivers",
-   "ev_pct": -30.2,
+   "ev_pct": -30.3,
    "hr_model": 19.9,
    "base_self": 21.6,
    "edge_self": -1.8,
@@ -848,10 +838,10 @@
    "venue": "Citizens Bank Park",
    "slot": 2,
    "hr_pct": 24.9,
-   "hr_raw": 27.5,
+   "hr_raw": 27.8,
    "fair": "+301",
    "park": "park +9%",
-   "temp": "78F",
+   "temp": "79F",
    "sp_fac": 1.52,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -863,10 +853,10 @@
    "b_src": "mrc",
    "book_price": 260,
    "book": "betrivers",
-   "ev_pct": -29.6,
-   "hr_model": 19.5,
+   "ev_pct": -29.1,
+   "hr_model": 19.7,
    "base_self": 18.5,
-   "edge_self": 1.0,
+   "edge_self": 1.2,
    "spot": ""
   },
   {
@@ -888,12 +878,12 @@
    "heat": "heat +5%",
    "pen": "",
    "brl": "brl -7%",
-   "szn": "szn -12%",
+   "szn": "szn -13%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 270,
    "book": "betrivers",
-   "ev_pct": -41.3,
+   "ev_pct": -41.2,
    "hr_model": 15.9,
    "base_self": null,
    "edge_self": null,
@@ -908,25 +898,25 @@
    "venue": "Truist Park",
    "slot": 1,
    "hr_pct": 24.2,
-   "hr_raw": 28.1,
+   "hr_raw": 27.5,
    "fair": "+313",
    "park": "park +4%",
-   "temp": "79F",
+   "temp": "no wx",
    "sp_fac": 1.08,
    "sp_small": false,
    "plat": "LvR +8%",
    "heat": "heat +3%",
    "pen": "pen 0.71x",
    "brl": "",
-   "szn": "szn -11%",
+   "szn": "szn -8%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 270,
    "book": "betrivers",
-   "ev_pct": -26.5,
-   "hr_model": 19.9,
+   "ev_pct": -27.7,
+   "hr_model": 19.5,
    "base_self": 20.6,
-   "edge_self": -0.7,
+   "edge_self": -1.1,
    "spot": ""
   },
   {
@@ -938,7 +928,7 @@
    "venue": "Oriole Park at Camden Yards",
    "slot": 2,
    "hr_pct": 23.9,
-   "hr_raw": 23.8,
+   "hr_raw": 23.9,
    "fair": "+318",
    "park": "park +4% [low-conf]",
    "temp": "80F \u00b7 wind in 5",
@@ -948,15 +938,15 @@
    "heat": "heat -2%",
    "pen": "",
    "brl": "",
-   "szn": "szn -15%",
+   "szn": "szn -16%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 275,
    "book": "betrivers",
-   "ev_pct": -34.2,
-   "hr_model": 17.5,
+   "ev_pct": -34.1,
+   "hr_model": 17.6,
    "base_self": 19.6,
-   "edge_self": -2.1,
+   "edge_self": -2.0,
    "spot": "floor"
   },
   {
@@ -967,11 +957,11 @@
    "opp_sp": "Blade Tidwell",
    "venue": "Globe Life Field",
    "slot": 7,
-   "hr_pct": 23.3,
+   "hr_pct": 23.6,
    "hr_raw": 14.9,
-   "fair": "+329",
+   "fair": "+324",
    "park": "park +2%",
-   "temp": "91F (roof: half)",
+   "temp": "92F (roof: half)",
    "sp_fac": 1.09,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -981,9 +971,9 @@
    "szn": "szn -22%",
    "lu": "proj",
    "b_src": "mrc",
-   "book_price": 285,
+   "book_price": 280,
    "book": "betrivers",
-   "ev_pct": -52.5,
+   "ev_pct": -53.1,
    "hr_model": 12.3,
    "base_self": null,
    "edge_self": null,
@@ -998,10 +988,10 @@
    "venue": "Great American Ball Park",
    "slot": 2,
    "hr_pct": 22.7,
-   "hr_raw": 22.1,
+   "hr_raw": 22.2,
    "fair": "+340",
    "park": "park +25%",
-   "temp": "75F",
+   "temp": "76F",
    "sp_fac": 1.09,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1013,41 +1003,11 @@
    "b_src": "mrc",
    "book_price": 295,
    "book": "betrivers",
-   "ev_pct": -34.3,
-   "hr_model": 16.6,
+   "ev_pct": -34.2,
+   "hr_model": 16.7,
    "base_self": 19.1,
-   "edge_self": -2.5,
+   "edge_self": -2.4,
    "spot": "floor"
-  },
-  {
-   "player": "Jake Burger",
-   "team": "TEX",
-   "opp": "SFG",
-   "game_id": "822865",
-   "opp_sp": "Blade Tidwell",
-   "venue": "Globe Life Field",
-   "slot": 2,
-   "hr_pct": 22.4,
-   "hr_raw": 20.6,
-   "fair": "+346",
-   "park": "park +2%",
-   "temp": "91F (roof: half)",
-   "sp_fac": 1.09,
-   "sp_small": false,
-   "plat": "RvR -3%",
-   "heat": "",
-   "pen": "pen 0.83x",
-   "brl": "",
-   "szn": "szn -13%",
-   "lu": "proj",
-   "b_src": "mrc",
-   "book_price": 300,
-   "book": "betrivers",
-   "ev_pct": -36.7,
-   "hr_model": 15.8,
-   "base_self": null,
-   "edge_self": null,
-   "spot": "new"
   },
   {
    "player": "Joc Pederson",
@@ -1061,7 +1021,7 @@
    "hr_raw": 20.8,
    "fair": "+346",
    "park": "park +2%",
-   "temp": "91F (roof: half)",
+   "temp": "92F (roof: half)",
    "sp_fac": 1.09,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1088,26 +1048,56 @@
    "venue": "Truist Park",
    "slot": 4,
    "hr_pct": 22.4,
-   "hr_raw": 18.1,
+   "hr_raw": 17.6,
    "fair": "+346",
    "park": "park +4%",
-   "temp": "79F",
+   "temp": "no wx",
    "sp_fac": 1.13,
    "sp_small": false,
    "plat": "LvR +8%",
    "heat": "heat -7%",
    "pen": "",
    "brl": "",
-   "szn": "szn -16%",
+   "szn": "szn -14%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 300,
    "book": "betrivers",
-   "ev_pct": -42.2,
-   "hr_model": 14.5,
+   "ev_pct": -43.2,
+   "hr_model": 14.2,
    "base_self": null,
    "edge_self": null,
    "spot": "new"
+  },
+  {
+   "player": "Max Muncy",
+   "team": "LAD",
+   "opp": "CHC",
+   "game_id": "824645",
+   "opp_sp": "Javier Assad",
+   "venue": "Wrigley Field",
+   "slot": 5,
+   "hr_pct": 22.4,
+   "hr_raw": 20.8,
+   "fair": "+346",
+   "park": "park avg",
+   "temp": "76F",
+   "sp_fac": 1.11,
+   "sp_small": false,
+   "plat": "LvR +8%",
+   "heat": "heat +6%",
+   "pen": "pen 1.30x",
+   "brl": "",
+   "szn": "szn -21%",
+   "lu": "proj",
+   "b_src": "mrc",
+   "book_price": 300,
+   "book": "betrivers",
+   "ev_pct": -36.2,
+   "hr_model": 15.9,
+   "base_self": 20.8,
+   "edge_self": -4.8,
+   "spot": "floor"
   },
   {
    "player": "JJ Bleday",
@@ -1121,7 +1111,7 @@
    "hr_raw": 23.8,
    "fair": "+357",
    "park": "park +25%",
-   "temp": "75F",
+   "temp": "76F",
    "sp_fac": 1.1,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1133,41 +1123,41 @@
    "b_src": "mrc",
    "book_price": 310,
    "book": "betrivers",
-   "ev_pct": -28.2,
+   "ev_pct": -28.1,
    "hr_model": 17.5,
    "base_self": 20.6,
    "edge_self": -3.1,
    "spot": "floor"
   },
   {
-   "player": "Max Muncy",
-   "team": "LAD",
-   "opp": "CHC",
-   "game_id": "824645",
-   "opp_sp": "Javier Assad",
-   "venue": "Wrigley Field",
-   "slot": 5,
+   "player": "Jake Burger",
+   "team": "TEX",
+   "opp": "SFG",
+   "game_id": "822865",
+   "opp_sp": "Blade Tidwell",
+   "venue": "Globe Life Field",
+   "slot": 2,
    "hr_pct": 21.9,
-   "hr_raw": 21.2,
+   "hr_raw": 20.6,
    "fair": "+357",
-   "park": "park avg",
-   "temp": "77F \u00b7 wind out 6",
-   "sp_fac": 1.11,
+   "park": "park +2%",
+   "temp": "92F (roof: half)",
+   "sp_fac": 1.09,
    "sp_small": false,
-   "plat": "LvR +8%",
-   "heat": "heat +6%",
-   "pen": "pen 1.30x",
+   "plat": "RvR -3%",
+   "heat": "",
+   "pen": "pen 0.83x",
    "brl": "",
-   "szn": "szn -22%",
+   "szn": "szn -13%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 310,
    "book": "betrivers",
-   "ev_pct": -33.9,
-   "hr_model": 16.1,
-   "base_self": 20.8,
-   "edge_self": -4.6,
-   "spot": "floor"
+   "ev_pct": -35.1,
+   "hr_model": 15.8,
+   "base_self": null,
+   "edge_self": null,
+   "spot": "new"
   },
   {
    "player": "Mike Trout",
@@ -1193,8 +1183,8 @@
    "b_src": "mrc",
    "book_price": 325,
    "book": "betrivers",
-   "ev_pct": -28.5,
-   "hr_model": 16.8,
+   "ev_pct": -28.4,
+   "hr_model": 16.9,
    "base_self": 19.6,
    "edge_self": -2.8,
    "spot": "floor"
@@ -1211,7 +1201,7 @@
    "hr_raw": 28.9,
    "fair": "+379",
    "park": "park +25%",
-   "temp": "75F",
+   "temp": "76F",
    "sp_fac": 1.1,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -1223,7 +1213,7 @@
    "b_src": "mrc",
    "book_price": 330,
    "book": "betrivers",
-   "ev_pct": -12.8,
+   "ev_pct": -12.7,
    "hr_model": 20.3,
    "base_self": 21.2,
    "edge_self": -0.9,
@@ -1238,10 +1228,10 @@
    "venue": "Fenway Park",
    "slot": 4,
    "hr_pct": 20.6,
-   "hr_raw": 19.2,
+   "hr_raw": 19.3,
    "fair": "+385",
    "park": "park -7%",
-   "temp": "78F \u00b7 wind out 6",
+   "temp": "79F \u00b7 wind out 6",
    "sp_fac": 0.89,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -1253,7 +1243,7 @@
    "b_src": "mrc",
    "book_price": 335,
    "book": "betrivers",
-   "ev_pct": -34.4,
+   "ev_pct": -34.3,
    "hr_model": 15.1,
    "base_self": 20.3,
    "edge_self": -5.2,
@@ -1268,25 +1258,25 @@
    "venue": "Yankee Stadium",
    "slot": 1,
    "hr_pct": 20.4,
-   "hr_raw": 29.9,
+   "hr_raw": 30.2,
    "fair": "+391",
    "park": "park +14%",
-   "temp": "77F",
+   "temp": "80F",
    "sp_fac": 0.95,
    "sp_small": false,
    "plat": "LvR +8%",
    "heat": "",
    "pen": "pen 0.94x",
    "brl": "",
-   "szn": "szn -14%",
+   "szn": "szn -15%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 340,
    "book": "betrivers",
-   "ev_pct": -8.3,
-   "hr_model": 20.9,
+   "ev_pct": -7.7,
+   "hr_model": 21.0,
    "base_self": 20.5,
-   "edge_self": 0.4,
+   "edge_self": 0.5,
    "spot": ""
   },
   {
@@ -1328,10 +1318,10 @@
    "venue": "Great American Ball Park",
    "slot": 2,
    "hr_pct": 20.4,
-   "hr_raw": 24.0,
+   "hr_raw": 24.1,
    "fair": "+391",
    "park": "park +25%",
-   "temp": "75F",
+   "temp": "76F",
    "sp_fac": 1.1,
    "sp_small": false,
    "plat": "SvR +8%",
@@ -1343,7 +1333,7 @@
    "b_src": "mrc",
    "book_price": 340,
    "book": "betrivers",
-   "ev_pct": -22.3,
+   "ev_pct": -22.2,
    "hr_model": 17.7,
    "base_self": 20.0,
    "edge_self": -2.3,
@@ -1358,25 +1348,25 @@
    "venue": "Yankee Stadium",
    "slot": 3,
    "hr_pct": 20.4,
-   "hr_raw": 21.3,
+   "hr_raw": 21.5,
    "fair": "+391",
    "park": "park +14%",
-   "temp": "77F",
+   "temp": "80F",
    "sp_fac": 1.13,
    "sp_small": false,
    "plat": "RvL +12%",
    "heat": "heat -3%",
    "pen": "pen 0.91x",
    "brl": "brl +12%",
-   "szn": "szn -18%",
+   "szn": "szn -19%",
    "lu": "proj",
    "b_src": "mrc",
    "book_price": 340,
    "book": "betrivers",
-   "ev_pct": -28.7,
-   "hr_model": 16.2,
+   "ev_pct": -28.3,
+   "hr_model": 16.3,
    "base_self": 20.3,
-   "edge_self": -4.1,
+   "edge_self": -4.0,
    "spot": "floor"
   },
   {
@@ -1388,10 +1378,10 @@
    "venue": "Kauffman Stadium",
    "slot": 4,
    "hr_pct": 20.4,
-   "hr_raw": 21.2,
+   "hr_raw": 21.1,
    "fair": "+391",
    "park": "park -4% [low-conf]",
-   "temp": "83F \u00b7 wind out 5",
+   "temp": "83F \u00b7 wind out 3",
    "sp_fac": 0.98,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1403,7 +1393,7 @@
    "b_src": "mrc",
    "book_price": 340,
    "book": "betrivers",
-   "ev_pct": -29.0,
+   "ev_pct": -29.2,
    "hr_model": 16.1,
    "base_self": 20.1,
    "edge_self": -4.0,
@@ -1421,7 +1411,7 @@
    "hr_raw": 14.4,
    "fair": "+391",
    "park": "park +9%",
-   "temp": "59F \u00b7 wind in 4",
+   "temp": "60F \u00b7 wind in 4",
    "sp_fac": 1.0,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1433,7 +1423,7 @@
    "b_src": "mrc",
    "book_price": 340,
    "book": "betrivers",
-   "ev_pct": -48.4,
+   "ev_pct": -48.5,
    "hr_model": 11.7,
    "base_self": 21.6,
    "edge_self": -9.9,
@@ -1451,7 +1441,7 @@
    "hr_raw": 15.1,
    "fair": "+391",
    "park": "park +2%",
-   "temp": "91F (roof: half)",
+   "temp": "92F (roof: half)",
    "sp_fac": 1.09,
    "sp_small": false,
    "plat": "RvR -3%",
@@ -1481,7 +1471,7 @@
    "hr_raw": 28.6,
    "fair": "+397",
    "park": "park +25%",
-   "temp": "75F",
+   "temp": "76F",
    "sp_fac": 1.09,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1507,7 +1497,7 @@
    "hr_raw": 15.3,
    "fair": "+402",
    "park": "park -4%",
-   "temp": "61F \u00b7 wind in 3 (roof: half)",
+   "temp": "62F \u00b7 wind in 3 (roof: half)",
    "sp_fac": 1.0,
    "sp_small": false,
    "plat": "",
@@ -1519,8 +1509,8 @@
    "b_src": "mrc",
    "book_price": 350,
    "book": "betrivers",
-   "ev_pct": -42.7,
-   "hr_model": 12.7,
+   "ev_pct": -42.6,
+   "hr_model": 12.8,
    "base_self": null,
    "edge_self": null,
    "spot": "new"
@@ -1537,7 +1527,7 @@
    "hr_raw": 17.1,
    "fair": "+413",
    "park": "park +2%",
-   "temp": "91F (roof: half)",
+   "temp": "92F (roof: half)",
    "sp_fac": 1.09,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1564,10 +1554,10 @@
    "venue": "Kauffman Stadium",
    "slot": 2,
    "hr_pct": 19.5,
-   "hr_raw": 20.9,
+   "hr_raw": 20.8,
    "fair": "+413",
    "park": "park -4% [low-conf]",
-   "temp": "83F \u00b7 wind out 5",
+   "temp": "83F \u00b7 wind out 3",
    "sp_fac": 1.14,
    "sp_small": false,
    "plat": "LvR +8%",
@@ -1579,10 +1569,10 @@
    "b_src": "mrc",
    "book_price": 360,
    "book": "betrivers",
-   "ev_pct": -26.5,
-   "hr_model": 16.0,
+   "ev_pct": -26.7,
+   "hr_model": 15.9,
    "base_self": 17.1,
-   "edge_self": -1.1,
+   "edge_self": -1.2,
    "spot": ""
   }
  ],
@@ -1921,16 +1911,16 @@
   "live_to": "2026-08-03"
  },
  "futures": {
-  "generated": "2026-08-04T14:51:10+00:00",
+  "generated": "2026-08-04T15:40:26+00:00",
   "market": "World Series",
   "rows": [
    {
     "team": "Los Angeles Dodgers",
     "cons_pct": 31.2,
     "fair": "+221",
-    "best_price": 160,
+    "best_price": 155,
     "book": "fanduel",
-    "edge_pct": -19.0,
+    "edge_pct": -20.6,
     "any_price": 165,
     "any_book": "betonlineag",
     "books_n": 5,
@@ -1939,10 +1929,10 @@
    {
     "team": "New York Yankees",
     "cons_pct": 11.8,
-    "fair": "+744",
+    "fair": "+748",
     "best_price": 600,
     "book": "fanduel",
-    "edge_pct": -17.1,
+    "edge_pct": -17.4,
     "any_price": 600,
     "any_book": "betonlineag",
     "books_n": 5,
@@ -1950,11 +1940,11 @@
    },
    {
     "team": "Milwaukee Brewers",
-    "cons_pct": 8.3,
-    "fair": "+1102",
+    "cons_pct": 8.4,
+    "fair": "+1096",
     "best_price": 950,
     "book": "fanduel",
-    "edge_pct": -12.7,
+    "edge_pct": -12.2,
     "any_price": 950,
     "any_book": "draftkings",
     "books_n": 5,
@@ -1963,10 +1953,10 @@
    {
     "team": "Atlanta Braves",
     "cons_pct": 7.5,
-    "fair": "+1232",
-    "best_price": 950,
+    "fair": "+1235",
+    "best_price": 1000,
     "book": "fanduel",
-    "edge_pct": -21.2,
+    "edge_pct": -17.6,
     "any_price": 1000,
     "any_book": "betrivers",
     "books_n": 5,
@@ -1975,10 +1965,10 @@
    {
     "team": "Tampa Bay Rays",
     "cons_pct": 5.2,
-    "fair": "+1823",
+    "fair": "+1813",
     "best_price": 1600,
     "book": "fanduel",
-    "edge_pct": -11.6,
+    "edge_pct": -11.2,
     "any_price": null,
     "any_book": null,
     "books_n": 5,
@@ -1988,21 +1978,21 @@
     "team": "Boston Red Sox",
     "cons_pct": 5.1,
     "fair": "+1879",
-    "best_price": 1700,
+    "best_price": 1600,
     "book": "fanduel",
-    "edge_pct": -9.0,
-    "any_price": null,
-    "any_book": null,
+    "edge_pct": -14.1,
+    "any_price": 1600,
+    "any_book": "betrivers",
     "books_n": 5,
     "shop": false
    },
    {
     "team": "Chicago Cubs",
-    "cons_pct": 4.4,
-    "fair": "+2181",
-    "best_price": 1800,
+    "cons_pct": 4.6,
+    "fair": "+2053",
+    "best_price": 1600,
     "book": "fanduel",
-    "edge_pct": -16.7,
+    "edge_pct": -21.0,
     "any_price": 2000,
     "any_book": "betrivers",
     "books_n": 5,
@@ -2015,8 +2005,8 @@
     "best_price": 1800,
     "book": "fanduel",
     "edge_pct": -17.4,
-    "any_price": 1900,
-    "any_book": "betmgm",
+    "any_price": 1800,
+    "any_book": "betonlineag",
     "books_n": 5,
     "shop": false
    },
@@ -2046,11 +2036,11 @@
    },
    {
     "team": "Chicago White Sox",
-    "cons_pct": 2.4,
-    "fair": "+3987",
+    "cons_pct": 2.6,
+    "fair": "+3734",
     "best_price": 3000,
     "book": "fanduel",
-    "edge_pct": -24.2,
+    "edge_pct": -19.1,
     "any_price": 4000,
     "any_book": "betrivers",
     "books_n": 5,
@@ -2059,10 +2049,10 @@
    {
     "team": "Cleveland Guardians",
     "cons_pct": 2.3,
-    "fair": "+4228",
+    "fair": "+4205",
     "best_price": 3300,
     "book": "fanduel",
-    "edge_pct": -21.4,
+    "edge_pct": -21.0,
     "any_price": 4000,
     "any_book": "betonlineag",
     "books_n": 5,
@@ -2071,10 +2061,10 @@
    {
     "team": "Texas Rangers",
     "cons_pct": 2.0,
-    "fair": "+4823",
+    "fair": "+4866",
     "best_price": 4000,
     "book": "fanduel",
-    "edge_pct": -16.7,
+    "edge_pct": -17.4,
     "any_price": 5000,
     "any_book": "betmgm",
     "books_n": 5,
@@ -2084,21 +2074,9 @@
     "team": "San Diego Padres",
     "cons_pct": 1.1,
     "fair": "+9299",
-    "best_price": 7000,
+    "best_price": 7500,
     "book": "fanduel",
-    "edge_pct": -24.5,
-    "any_price": 8000,
-    "any_book": "betonlineag",
-    "books_n": 5,
-    "shop": false
-   },
-   {
-    "team": "Arizona Diamondbacks",
-    "cons_pct": 1.0,
-    "fair": "+9626",
-    "best_price": 8000,
-    "book": "fanduel",
-    "edge_pct": -16.7,
+    "edge_pct": -19.1,
     "any_price": 8000,
     "any_book": "betonlineag",
     "books_n": 5,
@@ -2107,12 +2085,24 @@
    {
     "team": "Minnesota Twins",
     "cons_pct": 1.0,
-    "fair": "+9637",
+    "fair": "+9587",
     "best_price": 6000,
     "book": "fanduel",
-    "edge_pct": -37.4,
+    "edge_pct": -37.0,
     "any_price": 12500,
     "any_book": "betrivers",
+    "books_n": 5,
+    "shop": false
+   },
+   {
+    "team": "Arizona Diamondbacks",
+    "cons_pct": 1.0,
+    "fair": "+9587",
+    "best_price": 8000,
+    "book": "fanduel",
+    "edge_pct": -16.4,
+    "any_price": 8000,
+    "any_book": "betonlineag",
     "books_n": 5,
     "shop": false
    },
@@ -2129,25 +2119,25 @@
     "shop": false
    },
    {
-    "team": "Detroit Tigers",
+    "team": "Baltimore Orioles",
     "cons_pct": 0.7,
-    "fair": "+15047",
-    "best_price": 10000,
+    "fair": "+15187",
+    "best_price": 12500,
     "book": "fanduel",
-    "edge_pct": -33.3,
-    "any_price": 20000,
+    "edge_pct": -17.6,
+    "any_price": 15000,
     "any_book": "betrivers",
     "books_n": 5,
     "shop": false
    },
    {
-    "team": "Baltimore Orioles",
+    "team": "Detroit Tigers",
     "cons_pct": 0.7,
-    "fair": "+15161",
-    "best_price": 12500,
+    "fair": "+14969",
+    "best_price": 10000,
     "book": "fanduel",
-    "edge_pct": -17.4,
-    "any_price": 15000,
+    "edge_pct": -33.0,
+    "any_price": 20000,
     "any_book": "betrivers",
     "books_n": 5,
     "shop": false
@@ -2155,10 +2145,10 @@
    {
     "team": "Toronto Blue Jays",
     "cons_pct": 0.6,
-    "fair": "+18052",
+    "fair": "+17958",
     "best_price": 12500,
     "book": "fanduel",
-    "edge_pct": -30.6,
+    "edge_pct": -30.2,
     "any_price": 20000,
     "any_book": "betonlineag",
     "books_n": 5,
@@ -2168,9 +2158,9 @@
     "team": "Miami Marlins",
     "cons_pct": 0.5,
     "fair": "+21048",
-    "best_price": 35000,
+    "best_price": 30000,
     "book": "fanduel",
-    "edge_pct": 66.0,
+    "edge_pct": 42.3,
     "any_price": null,
     "any_book": null,
     "books_n": 5,
@@ -2180,13 +2170,13 @@
     "team": "St. Louis Cardinals",
     "cons_pct": 0.2,
     "fair": "+49493",
-    "best_price": 60000,
+    "best_price": 50000,
     "book": "fanduel",
-    "edge_pct": 21.2,
+    "edge_pct": 1.0,
     "any_price": null,
     "any_book": null,
     "books_n": 5,
-    "shop": true
+    "shop": false
    },
    {
     "team": "Washington Nationals",
@@ -2201,7 +2191,7 @@
     "shop": true
    },
    {
-    "team": "San Francisco Giants",
+    "team": "New York Mets",
     "cons_pct": 0.1,
     "fair": "+90858",
     "best_price": 100000,
@@ -2211,6 +2201,18 @@
     "any_book": null,
     "books_n": 5,
     "shop": true
+   },
+   {
+    "team": "Kansas City Royals",
+    "cons_pct": 0.1,
+    "fair": "+119611",
+    "best_price": 100000,
+    "book": "fanduel",
+    "edge_pct": -16.4,
+    "any_price": 100000,
+    "any_book": "betonlineag",
+    "books_n": 5,
+    "shop": false
    },
    {
     "team": "Cincinnati Reds",
@@ -2225,31 +2227,7 @@
     "shop": true
    },
    {
-    "team": "Kansas City Royals",
-    "cons_pct": 0.1,
-    "fair": "+120094",
-    "best_price": 100000,
-    "book": "fanduel",
-    "edge_pct": -16.7,
-    "any_price": 100000,
-    "any_book": "betonlineag",
-    "books_n": 5,
-    "shop": false
-   },
-   {
-    "team": "New York Mets",
-    "cons_pct": 0.1,
-    "fair": "+90858",
-    "best_price": 100000,
-    "book": "fanduel",
-    "edge_pct": 10.1,
-    "any_price": null,
-    "any_book": null,
-    "books_n": 5,
-    "shop": true
-   },
-   {
-    "team": "Los Angeles Angels",
+    "team": "San Francisco Giants",
     "cons_pct": 0.1,
     "fair": "+90858",
     "best_price": 100000,
@@ -2273,12 +2251,24 @@
     "shop": true
    },
    {
-    "team": "Colorado Rockies",
+    "team": "Los Angeles Angels",
     "cons_pct": 0.1,
-    "fair": "+120094",
+    "fair": "+90858",
     "best_price": 100000,
     "book": "fanduel",
-    "edge_pct": -16.7,
+    "edge_pct": 10.1,
+    "any_price": null,
+    "any_book": null,
+    "books_n": 5,
+    "shop": true
+   },
+   {
+    "team": "Colorado Rockies",
+    "cons_pct": 0.1,
+    "fair": "+119611",
+    "best_price": 100000,
+    "book": "fanduel",
+    "edge_pct": -16.4,
     "any_price": 100000,
     "any_book": "betonlineag",
     "books_n": 5,
