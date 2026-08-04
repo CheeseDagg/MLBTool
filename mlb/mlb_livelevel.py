@@ -64,7 +64,13 @@ def load_days(path=GRADED):
         if r.get("outcome") not in ("hr", "no"):
             continue
         try:
-            p = float(r["hr_pct"]) / 100.0
+            # ANCHORED ROWS (2026-08-04+): priced rows publish a market-anchored
+            # hr_pct and keep the model's own number in hr_model. The live-level k
+            # multiplies the MODEL's output, so it must be fit against the model's
+            # number — fitting against market-published rows would blame or credit
+            # the model for the book's level and bias k toward 1.
+            v = str(r.get("hr_model", "") or "").strip()
+            p = float(v if v else r["hr_pct"]) / 100.0
         except (TypeError, ValueError):
             continue
         by[r["date"]].append((p, 1.0 * (r["outcome"] == "hr")))

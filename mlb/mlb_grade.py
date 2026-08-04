@@ -30,8 +30,8 @@ import urllib.request, urllib.parse
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 PLOG = os.path.join(DATA, "hr_predictions.csv")
 GRADED = os.path.join(DATA, "hr_graded.csv")
-GCOLS = ["date","player","team","game_id","opp_sp","slot","lu","hr_pct","hr_raw","fair",
-         "book_price","ev_pct","park","temp","plat","heat","outcome","hr_n"]
+GCOLS = ["date","player","team","game_id","opp_sp","slot","lu","hr_pct","hr_raw","hr_model",
+         "fair","book_price","ev_pct","park","temp","plat","heat","outcome","hr_n"]
 
 LEAGUE = os.path.join(DATA, "league_daily.csv")
 LCOLS = ["date", "games", "pa", "hr"]
@@ -142,9 +142,10 @@ def _gens():
     identified without trusting the header line. Add a column here when you add one
     to GCOLS; the assert in _rows_by_width fires if two generations ever collide.
     """
-    return [GCOLS,                                                  # 18: +game_id (2026-08-03)
-            [c for c in GCOLS if c != "game_id"],                   # 17: +hr_raw  (2026-07-23)
-            [c for c in GCOLS if c not in ("game_id", "hr_raw")]]   # 16: original
+    return [GCOLS,                                                          # 19: +hr_model (2026-08-04)
+            [c for c in GCOLS if c != "hr_model"],                          # 18: +game_id  (2026-08-03)
+            [c for c in GCOLS if c not in ("hr_model", "game_id")],         # 17: +hr_raw   (2026-07-23)
+            [c for c in GCOLS if c not in ("hr_model", "game_id", "hr_raw")]]  # 16: original
 
 def _rows_by_width(path):
     """Parse a graded CSV whose header may be STALE, one row at a time by width.
@@ -412,6 +413,16 @@ def _dec(am):
         a = int(am);  return a/100+1 if a > 0 else 100/(-a)+1
     except Exception: return None
 
+def _model_pct(r):
+    """The MODEL's number for a graded row. Since 2026-08-04 priced rows publish a
+    market-anchored hr_pct (mlb_hr MKT_W) and keep the model's own calibrated
+    number in hr_model; before that (and on unpriced rows) hr_pct IS the model.
+    Screens defined as statements about the MODEL (top-of-board, model+market
+    agreement) must read this, or they quietly become rankings of the book's own
+    prices instead of tests of the model."""
+    v = str(r.get("hr_model", "") or "").strip()
+    return float(v) if v else float(r["hr_pct"])
+
 def summarize(rows):
     """rows: graded dicts (outcome in hr/no/void). -> panel dict (JSON-safe)."""
     live = [r for r in rows if r.get("outcome") in ("hr","no")]
@@ -538,7 +549,9 @@ def summarize(rows):
         by_date.setdefault(r["date"], []).append(r)
     tops = []
     for d0, rows_d in by_date.items():
-        tops += sorted(rows_d, key=lambda r: -float(r["hr_pct"]))[:5]
+        # top-5 by the MODEL's number (hr_model on anchored rows) — sorting on the
+        # published hr_pct would, post-anchor, just pick the book's shortest prices
+        tops += sorted(rows_d, key=lambda r: -_model_pct(r))[:5]
     if tops:
         pl = 0.0
         for r in tops:
@@ -573,7 +586,7 @@ def summarize(rows):
     # subset that has ever been above water here (7/22, +7.5% on the first
     # sample) — consistent with "short prices hit", NOT proof of an edge. It is
     # tracked so its sample can grow into a verdict instead of an anecdote.
-    ag = [r for r in pr if float(r["hr_pct"]) >= 20 and (_dec(r["book_price"]) or 99) <= _dec(300)]
+    ag = [r for r in pr if _model_pct(r) >= 20 and (_dec(r["book_price"]) or 99) <= _dec(300)]
     if ag:
         pl = 0.0
         for r in ag:
@@ -583,6 +596,19 @@ def summarize(rows):
         panel["agree_tier"] = {"n": len(ag),
                                "hits": sum(1 for r in ag if r["outcome"] == "hr"),
                                "roi": round(100 * pl / len(ag), 1)}
+    # ANCHOR GRADE (2026-08-04): priced rows publish a market-anchored hr_pct and
+    # keep the model's own number in hr_model, so the blend is itself on the
+    # ledger and gets graded here — Brier of what the board PUBLISHED vs Brier of
+    # what the model would have said, same rows, head-to-head. This is the number
+    # that decides whether MKT_W stays where it is (see mlb_hr --refit-anchor).
+    anch = [r for r in live if str(r.get("hr_model", "") or "").strip() != ""]
+    if anch:
+        pa = [float(r["hr_pct"]) / 100 for r in anch]
+        pm = [float(r["hr_model"]) / 100 for r in anch]
+        ya = [1.0 if r["outcome"] == "hr" else 0.0 for r in anch]
+        panel["anchor_tier"] = {"n": len(anch),
+            "brier_published": round(sum((a-b)**2 for a,b in zip(pa,ya))/len(anch), 4),
+            "brier_model":     round(sum((a-b)**2 for a,b in zip(pm,ya))/len(anch), 4)}
     return panel
 
 # ---------------------------------------------------------------------------
@@ -871,6 +897,32 @@ def selftest():
     tt = p["top_tier"]
     assert tt["n"]==2 and tt["hits"]==1 and tt["roi"]==50.0, tt
     json.dumps(p)
+    # MARKET ANCHOR (2026-08-04): a priced row publishes an anchored hr_pct and
+    # carries the model's own number in hr_model. The panel must (a) grade the
+    # published number against the model number head-to-head, and (b) keep the
+    # model-defined screens reading hr_model — the top-of-board tier must rank G
+    # (model 30) over H (model 18) even though H's PUBLISHED number is higher.
+    a_rows = [
+        row(player="G", hr_pct="21.4", hr_model="30", outcome="hr", ev_pct="26.0",
+            book_price="280", game_id="1"),
+        row(player="H", hr_pct="28.0", hr_model="18", outcome="no", ev_pct="-10.0",
+            book_price="220", game_id="1"),
+    ]
+    pa = summarize(a_rows)
+    at = pa["anchor_tier"]
+    assert at["n"] == 2
+    assert at["brier_published"] == round(((0.214-1)**2 + 0.28**2)/2, 4), at
+    assert at["brier_model"]     == round(((0.30-1)**2 + 0.18**2)/2, 4), at
+    # published (market) lost this pair on purpose: the grade must be able to say so
+    assert at["brier_published"] > at["brier_model"], at
+    assert _model_pct(a_rows[0]) == 30.0 and _model_pct(row(player="X", hr_pct="12")) == 12.0
+    tops_pair = summarize(a_rows + [row(player="I", hr_pct="25", hr_model="10",
+                                        outcome="no", book_price="150", game_id="1")])
+    # top-5 window fits all 3 here, but agree_tier (model>=20, price<=+300) must
+    # read the MODEL number: only G qualifies (model 30, +280) — H's published 28
+    # with model 18 must NOT sneak in. 1 hit at +280 pays +2.8u on 1u -> ROI +280%
+    agt = tops_pair["agree_tier"]
+    assert agt["n"] == 1 and agt["hits"] == 1 and agt["roi"] == 280.0, agt
     # HEADER DRIFT: a ledger written under an OLD header, then appended to under a
     # NEW GCOLS, must survive. This is the 2026-07-23 hr_raw incident pinned: the
     # old migration keyed on "hr_n" in the header and so was blind to any later
@@ -882,7 +934,7 @@ def selftest():
     # The header written here is the ORIGINAL 16-column generation. Beneath it sit
     # one 16-wide row (which it describes) and one 17-wide row from after hr_raw was
     # added (which it does not) — the exact on-disk state that lost a week of grading.
-    _gen16 = [c for c in GCOLS if c not in ("game_id", "hr_raw")]
+    _gen16 = [c for c in GCOLS if c not in ("hr_model", "game_id", "hr_raw")]
     assert len(_gen16) == 16, _gen16
     with open(_drift, "w", newline="") as f:
         w = csv.writer(f); w.writerow(_gen16)

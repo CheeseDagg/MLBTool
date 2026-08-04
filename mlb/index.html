@@ -363,16 +363,16 @@ function renderHomers(){
   const th=(k,label,cls,tip)=>`<th class="${cls}" style="cursor:pointer" title="${tip||'click to sort'}" onclick="hrSort('${k}')">${label}${arrow(k)}</th>`;
   $('hrNote').textContent=HRD.note;
   $('hrBody').innerHTML=`<table><tr><th>batter</th><th class="hide-m">vs starter</th>
-  ${th('hr_pct','model HR%','num','the model\'s chance this batter homers today — the board is ranked on this. Click to sort.')}<th></th>
+  ${th('hr_pct','HR%','num','the chance this batter homers today — the board is ranked on this. Priced rows publish the de-vigged FanDuel/book number (the graded record says the market beats the model wherever they disagree); unpriced rows are the model\'s own number. Click to sort.')}<th></th>
   <th class="num" title="TRACK RECORD — this is about PAST rows, not about this batter. Read it as 'said X% &rarr; hit Y%': of every graded row where the model said roughly what it is saying here, that is what it predicted and that is how often one actually went out. Red means the model ran hot at this level. It is a report card on the number to its left, NOT a competing forecast. — means fewer than ${(HRREL&&HRREL.min_n)||30} graded rows in that bucket, too few to quote.">track record<br><span class="dim" style="font-weight:400">said &rarr; hit</span></th>
   ${th('edge_self','spot','','SPOT: today vs this batter\'s OWN recent median (last 8 boards). STANDOUT = a genuinely elevated day; floor = a normal-or-worse day for a name that is always near the top; new = no history yet. Click to sort by how far above his own norm he is.')}
-  ${th('fair','fair','num','FAIR: the model\'s number written as a price. It is hr_pct in odds form and nothing more, so sorting it sorts the board identically to model HR%.')}`+
+  ${th('fair','fair','num','FAIR: the published HR% written as a price (the market-anchored number on priced rows, the model\'s on the rest). It is hr_pct in odds form and nothing more, so sorting it sorts the board identically to HR%.')}`+
   (hasBook?`<th class="num" title="PRICE: FanDuel's number, because that is the only one you can act on. If FanDuel has no line the cell shows the best price posted elsewhere, greyed and labelled with the book, so you know it is unavailable rather than missing. This column is where the bet lives — it is NOT a claim the bet is good.">price <span class="dim" style="font-weight:400">FD</span></th>`:``)+
   `<th class="hide-m">applied</th></tr>`+
   rows.map(r=>`<tr>
     <td>${r.player}<br><span class="dim">${r.team} · #${r.slot}</span></td>
     <td class="hide-m dim">${r.opp_sp}<br>vs ${r.opp} <span class="dim" ${r.sp_small?`title="starter under 60 BF — components mostly league-average by design" style="color:var(--acc)"`:``}>(sp ${r.sp_fac}x${r.sp_small?` · small n`:``})</span></td>
-    <td class="num"><b>${r.hr_pct}%</b></td>
+    <td class="num" ${r.hr_model!==undefined&&r.hr_model!==null?`title="market-anchored: this is the de-vigged market price as a probability. The model's own number is ${r.hr_model}% — on 163 graded priced rows the market beat the model wherever they disagreed, so the board publishes the market and logs both."`:''}><b>${r.hr_pct}%</b>${r.hr_model!==undefined&&r.hr_model!==null?`<br><span class="dim" style="font-weight:400">mkt · model ${r.hr_model}%</span>`:''}</td>
     <td>${bar(Math.min(r.hr_pct*2.2,100))}</td>
     ${relCell(r.hr_pct)}
     ${spotCell(r)}
@@ -642,6 +642,9 @@ function render(d){
         + `The model cannot beat FanDuel's homer prices — and the curve above shows the pattern: `
         + `<b>the bigger the edge the model claims over the book, the LESS often the guy homers</b>. `
         + `A big claimed edge is the model being wrong, not the book. `
+        + `<b>Acted on as of Aug 4:</b> priced rows now publish the de-vigged market number instead of the model's `
+        + `(walk-forward on all 163 priced graded rows put the best model weight at 0.00 — market Brier .0856 vs model .0936); `
+        + `the model's own number stays on each row's tooltip and in the ledger as hr_model, so the anchor itself gets graded. `
         + `What this board is good for: the <b>order</b> is real (the calibration line above) — the top names really are `
         + `the most likely homers tonight. If you want a homer leg that <b>hits</b>, take a top-of-board name `
         + `<b>only when FanDuel also makes him a favorite to that tier</b> (short HR price, +250 or less): that is the `

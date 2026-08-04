@@ -143,6 +143,60 @@ SEASON_W  = 0.6   # weight on the bat's CURRENT-SEASON rate vs the model's talen
 SEASON_K  = 250   # PA of league rate the season term is shrunk with (insensitive 170-380 in test)
 SEASON_MIN_PA = 60  # below this the season sample is noise - blend inactive
 
+# --- MARKET ANCHOR (2026-08-04) ---------------------------------------------
+# Where a book has priced the prop, the PUBLISHED hr_pct is a logit-space blend
+#     logit(p_pub) = MKT_W * logit(p_model) + (1 - MKT_W) * logit(p_market)
+# of the calibrated model number and the de-vigged market number. The model's own
+# number stays on the row as hr_model and keeps being logged and graded.
+#
+# WHY. The graded ledger's claimed-edge curve is a winner's-curse signature: hit
+# rate DECAYS as the model's claimed EV over the book rises (16.4% at negative
+# claimed EV -> 5.0% at 30%+). The model's biggest disagreements with the book
+# are its biggest errors. Measured walk-forward BY DATE on the 163 priced graded
+# rows (train = all earlier priced dates, w on a 0..1 grid, refit each date):
+#
+#   date        n   w_fit  Brier model  Brier market  Brier blend
+#   2026-07-08  31  0.00     .19082       .18615        .18615
+#   2026-07-09  33  0.00     .09973       .08610        .08610
+#   2026-08-01  35  0.00     .06613       .06184        .06184
+#   2026-08-02  34  0.00     .02724       .01777        .01777
+#   pooled     133           .09359       .08557        .08557
+#   clean subset (>=2026-08-01, re-pulled prices): model .04697, market .04012
+#
+# The fitted model weight is 0.00 at EVERY walk-forward step, on leave-one-date-
+# out, on the clean subset alone, and on 94% of 400 bootstrap resamples (90% CI
+# [0.00, 0.05]); Brier and log-loss are both monotone increasing in model weight.
+# The market beats the model outright wherever both speak, so MKT_W ships at the
+# measured value. 163 rows is small — refit as the priced ledger grows:
+#     python mlb_hr.py --refit-anchor      # reprints the walk-forward table + w
+# (monthly, or whenever ~100 new priced rows have graded).
+#
+# DE-VIG. The ledger logs only the Yes side, so two-way normalization
+# (mlb_lineshop.devig_two_way) is unavailable. Books juice Yes-side HR props
+# 8-15% (see HONEST SCOPING above); the haircut divides the vig-implied
+# probability by (1 + MKT_HOLD) with MKT_HOLD at the midpoint of that band.
+# On the graded sample the market's Brier is insensitive to the exact haircut
+# (.0859 at 8%, .0853 at 11.5%, .0848 at 15%) — every value in the band beats
+# the model, so the midpoint is not doing the work.
+MKT_HOLD = 0.115  # single-sided Yes-price de-vig haircut: p = implied/(1+hold)
+MKT_W    = 0.0    # model weight in the published blend. MEASURED, not chosen:
+                  # walk-forward w_fit was 0.00 at every step (see table above).
+                  # Raise only on a re-measured walk-forward win, never on taste.
+
+def market_prob(american, hold=MKT_HOLD):
+    """Yes-side American price -> de-vigged market P(HR). Single-sided haircut."""
+    a = float(american)
+    imp = 100.0 / (a + 100.0) if a >= 0 else (-a) / ((-a) + 100.0)
+    return imp / (1.0 + hold)
+
+def anchor_prob(p_model, book_am, w=MKT_W, hold=MKT_HOLD):
+    """Blend the model prob toward the de-vigged market prob in logit space.
+    w=1 returns the model untouched; w=0 publishes the market number."""
+    pm = min(max(float(p_model), 1e-6), 1 - 1e-6)
+    pk = min(max(market_prob(book_am, hold), 1e-6), 1 - 1e-6)
+    z = w * math.log(pm / (1 - pm)) + (1 - w) * math.log(pk / (1 - pk))
+    return 1.0 / (1.0 + math.exp(-z))
+
 def pull_barrels():
     """Savant barrels-per-PA leaderboard -> {mlbam_id: brl_pa_pct}. One request,
     same host pattern as the xwOBA pull already running in this Action."""
@@ -330,7 +384,11 @@ def _spot_history(plog_path, today):
                 if r.get("date") == today:
                     continue
                 try:
-                    v = float(r["hr_pct"])
+                    # the spot baseline tracks the MODEL's own read: anchored rows
+                    # (2026-08-04+) log the model number in hr_model, older rows'
+                    # hr_pct IS the model. Reading published hr_pct here would mix
+                    # the book's price moves into a model-vs-own-norm signal.
+                    v = float((r.get("hr_model") or "").strip() or r["hr_pct"])
                 except (KeyError, ValueError, TypeError):
                     continue
                 hist.setdefault(r["player"], []).append((r.get("date", ""), v))
@@ -348,7 +406,7 @@ def annotate_spots(rows, plog_path, today):
             r["base_self"], r["edge_self"], r["spot"] = None, None, "new"
             continue
         base = _spot_median(vals)
-        d = round(r["hr_pct"] - base, 1)
+        d = round(r.get("hr_model", r["hr_pct"]) - base, 1)   # model vs own model norm
         r["base_self"] = round(base, 1)
         r["edge_self"] = d
         r["spot"] = "STANDOUT" if d >= SPOT_STANDOUT else ("floor" if d <= SPOT_FLOOR else "")
@@ -1027,7 +1085,23 @@ def build_board(batters, pitchers, sched, temps, props=None, hands=None, heats=N
                         # computed against a price you cannot take is a number
                         # about somebody else's bet.
                         use = pr.get("my_price", pr["price"])
+                        # ev_pct stays the MODEL's claim (model p vs the bettable
+                        # price), deliberately: it feeds the graded claimed-edge
+                        # curve (mlb_grade ev_curve), which is the instrument that
+                        # caught the winner's curse and must keep grading the model
+                        # even now that the published number is anchored.
                         row["ev_pct"] = round((p_game * dec_from_am(use) - 1) * 100, 1)
+                        # MARKET ANCHOR (see MKT_W above): the published hr_pct on
+                        # a priced row is the blend; the model's own calibrated
+                        # number moves to hr_model so the board can show it and the
+                        # ledger can keep grading model vs blend head-to-head.
+                        # Anchored to book_price (the best logged Yes price — the
+                        # same field the walk-forward was measured on). pull_props
+                        # is date-filtered, so any price here is same-day.
+                        row["hr_model"] = row["hr_pct"]
+                        p_pub = anchor_prob(p_game, row["book_price"])
+                        row["hr_pct"] = round(p_pub * 100, 1)
+                        row["fair"] = am_from_p(p_pub)
                 rows.append(row)
 
     have_ev = any("ev_pct" in r for r in rows)
@@ -1431,6 +1505,67 @@ def load_board(data_dir):
         return [], f"hr_board read error: {type(e).__name__}"
 
 # ---------------------------------------------------------------------------
+# MARKET-ANCHOR REFIT: the walk-forward that set MKT_W, re-runnable as the
+# priced ledger grows.  python mlb_hr.py --refit-anchor
+def anchor_walkforward(pts, grid_step=0.05):
+    """pts: [(date, p_model, book_american, hit01)]. Walk-forward by date:
+    fit w on all EARLIER dates (Brier-minimizing grid), score the current one.
+    Returns (per_date_table, pooled) — pure, no I/O, selftest-covered."""
+    def _brier(triples, w):
+        return sum((anchor_prob(pm, am, w) - y) ** 2 for _, pm, am, y in triples) / len(triples)
+    def _fit(train):
+        best = None
+        w = 0.0
+        while w <= 1.0 + 1e-9:
+            b = _brier(train, w)
+            if best is None or b < best[1] - 1e-12: best = (w, b)
+            w += grid_step
+        return best[0]
+    dates = sorted({d for d, *_ in pts})
+    table, pool = [], []
+    for i, d in enumerate(dates):
+        train = [p for p in pts if p[0] < d]
+        test = [p for p in pts if p[0] == d]
+        if not train:      # first priced date has nothing leak-free to fit on
+            continue
+        w = _fit(train)
+        table.append({"date": d, "n": len(test), "w": round(w, 2),
+                      "brier_model": round(_brier(test, 1.0), 5),
+                      "brier_market": round(_brier(test, 0.0), 5),
+                      "brier_blend": round(_brier(test, w), 5)})
+        pool += [(w, p) for p in test]
+    pooled = None
+    if pool:
+        n = len(pool)
+        pooled = {"n": n,
+                  "brier_model": round(sum((anchor_prob(pm, am, 1.0) - y) ** 2 for _, (_, pm, am, y) in pool) / n, 5),
+                  "brier_market": round(sum((anchor_prob(pm, am, 0.0) - y) ** 2 for _, (_, pm, am, y) in pool) / n, 5),
+                  "brier_blend": round(sum((anchor_prob(pm, am, w) - y) ** 2 for w, (_, pm, am, y) in pool) / n, 5),
+                  "w_final": _fit(pts)}
+    return table, pooled
+
+def refit_anchor():
+    """Print the walk-forward table off the graded ledger; suggest MKT_W."""
+    import mlb_grade
+    pts = []
+    for r in mlb_grade.read_graded():
+        if r.get("outcome") not in ("hr", "no"): continue
+        bp = str(r.get("book_price", "")).strip()
+        src = str(r.get("hr_model", "")).strip() or str(r.get("hr_pct", "")).strip()
+        if not bp or not src: continue
+        pts.append((r["date"], float(src) / 100.0, float(bp), 1.0 if r["outcome"] == "hr" else 0.0))
+    if not pts:
+        print("no priced graded rows"); return
+    table, pooled = anchor_walkforward(pts)
+    print(f"{len(pts)} priced graded rows over {len({d for d,*_ in pts})} date(s)")
+    print("date        n   w_fit  Brier model  Brier market  Brier blend")
+    for t in table:
+        print(f"{t['date']}  {t['n']:3d}  {t['w']:.2f}   {t['brier_model']:.5f}      {t['brier_market']:.5f}       {t['brier_blend']:.5f}")
+    if pooled:
+        print(f"pooled     {pooled['n']:3d}         {pooled['brier_model']:.5f}      {pooled['brier_market']:.5f}       {pooled['brier_blend']:.5f}")
+        print(f"all-data fitted w = {pooled['w_final']:.2f}  (shipping MKT_W = {MKT_W:g}; update only on a walk-forward win)")
+
+# ---------------------------------------------------------------------------
 def selftest():
     # ---- HOT-HAND LEAK GUARD ------------------------------------------------
     # The board is rebuilt four times a day and mlb_grade.py settles TODAY's
@@ -1482,10 +1617,14 @@ def selftest():
     for r in rows:
         assert 0.0 < r["hr_pct"] < 60.0, f"prob out of range: {r}"
     top = {r["player"]: r for r in rows}
+    # MODEL number per row: on priced rows the published hr_pct is market-anchored
+    # and the model's own number moves to hr_model — assertions about what the
+    # MODEL thinks must read that field. Unpriced rows: hr_pct IS the model.
+    mp = lambda r: r.get("hr_model", r["hr_pct"])
     # 1. batter ordering survives the pipeline
-    assert top["Slug McPower"]["hr_pct"] > top["Mid Bat"]["hr_pct"] > top["Slap Hitter"]["hr_pct"]
+    assert mp(top["Slug McPower"]) > mp(top["Mid Bat"]) > mp(top["Slap Hitter"])
     # 2. shrinkage: 5 HR in 40 PA must NOT beat the proven elite bat
-    assert top["Tiny Sample"]["hr_pct"] < top["Slug McPower"]["hr_pct"]
+    assert mp(top["Tiny Sample"]) < mp(top["Slug McPower"])
     # 3. facing the gopher-baller (NYY bats vs Gary... wait: NYY face away? home bats face away_sp)
     #    home lineup (NYY) faces away_sp = Gopher Gary; away lineup (BOS) faces Ace.
     nyy_sp = [r for r in rows if r["team"] == "NYY"][0]["sp_fac"]
@@ -1501,10 +1640,42 @@ def selftest():
     sched_orc = [dict(sched[0], venue="Oracle Park")]
     r_orc, _ = build_board(bat, pit, sched_orc, {"Oracle Park": (88.0, "open")})
     o = {r["player"]: r["hr_pct"] for r in r_orc}
-    assert o["Slug McPower"] < top["Slug McPower"]["hr_pct"], "park factor not applied"
+    assert o["Slug McPower"] < mp(top["Slug McPower"]), "park factor not applied"
     # 6. props EV wiring
     ev_row = top["Slug McPower"]
     assert have_ev and "ev_pct" in ev_row and ev_row["book"] == "testbook"
+    # 6b. MARKET ANCHOR wiring: the priced row publishes the blend, keeps the
+    #     model number, and reprices `fair` off the published number; unpriced
+    #     rows carry no hr_model and are untouched.
+    assert "hr_model" in ev_row and "hr_model" not in top["Mid Bat"]
+    _want = round(anchor_prob(ev_row["hr_model"] / 100.0, 320) * 100, 1)
+    assert ev_row["hr_pct"] == _want, (ev_row["hr_pct"], _want)
+    # fair is repriced off the published (anchored) prob — unrounded upstream, so
+    # allow the 0.1pp display rounding of hr_pct when reconstructing it here
+    assert abs(int(ev_row["fair"]) - int(am_from_p(ev_row["hr_pct"] / 100.0))) <= 3, ev_row["fair"]
+    # ev_pct stays the MODEL's claim (the winner's-curse instrument), not the blend's
+    assert abs(ev_row["ev_pct"] - (ev_row["hr_model"]/100.0 * dec_from_am(320) - 1) * 100) < 0.3
+    # anchor math: w=0 publishes the de-vigged market number exactly; w=1 the model;
+    # the haircut divides the vig-implied prob by (1 + MKT_HOLD)
+    assert abs(market_prob(320) - (100.0/420.0) / 1.115) < 1e-12
+    assert abs(anchor_prob(0.30, 320, w=0.0) - market_prob(320)) < 1e-12
+    assert abs(anchor_prob(0.30, 320, w=1.0) - 0.30) < 1e-12
+    _mid = anchor_prob(0.30, 320, w=0.5)
+    assert market_prob(320) < _mid < 0.30, "w=0.5 must land between market and model"
+    # walk-forward refit harness: on a synthetic ledger where outcomes run near
+    # the market number and the model runs 2x hot, the fitted w must collapse
+    # toward the market and the blend must beat the model on every held-out date;
+    # the first date has no training data and must be excluded, not leaked.
+    _pts = []
+    for di, d in enumerate(["2026-07-0%d" % k for k in range(1, 6)]):
+        for j in range(20):
+            am = 300 + 10 * j
+            _pts.append((d, min(0.9, market_prob(am) * 2.0), am, 1.0 if (j + di) % 5 == 0 else 0.0))
+    _tab, _pool = anchor_walkforward(_pts)
+    assert len(_tab) == 4 and all(t["w"] <= 0.2 for t in _tab), _tab
+    assert all(t["brier_blend"] < t["brier_model"] for t in _tab), _tab
+    assert _pool["brier_blend"] <= _pool["brier_model"] and _pool["w_final"] <= 0.2, _pool
+    assert _tab[0]["date"] == "2026-07-02", "first priced date must not self-train"
     # 7. slot PA math: slot 1 must project above same-rate slot 9 (use fillers)
     # 8. JSON-serializable
     json.dumps(rows)
@@ -1798,7 +1969,8 @@ def _build():
             "wind: direction x park bearing (conf-shrunk) · park HR factors are seed approximations "
             "(conf-shrunk; refresh from Savant) · temp vs flat 70F baseline (mildly double-counts "
             "warm-climate open parks) · " + pnote +
-            (" · ranked by model HR%, most likely first" if have_ev
+            (" · ranked by HR%, most likely first · priced rows publish the de-vigged market number"
+             f" (walk-forward w={MKT_W:g} on the model; model's own number kept as hr_model)" if have_ev
              else " · ranked by model HR%, most likely first (no props matched)"))
     out = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
            "note": note, "rows": rows}
@@ -1810,7 +1982,7 @@ def _build():
         import csv
         plog = os.path.join(DATA, "hr_predictions.csv")
         today = dt.date.today().isoformat()
-        hdr = ["date","player","team","game_id","opp_sp","slot","lu","hr_pct","hr_raw","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
+        hdr = ["date","player","team","game_id","opp_sp","slot","lu","hr_pct","hr_raw","hr_model","fair","book_price","ev_pct","park","temp","plat","heat","edge_self","spot"]
         old_rows = []
         if os.path.exists(plog):
             with open(plog) as f:
@@ -1822,7 +1994,8 @@ def _build():
                 w.writerow({"date": today, "player": r["player"], "team": r["team"],
                             "game_id": r.get("game_id",""),
                             "opp_sp": r["opp_sp"], "slot": r["slot"], "lu": r.get("lu",""),
-                            "hr_pct": r["hr_pct"], "hr_raw": r.get("hr_raw",""), "fair": r["fair"],
+                            "hr_pct": r["hr_pct"], "hr_raw": r.get("hr_raw",""),
+                            "hr_model": r.get("hr_model",""), "fair": r["fair"],
                             "book_price": r.get("book_price",""), "ev_pct": r.get("ev_pct",""),
                             "park": r["park"], "temp": r["temp"], "plat": r.get("plat",""),
                             "heat": r.get("heat",""),
@@ -1837,6 +2010,8 @@ def _build():
 def main():
     if "--selftest" in sys.argv:
         sys.exit(selftest())
+    if "--refit-anchor" in sys.argv:
+        sys.exit(refit_anchor())
     try:
         _build()
     except SystemExit:
