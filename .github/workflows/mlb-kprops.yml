@@ -3,8 +3,10 @@ name: MLB K props
 # odds across the books with the same double-gate as HR Shop. Runs after the
 # daily slate exists; same afternoon/evening cadence as the HR line shop.
 on:
-  schedule:
-    - cron: "10 18,21,23 * * *"   # 10 past, offset from the HR shop runs
+  # SCHEDULE OFF 2026-08-04: pitcher props are excluded from betting by standing
+  # instruction, yet this cron was the single biggest consumer of the shared
+  # Odds API quota (~15 events x several credits, three times a day) and helped
+  # drain the month's credits in two days. On-demand triggers remain below.
   workflow_dispatch: {}
   push:
     paths:

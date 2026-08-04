@@ -4,7 +4,10 @@ name: MLB HR line shop
 # move — line shopping + stale-line catching. Needs the ODDS_API_KEY secret.
 on:
   schedule:
-    - cron: "0 18,21,23 * * *"   # 18/21/23 UTC ~ afternoon to evening ET, as slates set
+    # ONE run a day (was three): each run pulls props for every game and the
+    # shared Odds API quota died in two days at the old cadence. 21:00 UTC =
+    # 5pm ET, when evening slates are priced and lineups near-final.
+    - cron: "0 21 * * *"
   workflow_dispatch: {}
 permissions:
   contents: write
