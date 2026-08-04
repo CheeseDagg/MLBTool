@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T18:49:04+00:00",
+ "generated": "2026-08-04T21:33:36+00:00",
  "date": "2026-08-04",
  "min_pa": 6,
  "rows": [
@@ -79,17 +79,6 @@
    "hr": 1,
    "avg": ".286",
    "slg": ".714"
-  },
-  {
-   "batter": "Gabriel Moreno",
-   "team": "AZ",
-   "opp_sp": "Randy V\u00e1squez",
-   "pa": 11,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".667"
   },
   {
    "batter": "Carter Jensen",
