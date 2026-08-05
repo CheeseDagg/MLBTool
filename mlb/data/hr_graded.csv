@@ -839,3 +839,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-03,Trea Turner,PHI,823431,Andrew Alvarez,1,card,14.7,18.5,,+581,425,-22.9,park +9%,84F,RvL +12%,heat -0%,no,0
 2026-08-03,Wyatt Langford,TEX,822867,Logan Webb,2,card,14.7,18.5,,+581,380,-29.6,park +2%,100F (roof: half),RvR -3%,heat -6%,no,0
 2026-08-03,Andy Pages,LAD,824647,Matthew Boyd,2,card,14.5,18.3,,+587,475,-16.3,park avg,75F · wind in 5,RvL +12%,heat -3%,no,0
+2026-08-04,Kyle Schwarber,PHI,823432,Carson Palmquist,1,card,35.2,32.4,22.2,+184,155,-43.4,park +9%,86F,LvL -22%,heat +6%,no,0
+2026-08-04,Shohei Ohtani,LAD,824645,Javier Assad,1,card,30.1,28.2,19.9,+232,198,-40.7,park avg,78F,LvR +8%,heat +11%,no,0
+2026-08-04,Junior Caminero,TBR,824321,Gabriel Hughes,1,proj,28.9,28.0,19.8,+246,210,-38.6,park +9%,74F,RvR -3%,heat +1%,no,0
+2026-08-04,Yordan Alvarez,HOU,824161,Trey Yesavage,2,card,27.6,27.7,19.6,+262,225,-36.1,park +3%,95F · wind out 5 (roof: half),LvR +8%,heat -7%,no,0
+2026-08-04,Bryce Harper,PHI,823432,Carson Palmquist,3,card,25.3,22.9,17.0,+296,255,-39.5,park +9%,86F,LvL -22%,heat +10%,no,0
+2026-08-04,Max Muncy,LAD,824645,Javier Assad,4,card,24.6,22.1,16.6,+307,265,-39.3,park avg,78F,LvR +8%,,no,0
+2026-08-04,Hunter Goodman,COL,824321,Freddy Peralta,4,card,23.6,26.0,18.7,+324,280,-28.8,park +9%,74F,RvR -3%,heat +5%,no,0
+2026-08-04,Pete Alonso,BAL,824805,Grayson Rodriguez,2,card,23.6,24.4,17.9,+324,280,-32.2,park +4% [low-conf],86F,RvR -3%,heat -2%,no,0
+2026-08-04,Matt Olson,ATL,824888,Ryan Gusto,3,card,23.0,24.6,18.0,+335,290,-29.9,park +4%,80F,LvR +8%,heat +3%,no,0
+2026-08-04,Brandon Lowe,PIT,823756,Logan Henderson,2,proj,21.9,22.9,17.1,+357,310,-30.1,park +9%,85F (roof: half),LvR +8%,heat +11%,no,0
+2026-08-04,Tyler Soderstrom,ATH,824484,Brady Singer,3,card,21.9,21.3,16.2,+357,310,-33.6,park +25%,86F,LvR +8%,heat -3%,no,0
+2026-08-04,Corey Seager,TEX,822865,Blade Tidwell,3,card,21.4,20.2,15.6,+368,320,-34.6,park +2%,101F · wind in 5 (roof: half),LvR +8%,,no,0
+2026-08-04,Gunnar Henderson,BAL,824805,Grayson Rodriguez,3,card,21.4,18.4,14.6,+368,320,-38.6,park +4% [low-conf],86F,LvR +8%,heat +5%,no,0
+2026-08-04,JJ Bleday,CIN,824484,J.T. Ginn,3,card,21.4,24.5,17.9,+368,320,-24.8,park +25%,86F,LvR +8%,heat -10%,no,0
+2026-08-04,Kyle Stowers,MIA,824888,Grant Holmes,1,card,21.4,22.3,16.7,+368,320,-29.7,park +4%,80F,LvR +8%,heat -7%,no,0
+2026-08-04,Mike Trout,LAA,824805,Cade Povich,2,card,21.1,24.5,17.9,+374,325,-23.8,park +4% [low-conf],86F,RvL +12%,,no,0
+2026-08-04,Wyatt Langford,TEX,822865,Blade Tidwell,2,card,21.1,20.4,15.7,+374,325,-33.3,park +2%,101F · wind in 5 (roof: half),RvR -3%,,no,0
+2026-08-04,Ben Rice,NYY,823517,Hunter Dobbins,2,card,20.9,27.7,19.7,+379,330,-15.4,park +14%,no wx,LvR +8%,,no,0
+2026-08-04,Joc Pederson,TEX,822865,Blade Tidwell,1,card,20.9,25.6,18.5,+379,330,-20.3,park +2%,101F · wind in 5 (roof: half),LvR +8%,,no,0
+2026-08-04,Jordan Walker,STL,823517,Ryan Weathers,2,card,20.9,22.5,16.9,+379,330,-27.5,park +14%,no wx,RvL +12%,heat -3%,void,
+2026-08-04,Elly De La Cruz,CIN,824484,J.T. Ginn,1,card,20.4,26.5,19.0,+391,340,-16.4,park +25%,86F,SvR +8%,heat -3%,no,0
+2026-08-04,Riley Greene,DET,823108,Emerson Hancock,2,proj,19.9,18.1,14.5,+402,350,-34.8,park -4%,75F (roof: half),LvR +8%,heat +4%,hr,1
+2026-08-04,Sal Stewart,CIN,824484,J.T. Ginn,2,card,19.9,27.9,19.8,+402,350,-11.0,park +25%,86F,RvR -3%,heat -5%,no,0
+2026-08-04,Willson Contreras,BOS,824731,Davis Martin,4,card,19.9,19.7,15.3,+402,350,-31.0,park -7%,86F · wind out 7,RvR -3%,heat +1%,no,0
+2026-08-04,Zach Neto,LAA,824805,Cade Povich,1,card,19.9,23.4,17.3,+402,350,-22.2,park +4% [low-conf],86F,RvL +12%,,no,0
+2026-08-04,Mickey Moniak,COL,824321,Freddy Peralta,3,card,19.5,23.6,17.4,+413,360,-19.7,park +9%,74F,LvR +8%,heat -3%,hr,1
+2026-08-04,Bobby Witt Jr.,KCR,824084,Joe Ryan,2,card,19.1,19.2,15.1,+424,370,-29.2,park -4% [low-conf],92F,RvR -3%,heat +3%,no,0
+2026-08-04,Carter Jensen,KCR,824084,Joe Ryan,1,card,19.1,22.7,16.9,+424,370,-20.4,park -4% [low-conf],92F,LvR +8%,heat +8%,no,0
+2026-08-04,Cedric Mullins,TBR,824321,Gabriel Hughes,5,proj,19.1,12.4,9.9,+424,370,-53.6,park +9%,74F,LvR +8%,,no,0
+2026-08-04,Christian Encarnacion-Strand,BAL,824805,Grayson Rodriguez,4,card,19.1,26.7,19.1,+424,370,-10.2,park +4% [low-conf],86F,RvR -3%,,no,0

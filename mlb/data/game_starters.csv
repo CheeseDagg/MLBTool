@@ -2075,18 +2075,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-03,Toronto Blue Jays,Houston Astros,Shane Bieber,Cristian Javier,3,1,Final
 2026-08-03,Tampa Bay Rays,Colorado Rockies,Ian Seymour,Michael Lorenzen,13,9,Final
 2026-08-03,San Diego Padres,Arizona Diamondbacks,Michael King,Brandon Pfaadt,1,5,Final
-2026-08-04,Los Angeles Angels,Baltimore Orioles,Grayson Rodriguez,Cade Povich,0,0,Pre-Game
-2026-08-04,New York Mets,Cleveland Guardians,Sean Manaea,Joey Cantillo,0,0,Pre-Game
-2026-08-04,Athletics,Cincinnati Reds,J.T. Ginn,Brady Singer,0,0,Pre-Game
-2026-08-04,Washington Nationals,Philadelphia Phillies,Carson Palmquist,Jesús Luzardo,0,0,Pre-Game
-2026-08-04,St. Louis Cardinals,New York Yankees,Hunter Dobbins,Ryan Weathers,0,0,Pre-Game
-2026-08-04,Chicago White Sox,Boston Red Sox,Davis Martin,Patrick Sandoval,0,0,Pre-Game
-2026-08-04,Miami Marlins,Atlanta Braves,Ryan Gusto,Grant Holmes,0,0,Pre-Game
-2026-08-04,Minnesota Twins,Kansas City Royals,Joe Ryan,Randy Dobnak,0,0,Pre-Game
-2026-08-04,Pittsburgh Pirates,Milwaukee Brewers,Jared Jones,Logan Henderson,0,0,Pre-Game
-2026-08-04,Los Angeles Dodgers,Chicago Cubs,Tarik Skubal,Javier Assad,0,0,Pre-Game
-2026-08-04,San Francisco Giants,Texas Rangers,Blade Tidwell,MacKenzie Gore,0,0,Pre-Game
-2026-08-04,Toronto Blue Jays,Houston Astros,Trey Yesavage,Hayden Wesneski,0,0,Pre-Game
-2026-08-04,Tampa Bay Rays,Colorado Rockies,Freddy Peralta,Gabriel Hughes,0,0,Pre-Game
-2026-08-04,San Diego Padres,Arizona Diamondbacks,Randy Vásquez,Eduardo Rodriguez,0,0,Scheduled
-2026-08-04,Detroit Tigers,Seattle Mariners,Troy Melton,Emerson Hancock,0,0,Scheduled
+2026-08-04,Los Angeles Angels,Baltimore Orioles,Grayson Rodriguez,Cade Povich,1,3,Final
+2026-08-04,New York Mets,Cleveland Guardians,Sean Manaea,Joey Cantillo,6,2,Final
+2026-08-04,Athletics,Cincinnati Reds,J.T. Ginn,Brady Singer,4,5,Final
+2026-08-04,Washington Nationals,Philadelphia Phillies,Carson Palmquist,Jesús Luzardo,0,5,Final
+2026-08-04,St. Louis Cardinals,New York Yankees,Hunter Dobbins,Ryan Weathers,0,2,Final
+2026-08-04,Chicago White Sox,Boston Red Sox,Davis Martin,Patrick Sandoval,2,14,Final
+2026-08-04,Miami Marlins,Atlanta Braves,Ryan Gusto,Grant Holmes,2,4,Final
+2026-08-04,Minnesota Twins,Kansas City Royals,Joe Ryan,Randy Dobnak,2,8,Final
+2026-08-04,Pittsburgh Pirates,Milwaukee Brewers,Jared Jones,Logan Henderson,2,4,Final
+2026-08-04,Los Angeles Dodgers,Chicago Cubs,Tarik Skubal,Javier Assad,1,5,Final
+2026-08-04,San Francisco Giants,Texas Rangers,Blade Tidwell,MacKenzie Gore,4,5,Final
+2026-08-04,Toronto Blue Jays,Houston Astros,Trey Yesavage,Hayden Wesneski,2,7,Final
+2026-08-04,Tampa Bay Rays,Colorado Rockies,Freddy Peralta,Gabriel Hughes,9,7,Final
+2026-08-04,San Diego Padres,Arizona Diamondbacks,Randy Vásquez,Eduardo Rodriguez,9,4,Final
+2026-08-04,Detroit Tigers,Seattle Mariners,Troy Melton,Emerson Hancock,8,0,Final
+2026-08-05,Toronto Blue Jays,Houston Astros,Jameson Taillon,Hunter Brown,0,0,Scheduled
+2026-08-05,Los Angeles Dodgers,Chicago Cubs,Eric Lauer,Shota Imanaga,0,0,Scheduled
+2026-08-05,San Francisco Giants,Texas Rangers,Carson Whisenhunt,Cody Bradford,0,0,Scheduled
+2026-08-05,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,0,0,Scheduled
+2026-08-05,Los Angeles Angels,Baltimore Orioles,Reid Detmers,Trevor Rogers,0,0,Scheduled
+2026-08-05,New York Mets,Cleveland Guardians,Christian Scott,Tanner Bibee,0,0,Scheduled
+2026-08-05,Athletics,Cincinnati Reds,Jacob Lopez,Rhett Lowder,0,0,Scheduled
+2026-08-05,Washington Nationals,Philadelphia Phillies,Jake Irvin,Andrew Painter,0,0,Scheduled
+2026-08-05,St. Louis Cardinals,New York Yankees,Andre Pallante,Will Warren,0,0,Scheduled
+2026-08-05,Chicago White Sox,Boston Red Sox,Sean Burke,Sonny Gray,0,0,Scheduled
+2026-08-05,Miami Marlins,Atlanta Braves,Eury Pérez,Bryce Elder,0,0,Scheduled
+2026-08-05,Minnesota Twins,Kansas City Royals,Dean Kremer,Noah Cameron,0,0,Scheduled
+2026-08-05,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,Kyle Harrison,0,0,Scheduled
+2026-08-05,San Diego Padres,Arizona Diamondbacks,Casey Mize,Mitch Bratt,0,0,Scheduled
+2026-08-05,Detroit Tigers,Seattle Mariners,Drew Anderson,Bryan Woo,0,0,Scheduled
