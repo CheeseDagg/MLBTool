@@ -1,19 +1,8 @@
 {
- "generated": "2026-08-05T18:48:13+00:00",
+ "generated": "2026-08-05T21:31:11+00:00",
  "date": "2026-08-05",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Tommy Edman",
-   "team": "LAD",
-   "opp_sp": "Shota Imanaga",
-   "pa": 9,
-   "ab": 9,
-   "h": 4,
-   "hr": 3,
-   "avg": ".444",
-   "slg": "1.444"
-  },
   {
    "batter": "Drake Baldwin",
    "team": "ATL",
@@ -59,37 +48,103 @@
    "slg": "1.071"
   },
   {
-   "batter": "Andy Pages",
-   "team": "LAD",
-   "opp_sp": "Shota Imanaga",
+   "batter": "Nathan Lukes",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
    "pa": 9,
-   "ab": 8,
-   "h": 3,
+   "ab": 6,
+   "h": 2,
    "hr": 1,
-   "avg": ".375",
-   "slg": ".875"
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Kazuma Okamoto",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Jes\u00fas S\u00e1nchez",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "George Springer",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Brandon Valenzuela",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Josh Smith",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Ernie Clement",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
   },
   {
    "batter": "Andr\u00e9s Gim\u00e9nez",
    "team": "TOR",
    "opp_sp": "Hunter Brown",
-   "pa": 7,
+   "pa": 9,
    "ab": 6,
    "h": 2,
    "hr": 1,
    "avg": ".333",
-   "slg": ".833"
+   "slg": "1.000"
   },
   {
-   "batter": "Max Muncy",
-   "team": "LAD",
-   "opp_sp": "Shota Imanaga",
-   "pa": 8,
-   "ab": 5,
-   "h": 1,
+   "batter": "Myles Straw",
+   "team": "TOR",
+   "opp_sp": "Hunter Brown",
+   "pa": 9,
+   "ab": 6,
+   "h": 2,
    "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
+   "avg": ".333",
+   "slg": "1.000"
   },
   {
    "batter": "Ryan McMahon",
@@ -112,61 +167,6 @@
    "hr": 1,
    "avg": ".286",
    "slg": ".714"
-  },
-  {
-   "batter": "George Springer",
-   "team": "TOR",
-   "opp_sp": "Hunter Brown",
-   "pa": 11,
-   "ab": 10,
-   "h": 4,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".700"
-  },
-  {
-   "batter": "Jose Altuve",
-   "team": "HOU",
-   "opp_sp": "Jameson Taillon",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
-  },
-  {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Dean Kremer",
-   "pa": 12,
-   "ab": 11,
-   "h": 3,
-   "hr": 1,
-   "avg": ".273",
-   "slg": ".636"
-  },
-  {
-   "batter": "Heliot Ramos",
-   "team": "NYY",
-   "opp_sp": "Andre Pallante",
-   "pa": 8,
-   "ab": 8,
-   "h": 2,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".625"
-  },
-  {
-   "batter": "J.T. Realmuto",
-   "team": "PHI",
-   "opp_sp": "Jake Irvin",
-   "pa": 15,
-   "ab": 15,
-   "h": 6,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".600"
   }
  ]
 }
