@@ -2090,16 +2090,16 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-04,Tampa Bay Rays,Colorado Rockies,Freddy Peralta,Gabriel Hughes,9,7,Final
 2026-08-04,San Diego Padres,Arizona Diamondbacks,Randy Vásquez,Eduardo Rodriguez,9,4,Final
 2026-08-04,Detroit Tigers,Seattle Mariners,Troy Melton,Emerson Hancock,8,0,Final
-2026-08-05,Toronto Blue Jays,Houston Astros,Jameson Taillon,Hunter Brown,0,0,Scheduled
-2026-08-05,Los Angeles Dodgers,Chicago Cubs,Eric Lauer,Shota Imanaga,0,0,Pre-Game
-2026-08-05,San Francisco Giants,Texas Rangers,Carson Whisenhunt,Cody Bradford,0,0,Scheduled
-2026-08-05,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,0,0,Scheduled
+2026-08-05,Toronto Blue Jays,Houston Astros,Jameson Taillon,Hunter Brown,0,2,In Progress
+2026-08-05,Los Angeles Dodgers,Chicago Cubs,Eric Lauer,Shota Imanaga,1,3,In Progress
+2026-08-05,San Francisco Giants,Texas Rangers,Carson Whisenhunt,Cody Bradford,0,0,In Progress
+2026-08-05,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,0,0,Warmup
 2026-08-05,Los Angeles Angels,Baltimore Orioles,Reid Detmers,Trevor Rogers,0,0,Scheduled
 2026-08-05,New York Mets,Cleveland Guardians,Christian Scott,Tanner Bibee,0,0,Scheduled
-2026-08-05,Athletics,Cincinnati Reds,Jacob Lopez,Rhett Lowder,0,0,Scheduled
+2026-08-05,Athletics,Cincinnati Reds,Jacob Lopez,Rhett Lowder,0,0,Pre-Game
 2026-08-05,Washington Nationals,Philadelphia Phillies,Jake Irvin,Andrew Painter,0,0,Scheduled
-2026-08-05,St. Louis Cardinals,New York Yankees,Andre Pallante,Will Warren,0,0,Scheduled
-2026-08-05,Chicago White Sox,Boston Red Sox,Sean Burke,Sonny Gray,0,0,Scheduled
+2026-08-05,St. Louis Cardinals,New York Yankees,Andre Pallante,Will Warren,0,0,Pre-Game
+2026-08-05,Chicago White Sox,Boston Red Sox,Sean Burke,Sonny Gray,0,0,Pre-Game
 2026-08-05,Miami Marlins,Atlanta Braves,Eury Pérez,Bryce Elder,0,0,Scheduled
 2026-08-05,Minnesota Twins,Kansas City Royals,Dean Kremer,Noah Cameron,0,0,Scheduled
 2026-08-05,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,Kyle Harrison,0,0,Scheduled
