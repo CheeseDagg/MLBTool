@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-05T00:13:54+00:00",
+ "generated": "2026-08-05T18:48:13+00:00",
  "date": "2026-08-05",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Tommy Edman",
    "team": "LAD",
    "opp_sp": "Shota Imanaga",
-   "pa": 8,
-   "ab": 8,
+   "pa": 9,
+   "ab": 9,
    "h": 4,
    "hr": 3,
-   "avg": ".500",
-   "slg": "1.625"
+   "avg": ".444",
+   "slg": "1.444"
   },
   {
    "batter": "Drake Baldwin",
@@ -26,17 +26,6 @@
    "slg": "1.500"
   },
   {
-   "batter": "Christian V\u00e1zquez",
-   "team": "HOU",
-   "opp_sp": "Jameson Taillon",
-   "pa": 11,
-   "ab": 11,
-   "h": 6,
-   "hr": 2,
-   "avg": ".545",
-   "slg": "1.273"
-  },
-  {
    "batter": "Bryson Stott",
    "team": "PHI",
    "opp_sp": "Jake Irvin",
@@ -46,17 +35,6 @@
    "hr": 2,
    "avg": ".368",
    "slg": ".737"
-  },
-  {
-   "batter": "Michael Conforto",
-   "team": "CHC",
-   "opp_sp": "Eric Lauer",
-   "pa": 7,
-   "ab": 6,
-   "h": 4,
-   "hr": 1,
-   "avg": ".667",
-   "slg": "1.167"
   },
   {
    "batter": "Ronald Acu\u00f1a Jr.",
@@ -167,6 +145,28 @@
    "hr": 1,
    "avg": ".273",
    "slg": ".636"
+  },
+  {
+   "batter": "Heliot Ramos",
+   "team": "NYY",
+   "opp_sp": "Andre Pallante",
+   "pa": 8,
+   "ab": 8,
+   "h": 2,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".625"
+  },
+  {
+   "batter": "J.T. Realmuto",
+   "team": "PHI",
+   "opp_sp": "Jake Irvin",
+   "pa": 15,
+   "ab": 15,
+   "h": 6,
+   "hr": 1,
+   "avg": ".400",
+   "slg": ".600"
   }
  ]
 }
