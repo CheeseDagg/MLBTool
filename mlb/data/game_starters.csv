@@ -2093,15 +2093,26 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-05,Toronto Blue Jays,Houston Astros,Jameson Taillon,Hunter Brown,5,4,Final
 2026-08-05,Los Angeles Dodgers,Chicago Cubs,Eric Lauer,Shota Imanaga,6,7,Final
 2026-08-05,San Francisco Giants,Texas Rangers,Carson Whisenhunt,Cody Bradford,0,6,Final
-2026-08-05,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,4,0,In Progress
-2026-08-05,Los Angeles Angels,Baltimore Orioles,Reid Detmers,Trevor Rogers,0,0,Pre-Game
-2026-08-05,New York Mets,Cleveland Guardians,Christian Scott,Tanner Bibee,0,0,Pre-Game
-2026-08-05,Athletics,Cincinnati Reds,Jacob Lopez,Rhett Lowder,0,0,Pre-Game
-2026-08-05,Washington Nationals,Philadelphia Phillies,Jake Irvin,Andrew Painter,0,0,Pre-Game
-2026-08-05,St. Louis Cardinals,New York Yankees,Andre Pallante,Will Warren,0,0,Pre-Game
-2026-08-05,Chicago White Sox,Boston Red Sox,Sean Burke,Sonny Gray,0,0,Pre-Game
-2026-08-05,Miami Marlins,Atlanta Braves,Eury Pérez,Bryce Elder,0,0,Pre-Game
-2026-08-05,Minnesota Twins,Kansas City Royals,Dean Kremer,Noah Cameron,0,0,Pre-Game
-2026-08-05,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,Kyle Harrison,0,0,Pre-Game
-2026-08-05,San Diego Padres,Arizona Diamondbacks,Casey Mize,Mitch Bratt,0,0,Scheduled
-2026-08-05,Detroit Tigers,Seattle Mariners,Drew Anderson,Bryan Woo,0,0,Pre-Game
+2026-08-05,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,4,0,Final
+2026-08-05,Los Angeles Angels,Baltimore Orioles,Reid Detmers,Trevor Rogers,2,5,Final
+2026-08-05,New York Mets,Cleveland Guardians,Christian Scott,Tanner Bibee,6,5,Final
+2026-08-05,Athletics,Cincinnati Reds,Jacob Lopez,Rhett Lowder,2,3,Final
+2026-08-05,Washington Nationals,Philadelphia Phillies,Jake Irvin,Andrew Painter,10,4,Final
+2026-08-05,St. Louis Cardinals,New York Yankees,Andre Pallante,Will Warren,3,1,Final
+2026-08-05,Chicago White Sox,Boston Red Sox,Sean Burke,Sonny Gray,0,4,Final
+2026-08-05,Miami Marlins,Atlanta Braves,Eury Pérez,Bryce Elder,1,4,Final
+2026-08-05,Minnesota Twins,Kansas City Royals,Dean Kremer,Noah Cameron,1,2,Final
+2026-08-05,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,Kyle Harrison,2,4,Final
+2026-08-05,San Diego Padres,Arizona Diamondbacks,Casey Mize,Mitch Bratt,4,10,Final
+2026-08-05,Detroit Tigers,Seattle Mariners,Drew Anderson,Bryan Woo,2,4,Final
+2026-08-06,Los Angeles Angels,Baltimore Orioles,Ryan Johnson,Brandon Young,0,0,Pre-Game
+2026-08-06,Athletics,Cincinnati Reds,Mason Barnett,Andrew Abbott,0,0,Pre-Game
+2026-08-06,New York Mets,Cleveland Guardians,Nolan McLean,Foster Griffin,0,0,Pre-Game
+2026-08-06,Pittsburgh Pirates,Milwaukee Brewers,Braxton Ashcraft,Dustin May,0,0,Scheduled
+2026-08-06,Toronto Blue Jays,Chicago Cubs,Dylan Cease,David Peterson,0,0,Scheduled
+2026-08-06,Detroit Tigers,Seattle Mariners,Framber Valdez,Bryce Miller,0,0,Scheduled
+2026-08-06,Washington Nationals,Philadelphia Phillies,Miles Mikolas,Cristopher Sánchez,0,0,Scheduled
+2026-08-06,Chicago White Sox,Boston Red Sox,Luis Castillo,Ranger Suarez,0,0,Scheduled
+2026-08-06,Miami Marlins,Atlanta Braves,Janson Junk,Martín Pérez,0,0,Scheduled
+2026-08-06,Minnesota Twins,Kansas City Royals,Bailey Ober,Michael Wacha,0,0,Scheduled
+2026-08-06,San Diego Padres,Arizona Diamondbacks,Walker Buehler,Kohl Drake,0,0,Scheduled

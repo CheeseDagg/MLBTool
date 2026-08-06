@@ -870,3 +870,32 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-04,Cedric Mullins,TBR,824321,Gabriel Hughes,5,proj,19.1,12.4,9.9,+424,370,-53.6,park +9%,74F,LvR +8%,,no,0
 2026-08-04,Christian Encarnacion-Strand,BAL,824805,Grayson Rodriguez,4,card,19.1,26.7,19.1,+424,370,-10.2,park +4% [low-conf],86F,RvR -3%,,no,0
 2026-08-05,Shohei Ohtani,LAD,824646,Shota Imanaga,1,card,19.3,27.0,,+418,,,park avg,71F,LvL -22%,heat -3%,hr,2
+2026-08-05,Kyle Schwarber,PHI,823429,Jake Irvin,1,card,31.1,35.7,24.0,+221,188,-31.0,park +9%,82F,LvR +8%,heat +8%,no,0
+2026-08-05,Bryce Harper,PHI,823429,Jake Irvin,3,card,24.6,25.5,18.5,+307,265,-32.6,park +9%,82F,LvR +8%,heat +15%,no,0
+2026-08-05,Elly De La Cruz,CIN,824482,Jacob Lopez,1,card,23.6,27.6,19.6,+324,280,-25.5,park +25%,88F,SvL +12%,heat +15%,no,0
+2026-08-05,Munetaka Murakami,CHW,824728,Sonny Gray,2,card,23.3,28.7,20.2,+329,285,-22.3,park -7%,87F · wind out 7,LvR +8%,heat +1%,no,0
+2026-08-05,Pete Alonso,BAL,824806,Reid Detmers,2,card,23.0,24.5,17.9,+335,290,-30.2,park +4% [low-conf],84F,RvL +12%,heat +8%,no,0
+2026-08-05,Yordan Alvarez,HOU,824158,Jameson Taillon,2,card,22.3,32.7,,+348,,,park +3%,95F · wind out 4 (roof: half),LvR +8%,heat -9%,no,0
+2026-08-05,Sal Stewart,CIN,824482,Jacob Lopez,2,card,22.1,29.9,20.8,+352,305,-15.7,park +25%,88F,RvL +12%,heat +4%,no,0
+2026-08-05,Ben Rice,NYY,823516,Andre Pallante,2,card,21.4,28.5,20.0,+368,320,-15.8,park +14%,82F,LvR +8%,heat +12%,no,0
+2026-08-05,CJ Abrams,WSN,823429,Andrew Painter,1,card,21.4,28.0,19.8,+368,320,-16.9,park +9%,82F,LvR +8%,heat +3%,no,0
+2026-08-05,Eugenio Suárez,CIN,824482,Jacob Lopez,4,card,21.4,21.9,16.5,+368,320,-30.7,park +25%,88F,RvL +12%,heat -2%,no,0
+2026-08-05,Riley Greene,DET,823106,Bryan Woo,2,proj,21.4,18.6,14.7,+368,320,-38.2,park -4%,79F (roof: half),LvR +8%,heat +1%,no,0
+2026-08-05,Alec Burleson,STL,823516,Will Warren,3,card,20.9,19.2,15.0,+379,330,-35.3,park +14%,82F,LvR +8%,heat -0%,no,0
+2026-08-05,Cal Raleigh,SEA,823106,Drew Anderson,6,card,20.9,13.7,10.9,+379,330,-53.0,park -4%,79F (roof: half),SvR +8%,,no,0
+2026-08-05,Coby Mayo,BAL,824806,Reid Detmers,5,card,20.9,19.0,15.0,+379,330,-35.7,park +4% [low-conf],84F,RvL +12%,heat +9%,hr,1
+2026-08-05,Kyle Stowers,MIA,824889,Bryce Elder,2,card,20.9,20.8,15.9,+379,330,-31.5,park +4%,74F · wind out 3,LvR +8%,heat -6%,no,0
+2026-08-05,Tyler Soderstrom,ATH,824482,Rhett Lowder,3,card,20.9,20.9,16.0,+379,330,-31.4,park +25%,88F,LvR +8%,heat +0%,no,0
+2026-08-05,Esmerlyn Valdez,PIT,823753,Kyle Harrison,8,proj,20.6,18.8,14.8,+385,335,-35.5,park +9%,78F (roof: half),RvL +12%,heat +4%,no,0
+2026-08-05,Junior Caminero,TBR,824322,Tomoyuki Sugano,3,card,20.4,29.2,,+390,,,park +9%,82F,RvR -3%,heat -10%,hr,1
+2026-08-05,Matt Olson,ATL,824889,Eury Pérez *,3,card,20.4,23.8,17.6,+391,340,-22.8,park +4%,74F · wind out 3,LvR +8%,heat -5%,no,0
+2026-08-05,Hunter Goodman,COL,824322,Nick Martinez,3,card,20.2,28.7,,+396,,,park +9%,82F,RvR -3%,heat +14%,no,0
+2026-08-05,JJ Bleday,CIN,824482,Jacob Lopez,6,card,19.9,18.5,14.7,+402,350,-33.8,park +25%,88F,LvL -22%,heat +1%,no,0
+2026-08-05,Jac Caglianone,KCR,824082,Dean Kremer,3,card,19.9,22.6,16.9,+402,350,-24.0,park -4% [low-conf],84F · wind out 5,LvR +8%,heat -2%,no,0
+2026-08-05,Manny Machado,SDP,825052,Mitch Bratt,2,proj,19.9,23.1,17.2,+402,350,-22.7,park +4%,104F (roof: half),RvL +12%,,no,0
+2026-08-05,Willson Contreras,BOS,824728,Sean Burke,4,card,19.9,20.4,15.7,+402,350,-29.2,park -7%,87F · wind out 7,RvR -3%,heat +5%,no,0
+2026-08-05,Mike Trout,LAA,824806,Trevor Rogers,2,card,19.5,22.1,16.6,+413,360,-23.6,park +4% [low-conf],84F,RvL +12%,heat +8%,no,0
+2026-08-05,Brandon Marsh,PHI,823429,Jake Irvin,6,card,19.1,16.2,13.4,+424,370,-36.8,park +9%,82F,LvR +8%,,no,0
+2026-08-05,Colson Montgomery,CHW,824728,Sonny Gray,4,card,19.1,21.6,16.4,+424,370,-23.1,park -7%,87F · wind out 7,LvR +8%,heat -3%,no,0
+2026-08-05,Lawrence Butler,ATH,824482,Rhett Lowder,1,card,19.1,16.3,13.5,+424,370,-36.7,park +25%,88F,LvR +8%,,hr,1
+2026-08-05,Miguel Vargas,CHW,824728,Sonny Gray,3,card,19.1,20.5,15.8,+424,370,-25.9,park -7%,87F · wind out 7,RvR -3%,heat -13%,no,0
