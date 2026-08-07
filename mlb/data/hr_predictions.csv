@@ -882,33 +882,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-06,Dillon Dingler,DET,823105,Bryce Miller,4,proj,17.9,20.2,15.6,+457,400,-22.1,park -4%,65F (roof: half),RvR -3%,heat +1%,-3.8,floor
 2026-08-06,Dylan Beavers,BAL,824804,Ryan Johnson,1,card,17.9,16.7,13.7,+457,400,-31.5,park +4% [low-conf],86F · wind out 4,LvR +8%,heat -8%,,new
 2026-08-06,Jac Caglianone,KCR,824080,Bailey Ober,4,proj,17.9,20.8,15.9,+457,400,-20.3,park -4% [low-conf],76F,LvR +8%,heat +8%,-1.7,
-2026-08-07,Kyle Schwarber,PHI,823428,José Soriano,3,proj,25.3,24.9,18.1,+296,255,-35.7,park +9%,83F,LvR +8%,heat -4%,-3.5,floor
-2026-08-07,Shohei Ohtani,LAD,825051,Merrill Kelly,2,proj,24.6,26.8,19.1,+307,265,-30.2,park +4%,93F (roof: half),LvR +8%,heat -7%,-0.2,
-2026-08-07,Yordan Alvarez,HOU,823266,Robbie Ray,1,proj,23.6,26.8,19.2,+324,280,-27.2,park -4%,72F,LvL -22%,heat -8%,-3.2,floor
-2026-08-07,Junior Caminero,TBR,823103,Logan Gilbert,1,proj,23.0,28.2,19.9,+335,290,-22.5,park -4%,61F (roof: half),RvR -3%,heat -1%,0.4,
-2026-08-07,Ben Rice,NYY,823515,Tyler Mahle,1,proj,22.1,30.4,21.1,+352,305,-14.5,park +14%,85F,LvR +8%,heat -3%,1.2,
-2026-08-07,Rhys Hoskins,CLE,824566,Noah Schultz,6,proj,21.4,14.6,12.0,+368,320,-49.5,park +9%,74F · wind in 4,RvL +12%,,,new
-2026-08-07,CJ Abrams,WSN,822699,TBD *,1,proj,20.9,25.9,18.7,+379,330,-19.6,park avg,81F,,,-0.3,
-2026-08-07,Munetaka Murakami,CHW,824566,Parker Messick,6,proj,20.6,18.9,14.9,+385,335,-35.3,park +9%,74F · wind in 4,LvL -22%,heat +4%,-5.9,floor
-2026-08-07,Christian Walker,HOU,823266,Robbie Ray,2,proj,19.9,19.9,15.4,+402,350,-30.6,park -4%,72F,RvL +12%,heat -3%,-4.7,floor
-2026-08-07,Hunter Goodman,COL,823024,Kyle Leahy,2,proj,19.9,26.3,18.9,+402,350,-15.1,park -7%,75F,RvR -3%,heat +1%,-1.9,
-2026-08-07,Jake Bauers,MIL,823750,Zebby Matthews,3,proj,19.9,21.8,16.5,+402,350,-25.8,park +9%,77F (roof: half),LvR +8%,heat -1%,-1.6,
-2026-08-07,Jo Adell,CLE,824566,Noah Schultz,1,proj,19.9,19.9,15.4,+402,350,-30.7,park +9%,74F · wind in 4,RvL +12%,heat +1%,,new
-2026-08-07,Matt Olson,ATL,823515,Max Fried,1,proj,19.9,25.6,18.5,+402,350,-16.6,park +14%,85F,LvL -22%,heat -0%,-1.0,
-2026-08-07,Max Muncy,ATH,824727,Payton Tolle,2,proj,19.9,22.4,16.8,+402,350,-24.5,park -7%,86F,LvL -22%,heat +3%,-3.9,floor
-2026-08-07,Miguel Vargas,CHW,824566,Parker Messick,1,proj,19.9,23.2,17.2,+402,350,-22.6,park +9%,74F · wind in 4,RvL +12%,heat +2%,-1.3,
-2026-08-07,Pete Crow-Armstrong,CHC,824081,Daniel Lynch IV,3,proj,19.9,20.4,15.7,+402,350,-29.3,park -4% [low-conf],75F · wind out 3,LvL -22%,heat +2%,-4.2,floor
-2026-08-07,Rafael Devers,SFG,823191,Keider Montero,1,proj,19.9,21.0,16.0,+402,350,-27.8,park -14%,56F · wind out 5,LvR +8%,heat +4%,-2.3,floor
-2026-08-07,Willson Contreras,BOS,824727,Jack Perkins,4,proj,19.9,20.8,15.9,+402,350,-28.4,park -7%,86F,RvR -3%,heat +6%,-2.3,floor
-2026-08-07,Wilyer Abreu,BOS,824727,Jack Perkins,1,proj,19.9,23.3,17.3,+402,350,-22.3,park -7%,86F,LvR +8%,heat +4%,-1.0,
-2026-08-07,Trent Grisham,NYY,823515,Tyler Mahle,3,proj,19.5,17.0,13.9,+413,360,-36.2,park +14%,85F,LvR +8%,heat -12%,-6.5,floor
-2026-08-07,Cal Raleigh,SEA,823103,Drew Rasmussen,5,proj,19.1,14.6,12.0,+424,370,-43.6,park -4%,61F (roof: half),SvR +8%,,1.0,
-2026-08-07,Esmerlyn Valdez,PIT,823349,Zac Thornton,8,proj,19.1,17.3,14.1,+424,370,-34.0,park -9%,75F,RvL +12%,heat +5%,-5.8,floor
-2026-08-07,Jac Caglianone,KCR,824081,TBD *,4,proj,19.1,19.6,15.3,+424,370,-28.3,park -4% [low-conf],75F · wind out 3,,,-1.6,
-2026-08-07,Kyle Stowers,MIA,823836,George Klassen *,4,proj,19.1,16.5,13.6,+424,370,-36.2,park -9%,84F (roof: half),LvR +8%,heat -5%,,new
-2026-08-07,Bobby Witt Jr.,KCR,824081,TBD *,3,proj,18.3,17.2,14.0,+446,390,-31.5,park -4% [low-conf],75F · wind out 3,,,-1.1,
-2026-08-07,Brandon Lowe,PIT,823349,Zac Thornton,2,proj,18.3,19.9,15.4,+446,390,-24.4,park -9%,75F,LvL -22%,heat +6%,-3.0,floor
-2026-08-07,Corey Seager,TEX,822863,Shane Baz,7,proj,18.3,14.3,11.6,+446,390,-43.1,park +2%,87F · wind out 4 (roof: half),LvR +8%,,,new
-2026-08-07,Heliot Ramos,NYY,823515,Tyler Mahle,5,proj,18.3,14.2,11.6,+446,390,-43.3,park +14%,85F,RvR -3%,,,new
-2026-08-07,Spencer Jones,NYY,823515,Tyler Mahle,9,proj,18.3,13.0,10.2,+446,390,-50.0,park +14%,85F,LvR +8%,,,new
-2026-08-07,Colson Montgomery,CHW,824566,Parker Messick,3,proj,17.9,20.3,15.6,+457,400,-21.8,park +9%,74F · wind in 4,LvL -22%,heat +5%,-3.7,floor
+2026-08-07,Kyle Schwarber,PHI,823428,José Soriano,3,proj,25.3,26.3,18.9,+296,255,-33.0,park +9%,94F · wind out 7,LvR +8%,heat -4%,-2.7,floor
+2026-08-07,Yordan Alvarez,HOU,823266,Robbie Ray,1,proj,24.6,27.5,19.5,+307,265,-28.8,park -4%,80F,LvL -22%,heat -8%,-2.9,floor
+2026-08-07,Ben Rice,NYY,823515,Tyler Mahle,1,proj,23.0,29.0,20.4,+335,290,-20.6,park +14%,no wx,LvR +8%,heat -3%,0.5,
+2026-08-07,Junior Caminero,TBR,823103,Logan Gilbert,1,proj,23.0,28.6,20.1,+335,290,-21.5,park -4%,72F (roof: half),RvR -3%,heat -1%,0.6,
+2026-08-07,Shohei Ohtani,LAD,825051,Merrill Kelly,2,proj,23.0,27.2,19.4,+335,290,-24.5,park +4%,105F (roof: half),LvR +8%,heat -7%,0.0,
+2026-08-07,Rhys Hoskins,CLE,824566,Noah Schultz,6,proj,22.1,15.1,12.6,+352,305,-49.1,park +9%,80F,RvL +12%,,,new
+2026-08-07,Wilyer Abreu,BOS,824727,Jack Perkins,1,proj,20.9,24.2,17.7,+379,330,-23.8,park -7%,95F · wind out 6,LvR +8%,heat +4%,-0.6,
+2026-08-07,Jo Adell,CLE,824566,Noah Schultz,1,proj,20.6,20.5,15.7,+385,335,-31.6,park +9%,80F,RvL +12%,heat +1%,,new
+2026-08-07,Munetaka Murakami,CHW,824566,Parker Messick,6,proj,20.4,19.4,15.2,+391,340,-33.3,park +9%,80F,LvL -22%,heat +4%,-5.6,floor
+2026-08-07,Christian Walker,HOU,823266,Robbie Ray,2,proj,19.9,20.4,15.7,+402,350,-29.3,park -4%,80F,RvL +12%,heat -3%,-4.4,floor
+2026-08-07,Hunter Goodman,COL,823024,Kyle Leahy,2,proj,19.9,27.4,19.5,+402,350,-12.4,park -7%,86F · wind out 6,RvR -3%,heat +1%,-1.2,
+2026-08-07,Jake Bauers,MIL,823750,Zebby Matthews,3,proj,19.9,22.3,16.7,+402,350,-24.9,park +9%,86F (roof: half),LvR +8%,heat -1%,-1.4,
+2026-08-07,Matt Olson,ATL,823515,Max Fried,1,proj,19.9,24.6,18.0,+402,350,-19.0,park +14%,no wx,LvL -22%,heat -0%,-1.5,
+2026-08-07,Miguel Vargas,CHW,824566,Parker Messick,1,proj,19.9,23.8,17.5,+402,350,-21.1,park +9%,80F,RvL +12%,heat +2%,-1.0,
+2026-08-07,Pete Crow-Armstrong,CHC,824081,Daniel Lynch IV,3,proj,19.9,21.1,16.1,+402,350,-27.6,park -4% [low-conf],84F · wind out 7,LvL -22%,heat +2%,-3.8,floor
+2026-08-07,Rafael Devers,SFG,823191,Keider Montero,1,proj,19.9,21.5,16.3,+402,350,-26.6,park -14%,62F · wind out 7,LvR +8%,heat +4%,-2.0,floor
+2026-08-07,Willson Contreras,BOS,824727,Jack Perkins,4,proj,19.9,21.5,16.3,+402,350,-26.6,park -7%,95F · wind out 6,RvR -3%,heat +6%,-1.9,
+2026-08-07,Manny Machado,SDP,823266,Ronel Blanco,2,proj,19.5,21.9,16.5,+413,360,-24.2,park -4%,80F,RvR -3%,,-0.7,
+2026-08-07,CJ Abrams,WSN,822699,Chase Petty,1,proj,19.1,29.0,20.3,+424,370,-4.5,park avg,93F · wind out 8,LvR +8%,heat -1%,1.3,
+2026-08-07,Cal Raleigh,SEA,823103,Drew Rasmussen,5,proj,19.1,14.9,12.3,+424,370,-42.0,park -4%,72F (roof: half),SvR +8%,,1.3,
+2026-08-07,Trent Grisham,NYY,823515,Tyler Mahle,3,proj,19.1,16.3,13.5,+424,370,-36.7,park +14%,no wx,LvR +8%,,-6.9,floor
+2026-08-07,Bobby Witt Jr.,KCR,824081,TBD *,3,proj,18.3,17.9,14.4,+446,390,-29.6,park -4% [low-conf],84F · wind out 7,,,-0.7,
+2026-08-07,Brandon Lowe,PIT,823349,Zac Thornton,2,proj,18.3,20.2,15.6,+446,390,-23.6,park -9%,82F,LvL -22%,heat +6%,-2.8,floor
+2026-08-07,Esmerlyn Valdez,PIT,823349,Zac Thornton,8,proj,18.3,17.7,14.2,+446,390,-30.2,park -9%,82F,RvL +12%,heat +5%,-5.7,floor
+2026-08-07,Heliot Ramos,NYY,823515,Tyler Mahle,5,proj,18.3,13.5,10.7,+446,390,-47.7,park +14%,no wx,RvR -3%,,,new
+2026-08-07,Jac Caglianone,KCR,824081,TBD *,4,proj,18.3,20.4,15.7,+446,390,-23.1,park -4% [low-conf],84F · wind out 7,,,-1.2,
+2026-08-07,Kyle Stowers,MIA,823836,George Klassen *,4,proj,18.3,16.4,13.6,+446,390,-33.6,park -9%,86F · wind in 4 (roof: half),LvR +8%,heat -5%,,new
+2026-08-07,Salvador Perez,KCR,824081,TBD *,1,proj,18.3,21.9,16.5,+446,390,-19.1,park -4% [low-conf],84F · wind out 7,,,,new
+2026-08-07,Colson Montgomery,CHW,824566,Parker Messick,3,proj,17.9,20.8,15.9,+457,400,-20.3,park +9%,80F,LvL -22%,heat +5%,-3.4,floor
+2026-08-07,Fernando Tatis Jr.,SDP,823266,Ronel Blanco,1,proj,17.9,14.5,11.8,+457,400,-41.0,park -4%,80F,RvR -3%,,,new

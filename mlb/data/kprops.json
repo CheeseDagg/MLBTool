@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-07T14:24+00:00",
+ "generated": "2026-08-07T18:35+00:00",
  "board": [
   {
    "pitcher": "Nathan Eovaldi",
@@ -842,6 +842,46 @@
    ]
   },
   {
+   "pitcher": "JT Brubaker",
+   "opp": "Detroit Tigers",
+   "lam": 4.2,
+   "k9_regressed": 7.02,
+   "exp_ip": 5.3,
+   "opp_mult": 1.017,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4111,
+     "fair_over": 143,
+     "fair_under": -143
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2476,
+     "fair_over": 304,
+     "fair_under": -304
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1331,
+     "fair_over": 652,
+     "fair_under": -652
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0643,
+     "fair_over": 1456,
+     "fair_under": -1456
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0281,
+     "fair_over": 3459,
+     "fair_under": -3459
+    }
+   ]
+  },
+  {
    "pitcher": "Carmen Mlodzinski",
    "opp": "New York Mets",
    "lam": 4.19,
@@ -1002,6 +1042,46 @@
    ]
   },
   {
+   "pitcher": "Chase Petty",
+   "opp": "Washington Nationals",
+   "lam": 3.81,
+   "k9_regressed": 6.57,
+   "exp_ip": 5.33,
+   "opp_mult": 0.98,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3349,
+     "fair_over": 199,
+     "fair_under": -199
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1865,
+     "fair_over": 436,
+     "fair_under": -436
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0922,
+     "fair_over": 984,
+     "fair_under": -984
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0408,
+     "fair_over": 2349,
+     "fair_under": -2349
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0163,
+     "fair_over": 6024,
+     "fair_under": -6024
+    }
+   ]
+  },
+  {
    "pitcher": "Ryan Feltner",
    "opp": "St. Louis Cardinals",
    "lam": 3.7,
@@ -1082,7 +1162,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 9 \u00b7 credits remaining 19102 (used 898) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 12 \u00b7 credits remaining 19010 (used 990) \u00b7 whiff rest:30 rows",
  "n_markets": 25,
  "n_plays": 0,
  "plays": [],
@@ -1095,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 9,
+ "n_unbettable": 12,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
