@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-07T18:35+00:00",
+ "generated": "2026-08-07T21:08+00:00",
  "board": [
   {
    "pitcher": "Nathan Eovaldi",
@@ -318,6 +318,46 @@
      "p_over": 0.1217,
      "fair_over": 722,
      "fair_under": -722
+    }
+   ]
+  },
+  {
+   "pitcher": "Kevin Gausman",
+   "opp": "Kansas City Royals",
+   "lam": 5.32,
+   "k9_regressed": 8.9,
+   "exp_ip": 5.54,
+   "opp_mult": 0.971,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.613,
+     "fair_over": -158,
+     "fair_under": 158
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4392,
+     "fair_over": 128,
+     "fair_under": -128
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2852,
+     "fair_over": 251,
+     "fair_under": -251
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1683,
+     "fair_over": 494,
+     "fair_under": -494
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0906,
+     "fair_over": 1003,
+     "fair_under": -1003
     }
    ]
   },
@@ -1162,10 +1202,30 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 12 \u00b7 credits remaining 19010 (used 990) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
- "n_plays": 0,
- "plays": [],
+ "diag": "errors {} \u00b7 unbettable markets dropped 14 \u00b7 credits remaining 18979 (used 1021) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
+ "n_plays": 1,
+ "plays": [
+  {
+   "player": "zebbymatthews O4.5",
+   "fair_prob": 0.5552,
+   "fair_american": -125,
+   "best_book": "fanduel",
+   "best_price": -115,
+   "n_books": 3,
+   "n_bettable": 1,
+   "any_book": null,
+   "any_price": null,
+   "field_outlier": false,
+   "ev_vs_fair_pct": 3.8,
+   "consensus_prob": 0.5379,
+   "ev_vs_consensus_pct": 0.6,
+   "shop_edge_pts": 3.8,
+   "stale_flag": false,
+   "model_market_gap_pts": 1.7,
+   "conservative_ev_pct": 0.6
+  }
+ ],
  "books": [
   "draftkings",
   "fanduel",
@@ -1175,6 +1235,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 12,
+ "n_unbettable": 14,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
