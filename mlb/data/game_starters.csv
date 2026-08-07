@@ -2112,10 +2112,10 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-06,Toronto Blue Jays,Chicago Cubs,Dylan Cease,David Peterson,2,3,Final
 2026-08-06,Detroit Tigers,Seattle Mariners,Framber Valdez,Bryce Miller,11,0,Final
 2026-08-06,Washington Nationals,Philadelphia Phillies,Miles Mikolas,Cristopher Sánchez,3,7,Final
-2026-08-06,Chicago White Sox,Boston Red Sox,Luis Castillo,Ranger Suarez,7,5,In Progress
-2026-08-06,Miami Marlins,Atlanta Braves,Janson Junk,Martín Pérez,0,2,Delayed
-2026-08-06,Minnesota Twins,Kansas City Royals,Bailey Ober,Michael Wacha,1,2,In Progress
-2026-08-06,San Diego Padres,Arizona Diamondbacks,Walker Buehler,Kohl Drake,0,0,Pre-Game
+2026-08-06,Chicago White Sox,Boston Red Sox,Luis Castillo,Ranger Suarez,11,12,Final
+2026-08-06,Miami Marlins,Atlanta Braves,Janson Junk,Martín Pérez,3,11,Final
+2026-08-06,Minnesota Twins,Kansas City Royals,Bailey Ober,Michael Wacha,4,3,Final
+2026-08-06,San Diego Padres,Arizona Diamondbacks,Walker Buehler,Kohl Drake,5,1,Final
 2026-08-07,New York Mets,Pittsburgh Pirates,Zac Thornton,Carmen Mlodzinski,0,0,Scheduled
 2026-08-07,Toronto Blue Jays,Philadelphia Phillies,José Soriano,Zack Wheeler,0,0,Scheduled
 2026-08-07,Cincinnati Reds,Washington Nationals,,Cade Cavalli,0,0,Scheduled
@@ -2123,8 +2123,8 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-07,Athletics,Boston Red Sox,Jack Perkins,Payton Tolle,0,0,Scheduled
 2026-08-07,Los Angeles Angels,Miami Marlins,George Klassen,Tyler Phillips,0,0,Scheduled
 2026-08-07,Cleveland Guardians,Chicago White Sox,Parker Messick,Noah Schultz,0,0,Scheduled
-2026-08-07,Minnesota Twins,Milwaukee Brewers,,Shane Drohan,0,0,Scheduled
-2026-08-07,Chicago Cubs,Kansas City Royals,,,0,0,Scheduled
+2026-08-07,Minnesota Twins,Milwaukee Brewers,Zebby Matthews,Shane Drohan,0,0,Scheduled
+2026-08-07,Chicago Cubs,Kansas City Royals,,Daniel Lynch IV,0,0,Scheduled
 2026-08-07,Colorado Rockies,St. Louis Cardinals,Ryan Feltner,Kyle Leahy,0,0,Scheduled
 2026-08-07,Baltimore Orioles,Texas Rangers,Shane Baz,Nathan Eovaldi,0,0,Scheduled
 2026-08-07,Los Angeles Dodgers,Arizona Diamondbacks,Roki Sasaki,Merrill Kelly,0,0,Scheduled

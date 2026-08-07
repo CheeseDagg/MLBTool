@@ -918,3 +918,14 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-06,Tyler Stephenson,CIN,824481,Mason Barnett,4,card,18.3,16.2,13.4,+446,390,-34.3,park +25%,81F,RvR -3%,heat -11%,hr,1
 2026-08-06,Dillon Dingler,DET,823105,Bryce Miller,4,proj,17.9,20.2,15.6,+457,400,-22.1,park -4%,65F (roof: half),RvR -3%,heat +1%,hr,1
 2026-08-06,Dylan Beavers,BAL,824804,Ryan Johnson,1,card,17.9,16.7,13.7,+457,400,-31.5,park +4% [low-conf],86F · wind out 4,LvR +8%,heat -8%,no,0
+2026-08-06,Matt Olson,ATL,824885,Janson Junk,1,proj,22.4,26.4,18.9,+346,300,-24.2,park +4%,76F,LvR +8%,heat +10%,hr,1
+2026-08-06,Bobby Witt Jr.,KCR,824080,Bailey Ober,3,proj,21.4,17.5,14.2,+368,320,-40.5,park -4% [low-conf],76F,RvR -3%,heat -2%,no,0
+2026-08-06,Wilyer Abreu,BOS,824729,Luis Castillo,1,proj,20.4,22.7,17.0,+391,340,-25.3,park -7%,83F · wind out 5,LvR +8%,heat +8%,no,0
+2026-08-06,Carter Jensen,KCR,824080,Bailey Ober,2,proj,19.5,20.8,15.9,+413,360,-26.8,park -4% [low-conf],76F,LvR +8%,heat -0%,no,0
+2026-08-06,Michael Harris II,ATL,824885,Janson Junk,4,proj,18.7,17.4,14.1,+435,380,-32.4,park +4%,76F,LvR +8%,heat +11%,no,0
+2026-08-06,Willson Contreras,BOS,824729,Luis Castillo,4,proj,18.7,20.0,15.5,+435,380,-25.6,park -7%,83F · wind out 5,RvR -3%,heat +4%,void,
+2026-08-06,Drake Baldwin,ATL,824885,Janson Junk,5,proj,18.3,17.3,14.0,+446,390,-31.3,park +4%,76F,LvR +8%,heat +6%,no,0
+2026-08-06,Manny Machado,SDP,825053,Kohl Drake,2,proj,18.3,22.8,17.0,+446,390,-16.6,park +4%,92F (roof: half),RvL +12%,heat +13%,no,0
+2026-08-06,Royce Lewis,MIN,824080,Michael Wacha,6,proj,18.3,14.4,11.8,+446,390,-42.4,park -4% [low-conf],76F,RvR -3%,,hr,1
+2026-08-06,Salvador Perez,KCR,824080,Bailey Ober,1,proj,18.3,21.6,16.4,+446,390,-19.9,park -4% [low-conf],76F,RvR -3%,heat +3%,no,0
+2026-08-06,Jac Caglianone,KCR,824080,Bailey Ober,4,proj,17.9,20.8,15.9,+457,400,-20.3,park -4% [low-conf],76F,LvR +8%,heat +8%,no,0
