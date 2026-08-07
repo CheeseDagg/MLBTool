@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-07T18:00:35+00:00",
+ "generated": "2026-08-07T20:56:44+00:00",
  "date": "2026-08-07",
  "min_pa": 6,
  "rows": [
@@ -15,17 +15,6 @@
    "slg": ".629"
   },
   {
-   "batter": "Paul Goldschmidt",
-   "team": "NYY",
-   "opp_sp": "Tyler Mahle",
-   "pa": 34,
-   "ab": 29,
-   "h": 11,
-   "hr": 3,
-   "avg": ".379",
-   "slg": ".793"
-  },
-  {
    "batter": "Jose Altuve",
    "team": "HOU",
    "opp_sp": "Robbie Ray",
@@ -35,6 +24,17 @@
    "hr": 2,
    "avg": ".550",
    "slg": "1.100"
+  },
+  {
+   "batter": "Bobby Witt Jr.",
+   "team": "KC",
+   "opp_sp": "Kevin Gausman",
+   "pa": 15,
+   "ab": 15,
+   "h": 5,
+   "hr": 2,
+   "avg": ".333",
+   "slg": ".800"
   },
   {
    "batter": "Ryan McMahon",
@@ -79,6 +79,17 @@
    "hr": 1,
    "avg": ".400",
    "slg": "1.000"
+  },
+  {
+   "batter": "Starling Marte",
+   "team": "KC",
+   "opp_sp": "Kevin Gausman",
+   "pa": 18,
+   "ab": 15,
+   "h": 8,
+   "hr": 1,
+   "avg": ".533",
+   "slg": ".933"
   },
   {
    "batter": "Julio Rodr\u00edguez",
@@ -145,17 +156,6 @@
    "hr": 1,
    "avg": ".348",
    "slg": ".565"
-  },
-  {
-   "batter": "Dominic Smith",
-   "team": "ATL",
-   "opp_sp": "Max Fried",
-   "pa": 10,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
   },
   {
    "batter": "Teoscar Hern\u00e1ndez",
