@@ -882,3 +882,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-06,Dillon Dingler,DET,823105,Bryce Miller,4,proj,17.9,20.2,15.6,+457,400,-22.1,park -4%,65F (roof: half),RvR -3%,heat +1%,-3.8,floor
 2026-08-06,Dylan Beavers,BAL,824804,Ryan Johnson,1,card,17.9,16.7,13.7,+457,400,-31.5,park +4% [low-conf],86F · wind out 4,LvR +8%,heat -8%,,new
 2026-08-06,Jac Caglianone,KCR,824080,Bailey Ober,4,proj,17.9,20.8,15.9,+457,400,-20.3,park -4% [low-conf],76F,LvR +8%,heat +8%,-1.7,
+2026-08-07,Ben Rice,NYY,823515,Tyler Mahle,1,proj,21.0,30.2,,+376,,,park +14%,84F,LvR +8%,heat -3%,1.1,
+2026-08-07,Junior Caminero,TBR,823103,Logan Gilbert,1,proj,20.3,28.9,,+393,,,park -4%,82F (roof: half),RvR -3%,heat -1%,0.8,
+2026-08-07,Shohei Ohtani,LAD,825051,Merrill Kelly,2,proj,19.3,27.2,,+417,,,park +4%,102F (roof: half),LvR +8%,heat -7%,-0.1,
+2026-08-07,Yordan Alvarez,HOU,823266,Robbie Ray,1,proj,19.1,26.7,,+424,,,park -4%,no wx,LvL -22%,heat -8%,-3.2,floor
+2026-08-07,Manny Machado,SDP,823266,Ronel Blanco,2,proj,18.9,21.3,16.2,+430,375,-23.2,park -4%,no wx,RvR -3%,,-1.0,
+2026-08-07,Sal Stewart,CIN,822699,Cade Cavalli,1,proj,18.9,26.3,,+429,,,park avg,77F · wind out 4,RvR -3%,heat -2%,-0.6,
+2026-08-07,Kazuma Okamoto,TOR,823428,Zack Wheeler,1,proj,18.8,26.2,,+432,,,park +9%,83F · wind out 4,RvR -3%,heat +2%,1.1,
+2026-08-07,CJ Abrams,WSN,822699,TBD *,1,proj,18.7,25.9,,+436,,,park avg,77F · wind out 4,,,-0.3,
+2026-08-07,Hunter Goodman,COL,823024,Kyle Leahy,2,proj,18.5,25.6,,+440,,,park -7%,71F · wind in 4,RvR -3%,heat +1%,-2.2,floor
+2026-08-07,Kyle Schwarber,PHI,823428,José Soriano,3,proj,18.4,25.4,,+443,,,park +9%,83F · wind out 4,LvR +8%,heat -4%,-3.2,floor
+2026-08-07,Pete Alonso,BAL,822863,Nathan Eovaldi,2,proj,17.1,23.0,,+485,,,park +2%,98F (roof: half),RvR -3%,heat +1%,-1.3,
+2026-08-07,Max Muncy,ATH,824727,Payton Tolle,2,proj,16.8,22.4,,+496,,,park -7%,85F · wind out 5,LvL -22%,heat +3%,-3.9,floor
+2026-08-07,Elly De La Cruz,CIN,822699,Cade Cavalli,2,proj,16.5,21.8,,+507,,,park avg,77F · wind out 4,SvR +8%,heat +3%,-2.1,floor
+2026-08-07,Rafael Devers,SFG,823191,Keider Montero,1,proj,16.5,22.0,,+504,,,park -14%,66F · wind out 10,LvR +8%,heat +4%,-1.8,
+2026-08-07,Bryce Harper,PHI,823428,José Soriano,2,proj,16.4,21.7,,+510,,,park +9%,83F · wind out 4,LvR +8%,heat +1%,-1.4,
+2026-08-07,JJ Bleday,CIN,822699,Cade Cavalli,3,proj,16.4,21.8,,+509,,,park avg,77F · wind out 4,LvR +8%,heat +5%,-1.6,
+2026-08-07,Pete Crow-Armstrong,CHC,824081,TBD *,3,proj,16.4,21.7,,+509,,,park -4% [low-conf],76F · wind in 4,,,-3.5,floor
+2026-08-07,Willson Contreras,BOS,824727,Jack Perkins,4,proj,15.9,20.8,,+527,,,park -7%,85F · wind out 5,RvR -3%,heat +6%,-2.3,floor
+2026-08-07,Harry Ford,WSN,822699,TBD *,8,proj,15.8,20.5,,+534,,,park avg,77F · wind out 4,,,,new
+2026-08-07,Corbin Carroll,ARI,825051,Roki Sasaki,2,proj,15.6,20.2,15.6,+541,475,-10.3,park +4%,102F (roof: half),LvR +8%,heat -7%,-2.1,floor
+2026-08-07,Fernando Tatis Jr.,SDP,823266,Ronel Blanco,1,proj,15.6,13.8,11.1,+541,475,-36.3,park -4%,no wx,RvR -3%,,,new
+2026-08-07,Jake Bauers,MIL,823750,TBD *,3,proj,15.6,20.2,,+541,,,park +9%,74F · wind in 4 (roof: half),,,-2.5,floor
+2026-08-07,Jake Burger,TEX,822863,Shane Baz,2,proj,15.6,20.3,,+539,,,park +2%,98F (roof: half),RvR -3%,heat +6%,,new
+2026-08-07,Joc Pederson,TEX,822863,Shane Baz,4,proj,15.6,20.3,,+539,,,park +2%,98F (roof: half),LvR +8%,heat +4%,-5.5,floor
+2026-08-07,Christian Encarnacion-Strand,BAL,822863,Nathan Eovaldi,9,proj,15.5,20.1,,+543,,,park +2%,98F (roof: half),RvR -3%,,-3.1,floor
+2026-08-07,Jo Adell,CLE,824566,Noah Schultz,1,proj,15.5,19.9,,+547,,,park +9%,74F · wind in 4,RvL +12%,heat +1%,,new
+2026-08-07,Andy Pages,LAD,825051,Merrill Kelly,1,proj,15.4,19.9,,+547,,,park +4%,102F (roof: half),RvR -3%,heat -10%,,new
+2026-08-07,Christian Walker,HOU,823266,Robbie Ray,2,proj,15.4,19.8,,+551,,,park -4%,no wx,RvL +12%,heat -3%,-4.7,floor
+2026-08-07,Coby Mayo,BAL,822863,Nathan Eovaldi,4,proj,15.4,19.9,,+549,,,park +2%,98F (roof: half),RvR -3%,heat +1%,,new
+2026-08-07,Gunnar Henderson,BAL,822863,Nathan Eovaldi,1,proj,15.4,19.8,,+550,,,park +2%,98F (roof: half),LvR +8%,heat -4%,,new

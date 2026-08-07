@@ -899,3 +899,22 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-05,Colson Montgomery,CHW,824728,Sonny Gray,4,card,19.1,21.6,16.4,+424,370,-23.1,park -7%,87F · wind out 7,LvR +8%,heat -3%,no,0
 2026-08-05,Lawrence Butler,ATH,824482,Rhett Lowder,1,card,19.1,16.3,13.5,+424,370,-36.7,park +25%,88F,LvR +8%,,hr,1
 2026-08-05,Miguel Vargas,CHW,824728,Sonny Gray,3,card,19.1,20.5,15.8,+424,370,-25.9,park -7%,87F · wind out 7,RvR -3%,heat -13%,no,0
+2026-08-06,Kyle Schwarber,PHI,823430,Miles Mikolas,3,proj,30.7,32.6,22.3,+226,192,-34.9,park +9%,84F · wind out 4,LvR +8%,heat +6%,no,0
+2026-08-06,Bryce Harper,PHI,823430,Miles Mikolas,2,proj,24.6,28.3,20.0,+307,265,-27.1,park +9%,84F · wind out 4,LvR +8%,heat +11%,no,0
+2026-08-06,Pete Alonso,BAL,824804,Ryan Johnson,2,card,23.6,26.6,19.0,+324,280,-27.7,park +4% [low-conf],86F · wind out 4,RvR -3%,heat +5%,no,0
+2026-08-06,Elly De La Cruz,CIN,824481,Mason Barnett,1,card,22.1,25.3,18.4,+352,305,-25.6,park +25%,81F,SvR +8%,,hr,1
+2026-08-06,Christian Encarnacion-Strand,BAL,824804,Ryan Johnson,4,card,21.4,32.5,22.2,+368,320,-6.7,park +4% [low-conf],86F · wind out 4,RvR -3%,,no,0
+2026-08-06,Sal Stewart,CIN,824481,Mason Barnett,2,card,21.4,26.7,19.1,+368,320,-19.9,park +25%,81F,RvR -3%,heat -7%,hr,1
+2026-08-06,JJ Bleday,CIN,824481,Mason Barnett,3,card,21.1,23.5,17.4,+374,325,-26.2,park +25%,81F,LvR +8%,,hr,1
+2026-08-06,Eugenio Suárez,CIN,824481,Mason Barnett,5,card,20.9,18.3,14.6,+379,330,-37.3,park +25%,81F,RvR -3%,heat -1%,no,0
+2026-08-06,Tyler Soderstrom,ATH,824481,Andrew Abbott,4,card,20.9,17.3,14.0,+379,330,-39.7,park +25%,81F,LvL -22%,heat +9%,no,0
+2026-08-06,Brandon Lowe,PIT,823754,Dustin May,2,proj,19.9,21.8,16.4,+402,350,-26.0,park +9%,71F · wind in 3 (roof: half),LvR +8%,heat +10%,hr,1
+2026-08-06,Cal Raleigh,SEA,823105,Framber Valdez,5,proj,19.9,13.8,11.0,+402,350,-50.3,park -4%,65F (roof: half),SvL +12%,,void,
+2026-08-06,Gunnar Henderson,BAL,824804,Ryan Johnson,3,card,19.9,20.0,15.5,+402,350,-30.4,park +4% [low-conf],86F · wind out 4,LvR +8%,heat -0%,no,0
+2026-08-06,Mike Trout,LAA,824804,Brandon Young,2,card,19.9,23.5,17.4,+402,350,-21.9,park +4% [low-conf],86F · wind out 4,RvR -3%,heat -0%,no,0
+2026-08-06,Riley Greene,DET,823105,Bryce Miller,2,proj,19.9,19.2,15.0,+402,350,-32.3,park -4%,65F (roof: half),LvR +8%,heat -1%,no,0
+2026-08-06,Kazuma Okamoto,TOR,824664,David Peterson,1,proj,18.3,24.4,17.8,+446,390,-12.6,park avg,70F,RvL +12%,heat +3%,no,0
+2026-08-06,Trea Turner,PHI,823430,Miles Mikolas,1,proj,18.3,21.2,16.1,+446,390,-21.0,park +9%,84F · wind out 4,RvR -3%,heat -6%,no,0
+2026-08-06,Tyler Stephenson,CIN,824481,Mason Barnett,4,card,18.3,16.2,13.4,+446,390,-34.3,park +25%,81F,RvR -3%,heat -11%,hr,1
+2026-08-06,Dillon Dingler,DET,823105,Bryce Miller,4,proj,17.9,20.2,15.6,+457,400,-22.1,park -4%,65F (roof: half),RvR -3%,heat +1%,hr,1
+2026-08-06,Dylan Beavers,BAL,824804,Ryan Johnson,1,card,17.9,16.7,13.7,+457,400,-31.5,park +4% [low-conf],86F · wind out 4,LvR +8%,heat -8%,no,0
