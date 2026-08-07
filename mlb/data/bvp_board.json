@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-07T20:56:44+00:00",
+ "generated": "2026-08-07T23:46:35+00:00",
  "date": "2026-08-07",
  "min_pa": 6,
  "rows": [
@@ -136,17 +136,6 @@
    "slg": ".639"
   },
   {
-   "batter": "Miguel Rojas",
-   "team": "LAD",
-   "opp_sp": "Merrill Kelly",
-   "pa": 17,
-   "ab": 17,
-   "h": 6,
-   "hr": 1,
-   "avg": ".353",
-   "slg": ".588"
-  },
-  {
    "batter": "Jes\u00fas S\u00e1nchez",
    "team": "TOR",
    "opp_sp": "Zack Wheeler",
@@ -161,6 +150,17 @@
    "batter": "Teoscar Hern\u00e1ndez",
    "team": "LAD",
    "opp_sp": "Merrill Kelly",
+   "pa": 9,
+   "ab": 9,
+   "h": 2,
+   "hr": 1,
+   "avg": ".222",
+   "slg": ".556"
+  },
+  {
+   "batter": "Javier B\u00e1ez",
+   "team": "DET",
+   "opp_sp": "JT Brubaker",
    "pa": 9,
    "ab": 9,
    "h": 2,
