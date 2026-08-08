@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-08T17:44:57+00:00",
+ "generated": "2026-08-08T20:45:59+00:00",
  "date": "2026-08-08",
  "min_pa": 6,
  "rows": [
@@ -37,17 +37,6 @@
    "slg": ".579"
   },
   {
-   "batter": "J.T. Realmuto",
-   "team": "PHI",
-   "opp_sp": "Max Scherzer",
-   "pa": 71,
-   "ab": 66,
-   "h": 7,
-   "hr": 2,
-   "avg": ".106",
-   "slg": ".212"
-  },
-  {
    "batter": "Cal Raleigh",
    "team": "SEA",
    "opp_sp": "Griffin Jax",
@@ -57,17 +46,6 @@
    "hr": 1,
    "avg": ".667",
    "slg": "1.333"
-  },
-  {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Clay Holmes",
-   "pa": 6,
-   "ab": 4,
-   "h": 2,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.250"
   },
   {
    "batter": "Vladimir Guerrero Jr.",
@@ -167,6 +145,28 @@
    "hr": 1,
    "avg": ".200",
    "slg": ".800"
+  },
+  {
+   "batter": "Vaughn Grissom",
+   "team": "LAA",
+   "opp_sp": "Sandy Alcantara",
+   "pa": 6,
+   "ab": 5,
+   "h": 1,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".800"
+  },
+  {
+   "batter": "Xander Bogaerts",
+   "team": "SD",
+   "opp_sp": "Peter Lambert",
+   "pa": 10,
+   "ab": 9,
+   "h": 3,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".667"
   }
  ]
 }
