@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-08T18:08+00:00",
+ "generated": "2026-08-08T20:55+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -44,40 +44,40 @@
   {
    "pitcher": "Chris Sale",
    "opp": "New York Yankees",
-   "lam": 7.21,
-   "k9_regressed": 10.45,
-   "exp_ip": 5.85,
-   "opp_mult": 1.061,
+   "lam": 7.26,
+   "k9_regressed": 10.51,
+   "exp_ip": 5.86,
+   "opp_mult": 1.063,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.8449,
-     "fair_over": -545,
-     "fair_under": 545
+     "p_over": 0.8498,
+     "fair_over": -566,
+     "fair_under": 566
     },
     {
      "line": 5.5,
-     "p_over": 0.7247,
-     "fair_over": -263,
-     "fair_under": 263
+     "p_over": 0.7318,
+     "fair_over": -273,
+     "fair_under": 273
     },
     {
      "line": 6.5,
-     "p_over": 0.5804,
-     "fair_over": -138,
-     "fair_under": 138
+     "p_over": 0.589,
+     "fair_over": -143,
+     "fair_under": 143
     },
     {
      "line": 7.5,
-     "p_over": 0.4318,
-     "fair_over": 132,
-     "fair_under": -132
+     "p_over": 0.4407,
+     "fair_over": 127,
+     "fair_under": -127
     },
     {
      "line": 8.5,
-     "p_over": 0.298,
-     "fair_over": 236,
-     "fair_under": -236
+     "p_over": 0.306,
+     "fair_over": 227,
+     "fair_under": -227
     }
    ]
   },
@@ -204,80 +204,80 @@
   {
    "pitcher": "Gerrit Cole",
    "opp": "Atlanta Braves",
-   "lam": 5.66,
-   "k9_regressed": 9.23,
-   "exp_ip": 5.67,
-   "opp_mult": 0.975,
+   "lam": 5.83,
+   "k9_regressed": 9.32,
+   "exp_ip": 5.76,
+   "opp_mult": 0.977,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6675,
-     "fair_over": -201,
-     "fair_under": 201
+     "p_over": 0.6913,
+     "fair_over": -224,
+     "fair_under": 224
     },
     {
      "line": 5.5,
-     "p_over": 0.499,
-     "fair_over": 100,
-     "fair_under": -100
+     "p_over": 0.5263,
+     "fair_over": -111,
+     "fair_under": 111
     },
     {
      "line": 6.5,
-     "p_over": 0.3399,
-     "fair_over": 194,
-     "fair_under": -194
+     "p_over": 0.3661,
+     "fair_over": 173,
+     "fair_under": -173
     },
     {
      "line": 7.5,
-     "p_over": 0.2112,
-     "fair_over": 373,
-     "fair_under": -373
+     "p_over": 0.2327,
+     "fair_over": 330,
+     "fair_under": -330
     },
     {
      "line": 8.5,
-     "p_over": 0.1201,
-     "fair_over": 733,
-     "fair_under": -733
+     "p_over": 0.1355,
+     "fair_over": 638,
+     "fair_under": -638
     }
    ]
   },
   {
    "pitcher": "Sandy Alcantara",
    "opp": "Los Angeles Angels",
-   "lam": 5.65,
-   "k9_regressed": 7.21,
-   "exp_ip": 6.53,
-   "opp_mult": 1.082,
+   "lam": 5.67,
+   "k9_regressed": 7.37,
+   "exp_ip": 6.39,
+   "opp_mult": 1.084,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6661,
-     "fair_over": -199,
-     "fair_under": 199
+     "p_over": 0.6683,
+     "fair_over": -202,
+     "fair_under": 202
     },
     {
      "line": 5.5,
-     "p_over": 0.4974,
-     "fair_over": 101,
-     "fair_under": -101
+     "p_over": 0.4999,
+     "fair_over": 100,
+     "fair_under": -100
     },
     {
      "line": 6.5,
-     "p_over": 0.3384,
-     "fair_over": 195,
-     "fair_under": -195
+     "p_over": 0.3408,
+     "fair_over": 193,
+     "fair_under": -193
     },
     {
      "line": 7.5,
-     "p_over": 0.21,
-     "fair_over": 376,
-     "fair_under": -376
+     "p_over": 0.212,
+     "fair_over": 372,
+     "fair_under": -372
     },
     {
      "line": 8.5,
-     "p_over": 0.1192,
-     "fair_over": 739,
-     "fair_under": -739
+     "p_over": 0.1206,
+     "fair_over": 729,
+     "fair_under": -729
     }
    ]
   },
@@ -444,80 +444,40 @@
   {
    "pitcher": "Gage Jump",
    "opp": "Boston Red Sox",
-   "lam": 5.3,
-   "k9_regressed": 9.42,
-   "exp_ip": 5.13,
-   "opp_mult": 0.987,
+   "lam": 5.24,
+   "k9_regressed": 9.58,
+   "exp_ip": 4.98,
+   "opp_mult": 0.989,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6106,
-     "fair_over": -157,
-     "fair_under": 157
+     "p_over": 0.6002,
+     "fair_over": -150,
+     "fair_under": 150
     },
     {
      "line": 5.5,
-     "p_over": 0.4367,
-     "fair_over": 129,
-     "fair_under": -129
+     "p_over": 0.4257,
+     "fair_over": 135,
+     "fair_under": -135
     },
     {
      "line": 6.5,
-     "p_over": 0.283,
-     "fair_over": 253,
-     "fair_under": -253
+     "p_over": 0.2733,
+     "fair_over": 266,
+     "fair_under": -266
     },
     {
      "line": 7.5,
-     "p_over": 0.1666,
-     "fair_over": 500,
-     "fair_under": -500
+     "p_over": 0.1593,
+     "fair_over": 528,
+     "fair_under": -528
     },
     {
      "line": 8.5,
-     "p_over": 0.0895,
-     "fair_over": 1017,
-     "fair_under": -1017
-    }
-   ]
-  },
-  {
-   "pitcher": "Walbert Ure\u00f1a",
-   "opp": "Miami Marlins",
-   "lam": 5.09,
-   "k9_regressed": 8.61,
-   "exp_ip": 5.43,
-   "opp_mult": 0.981,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5753,
-     "fair_over": -135,
-     "fair_under": 135
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4,
-     "fair_over": 150,
-     "fair_under": -150
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2512,
-     "fair_over": 298,
-     "fair_under": -298
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.143,
-     "fair_over": 599,
-     "fair_under": -599
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0742,
-     "fair_over": 1248,
-     "fair_under": -1248
+     "p_over": 0.0847,
+     "fair_over": 1080,
+     "fair_under": -1080
     }
    ]
   },
@@ -722,6 +682,46 @@
    ]
   },
   {
+   "pitcher": "Walbert Ure\u00f1a",
+   "opp": "Miami Marlins",
+   "lam": 4.93,
+   "k9_regressed": 8.59,
+   "exp_ip": 5.26,
+   "opp_mult": 0.981,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5471,
+     "fair_over": -121,
+     "fair_under": 121
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3717,
+     "fair_over": 169,
+     "fair_under": -169
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2276,
+     "fair_over": 339,
+     "fair_under": -339
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1261,
+     "fair_over": 693,
+     "fair_under": -693
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0636,
+     "fair_over": 1472,
+     "fair_under": -1472
+    }
+   ]
+  },
+  {
    "pitcher": "Matthew Liberatore",
    "opp": "Colorado Rockies",
    "lam": 4.91,
@@ -882,46 +882,6 @@
    ]
   },
   {
-   "pitcher": "Jake Bennett",
-   "opp": "Athletics",
-   "lam": 4.75,
-   "k9_regressed": 7.06,
-   "exp_ip": 5.94,
-   "opp_mult": 1.018,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5146,
-     "fair_over": -106,
-     "fair_under": 106
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3403,
-     "fair_over": 194,
-     "fair_under": -194
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2023,
-     "fair_over": 394,
-     "fair_under": -394
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1086,
-     "fair_over": 821,
-     "fair_under": -821
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.053,
-     "fair_over": 1787,
-     "fair_under": -1787
-    }
-   ]
-  },
-  {
    "pitcher": "Bubba Chandler",
    "opp": "New York Mets",
    "lam": 4.57,
@@ -998,6 +958,46 @@
      "p_over": 0.0428,
      "fair_over": 2236,
      "fair_under": -2236
+    }
+   ]
+  },
+  {
+   "pitcher": "Jake Bennett",
+   "opp": "Athletics",
+   "lam": 4.49,
+   "k9_regressed": 6.95,
+   "exp_ip": 5.72,
+   "opp_mult": 1.017,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4667,
+     "fair_over": 114,
+     "fair_under": -114
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.296,
+     "fair_over": 238,
+     "fair_under": -238
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1681,
+     "fair_over": 495,
+     "fair_under": -495
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0861,
+     "fair_over": 1062,
+     "fair_under": -1062
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.04,
+     "fair_over": 2402,
+     "fair_under": -2402
     }
    ]
   },
@@ -1162,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 18508 (used 1492) \u00b7 whiff rest:30 rows",
- "n_markets": 28,
+ "diag": "errors {} \u00b7 unbettable markets dropped 8 \u00b7 credits remaining 18416 (used 1584) \u00b7 whiff rest:30 rows",
+ "n_markets": 22,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1175,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 6,
+ "n_unbettable": 8,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
