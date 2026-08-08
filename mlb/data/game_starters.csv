@@ -2116,18 +2116,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-06,Miami Marlins,Atlanta Braves,Janson Junk,Martín Pérez,3,11,Final
 2026-08-06,Minnesota Twins,Kansas City Royals,Bailey Ober,Michael Wacha,4,3,Final
 2026-08-06,San Diego Padres,Arizona Diamondbacks,Walker Buehler,Kohl Drake,5,1,Final
-2026-08-07,New York Mets,Pittsburgh Pirates,Zac Thornton,Carmen Mlodzinski,0,0,Pre-Game
-2026-08-07,Toronto Blue Jays,Philadelphia Phillies,José Soriano,Zack Wheeler,0,0,Pre-Game
-2026-08-07,Cincinnati Reds,Washington Nationals,Chase Petty,Cade Cavalli,0,0,Pre-Game
-2026-08-07,Atlanta Braves,New York Yankees,Tyler Mahle,Max Fried,0,0,Pre-Game
-2026-08-07,Athletics,Boston Red Sox,Jack Perkins,Payton Tolle,0,0,Pre-Game
-2026-08-07,Los Angeles Angels,Miami Marlins,George Klassen,Tyler Phillips,0,0,Pre-Game
-2026-08-07,Cleveland Guardians,Chicago White Sox,Parker Messick,Noah Schultz,0,0,Pre-Game
-2026-08-07,Minnesota Twins,Milwaukee Brewers,Zebby Matthews,Shane Drohan,0,0,Pre-Game
-2026-08-07,Chicago Cubs,Kansas City Royals,Kevin Gausman,Daniel Lynch IV,0,0,Pre-Game
-2026-08-07,Colorado Rockies,St. Louis Cardinals,Ryan Feltner,Kyle Leahy,0,0,Pre-Game
-2026-08-07,Baltimore Orioles,Texas Rangers,Shane Baz,Nathan Eovaldi,0,0,Pre-Game
-2026-08-07,Los Angeles Dodgers,Arizona Diamondbacks,Roki Sasaki,Merrill Kelly,0,0,Scheduled
-2026-08-07,Houston Astros,San Diego Padres,Ronel Blanco,Robbie Ray,0,0,Scheduled
-2026-08-07,Tampa Bay Rays,Seattle Mariners,Drew Rasmussen,Logan Gilbert,0,0,Scheduled
-2026-08-07,Detroit Tigers,San Francisco Giants,Keider Montero,JT Brubaker,0,0,Scheduled
+2026-08-07,New York Mets,Pittsburgh Pirates,Zac Thornton,Carmen Mlodzinski,6,4,Final
+2026-08-07,Toronto Blue Jays,Philadelphia Phillies,José Soriano,Zack Wheeler,5,4,Final
+2026-08-07,Cincinnati Reds,Washington Nationals,Chase Petty,Cade Cavalli,3,5,Final
+2026-08-07,Atlanta Braves,New York Yankees,Tyler Mahle,Max Fried,2,3,Final
+2026-08-07,Athletics,Boston Red Sox,Jack Perkins,Payton Tolle,1,13,Final
+2026-08-07,Los Angeles Angels,Miami Marlins,George Klassen,Tyler Phillips,4,3,Final
+2026-08-07,Cleveland Guardians,Chicago White Sox,Parker Messick,Noah Schultz,8,2,Final
+2026-08-07,Minnesota Twins,Milwaukee Brewers,Zebby Matthews,Shane Drohan,8,6,Final
+2026-08-07,Chicago Cubs,Kansas City Royals,Kevin Gausman,Daniel Lynch IV,6,4,Final
+2026-08-07,Colorado Rockies,St. Louis Cardinals,Ryan Feltner,Kyle Leahy,2,3,Final
+2026-08-07,Baltimore Orioles,Texas Rangers,Shane Baz,Nathan Eovaldi,1,2,Final
+2026-08-07,Los Angeles Dodgers,Arizona Diamondbacks,Roki Sasaki,Merrill Kelly,3,4,Final
+2026-08-07,Houston Astros,San Diego Padres,Ronel Blanco,Robbie Ray,6,3,Final
+2026-08-07,Tampa Bay Rays,Seattle Mariners,Drew Rasmussen,Logan Gilbert,2,1,Final
+2026-08-07,Detroit Tigers,San Francisco Giants,Keider Montero,JT Brubaker,2,5,Final
+2026-08-08,Atlanta Braves,New York Yankees,Chris Sale,Gerrit Cole,0,0,Scheduled
+2026-08-08,Athletics,Boston Red Sox,Gage Jump,Jake Bennett,0,0,Scheduled
+2026-08-08,Los Angeles Angels,Miami Marlins,Walbert Ureña,Sandy Alcantara,0,0,Scheduled
+2026-08-08,Toronto Blue Jays,Philadelphia Phillies,Max Scherzer,Aaron Nola,0,0,Scheduled
+2026-08-08,New York Mets,Pittsburgh Pirates,Robert Stock,Bubba Chandler,0,0,Scheduled
+2026-08-08,Cincinnati Reds,Washington Nationals,Chase Burns,Andrew Alvarez,0,0,Scheduled
+2026-08-08,Chicago Cubs,Kansas City Royals,Clay Holmes,Seth Lugo,0,0,Scheduled
+2026-08-08,Minnesota Twins,Milwaukee Brewers,Taj Bradley,Robert Gasser,0,0,Scheduled
+2026-08-08,Houston Astros,San Diego Padres,Peter Lambert,Michael King,0,0,Scheduled
+2026-08-08,Detroit Tigers,San Francisco Giants,Jackson Jobe,Landen Roupp,0,0,Scheduled
+2026-08-08,Colorado Rockies,St. Louis Cardinals,Kyle Freeland,Matthew Liberatore,0,0,Scheduled
+2026-08-08,Baltimore Orioles,Texas Rangers,Kyle Bradish,Jacob deGrom,0,0,Scheduled
+2026-08-08,Cleveland Guardians,Chicago White Sox,Gavin Williams,Anthony Kay,0,0,Scheduled
+2026-08-08,Los Angeles Dodgers,Arizona Diamondbacks,Yoshinobu Yamamoto,Brandon Pfaadt,0,0,Scheduled
+2026-08-08,Tampa Bay Rays,Seattle Mariners,Griffin Jax,George Kirby,0,0,Scheduled

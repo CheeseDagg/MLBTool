@@ -929,3 +929,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-06,Royce Lewis,MIN,824080,Michael Wacha,6,proj,18.3,14.4,11.8,+446,390,-42.4,park -4% [low-conf],76F,RvR -3%,,hr,1
 2026-08-06,Salvador Perez,KCR,824080,Bailey Ober,1,proj,18.3,21.6,16.4,+446,390,-19.9,park -4% [low-conf],76F,RvR -3%,heat +3%,no,0
 2026-08-06,Jac Caglianone,KCR,824080,Bailey Ober,4,proj,17.9,20.8,15.9,+457,400,-20.3,park -4% [low-conf],76F,LvR +8%,heat +8%,no,0
+2026-08-07,Kyle Schwarber,PHI,823428,José Soriano,1,card,25.3,30.0,20.9,+296,255,-25.9,park +9%,92F · wind out 9,LvR +8%,heat -4%,no,0
+2026-08-07,Yordan Alvarez,HOU,823266,Robbie Ray,1,proj,24.6,26.7,19.1,+307,265,-30.3,park -4%,no wx,LvL -22%,heat -8%,no,0
+2026-08-07,Shohei Ohtani,LAD,825051,Merrill Kelly,2,proj,23.9,27.3,19.4,+318,275,-27.2,park +4%,108F (roof: half),LvR +8%,heat -7%,no,0
+2026-08-07,Ben Rice,NYY,823515,Tyler Mahle,2,card,23.0,28.9,20.3,+335,290,-20.9,park +14%,91F,LvR +8%,heat -3%,no,0
+2026-08-07,Junior Caminero,TBR,823103,Logan Gilbert,1,proj,22.7,28.8,20.2,+340,295,-20.1,park -4%,76F (roof: half),RvR -3%,heat -1%,no,0
+2026-08-07,Jake Bauers,MIL,823750,Zebby Matthews,3,card,21.4,22.1,16.6,+368,320,-30.2,park +9%,87F · wind in 4 (roof: half),LvR +8%,heat -1%,no,0
+2026-08-07,Matt Olson,ATL,823515,Max Fried,4,card,20.9,21.1,16.1,+379,330,-30.9,park +14%,91F,LvL -22%,heat -0%,hr,1
+2026-08-07,Wilyer Abreu,BOS,824727,Jack Perkins,3,card,20.9,21.0,16.0,+379,330,-31.2,park -7%,94F · wind out 5,LvR +8%,heat +4%,no,0
+2026-08-07,José Ramírez,CLE,824566,Noah Schultz,3,card,20.6,15.1,12.5,+385,335,-45.6,park +9%,83F,SvL +12%,,no,0
+2026-08-07,Munetaka Murakami,CHW,824566,Parker Messick,2,card,20.4,25.9,18.7,+391,340,-17.9,park +9%,83F,LvL -22%,heat +4%,hr,1
+2026-08-07,CJ Abrams,WSN,822699,Chase Petty,1,card,19.9,28.8,20.3,+402,350,-8.9,park avg,91F · wind out 8,LvR +8%,heat -1%,no,0
+2026-08-07,Christian Walker,HOU,823266,Robbie Ray,2,proj,19.9,19.8,15.4,+402,350,-30.9,park -4%,no wx,RvL +12%,heat -3%,no,0
+2026-08-07,Jo Adell,CLE,824566,Noah Schultz,4,card,19.9,16.6,13.7,+402,350,-38.5,park +9%,83F,RvL +12%,,no,0
+2026-08-07,Miguel Vargas,CHW,824566,Parker Messick,3,card,19.9,20.9,16.0,+402,350,-28.1,park +9%,83F,RvL +12%,heat +2%,no,0
+2026-08-07,Pete Crow-Armstrong,CHC,824081,Daniel Lynch IV,1,card,19.9,24.2,17.7,+402,350,-20.2,park -4% [low-conf],86F · wind out 4,LvL -22%,heat +2%,no,0
+2026-08-07,Rafael Devers,SFG,823191,Keider Montero,1,proj,19.9,22.0,16.6,+402,350,-25.4,park -14%,66F · wind out 11,LvR +8%,heat +4%,hr,1
+2026-08-07,Rhys Hoskins,CLE,824566,Noah Schultz,6,card,19.9,15.3,12.8,+402,350,-42.6,park +9%,83F,RvL +12%,,no,0
+2026-08-07,Luis García Jr.,NYY,823515,Tyler Mahle,4,card,19.5,19.0,15.0,+413,360,-31.1,park +14%,91F,LvR +8%,heat -5%,no,0
+2026-08-07,Manny Machado,SDP,823266,Ronel Blanco,2,proj,19.5,21.1,16.1,+413,360,-26.0,park -4%,no wx,RvR -3%,,no,0
+2026-08-07,Trent Grisham,NYY,823515,Tyler Mahle,1,card,19.5,19.9,15.4,+413,360,-29.0,park +14%,91F,LvR +8%,heat -12%,no,0
+2026-08-07,Cal Raleigh,SEA,823103,Drew Rasmussen,5,proj,19.1,15.0,12.5,+424,370,-41.4,park -4%,76F (roof: half),SvR +8%,,no,0
+2026-08-07,Hunter Goodman,COL,823024,Kyle Leahy,4,card,19.1,24.1,17.7,+424,370,-16.8,park -7%,90F · wind out 5,RvR -3%,heat +1%,no,0
+2026-08-07,Kyle Stowers,MIA,823836,George Klassen *,1,card,19.1,20.4,15.7,+424,370,-26.2,park -9%,86F · wind in 4 (roof: half),LvR +8%,heat -5%,no,0
+2026-08-07,Royce Lewis,MIN,823750,Shane Drohan,3,card,19.1,18.3,14.6,+424,370,-31.5,park +9%,87F · wind in 4 (roof: half),RvL +12%,heat +9%,no,0
+2026-08-07,Bobby Witt Jr.,KCR,824081,Kevin Gausman,2,card,18.7,18.7,14.8,+435,380,-29.0,park -4% [low-conf],86F · wind out 4,RvR -3%,heat -3%,no,0
+2026-08-07,Max Muncy,ATH,824727,Payton Tolle,8,card,18.7,14.5,11.9,+435,380,-42.9,park -7%,94F · wind out 5,LvL -22%,,no,0
+2026-08-07,Brandon Lowe,PIT,823349,Zac Thornton,2,card,18.3,20.6,15.8,+446,390,-22.6,park -9%,83F,LvL -22%,heat +6%,no,0
+2026-08-07,Heliot Ramos,NYY,823515,Tyler Mahle,3,card,18.3,16.7,13.7,+446,390,-32.8,park +14%,91F,RvR -3%,heat -8%,no,0
+2026-08-07,Jac Caglianone,KCR,824081,Kevin Gausman,3,card,18.3,21.9,16.5,+446,390,-19.2,park -4% [low-conf],86F · wind out 4,LvR +8%,heat -7%,no,0
+2026-08-07,Jazz Chisholm Jr.,NYY,823515,Tyler Mahle,5,card,18.3,15.8,13.2,+446,390,-35.3,park +14%,91F,LvR +8%,,no,0
