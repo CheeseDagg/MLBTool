@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-08T20:45:59+00:00",
+ "generated": "2026-08-08T23:43:13+00:00",
  "date": "2026-08-08",
  "min_pa": 6,
  "rows": [
@@ -13,6 +13,105 @@
    "hr": 4,
    "avg": ".269",
    "slg": ".808"
+  },
+  {
+   "batter": "Jahmai Jones",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Ceddanne Rafaela",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Caleb Durbin",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Willson Contreras",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Andruw Monasterio",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Eli White",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Nick Sogard",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Jarren Duran",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
+  },
+  {
+   "batter": "Connor Wong",
+   "team": "BOS",
+   "opp_sp": "Gage Jump",
+   "pa": 12,
+   "ab": 11,
+   "h": 3,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".818"
   },
   {
    "batter": "Mookie Betts",
@@ -37,6 +136,17 @@
    "slg": ".579"
   },
   {
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Peter Lambert",
+   "pa": 6,
+   "ab": 5,
+   "h": 4,
+   "hr": 1,
+   "avg": ".800",
+   "slg": "1.800"
+  },
+  {
    "batter": "Cal Raleigh",
    "team": "SEA",
    "opp_sp": "Griffin Jax",
@@ -57,116 +167,6 @@
    "hr": 1,
    "avg": ".625",
    "slg": "1.000"
-  },
-  {
-   "batter": "Randy Arozarena",
-   "team": "SEA",
-   "opp_sp": "Griffin Jax",
-   "pa": 10,
-   "ab": 7,
-   "h": 4,
-   "hr": 1,
-   "avg": ".571",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Kyle Tucker",
-   "team": "LAD",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 9,
-   "ab": 7,
-   "h": 3,
-   "hr": 1,
-   "avg": ".429",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Luis Campusano",
-   "team": "SD",
-   "opp_sp": "Peter Lambert",
-   "pa": 6,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Miguel Vargas",
-   "team": "CWS",
-   "opp_sp": "Gavin Williams",
-   "pa": 11,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": ".875"
-  },
-  {
-   "batter": "Enrique Hern\u00e1ndez",
-   "team": "LAD",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 9,
-   "ab": 8,
-   "h": 3,
-   "hr": 1,
-   "avg": ".375",
-   "slg": ".875"
-  },
-  {
-   "batter": "Andr\u00e9s Gim\u00e9nez",
-   "team": "TOR",
-   "opp_sp": "Aaron Nola",
-   "pa": 7,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
-   "batter": "Iv\u00e1n Herrera",
-   "team": "STL",
-   "opp_sp": "Kyle Freeland",
-   "pa": 6,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
-   "batter": "Taylor Ward",
-   "team": "SEA",
-   "opp_sp": "Griffin Jax",
-   "pa": 7,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
-   "batter": "Vaughn Grissom",
-   "team": "LAA",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 6,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
-   "batter": "Xander Bogaerts",
-   "team": "SD",
-   "opp_sp": "Peter Lambert",
-   "pa": 10,
-   "ab": 9,
-   "h": 3,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
   }
  ]
 }
