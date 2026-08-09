@@ -989,3 +989,12 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-08,Jo Adell,CLE,824565,Anthony Kay,2,card,17.9,18.2,14.5,+457,400,-27.4,park +9%,76F · wind in 5,RvL +12%,heat -4%,no,0
 2026-08-08,Sal Stewart,CIN,822701,Andrew Alvarez,2,card,17.9,26.2,18.8,+457,400,-5.9,park avg,95F · wind out 9,RvL +12%,heat -1%,no,0
 2026-08-08,Jackson Chourio,MIL,823752,Taj Bradley,2,card,17.2,21.2,16.1,+480,420,-16.0,park +9%,84F · wind out 5 (roof: half),RvR -3%,heat +3%,no,0
+2026-08-09,Pete Crow-Armstrong,CHC,824078,Randy Dobnak,1,card,24.6,26.8,19.2,+307,265,-30.0,park -4% [low-conf],87F · wind out 8,LvR +8%,heat +7%,no,0
+2026-08-09,Abimelec Ortiz,WSN,822700,Brady Singer,2,card,24.1,35.9,,+315,,,park avg,96F · wind out 3,LvR +8%,,hr,1
+2026-08-09,Bobby Witt Jr.,KCR,824078,Matthew Boyd,2,card,23.6,19.7,15.3,+324,280,-41.7,park -4% [low-conf],87F · wind out 8,RvL +12%,heat +13%,no,0
+2026-08-09,Salvador Perez,KCR,824078,Matthew Boyd,4,card,20.4,18.2,14.5,+391,340,-36.1,park -4% [low-conf],87F · wind out 8,RvL +12%,heat +14%,no,0
+2026-08-09,Ben Rice,NYY,823513,Grant Holmes,2,card,19.9,31.7,21.8,+402,350,-1.8,park +14%,93F · wind out 8,LvR +8%,heat -5%,no,0
+2026-08-09,Kyle Stowers,MIA,823835,Grayson Rodriguez,1,card,19.1,20.6,15.8,+424,370,-25.6,park -9%,87F · wind in 5 (roof: half),LvR +8%,heat +2%,no,0
+2026-08-09,Matt Olson,ATL,823513,Cam Schlittler,3,card,18.7,27.6,19.6,+435,380,-5.9,park +14%,93F · wind out 8,LvR +8%,heat +7%,hr,1
+2026-08-09,Ian Happ,CHC,824078,Randy Dobnak,4,card,18.3,18.4,14.6,+446,390,-28.5,park -4% [low-conf],87F · wind out 8,SvR +8%,heat -8%,hr,1
+2026-08-09,Wilyer Abreu,BOS,824724,J.T. Ginn,3,card,18.3,21.1,16.1,+446,390,-21.2,park -7%,90F · wind out 10,LvR +8%,heat -0%,no,0
