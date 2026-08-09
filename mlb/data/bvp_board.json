@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-09T17:45:24+00:00",
+ "generated": "2026-08-09T20:50:25+00:00",
  "date": "2026-08-09",
  "min_pa": 6,
  "rows": [
@@ -40,12 +40,23 @@
    "batter": "Salvador Perez",
    "team": "KC",
    "opp_sp": "Matthew Boyd",
-   "pa": 54,
-   "ab": 52,
-   "h": 12,
+   "pa": 56,
+   "ab": 54,
+   "h": 13,
    "hr": 2,
-   "avg": ".231",
-   "slg": ".365"
+   "avg": ".241",
+   "slg": ".370"
+  },
+  {
+   "batter": "Daylen Lile",
+   "team": "WSH",
+   "opp_sp": "Brady Singer",
+   "pa": 7,
+   "ab": 6,
+   "h": 4,
+   "hr": 1,
+   "avg": ".667",
+   "slg": "1.500"
   },
   {
    "batter": "Luke Maile",
@@ -57,17 +68,6 @@
    "hr": 1,
    "avg": ".400",
    "slg": "1.200"
-  },
-  {
-   "batter": "Mickey Moniak",
-   "team": "COL",
-   "opp_sp": "Michael McGreevy",
-   "pa": 6,
-   "ab": 6,
-   "h": 4,
-   "hr": 1,
-   "avg": ".667",
-   "slg": "1.167"
   },
   {
    "batter": "Ryan McMahon",
@@ -90,6 +90,17 @@
    "hr": 1,
    "avg": ".400",
    "slg": ".900"
+  },
+  {
+   "batter": "Mickey Moniak",
+   "team": "COL",
+   "opp_sp": "Michael McGreevy",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
+   "hr": 1,
+   "avg": ".500",
+   "slg": ".875"
   },
   {
    "batter": "Andy Pages",
@@ -136,26 +147,26 @@
    "slg": ".696"
   },
   {
-   "batter": "Bryan Reynolds",
-   "team": "PIT",
-   "opp_sp": "Sean Manaea",
-   "pa": 11,
-   "ab": 9,
-   "h": 2,
+   "batter": "Henry Bolte",
+   "team": "ATH",
+   "opp_sp": "Erik Miller",
+   "pa": 20,
+   "ab": 18,
+   "h": 5,
    "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
+   "avg": ".278",
+   "slg": ".500"
   },
   {
-   "batter": "Kyle Tucker",
-   "team": "LAD",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 27,
-   "ab": 23,
-   "h": 3,
+   "batter": "Jacob Wilson",
+   "team": "ATH",
+   "opp_sp": "Erik Miller",
+   "pa": 20,
+   "ab": 18,
+   "h": 5,
    "hr": 1,
-   "avg": ".130",
-   "slg": ".304"
+   "avg": ".278",
+   "slg": ".500"
   }
  ]
 }
