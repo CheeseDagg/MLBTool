@@ -2131,18 +2131,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-07,Houston Astros,San Diego Padres,Ronel Blanco,Robbie Ray,6,3,Final
 2026-08-07,Tampa Bay Rays,Seattle Mariners,Drew Rasmussen,Logan Gilbert,2,1,Final
 2026-08-07,Detroit Tigers,San Francisco Giants,Keider Montero,JT Brubaker,2,5,Final
-2026-08-08,Atlanta Braves,New York Yankees,Chris Sale,Gerrit Cole,2,3,In Progress
-2026-08-08,Athletics,Boston Red Sox,Gage Jump,Jake Bennett,0,2,Player challenge
-2026-08-08,Los Angeles Angels,Miami Marlins,Walbert Ureña,Sandy Alcantara,0,0,In Progress
-2026-08-08,Toronto Blue Jays,Philadelphia Phillies,Max Scherzer,Aaron Nola,0,0,Pre-Game
-2026-08-08,New York Mets,Pittsburgh Pirates,Robert Stock,Bubba Chandler,0,0,Pre-Game
-2026-08-08,Cincinnati Reds,Washington Nationals,Chase Burns,Andrew Alvarez,0,0,Pre-Game
-2026-08-08,Chicago Cubs,Kansas City Royals,Clay Holmes,Seth Lugo,0,0,Pre-Game
-2026-08-08,Minnesota Twins,Milwaukee Brewers,Taj Bradley,Robert Gasser,0,0,Pre-Game
-2026-08-08,Houston Astros,San Diego Padres,Peter Lambert,Michael King,0,0,Pre-Game
-2026-08-08,Detroit Tigers,San Francisco Giants,Jackson Jobe,Landen Roupp,0,0,Pre-Game
-2026-08-08,Colorado Rockies,St. Louis Cardinals,Kyle Freeland,Matthew Liberatore,0,0,Pre-Game
-2026-08-08,Baltimore Orioles,Texas Rangers,Kyle Bradish,Jacob deGrom,0,0,Pre-Game
-2026-08-08,Cleveland Guardians,Chicago White Sox,Gavin Williams,Anthony Kay,0,0,Pre-Game
-2026-08-08,Los Angeles Dodgers,Arizona Diamondbacks,Yoshinobu Yamamoto,Brandon Pfaadt,0,0,Pre-Game
-2026-08-08,Tampa Bay Rays,Seattle Mariners,Griffin Jax,George Kirby,0,0,Pre-Game
+2026-08-08,Atlanta Braves,New York Yankees,Chris Sale,Gerrit Cole,4,5,Final
+2026-08-08,Athletics,Boston Red Sox,Gage Jump,Jake Bennett,7,3,Final
+2026-08-08,Los Angeles Angels,Miami Marlins,Walbert Ureña,Sandy Alcantara,0,7,Final
+2026-08-08,Toronto Blue Jays,Philadelphia Phillies,Max Scherzer,Aaron Nola,7,5,Final
+2026-08-08,New York Mets,Pittsburgh Pirates,Robert Stock,Bubba Chandler,0,9,Final
+2026-08-08,Cincinnati Reds,Washington Nationals,Chase Burns,Andrew Alvarez,2,8,Final
+2026-08-08,Chicago Cubs,Kansas City Royals,Clay Holmes,Seth Lugo,3,6,Final
+2026-08-08,Minnesota Twins,Milwaukee Brewers,Taj Bradley,Robert Gasser,3,4,Final
+2026-08-08,Houston Astros,San Diego Padres,Peter Lambert,Michael King,2,3,Final
+2026-08-08,Detroit Tigers,San Francisco Giants,Jackson Jobe,Landen Roupp,8,0,Final
+2026-08-08,Colorado Rockies,St. Louis Cardinals,Kyle Freeland,Matthew Liberatore,8,6,Final
+2026-08-08,Baltimore Orioles,Texas Rangers,Kyle Bradish,Jacob deGrom,1,5,Final
+2026-08-08,Cleveland Guardians,Chicago White Sox,Gavin Williams,Anthony Kay,3,6,Final
+2026-08-08,Los Angeles Dodgers,Arizona Diamondbacks,Yoshinobu Yamamoto,Brandon Pfaadt,2,1,Final
+2026-08-08,Tampa Bay Rays,Seattle Mariners,Casey Legumina,George Kirby,3,2,Final
+2026-08-09,Cincinnati Reds,Washington Nationals,Brady Singer,Brad Lord,0,0,Scheduled
+2026-08-09,Athletics,Boston Red Sox,J.T. Ginn,,0,0,Scheduled
+2026-08-09,New York Mets,Pittsburgh Pirates,Sean Manaea,Jared Jones,0,0,Scheduled
+2026-08-09,Toronto Blue Jays,Philadelphia Phillies,Shane Bieber,Jesús Luzardo,0,0,Scheduled
+2026-08-09,Atlanta Braves,New York Yankees,Grant Holmes,Cam Schlittler,0,0,Scheduled
+2026-08-09,Los Angeles Angels,Miami Marlins,Grayson Rodriguez,Ryan Gusto,0,0,Scheduled
+2026-08-09,Chicago Cubs,Kansas City Royals,Matthew Boyd,Randy Dobnak,0,0,Scheduled
+2026-08-09,Cleveland Guardians,Chicago White Sox,Joey Cantillo,Davis Martin,0,0,Scheduled
+2026-08-09,Minnesota Twins,Milwaukee Brewers,Connor Prielipp,Jacob Misiorowski,0,0,Scheduled
+2026-08-09,Colorado Rockies,St. Louis Cardinals,Michael Lorenzen,Michael McGreevy,0,0,Scheduled
+2026-08-09,Baltimore Orioles,Texas Rangers,Cade Povich,Kumar Rocker,0,0,Scheduled
+2026-08-09,Detroit Tigers,San Francisco Giants,Troy Melton,Logan Webb,0,0,Scheduled
+2026-08-09,Los Angeles Dodgers,Arizona Diamondbacks,Justin Wrobleski,Eduardo Rodriguez,0,0,Scheduled
+2026-08-09,Tampa Bay Rays,Seattle Mariners,,Emerson Hancock,0,0,Scheduled
+2026-08-09,Houston Astros,San Diego Padres,Cristian Javier,,0,0,Scheduled

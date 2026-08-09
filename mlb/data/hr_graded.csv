@@ -959,3 +959,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-07,Heliot Ramos,NYY,823515,Tyler Mahle,3,card,18.3,16.7,13.7,+446,390,-32.8,park +14%,91F,RvR -3%,heat -8%,no,0
 2026-08-07,Jac Caglianone,KCR,824081,Kevin Gausman,3,card,18.3,21.9,16.5,+446,390,-19.2,park -4% [low-conf],86F · wind out 4,LvR +8%,heat -7%,no,0
 2026-08-07,Jazz Chisholm Jr.,NYY,823515,Tyler Mahle,5,card,18.3,15.8,13.2,+446,390,-35.3,park +14%,91F,LvR +8%,,no,0
+2026-08-08,Kyle Schwarber,PHI,823426,Max Scherzer,1,card,29.4,32.9,22.4,+240,205,-31.5,park +9%,80F · wind out 4,LvR +8%,heat +2%,no,0
+2026-08-08,Yordan Alvarez,HOU,823267,Michael King,2,card,25.3,27.8,19.7,+296,255,-30.0,park -4%,86F · wind in 4,LvR +8%,heat +1%,no,0
+2026-08-08,Shohei Ohtani,LAD,825049,Brandon Pfaadt,2,proj,24.2,26.6,19.1,+313,270,-29.5,park +4%,109F (roof: half),LvR +8%,heat +1%,no,0
+2026-08-08,Bryce Harper,PHI,823426,Max Scherzer,3,card,23.6,23.3,17.3,+324,280,-34.3,park +9%,80F · wind out 4,LvR +8%,heat +10%,hr,1
+2026-08-08,Brandon Lowe,PIT,823348,Robert Stock *,2,card,21.1,22.0,16.6,+374,325,-29.5,park -9%,83F,LvR +8%,,hr,1
+2026-08-08,Munetaka Murakami,CHW,824565,Gavin Williams,2,card,20.9,29.3,20.5,+379,330,-11.9,park +9%,76F · wind in 5,LvR +8%,heat +9%,hr,1
+2026-08-08,Hunter Goodman,COL,823021,Matthew Liberatore,4,card,20.6,26.7,19.1,+385,335,-17.0,park -7%,91F,RvL +12%,heat +15%,no,0
+2026-08-08,Jordan Walker,STL,823021,Kyle Freeland,2,card,20.4,23.0,17.1,+391,340,-24.6,park -7%,91F,RvL +12%,heat +2%,hr,1
+2026-08-08,Junior Caminero,TBR,823102,George Kirby,1,proj,20.4,27.8,19.7,+391,340,-13.3,park -4%,72F (roof: half),RvR -3%,heat +6%,no,0
+2026-08-08,Pete Crow-Armstrong,CHC,824079,Seth Lugo,1,card,20.4,27.9,19.8,+391,340,-13.0,park -4% [low-conf],91F,LvR +8%,heat +7%,no,0
+2026-08-08,Max Muncy,ATH,824726,Jake Bennett,8,card,19.9,14.0,11.3,+402,350,-49.3,park -7%,91F · wind out 9,LvL -22%,,no,0
+2026-08-08,Jake Bauers,MIL,823752,Taj Bradley,3,card,19.1,21.3,16.2,+424,370,-23.9,park +9%,84F · wind out 5 (roof: half),LvR +8%,heat +1%,no,0
+2026-08-08,Jesús Sánchez,TOR,823426,Aaron Nola,4,card,19.1,17.2,14.0,+424,370,-34.3,park +9%,80F · wind out 4,LvR +8%,heat -3%,no,0
+2026-08-08,Manny Machado,SDP,823267,Peter Lambert,3,card,19.1,19.1,15.0,+424,370,-29.6,park -4%,86F · wind in 4,RvR -3%,heat +3%,no,0
+2026-08-08,Pete Alonso,BAL,822864,Jacob deGrom,2,card,19.1,23.4,17.3,+424,370,-18.7,park +2%,101F (roof: half),RvR -3%,heat -1%,no,0
+2026-08-08,Rafael Devers,SFG,823188,Jackson Jobe *,4,card,19.1,17.8,14.3,+424,370,-32.8,park -14%,65F · wind out 11,LvR +8%,,no,0
+2026-08-08,Royce Lewis,MIN,823752,Robert Gasser,3,card,19.1,20.2,15.6,+424,370,-26.8,park +9%,84F · wind out 5 (roof: half),RvL +12%,heat +18%,no,0
+2026-08-08,Brandon Marsh,PHI,823426,Max Scherzer,6,card,18.3,14.9,12.3,+446,390,-39.9,park +9%,80F · wind out 4,LvR +8%,,no,0
+2026-08-08,CJ Abrams,WSN,822701,Chase Burns,1,card,18.3,27.1,19.3,+446,390,-5.3,park avg,95F · wind out 9,LvR +8%,heat -6%,no,0
+2026-08-08,Corey Seager,TEX,822864,Kyle Bradish,3,card,18.3,19.1,15.0,+446,390,-26.6,park +2%,101F (roof: half),LvR +8%,heat +1%,hr,1
+2026-08-08,Eugenio Suárez,CIN,822701,Andrew Alvarez,4,card,18.3,19.2,15.1,+446,390,-26.1,park avg,95F · wind out 9,RvL +12%,,hr,1
+2026-08-08,Joc Pederson,TEX,822864,Kyle Bradish,1,card,18.3,25.2,18.3,+446,390,-10.5,park +2%,101F (roof: half),LvR +8%,heat -3%,no,0
+2026-08-08,Bryan De La Cruz,PHI,823426,Max Scherzer,8,card,17.9,13.7,10.9,+457,400,-45.3,park +9%,80F · wind out 4,RvR -3%,,no,0
+2026-08-08,Colson Montgomery,CHW,824565,Gavin Williams,4,card,17.9,21.6,16.4,+457,400,-18.1,park +9%,76F · wind in 5,LvR +8%,heat +7%,no,0
+2026-08-08,Fernando Tatis Jr.,SDP,823267,Peter Lambert,1,card,17.9,14.1,11.4,+457,400,-43.2,park -4%,86F · wind in 4,RvR -3%,,no,0
+2026-08-08,Francisco Lindor,NYM,823348,Bubba Chandler,2,card,17.9,17.6,14.2,+457,400,-29.0,park -9%,83F,SvR +8%,heat +4%,no,0
+2026-08-08,JJ Bleday,CIN,822701,Andrew Alvarez,5,card,17.9,17.8,14.3,+457,400,-28.5,park avg,95F · wind out 9,LvL -22%,heat -7%,no,0
+2026-08-08,Jo Adell,CLE,824565,Anthony Kay,2,card,17.9,18.2,14.5,+457,400,-27.4,park +9%,76F · wind in 5,RvL +12%,heat -4%,no,0
+2026-08-08,Sal Stewart,CIN,822701,Andrew Alvarez,2,card,17.9,26.2,18.8,+457,400,-5.9,park avg,95F · wind out 9,RvL +12%,heat -1%,no,0
+2026-08-08,Jackson Chourio,MIL,823752,Taj Bradley,2,card,17.2,21.2,16.1,+480,420,-16.0,park +9%,84F · wind out 5 (roof: half),RvR -3%,heat +3%,no,0
