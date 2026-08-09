@@ -1,40 +1,117 @@
 {
- "generated": "2026-08-09T20:50:25+00:00",
+ "generated": "2026-08-09T23:45:05+00:00",
  "date": "2026-08-09",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Teoscar Hern\u00e1ndez",
-   "team": "LAD",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 32,
-   "ab": 31,
-   "h": 10,
+   "batter": "Alec Burleson",
+   "team": "STL",
+   "opp_sp": "Michael Lorenzen",
+   "pa": 8,
+   "ab": 7,
+   "h": 5,
    "hr": 3,
-   "avg": ".323",
-   "slg": ".774"
-  },
-  {
-   "batter": "Enrique Hern\u00e1ndez",
-   "team": "LAD",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 15,
-   "ab": 15,
-   "h": 8,
-   "hr": 2,
-   "avg": ".533",
-   "slg": "1.000"
+   "avg": ".714",
+   "slg": "2.000"
   },
   {
    "batter": "Shohei Ohtani",
    "team": "LAD",
    "opp_sp": "Eduardo Rodriguez",
-   "pa": 32,
-   "ab": 26,
-   "h": 8,
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
    "hr": 2,
-   "avg": ".308",
-   "slg": ".654"
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Andy Pages",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Freddie Freeman",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Tommy Edman",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Mookie Betts",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Kyle Tucker",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Teoscar Hern\u00e1ndez",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Enrique Hern\u00e1ndez",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
+  },
+  {
+   "batter": "Ben Rortvedt",
+   "team": "LAD",
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 43,
+   "ab": 38,
+   "h": 10,
+   "hr": 2,
+   "avg": ".263",
+   "slg": ".447"
   },
   {
    "batter": "Salvador Perez",
@@ -48,17 +125,6 @@
    "slg": ".370"
   },
   {
-   "batter": "Daylen Lile",
-   "team": "WSH",
-   "opp_sp": "Brady Singer",
-   "pa": 7,
-   "ab": 6,
-   "h": 4,
-   "hr": 1,
-   "avg": ".667",
-   "slg": "1.500"
-  },
-  {
    "batter": "Luke Maile",
    "team": "KC",
    "opp_sp": "Matthew Boyd",
@@ -70,15 +136,15 @@
    "slg": "1.200"
   },
   {
-   "batter": "Ryan McMahon",
-   "team": "NYY",
-   "opp_sp": "Grant Holmes",
+   "batter": "Mickey Moniak",
+   "team": "COL",
+   "opp_sp": "Michael McGreevy",
    "pa": 6,
-   "ab": 5,
-   "h": 2,
+   "ab": 6,
+   "h": 4,
    "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
+   "avg": ".667",
+   "slg": "1.167"
   },
   {
    "batter": "Luis Garc\u00eda Jr.",
@@ -92,81 +158,15 @@
    "slg": ".900"
   },
   {
-   "batter": "Mickey Moniak",
-   "team": "COL",
-   "opp_sp": "Michael McGreevy",
+   "batter": "Ryan McMahon",
+   "team": "NYY",
+   "opp_sp": "Grant Holmes",
    "pa": 8,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": ".875"
-  },
-  {
-   "batter": "Andy Pages",
-   "team": "LAD",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 13,
-   "ab": 13,
-   "h": 6,
-   "hr": 1,
-   "avg": ".462",
-   "slg": ".769"
-  },
-  {
-   "batter": "Luis Rengifo",
-   "team": "SD",
-   "opp_sp": "Cristian Javier",
-   "pa": 12,
-   "ab": 11,
-   "h": 5,
-   "hr": 1,
-   "avg": ".455",
-   "slg": ".727"
-  },
-  {
-   "batter": "Gleyber Torres",
-   "team": "DET",
-   "opp_sp": "Logan Webb",
-   "pa": 9,
-   "ab": 7,
+   "ab": 6,
    "h": 2,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
-   "batter": "Freddie Freeman",
-   "team": "LAD",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 26,
-   "ab": 23,
-   "h": 10,
-   "hr": 1,
-   "avg": ".435",
-   "slg": ".696"
-  },
-  {
-   "batter": "Henry Bolte",
-   "team": "ATH",
-   "opp_sp": "Erik Miller",
-   "pa": 20,
-   "ab": 18,
-   "h": 5,
-   "hr": 1,
-   "avg": ".278",
-   "slg": ".500"
-  },
-  {
-   "batter": "Jacob Wilson",
-   "team": "ATH",
-   "opp_sp": "Erik Miller",
-   "pa": 20,
-   "ab": 18,
-   "h": 5,
-   "hr": 1,
-   "avg": ".278",
-   "slg": ".500"
+   "avg": ".333",
+   "slg": ".833"
   }
  ]
 }
