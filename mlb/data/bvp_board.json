@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-10T18:01:28+00:00",
+ "generated": "2026-08-10T20:59:06+00:00",
  "date": "2026-08-10",
  "min_pa": 6,
  "rows": [
@@ -114,17 +114,6 @@
    "slg": ".714"
   },
   {
-   "batter": "Edouard Julien",
-   "team": "COL",
-   "opp_sp": "Michael Soroka",
-   "pa": 8,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
-  },
-  {
    "batter": "Caleb Durbin",
    "team": "BOS",
    "opp_sp": "Jameson Taillon",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".125",
    "slg": ".500"
+  },
+  {
+   "batter": "Andr\u00e9s Gim\u00e9nez",
+   "team": "TOR",
+   "opp_sp": "Sonny Gray",
+   "pa": 25,
+   "ab": 24,
+   "h": 6,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".458"
   }
  ]
 }
