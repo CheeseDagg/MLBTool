@@ -1,19 +1,8 @@
 {
- "generated": "2026-08-11T21:01:57+00:00",
+ "generated": "2026-08-11T23:57:13+00:00",
  "date": "2026-08-11",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Teoscar Hern\u00e1ndez",
-   "team": "LAD",
-   "opp_sp": "Michael Wacha",
-   "pa": 12,
-   "ab": 11,
-   "h": 6,
-   "hr": 2,
-   "avg": ".545",
-   "slg": "1.182"
-  },
   {
    "batter": "Ian Happ",
    "team": "CHC",
@@ -45,17 +34,6 @@
    "h": 8,
    "hr": 1,
    "avg": ".533",
-   "slg": ".800"
-  },
-  {
-   "batter": "Tyler O'Neill",
-   "team": "BAL",
-   "opp_sp": "Bailey Ober",
-   "pa": 6,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
    "slg": ".800"
   },
   {
@@ -103,6 +81,17 @@
    "slg": ".667"
   },
   {
+   "batter": "Tyler O'Neill",
+   "team": "BAL",
+   "opp_sp": "Bailey Ober",
+   "pa": 7,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
    "batter": "Dylan Crews",
    "team": "WSH",
    "opp_sp": "Shota Imanaga",
@@ -147,17 +136,6 @@
    "slg": ".571"
   },
   {
-   "batter": "Enrique Hern\u00e1ndez",
-   "team": "LAD",
-   "opp_sp": "Michael Wacha",
-   "pa": 18,
-   "ab": 18,
-   "h": 6,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".500"
-  },
-  {
    "batter": "Dansby Swanson",
    "team": "CHC",
    "opp_sp": "Jake Irvin",
@@ -166,6 +144,28 @@
    "h": 3,
    "hr": 1,
    "avg": ".250",
+   "slg": ".500"
+  },
+  {
+   "batter": "Manny Machado",
+   "team": "SD",
+   "opp_sp": "Kyle Harrison",
+   "pa": 11,
+   "ab": 10,
+   "h": 2,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".500"
+  },
+  {
+   "batter": "Xander Bogaerts",
+   "team": "SD",
+   "opp_sp": "Kyle Harrison",
+   "pa": 11,
+   "ab": 10,
+   "h": 2,
+   "hr": 1,
+   "avg": ".200",
    "slg": ".500"
   }
  ]
