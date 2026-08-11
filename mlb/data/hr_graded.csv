@@ -1026,3 +1026,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-09,Colson Montgomery,CHW,824564,Joey Cantillo,6,card,16.3,16.3,13.5,+513,450,-25.7,park +9%,71F,LvL -22%,,hr,1
 2026-08-09,Willson Contreras,BOS,824724,J.T. Ginn,4,card,16.2,21.3,,+518,,,park -7%,90F · wind out 9,RvR -3%,heat +4%,no,0
 2026-08-09,Kazuma Okamoto,TOR,823425,Jesús Luzardo,4,card,16.1,21.2,,+520,,,park +9%,93F · wind out 3,RvL +12%,heat +11%,no,0
+2026-08-10,Junior Caminero,TBR,824969,Jacob Lopez,1,proj,29.9,35.4,23.8,+234,200,-28.6,park +6% [low-conf],90F · wind out 5,RvL +12%,heat +15%,hr,1
+2026-08-10,Shohei Ohtani,LAD,823918,Noah Cameron,2,proj,26.4,25.9,18.7,+279,240,-36.5,park +5%,92F · wind out 5,LvL -22%,heat -1%,no,0
+2026-08-10,Kyle Schwarber,PHI,823018,Hunter Dobbins,1,card,25.6,31.2,21.5,+290,250,-24.7,park -7%,96F · wind out 7,LvR +8%,heat +0%,no,0
+2026-08-10,Yordan Alvarez,HOU,823189,Blade Tidwell,1,proj,23.6,28.9,20.3,+324,280,-23.0,park -14%,65F · wind out 12,LvR +8%,heat +7%,no,0
+2026-08-10,Matt Olson,ATL,824887,Christian Scott,3,card,22.4,25.7,18.5,+346,300,-25.8,park +4%,87F,LvR +8%,heat +7%,no,0
+2026-08-10,Wilyer Abreu,BOS,822780,Jameson Taillon,3,card,22.4,22.5,16.8,+346,300,-32.7,park +3% [low-conf],81F · wind out 6 (roof: half),LvR +8%,heat -15%,no,0
+2026-08-10,Pete Alonso,BAL,823675,Dean Kremer,2,card,21.4,23.3,17.3,+368,320,-27.5,park -2%,86F,RvR -3%,,no,0
+2026-08-10,Willson Contreras,BOS,822780,Jameson Taillon,4,card,20.9,23.0,17.1,+379,330,-26.4,park +3% [low-conf],81F · wind out 6 (roof: half),RvR -3%,heat +6%,no,0
+2026-08-10,Corey Seager,TEX,823998,Reid Detmers,7,proj,20.4,14.6,12.0,+391,340,-47.4,park +4%,86F · wind out 6,LvL -22%,,no,0
+2026-08-10,Jake Burger,TEX,823998,Reid Detmers,2,proj,19.9,22.5,16.8,+402,350,-24.2,park +4%,86F · wind out 6,RvL +12%,heat +18%,no,0
+2026-08-10,Max Muncy,ATH,824969,Freddy Peralta,2,proj,19.6,27.7,,+410,,,park +6% [low-conf],90F · wind out 5,LvR +8%,heat -5%,void,
+2026-08-10,Ronald Acuña Jr.,ATL,824887,Christian Scott,2,card,19.5,19.1,15.0,+413,360,-30.9,park +4%,87F,RvR -3%,heat +1%,no,0
+2026-08-10,Tyler Soderstrom,ATH,824969,Freddy Peralta,1,proj,19.5,24.9,18.1,+413,360,-16.7,park +6% [low-conf],90F · wind out 5,LvR +8%,heat -10%,no,0
+2026-08-10,Wyatt Langford,TEX,823998,Reid Detmers,6,proj,18.9,15.9,13.3,+430,375,-36.9,park +4%,86F · wind out 6,RvL +12%,heat +0%,no,0
+2026-08-10,Hunter Goodman,COL,825048,Michael Soroka,4,card,18.7,25.1,18.2,+435,380,-12.4,park +4%,104F (roof: half),RvR -3%,heat +2%,no,0
+2026-08-10,Andy Pages,LAD,823918,Noah Cameron,1,proj,18.3,22.3,16.7,+446,390,-18.0,park +5%,92F · wind out 5,RvL +12%,heat +4%,no,0
+2026-08-10,Corbin Carroll,ARI,825048,Gabriel Hughes,2,proj,18.3,18.0,14.4,+446,390,-29.4,park +4%,104F (roof: half),LvR +8%,,void,
+2026-08-10,Gunnar Henderson,BAL,823675,Dean Kremer,1,card,18.3,18.9,14.9,+446,390,-26.9,park -2%,86F,LvR +8%,heat -2%,no,0
+2026-08-10,Mike Trout,LAA,823998,MacKenzie Gore,2,proj,18.3,23.6,17.4,+446,390,-14.6,park +4%,86F · wind out 6,RvL +12%,heat -0%,hr,1
+2026-08-10,Zach Neto,LAA,823998,MacKenzie Gore,1,proj,18.3,22.7,16.9,+446,390,-17.1,park +4%,86F · wind out 6,RvL +12%,heat +12%,no,0
+2026-08-10,Michael Harris II,ATL,824887,Christian Scott,4,card,17.9,18.2,14.5,+457,400,-27.4,park +4%,87F,LvR +8%,heat +11%,no,0
+2026-08-10,Jordan Walker,STL,823018,Andrew Painter,4,card,17.6,19.8,15.4,+469,410,-21.5,park -7%,96F · wind out 7,RvR -3%,heat -3%,no,0
+2026-08-10,Lawrence Butler,ATH,824969,Freddy Peralta,4,proj,17.6,13.6,10.8,+469,410,-45.0,park +6% [low-conf],90F · wind out 5,LvR +8%,,no,0
+2026-08-10,Rafael Devers,SFG,823189,Hayden Wesneski,1,proj,17.6,22.8,17.0,+469,410,-13.4,park -14%,65F · wind out 12,LvR +8%,,no,0
+2026-08-10,Royce Lewis,MIN,823675,Trevor Rogers,3,card,17.6,17.2,14.0,+469,410,-28.8,park -2%,86F,RvL +12%,heat +10%,no,0
+2026-08-10,Drake Baldwin,ATL,824887,Christian Scott,1,card,17.2,23.7,17.5,+480,420,-9.2,park +4%,87F,LvR +8%,heat -2%,no,0
+2026-08-10,Francisco Lindor,NYM,824887,Bryce Elder,2,card,17.2,19.9,15.5,+480,420,-19.7,park +4%,87F,SvR +8%,heat -2%,hr,1
+2026-08-10,Bobby Witt Jr.,KCR,823918,Tarik Skubal,2,proj,17.1,18.5,14.7,+485,425,-22.9,park +5%,92F · wind out 5,RvL +12%,heat +8%,no,0
+2026-08-10,Bryce Harper,PHI,823018,Hunter Dobbins,3,card,17.1,21.6,16.4,+485,425,-14.1,park -7%,96F · wind out 7,LvR +8%,heat +8%,no,0
+2026-08-10,Manny Machado,SDP,823265,Logan Henderson,2,proj,17.1,20.4,15.7,+485,425,-17.6,park -4%,79F · wind out 3,RvR -3%,,no,0
