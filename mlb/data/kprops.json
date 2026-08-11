@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-11T14:38+00:00",
+ "generated": "2026-08-11T18:40+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -882,6 +882,46 @@
    ]
   },
   {
+   "pitcher": "Carson Whisenhunt",
+   "opp": "Houston Astros",
+   "lam": 4.08,
+   "k9_regressed": 8.39,
+   "exp_ip": 4.47,
+   "opp_mult": 0.979,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3858,
+     "fair_over": 159,
+     "fair_under": -159
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2267,
+     "fair_over": 341,
+     "fair_under": -341
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1186,
+     "fair_over": 743,
+     "fair_under": -743
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0557,
+     "fair_over": 1694,
+     "fair_under": -1694
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0237,
+     "fair_over": 4122,
+     "fair_under": -4122
+    }
+   ]
+  },
+  {
    "pitcher": "Mitch Bratt",
    "opp": "Colorado Rockies",
    "lam": 4.06,
@@ -1122,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 17706 (used 2294) \u00b7 whiff rest:30 rows",
- "n_markets": 28,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 17613 (used 2387) \u00b7 whiff rest:30 rows",
+ "n_markets": 29,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
