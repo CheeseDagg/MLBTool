@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-11T18:40+00:00",
+ "generated": "2026-08-11T21:12+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -602,6 +602,46 @@
    ]
   },
   {
+   "pitcher": "Jake Irvin",
+   "opp": "Chicago Cubs",
+   "lam": 4.64,
+   "k9_regressed": 8.86,
+   "exp_ip": 4.77,
+   "opp_mult": 0.988,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4936,
+     "fair_over": 103,
+     "fair_under": -103
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3206,
+     "fair_over": 212,
+     "fair_under": -212
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1868,
+     "fair_over": 435,
+     "fair_under": -435
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0983,
+     "fair_over": 918,
+     "fair_under": -918
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0469,
+     "fair_over": 2031,
+     "fair_under": -2031
+    }
+   ]
+  },
+  {
    "pitcher": "Cody Bradford",
    "opp": "Los Angeles Angels",
    "lam": 4.6,
@@ -1162,8 +1202,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 17613 (used 2387) \u00b7 whiff rest:30 rows",
- "n_markets": 29,
+ "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 17582 (used 2418) \u00b7 whiff rest:30 rows",
+ "n_markets": 30,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1175,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 6,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
