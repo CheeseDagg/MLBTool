@@ -1056,3 +1056,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-10,Bobby Witt Jr.,KCR,823918,Tarik Skubal,2,proj,17.1,18.5,14.7,+485,425,-22.9,park +5%,92F · wind out 5,RvL +12%,heat +8%,no,0
 2026-08-10,Bryce Harper,PHI,823018,Hunter Dobbins,3,card,17.1,21.6,16.4,+485,425,-14.1,park -7%,96F · wind out 7,LvR +8%,heat +8%,no,0
 2026-08-10,Manny Machado,SDP,823265,Logan Henderson,2,proj,17.1,20.4,15.7,+485,425,-17.6,park -4%,79F · wind out 3,RvR -3%,,no,0
+2026-08-11,Shohei Ohtani,LAD,823917,Michael Wacha,2,proj,29.4,27.5,19.5,+240,205,-40.5,park +5%,90F · wind out 6,LvR +8%,heat +4%,no,0
+2026-08-11,Junior Caminero,TBR,824970,Mason Barnett,1,proj,26.8,34.1,23.1,+274,235,-22.6,park +6% [low-conf],90F · wind out 4,RvR -3%,heat -6%,hr,1
+2026-08-11,Joc Pederson,TEX,823997,Ryan Johnson,4,proj,24.6,24.5,17.9,+307,265,-34.6,park +4%,89F · wind out 6,LvR +8%,heat +1%,hr,1
+2026-08-11,Corey Seager,TEX,823997,Ryan Johnson,7,proj,23.6,17.9,14.3,+324,280,-45.6,park +4%,89F · wind out 6,LvR +8%,heat +3%,no,0
+2026-08-11,Max Muncy,ATH,824970,Nick Martinez,2,proj,23.3,27.6,19.6,+329,285,-24.6,park +6% [low-conf],90F · wind out 4,LvR +8%,heat +3%,no,0
+2026-08-11,Pete Alonso,BAL,823673,Bailey Ober,2,card,23.0,24.1,17.7,+335,290,-31.0,park -2%,87F,RvR -3%,heat +5%,hr,1
+2026-08-11,Ben Rice,NYY,823512,Bryan Woo,2,card,22.7,28.3,20.0,+340,295,-21.1,park +14%,no wx,LvR +8%,heat +12%,no,0
+2026-08-11,Trent Grisham,NYY,823512,Bryan Woo,1,card,21.9,20.0,15.5,+357,310,-36.6,park +14%,no wx,LvR +8%,heat -3%,no,0
+2026-08-11,Jazz Chisholm Jr.,NYY,823512,Bryan Woo,5,card,21.4,15.0,12.4,+368,320,-47.7,park +14%,no wx,LvR +8%,,no,0
+2026-08-11,Mike Trout,LAA,823997,Cody Bradford *,2,proj,21.4,24.5,17.9,+368,320,-24.9,park +4%,89F · wind out 6,RvL +12%,,no,0
+2026-08-11,Cal Raleigh,SEA,823512,Ryan Weathers,6,card,21.1,15.1,12.5,+374,325,-46.8,park +14%,no wx,SvL +12%,,no,0
+2026-08-11,Corbin Carroll,ARI,825046,Tomoyuki Sugano,2,card,20.9,20.8,15.9,+379,330,-31.5,park +4%,100F (roof: half),LvR +8%,heat +0%,void,
+2026-08-11,Pete Crow-Armstrong,CHC,822697,Jake Irvin,1,card,20.9,27.4,19.5,+379,330,-16.2,park avg,86F,LvR +8%,heat +6%,hr,1
+2026-08-11,Wyatt Langford,TEX,823997,Ryan Johnson,6,proj,20.9,16.8,13.8,+379,330,-40.9,park +4%,89F · wind out 6,RvR -3%,,no,0
+2026-08-11,Jonathan Aranda,TBR,824970,Mason Barnett,2,proj,20.6,20.1,15.6,+385,335,-32.3,park +6% [low-conf],90F · wind out 4,LvR +8%,heat +5%,no,0
+2026-08-11,Kyle Schwarber,PHI,823019,Andre Pallante,1,card,20.6,30.6,21.2,+385,335,-7.7,park -7%,98F · wind out 7,LvR +8%,heat +9%,no,0
+2026-08-11,Hunter Goodman,COL,825046,Mitch Bratt,2,proj,20.4,30.3,21.0,+391,340,-7.4,park +4%,100F (roof: half),RvL +12%,heat +10%,no,0
+2026-08-11,Luis García Jr.,NYY,823512,Bryan Woo,4,card,20.4,18.3,14.6,+391,340,-35.8,park +14%,no wx,LvR +8%,heat +11%,no,0
+2026-08-11,Munetaka Murakami,CHW,824563,Nick Lodolo,2,card,20.4,28.7,20.2,+391,340,-11.2,park +9%,74F,LvL -22%,heat +3%,no,0
+2026-08-11,Tyler Soderstrom,ATH,824970,Nick Martinez,1,proj,20.4,25.1,18.3,+391,340,-19.7,park +6% [low-conf],90F · wind out 4,LvR +8%,heat +15%,void,
+2026-08-11,Zach Neto,LAA,823997,Cody Bradford *,1,proj,20.4,22.6,16.9,+391,340,-25.6,park +4%,89F · wind out 6,RvL +12%,,no,0
+2026-08-11,Gunnar Henderson,BAL,823673,Bailey Ober,1,card,19.9,19.5,15.2,+402,350,-31.5,park -2%,87F,LvR +8%,heat +2%,hr,1
+2026-08-11,Matt Olson,ATL,824886,Nolan McLean,3,card,19.9,25.9,18.6,+402,350,-16.1,park +4%,91F,LvR +8%,heat -1%,hr,1
+2026-08-11,Brandon Nimmo,TEX,823997,Ryan Johnson,1,proj,19.5,21.1,16.1,+413,360,-26.1,park +4%,89F · wind out 6,LvR +8%,heat +2%,no,0
+2026-08-11,Kody Clemens,MIN,823673,Brandon Young,4,card,19.1,19.5,15.2,+424,370,-28.6,park -2%,87F,LvR +8%,heat -1%,no,0
+2026-08-11,Yordan Alvarez,HOU,823186,Carson Whisenhunt,1,proj,19.1,27.4,19.5,+424,370,-8.4,park -14%,65F · wind out 11,LvL -22%,heat +1%,no,0
+2026-08-11,Julio Rodríguez,SEA,823512,Ryan Weathers,3,card,18.7,18.7,14.8,+435,380,-29.1,park +14%,no wx,RvL +12%,heat +9%,no,0
+2026-08-11,Michael Busch,CHC,822697,Jake Irvin,3,card,18.7,17.0,13.9,+435,380,-33.4,park avg,86F,LvR +8%,,no,0
+2026-08-11,Seiya Suzuki,CHC,822697,Jake Irvin,2,card,18.7,22.3,16.7,+435,380,-19.7,park avg,86F,RvR -3%,heat +0%,hr,1
+2026-08-11,Andy Pages,LAD,823917,Michael Wacha,1,proj,18.3,20.7,15.9,+446,390,-22.1,park +5%,90F · wind out 6,RvR -3%,heat +2%,no,0
