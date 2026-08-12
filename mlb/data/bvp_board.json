@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-12T21:00:56+00:00",
+ "generated": "2026-08-12T23:56:47+00:00",
  "date": "2026-08-12",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Manny Machado",
    "team": "SD",
    "opp_sp": "Dustin May",
-   "pa": 40,
-   "ab": 38,
+   "pa": 42,
+   "ab": 40,
    "h": 10,
    "hr": 2,
-   "avg": ".263",
-   "slg": ".474"
+   "avg": ".250",
+   "slg": ".450"
   },
   {
    "batter": "Freddie Freeman",
@@ -59,6 +59,17 @@
    "slg": ".591"
   },
   {
+   "batter": "Ty France",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 13,
+   "ab": 12,
+   "h": 4,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".583"
+  },
+  {
    "batter": "Teoscar Hern\u00e1ndez",
    "team": "LAD",
    "opp_sp": "Daniel Lynch IV",
@@ -68,17 +79,6 @@
    "hr": 1,
    "avg": ".143",
    "slg": ".571"
-  },
-  {
-   "batter": "Ty France",
-   "team": "SD",
-   "opp_sp": "Dustin May",
-   "pa": 10,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
   },
   {
    "batter": "Gary S\u00e1nchez",
@@ -103,17 +103,6 @@
    "slg": ".462"
   },
   {
-   "batter": "Jake Cronenworth",
-   "team": "SD",
-   "opp_sp": "Dustin May",
-   "pa": 22,
-   "ab": 19,
-   "h": 5,
-   "hr": 1,
-   "avg": ".263",
-   "slg": ".421"
-  },
-  {
    "batter": "JJ Bleday",
    "team": "CIN",
    "opp_sp": "Luis Castillo",
@@ -134,6 +123,17 @@
    "hr": 1,
    "avg": ".200",
    "slg": ".400"
+  },
+  {
+   "batter": "Jake Cronenworth",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 25,
+   "ab": 21,
+   "h": 5,
+   "hr": 1,
+   "avg": ".238",
+   "slg": ".381"
   }
  ]
 }
