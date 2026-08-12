@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-12T18:05:50+00:00",
+ "generated": "2026-08-12T21:00:56+00:00",
  "date": "2026-08-12",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Manny Machado",
    "team": "SD",
    "opp_sp": "Dustin May",
-   "pa": 39,
-   "ab": 37,
+   "pa": 40,
+   "ab": 38,
    "h": 10,
    "hr": 2,
-   "avg": ".270",
-   "slg": ".486"
+   "avg": ".263",
+   "slg": ".474"
   },
   {
    "batter": "Freddie Freeman",
@@ -90,17 +90,6 @@
    "hr": 1,
    "avg": ".125",
    "slg": ".500"
-  },
-  {
-   "batter": "Nathaniel Lowe",
-   "team": "CLE",
-   "opp_sp": "Framber Valdez",
-   "pa": 32,
-   "ab": 28,
-   "h": 7,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".464"
   },
   {
    "batter": "Hunter Goodman",
