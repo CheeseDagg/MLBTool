@@ -11,6 +11,16 @@ on:
     # GitHub dropped the schedule or the run errored, one attempt is not enough for
     # the run that matters most, and a second attempt is nearly free: publishing is
     # idempotent, so a redundant run that finds no diff exits 0 without a commit.
+    # PRE-DAWN RUN, added 2026-08-13. The parlay repo's standing research and
+    # build passes fire at 10:00 and 12:00 UTC (5am/7am CT), and BOTH ran
+    # before this file's earliest cron -- so every morning the hot-game veto
+    # (parlay rule 25) read yesterday's slate. On 8/13 specifically the slate
+    # said 2026-08-12 until 14:38 UTC, the veto was blind through both passes,
+    # and CIN@CWS put twelve on the board by the fifth. With the measured
+    # +58..+83 min drift, 08:37 lands the board ~09:50, ahead of the 5am pass.
+    # Probables that firm up later are covered by the 12:27/13:17 runs
+    # repricing over this one; publishing is idempotent.
+    - cron: "37 8 * * *"    # 3:37am CT -> board by ~4:50am CT, BEFORE the 5am pass
     - cron: "27 12 * * *"   # 7:27am CT -> board by ~8:45am CT
     - cron: "17 13 * * *"   # 8:17am CT -> retry; publishes only if the 12:27 run didn't
     - cron: "47 17 * * *"   # 12:47pm CT — day-game cards before early first pitches
