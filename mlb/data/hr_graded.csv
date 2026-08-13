@@ -1086,3 +1086,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-11,Michael Busch,CHC,822697,Jake Irvin,3,card,18.7,17.0,13.9,+435,380,-33.4,park avg,86F,LvR +8%,,no,0
 2026-08-11,Seiya Suzuki,CHC,822697,Jake Irvin,2,card,18.7,22.3,16.7,+435,380,-19.7,park avg,86F,RvR -3%,heat +0%,hr,1
 2026-08-11,Andy Pages,LAD,823917,Michael Wacha,1,proj,18.3,20.7,15.9,+446,390,-22.1,park +5%,90F · wind out 6,RvR -3%,heat +2%,no,0
+2026-08-12,Munetaka Murakami,CHW,824562,Rhett Lowder,2,card,27.6,30.7,21.2,+262,225,-31.0,park +9%,80F,LvR +8%,heat +3%,no,0
+2026-08-12,Ben Rice,NYY,823511,Bryce Miller,2,card,25.6,31.9,21.9,+290,250,-23.3,park +14%,87F · wind out 5,LvR +8%,heat +7%,no,0
+2026-08-12,Colson Montgomery,CHW,824562,Rhett Lowder,5,card,24.6,21.2,16.1,+307,265,-41.1,park +9%,80F,LvR +8%,heat -1%,no,0
+2026-08-12,Pete Crow-Armstrong,CHC,822698,Jackson Kent *,1,card,24.6,24.5,17.9,+307,265,-34.6,park avg,87F · wind out 4,LvL -22%,,no,0
+2026-08-12,Cal Raleigh,SEA,823511,Will Warren,8,card,23.6,13.5,10.7,+324,280,-59.3,park +14%,87F · wind out 5,SvR +8%,,no,0
+2026-08-12,Joc Pederson,TEX,823994,George Klassen,4,proj,23.6,22.2,16.7,+324,280,-36.6,park +4%,85F · wind out 6,LvR +8%,heat -4%,no,0
+2026-08-12,Shohei Ohtani,LAD,823916,Daniel Lynch IV,2,proj,23.6,24.6,18.0,+324,280,-31.6,park +5%,86F · wind out 5,LvL -22%,heat +9%,hr,1
+2026-08-12,Trent Grisham,NYY,823511,Bryce Miller,1,card,23.6,22.9,17.1,+324,280,-35.1,park +14%,87F · wind out 5,LvR +8%,heat +3%,hr,2
+2026-08-12,Bobby Witt Jr.,KCR,823916,Eric Lauer,2,proj,23.3,20.3,15.6,+329,285,-39.8,park +5%,86F · wind out 5,RvL +12%,heat +9%,no,0
+2026-08-12,Matt Olson,ATL,824883,Zac Thornton,3,card,23.0,23.4,17.3,+335,290,-32.5,park +4%,no wx,LvL -22%,heat -3%,no,0
+2026-08-12,Corey Seager,TEX,823994,George Klassen,7,proj,21.4,15.5,13.0,+368,320,-45.3,park +4%,85F · wind out 6,LvR +8%,,hr,1
+2026-08-12,Elly De La Cruz,CIN,824562,Luis Castillo,1,card,21.4,24.2,17.7,+368,320,-25.5,park +9%,80F,SvR +8%,heat +8%,no,0
+2026-08-12,JJ Bleday,CIN,824562,Luis Castillo,3,card,21.4,21.8,16.5,+368,320,-30.9,park +9%,80F,LvR +8%,heat +2%,no,0
+2026-08-12,Brandon Lowe,PIT,823833,Janson Junk,2,card,20.9,20.7,15.9,+379,330,-31.7,park -9%,87F · wind in 4 (roof: half),LvR +8%,heat +13%,no,0
+2026-08-12,Dominic Canzone,SEA,823511,Will Warren,4,card,20.9,22.0,16.6,+379,330,-28.8,park +14%,87F · wind out 5,LvR +8%,heat -1%,hr,1
+2026-08-12,Seiya Suzuki,CHC,822698,Jackson Kent *,2,card,20.9,22.8,17.0,+379,330,-27.0,park avg,87F · wind out 4,RvL +12%,,no,0
+2026-08-12,Mike Trout,LAA,823994,Cal Quantrill,2,proj,20.4,24.5,17.9,+391,340,-21.2,park +4%,85F · wind out 6,RvR -3%,heat +6%,no,0
+2026-08-12,Kyle Schwarber,PHI,823017,Kyle Leahy,1,card,20.1,28.5,,+398,,,park -7%,94F,LvR +8%,heat +6%,no,0
+2026-08-12,Jazz Chisholm Jr.,NYY,823511,Bryce Miller,6,card,19.9,15.9,13.3,+402,350,-40.3,park +14%,87F · wind out 5,LvR +8%,,no,0
+2026-08-12,Luis García Jr.,NYY,823511,Bryce Miller,4,card,19.9,21.1,16.1,+402,350,-27.5,park +14%,87F · wind out 5,LvR +8%,heat +6%,no,0
+2026-08-12,Max Muncy,ATH,824967,Drew Rasmussen,7,card,19.9,19.0,14.9,+402,350,-32.8,park +6% [low-conf],88F · wind out 3,LvR +8%,,no,0
+2026-08-12,Andy Pages,LAD,823916,Daniel Lynch IV,1,proj,19.5,21.0,16.0,+413,360,-26.4,park +5%,86F · wind out 5,RvL +12%,heat -6%,no,0
+2026-08-12,Jac Caglianone,KCR,823916,Eric Lauer,4,proj,19.5,21.4,16.3,+413,360,-25.2,park +5%,86F · wind out 5,LvL -22%,heat +18%,no,0
+2026-08-12,Ronald Acuña Jr.,ATL,824883,Zac Thornton,1,card,19.1,20.6,15.8,+424,370,-25.7,park +4%,no wx,RvL +12%,heat +16%,no,0
+2026-08-12,Brandon Nimmo,TEX,823994,George Klassen,1,proj,18.3,18.5,14.7,+446,390,-28.1,park +4%,85F · wind out 6,LvR +8%,heat +4%,no,0
+2026-08-12,Michael Busch,CHC,822698,Jackson Kent *,5,card,18.3,12.5,9.9,+446,390,-51.4,park avg,87F · wind out 4,LvL -22%,,no,0
+2026-08-12,Spencer Jones,NYY,823511,Bryce Miller,3,card,18.3,22.6,16.9,+446,390,-17.4,park +14%,87F · wind out 5,LvR +8%,heat +1%,no,0
+2026-08-12,Austin Wells,NYY,823511,Bryce Miller,8,card,17.9,12.0,9.7,+457,400,-51.3,park +14%,87F · wind out 5,LvR +8%,,no,0
+2026-08-12,Dylan Crews,WSN,822698,David Peterson,1,card,17.9,19.6,15.3,+457,400,-23.7,park avg,87F · wind out 4,RvL +12%,heat -6%,no,0
+2026-08-12,Julio Rodríguez,SEA,823511,Will Warren,5,card,17.9,16.2,13.4,+457,400,-32.8,park +14%,87F · wind out 5,RvR -3%,,hr,1
