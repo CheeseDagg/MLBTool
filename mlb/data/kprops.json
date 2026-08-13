@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T21:11+00:00",
+ "generated": "2026-08-13T21:27+00:00",
  "board": [
   {
    "pitcher": "Jacob deGrom",
@@ -324,40 +324,40 @@
   {
    "pitcher": "Kevin Gausman",
    "opp": "Washington Nationals",
-   "lam": 5.34,
-   "k9_regressed": 8.85,
-   "exp_ip": 5.53,
+   "lam": 5.38,
+   "k9_regressed": 8.87,
+   "exp_ip": 5.56,
    "opp_mult": 0.982,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6176,
-     "fair_over": -162,
-     "fair_under": 162
+     "p_over": 0.6231,
+     "fair_over": -165,
+     "fair_under": 165
     },
     {
      "line": 5.5,
-     "p_over": 0.4441,
-     "fair_over": 125,
-     "fair_under": -125
+     "p_over": 0.4501,
+     "fair_over": 122,
+     "fair_under": -122
     },
     {
      "line": 6.5,
-     "p_over": 0.2896,
-     "fair_over": 245,
-     "fair_under": -245
+     "p_over": 0.2949,
+     "fair_over": 239,
+     "fair_under": -239
     },
     {
      "line": 7.5,
-     "p_over": 0.1716,
-     "fair_over": 483,
-     "fair_under": -483
+     "p_over": 0.1757,
+     "fair_over": 469,
+     "fair_under": -469
     },
     {
      "line": 8.5,
-     "p_over": 0.0928,
-     "fair_over": 977,
-     "fair_under": -977
+     "p_over": 0.0956,
+     "fair_over": 946,
+     "fair_under": -946
     }
    ]
   },
@@ -691,38 +691,38 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2597,
+     "p_over": 0.2595,
      "fair_over": 285,
      "fair_under": -285
     },
     {
      "line": 5.5,
-     "p_over": 0.1321,
-     "fair_over": 657,
-     "fair_under": -657
+     "p_over": 0.132,
+     "fair_over": 658,
+     "fair_under": -658
     },
     {
      "line": 6.5,
-     "p_over": 0.0594,
-     "fair_over": 1584,
-     "fair_under": -1584
+     "p_over": 0.0593,
+     "fair_over": 1586,
+     "fair_under": -1586
     },
     {
      "line": 7.5,
      "p_over": 0.0238,
-     "fair_over": 4099,
-     "fair_under": -4099
+     "fair_over": 4106,
+     "fair_under": -4106
     },
     {
      "line": 8.5,
      "p_over": 0.0086,
-     "fair_over": 11517,
-     "fair_under": -11517
+     "fair_over": 11539,
+     "fair_under": -11539
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 15048 (used 4952) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 15040 (used 4960) \u00b7 whiff rest:30 rows",
  "n_markets": 6,
  "n_plays": 0,
  "plays": [],
@@ -735,6 +735,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
