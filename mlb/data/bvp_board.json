@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T18:05:55+00:00",
+ "generated": "2026-08-13T21:01:07+00:00",
  "date": "2026-08-13",
  "min_pa": 6,
  "rows": [
@@ -26,17 +26,6 @@
    "slg": ".833"
   },
   {
-   "batter": "Jo Adell",
-   "team": "CLE",
-   "opp_sp": "Keider Montero",
-   "pa": 12,
-   "ab": 12,
-   "h": 2,
-   "hr": 2,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
    "batter": "Josh Bell",
    "team": "MIN",
    "opp_sp": "Aaron Nola",
@@ -51,12 +40,12 @@
    "batter": "Masataka Yoshida",
    "team": "BOS",
    "opp_sp": "Max Scherzer",
-   "pa": 6,
-   "ab": 6,
-   "h": 4,
+   "pa": 8,
+   "ab": 8,
+   "h": 5,
    "hr": 1,
-   "avg": ".667",
-   "slg": "1.333"
+   "avg": ".625",
+   "slg": "1.125"
   },
   {
    "batter": "Randal Grichuk",
@@ -81,6 +70,17 @@
    "slg": ".800"
   },
   {
+   "batter": "Spencer Torkelson",
+   "team": "DET",
+   "opp_sp": "Parker Messick",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".714"
+  },
+  {
    "batter": "Jarren Duran",
    "team": "BOS",
    "opp_sp": "Max Scherzer",
@@ -92,26 +92,26 @@
    "slg": ".667"
   },
   {
-   "batter": "Jazz Chisholm Jr.",
-   "team": "NYY",
-   "opp_sp": "Logan Gilbert",
-   "pa": 10,
-   "ab": 9,
-   "h": 2,
+   "batter": "Jo Adell",
+   "team": "CLE",
+   "opp_sp": "Keider Montero",
+   "pa": 7,
+   "ab": 7,
+   "h": 1,
    "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
+   "avg": ".143",
+   "slg": ".571"
   },
   {
    "batter": "JJ Bleday",
    "team": "CIN",
    "opp_sp": "Davis Martin",
-   "pa": 9,
-   "ab": 8,
+   "pa": 10,
+   "ab": 9,
    "h": 1,
    "hr": 1,
-   "avg": ".125",
-   "slg": ".500"
+   "avg": ".111",
+   "slg": ".444"
   }
  ]
 }
