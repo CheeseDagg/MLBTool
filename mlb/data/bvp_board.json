@@ -1,30 +1,8 @@
 {
- "generated": "2026-08-13T21:01:07+00:00",
+ "generated": "2026-08-13T23:55:38+00:00",
  "date": "2026-08-13",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Zach Neto",
-   "team": "LAA",
-   "opp_sp": "Jacob deGrom",
-   "pa": 14,
-   "ab": 12,
-   "h": 5,
-   "hr": 2,
-   "avg": ".417",
-   "slg": "1.083"
-  },
-  {
-   "batter": "Travis d'Arnaud",
-   "team": "LAA",
-   "opp_sp": "Jacob deGrom",
-   "pa": 12,
-   "ab": 12,
-   "h": 4,
-   "hr": 2,
-   "avg": ".333",
-   "slg": ".833"
-  },
   {
    "batter": "Josh Bell",
    "team": "MIN",
@@ -35,6 +13,17 @@
    "hr": 2,
    "avg": ".194",
    "slg": ".389"
+  },
+  {
+   "batter": "Andr\u00e9s Gim\u00e9nez",
+   "team": "TOR",
+   "opp_sp": "Payton Tolle",
+   "pa": 6,
+   "ab": 5,
+   "h": 3,
+   "hr": 1,
+   "avg": ".600",
+   "slg": "1.400"
   },
   {
    "batter": "Masataka Yoshida",
@@ -51,12 +40,12 @@
    "batter": "Randal Grichuk",
    "team": "CWS",
    "opp_sp": "Andrew Abbott",
-   "pa": 7,
-   "ab": 6,
-   "h": 2,
+   "pa": 10,
+   "ab": 9,
+   "h": 4,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
+   "avg": ".444",
+   "slg": "1.000"
   },
   {
    "batter": "Brenton Doyle",
@@ -70,32 +59,10 @@
    "slg": ".800"
   },
   {
-   "batter": "Spencer Torkelson",
-   "team": "DET",
-   "opp_sp": "Parker Messick",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
    "batter": "Jarren Duran",
    "team": "BOS",
    "opp_sp": "Max Scherzer",
-   "pa": 6,
-   "ab": 6,
-   "h": 1,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
-   "batter": "Jo Adell",
-   "team": "CLE",
-   "opp_sp": "Keider Montero",
-   "pa": 7,
+   "pa": 8,
    "ab": 7,
    "h": 1,
    "hr": 1,
@@ -106,12 +73,34 @@
    "batter": "JJ Bleday",
    "team": "CIN",
    "opp_sp": "Davis Martin",
-   "pa": 10,
-   "ab": 9,
+   "pa": 9,
+   "ab": 8,
    "h": 1,
    "hr": 1,
-   "avg": ".111",
-   "slg": ".444"
+   "avg": ".125",
+   "slg": ".500"
+  },
+  {
+   "batter": "Jazz Chisholm Jr.",
+   "team": "NYY",
+   "opp_sp": "Logan Gilbert",
+   "pa": 12,
+   "ab": 11,
+   "h": 2,
+   "hr": 1,
+   "avg": ".182",
+   "slg": ".455"
+  },
+  {
+   "batter": "Jo Adell",
+   "team": "CLE",
+   "opp_sp": "Keider Montero",
+   "pa": 10,
+   "ab": 10,
+   "h": 1,
+   "hr": 1,
+   "avg": ".100",
+   "slg": ".400"
   }
  ]
 }
