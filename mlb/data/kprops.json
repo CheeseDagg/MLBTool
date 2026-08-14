@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T20:53+00:00",
+ "generated": "2026-08-14T21:32+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -611,33 +611,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4851,
+     "p_over": 0.485,
      "fair_over": 106,
      "fair_under": -106
     },
     {
      "line": 5.5,
-     "p_over": 0.3127,
+     "p_over": 0.3126,
      "fair_over": 220,
      "fair_under": -220
     },
     {
      "line": 6.5,
-     "p_over": 0.1808,
+     "p_over": 0.1807,
      "fair_over": 453,
      "fair_under": -453
     },
     {
      "line": 7.5,
-     "p_over": 0.0943,
+     "p_over": 0.0942,
      "fair_over": 961,
      "fair_under": -961
     },
     {
      "line": 8.5,
      "p_over": 0.0446,
-     "fair_over": 2140,
-     "fair_under": -2140
+     "fair_over": 2142,
+     "fair_under": -2142
     }
    ]
   },
@@ -758,46 +758,6 @@
      "p_over": 0.0412,
      "fair_over": 2328,
      "fair_under": -2328
-    }
-   ]
-  },
-  {
-   "pitcher": "Clay Holmes",
-   "opp": "St. Louis Cardinals",
-   "lam": 4.47,
-   "k9_regressed": 7.66,
-   "exp_ip": 5.52,
-   "opp_mult": 0.951,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4613,
-     "fair_over": 117,
-     "fair_under": -117
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2912,
-     "fair_over": 243,
-     "fair_under": -243
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1645,
-     "fair_over": 508,
-     "fair_under": -508
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0838,
-     "fair_over": 1094,
-     "fair_under": -1094
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0387,
-     "fair_over": 2486,
-     "fair_under": -2486
     }
    ]
   },
@@ -1122,7 +1082,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 14017 (used 5983) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 13883 (used 6117) \u00b7 whiff rest:30 rows",
  "n_markets": 23,
  "n_plays": 0,
  "plays": [],
