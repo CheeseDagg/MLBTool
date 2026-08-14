@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T13:54:42+00:00",
+ "generated": "2026-08-14T14:25:45+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -279,9 +279,9 @@
    "shop": true
   },
   {
-   "team": "Los Angeles Angels",
+   "team": "Colorado Rockies",
    "cons_pct": 0.1,
-   "fair": "+85926",
+   "fair": "+109439",
    "best_price": null,
    "book": "",
    "edge_pct": null,
@@ -315,9 +315,21 @@
    "shop": true
   },
   {
-   "team": "Colorado Rockies",
+   "team": "Los Angeles Angels",
    "cons_pct": 0.1,
-   "fair": "+109439",
+   "fair": "+85926",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "betonlineag",
+   "books_n": 4,
+   "shop": false
+  },
+  {
+   "team": "San Francisco Giants",
+   "cons_pct": 0.1,
+   "fair": "+85926",
    "best_price": null,
    "book": "",
    "edge_pct": null,
@@ -340,18 +352,6 @@
   },
   {
    "team": "Kansas City Royals",
-   "cons_pct": 0.1,
-   "fair": "+85926",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "betonlineag",
-   "books_n": 4,
-   "shop": false
-  },
-  {
-   "team": "San Francisco Giants",
    "cons_pct": 0.1,
    "fair": "+85926",
    "best_price": null,
