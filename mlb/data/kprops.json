@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T18:36+00:00",
+ "generated": "2026-08-14T20:53+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -522,6 +522,46 @@
    ]
   },
   {
+   "pitcher": "Matthew Liberatore",
+   "opp": "Chicago Cubs",
+   "lam": 4.76,
+   "k9_regressed": 8.73,
+   "exp_ip": 4.96,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5164,
+     "fair_over": -107,
+     "fair_under": 107
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.342,
+     "fair_over": 192,
+     "fair_under": -192
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2036,
+     "fair_over": 391,
+     "fair_under": -391
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1095,
+     "fair_over": 813,
+     "fair_under": -813
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0535,
+     "fair_over": 1768,
+     "fair_under": -1768
+    }
+   ]
+  },
+  {
    "pitcher": "Kumar Rocker",
    "opp": "Athletics",
    "lam": 4.67,
@@ -558,6 +598,46 @@
      "p_over": 0.0485,
      "fair_over": 1961,
      "fair_under": -1961
+    }
+   ]
+  },
+  {
+   "pitcher": "Clay Holmes",
+   "opp": "St. Louis Cardinals",
+   "lam": 4.59,
+   "k9_regressed": 7.55,
+   "exp_ip": 5.76,
+   "opp_mult": 0.951,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4851,
+     "fair_over": 106,
+     "fair_under": -106
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3127,
+     "fair_over": 220,
+     "fair_under": -220
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1808,
+     "fair_over": 453,
+     "fair_under": -453
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0943,
+     "fair_over": 961,
+     "fair_under": -961
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0446,
+     "fair_over": 2140,
+     "fair_under": -2140
     }
    ]
   },
@@ -642,46 +722,6 @@
    ]
   },
   {
-   "pitcher": "Matthew Liberatore",
-   "opp": "Chicago Cubs",
-   "lam": 4.53,
-   "k9_regressed": 8.63,
-   "exp_ip": 4.78,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4737,
-     "fair_over": 111,
-     "fair_under": -111
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3023,
-     "fair_over": 231,
-     "fair_under": -231
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1729,
-     "fair_over": 478,
-     "fair_under": -478
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0891,
-     "fair_over": 1022,
-     "fair_under": -1022
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0417,
-     "fair_over": 2299,
-     "fair_under": -2299
-    }
-   ]
-  },
-  {
    "pitcher": "Andrew Alvarez",
    "opp": "New York Mets",
    "lam": 4.52,
@@ -758,46 +798,6 @@
      "p_over": 0.0391,
      "fair_over": 2457,
      "fair_under": -2457
-    }
-   ]
-  },
-  {
-   "pitcher": "Clay Holmes",
-   "opp": "St. Louis Cardinals",
-   "lam": 4.27,
-   "k9_regressed": 7.66,
-   "exp_ip": 5.27,
-   "opp_mult": 0.951,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4231,
-     "fair_over": 136,
-     "fair_under": -136
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2578,
-     "fair_over": 288,
-     "fair_under": -288
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1403,
-     "fair_over": 613,
-     "fair_under": -613
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0686,
-     "fair_over": 1357,
-     "fair_under": -1357
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0304,
-     "fair_over": 3188,
-     "fair_under": -3188
     }
    ]
   },
@@ -1082,7 +1082,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 14059 (used 5941) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 14017 (used 5983) \u00b7 whiff rest:30 rows",
  "n_markets": 23,
  "n_plays": 0,
  "plays": [],
@@ -1095,6 +1095,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
