@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T19:18+00:00",
+ "generated": "2026-08-14T20:53+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -524,40 +524,40 @@
   {
    "pitcher": "Matthew Liberatore",
    "opp": "Chicago Cubs",
-   "lam": 4.67,
-   "k9_regressed": 8.65,
-   "exp_ip": 4.9,
-   "opp_mult": 0.99,
+   "lam": 4.76,
+   "k9_regressed": 8.73,
+   "exp_ip": 4.96,
+   "opp_mult": 0.989,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4991,
-     "fair_over": 100,
-     "fair_under": -100
+     "p_over": 0.5164,
+     "fair_over": -107,
+     "fair_under": 107
     },
     {
      "line": 5.5,
-     "p_over": 0.3257,
-     "fair_over": 207,
-     "fair_under": -207
+     "p_over": 0.342,
+     "fair_over": 192,
+     "fair_under": -192
     },
     {
      "line": 6.5,
-     "p_over": 0.1908,
-     "fair_over": 424,
-     "fair_under": -424
+     "p_over": 0.2036,
+     "fair_over": 391,
+     "fair_under": -391
     },
     {
      "line": 7.5,
-     "p_over": 0.1009,
-     "fair_over": 891,
-     "fair_under": -891
+     "p_over": 0.1095,
+     "fair_over": 813,
+     "fair_under": -813
     },
     {
      "line": 8.5,
-     "p_over": 0.0485,
-     "fair_over": 1964,
-     "fair_under": -1964
+     "p_over": 0.0535,
+     "fair_over": 1768,
+     "fair_under": -1768
     }
    ]
   },
@@ -598,6 +598,46 @@
      "p_over": 0.0485,
      "fair_over": 1961,
      "fair_under": -1961
+    }
+   ]
+  },
+  {
+   "pitcher": "Clay Holmes",
+   "opp": "St. Louis Cardinals",
+   "lam": 4.59,
+   "k9_regressed": 7.55,
+   "exp_ip": 5.76,
+   "opp_mult": 0.951,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4851,
+     "fair_over": 106,
+     "fair_under": -106
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3127,
+     "fair_over": 220,
+     "fair_under": -220
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1808,
+     "fair_over": 453,
+     "fair_under": -453
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0943,
+     "fair_over": 961,
+     "fair_under": -961
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0446,
+     "fair_over": 2140,
+     "fair_under": -2140
     }
    ]
   },
@@ -1082,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 14045 (used 5955) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 14017 (used 5983) \u00b7 whiff rest:30 rows",
  "n_markets": 23,
  "n_plays": 0,
  "plays": [],
@@ -1095,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
