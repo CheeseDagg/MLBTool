@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T14:27+00:00",
+ "generated": "2026-08-14T18:36+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -38,6 +38,46 @@
      "p_over": 0.3033,
      "fair_over": 230,
      "fair_under": -230
+    }
+   ]
+  },
+  {
+   "pitcher": "Chris Sale",
+   "opp": "Arizona Diamondbacks",
+   "lam": 6.28,
+   "k9_regressed": 10.51,
+   "exp_ip": 5.86,
+   "opp_mult": 0.918,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7502,
+     "fair_over": -300,
+     "fair_under": 300
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5976,
+     "fair_over": -149,
+     "fair_under": 149
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.438,
+     "fair_over": 128,
+     "fair_under": -128
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2949,
+     "fair_over": 239,
+     "fair_under": -239
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1826,
+     "fair_over": 448,
+     "fair_under": -448
     }
    ]
   },
@@ -482,86 +522,6 @@
    ]
   },
   {
-   "pitcher": "Matthew Liberatore",
-   "opp": "Chicago Cubs",
-   "lam": 4.72,
-   "k9_regressed": 8.68,
-   "exp_ip": 4.94,
-   "opp_mult": 0.99,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.509,
-     "fair_over": -104,
-     "fair_under": 104
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.335,
-     "fair_over": 199,
-     "fair_under": -199
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1981,
-     "fair_over": 405,
-     "fair_under": -405
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1058,
-     "fair_over": 845,
-     "fair_under": -845
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0513,
-     "fair_over": 1849,
-     "fair_under": -1849
-    }
-   ]
-  },
-  {
-   "pitcher": "Clay Holmes",
-   "opp": "St. Louis Cardinals",
-   "lam": 4.67,
-   "k9_regressed": 7.8,
-   "exp_ip": 5.67,
-   "opp_mult": 0.951,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5002,
-     "fair_over": -100,
-     "fair_under": 100
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3267,
-     "fair_over": 206,
-     "fair_under": -206
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1916,
-     "fair_over": 422,
-     "fair_under": -422
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1014,
-     "fair_over": 886,
-     "fair_under": -886
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0488,
-     "fair_over": 1951,
-     "fair_under": -1951
-    }
-   ]
-  },
-  {
    "pitcher": "Kumar Rocker",
    "opp": "Athletics",
    "lam": 4.67,
@@ -682,6 +642,46 @@
    ]
   },
   {
+   "pitcher": "Matthew Liberatore",
+   "opp": "Chicago Cubs",
+   "lam": 4.53,
+   "k9_regressed": 8.63,
+   "exp_ip": 4.78,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4737,
+     "fair_over": 111,
+     "fair_under": -111
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3023,
+     "fair_over": 231,
+     "fair_under": -231
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1729,
+     "fair_over": 478,
+     "fair_under": -478
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0891,
+     "fair_over": 1022,
+     "fair_under": -1022
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0417,
+     "fair_over": 2299,
+     "fair_under": -2299
+    }
+   ]
+  },
+  {
    "pitcher": "Andrew Alvarez",
    "opp": "New York Mets",
    "lam": 4.52,
@@ -758,6 +758,46 @@
      "p_over": 0.0391,
      "fair_over": 2457,
      "fair_under": -2457
+    }
+   ]
+  },
+  {
+   "pitcher": "Clay Holmes",
+   "opp": "St. Louis Cardinals",
+   "lam": 4.27,
+   "k9_regressed": 7.66,
+   "exp_ip": 5.27,
+   "opp_mult": 0.951,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4231,
+     "fair_over": 136,
+     "fair_under": -136
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2578,
+     "fair_over": 288,
+     "fair_under": -288
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1403,
+     "fair_over": 613,
+     "fair_under": -613
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0686,
+     "fair_over": 1357,
+     "fair_under": -1357
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0304,
+     "fair_over": 3188,
+     "fair_under": -3188
     }
    ]
   },
@@ -962,6 +1002,46 @@
    ]
   },
   {
+   "pitcher": "Chris Bassitt",
+   "opp": "Tampa Bay Rays",
+   "lam": 3.22,
+   "k9_regressed": 6.94,
+   "exp_ip": 4.6,
+   "opp_mult": 0.909,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2238,
+     "fair_over": 347,
+     "fair_under": -347
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1083,
+     "fair_over": 824,
+     "fair_under": -824
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0461,
+     "fair_over": 2067,
+     "fair_under": -2067
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0175,
+     "fair_over": 5604,
+     "fair_under": -5604
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.006,
+     "fair_over": 16577,
+     "fair_under": -16577
+    }
+   ]
+  },
+  {
    "pitcher": "Sean Newcomb",
    "opp": "Detroit Tigers",
    "lam": 2.85,
@@ -1002,7 +1082,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 14610 (used 5390) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 14059 (used 5941) \u00b7 whiff rest:30 rows",
  "n_markets": 23,
  "n_plays": 0,
  "plays": [],
@@ -1015,6 +1095,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
