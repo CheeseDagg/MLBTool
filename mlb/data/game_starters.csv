@@ -2205,8 +2205,22 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-13,Cincinnati Reds,Chicago White Sox,Andrew Abbott,Davis Martin,9,8,Final
 2026-08-13,Pittsburgh Pirates,Miami Marlins,Braxton Ashcraft,Tyler Phillips,13,1,Final
 2026-08-13,Seattle Mariners,New York Yankees,Logan Gilbert,Max Fried,1,0,Final
-2026-08-13,Boston Red Sox,Toronto Blue Jays,Payton Tolle,Max Scherzer,5,0,In Progress
-2026-08-13,Chicago Cubs,Washington Nationals,Kevin Gausman,Cade Cavalli,0,1,In Progress
-2026-08-13,Philadelphia Phillies,Minnesota Twins,Aaron Nola,Taj Bradley,0,0,Pre-Game
-2026-08-13,Texas Rangers,Los Angeles Angels,Jacob deGrom,Walbert Ureña,0,0,Scheduled
-2026-08-13,Milwaukee Brewers,Los Angeles Dodgers,Shane Drohan,Roki Sasaki,0,0,Scheduled
+2026-08-13,Boston Red Sox,Toronto Blue Jays,Payton Tolle,Max Scherzer,7,0,Final
+2026-08-13,Chicago Cubs,Washington Nationals,Kevin Gausman,Cade Cavalli,0,7,Final
+2026-08-13,Philadelphia Phillies,Minnesota Twins,Aaron Nola,Taj Bradley,7,1,Final
+2026-08-13,Texas Rangers,Los Angeles Angels,Jacob deGrom,Walbert Ureña,0,7,Final
+2026-08-13,Milwaukee Brewers,Los Angeles Dodgers,Shane Drohan,Roki Sasaki,5,4,Final
+2026-08-14,St. Louis Cardinals,Chicago Cubs,Matthew Liberatore,Clay Holmes,0,0,Scheduled
+2026-08-14,Miami Marlins,Cincinnati Reds,Sandy Alcantara,Chase Burns,0,0,Scheduled
+2026-08-14,Boston Red Sox,Pittsburgh Pirates,Jake Bennett,Bubba Chandler,0,0,Scheduled
+2026-08-14,Chicago White Sox,Detroit Tigers,Sean Newcomb,Jackson Jobe,0,0,Scheduled
+2026-08-14,Washington Nationals,New York Mets,Andrew Alvarez,Robert Stock,0,0,Scheduled
+2026-08-14,San Diego Padres,Cleveland Guardians,Michael King,Gavin Williams,0,0,Scheduled
+2026-08-14,Baltimore Orioles,Tampa Bay Rays,,Steven Matz,0,0,Scheduled
+2026-08-14,Arizona Diamondbacks,Atlanta Braves,Brandon Pfaadt,,0,0,Scheduled
+2026-08-14,New York Yankees,Toronto Blue Jays,Gerrit Cole,Shane Bieber,0,0,Scheduled
+2026-08-14,Seattle Mariners,Houston Astros,George Kirby,Peter Lambert,0,0,Scheduled
+2026-08-14,Kansas City Royals,Los Angeles Angels,Seth Lugo,Grayson Rodriguez,0,0,Scheduled
+2026-08-14,Texas Rangers,Athletics,Kumar Rocker,,0,0,Scheduled
+2026-08-14,Milwaukee Brewers,Los Angeles Dodgers,Robert Gasser,Yoshinobu Yamamoto,0,0,Scheduled
+2026-08-14,Colorado Rockies,San Francisco Giants,Kyle Freeland,Landen Roupp,0,0,Scheduled
