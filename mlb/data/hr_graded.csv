@@ -1118,3 +1118,32 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-12,Julio Rodríguez,SEA,823511,Will Warren,5,card,17.9,16.2,13.4,+457,400,-32.8,park +14%,87F · wind out 5,RvR -3%,,hr,1
 2026-08-13,Sal Stewart,CIN,824561,Davis Martin,2,card,16.8,22.5,,+494,,,park +9%,74F · wind in 5,RvR -3%,heat -5%,hr,1
 2026-08-13,Cal Raleigh,SEA,823508,Max Fried,4,card,14.9,16.0,13.4,+569,500,-19.9,park +14%,86F · wind out 6,SvL +12%,heat +5%,no,0
+2026-08-13,Kyle Schwarber,PHI,823669,Taj Bradley,1,card,27.6,28.9,20.3,+262,225,-34.0,park avg [unknown],no wx,LvR +8%,heat +4%,hr,2
+2026-08-13,Byron Buxton,MIN,823669,Aaron Nola,2,card,23.6,29.0,20.3,+324,280,-22.7,park avg [unknown],no wx,RvR -3%,heat -3%,no,0
+2026-08-13,Ben Rice,NYY,823508,Logan Gilbert,2,card,21.3,30.8,,+369,,,park +14%,86F · wind out 7,LvR +8%,heat +4%,no,0
+2026-08-13,Charles McAdoo,TOR,822776,Payton Tolle,1,card,20.6,29.5,,+386,,,park +3% [low-conf],82F (roof: half),RvL +12%,,no,0
+2026-08-13,Shohei Ohtani,LAD,823915,Shane Drohan,2,proj,20.4,23.5,17.4,+391,340,-23.5,park +5%,83F · wind out 7,LvL -22%,heat +5%,no,0
+2026-08-13,Joc Pederson,TEX,823995,Walbert Ureña *,4,proj,19.5,22.5,16.8,+413,360,-22.6,park +4%,83F · wind out 5,LvR +8%,heat -2%,no,0
+2026-08-13,Kody Clemens,MIN,823669,Aaron Nola,6,card,19.1,17.1,13.9,+424,370,-34.5,park avg [unknown],no wx,LvR +8%,heat -5%,no,0
+2026-08-13,Andy Pages,LAD,823915,Shane Drohan,1,proj,18.3,19.7,15.3,+446,390,-24.9,park +5%,83F · wind out 7,RvL +12%,heat +6%,no,0
+2026-08-13,Bryce Harper,PHI,823669,Taj Bradley,3,card,18.3,19.8,15.4,+446,390,-24.5,park avg [unknown],no wx,LvR +8%,heat +11%,no,0
+2026-08-13,Mike Trout,LAA,823995,Jacob deGrom,2,proj,18.3,23.4,17.3,+446,390,-15.1,park +4%,83F · wind out 5,RvR -3%,heat -9%,no,0
+2026-08-13,Corey Seager,TEX,823995,Walbert Ureña *,7,proj,17.6,16.4,13.6,+469,410,-30.8,park +4%,83F · wind out 5,LvR +8%,heat -4%,no,0
+2026-08-13,Jackson Chourio,MIL,823915,Roki Sasaki,5,proj,17.6,19.0,14.9,+469,410,-23.8,park +5%,83F · wind out 7,RvR -3%,heat +3%,no,0
+2026-08-13,Trent Grisham,NYY,823508,Logan Gilbert,1,card,17.4,23.5,,+475,,,park +14%,86F · wind out 7,LvR +8%,heat -3%,no,0
+2026-08-13,Josh Bell,MIN,823669,Aaron Nola,4,card,17.1,16.1,13.4,+485,425,-29.6,park avg [unknown],no wx,SvR +8%,heat -4%,no,0
+2026-08-13,Royce Lewis,MIN,823669,Aaron Nola,5,card,17.1,15.6,13.1,+485,425,-31.0,park avg [unknown],no wx,RvR -3%,heat -5%,no,0
+2026-08-13,Munetaka Murakami,CHW,824561,Andrew Abbott,5,card,16.7,22.2,,+500,,,park +9%,76F · wind in 6,LvL -22%,heat +3%,no,0
+2026-08-13,Elly De La Cruz,CIN,824561,Davis Martin,1,card,16.6,22.1,,+502,,,park +9%,76F · wind in 6,SvR +8%,heat +0%,no,0
+2026-08-13,Jake Burger,TEX,823995,Walbert Ureña *,2,proj,16.6,21.0,16.0,+502,440,-13.6,park +4%,83F · wind out 5,RvR -3%,heat -1%,void,
+2026-08-13,Dillon Dingler,DET,824238,Parker Messick,2,card,16.4,21.7,,+509,,,park -5%,76F · wind in 4,RvL +12%,heat +5%,no,0
+2026-08-13,Jack Brannigan,PIT,823829,Tyler Phillips,6,card,16.4,21.6,,+511,,,park -9%,86F (roof: half),RvR -3%,,void,
+2026-08-13,Miguel Vargas,CHW,824561,Andrew Abbott,3,card,16.4,21.7,,+511,,,park +9%,76F · wind in 6,RvL +12%,heat -4%,no,0
+2026-08-13,Angel Genao,CLE,824238,Keider Montero,7,card,16.3,21.5,,+515,,,park -5%,76F · wind in 4,SvR +8%,,no,0
+2026-08-13,Jake Bauers,MIL,823915,Roki Sasaki,3,proj,16.0,23.4,17.3,+524,460,-2.9,park +5%,83F · wind out 7,LvR +8%,heat -8%,no,0
+2026-08-13,Brandon Lowe,PIT,823829,Tyler Phillips,2,card,15.9,20.8,,+529,,,park -9%,86F (roof: half),LvR +8%,heat +0%,no,0
+2026-08-13,Luis García Jr.,NYY,823508,Logan Gilbert,4,card,15.7,20.4,,+537,,,park +14%,86F · wind out 7,LvR +8%,heat +2%,no,0
+2026-08-13,JJ Bleday,CIN,824561,Davis Martin,3,card,15.6,20.1,,+543,,,park +9%,76F · wind in 6,LvR +8%,heat +4%,no,0
+2026-08-13,Wyatt Langford,TEX,823995,Walbert Ureña *,6,proj,15.6,14.9,12.3,+541,475,-29.3,park +4%,83F · wind out 5,RvR -3%,heat -1%,no,0
+2026-08-13,Kazuma Okamoto,TOR,822776,Payton Tolle,5,card,15.4,19.9,,+549,,,park +3% [low-conf],82F (roof: half),RvL +12%,heat +9%,no,0
+2026-08-13,Esmerlyn Valdez,PIT,823829,Tyler Phillips,5,card,15.1,19.2,,+564,,,park -9%,86F (roof: half),RvR -3%,heat -5%,no,0
