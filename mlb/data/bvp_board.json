@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15T20:36:45+00:00",
+ "generated": "2026-08-15T23:33:26+00:00",
  "date": "2026-08-15",
  "min_pa": 6,
  "rows": [
@@ -13,6 +13,105 @@
    "hr": 3,
    "avg": ".233",
    "slg": ".600"
+  },
+  {
+   "batter": "Dylan Crews",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Andr\u00e9s Chaparro",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Brady House",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "CJ Abrams",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Harry Ford",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Jacob Young",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Daylen Lile",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Nasim Nu\u00f1ez",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
+  },
+  {
+   "batter": "Andrew Pinckney",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 9,
+   "ab": 8,
+   "h": 4,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.375"
   },
   {
    "batter": "Michael Busch",
@@ -37,15 +136,15 @@
    "slg": "1.000"
   },
   {
-   "batter": "Ezequiel Tovar",
-   "team": "COL",
-   "opp_sp": "Logan Webb",
-   "pa": 25,
-   "ab": 24,
-   "h": 9,
-   "hr": 2,
-   "avg": ".375",
-   "slg": ".625"
+   "batter": "Isaac Paredes",
+   "team": "HOU",
+   "opp_sp": "Emerson Hancock",
+   "pa": 6,
+   "ab": 6,
+   "h": 4,
+   "hr": 1,
+   "avg": ".667",
+   "slg": "1.167"
   },
   {
    "batter": "Sam Antonacci",
@@ -59,114 +158,15 @@
    "slg": "1.000"
   },
   {
-   "batter": "Seiya Suzuki",
-   "team": "CHC",
-   "opp_sp": "Michael McGreevy",
-   "pa": 10,
-   "ab": 9,
-   "h": 4,
-   "hr": 1,
-   "avg": ".444",
-   "slg": ".889"
-  },
-  {
    "batter": "Jordan Walker",
    "team": "STL",
    "opp_sp": "Matthew Boyd",
-   "pa": 8,
-   "ab": 7,
-   "h": 3,
-   "hr": 1,
-   "avg": ".429",
-   "slg": ".857"
-  },
-  {
-   "batter": "Jonathan Aranda",
-   "team": "TB",
-   "opp_sp": "Kyle Bradish",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".857"
-  },
-  {
-   "batter": "Corey Seager",
-   "team": "TEX",
-   "opp_sp": "J.T. Ginn",
    "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".857"
-  },
-  {
-   "batter": "Joc Pederson",
-   "team": "TEX",
-   "opp_sp": "J.T. Ginn",
-   "pa": 9,
-   "ab": 8,
-   "h": 2,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".750"
-  },
-  {
-   "batter": "Brandon Nimmo",
-   "team": "TEX",
-   "opp_sp": "J.T. Ginn",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
-   "batter": "Yandy D\u00edaz",
-   "team": "TB",
-   "opp_sp": "Kyle Bradish",
-   "pa": 27,
-   "ab": 25,
-   "h": 10,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".680"
-  },
-  {
-   "batter": "Josh Bell",
-   "team": "MIN",
-   "opp_sp": "Jes\u00fas Luzardo",
-   "pa": 14,
-   "ab": 12,
+   "ab": 6,
    "h": 3,
    "hr": 1,
-   "avg": ".250",
-   "slg": ".667"
-  },
-  {
-   "batter": "Blaze Jordan",
-   "team": "STL",
-   "opp_sp": "Matthew Boyd",
-   "pa": 6,
-   "ab": 6,
-   "h": 1,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
-   "batter": "Kazuma Okamoto",
-   "team": "TOR",
-   "opp_sp": "Cam Schlittler",
-   "pa": 6,
-   "ab": 6,
-   "h": 1,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
+   "avg": ".500",
+   "slg": "1.000"
   }
  ]
 }
