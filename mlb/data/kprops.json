@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15T13:50+00:00",
+ "generated": "2026-08-15T18:01+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -204,40 +204,40 @@
   {
    "pitcher": "Troy Melton",
    "opp": "Chicago White Sox",
-   "lam": 5.73,
-   "k9_regressed": 8.02,
-   "exp_ip": 6.15,
-   "opp_mult": 1.046,
+   "lam": 5.53,
+   "k9_regressed": 8.07,
+   "exp_ip": 5.9,
+   "opp_mult": 1.045,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6775,
-     "fair_over": -210,
-     "fair_under": 210
+     "p_over": 0.6474,
+     "fair_over": -184,
+     "fair_under": 184
     },
     {
      "line": 5.5,
-     "p_over": 0.5104,
-     "fair_over": -104,
-     "fair_under": 104
+     "p_over": 0.4765,
+     "fair_over": 110,
+     "fair_under": -110
     },
     {
      "line": 6.5,
-     "p_over": 0.3508,
-     "fair_over": 185,
-     "fair_under": -185
+     "p_over": 0.319,
+     "fair_over": 213,
+     "fair_under": -213
     },
     {
      "line": 7.5,
-     "p_over": 0.22,
-     "fair_over": 354,
-     "fair_under": -354
+     "p_over": 0.1945,
+     "fair_over": 414,
+     "fair_under": -414
     },
     {
      "line": 8.5,
-     "p_over": 0.1264,
-     "fair_over": 691,
-     "fair_under": -691
+     "p_over": 0.1084,
+     "fair_over": 823,
+     "fair_under": -823
     }
    ]
   },
@@ -802,46 +802,6 @@
    ]
   },
   {
-   "pitcher": "Anthony Kay",
-   "opp": "Detroit Tigers",
-   "lam": 4.23,
-   "k9_regressed": 7.6,
-   "exp_ip": 4.95,
-   "opp_mult": 1.011,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4153,
-     "fair_over": 141,
-     "fair_under": -141
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2512,
-     "fair_over": 298,
-     "fair_under": -298
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1356,
-     "fair_over": 638,
-     "fair_under": -638
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0658,
-     "fair_over": 1421,
-     "fair_under": -1421
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0289,
-     "fair_over": 3361,
-     "fair_under": -3361
-    }
-   ]
-  },
-  {
    "pitcher": "Randy Dobnak",
    "opp": "Los Angeles Angels",
    "lam": 4.21,
@@ -878,6 +838,46 @@
      "p_over": 0.0282,
      "fair_over": 3451,
      "fair_under": -3451
+    }
+   ]
+  },
+  {
+   "pitcher": "Anthony Kay",
+   "opp": "Detroit Tigers",
+   "lam": 4.16,
+   "k9_regressed": 7.67,
+   "exp_ip": 4.83,
+   "opp_mult": 1.011,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4026,
+     "fair_over": 148,
+     "fair_under": -148
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2405,
+     "fair_over": 316,
+     "fair_under": -316
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1281,
+     "fair_over": 681,
+     "fair_under": -681
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0613,
+     "fair_over": 1531,
+     "fair_under": -1531
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0265,
+     "fair_over": 3667,
+     "fair_under": -3667
     }
    ]
   },
@@ -1162,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 13554 (used 6446) \u00b7 whiff rest:30 rows",
- "n_markets": 28,
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 13406 (used 6594) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1175,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 6,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
