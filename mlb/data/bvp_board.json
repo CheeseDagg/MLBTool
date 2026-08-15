@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15T17:33:21+00:00",
+ "generated": "2026-08-15T20:36:45+00:00",
  "date": "2026-08-15",
  "min_pa": 6,
  "rows": [
@@ -51,20 +51,9 @@
    "batter": "Sam Antonacci",
    "team": "CWS",
    "opp_sp": "Troy Melton",
-   "pa": 7,
-   "ab": 5,
-   "h": 3,
-   "hr": 1,
-   "avg": ".600",
-   "slg": "1.200"
-  },
-  {
-   "batter": "Jordan Walker",
-   "team": "STL",
-   "opp_sp": "Matthew Boyd",
-   "pa": 7,
-   "ab": 6,
-   "h": 3,
+   "pa": 10,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
    "avg": ".500",
    "slg": "1.000"
@@ -79,6 +68,17 @@
    "hr": 1,
    "avg": ".444",
    "slg": ".889"
+  },
+  {
+   "batter": "Jordan Walker",
+   "team": "STL",
+   "opp_sp": "Matthew Boyd",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
   },
   {
    "batter": "Jonathan Aranda",
@@ -101,17 +101,6 @@
    "hr": 1,
    "avg": ".286",
    "slg": ".857"
-  },
-  {
-   "batter": "Colton Cowser",
-   "team": "BAL",
-   "opp_sp": "Ian Seymour",
-   "pa": 6,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
   },
   {
    "batter": "Joc Pederson",
@@ -155,6 +144,17 @@
    "h": 3,
    "hr": 1,
    "avg": ".250",
+   "slg": ".667"
+  },
+  {
+   "batter": "Blaze Jordan",
+   "team": "STL",
+   "opp_sp": "Matthew Boyd",
+   "pa": 6,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
    "slg": ".667"
   },
   {
