@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T20:43:23+00:00",
+ "generated": "2026-08-14T23:34:37+00:00",
  "date": "2026-08-14",
  "min_pa": 6,
  "rows": [
@@ -114,26 +114,15 @@
    "slg": ".700"
   },
   {
-   "batter": "Michael Busch",
-   "team": "CHC",
-   "opp_sp": "Matthew Liberatore",
-   "pa": 12,
-   "ab": 11,
-   "h": 3,
-   "hr": 1,
-   "avg": ".273",
-   "slg": ".636"
-  },
-  {
    "batter": "Noelvi Marte",
    "team": "CIN",
    "opp_sp": "Sandy Alcantara",
-   "pa": 8,
-   "ab": 8,
+   "pa": 9,
+   "ab": 9,
    "h": 2,
    "hr": 1,
-   "avg": ".250",
-   "slg": ".625"
+   "avg": ".222",
+   "slg": ".556"
   },
   {
    "batter": "Lawrence Butler",
@@ -147,6 +136,17 @@
    "slg": ".556"
   },
   {
+   "batter": "Michael Busch",
+   "team": "CHC",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 14,
+   "ab": 13,
+   "h": 3,
+   "hr": 1,
+   "avg": ".231",
+   "slg": ".538"
+  },
+  {
    "batter": "Ian Happ",
    "team": "CHC",
    "opp_sp": "Matthew Liberatore",
@@ -156,17 +156,6 @@
    "hr": 1,
    "avg": ".091",
    "slg": ".364"
-  },
-  {
-   "batter": "Willy Adames",
-   "team": "SF",
-   "opp_sp": "Kyle Freeland",
-   "pa": 25,
-   "ab": 24,
-   "h": 3,
-   "hr": 1,
-   "avg": ".125",
-   "slg": ".250"
   }
  ]
 }

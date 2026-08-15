@@ -1122,3 +1122,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-14,Trent Grisham,NYY,822777,Shane Bieber,1,card,17.9,22.0,16.5,+457,400,-17.3,park +3% [low-conf],79F · wind out 3 (roof: half),LvR +8%,heat -15%,-0.8,
 2026-08-14,JJ Bleday,CIN,824479,Sandy Alcantara,3,card,17.6,21.1,16.1,+469,410,-18.1,park +25%,83F,LvR +8%,heat -3%,-0.8,
 2026-08-14,Jackson Chourio,MIL,823913,Yoshinobu Yamamoto,5,proj,17.6,16.8,13.8,+469,410,-29.8,park +5%,83F · wind out 7,RvR -3%,heat -1%,-3.1,floor
+2026-08-15,JJ Bleday,CIN,824480,Ryan Gusto,3,proj,26.8,21.1,16.1,+274,235,-46.1,park +25%,71F,LvR +8%,heat +6%,-0.2,
+2026-08-15,Kyle Schwarber,PHI,823671,Connor Prielipp,3,proj,26.8,23.9,17.6,+274,235,-41.1,park -2%,68F · wind in 3,LvL -22%,heat +4%,-3.8,floor
+2026-08-15,Yordan Alvarez,HOU,824157,Emerson Hancock,1,proj,26.0,31.2,21.5,+285,245,-25.8,park +3%,79F (roof: half),LvR +8%,heat +8%,1.5,
+2026-08-15,Munetaka Murakami,CHW,824239,Troy Melton,5,proj,23.6,22.1,16.6,+324,280,-37.0,park -5%,66F,LvR +8%,heat +1%,-3.3,floor
+2026-08-15,Matt Olson,ATL,824884,Eduardo Rodriguez *,1,proj,23.0,26.8,19.2,+335,290,-25.2,park +4%,no wx,LvL -22%,heat -0%,0.9,
+2026-08-15,Shohei Ohtani,LAD,823914,Jacob Misiorowski,2,proj,23.0,23.4,17.3,+335,290,-32.5,park +5%,66F,LvR +8%,heat +9%,-1.6,
+2026-08-15,Jordan Walker,STL,824644,Matthew Boyd,3,proj,22.1,20.0,15.5,+352,305,-37.2,park avg,72F,RvL +12%,heat +2%,-1.6,
+2026-08-15,Ketel Marte,ARI,824884,Grant Holmes,1,proj,22.1,22.2,16.7,+352,305,-32.4,park +4%,no wx,SvR +8%,heat -4%,-3.8,floor
+2026-08-15,Pete Crow-Armstrong,CHC,824644,Michael McGreevy,3,proj,22.1,20.5,15.7,+352,305,-36.3,park avg,72F,LvR +8%,heat -3%,-2.3,floor
+2026-08-15,Ben Rice,NYY,822775,Braydon Fisher,1,proj,21.4,27.4,19.5,+368,320,-18.3,park +3% [low-conf],67F (roof: half),LvR +8%,heat +6%,-0.8,
+2026-08-15,Cal Raleigh,SEA,824157,Hayden Wesneski,5,proj,21.4,15.7,13.2,+368,320,-44.7,park +3%,79F (roof: half),SvR +8%,,2.2,
+2026-08-15,Joc Pederson,TEX,824966,J.T. Ginn,4,proj,21.4,22.4,16.8,+368,320,-29.4,park +6% [low-conf],59F · wind out 3,LvR +8%,heat -4%,-1.3,
+2026-08-15,Bobby Witt Jr.,KCR,823990,Reid Detmers,2,proj,20.9,17.0,13.9,+379,330,-40.4,park +4%,70F,RvL +12%,heat +18%,-0.9,
+2026-08-15,Byron Buxton,MIN,823671,Jesús Luzardo,6,proj,20.9,19.0,15.0,+379,330,-35.7,park -2%,68F · wind in 3,RvL +12%,heat +5%,-8.8,floor
+2026-08-15,Sal Stewart,CIN,824480,Ryan Gusto,1,proj,20.9,26.1,18.8,+379,330,-19.2,park +25%,71F,RvR -3%,heat +9%,-0.3,
+2026-08-15,Wilyer Abreu,BOS,823347,Jared Jones,1,proj,20.9,20.9,16.0,+379,330,-31.4,park -9%,66F,LvR +8%,heat +6%,-2.3,floor
+2026-08-15,Colson Montgomery,CHW,824239,Troy Melton,3,proj,19.9,21.4,16.2,+402,350,-26.9,park -5%,66F,LvR +8%,heat -2%,-0.2,
+2026-08-15,Corey Seager,TEX,824966,J.T. Ginn,7,proj,19.9,16.3,13.5,+402,350,-39.2,park +6% [low-conf],59F · wind out 3,LvR +8%,heat -1%,-0.3,
+2026-08-15,Elly De La Cruz,CIN,824480,Ryan Gusto,2,proj,19.9,21.7,16.4,+402,350,-26.1,park +25%,71F,SvR +8%,heat +6%,-2.0,floor
+2026-08-15,Jackson Chourio,MIL,823914,Justin Wrobleski,5,proj,19.9,16.9,13.8,+402,350,-37.8,park +5%,66F,RvL +12%,heat +18%,-2.7,floor
+2026-08-15,Jake Bauers,MIL,823914,Justin Wrobleski,3,proj,19.9,18.9,14.9,+402,350,-33.1,park +5%,66F,LvL -22%,heat +10%,-2.4,floor
+2026-08-15,Junior Caminero,TBR,822941,Kyle Bradish,1,proj,19.9,28.3,20.0,+402,350,-10.2,park -4% [low-conf],dome,RvR -3%,heat -10%,0.0,
+2026-08-15,Rafael Devers,SFG,823184,Michael Lorenzen,1,proj,19.9,21.9,16.5,+402,350,-25.8,park -14%,59F · wind out 5,LvR +8%,heat -5%,-1.3,
+2026-08-15,Coby Mayo,BAL,822941,Ian Seymour,4,proj,19.1,19.2,15.0,+424,370,-29.3,park -4% [low-conf],dome,RvL +12%,heat +5%,-1.2,
+2026-08-15,Michael Harris II,ATL,824884,Eduardo Rodriguez *,4,proj,19.1,16.1,13.4,+424,370,-37.0,park +4%,no wx,LvL -22%,heat -0%,-2.5,floor
+2026-08-15,Owen Caissie,MIA,824480,Brady Singer,5,proj,19.1,20.3,15.7,+424,370,-26.4,park +25%,71F,LvR +8%,heat -0%,,new
+2026-08-15,Trent Grisham,NYY,822775,Braydon Fisher,3,proj,19.1,16.7,13.7,+424,370,-35.6,park +3% [low-conf],67F (roof: half),LvR +8%,heat -2%,-3.1,floor
+2026-08-15,Willson Contreras,BOS,823347,Jared Jones,4,proj,19.1,18.6,14.7,+424,370,-30.8,park -9%,66F,RvR -3%,heat +8%,-1.9,
+2026-08-15,Dominic Canzone,SEA,824157,Hayden Wesneski,6,proj,18.3,18.3,14.6,+446,390,-28.7,park +3%,79F (roof: half),LvR +8%,,-3.3,floor
+2026-08-15,Griffin Conine,MIA,824480,Brady Singer,7,proj,18.3,20.2,15.6,+446,390,-23.6,park +25%,71F,LvR +8%,heat -0%,,new
