@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T20:35:30+00:00",
+ "generated": "2026-08-16T23:32:33+00:00",
  "date": "2026-08-16",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,23 @@
    "batter": "George Springer",
    "team": "TOR",
    "opp_sp": "Ryan Weathers",
-   "pa": 8,
-   "ab": 7,
+   "pa": 6,
+   "ab": 5,
    "h": 3,
    "hr": 2,
-   "avg": ".429",
-   "slg": "1.286"
+   "avg": ".600",
+   "slg": "1.800"
+  },
+  {
+   "batter": "Luis Rengifo",
+   "team": "SD",
+   "opp_sp": "Tanner Bibee",
+   "pa": 14,
+   "ab": 14,
+   "h": 8,
+   "hr": 2,
+   "avg": ".571",
+   "slg": "1.071"
   },
   {
    "batter": "Ryan McMahon",
@@ -37,6 +48,28 @@
    "slg": ".923"
   },
   {
+   "batter": "Brett Baty",
+   "team": "NYM",
+   "opp_sp": "Jake Irvin",
+   "pa": 14,
+   "ab": 13,
+   "h": 3,
+   "hr": 2,
+   "avg": ".231",
+   "slg": ".769"
+  },
+  {
+   "batter": "Francisco Lindor",
+   "team": "NYM",
+   "opp_sp": "Jake Irvin",
+   "pa": 23,
+   "ab": 23,
+   "h": 8,
+   "hr": 2,
+   "avg": ".348",
+   "slg": ".739"
+  },
+  {
    "batter": "Lawrence Butler",
    "team": "ATH",
    "opp_sp": "Cody Bradford",
@@ -45,6 +78,28 @@
    "h": 4,
    "hr": 1,
    "avg": ".500",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Alex Bregman",
+   "team": "CHC",
+   "opp_sp": "Hunter Dobbins",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Sal Stewart",
+   "team": "CIN",
+   "opp_sp": "Eury P\u00e9rez",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
    "slg": "1.000"
   },
   {
@@ -59,15 +114,15 @@
    "slg": "1.000"
   },
   {
-   "batter": "Luis Rengifo",
-   "team": "SD",
-   "opp_sp": "Tanner Bibee",
-   "pa": 11,
-   "ab": 11,
-   "h": 6,
+   "batter": "Kazuma Okamoto",
+   "team": "TOR",
+   "opp_sp": "Ryan Weathers",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
    "hr": 1,
-   "avg": ".545",
-   "slg": ".909"
+   "avg": ".375",
+   "slg": ".875"
   },
   {
    "batter": "Christian Walker",
@@ -81,92 +136,37 @@
    "slg": ".769"
   },
   {
-   "batter": "A.J. Ewing",
+   "batter": "Luis Torrens",
    "team": "NYM",
    "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
+   "pa": 12,
+   "ab": 12,
+   "h": 4,
    "hr": 1,
    "avg": ".333",
-   "slg": ".733"
+   "slg": ".750"
   },
   {
-   "batter": "Francisco Lindor",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
+   "batter": "Alec Burleson",
+   "team": "STL",
+   "opp_sp": "Edward Cabrera",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
+   "avg": ".286",
+   "slg": ".714"
   },
   {
-   "batter": "Bo Bichette",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
+   "batter": "Freddy Fermin",
+   "team": "SD",
+   "opp_sp": "Tanner Bibee",
+   "pa": 13,
+   "ab": 12,
    "h": 5,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
-  },
-  {
-   "batter": "Carson Benge",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
-  },
-  {
-   "batter": "Jared Young",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
-  },
-  {
-   "batter": "Luis Robert Jr.",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
-  },
-  {
-   "batter": "Brett Baty",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
-  },
-  {
-   "batter": "Jorge Polanco",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 16,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".733"
+   "avg": ".417",
+   "slg": ".667"
   }
  ]
 }
