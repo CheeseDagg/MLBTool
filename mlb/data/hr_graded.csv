@@ -1207,3 +1207,11 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-15,Jac Caglianone,KCR,823990,Reid Detmers,4,proj,18.3,19.7,15.3,+446,390,-25.0,park +4%,84F · wind out 6,LvL -22%,heat +15%,no,0
 2026-08-15,Mike Trout,LAA,823990,Randy Dobnak,2,proj,18.3,22.3,16.8,+446,390,-17.9,park +4%,84F · wind out 6,RvR -3%,,no,0
 2026-08-15,Wilyer Abreu,BOS,823347,Jared Jones,5,card,18.3,16.2,13.5,+446,390,-34.1,park -9%,83F,LvR +8%,,hr,1
+2026-08-16,Eugenio Suárez,CIN,824477,Eury Pérez *,4,card,19.5,19.7,15.3,+413,360,-29.5,park +25%,86F · wind out 7,RvR -3%,,no,0
+2026-08-16,Austin Riley,ATL,824880,Michael Soroka,8,card,18.3,10.9,9.4,+446,390,-53.9,park +4%,94F · wind out 4,RvR -3%,,no,0
+2026-08-16,Corbin Carroll,ARI,824880,Bryce Elder,2,card,18.3,21.0,16.0,+446,390,-21.4,park +4%,94F · wind out 4,LvR +8%,heat -1%,void,
+2026-08-16,Francisco Lindor,NYM,823590,Jake Irvin,2,card,18.3,23.2,17.2,+446,390,-15.6,park -4%,80F · wind out 9,SvR +8%,heat +8%,no,0
+2026-08-16,Michael Toglia,CIN,824477,Eury Pérez *,5,card,18.3,13.6,10.9,+446,390,-46.7,park +25%,86F · wind out 7,SvR +8%,,no,0
+2026-08-16,Heriberto Hernández,MIA,824477,Nick Lodolo,2,card,17.9,27.3,19.4,+457,400,-2.8,park +25%,86F · wind out 7,RvL +12%,heat +3%,hr,1
+2026-08-16,JJ Bleday,CIN,824477,Eury Pérez *,3,card,17.9,21.7,16.4,+457,400,-18.0,park +25%,86F · wind out 7,LvR +8%,heat -6%,no,0
+2026-08-16,Elly De La Cruz,CIN,824477,Eury Pérez *,1,card,17.6,24.0,17.7,+469,410,-9.9,park +25%,86F · wind out 7,SvR +8%,heat -3%,no,0
