@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T13:11+00:00",
+ "generated": "2026-08-16T13:51+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 12762 (used 7238) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 12730 (used 7270) \u00b7 whiff rest:30 rows",
  "n_markets": 29,
  "n_plays": 0,
  "plays": [],
@@ -1215,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
