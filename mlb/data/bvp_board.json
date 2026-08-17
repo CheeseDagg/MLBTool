@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T20:41:12+00:00",
+ "generated": "2026-08-17T23:34:13+00:00",
  "date": "2026-08-17",
  "min_pa": 6,
  "rows": [
@@ -70,103 +70,48 @@
    "slg": ".800"
   },
   {
-   "batter": "Elly De La Cruz",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
+   "batter": "Ezequiel Tovar",
+   "team": "COL",
+   "opp_sp": "Blake Snell",
+   "pa": 13,
+   "ab": 11,
+   "h": 2,
    "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
+   "avg": ".182",
+   "slg": ".545"
   },
   {
-   "batter": "Sal Stewart",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
+   "batter": "Ian Happ",
+   "team": "CHC",
+   "opp_sp": "Luis Castillo",
+   "pa": 34,
+   "ab": 30,
+   "h": 8,
    "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
+   "avg": ".267",
+   "slg": ".467"
   },
   {
-   "batter": "Tyler Stephenson",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
+   "batter": "Alex Bregman",
+   "team": "CHC",
+   "opp_sp": "Luis Castillo",
+   "pa": 18,
+   "ab": 16,
+   "h": 4,
    "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
+   "avg": ".250",
+   "slg": ".438"
   },
   {
-   "batter": "Eugenio Su\u00e1rez",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
+   "batter": "Michael Conforto",
+   "team": "CHC",
+   "opp_sp": "Luis Castillo",
    "pa": 12,
-   "ab": 10,
-   "h": 3,
+   "ab": 11,
+   "h": 1,
    "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
-  },
-  {
-   "batter": "Dane Myers",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
-  },
-  {
-   "batter": "Michael Toglia",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
-  },
-  {
-   "batter": "Matt McLain",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
-  },
-  {
-   "batter": "Noelvi Marte",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
-  },
-  {
-   "batter": "Ke'Bryan Hayes",
-   "team": "CIN",
-   "opp_sp": "Quinn Mathews",
-   "pa": 12,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
+   "avg": ".091",
+   "slg": ".364"
   }
  ]
 }
