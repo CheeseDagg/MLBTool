@@ -1182,33 +1182,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-16,Kyle Tucker,LAD,823912,Logan Henderson,6,card,16.3,10.8,9.4,+513,450,-48.5,park +5%,85F · wind out 4,LvR +8%,,,new
 2026-08-16,Dillon Dingler,DET,824236,Sean Burke,3,card,16.2,21.2,,+519,,,park -5%,85F · wind out 5,RvR -3%,heat -0%,-2.7,floor
 2026-08-16,Miguel Vargas,CHW,824236,Drew Anderson,3,card,16.2,21.3,,+518,,,park -5%,85F · wind out 5,RvR -3%,heat -5%,-0.4,
-2026-08-17,Shohei Ohtani,LAD,824320,Tomoyuki Sugano,2,proj,33.3,27.5,19.5,+200,169,-47.5,park +9%,62F,LvR +8%,heat +6%,0.6,
-2026-08-17,Kyle Schwarber,PHI,823427,Janson Junk,3,proj,31.4,25.4,18.4,+219,186,-47.4,park +9%,70F,LvR +8%,heat +10%,-2.6,floor
-2026-08-17,Matt Olson,ATL,823668,Bailey Ober,1,proj,26.8,30.1,20.9,+274,235,-29.9,park -2%,60F,LvR +8%,heat -0%,2.3,
-2026-08-17,Max Muncy,ATH,824077,Michael Wacha,1,proj,25.3,26.3,18.9,+296,255,-32.9,park -4% [low-conf],69F,LvR +8%,heat +5%,1.0,
-2026-08-17,Byron Buxton,MIN,823668,Martín Pérez *,5,proj,23.6,21.6,16.4,+324,280,-37.8,park -2%,60F,RvL +12%,heat -2%,-6.3,floor
-2026-08-17,Pete Crow-Armstrong,CHC,824641,Luis Castillo,2,proj,23.0,21.9,16.5,+335,290,-35.6,park avg,65F,LvR +8%,heat +4%,-1.4,
-2026-08-17,Jac Caglianone,KCR,824077,Mason Barnett,4,proj,22.1,21.7,16.4,+352,305,-33.6,park -4% [low-conf],69F,LvR +8%,heat -2%,0.1,
-2026-08-17,Miguel Vargas,CHW,824641,Shota Imanaga,1,proj,22.1,28.2,19.9,+352,305,-19.4,park avg,65F,RvL +12%,heat +1%,3.6,STANDOUT
-2026-08-17,Munetaka Murakami,CHW,824641,Shota Imanaga,5,proj,22.1,24.5,17.9,+352,305,-27.5,park avg,65F,LvL -22%,heat +3%,-2.1,floor
-2026-08-17,Willson Contreras,BOS,824725,Mitch Bratt,4,proj,22.1,18.7,14.8,+352,305,-40.2,park -7%,69F · wind out 3,RvL +12%,heat +3%,-1.1,
-2026-08-17,Bryce Harper,PHI,823427,Janson Junk,1,proj,21.4,21.9,16.5,+368,320,-30.5,park +9%,70F,LvR +8%,heat +18%,-0.6,
-2026-08-17,Drake Baldwin,ATL,823668,Bailey Ober,5,proj,21.4,17.7,14.3,+368,320,-40.1,park -2%,60F,LvR +8%,heat -4%,-3.6,floor
-2026-08-17,Junior Caminero,TBR,822939,Brandon Young,1,proj,21.4,29.3,20.5,+368,320,-14.0,park -4% [low-conf],dome,RvR -3%,heat +6%,0.6,
-2026-08-17,Andy Pages,LAD,824320,Tomoyuki Sugano,1,proj,20.9,21.4,16.2,+379,330,-30.2,park +9%,62F,RvR -3%,heat -5%,0.3,
-2026-08-17,Michael Harris II,ATL,823668,Bailey Ober,4,proj,20.9,18.0,14.4,+379,330,-38.1,park -2%,60F,LvR +8%,heat -1%,-1.5,
-2026-08-17,Freddie Freeman,LAD,824320,Tomoyuki Sugano,3,proj,19.9,16.6,13.6,+402,350,-38.6,park +9%,62F,LvR +8%,heat -3%,,new
-2026-08-17,Hunter Goodman,COL,824320,Blake Snell,2,proj,19.2,26.9,,+420,,,park +9%,62F,RvL +12%,,0.3,
-2026-08-17,Austin Riley,ATL,823668,Bailey Ober,3,proj,19.1,15.9,13.3,+424,370,-37.5,park -2%,60F,RvR -3%,heat +8%,,new
-2026-08-17,Bobby Witt Jr.,KCR,824077,Mason Barnett,2,proj,19.1,18.0,14.4,+424,370,-32.3,park -4% [low-conf],69F,RvR -3%,heat -4%,-0.3,
-2026-08-17,Colson Montgomery,CHW,824641,Shota Imanaga,3,proj,19.1,22.8,17.0,+424,370,-20.1,park avg,65F,LvL -22%,heat +3%,0.6,
-2026-08-17,Royce Lewis,MIN,823668,Martín Pérez *,7,proj,19.1,12.3,9.8,+424,370,-53.8,park -2%,60F,RvL +12%,,-4.2,floor
-2026-08-17,Seiya Suzuki,CHC,824641,Luis Castillo,6,proj,19.1,14.5,11.9,+424,370,-44.3,park avg,65F,RvR -3%,heat -4%,-8.5,floor
-2026-08-17,Sal Stewart,CIN,824514,TBD *,1,proj,18.9,26.4,,+428,,,park +25%,70F,,,-0.2,
-2026-08-17,Sal Stewart,CIN,824478,TBD *,1,proj,18.9,26.4,,+428,,,park +25%,70F,,,-0.2,
-2026-08-17,Kyle Tucker,LAD,824320,Tomoyuki Sugano,4,proj,18.3,13.2,10.4,+446,390,-49.0,park +9%,62F,LvR +8%,,,new
-2026-08-17,Michael Busch,CHC,824641,Luis Castillo,3,proj,18.3,13.6,10.9,+446,390,-46.7,park avg,65F,LvR +8%,,,new
-2026-08-17,Francisco Lindor,NYM,823589,Walker Buehler,7,proj,17.9,12.7,10.0,+457,400,-50.2,park -4%,70F · wind out 3,SvR +8%,,-6.2,floor
-2026-08-17,Ian Happ,CHC,824641,Luis Castillo,5,proj,17.9,14.6,12.0,+457,400,-40.1,park avg,65F,SvR +8%,heat +3%,-8.7,floor
-2026-08-17,Mookie Betts,LAD,824320,Tomoyuki Sugano,5,proj,17.9,16.4,13.5,+457,400,-32.3,park +9%,62F,RvR -3%,heat -8%,,new
-2026-08-17,Pete Alonso,BAL,822939,Shane McClanahan,2,proj,17.9,23.3,17.3,+457,400,-13.5,park -4% [low-conf],dome,RvL +12%,heat +7%,-0.3,
+2026-08-17,Shohei Ohtani,LAD,824320,Tomoyuki Sugano,2,proj,31.5,27.7,19.7,+218,185,-44.0,park +9%,61F,LvR +8%,heat +6%,0.8,
+2026-08-17,Kyle Schwarber,PHI,823427,Janson Junk,3,proj,29.4,25.4,18.4,+240,205,-43.9,park +9%,74F · wind in 3,LvR +8%,heat +10%,-2.6,floor
+2026-08-17,Matt Olson,ATL,823668,Bailey Ober,1,proj,26.0,30.5,21.2,+285,245,-27.0,park -2%,64F,LvR +8%,heat -0%,2.6,
+2026-08-17,Max Muncy,ATH,824077,Michael Wacha,1,proj,25.6,26.5,19.0,+290,250,-33.5,park -4% [low-conf],71F,LvR +8%,heat +5%,1.1,
+2026-08-17,Byron Buxton,MIN,823668,Martín Pérez *,5,proj,23.6,21.9,16.5,+324,280,-37.3,park -2%,64F,RvL +12%,heat -2%,-6.2,floor
+2026-08-17,Pete Crow-Armstrong,CHC,824641,Luis Castillo,2,proj,23.0,21.8,16.5,+335,290,-35.8,park avg,70F · wind in 6,LvR +8%,heat +4%,-1.4,
+2026-08-17,Drake Baldwin,ATL,823668,Bailey Ober,5,proj,21.4,18.0,14.4,+368,320,-39.5,park -2%,64F,LvR +8%,heat -4%,-3.5,floor
+2026-08-17,Miguel Vargas,CHW,824641,Shota Imanaga,1,proj,21.1,28.0,19.8,+374,325,-15.9,park avg,70F · wind in 6,RvL +12%,heat +1%,3.5,STANDOUT
+2026-08-17,Alec Burleson,STL,824514,TBD *,2,proj,20.9,21.6,16.4,+379,330,-29.6,park +25%,72F,,,,new
+2026-08-17,Alec Burleson,STL,824478,Rhett Lowder,2,proj,20.9,22.1,16.6,+379,330,-28.5,park +25%,72F,LvR +8%,heat +5%,,new
+2026-08-17,Munetaka Murakami,CHW,824641,Shota Imanaga,5,proj,20.9,24.3,17.8,+379,330,-23.5,park avg,70F · wind in 6,LvL -22%,heat +3%,-2.2,floor
+2026-08-17,Andy Pages,LAD,824320,Tomoyuki Sugano,1,proj,20.6,21.7,16.4,+385,335,-28.7,park +9%,61F,RvR -3%,heat -5%,0.5,
+2026-08-17,Junior Caminero,TBR,822939,Brandon Young,1,proj,20.6,29.3,20.5,+385,335,-10.9,park -4% [low-conf],dome,RvR -3%,heat +6%,0.6,
+2026-08-17,Bryce Harper,PHI,823427,Janson Junk,1,proj,19.9,21.9,16.5,+402,350,-25.6,park +9%,74F · wind in 3,LvR +8%,heat +18%,-0.6,
+2026-08-17,Colson Montgomery,CHW,824641,Shota Imanaga,3,proj,19.9,22.6,16.9,+402,350,-23.9,park avg,70F · wind in 6,LvL -22%,heat +3%,0.5,
+2026-08-17,Hunter Goodman,COL,824320,Blake Snell,2,proj,19.4,27.2,,+417,,,park +9%,61F,RvL +12%,,0.5,
+2026-08-17,Jordan Walker,STL,824514,TBD *,3,proj,19.1,21.8,16.5,+424,370,-22.7,park +25%,72F,,,-0.6,
+2026-08-17,Jordan Walker,STL,824478,Rhett Lowder,3,proj,19.1,21.7,16.4,+424,370,-22.8,park +25%,72F,RvR -3%,heat +10%,-0.8,
+2026-08-17,Royce Lewis,MIN,823668,Martín Pérez *,7,proj,19.1,12.5,9.9,+424,370,-53.5,park -2%,64F,RvL +12%,,-4.1,floor
+2026-08-17,Michael Harris II,ATL,823668,Bailey Ober,4,proj,18.9,18.2,14.5,+430,375,-31.1,park -2%,64F,LvR +8%,heat -1%,-1.4,
+2026-08-17,Freddie Freeman,LAD,824320,Tomoyuki Sugano,3,proj,18.7,16.8,13.8,+435,380,-34.0,park +9%,61F,LvR +8%,heat -3%,,new
+2026-08-17,Austin Riley,ATL,823668,Bailey Ober,3,proj,18.3,16.2,13.4,+446,390,-34.1,park -2%,64F,RvR -3%,heat +8%,,new
+2026-08-17,Bobby Witt Jr.,KCR,824077,Mason Barnett,2,proj,18.3,18.1,14.4,+446,390,-29.2,park -4% [low-conf],71F,RvR -3%,heat -4%,-0.3,
+2026-08-17,Elly De La Cruz,CIN,824514,TBD *,2,proj,18.3,21.4,16.2,+446,390,-20.4,park +25%,72F,,,-1.6,
+2026-08-17,Elly De La Cruz,CIN,824478,TBD *,2,proj,18.3,21.4,16.2,+446,390,-20.4,park +25%,72F,,,-1.6,
+2026-08-17,JJ Bleday,CIN,824514,TBD *,3,proj,18.3,20.7,15.8,+446,390,-22.4,park +25%,72F,,,-0.7,
+2026-08-17,JJ Bleday,CIN,824478,TBD *,3,proj,18.3,20.7,15.8,+446,390,-22.4,park +25%,72F,,,-0.7,
+2026-08-17,Jac Caglianone,KCR,824077,Mason Barnett,4,proj,18.3,21.7,16.4,+446,390,-19.6,park -4% [low-conf],71F,LvR +8%,heat -2%,0.1,
+2026-08-17,Willson Contreras,BOS,824725,Mitch Bratt,4,proj,18.3,18.4,14.6,+446,390,-28.3,park -7%,67F,RvL +12%,heat +3%,-1.3,
+2026-08-17,Kyle Tucker,LAD,824320,Tomoyuki Sugano,4,proj,17.9,13.4,10.6,+457,400,-47.0,park +9%,61F,LvR +8%,,,new
