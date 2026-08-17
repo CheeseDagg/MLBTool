@@ -39,8 +39,14 @@ jobs:
           git config user.email mlb-bot@users.noreply.github.com
           git add mlb/data/kprops.json
           git commit -m "K props refresh" || { echo "no changes"; exit 0; }
+          # Rebase onto and push to THE REF THAT TRIGGERED THIS RUN. This was
+          # hardcoded to main, which silently rebased PR-branch runs onto main
+          # and flattened away the branch's merge commits -- every push then
+          # rejected non-fast-forward and every retry re-pulled main ("already
+          # up to date") and re-pushed the same doomed tip (2026-08-13, PR #1).
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin main && git push && exit 0
+            git pull --rebase --autostash origin ${{ github.ref_name }} \
+              && git push origin HEAD:${{ github.ref_name }} && exit 0
             echo "push race - retry $i"; sleep $((RANDOM % 4 + 2))
           done
           echo "push still rejected after 5 tries"; exit 1
