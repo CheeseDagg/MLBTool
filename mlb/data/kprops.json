@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T18:06+00:00",
+ "generated": "2026-08-17T20:51+00:00",
  "board": [
   {
    "pitcher": "Cristopher S\u00e1nchez",
@@ -282,6 +282,46 @@
    ]
   },
   {
+   "pitcher": "Quinn Mathews",
+   "opp": "Cincinnati Reds",
+   "lam": 4.83,
+   "k9_regressed": 8.89,
+   "exp_ip": 4.5,
+   "opp_mult": 1.087,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5293,
+     "fair_over": -112,
+     "fair_under": 112
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3543,
+     "fair_over": 182,
+     "fair_under": -182
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2135,
+     "fair_over": 368,
+     "fair_under": -368
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1163,
+     "fair_over": 760,
+     "fair_under": -760
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0576,
+     "fair_over": 1636,
+     "fair_under": -1636
+    }
+   ]
+  },
+  {
    "pitcher": "Luis Castillo",
    "opp": "Chicago Cubs",
    "lam": 4.78,
@@ -324,40 +364,80 @@
   {
    "pitcher": "Andre Pallante",
    "opp": "Cincinnati Reds",
-   "lam": 4.66,
+   "lam": 4.67,
    "k9_regressed": 6.84,
    "exp_ip": 5.65,
-   "opp_mult": 1.085,
+   "opp_mult": 1.087,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4981,
-     "fair_over": 101,
-     "fair_under": -101
+     "p_over": 0.5002,
+     "fair_over": -100,
+     "fair_under": 100
     },
     {
      "line": 5.5,
-     "p_over": 0.3247,
-     "fair_over": 208,
-     "fair_under": -208
+     "p_over": 0.3267,
+     "fair_over": 206,
+     "fair_under": -206
     },
     {
      "line": 6.5,
-     "p_over": 0.1901,
-     "fair_over": 426,
-     "fair_under": -426
+     "p_over": 0.1916,
+     "fair_over": 422,
+     "fair_under": -422
     },
     {
      "line": 7.5,
-     "p_over": 0.1004,
-     "fair_over": 896,
-     "fair_under": -896
+     "p_over": 0.1014,
+     "fair_over": 886,
+     "fair_under": -886
     },
     {
      "line": 8.5,
-     "p_over": 0.0482,
-     "fair_over": 1976,
-     "fair_under": -1976
+     "p_over": 0.0488,
+     "fair_over": 1951,
+     "fair_under": -1951
+    }
+   ]
+  },
+  {
+   "pitcher": "Kent Emanuel",
+   "opp": "St. Louis Cardinals",
+   "lam": 4.44,
+   "k9_regressed": 8.43,
+   "exp_ip": 5.0,
+   "opp_mult": 0.949,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4572,
+     "fair_over": 119,
+     "fair_under": -119
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2875,
+     "fair_over": 248,
+     "fair_under": -248
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1618,
+     "fair_over": 518,
+     "fair_under": -518
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.082,
+     "fair_over": 1119,
+     "fair_under": -1119
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0377,
+     "fair_over": 2551,
+     "fair_under": -2551
     }
    ]
   },
@@ -691,33 +771,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3578,
+     "p_over": 0.3582,
      "fair_over": 179,
      "fair_under": -179
     },
     {
      "line": 5.5,
-     "p_over": 0.2043,
-     "fair_over": 390,
-     "fair_under": -390
+     "p_over": 0.2046,
+     "fair_over": 389,
+     "fair_under": -389
     },
     {
      "line": 6.5,
-     "p_over": 0.1037,
-     "fair_over": 865,
-     "fair_under": -865
+     "p_over": 0.1039,
+     "fair_over": 863,
+     "fair_under": -863
     },
     {
      "line": 7.5,
-     "p_over": 0.0472,
-     "fair_over": 2020,
-     "fair_under": -2020
+     "p_over": 0.0473,
+     "fair_over": 2015,
+     "fair_under": -2015
     },
     {
      "line": 8.5,
-     "p_over": 0.0194,
-     "fair_over": 5055,
-     "fair_under": -5055
+     "p_over": 0.0195,
+     "fair_over": 5039,
+     "fair_under": -5039
     }
    ]
   },
@@ -800,89 +880,9 @@
      "fair_under": -10719
     }
    ]
-  },
-  {
-   "pitcher": "Quinn Mathews",
-   "opp": "Cincinnati Reds",
-   "lam": 3.13,
-   "k9_regressed": 8.66,
-   "exp_ip": 3.0,
-   "opp_mult": 1.085,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.2071,
-     "fair_over": 383,
-     "fair_under": -383
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.0976,
-     "fair_over": 924,
-     "fair_under": -924
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0405,
-     "fair_over": 2368,
-     "fair_under": -2368
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.015,
-     "fair_over": 6578,
-     "fair_under": -6578
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.005,
-     "fair_over": 19982,
-     "fair_under": -19982
-    }
-   ]
-  },
-  {
-   "pitcher": "Kent Emanuel",
-   "opp": "St. Louis Cardinals",
-   "lam": 2.8,
-   "k9_regressed": 8.86,
-   "exp_ip": 3.0,
-   "opp_mult": 0.949,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.1528,
-     "fair_over": 555,
-     "fair_under": -555
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.0654,
-     "fair_over": 1430,
-     "fair_under": -1430
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0245,
-     "fair_over": 3977,
-     "fair_under": -3977
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0082,
-     "fair_over": 12128,
-     "fair_under": -12128
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0024,
-     "fair_over": 40728,
-     "fair_under": -40728
-    }
-   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 12031 (used 7969) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 11988 (used 8012) \u00b7 whiff rest:30 rows",
  "n_markets": 19,
  "n_plays": 0,
  "plays": [],
