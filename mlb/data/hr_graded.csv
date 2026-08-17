@@ -1215,3 +1215,29 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-16,Heriberto Hernández,MIA,824477,Nick Lodolo,2,card,17.9,27.3,19.4,+457,400,-2.8,park +25%,86F · wind out 7,RvL +12%,heat +3%,hr,1
 2026-08-16,JJ Bleday,CIN,824477,Eury Pérez *,3,card,17.9,21.7,16.4,+457,400,-18.0,park +25%,86F · wind out 7,LvR +8%,heat -6%,no,0
 2026-08-16,Elly De La Cruz,CIN,824477,Eury Pérez *,1,card,17.6,24.0,17.7,+469,410,-9.9,park +25%,86F · wind out 7,SvR +8%,heat -3%,no,0
+2026-08-16,Yordan Alvarez,HOU,824156,Bryan Woo,2,card,24.6,29.3,20.5,+307,265,-25.2,park +3%,93F (roof: half),LvR +8%,heat +5%,no,0
+2026-08-16,Eduardo Valencia,DET,824236,Sean Burke,4,card,23.9,35.6,,+319,,,park -5%,85F · wind out 5,RvR -3%,,no,0
+2026-08-16,Abimelec Ortiz,WSN,823590,Christian Scott,2,card,23.0,33.9,,+336,,,park -4%,76F · wind out 8,LvR +8%,,hr,1
+2026-08-16,Christian Franklin,BAL,822940,Freddy Peralta,2,card,21.3,30.8,,+369,,,park -4% [low-conf],dome,RvR -3%,,no,0
+2026-08-16,Munetaka Murakami,CHW,824236,Drew Anderson,2,card,20.4,29.2,,+389,,,park -5%,85F · wind out 5,LvR +8%,heat +2%,hr,1
+2026-08-16,Ben Rice,NYY,822774,Dylan Cease,1,card,19.9,28.3,,+401,,,park +3% [low-conf],76F (roof: half),LvR +8%,heat +5%,hr,1
+2026-08-16,Byron Buxton,MIN,823670,Andrew Painter,2,card,19.9,28.2,,+403,,,park -2%,81F · wind out 4,RvR -3%,heat -5%,no,0
+2026-08-16,Shohei Ohtani,LAD,823912,Logan Henderson,1,card,19.5,28.1,19.8,+413,360,-8.8,park +5%,85F · wind out 4,LvR +8%,heat +9%,no,0
+2026-08-16,Teoscar Hernández,LAD,823912,Logan Henderson,8,card,19.1,11.3,9.5,+424,370,-55.3,park +5%,85F · wind out 4,RvR -3%,,no,0
+2026-08-16,Matt Olson,ATL,824880,Michael Soroka,3,card,18.7,26.0,,+434,,,park +4%,95F · wind out 5,LvR +8%,heat +5%,hr,1
+2026-08-16,Sal Stewart,CIN,824477,Eury Pérez *,2,card,18.5,25.7,,+439,,,park +25%,89F · wind out 7,RvR -3%,heat -2%,no,0
+2026-08-16,Wyatt Langford,TEX,824965,Jacob Lopez,1,card,18.3,25.0,18.2,+446,390,-10.9,park +6% [low-conf],89F,RvL +12%,heat -3%,no,0
+2026-08-16,Esmerlyn Valdez,PIT,823344,Patrick Sandoval,2,card,18.0,24.7,,+456,,,park -9%,75F · wind out 7,RvL +12%,heat +4%,no,0
+2026-08-16,Fernando Tatis Jr.,SDP,824397,Tanner Bibee,1,card,17.9,16.2,13.4,+457,400,-32.8,park -3%,79F,RvR -3%,heat -5%,no,0
+2026-08-16,CJ Abrams,WSN,823590,Christian Scott,1,card,17.5,23.7,,+472,,,park -4%,76F · wind out 8,LvR +8%,heat -2%,no,0
+2026-08-16,Pete Crow-Armstrong,CHC,824642,Hunter Dobbins,1,card,17.5,23.7,,+473,,,park avg,82F,LvR +8%,heat +1%,hr,1
+2026-08-16,Drake Baldwin,ATL,824880,Michael Soroka,1,card,17.4,23.6,,+474,,,park +4%,95F · wind out 5,LvR +8%,heat +3%,no,0
+2026-08-16,Jackson Merrill,SDP,824397,Tanner Bibee,5,card,17.1,15.7,13.1,+485,425,-31.0,park -3%,79F,LvR +8%,,no,0
+2026-08-16,Cal Raleigh,SEA,824156,Hunter Brown,5,proj,16.9,14.5,11.8,+491,430,-37.4,park +3%,93F (roof: half),SvR +8%,,hr,1
+2026-08-16,Brian Navarreto,MIA,824477,Nick Lodolo,9,card,16.7,22.3,,+498,,,park +25%,89F · wind out 7,RvL +12%,,no,0
+2026-08-16,Jake Burger,TEX,824965,Jacob Lopez,4,card,16.4,21.6,,+511,,,park +6% [low-conf],89F,RvL +12%,heat +11%,hr,1
+2026-08-16,Christian Encarnacion-Strand,BAL,822940,Freddy Peralta,4,card,16.3,21.4,,+515,,,park -4% [low-conf],dome,RvR -3%,,no,0
+2026-08-16,James Triantos,CHC,824642,Hunter Dobbins,7,card,16.3,21.5,,+513,,,park avg,82F,RvR -3%,,no,0
+2026-08-16,Kyle Tucker,LAD,823912,Logan Henderson,6,card,16.3,10.8,9.4,+513,450,-48.5,park +5%,85F · wind out 4,LvR +8%,,no,0
+2026-08-16,Dillon Dingler,DET,824236,Sean Burke,3,card,16.2,21.2,,+519,,,park -5%,85F · wind out 5,RvR -3%,heat -0%,no,0
+2026-08-16,Miguel Vargas,CHW,824236,Drew Anderson,3,card,16.2,21.3,,+518,,,park -5%,85F · wind out 5,RvR -3%,heat -5%,hr,1
