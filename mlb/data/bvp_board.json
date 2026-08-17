@@ -1,101 +1,24 @@
 {
- "generated": "2026-08-16T23:32:33+00:00",
- "date": "2026-08-16",
+ "generated": "2026-08-17T17:41:29+00:00",
+ "date": "2026-08-17",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "George Springer",
-   "team": "TOR",
-   "opp_sp": "Ryan Weathers",
-   "pa": 6,
-   "ab": 5,
-   "h": 3,
-   "hr": 2,
-   "avg": ".600",
-   "slg": "1.800"
-  },
-  {
-   "batter": "Luis Rengifo",
-   "team": "SD",
-   "opp_sp": "Tanner Bibee",
-   "pa": 14,
-   "ab": 14,
-   "h": 8,
-   "hr": 2,
-   "avg": ".571",
-   "slg": "1.071"
-  },
-  {
-   "batter": "Ryan McMahon",
-   "team": "NYY",
-   "opp_sp": "Dylan Cease",
-   "pa": 17,
-   "ab": 14,
-   "h": 6,
-   "hr": 2,
-   "avg": ".429",
-   "slg": ".929"
-  },
-  {
-   "batter": "Jos\u00e9 Ram\u00edrez",
-   "team": "CLE",
-   "opp_sp": "Casey Mize",
-   "pa": 14,
-   "ab": 13,
-   "h": 6,
-   "hr": 2,
-   "avg": ".462",
-   "slg": ".923"
-  },
-  {
-   "batter": "Brett Baty",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 14,
-   "ab": 13,
-   "h": 3,
-   "hr": 2,
-   "avg": ".231",
-   "slg": ".769"
-  },
-  {
-   "batter": "Francisco Lindor",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 23,
-   "ab": 23,
-   "h": 8,
-   "hr": 2,
-   "avg": ".348",
-   "slg": ".739"
-  },
-  {
-   "batter": "Lawrence Butler",
-   "team": "ATH",
-   "opp_sp": "Cody Bradford",
-   "pa": 9,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Alex Bregman",
-   "team": "CHC",
-   "opp_sp": "Hunter Dobbins",
+   "batter": "Shohei Ohtani",
+   "team": "LAD",
+   "opp_sp": "Tomoyuki Sugano",
    "pa": 8,
-   "ab": 7,
-   "h": 3,
-   "hr": 1,
-   "avg": ".429",
-   "slg": "1.000"
+   "ab": 8,
+   "h": 5,
+   "hr": 3,
+   "avg": ".625",
+   "slg": "1.875"
   },
   {
-   "batter": "Sal Stewart",
-   "team": "CIN",
-   "opp_sp": "Eury P\u00e9rez",
-   "pa": 6,
+   "batter": "Freddie Freeman",
+   "team": "LAD",
+   "opp_sp": "Tomoyuki Sugano",
+   "pa": 7,
    "ab": 6,
    "h": 2,
    "hr": 1,
@@ -103,20 +26,9 @@
    "slg": "1.000"
   },
   {
-   "batter": "Josh Naylor",
-   "team": "SEA",
-   "opp_sp": "Hunter Brown",
-   "pa": 6,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Kazuma Okamoto",
-   "team": "TOR",
-   "opp_sp": "Ryan Weathers",
+   "batter": "Pete Alonso",
+   "team": "BAL",
+   "opp_sp": "Shane McClanahan",
    "pa": 8,
    "ab": 8,
    "h": 3,
@@ -125,48 +37,81 @@
    "slg": ".875"
   },
   {
-   "batter": "Christian Walker",
-   "team": "HOU",
-   "opp_sp": "Bryan Woo",
-   "pa": 14,
-   "ab": 13,
-   "h": 5,
-   "hr": 1,
-   "avg": ".385",
-   "slg": ".769"
-  },
-  {
-   "batter": "Luis Torrens",
-   "team": "NYM",
-   "opp_sp": "Jake Irvin",
-   "pa": 12,
-   "ab": 12,
-   "h": 4,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".750"
-  },
-  {
-   "batter": "Alec Burleson",
-   "team": "STL",
-   "opp_sp": "Edward Cabrera",
+   "batter": "Jose Trevino",
+   "team": "CIN",
+   "opp_sp": "Andre Pallante",
    "pa": 8,
    "ab": 7,
-   "h": 2,
+   "h": 3,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Freddy Fermin",
-   "team": "SD",
-   "opp_sp": "Tanner Bibee",
-   "pa": 13,
-   "ab": 12,
-   "h": 5,
+   "batter": "Lawrence Butler",
+   "team": "ATH",
+   "opp_sp": "Michael Wacha",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
    "hr": 1,
-   "avg": ".417",
-   "slg": ".667"
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Ryan Jeffers",
+   "team": "MIN",
+   "opp_sp": "Mart\u00edn P\u00e9rez",
+   "pa": 7,
+   "ab": 5,
+   "h": 1,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".800"
+  },
+  {
+   "batter": "Ezequiel Tovar",
+   "team": "COL",
+   "opp_sp": "Blake Snell",
+   "pa": 13,
+   "ab": 11,
+   "h": 2,
+   "hr": 1,
+   "avg": ".182",
+   "slg": ".545"
+  },
+  {
+   "batter": "Ian Happ",
+   "team": "CHC",
+   "opp_sp": "Luis Castillo",
+   "pa": 34,
+   "ab": 30,
+   "h": 8,
+   "hr": 1,
+   "avg": ".267",
+   "slg": ".467"
+  },
+  {
+   "batter": "Alex Bregman",
+   "team": "CHC",
+   "opp_sp": "Luis Castillo",
+   "pa": 18,
+   "ab": 16,
+   "h": 4,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".438"
+  },
+  {
+   "batter": "Michael Conforto",
+   "team": "CHC",
+   "opp_sp": "Luis Castillo",
+   "pa": 12,
+   "ab": 11,
+   "h": 1,
+   "hr": 1,
+   "avg": ".091",
+   "slg": ".364"
   }
  ]
 }
