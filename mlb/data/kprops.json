@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T13:17+00:00",
+ "generated": "2026-08-17T13:59+00:00",
  "board": [
   {
    "pitcher": "Cristopher S\u00e1nchez",
@@ -722,7 +722,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 12317 (used 7683) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 12294 (used 7706) \u00b7 whiff rest:30 rows",
  "n_markets": 18,
  "n_plays": 0,
  "plays": [],
@@ -735,6 +735,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
