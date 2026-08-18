@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-18T18:06+00:00",
+ "generated": "2026-08-18T20:48+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -1120,9 +1120,89 @@
      "fair_under": -11535
     }
    ]
+  },
+  {
+   "pitcher": "Bryan Hudson",
+   "opp": "Chicago Cubs",
+   "lam": 2.85,
+   "k9_regressed": 8.67,
+   "exp_ip": 3.0,
+   "opp_mult": 0.988,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1606,
+     "fair_over": 523,
+     "fair_under": -523
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0698,
+     "fair_over": 1333,
+     "fair_under": -1333
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0266,
+     "fair_over": 3657,
+     "fair_under": -3657
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.009,
+     "fair_over": 10983,
+     "fair_under": -10983
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0027,
+     "fair_over": 36290,
+     "fair_under": -36290
+    }
+   ]
+  },
+  {
+   "pitcher": "Daniel Lynch IV",
+   "opp": "Athletics",
+   "lam": 2.62,
+   "k9_regressed": 7.78,
+   "exp_ip": 3.0,
+   "opp_mult": 1.01,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.125,
+     "fair_over": 700,
+     "fair_under": -700
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0503,
+     "fair_over": 1887,
+     "fair_under": -1887
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0177,
+     "fair_over": 5541,
+     "fair_under": -5541
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0055,
+     "fair_over": 17945,
+     "fair_under": -17945
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0016,
+     "fair_over": 64220,
+     "fair_under": -64220
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 11710 (used 8290) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 11679 (used 8321) \u00b7 whiff rest:30 rows",
  "n_markets": 26,
  "n_plays": 0,
  "plays": [],
@@ -1135,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
