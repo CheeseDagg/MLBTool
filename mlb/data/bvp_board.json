@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-18T17:40:23+00:00",
+ "generated": "2026-08-18T20:37:47+00:00",
  "date": "2026-08-18",
  "min_pa": 6,
  "rows": [
@@ -125,15 +125,15 @@
    "slg": "1.000"
   },
   {
-   "batter": "Byron Buxton",
-   "team": "MIN",
-   "opp_sp": "Tyler Mahle",
-   "pa": 10,
-   "ab": 9,
-   "h": 4,
+   "batter": "Bryson Stott",
+   "team": "PHI",
+   "opp_sp": "Cade Gibson",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
    "hr": 1,
-   "avg": ".444",
-   "slg": ".889"
+   "avg": ".375",
+   "slg": ".875"
   },
   {
    "batter": "Vaughn Grissom",
