@@ -1244,3 +1244,31 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-17,Jordan Walker,STL,824514,Kent Emanuel *,3,proj,19.1,23.9,17.6,+424,370,-17.3,park +25%,83F · wind out 4,RvL +12%,,no,0
 2026-08-17,Everson Pereira,STL,824514,Kent Emanuel *,9,proj,18.7,14.6,12.0,+435,380,-42.3,park +25%,83F · wind out 4,RvL +12%,,no,0
 2026-08-17,Alec Burleson,STL,824514,Kent Emanuel *,2,proj,17.6,21.6,16.3,+469,410,-16.8,park +25%,83F · wind out 4,LvL -22%,,no,0
+2026-08-17,Shohei Ohtani,LAD,824320,Tomoyuki Sugano,2,proj,31.1,30.9,21.4,+221,188,-38.4,park +9%,94F,LvR +8%,heat +6%,hr,2
+2026-08-17,Kyle Schwarber,PHI,823427,Janson Junk,1,card,28.9,29.9,20.8,+246,210,-35.4,park +9%,86F,LvR +8%,heat +10%,no,0
+2026-08-17,Matt Olson,ATL,823668,Bailey Ober,3,card,26.4,29.1,20.4,+279,240,-30.6,park -2%,84F · wind out 8,LvR +8%,heat -0%,no,0
+2026-08-17,Alec Burleson,STL,824478,Rhett Lowder,2,proj,25.3,23.6,17.4,+296,255,-38.2,park +25%,84F · wind out 5,LvR +8%,heat +5%,no,0
+2026-08-17,Hunter Goodman,COL,824320,Blake Snell,3,card,24.6,27.8,19.7,+307,265,-28.1,park +9%,94F,RvL +12%,,void,
+2026-08-17,Byron Buxton,MIN,823668,Martín Pérez *,2,card,23.6,29.1,20.4,+324,280,-22.6,park -2%,84F · wind out 8,RvL +12%,heat -2%,no,0
+2026-08-17,Pete Crow-Armstrong,CHC,824641,Luis Castillo,2,proj,23.0,22.3,16.7,+335,290,-34.7,park avg,74F,LvR +8%,heat +4%,hr,2
+2026-08-17,Ronald Acuña Jr.,ATL,823668,Bailey Ober,2,card,21.9,21.2,16.1,+357,310,-33.9,park -2%,84F · wind out 8,RvR -3%,heat +9%,no,0
+2026-08-17,Junior Caminero,TBR,822939,Brandon Young,3,card,21.4,25.7,18.6,+368,320,-22.1,park -4% [low-conf],dome,RvR -3%,heat +6%,no,0
+2026-08-17,Munetaka Murakami,CHW,824641,Shota Imanaga,2,card,21.1,30.4,21.1,+374,325,-10.5,park avg,74F,LvL -22%,heat +3%,no,0
+2026-08-17,Drake Baldwin,ATL,823668,Bailey Ober,1,card,20.9,26.0,18.7,+379,330,-19.6,park -2%,84F · wind out 8,LvR +8%,heat -4%,no,0
+2026-08-17,Miguel Vargas,CHW,824641,Shota Imanaga,3,card,20.4,25.2,18.3,+391,340,-19.4,park avg,74F,RvL +12%,heat +1%,no,0
+2026-08-17,Andy Pages,LAD,824320,Tomoyuki Sugano,1,proj,19.9,24.0,17.7,+402,350,-20.5,park +9%,94F,RvR -3%,heat -5%,no,0
+2026-08-17,Bryce Harper,PHI,823427,Janson Junk,3,card,19.5,19.7,15.3,+413,360,-29.4,park +9%,86F,LvR +8%,heat +18%,no,0
+2026-08-17,Michael Harris II,ATL,823668,Bailey Ober,4,card,19.5,19.9,15.4,+413,360,-29.1,park -2%,84F · wind out 8,LvR +8%,heat -1%,no,0
+2026-08-17,Jordan Walker,STL,824478,Rhett Lowder,3,proj,19.1,23.1,17.2,+424,370,-19.4,park +25%,84F · wind out 5,RvR -3%,heat +10%,no,0
+2026-08-17,Freddie Freeman,LAD,824320,Tomoyuki Sugano,3,proj,18.7,18.9,14.9,+435,380,-28.6,park +9%,94F,LvR +8%,heat -3%,no,0
+2026-08-17,Willson Contreras,BOS,824725,Mitch Bratt,4,card,18.7,18.9,14.9,+435,380,-28.5,park -7%,76F,RvL +12%,heat +3%,hr,1
+2026-08-17,Bobby Witt Jr.,KCR,824077,Mason Barnett,2,card,18.3,19.0,14.9,+446,390,-26.8,park -4% [low-conf],86F,RvR -3%,heat -4%,hr,1
+2026-08-17,Elly De La Cruz,CIN,824514,Quinn Mathews *,2,proj,18.3,23.5,17.3,+446,390,-15.0,park +25%,84F · wind out 5,SvL +12%,,no,0
+2026-08-17,Elly De La Cruz,CIN,824478,Andre Pallante,2,proj,18.3,22.6,16.9,+446,390,-17.2,park +25%,84F · wind out 5,SvR +8%,heat +8%,no,0
+2026-08-17,JJ Bleday,CIN,824514,Quinn Mathews *,3,proj,18.3,20.6,15.8,+446,390,-22.6,park +25%,84F · wind out 5,LvL -22%,,no,0
+2026-08-17,JJ Bleday,CIN,824478,Andre Pallante,3,proj,18.3,21.7,16.4,+446,390,-19.5,park +25%,84F · wind out 5,LvR +8%,heat +5%,no,0
+2026-08-17,JJ Wetherholt,STL,824514,Kent Emanuel *,1,proj,18.3,19.5,15.2,+446,390,-25.5,park +25%,84F · wind out 5,LvL -22%,,no,0
+2026-08-17,JJ Wetherholt,STL,824478,Rhett Lowder,1,proj,18.3,21.2,16.1,+446,390,-21.1,park +25%,84F · wind out 5,LvR +8%,heat -6%,no,0
+2026-08-17,Royce Lewis,MIN,823668,Martín Pérez *,5,card,18.3,15.9,13.3,+446,390,-35.0,park -2%,84F · wind out 8,RvL +12%,heat -5%,no,0
+2026-08-17,Jac Caglianone,KCR,824077,Mason Barnett,3,card,17.9,24.4,17.9,+457,400,-10.6,park -4% [low-conf],86F,LvR +8%,heat -2%,no,0
+2026-08-17,Kyle Tucker,LAD,824320,Tomoyuki Sugano,4,proj,17.9,15.1,12.5,+457,400,-37.3,park +9%,94F,LvR +8%,,no,0
