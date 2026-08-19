@@ -1242,3 +1242,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-18,Cal Raleigh,SEA,823749,Kyle Harrison,7,card,18.3,13.3,10.4,+446,390,-48.8,park +9%,80F (roof: half),SvL +12%,,-0.7,
 2026-08-18,Corey Seager,TEX,822859,Jackson Kent *,2,card,18.3,21.9,16.5,+446,390,-19.1,park +2%,106F (roof: half),LvL -22%,,2.4,
 2026-08-18,Jac Caglianone,KCR,824075,Jack Perkins,3,card,18.3,23.3,17.3,+446,390,-15.3,park -4% [low-conf],81F,LvR +8%,heat +3%,0.9,
+2026-08-19,Kyle Schwarber,PHI,823424,Sandy Alcantara,3,proj,29.4,25.3,18.3,+240,205,-44.1,park +9%,72F,LvR +8%,heat +3%,-2.2,floor
+2026-08-19,Shohei Ohtani,LAD,824318,Kyle Freeland,2,proj,29.4,25.5,18.5,+240,205,-43.7,park +9%,66F · wind out 7,LvL -22%,heat +11%,-0.8,
+2026-08-19,Yordan Alvarez,HOU,824155,Walbert Ureña *,1,proj,24.6,31.0,21.4,+307,265,-21.8,park +3%,79F (roof: half),LvR +8%,heat +4%,0.9,
+2026-08-19,Ben Rice,NYY,824801,Chris Bassitt,1,proj,23.6,29.1,20.4,+324,280,-22.6,park +4% [low-conf],68F,LvR +8%,heat +11%,0.1,
+2026-08-19,Byron Buxton,MIN,823664,AJ Smith-Shawver *,5,proj,23.6,20.0,15.5,+324,280,-41.1,park -2%,57F,RvR -3%,,-6.4,floor
+2026-08-19,Junior Caminero,TBR,822937,Max Scherzer,1,proj,23.0,31.5,21.7,+335,290,-15.3,park -4% [low-conf],dome,RvR -3%,heat +3%,3.1,STANDOUT
+2026-08-19,Max Muncy,ATH,824076,TBD *,1,proj,23.0,26.9,19.2,+335,290,-25.1,park -4% [low-conf],71F · wind in 5,,,1.5,
+2026-08-19,Pete Alonso,BAL,824801,Will Warren,2,proj,23.0,24.0,17.6,+335,290,-31.3,park +4% [low-conf],68F,RvR -3%,heat +6%,-0.0,
+2026-08-19,Elly De La Cruz,CIN,824476,Matthew Liberatore,2,proj,22.1,22.0,16.6,+352,305,-32.8,park +25%,65F,SvL +12%,heat +17%,-0.9,
+2026-08-19,Matt Olson,ATL,823664,Taj Bradley,1,proj,22.1,27.4,19.5,+352,305,-21.0,park -2%,57F,LvR +8%,heat +0%,0.9,
+2026-08-19,Sal Stewart,CIN,824476,Matthew Liberatore,1,proj,22.1,27.0,19.3,+352,305,-22.0,park +25%,65F,RvL +12%,heat +6%,0.3,
+2026-08-19,Alec Burleson,STL,824476,Chase Burns,2,proj,20.9,20.6,15.8,+379,330,-32.0,park +25%,65F,LvR +8%,heat +4%,0.8,
+2026-08-19,Andy Pages,LAD,824318,Kyle Freeland,1,proj,20.9,21.6,16.4,+379,330,-29.6,park +9%,66F · wind out 7,RvL +12%,heat +1%,0.4,
+2026-08-19,Wilyer Abreu,BOS,824722,Brandon Pfaadt,1,proj,20.9,20.9,16.0,+379,330,-31.4,park -7%,68F,LvR +8%,heat -1%,-0.9,
+2026-08-19,Brandon Lowe,PIT,823342,Jackson Jobe *,2,proj,20.4,20.9,16.0,+391,340,-29.6,park -9%,63F,LvR +8%,,-0.5,
+2026-08-19,Bryce Harper,PHI,823424,Sandy Alcantara,1,proj,19.9,21.9,16.5,+402,350,-25.8,park +9%,72F,LvR +8%,heat +12%,-0.6,
+2026-08-19,CJ Abrams,WSN,822860,Kumar Rocker,1,proj,19.9,26.1,18.8,+402,350,-15.5,park +2%,87F (roof: half),LvR +8%,heat -1%,-0.6,
+2026-08-19,Coby Mayo,BAL,824801,Will Warren,4,proj,19.9,18.9,14.9,+402,350,-33.1,park +4% [low-conf],68F,RvR -3%,heat -0%,-1.0,
+2026-08-19,Griffin Conine,MIA,823424,Aaron Nola,7,proj,19.9,19.1,15.0,+402,350,-32.6,park +9%,72F,LvR +8%,heat -1%,,new
+2026-08-19,Mickey Moniak,COL,824318,Roki Sasaki,6,proj,19.9,19.3,15.1,+402,350,-32.0,park +9%,66F · wind out 7,LvR +8%,heat -3%,-5.8,floor
+2026-08-19,Mike Trout,LAA,824155,Ethan Pecko *,2,proj,19.9,20.9,15.9,+402,350,-28.3,park +3%,79F (roof: half),,,-1.5,
+2026-08-19,Oneil Cruz,PIT,823342,Jackson Jobe *,7,proj,19.9,13.8,11.1,+402,350,-50.3,park -9%,63F,LvR +8%,,,new
+2026-08-19,Trent Grisham,NYY,824801,Chris Bassitt,3,proj,19.9,18.0,14.4,+402,350,-35.3,park +4% [low-conf],68F,LvR +8%,heat -5%,-2.2,floor
+2026-08-19,Jordan Walker,STL,824476,Chase Burns,3,proj,19.1,20.0,15.5,+424,370,-27.2,park +25%,65F,RvR -3%,heat -8%,-1.6,
+2026-08-19,Drake Baldwin,ATL,823664,Taj Bradley,5,proj,18.3,16.0,13.3,+446,390,-34.8,park -2%,57F,LvR +8%,,-4.4,floor
+2026-08-19,Mookie Betts,LAD,824318,Kyle Freeland,5,proj,18.3,16.5,13.6,+446,390,-33.4,park +9%,66F · wind out 7,RvL +12%,heat -4%,,new
+2026-08-19,Willson Contreras,BOS,824722,Brandon Pfaadt,4,proj,18.3,18.5,14.7,+446,390,-28.0,park -7%,68F,RvR -3%,heat +11%,-0.9,
+2026-08-19,Cal Raleigh,SEA,823748,Dustin May,5,proj,17.9,14.5,11.9,+457,400,-40.5,park +9%,62F (roof: half),SvR +8%,,1.0,
+2026-08-19,Christian Encarnacion-Strand,BAL,824801,Will Warren,9,proj,17.9,14.6,12.0,+457,400,-40.2,park +4% [low-conf],68F,RvR -3%,,-6.2,floor
+2026-08-19,Fernando Tatis Jr.,SDP,823587,Robert Stock,1,proj,17.9,14.6,12.0,+457,400,-40.1,park -4%,68F,RvR -3%,,-1.4,
