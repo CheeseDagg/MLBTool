@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-19T20:43:11+00:00",
+ "generated": "2026-08-19T23:34:34+00:00",
  "date": "2026-08-19",
  "min_pa": 6,
  "rows": [
@@ -37,6 +37,17 @@
    "slg": ".563"
   },
   {
+   "batter": "Francisco Lindor",
+   "team": "NYM",
+   "opp_sp": "Michael King",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
+   "hr": 2,
+   "avg": ".375",
+   "slg": "1.125"
+  },
+  {
    "batter": "Christian Yelich",
    "team": "MIL",
    "opp_sp": "Logan Gilbert",
@@ -59,114 +70,103 @@
    "slg": "1.077"
   },
   {
-   "batter": "A.J. Ewing",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
-   "h": 3,
+   "batter": "Trea Turner",
+   "team": "PHI",
+   "opp_sp": "Sandy Alcantara",
+   "pa": 49,
+   "ab": 47,
+   "h": 17,
    "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
+   "avg": ".362",
+   "slg": ".532"
   },
   {
-   "batter": "Francisco Lindor",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
+   "batter": "Trent Grisham",
+   "team": "NYY",
+   "opp_sp": "Chris Bassitt",
+   "pa": 24,
+   "ab": 19,
    "h": 3,
    "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
+   "avg": ".158",
+   "slg": ".474"
   },
   {
-   "batter": "Bo Bichette",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
+   "batter": "Jose Trevino",
+   "team": "CIN",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 6,
+   "ab": 6,
    "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.167"
   },
   {
-   "batter": "Carson Benge",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
+   "batter": "Carlos Narv\u00e1ez",
+   "team": "BAL",
+   "opp_sp": "Will Warren",
+   "pa": 8,
+   "ab": 5,
+   "h": 2,
+   "hr": 1,
+   "avg": ".400",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Matt McLain",
+   "team": "CIN",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 6,
+   "ab": 5,
+   "h": 2,
+   "hr": 1,
+   "avg": ".400",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Zack Gelof",
+   "team": "ATH",
+   "opp_sp": "Seth Lugo",
+   "pa": 9,
+   "ab": 9,
+   "h": 4,
+   "hr": 1,
+   "avg": ".444",
+   "slg": ".889"
+  },
+  {
+   "batter": "Andr\u00e9s Gim\u00e9nez",
+   "team": "TOR",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 7,
+   "ab": 7,
    "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Jared Young",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
-   "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
+   "batter": "Pete Alonso",
+   "team": "BAL",
+   "opp_sp": "Will Warren",
+   "pa": 6,
+   "ab": 5,
+   "h": 1,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".800"
   },
   {
-   "batter": "Francisco Alvarez",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
-   "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
-  },
-  {
-   "batter": "Brett Baty",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
-   "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
-  },
-  {
-   "batter": "Marcus Semien",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
-   "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
-  },
-  {
-   "batter": "Luis Torrens",
-   "team": "NYM",
-   "opp_sp": "Michael King",
-   "pa": 11,
-   "ab": 11,
-   "h": 3,
-   "hr": 2,
-   "avg": ".273",
-   "slg": ".909"
-  },
-  {
-   "batter": "Tommy Edman",
-   "team": "LAD",
-   "opp_sp": "Kyle Freeland",
-   "pa": 15,
-   "ab": 15,
-   "h": 5,
-   "hr": 2,
-   "avg": ".333",
-   "slg": ".867"
+   "batter": "Sal Stewart",
+   "team": "CIN",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 6,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
   }
  ]
 }
