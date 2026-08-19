@@ -1301,3 +1301,5 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-18,Cal Raleigh,SEA,823749,Kyle Harrison,7,card,18.3,13.3,10.4,+446,390,-48.8,park +9%,80F (roof: half),SvL +12%,,no,0
 2026-08-18,Corey Seager,TEX,822859,Jackson Kent *,2,card,18.3,21.9,16.5,+446,390,-19.1,park +2%,106F (roof: half),LvL -22%,,no,0
 2026-08-18,Jac Caglianone,KCR,824075,Jack Perkins,3,card,18.3,23.3,17.3,+446,390,-15.3,park -4% [low-conf],81F,LvR +8%,heat +3%,no,0
+2026-08-19,Byron Buxton,MIN,823664,AJ Smith-Shawver *,2,card,18.7,26.4,18.9,+435,380,-9.2,park -2%,78F,RvR -3%,,no,0
+2026-08-19,Matt Olson,ATL,823664,Taj Bradley,3,card,18.3,25.6,18.5,+446,390,-9.2,park -2%,78F,LvR +8%,heat +0%,no,0

@@ -2280,18 +2280,18 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-18,Chicago White Sox,Chicago Cubs,Bryan Hudson,Kevin Gausman,3,4,Final
 2026-08-18,Los Angeles Angels,Houston Astros,George Klassen,Cristian Javier,3,1,Final
 2026-08-18,Los Angeles Dodgers,Colorado Rockies,Eric Lauer,Ryan Feltner,7,6,Final
-2026-08-19,Detroit Tigers,Pittsburgh Pirates,Jackson Jobe,Paul Skenes,3,1,In Progress
-2026-08-19,San Diego Padres,New York Mets,Michael King,Robert Stock,0,0,In Progress
-2026-08-19,Atlanta Braves,Minnesota Twins,AJ Smith-Shawver,Taj Bradley,0,0,In Progress
-2026-08-19,Chicago White Sox,Chicago Cubs,Sean Newcomb,Clay Holmes,0,0,Warmup
-2026-08-19,Arizona Diamondbacks,Boston Red Sox,Brandon Pfaadt,Payton Tolle,0,0,Pre-Game
-2026-08-19,Miami Marlins,Philadelphia Phillies,Sandy Alcantara,Aaron Nola,0,0,Scheduled
-2026-08-19,New York Yankees,Baltimore Orioles,Will Warren,Chris Bassitt,0,0,Scheduled
-2026-08-19,San Francisco Giants,Cleveland Guardians,Matt Wilkinson,Parker Messick,0,0,Scheduled
-2026-08-19,St. Louis Cardinals,Cincinnati Reds,Matthew Liberatore,Chase Burns,0,0,Scheduled
-2026-08-19,Toronto Blue Jays,Tampa Bay Rays,Max Scherzer,Drew Rasmussen,0,0,Scheduled
-2026-08-19,Athletics,Kansas City Royals,,,0,0,Scheduled
-2026-08-19,Seattle Mariners,Milwaukee Brewers,Logan Gilbert,Dustin May,0,0,Scheduled
-2026-08-19,Washington Nationals,Texas Rangers,Cade Cavalli,Kumar Rocker,0,0,Scheduled
-2026-08-19,Los Angeles Angels,Houston Astros,Walbert Ureña,Ethan Pecko,0,0,Scheduled
+2026-08-19,Detroit Tigers,Pittsburgh Pirates,Jackson Jobe,Paul Skenes,3,4,Final
+2026-08-19,San Diego Padres,New York Mets,Michael King,Robert Stock,2,4,Final
+2026-08-19,Atlanta Braves,Minnesota Twins,AJ Smith-Shawver,Taj Bradley,4,6,Final
+2026-08-19,Chicago White Sox,Chicago Cubs,Sean Newcomb,Clay Holmes,3,0,In Progress
+2026-08-19,Arizona Diamondbacks,Boston Red Sox,Brandon Pfaadt,Payton Tolle,0,1,In Progress
+2026-08-19,Miami Marlins,Philadelphia Phillies,Sandy Alcantara,Aaron Nola,0,0,Pre-Game
+2026-08-19,New York Yankees,Baltimore Orioles,Will Warren,Chris Bassitt,0,0,Pre-Game
+2026-08-19,San Francisco Giants,Cleveland Guardians,Matt Wilkinson,Parker Messick,0,0,Pre-Game
+2026-08-19,St. Louis Cardinals,Cincinnati Reds,Matthew Liberatore,Chase Burns,0,0,Pre-Game
+2026-08-19,Toronto Blue Jays,Tampa Bay Rays,Max Scherzer,Drew Rasmussen,0,0,Pre-Game
+2026-08-19,Athletics,Kansas City Royals,Jeffrey Springs,Seth Lugo,0,0,Pre-Game
+2026-08-19,Seattle Mariners,Milwaukee Brewers,Logan Gilbert,Dustin May,0,0,Pre-Game
+2026-08-19,Washington Nationals,Texas Rangers,Cade Cavalli,Kumar Rocker,0,0,Pre-Game
+2026-08-19,Los Angeles Angels,Houston Astros,Walbert Ureña,Ethan Pecko,0,0,Pre-Game
 2026-08-19,Los Angeles Dodgers,Colorado Rockies,Roki Sasaki,Kyle Freeland,0,0,Scheduled
