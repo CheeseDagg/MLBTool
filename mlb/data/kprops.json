@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-19T13:22+00:00",
+ "generated": "2026-08-19T14:04+00:00",
  "board": [
   {
    "pitcher": "Paul Skenes",
@@ -1042,7 +1042,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 11603 (used 8397) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 11571 (used 8429) \u00b7 whiff rest:30 rows",
  "n_markets": 25,
  "n_plays": 0,
  "plays": [],
