@@ -1331,3 +1331,13 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-19,Mookie Betts,LAD,824318,Kyle Freeland,5,proj,17.6,17.2,14.0,+469,410,-28.8,park +9%,92F · wind in 3,RvL +12%,heat -4%,hr,1
 2026-08-19,Salvador Perez,KCR,824076,Jeffrey Springs,6,card,17.2,15.6,13.1,+480,420,-31.9,park -4% [low-conf],79F,RvL +12%,,no,0
 2026-08-19,Abimelec Ortiz,WSN,822860,Kumar Rocker,2,card,17.1,38.5,25.4,+485,425,33.6,park +2%,105F (roof: half),LvR +8%,,no,0
+2026-08-20,Munetaka Murakami,CHW,824589,Grant Holmes,2,card,23.0,30.6,21.2,+335,290,-17.3,park +9%,74F · wind out 4,LvR +8%,heat -0%,no,0
+2026-08-20,Colson Montgomery,CHW,824589,Grant Holmes,6,card,20.4,18.6,14.7,+391,340,-35.2,park +9%,74F · wind out 4,LvR +8%,heat -6%,no,0
+2026-08-20,Matt Olson,ATL,824589,Anthony Kay,3,card,19.9,24.5,17.9,+402,350,-19.4,park +9%,74F · wind out 4,LvL -22%,heat -2%,no,0
+2026-08-20,Miguel Vargas,CHW,824589,Grant Holmes,3,card,19.5,22.2,16.7,+413,360,-23.3,park +9%,74F · wind out 4,RvR -3%,heat -3%,no,0
+2026-08-20,Junior Caminero,TBR,822934,Shane Bieber,2,card,17.9,28.3,19.9,+457,400,-0.3,park -4% [low-conf],dome,RvR -3%,heat -5%,no,0
+2026-08-20,Ronald Acuña Jr.,ATL,824589,Anthony Kay,1,card,17.2,21.2,16.1,+480,420,-16.2,park +9%,74F · wind out 4,RvL +12%,heat +1%,no,0
+2026-08-20,Drake Baldwin,ATL,824589,Anthony Kay,2,card,16.9,20.9,15.9,+491,430,-15.5,park +9%,74F · wind out 4,LvL -22%,heat +3%,no,0
+2026-08-20,Jordan Walker,STL,824474,Brady Singer,4,card,16.1,21.2,,+520,,,park +25%,76F,RvR -3%,heat -7%,hr,1
+2026-08-20,Kazuma Okamoto,TOR,822934,Ian Seymour,5,card,15.2,19.5,,+557,,,park -4% [low-conf],dome,RvL +12%,heat +4%,hr,1
+2026-08-20,Austin Riley,ATL,824589,Anthony Kay,8,card,14.9,11.1,9.5,+569,500,-43.2,park +9%,74F · wind out 4,RvL +12%,,no,0
