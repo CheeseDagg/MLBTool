@@ -1,18 +1,84 @@
 {
- "generated": "2026-08-20T17:43:37+00:00",
+ "generated": "2026-08-20T20:43:59+00:00",
  "date": "2026-08-20",
  "min_pa": 6,
  "rows": [
   {
+   "batter": "Elly De La Cruz",
+   "team": "CIN",
+   "opp_sp": "Michael McGreevy",
+   "pa": 23,
+   "ab": 21,
+   "h": 4,
+   "hr": 3,
+   "avg": ".190",
+   "slg": ".619"
+  },
+  {
+   "batter": "Sal Stewart",
+   "team": "CIN",
+   "opp_sp": "Michael McGreevy",
+   "pa": 23,
+   "ab": 21,
+   "h": 4,
+   "hr": 3,
+   "avg": ".190",
+   "slg": ".619"
+  },
+  {
+   "batter": "Matt McLain",
+   "team": "CIN",
+   "opp_sp": "Michael McGreevy",
+   "pa": 23,
+   "ab": 21,
+   "h": 4,
+   "hr": 3,
+   "avg": ".190",
+   "slg": ".619"
+  },
+  {
+   "batter": "Michael Toglia",
+   "team": "CIN",
+   "opp_sp": "Michael McGreevy",
+   "pa": 23,
+   "ab": 21,
+   "h": 4,
+   "hr": 3,
+   "avg": ".190",
+   "slg": ".619"
+  },
+  {
+   "batter": "H\u00e9ctor Rodr\u00edguez",
+   "team": "CIN",
+   "opp_sp": "Michael McGreevy",
+   "pa": 23,
+   "ab": 21,
+   "h": 4,
+   "hr": 3,
+   "avg": ".190",
+   "slg": ".619"
+  },
+  {
+   "batter": "Ke'Bryan Hayes",
+   "team": "CIN",
+   "opp_sp": "Michael McGreevy",
+   "pa": 23,
+   "ab": 21,
+   "h": 4,
+   "hr": 3,
+   "avg": ".190",
+   "slg": ".619"
+  },
+  {
    "batter": "Alec Burleson",
    "team": "STL",
    "opp_sp": "Brady Singer",
-   "pa": 11,
-   "ab": 10,
+   "pa": 10,
+   "ab": 9,
    "h": 5,
    "hr": 2,
-   "avg": ".500",
-   "slg": "1.300"
+   "avg": ".556",
+   "slg": "1.444"
   },
   {
    "batter": "Yainer Diaz",
@@ -101,61 +167,6 @@
    "hr": 1,
    "avg": ".167",
    "slg": ".667"
-  },
-  {
-   "batter": "Matt McLain",
-   "team": "CIN",
-   "opp_sp": "Michael McGreevy",
-   "pa": 6,
-   "ab": 6,
-   "h": 1,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
-   "batter": "Daulton Varsho",
-   "team": "HOU",
-   "opp_sp": "Grayson Rodriguez",
-   "pa": 13,
-   "ab": 11,
-   "h": 2,
-   "hr": 1,
-   "avg": ".182",
-   "slg": ".636"
-  },
-  {
-   "batter": "Trent Grisham",
-   "team": "NYY",
-   "opp_sp": "Kyle Bradish",
-   "pa": 13,
-   "ab": 10,
-   "h": 2,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".600"
-  },
-  {
-   "batter": "Gunnar Henderson",
-   "team": "BAL",
-   "opp_sp": "Gerrit Cole",
-   "pa": 13,
-   "ab": 12,
-   "h": 3,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".583"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Shane Bieber",
-   "pa": 7,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
   }
  ]
 }
