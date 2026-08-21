@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21T09:26+00:00",
+ "generated": "2026-08-21T13:23+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -1042,6 +1042,46 @@
    ]
   },
   {
+   "pitcher": "Mason Fluharty",
+   "opp": "New York Yankees",
+   "lam": 3.33,
+   "k9_regressed": 9.36,
+   "exp_ip": 3.0,
+   "opp_mult": 1.068,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2431,
+     "fair_over": 311,
+     "fair_under": -311
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1209,
+     "fair_over": 727,
+     "fair_under": -727
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0531,
+     "fair_over": 1785,
+     "fair_under": -1785
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0208,
+     "fair_over": 4714,
+     "fair_under": -4714
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0073,
+     "fair_over": 13554,
+     "fair_under": -13554
+    }
+   ]
+  },
+  {
    "pitcher": "Brad Lord",
    "opp": "Miami Marlins",
    "lam": 2.75,
@@ -1082,8 +1122,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 10917 (used 9083) \u00b7 whiff rest:30 rows",
- "n_markets": 24,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 10885 (used 9115) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1095,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
