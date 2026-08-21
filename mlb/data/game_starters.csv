@@ -2298,9 +2298,24 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-20,St. Louis Cardinals,Cincinnati Reds,Michael McGreevy,Brady Singer,10,9,Final
 2026-08-20,San Francisco Giants,Cleveland Guardians,Landen Roupp,Gavin Williams,2,5,Final
 2026-08-20,Toronto Blue Jays,Tampa Bay Rays,Shane Bieber,Ian Seymour,5,1,Final
-2026-08-20,Athletics,Kansas City Royals,Gage Jump,Randy Dobnak,2,6,In Progress
+2026-08-20,Athletics,Kansas City Royals,Gage Jump,Randy Dobnak,2,6,Final
 2026-08-20,Atlanta Braves,Chicago White Sox,Grant Holmes,Anthony Kay,2,0,Final
-2026-08-20,Seattle Mariners,Milwaukee Brewers,George Kirby,Robert Gasser,4,6,In Progress
-2026-08-20,New York Yankees,Baltimore Orioles,Gerrit Cole,Kyle Bradish,0,0,Pre-Game
-2026-08-20,Washington Nationals,Texas Rangers,Andrew Alvarez,Jacob deGrom,0,0,Pre-Game
-2026-08-20,Los Angeles Angels,Houston Astros,Grayson Rodriguez,Peter Lambert,0,0,Pre-Game
+2026-08-20,Seattle Mariners,Milwaukee Brewers,George Kirby,Robert Gasser,4,7,Final
+2026-08-20,New York Yankees,Baltimore Orioles,Gerrit Cole,Kyle Bradish,6,1,Final
+2026-08-20,Washington Nationals,Texas Rangers,Andrew Alvarez,Jacob deGrom,0,2,Final
+2026-08-20,Los Angeles Angels,Houston Astros,Grayson Rodriguez,Peter Lambert,18,3,Final
+2026-08-21,Atlanta Braves,Milwaukee Brewers,Chris Sale,Jacob Misiorowski,0,0,Scheduled
+2026-08-21,St. Louis Cardinals,Philadelphia Phillies,,Jesús Luzardo,0,0,Scheduled
+2026-08-21,Toronto Blue Jays,New York Yankees,,Cam Schlittler,0,0,Scheduled
+2026-08-21,San Francisco Giants,Boston Red Sox,Logan Webb,Sonny Gray,0,0,Scheduled
+2026-08-21,Washington Nationals,Miami Marlins,Brad Lord,Ryan Gusto,0,0,Scheduled
+2026-08-21,Tampa Bay Rays,Baltimore Orioles,Freddy Peralta,Trevor Rogers,0,0,Scheduled
+2026-08-21,New York Mets,Chicago White Sox,Sean Manaea,Sean Burke,0,0,Scheduled
+2026-08-21,Detroit Tigers,Kansas City Royals,Troy Melton,Noah Cameron,0,0,Scheduled
+2026-08-21,Athletics,Houston Astros,J.T. Ginn,Hayden Wesneski,0,0,Scheduled
+2026-08-21,Los Angeles Angels,Texas Rangers,Reid Detmers,MacKenzie Gore,0,0,Scheduled
+2026-08-21,Cleveland Guardians,Colorado Rockies,Joey Cantillo,Tanner Gordon,0,0,Scheduled
+2026-08-21,Cincinnati Reds,Arizona Diamondbacks,Nick Lodolo,Eduardo Rodriguez,0,0,Scheduled
+2026-08-21,Minnesota Twins,San Diego Padres,Connor Prielipp,,0,0,Scheduled
+2026-08-21,Pittsburgh Pirates,Los Angeles Dodgers,Bubba Chandler,Yoshinobu Yamamoto,0,0,Scheduled
+2026-08-21,Chicago Cubs,Seattle Mariners,Matthew Boyd,Emerson Hancock,0,0,Scheduled
