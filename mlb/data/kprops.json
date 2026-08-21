@@ -1,83 +1,43 @@
 {
- "generated": "2026-08-21T18:07+00:00",
+ "generated": "2026-08-21T20:48+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
    "opp": "Atlanta Braves",
-   "lam": 8.33,
-   "k9_regressed": 12.59,
-   "exp_ip": 6.04,
+   "lam": 8.13,
+   "k9_regressed": 12.55,
+   "exp_ip": 5.92,
    "opp_mult": 0.985,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.9177,
-     "fair_over": -1115,
-     "fair_under": 1115
+     "p_over": 0.9077,
+     "fair_over": -983,
+     "fair_under": 983
     },
     {
      "line": 5.5,
-     "p_over": 0.837,
-     "fair_over": -514,
-     "fair_under": 514
+     "p_over": 0.8206,
+     "fair_over": -457,
+     "fair_under": 457
     },
     {
      "line": 6.5,
-     "p_over": 0.725,
-     "fair_over": -264,
-     "fair_under": 264
+     "p_over": 0.7025,
+     "fair_over": -236,
+     "fair_under": 236
     },
     {
      "line": 7.5,
-     "p_over": 0.5918,
-     "fair_over": -145,
-     "fair_under": 145
+     "p_over": 0.5653,
+     "fair_over": -130,
+     "fair_under": 130
     },
     {
      "line": 8.5,
-     "p_over": 0.4532,
-     "fair_over": 121,
-     "fair_under": -121
-    }
-   ]
-  },
-  {
-   "pitcher": "Chris Sale",
-   "opp": "Milwaukee Brewers",
-   "lam": 6.81,
-   "k9_regressed": 10.62,
-   "exp_ip": 5.86,
-   "opp_mult": 0.985,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.8092,
-     "fair_over": -424,
-     "fair_under": 424
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.6747,
-     "fair_over": -207,
-     "fair_under": 207
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.522,
-     "fair_over": -109,
-     "fair_under": 109
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.3733,
-     "fair_over": 168,
-     "fair_under": -168
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.2468,
-     "fair_over": 305,
-     "fair_under": -305
+     "p_over": 0.4259,
+     "fair_over": 135,
+     "fair_under": -135
     }
    ]
   },
@@ -158,6 +118,46 @@
      "p_over": 0.2177,
      "fair_over": 359,
      "fair_under": -359
+    }
+   ]
+  },
+  {
+   "pitcher": "Chris Sale",
+   "opp": "Milwaukee Brewers",
+   "lam": 6.57,
+   "k9_regressed": 10.54,
+   "exp_ip": 5.7,
+   "opp_mult": 0.985,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7839,
+     "fair_over": -363,
+     "fair_under": 363
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.6408,
+     "fair_over": -178,
+     "fair_under": 178
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4842,
+     "fair_over": 107,
+     "fair_under": -107
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.3373,
+     "fair_over": 196,
+     "fair_under": -196
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.2166,
+     "fair_over": 362,
+     "fair_under": -362
     }
    ]
   },
@@ -722,6 +722,46 @@
    ]
   },
   {
+   "pitcher": "Hunter Dobbins",
+   "opp": "Philadelphia Phillies",
+   "lam": 5.02,
+   "k9_regressed": 8.73,
+   "exp_ip": 5.14,
+   "opp_mult": 1.007,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5636,
+     "fair_over": -129,
+     "fair_under": 129
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3882,
+     "fair_over": 158,
+     "fair_under": -158
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2413,
+     "fair_over": 314,
+     "fair_under": -314
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1359,
+     "fair_over": 636,
+     "fair_under": -636
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0696,
+     "fair_over": 1336,
+     "fair_under": -1336
+    }
+   ]
+  },
+  {
    "pitcher": "Matthew Boyd",
    "opp": "Seattle Mariners",
    "lam": 4.9,
@@ -1122,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10821 (used 9179) \u00b7 whiff rest:30 rows",
- "n_markets": 27,
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 10790 (used 9210) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
