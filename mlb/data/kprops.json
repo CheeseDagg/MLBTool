@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21T13:23+00:00",
+ "generated": "2026-08-21T14:04+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -1122,8 +1122,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 10885 (used 9115) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10853 (used 9147) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
