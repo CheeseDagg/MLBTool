@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21T20:37:59+00:00",
+ "generated": "2026-08-21T23:36:09+00:00",
  "date": "2026-08-21",
  "min_pa": 6,
  "rows": [
@@ -40,12 +40,12 @@
    "batter": "Ryan Vilade",
    "team": "TB",
    "opp_sp": "Trevor Rogers",
-   "pa": 6,
-   "ab": 4,
+   "pa": 7,
+   "ab": 5,
    "h": 4,
    "hr": 1,
-   "avg": "1.000",
-   "slg": "2.500"
+   "avg": ".800",
+   "slg": "2.000"
   },
   {
    "batter": "Brandon Nimmo",
