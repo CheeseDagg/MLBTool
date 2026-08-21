@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21T14:04+00:00",
+ "generated": "2026-08-21T18:07+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -1122,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10853 (used 9147) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10821 (used 9179) \u00b7 whiff rest:30 rows",
  "n_markets": 27,
  "n_plays": 0,
  "plays": [],
