@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-22T20:37:18+00:00",
+ "generated": "2026-08-22T23:33:50+00:00",
  "date": "2026-08-22",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Francisco Lindor",
    "team": "NYM",
    "opp_sp": "Luis Castillo",
-   "pa": 15,
-   "ab": 15,
+   "pa": 16,
+   "ab": 16,
    "h": 8,
    "hr": 2,
-   "avg": ".533",
-   "slg": "1.133"
+   "avg": ".500",
+   "slg": "1.063"
   },
   {
    "batter": "George Springer",
@@ -48,15 +48,26 @@
    "slg": "1.250"
   },
   {
-   "batter": "William Contreras",
-   "team": "MIL",
-   "opp_sp": "Mart\u00edn P\u00e9rez",
-   "pa": 11,
-   "ab": 10,
+   "batter": "Jakob Marsee",
+   "team": "MIA",
+   "opp_sp": "Jake Irvin",
+   "pa": 6,
+   "ab": 6,
    "h": 4,
    "hr": 1,
-   "avg": ".400",
-   "slg": ".900"
+   "avg": ".667",
+   "slg": "1.167"
+  },
+  {
+   "batter": "Brady House",
+   "team": "WSH",
+   "opp_sp": "Eury P\u00e9rez",
+   "pa": 7,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
   },
   {
    "batter": "Kazuma Okamoto",
@@ -68,6 +79,17 @@
    "hr": 1,
    "avg": ".400",
    "slg": ".900"
+  },
+  {
+   "batter": "William Contreras",
+   "team": "MIL",
+   "opp_sp": "Mart\u00edn P\u00e9rez",
+   "pa": 13,
+   "ab": 12,
+   "h": 5,
+   "hr": 1,
+   "avg": ".417",
+   "slg": ".833"
   },
   {
    "batter": "Pete Alonso",
@@ -145,28 +167,6 @@
    "hr": 1,
    "avg": ".214",
    "slg": ".500"
-  },
-  {
-   "batter": "Ernie Clement",
-   "team": "TOR",
-   "opp_sp": "Ryan Weathers",
-   "pa": 11,
-   "ab": 11,
-   "h": 2,
-   "hr": 1,
-   "avg": ".182",
-   "slg": ".455"
-  },
-  {
-   "batter": "Spencer Torkelson",
-   "team": "DET",
-   "opp_sp": "Michael Wacha",
-   "pa": 20,
-   "ab": 19,
-   "h": 4,
-   "hr": 1,
-   "avg": ".211",
-   "slg": ".421"
   }
  ]
 }
