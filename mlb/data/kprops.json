@@ -1,43 +1,43 @@
 {
- "generated": "2026-08-22T13:51+00:00",
+ "generated": "2026-08-22T18:03+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
    "opp": "New York Yankees",
-   "lam": 8.69,
-   "k9_regressed": 12.22,
-   "exp_ip": 5.99,
+   "lam": 8.42,
+   "k9_regressed": 12.25,
+   "exp_ip": 5.78,
    "opp_mult": 1.07,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.9338,
-     "fair_over": -1411,
-     "fair_under": 1411
+     "p_over": 0.922,
+     "fair_over": -1183,
+     "fair_under": 1183
     },
     {
      "line": 5.5,
-     "p_over": 0.8645,
-     "fair_over": -638,
-     "fair_under": 638
+     "p_over": 0.8443,
+     "fair_over": -542,
+     "fair_under": 542
     },
     {
      "line": 6.5,
-     "p_over": 0.764,
-     "fair_over": -324,
-     "fair_under": 324
+     "p_over": 0.7352,
+     "fair_over": -278,
+     "fair_under": 278
     },
     {
      "line": 7.5,
-     "p_over": 0.6392,
-     "fair_over": -177,
-     "fair_under": 177
+     "p_over": 0.604,
+     "fair_over": -153,
+     "fair_under": 153
     },
     {
      "line": 8.5,
-     "p_over": 0.5035,
-     "fair_over": -101,
-     "fair_under": 101
+     "p_over": 0.4659,
+     "fair_over": 115,
+     "fair_under": -115
     }
    ]
   },
@@ -282,46 +282,6 @@
    ]
   },
   {
-   "pitcher": "Ryan Weathers",
-   "opp": "Toronto Blue Jays",
-   "lam": 5.33,
-   "k9_regressed": 9.24,
-   "exp_ip": 5.58,
-   "opp_mult": 0.93,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6148,
-     "fair_over": -160,
-     "fair_under": 160
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4411,
-     "fair_over": 127,
-     "fair_under": -127
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2869,
-     "fair_over": 249,
-     "fair_under": -249
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1696,
-     "fair_over": 490,
-     "fair_under": -490
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0915,
-     "fair_over": 993,
-     "fair_under": -993
-    }
-   ]
-  },
-  {
    "pitcher": "Dean Kremer",
    "opp": "San Diego Padres",
    "lam": 5.17,
@@ -358,6 +318,46 @@
      "p_over": 0.0797,
      "fair_over": 1154,
      "fair_under": -1154
+    }
+   ]
+  },
+  {
+   "pitcher": "Ryan Weathers",
+   "opp": "Toronto Blue Jays",
+   "lam": 5.15,
+   "k9_regressed": 9.24,
+   "exp_ip": 5.4,
+   "opp_mult": 0.929,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5854,
+     "fair_over": -141,
+     "fair_under": 141
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4103,
+     "fair_over": 144,
+     "fair_under": -144
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2601,
+     "fair_over": 285,
+     "fair_under": -285
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1495,
+     "fair_over": 569,
+     "fair_under": -569
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0783,
+     "fair_over": 1177,
+     "fair_under": -1177
     }
    ]
   },
@@ -1122,8 +1122,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 10680 (used 9320) \u00b7 whiff rest:30 rows",
- "n_markets": 28,
+ "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 10648 (used 9352) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 6,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
