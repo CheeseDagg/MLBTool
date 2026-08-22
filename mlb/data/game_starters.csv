@@ -2319,18 +2319,18 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-21,Minnesota Twins,San Diego Padres,Connor Prielipp,Randy Vásquez,2,6,Final
 2026-08-21,Pittsburgh Pirates,Los Angeles Dodgers,Bubba Chandler,Yoshinobu Yamamoto,4,5,Final
 2026-08-21,Chicago Cubs,Seattle Mariners,Matthew Boyd,Emerson Hancock,5,6,Final
-2026-08-22,Toronto Blue Jays,New York Yankees,Dylan Cease,Ryan Weathers,1,0,In Progress
-2026-08-22,Atlanta Braves,Milwaukee Brewers,Martín Pérez,Logan Henderson,0,0,Warmup
-2026-08-22,Washington Nationals,Miami Marlins,Jake Irvin,Eury Pérez,0,0,Pre-Game
-2026-08-22,St. Louis Cardinals,Philadelphia Phillies,,Andrew Painter,0,0,Scheduled
-2026-08-22,Tampa Bay Rays,Baltimore Orioles,Shane McClanahan,Brandon Young,0,0,Scheduled
-2026-08-22,Los Angeles Angels,Texas Rangers,Ryan Johnson,Cody Bradford,0,0,Scheduled
-2026-08-22,Athletics,Houston Astros,Jacob Lopez,Hunter Brown,0,0,Scheduled
-2026-08-22,New York Mets,Chicago White Sox,Christian Scott,Luis Castillo,0,0,Scheduled
-2026-08-22,Detroit Tigers,Kansas City Royals,Drew Anderson,Michael Wacha,0,0,Scheduled
-2026-08-22,Pittsburgh Pirates,Los Angeles Dodgers,Jared Jones,Tarik Skubal,0,0,Scheduled
-2026-08-22,Chicago Cubs,Seattle Mariners,David Peterson,Kade Anderson,0,0,Scheduled
-2026-08-22,San Francisco Giants,Boston Red Sox,Blade Tidwell,Patrick Sandoval,0,0,Scheduled
-2026-08-22,Cincinnati Reds,Arizona Diamondbacks,Rhett Lowder,Michael Soroka,0,0,Scheduled
-2026-08-22,Cleveland Guardians,Colorado Rockies,Tanner Bibee,Gabriel Hughes,0,0,Scheduled
+2026-08-22,Toronto Blue Jays,New York Yankees,Dylan Cease,Ryan Weathers,4,3,In Progress
+2026-08-22,Atlanta Braves,Milwaukee Brewers,Martín Pérez,Logan Henderson,1,4,In Progress
+2026-08-22,Washington Nationals,Miami Marlins,Jake Irvin,Eury Pérez,0,2,In Progress
+2026-08-22,St. Louis Cardinals,Philadelphia Phillies,Quinn Mathews,Andrew Painter,0,0,Pre-Game
+2026-08-22,Tampa Bay Rays,Baltimore Orioles,Shane McClanahan,Brandon Young,0,0,Pre-Game
+2026-08-22,Los Angeles Angels,Texas Rangers,Ryan Johnson,Cody Bradford,0,0,Pre-Game
+2026-08-22,Athletics,Houston Astros,Jacob Lopez,Hunter Brown,0,0,Pre-Game
+2026-08-22,New York Mets,Chicago White Sox,Christian Scott,Luis Castillo,0,0,Pre-Game
+2026-08-22,Detroit Tigers,Kansas City Royals,Drew Anderson,Michael Wacha,0,0,Pre-Game
+2026-08-22,Pittsburgh Pirates,Los Angeles Dodgers,Jared Jones,Tarik Skubal,0,0,Pre-Game
+2026-08-22,Chicago Cubs,Seattle Mariners,David Peterson,Kade Anderson,0,0,Pre-Game
+2026-08-22,San Francisco Giants,Boston Red Sox,Blade Tidwell,Patrick Sandoval,0,0,Pre-Game
+2026-08-22,Cincinnati Reds,Arizona Diamondbacks,Rhett Lowder,Michael Soroka,0,0,Pre-Game
+2026-08-22,Cleveland Guardians,Colorado Rockies,Tanner Bibee,Gabriel Hughes,0,0,Pre-Game
 2026-08-22,Minnesota Twins,San Diego Padres,Dean Kremer,Casey Mize,0,0,Scheduled

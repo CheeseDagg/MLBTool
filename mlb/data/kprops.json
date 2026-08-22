@@ -1,43 +1,43 @@
 {
- "generated": "2026-08-22T18:03+00:00",
+ "generated": "2026-08-22T20:48+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
    "opp": "New York Yankees",
-   "lam": 8.42,
-   "k9_regressed": 12.25,
-   "exp_ip": 5.78,
-   "opp_mult": 1.07,
+   "lam": 8.71,
+   "k9_regressed": 12.17,
+   "exp_ip": 6.01,
+   "opp_mult": 1.071,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.922,
-     "fair_over": -1183,
-     "fair_under": 1183
+     "p_over": 0.9344,
+     "fair_over": -1424,
+     "fair_under": 1424
     },
     {
      "line": 5.5,
-     "p_over": 0.8443,
-     "fair_over": -542,
-     "fair_under": 542
+     "p_over": 0.8655,
+     "fair_over": -643,
+     "fair_under": 643
     },
     {
      "line": 6.5,
-     "p_over": 0.7352,
-     "fair_over": -278,
-     "fair_under": 278
+     "p_over": 0.7654,
+     "fair_over": -326,
+     "fair_under": 326
     },
     {
      "line": 7.5,
-     "p_over": 0.604,
-     "fair_over": -153,
-     "fair_under": 153
+     "p_over": 0.6409,
+     "fair_over": -178,
+     "fair_under": 178
     },
     {
      "line": 8.5,
-     "p_over": 0.4659,
-     "fair_over": 115,
-     "fair_under": -115
+     "p_over": 0.5054,
+     "fair_over": -102,
+     "fair_under": 102
     }
    ]
   },
@@ -82,86 +82,6 @@
    ]
   },
   {
-   "pitcher": "Eury P\u00e9rez",
-   "opp": "Washington Nationals",
-   "lam": 5.81,
-   "k9_regressed": 9.5,
-   "exp_ip": 5.58,
-   "opp_mult": 0.987,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6887,
-     "fair_over": -221,
-     "fair_under": 221
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5233,
-     "fair_over": -110,
-     "fair_under": 110
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3632,
-     "fair_over": 175,
-     "fair_under": -175
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2303,
-     "fair_over": 334,
-     "fair_under": -334
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1338,
-     "fair_over": 648,
-     "fair_under": -648
-    }
-   ]
-  },
-  {
-   "pitcher": "Logan Henderson",
-   "opp": "Atlanta Braves",
-   "lam": 5.73,
-   "k9_regressed": 9.93,
-   "exp_ip": 5.28,
-   "opp_mult": 0.985,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6776,
-     "fair_over": -210,
-     "fair_under": 210
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5105,
-     "fair_over": -104,
-     "fair_under": 104
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3509,
-     "fair_over": 185,
-     "fair_under": -185
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2201,
-     "fair_over": 354,
-     "fair_under": -354
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1264,
-     "fair_over": 691,
-     "fair_under": -691
-    }
-   ]
-  },
-  {
    "pitcher": "Christian Scott",
    "opp": "Chicago White Sox",
    "lam": 5.69,
@@ -198,6 +118,46 @@
      "p_over": 0.122,
      "fair_over": 719,
      "fair_under": -719
+    }
+   ]
+  },
+  {
+   "pitcher": "Logan Henderson",
+   "opp": "Atlanta Braves",
+   "lam": 5.66,
+   "k9_regressed": 9.7,
+   "exp_ip": 5.33,
+   "opp_mult": 0.984,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6665,
+     "fair_over": -200,
+     "fair_under": 200
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4979,
+     "fair_over": 101,
+     "fair_under": -101
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3389,
+     "fair_over": 195,
+     "fair_under": -195
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2104,
+     "fair_over": 375,
+     "fair_under": -375
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1195,
+     "fair_over": 737,
+     "fair_under": -737
     }
    ]
   },
@@ -242,6 +202,46 @@
    ]
   },
   {
+   "pitcher": "Eury P\u00e9rez",
+   "opp": "Washington Nationals",
+   "lam": 5.61,
+   "k9_regressed": 9.44,
+   "exp_ip": 5.42,
+   "opp_mult": 0.987,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6591,
+     "fair_over": -193,
+     "fair_under": 193
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4896,
+     "fair_over": 104,
+     "fair_under": -104
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3311,
+     "fair_over": 202,
+     "fair_under": -202
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2041,
+     "fair_over": 390,
+     "fair_under": -390
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1151,
+     "fair_over": 769,
+     "fair_under": -769
+    }
+   ]
+  },
+  {
    "pitcher": "Hunter Brown",
    "opp": "Athletics",
    "lam": 5.4,
@@ -282,6 +282,46 @@
    ]
   },
   {
+   "pitcher": "Ryan Weathers",
+   "opp": "Toronto Blue Jays",
+   "lam": 5.22,
+   "k9_regressed": 9.21,
+   "exp_ip": 5.49,
+   "opp_mult": 0.928,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5973,
+     "fair_over": -148,
+     "fair_under": 148
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4226,
+     "fair_over": 137,
+     "fair_under": -137
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2707,
+     "fair_over": 269,
+     "fair_under": -269
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1574,
+     "fair_over": 535,
+     "fair_under": -535
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0834,
+     "fair_over": 1099,
+     "fair_under": -1099
+    }
+   ]
+  },
+  {
    "pitcher": "Dean Kremer",
    "opp": "San Diego Padres",
    "lam": 5.17,
@@ -318,46 +358,6 @@
      "p_over": 0.0797,
      "fair_over": 1154,
      "fair_under": -1154
-    }
-   ]
-  },
-  {
-   "pitcher": "Ryan Weathers",
-   "opp": "Toronto Blue Jays",
-   "lam": 5.15,
-   "k9_regressed": 9.24,
-   "exp_ip": 5.4,
-   "opp_mult": 0.929,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5854,
-     "fair_over": -141,
-     "fair_under": 141
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4103,
-     "fair_over": 144,
-     "fair_under": -144
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2601,
-     "fair_over": 285,
-     "fair_under": -285
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1495,
-     "fair_over": 569,
-     "fair_under": -569
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0783,
-     "fair_over": 1177,
-     "fair_under": -1177
     }
    ]
   },
@@ -682,46 +682,6 @@
    ]
   },
   {
-   "pitcher": "Jake Irvin",
-   "opp": "Miami Marlins",
-   "lam": 4.65,
-   "k9_regressed": 8.92,
-   "exp_ip": 4.76,
-   "opp_mult": 0.987,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4969,
-     "fair_over": 101,
-     "fair_under": -101
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3236,
-     "fair_over": 209,
-     "fair_under": -209
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1892,
-     "fair_over": 429,
-     "fair_under": -429
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0998,
-     "fair_over": 902,
-     "fair_under": -902
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0478,
-     "fair_over": 1991,
-     "fair_under": -1991
-    }
-   ]
-  },
-  {
    "pitcher": "David Peterson",
    "opp": "Seattle Mariners",
    "lam": 4.47,
@@ -762,6 +722,46 @@
    ]
   },
   {
+   "pitcher": "Quinn Mathews",
+   "opp": "Philadelphia Phillies",
+   "lam": 4.47,
+   "k9_regressed": 8.89,
+   "exp_ip": 4.5,
+   "opp_mult": 1.005,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4616,
+     "fair_over": 117,
+     "fair_under": -117
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2914,
+     "fair_over": 243,
+     "fair_under": -243
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1647,
+     "fair_over": 507,
+     "fair_under": -507
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0839,
+     "fair_over": 1092,
+     "fair_under": -1092
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0387,
+     "fair_over": 2481,
+     "fair_under": -2481
+    }
+   ]
+  },
+  {
    "pitcher": "Gabriel Hughes",
    "opp": "Cleveland Guardians",
    "lam": 4.46,
@@ -798,6 +798,46 @@
      "p_over": 0.0384,
      "fair_over": 2505,
      "fair_under": -2505
+    }
+   ]
+  },
+  {
+   "pitcher": "Jake Irvin",
+   "opp": "Miami Marlins",
+   "lam": 4.4,
+   "k9_regressed": 8.84,
+   "exp_ip": 4.54,
+   "opp_mult": 0.986,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4487,
+     "fair_over": 123,
+     "fair_under": -123
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.28,
+     "fair_over": 257,
+     "fair_under": -257
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1563,
+     "fair_over": 540,
+     "fair_under": -540
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0785,
+     "fair_over": 1173,
+     "fair_under": -1173
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0358,
+     "fair_over": 2694,
+     "fair_under": -2694
     }
    ]
   },
@@ -962,46 +1002,6 @@
    ]
   },
   {
-   "pitcher": "Mart\u00edn P\u00e9rez",
-   "opp": "Milwaukee Brewers",
-   "lam": 4.0,
-   "k9_regressed": 7.16,
-   "exp_ip": 5.1,
-   "opp_mult": 0.986,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3714,
-     "fair_over": 169,
-     "fair_under": -169
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2151,
-     "fair_over": 365,
-     "fair_under": -365
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1108,
-     "fair_over": 802,
-     "fair_under": -802
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0512,
-     "fair_over": 1853,
-     "fair_under": -1853
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0214,
-     "fair_over": 4573,
-     "fair_under": -4573
-    }
-   ]
-  },
-  {
    "pitcher": "Ryan Johnson",
    "opp": "Texas Rangers",
    "lam": 3.97,
@@ -1038,6 +1038,46 @@
      "p_over": 0.0206,
      "fair_over": 4753,
      "fair_under": -4753
+    }
+   ]
+  },
+  {
+   "pitcher": "Mart\u00edn P\u00e9rez",
+   "opp": "Milwaukee Brewers",
+   "lam": 3.92,
+   "k9_regressed": 7.09,
+   "exp_ip": 5.05,
+   "opp_mult": 0.984,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3546,
+     "fair_over": 182,
+     "fair_under": -182
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2017,
+     "fair_over": 396,
+     "fair_under": -396
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.102,
+     "fair_over": 880,
+     "fair_under": -880
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0462,
+     "fair_over": 2063,
+     "fair_under": -2063
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0189,
+     "fair_over": 5180,
+     "fair_under": -5180
     }
    ]
   },
@@ -1122,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 10648 (used 9352) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 10619 (used 9381) \u00b7 whiff rest:30 rows",
+ "n_markets": 23,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 6,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
