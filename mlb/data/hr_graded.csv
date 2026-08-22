@@ -1363,3 +1363,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-20,Jake Bauers,MIL,823747,George Kirby,3,card,15.8,20.7,,+531,,,park +9%,77F · wind in 4 (roof: half),LvR +8%,heat +5%,no,0
 2026-08-20,Samuel Basallo,BAL,824802,Gerrit Cole,4,card,15.5,22.3,16.7,+547,480,-2.9,park +4% [low-conf],86F · wind out 8,LvR +8%,heat +4%,no,0
 2026-08-20,Jackson Chourio,MIL,823747,George Kirby,2,card,15.4,19.8,,+550,,,park +9%,77F · wind in 4 (roof: half),RvR -3%,heat +1%,no,0
+2026-08-21,Kyle Schwarber,PHI,823420,Hunter Dobbins,1,card,28.9,30.3,21.0,+246,210,-34.8,park +9%,80F · wind in 3,LvR +8%,heat -0%,no,0
+2026-08-21,Jo Adell,CLE,824317,Tanner Gordon,1,proj,28.5,23.0,17.1,+251,215,-46.1,park +9%,99F · wind in 9,RvR -3%,heat +6%,no,0
+2026-08-21,Shohei Ohtani,LAD,823911,Bubba Chandler,2,proj,26.0,26.5,19.0,+285,245,-34.5,park +5%,97F · wind out 6,LvR +8%,heat +5%,no,0
+2026-08-21,Yordan Alvarez,HOU,824152,J.T. Ginn,2,card,25.3,29.8,20.8,+296,255,-26.2,park +3%,95F (roof: half),LvR +8%,heat -3%,no,0
+2026-08-21,Max Muncy,ATH,824152,Hayden Wesneski,9,card,24.6,15.5,13.0,+307,265,-52.5,park +3%,95F (roof: half),LvR +8%,,no,0
+2026-08-21,Byron Buxton,MIN,823262,TBD *,5,proj,23.9,21.1,16.1,+318,275,-39.7,park -4%,85F,,,no,0
+2026-08-21,Junior Caminero,TBR,824800,Trevor Rogers,4,card,23.6,24.5,17.9,+324,280,-31.9,park +4% [low-conf],83F,RvL +12%,heat +18%,no,0
+2026-08-21,Pete Crow-Armstrong,CHC,823101,Emerson Hancock,2,proj,22.1,23.7,17.5,+352,305,-29.3,park -4%,80F (roof: half),LvR +8%,heat +7%,hr,1
+2026-08-21,Pete Alonso,BAL,824800,Freddy Peralta,2,card,21.9,26.0,18.7,+357,310,-23.2,park +4% [low-conf],83F,RvR -3%,heat -2%,hr,1
+2026-08-21,Cal Raleigh,SEA,823101,Matthew Boyd,5,proj,21.4,15.3,12.8,+368,320,-46.3,park -4%,80F (roof: half),SvL +12%,,hr,1
+2026-08-21,Miguel Vargas,CHW,824559,Sean Manaea,3,card,19.9,23.3,17.3,+402,350,-22.3,park +9%,77F,RvL +12%,heat +14%,hr,1
+2026-08-21,Munetaka Murakami,CHW,824559,Sean Manaea,2,card,19.9,28.5,20.0,+402,350,-9.8,park +9%,77F,LvL -22%,heat +5%,no,0
+2026-08-21,Ben Rice,NYY,823510,Mason Fluharty,4,card,19.1,22.0,16.6,+424,370,-22.1,park +14%,74F · wind in 5,LvL -22%,heat +6%,no,0
+2026-08-21,Chase DeLauter,CLE,824317,Tanner Gordon,4,proj,19.1,17.1,13.9,+424,370,-34.6,park +9%,99F · wind in 9,LvR +8%,,no,0
+2026-08-21,Corey Seager,TEX,822857,Reid Detmers,2,card,19.1,20.7,15.9,+424,370,-25.4,park +2%,101F · wind in 6 (roof: half),LvL -22%,heat +8%,no,0
+2026-08-21,Tyler O'Neill,BAL,824800,Freddy Peralta,4,card,19.1,18.4,14.6,+424,370,-31.3,park +4% [low-conf],83F,RvR -3%,,no,0
+2026-08-21,Randal Grichuk,CHW,824559,Sean Manaea,4,card,18.7,19.7,15.3,+435,380,-26.4,park +9%,77F,RvL +12%,heat -3%,hr,1
+2026-08-21,Bryce Harper,PHI,823420,Hunter Dobbins,3,card,18.3,20.0,15.5,+446,390,-24.0,park +9%,80F · wind in 3,LvR +8%,heat +6%,no,0
+2026-08-21,Esmerlyn Valdez,PIT,823911,Yoshinobu Yamamoto,9,proj,18.3,15.7,13.2,+446,390,-35.4,park +5%,97F · wind out 6,RvR -3%,,void,
+2026-08-21,Francisco Lindor,NYM,824559,Sean Burke,7,proj,18.3,13.5,10.7,+446,390,-47.4,park +9%,77F,SvR +8%,,no,0
+2026-08-21,Kody Clemens,MIN,823262,TBD *,4,proj,18.3,18.1,14.4,+446,390,-29.2,park -4%,85F,,,no,0
+2026-08-21,Mickey Moniak,COL,824317,Joey Cantillo,7,card,18.3,15.9,13.2,+446,390,-35.1,park +9%,99F · wind in 9,LvL -22%,heat +5%,no,0
+2026-08-21,Nathaniel Lowe,CLE,824317,Tanner Gordon,6,proj,18.3,17.6,14.2,+446,390,-30.3,park +9%,99F · wind in 9,LvR +8%,heat +4%,no,0
+2026-08-21,Oneil Cruz,PIT,823911,Yoshinobu Yamamoto,7,proj,18.3,16.7,13.7,+446,390,-32.9,park +5%,97F · wind out 6,LvR +8%,heat +5%,hr,1
+2026-08-21,Samuel Basallo,BAL,824800,Freddy Peralta,5,card,18.3,20.5,15.8,+446,390,-22.8,park +4% [low-conf],83F,LvR +8%,heat +1%,no,0
+2026-08-21,Coby Mayo,BAL,824800,Freddy Peralta,7,card,17.9,16.8,13.8,+457,400,-31.2,park +4% [low-conf],83F,RvR -3%,heat -0%,no,0
+2026-08-21,Francisco Alvarez,NYM,824559,Sean Burke,6,proj,17.9,15.3,12.8,+457,400,-36.2,park +9%,77F,RvR -3%,,no,0
+2026-08-21,Griffin Conine,MIA,823830,Brad Lord,3,card,17.9,24.0,17.6,+457,400,-11.8,park -9%,87F (roof: half),LvR +8%,heat +2%,no,0
+2026-08-21,Jac Caglianone,KCR,824072,Troy Melton,3,card,17.9,22.8,17.0,+457,400,-15.0,park -4% [low-conf],94F,LvR +8%,heat +3%,no,0
+2026-08-21,Jake Burger,TEX,822857,Reid Detmers,6,card,17.9,16.0,13.3,+457,400,-33.4,park +2%,101F · wind in 6 (roof: half),RvL +12%,,no,0
