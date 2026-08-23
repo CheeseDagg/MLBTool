@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-23T17:32:40+00:00",
+ "generated": "2026-08-23T20:36:53+00:00",
  "date": "2026-08-23",
  "min_pa": 6,
  "rows": [
@@ -37,17 +37,6 @@
    "slg": ".556"
   },
   {
-   "batter": "George Springer",
-   "team": "TOR",
-   "opp_sp": "Carlos Rod\u00f3n",
-   "pa": 34,
-   "ab": 28,
-   "h": 5,
-   "hr": 2,
-   "avg": ".179",
-   "slg": ".429"
-  },
-  {
    "batter": "Manny Machado",
    "team": "SD",
    "opp_sp": "Bailey Ober",
@@ -59,37 +48,15 @@
    "slg": "1.000"
   },
   {
-   "batter": "Vladimir Guerrero Jr.",
-   "team": "TOR",
-   "opp_sp": "Carlos Rod\u00f3n",
-   "pa": 24,
-   "ab": 18,
-   "h": 11,
-   "hr": 1,
-   "avg": ".611",
-   "slg": ".944"
-  },
-  {
-   "batter": "Iv\u00e1n Herrera",
-   "team": "STL",
-   "opp_sp": "Cristopher S\u00e1nchez",
-   "pa": 6,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
-   "batter": "Jos\u00e9 Caballero",
-   "team": "NYY",
-   "opp_sp": "Jos\u00e9 Soriano",
+   "batter": "Logan O'Hoppe",
+   "team": "TEX",
+   "opp_sp": "Yusei Kikuchi",
    "pa": 7,
-   "ab": 6,
-   "h": 1,
+   "ab": 7,
+   "h": 2,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
+   "avg": ".286",
+   "slg": ".714"
   },
   {
    "batter": "Javier B\u00e1ez",
