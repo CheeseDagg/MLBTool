@@ -2319,18 +2319,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-21,Minnesota Twins,San Diego Padres,Connor Prielipp,Randy Vásquez,2,6,Final
 2026-08-21,Pittsburgh Pirates,Los Angeles Dodgers,Bubba Chandler,Yoshinobu Yamamoto,4,5,Final
 2026-08-21,Chicago Cubs,Seattle Mariners,Matthew Boyd,Emerson Hancock,5,6,Final
-2026-08-22,Toronto Blue Jays,New York Yankees,Dylan Cease,Ryan Weathers,4,3,In Progress
-2026-08-22,Atlanta Braves,Milwaukee Brewers,Martín Pérez,Logan Henderson,1,4,In Progress
-2026-08-22,Washington Nationals,Miami Marlins,Jake Irvin,Eury Pérez,0,2,In Progress
-2026-08-22,St. Louis Cardinals,Philadelphia Phillies,Quinn Mathews,Andrew Painter,0,0,Pre-Game
-2026-08-22,Tampa Bay Rays,Baltimore Orioles,Shane McClanahan,Brandon Young,0,0,Pre-Game
-2026-08-22,Los Angeles Angels,Texas Rangers,Ryan Johnson,Cody Bradford,0,0,Pre-Game
-2026-08-22,Athletics,Houston Astros,Jacob Lopez,Hunter Brown,0,0,Pre-Game
-2026-08-22,New York Mets,Chicago White Sox,Christian Scott,Luis Castillo,0,0,Pre-Game
-2026-08-22,Detroit Tigers,Kansas City Royals,Drew Anderson,Michael Wacha,0,0,Pre-Game
-2026-08-22,Pittsburgh Pirates,Los Angeles Dodgers,Jared Jones,Tarik Skubal,0,0,Pre-Game
-2026-08-22,Chicago Cubs,Seattle Mariners,David Peterson,Kade Anderson,0,0,Pre-Game
-2026-08-22,San Francisco Giants,Boston Red Sox,Blade Tidwell,Patrick Sandoval,0,0,Pre-Game
-2026-08-22,Cincinnati Reds,Arizona Diamondbacks,Rhett Lowder,Michael Soroka,0,0,Pre-Game
-2026-08-22,Cleveland Guardians,Colorado Rockies,Tanner Bibee,Gabriel Hughes,0,0,Pre-Game
-2026-08-22,Minnesota Twins,San Diego Padres,Dean Kremer,Casey Mize,0,0,Scheduled
+2026-08-22,Toronto Blue Jays,New York Yankees,Dylan Cease,Ryan Weathers,4,3,Final
+2026-08-22,Atlanta Braves,Milwaukee Brewers,Martín Pérez,Logan Henderson,1,4,Final
+2026-08-22,Washington Nationals,Miami Marlins,Jake Irvin,Eury Pérez,2,4,Final
+2026-08-22,St. Louis Cardinals,Philadelphia Phillies,Quinn Mathews,Andrew Painter,3,12,Final
+2026-08-22,Tampa Bay Rays,Baltimore Orioles,Shane McClanahan,Brandon Young,2,3,Final
+2026-08-22,Los Angeles Angels,Texas Rangers,Ryan Johnson,Cody Bradford,3,0,Final
+2026-08-22,Athletics,Houston Astros,Jacob Lopez,Hunter Brown,4,3,Final
+2026-08-22,New York Mets,Chicago White Sox,Christian Scott,Luis Castillo,10,5,Final
+2026-08-22,Detroit Tigers,Kansas City Royals,Drew Anderson,Michael Wacha,1,3,Final
+2026-08-22,Pittsburgh Pirates,Los Angeles Dodgers,Jared Jones,Tarik Skubal,3,4,Final
+2026-08-22,Chicago Cubs,Seattle Mariners,David Peterson,Kade Anderson,4,5,Final
+2026-08-22,San Francisco Giants,Boston Red Sox,Blade Tidwell,Patrick Sandoval,2,3,Final
+2026-08-22,Cincinnati Reds,Arizona Diamondbacks,Rhett Lowder,Michael Soroka,11,5,Final
+2026-08-22,Cleveland Guardians,Colorado Rockies,Tanner Bibee,Gabriel Hughes,4,3,Final
+2026-08-22,Minnesota Twins,San Diego Padres,Dean Kremer,Casey Mize,5,7,Final
+2026-08-23,Tampa Bay Rays,Baltimore Orioles,Nick Martinez,Shane Baz,0,0,Scheduled
+2026-08-23,St. Louis Cardinals,Philadelphia Phillies,Kyle Leahy,Cristopher Sánchez,0,0,Scheduled
+2026-08-23,Toronto Blue Jays,New York Yankees,José Soriano,Carlos Rodón,0,0,Scheduled
+2026-08-23,Washington Nationals,Miami Marlins,Jackson Kent,Janson Junk,0,0,Scheduled
+2026-08-23,Detroit Tigers,Kansas City Royals,,Daniel Lynch IV,0,0,Scheduled
+2026-08-23,Athletics,Houston Astros,Brady Basso,Cristian Javier,0,0,Scheduled
+2026-08-23,New York Mets,Chicago White Sox,Nolan McLean,Sean Newcomb,0,0,Scheduled
+2026-08-23,Los Angeles Angels,Texas Rangers,Yusei Kikuchi,Cal Quantrill,0,0,Scheduled
+2026-08-23,Cleveland Guardians,Colorado Rockies,Foster Griffin,Tomoyuki Sugano,0,0,Scheduled
+2026-08-23,San Francisco Giants,Boston Red Sox,Matt Wilkinson,Jake Bennett,0,0,Scheduled
+2026-08-23,Pittsburgh Pirates,Los Angeles Dodgers,Lake Bachar,Blake Snell,0,0,Scheduled
+2026-08-23,Chicago Cubs,Seattle Mariners,Shota Imanaga,Bryce Miller,0,0,Scheduled
+2026-08-23,Minnesota Twins,San Diego Padres,Bailey Ober,Walker Buehler,0,0,Scheduled
+2026-08-23,Cincinnati Reds,Arizona Diamondbacks,Andrew Abbott,Mitch Bratt,0,0,Scheduled
+2026-08-23,Atlanta Braves,Milwaukee Brewers,Tyler Mahle,Shane Drohan,0,0,Scheduled

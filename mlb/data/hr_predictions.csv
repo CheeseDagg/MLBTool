@@ -1362,3 +1362,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-22,Mike Trout,LAA,822858,Cody Bradford,2,proj,17.9,22.4,16.8,+457,400,-16.1,park +2%,107F · wind in 3 (roof: half),RvL +12%,,-0.2,
 2026-08-22,Royce Lewis,MIN,823261,Casey Mize,6,proj,17.9,12.4,9.9,+457,400,-50.6,park -4%,87F,RvR -3%,,-3.8,floor
 2026-08-22,Seiya Suzuki,CHC,823100,Kade Anderson *,2,card,17.9,20.2,15.6,+457,400,-22.1,park -4%,67F · wind out 5 (roof: half),RvL +12%,,-4.7,floor
+2026-08-23,Shohei Ohtani,LAD,823909,Lake Bachar,1,proj,30.1,27.8,19.7,+232,198,-41.4,park +5%,70F,LvR +8%,heat +1%,0.1,
+2026-08-23,Kyle Schwarber,PHI,823421,Kyle Leahy,3,proj,27.6,25.2,18.3,+262,225,-40.6,park +9%,70F · wind out 4,LvR +8%,heat +6%,-1.9,
+2026-08-23,Jo Adell,CLE,824315,Tomoyuki Sugano,1,proj,24.6,22.1,16.6,+307,265,-39.3,park +9%,70F · wind in 4,RvR -3%,heat +7%,1.5,
+2026-08-23,Max Muncy,ATH,824150,Cristian Javier,1,proj,24.6,26.9,19.2,+307,265,-29.8,park +3%,80F (roof: half),LvR +8%,heat +6%,3.8,STANDOUT
+2026-08-23,Fernando Tatis Jr.,SDP,823258,Bailey Ober,1,proj,23.6,17.4,14.1,+324,280,-46.5,park -4%,71F,RvR -3%,heat -3%,0.7,
+2026-08-23,Byron Buxton,MIN,823258,Walker Buehler,5,proj,23.0,20.3,15.6,+335,290,-39.0,park -4%,71F,RvR -3%,heat +4%,-3.8,floor
+2026-08-23,Junior Caminero,TBR,824799,Shane Baz,1,proj,23.0,28.4,20.0,+335,290,-21.9,park +4% [low-conf],68F,RvR -3%,heat +0%,1.7,
+2026-08-23,Pete Alonso,BAL,824799,Nick Martinez,2,proj,23.0,25.5,18.5,+335,290,-27.9,park +4% [low-conf],68F,RvR -3%,heat -2%,-0.0,
+2026-08-23,Cal Raleigh,SEA,823099,Shota Imanaga,5,proj,22.1,17.4,14.1,+352,305,-43.0,park -4%,60F (roof: half),SvL +12%,heat -3%,3.2,STANDOUT
+2026-08-23,Pete Crow-Armstrong,CHC,823099,Bryce Miller,2,proj,21.4,24.3,17.8,+368,320,-25.2,park -4%,60F (roof: half),LvR +8%,heat +8%,0.3,
+2026-08-23,Willson Contreras,BOS,824720,Matt Wilkinson *,4,proj,21.4,18.9,14.9,+368,320,-37.4,park -7%,65F,RvL +12%,,-0.7,
+2026-08-23,Manny Machado,SDP,823258,Bailey Ober,2,proj,20.9,20.8,15.9,+379,330,-31.6,park -4%,71F,RvR -3%,heat -0%,0.2,
+2026-08-23,Nathaniel Lowe,CLE,824315,Tomoyuki Sugano,6,proj,20.9,16.8,13.8,+379,330,-40.8,park +9%,70F · wind in 4,LvR +8%,heat -0%,-6.8,floor
+2026-08-23,Chase DeLauter,CLE,824315,Tomoyuki Sugano,4,proj,19.9,16.2,13.4,+402,350,-39.5,park +9%,70F · wind in 4,LvR +8%,,,new
+2026-08-23,Coby Mayo,BAL,824799,Nick Martinez,4,proj,19.9,20.3,15.6,+402,350,-29.6,park +4% [low-conf],68F,RvR -3%,heat +8%,0.2,
+2026-08-23,Jackson Merrill,SDP,823258,Bailey Ober,3,proj,19.9,18.1,14.4,+402,350,-35.0,park -4%,71F,LvR +8%,heat +4%,,new
+2026-08-23,Samuel Basallo,BAL,824799,Nick Martinez,5,proj,19.9,19.9,15.4,+402,350,-30.6,park +4% [low-conf],68F,LvR +8%,heat +12%,-1.3,
+2026-08-23,Yordan Alvarez,HOU,824150,Brady Basso,1,proj,19.7,27.9,,+407,,,park +3%,80F (roof: half),LvL -22%,heat +8%,-1.0,
+2026-08-23,Kazuma Okamoto,TOR,823507,Carlos Rodón *,1,proj,19.1,25.2,18.3,+424,370,-14.0,park +14%,70F · wind in 6,RvL +12%,heat +2%,1.1,
+2026-08-23,Royce Lewis,MIN,823258,Walker Buehler,6,proj,19.1,12.4,9.9,+424,370,-53.6,park -4%,71F,RvR -3%,,-3.4,floor
+2026-08-23,Bryce Harper,PHI,823421,Kyle Leahy,2,proj,18.3,20.3,15.7,+446,390,-23.3,park +9%,70F · wind out 4,LvR +8%,heat +17%,-0.2,
+2026-08-23,Elly De La Cruz,CIN,825043,Mitch Bratt,2,proj,17.9,20.6,15.8,+457,400,-20.9,park +4%,96F (roof: half),SvL +12%,heat +18%,-1.8,
+2026-08-23,Esmerlyn Valdez,PIT,823909,Blake Snell,9,proj,17.9,14.0,11.3,+457,400,-43.3,park +5%,70F,RvL +12%,,-6.4,floor
+2026-08-23,Freddie Freeman,LAD,823909,Lake Bachar,2,proj,17.9,16.0,13.3,+457,400,-33.4,park +5%,70F,LvR +8%,heat -2%,-2.3,floor
+2026-08-23,Griffin Conine,MIA,823827,Jackson Kent,7,proj,17.9,16.0,13.4,+457,400,-33.2,park -9%,79F (roof: half),LvL -22%,,-5.3,floor
+2026-08-23,Gunnar Henderson,BAL,824799,Nick Martinez,1,proj,17.9,20.1,15.5,+457,400,-22.4,park +4% [low-conf],68F,LvR +8%,heat +11%,0.4,
+2026-08-23,Mickey Moniak,COL,824315,Foster Griffin,7,proj,17.9,15.8,13.2,+457,400,-34.0,park +9%,70F · wind in 4,LvL -22%,,-6.3,floor
+2026-08-23,Miguel Vargas,CHW,824558,Nolan McLean,1,proj,17.3,23.4,,+478,,,park +9%,62F · wind out 4,RvR -3%,heat +1%,0.8,
+2026-08-23,Ben Rice,NYY,823507,José Soriano,1,proj,17.1,27.6,19.6,+485,425,2.8,park +14%,70F · wind in 6,LvR +8%,heat -7%,-0.8,
+2026-08-23,CJ Abrams,WSN,823827,Janson Junk,1,proj,17.1,22.3,16.7,+485,425,-12.3,park -9%,79F (roof: half),LvR +8%,heat +7%,-2.7,floor
