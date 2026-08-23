@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-23T20:36:53+00:00",
+ "generated": "2026-08-23T23:33:37+00:00",
  "date": "2026-08-23",
  "min_pa": 6,
  "rows": [
@@ -15,26 +15,26 @@
    "slg": "1.000"
   },
   {
-   "batter": "Nolan Arenado",
-   "team": "AZ",
-   "opp_sp": "Andrew Abbott",
-   "pa": 24,
-   "ab": 22,
-   "h": 9,
-   "hr": 2,
-   "avg": ".409",
-   "slg": ".682"
-  },
-  {
    "batter": "Spencer Torkelson",
    "team": "DET",
    "opp_sp": "Daniel Lynch IV",
-   "pa": 18,
-   "ab": 18,
+   "pa": 20,
+   "ab": 20,
    "h": 4,
    "hr": 2,
-   "avg": ".222",
-   "slg": ".556"
+   "avg": ".200",
+   "slg": ".500"
+  },
+  {
+   "batter": "George Springer",
+   "team": "TOR",
+   "opp_sp": "Carlos Rod\u00f3n",
+   "pa": 34,
+   "ab": 28,
+   "h": 5,
+   "hr": 2,
+   "avg": ".179",
+   "slg": ".429"
   },
   {
    "batter": "Manny Machado",
@@ -48,48 +48,125 @@
    "slg": "1.000"
   },
   {
-   "batter": "Logan O'Hoppe",
-   "team": "TEX",
-   "opp_sp": "Yusei Kikuchi",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
+   "batter": "Vladimir Guerrero Jr.",
+   "team": "TOR",
+   "opp_sp": "Carlos Rod\u00f3n",
+   "pa": 24,
+   "ab": 18,
+   "h": 11,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
+   "avg": ".611",
+   "slg": ".944"
   },
   {
-   "batter": "Javier B\u00e1ez",
-   "team": "DET",
-   "opp_sp": "Daniel Lynch IV",
-   "pa": 18,
-   "ab": 16,
-   "h": 6,
-   "hr": 1,
-   "avg": ".375",
-   "slg": ".625"
-  },
-  {
-   "batter": "Gleyber Torres",
-   "team": "DET",
-   "opp_sp": "Daniel Lynch IV",
+   "batter": "Pete Crow-Armstrong",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
    "pa": 8,
    "ab": 7,
-   "h": 1,
+   "h": 3,
    "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Corey Seager",
-   "team": "TEX",
-   "opp_sp": "Yusei Kikuchi",
-   "pa": 22,
-   "ab": 16,
-   "h": 4,
+   "batter": "Seiya Suzuki",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
    "hr": 1,
-   "avg": ".250",
-   "slg": ".438"
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Michael Busch",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Alex Bregman",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Ian Happ",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Nico Hoerner",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Pedro Ram\u00edrez",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Michael Conforto",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Carson Kelly",
+   "team": "CHC",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Jos\u00e9 Caballero",
+   "team": "NYY",
+   "opp_sp": "Jos\u00e9 Soriano",
+   "pa": 7,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
   }
  ]
 }
