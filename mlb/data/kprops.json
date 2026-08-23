@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-23T09:06+00:00",
+ "generated": "2026-08-23T13:15+00:00",
  "board": [
   {
    "pitcher": "Cristopher S\u00e1nchez",
@@ -1162,30 +1162,10 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 10578 (used 9422) \u00b7 whiff rest:30 rows",
- "n_markets": 23,
- "n_plays": 1,
- "plays": [
-  {
-   "player": "andrewabbott O3.5",
-   "fair_prob": 0.5646,
-   "fair_american": -130,
-   "best_book": "fanduel",
-   "best_price": 128,
-   "n_books": 2,
-   "n_bettable": 1,
-   "any_book": null,
-   "any_price": null,
-   "field_outlier": false,
-   "ev_vs_fair_pct": 28.7,
-   "consensus_prob": 0.4425,
-   "ev_vs_consensus_pct": 0.9,
-   "shop_edge_pts": 3.1,
-   "stale_flag": false,
-   "model_market_gap_pts": 12.2,
-   "conservative_ev_pct": 0.9
-  }
- ],
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 10546 (used 9454) \u00b7 whiff rest:30 rows",
+ "n_markets": 24,
+ "n_plays": 0,
+ "plays": [],
  "books": [
   "draftkings",
   "fanduel",
@@ -1195,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
