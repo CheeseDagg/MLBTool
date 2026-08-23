@@ -1423,3 +1423,10 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-22,Mike Trout,LAA,822858,Cody Bradford,2,proj,17.9,22.4,16.8,+457,400,-16.1,park +2%,107F · wind in 3 (roof: half),RvL +12%,,no,0
 2026-08-22,Royce Lewis,MIN,823261,Casey Mize,6,proj,17.9,12.4,9.9,+457,400,-50.6,park -4%,87F,RvR -3%,,no,0
 2026-08-22,Seiya Suzuki,CHC,823100,Kade Anderson *,2,card,17.9,20.2,15.6,+457,400,-22.1,park -4%,67F · wind out 5 (roof: half),RvL +12%,,no,0
+2026-08-23,Kyle Schwarber,PHI,823421,Kyle Leahy,1,card,22.1,29.5,20.6,+352,305,-16.6,park +9%,79F,LvR +8%,heat +6%,hr,1
+2026-08-23,Munetaka Murakami,CHW,824558,Nolan McLean,2,card,20.9,27.8,19.7,+379,330,-15.2,park +9%,71F · wind out 3,LvR +8%,heat +4%,no,0
+2026-08-23,Kazuma Okamoto,TOR,823507,Carlos Rodón *,5,card,19.1,20.5,15.8,+424,370,-25.9,park +14%,77F · wind out 8,RvL +12%,heat +2%,no,0
+2026-08-23,Coby Mayo,BAL,824799,Nick Martinez,5,card,18.3,19.8,15.4,+446,390,-24.6,park +4% [low-conf],83F,RvR -3%,heat +8%,no,0
+2026-08-23,Colson Montgomery,CHW,824558,Nolan McLean,6,card,18.3,17.3,14.0,+446,390,-31.2,park +9%,71F · wind out 3,LvR +8%,heat -1%,no,0
+2026-08-23,Pete Alonso,BAL,824799,Nick Martinez,2,card,18.3,26.7,19.1,+446,390,-6.3,park +4% [low-conf],83F,RvR -3%,heat -2%,no,0
+2026-08-23,Samuel Basallo,BAL,824799,Nick Martinez,4,card,17.2,23.2,17.2,+480,420,-10.6,park +4% [low-conf],83F,LvR +8%,heat +12%,no,0
