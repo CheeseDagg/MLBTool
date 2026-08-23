@@ -2334,18 +2334,18 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-22,Cincinnati Reds,Arizona Diamondbacks,Rhett Lowder,Michael Soroka,11,5,Final
 2026-08-22,Cleveland Guardians,Colorado Rockies,Tanner Bibee,Gabriel Hughes,4,3,Final
 2026-08-22,Minnesota Twins,San Diego Padres,Dean Kremer,Casey Mize,5,7,Final
-2026-08-23,Tampa Bay Rays,Baltimore Orioles,Nick Martinez,Shane Baz,0,0,Scheduled
-2026-08-23,St. Louis Cardinals,Philadelphia Phillies,Kyle Leahy,Cristopher Sánchez,0,0,Scheduled
-2026-08-23,Toronto Blue Jays,New York Yankees,José Soriano,Carlos Rodón,0,0,Scheduled
-2026-08-23,Washington Nationals,Miami Marlins,Jackson Kent,Janson Junk,0,0,Scheduled
-2026-08-23,Detroit Tigers,Kansas City Royals,,Daniel Lynch IV,0,0,Scheduled
-2026-08-23,Athletics,Houston Astros,Brady Basso,Cristian Javier,0,0,Scheduled
-2026-08-23,New York Mets,Chicago White Sox,Nolan McLean,Sean Newcomb,0,0,Scheduled
-2026-08-23,Los Angeles Angels,Texas Rangers,Yusei Kikuchi,Cal Quantrill,0,0,Scheduled
-2026-08-23,Cleveland Guardians,Colorado Rockies,Foster Griffin,Tomoyuki Sugano,0,0,Scheduled
-2026-08-23,San Francisco Giants,Boston Red Sox,Matt Wilkinson,Jake Bennett,0,0,Scheduled
-2026-08-23,Pittsburgh Pirates,Los Angeles Dodgers,Lake Bachar,Blake Snell,0,0,Scheduled
-2026-08-23,Chicago Cubs,Seattle Mariners,Shota Imanaga,Bryce Miller,0,0,Scheduled
-2026-08-23,Minnesota Twins,San Diego Padres,Bailey Ober,Walker Buehler,0,0,Scheduled
-2026-08-23,Cincinnati Reds,Arizona Diamondbacks,Andrew Abbott,Mitch Bratt,0,0,Scheduled
+2026-08-23,Tampa Bay Rays,Baltimore Orioles,Nick Martinez,Shane Baz,0,0,In Progress
+2026-08-23,St. Louis Cardinals,Philadelphia Phillies,Kyle Leahy,Cristopher Sánchez,1,0,In Progress
+2026-08-23,Toronto Blue Jays,New York Yankees,José Soriano,Carlos Rodón,0,0,In Progress
+2026-08-23,Washington Nationals,Miami Marlins,Jackson Kent,Janson Junk,0,1,In Progress
+2026-08-23,Detroit Tigers,Kansas City Royals,Jacob Waguespack,Daniel Lynch IV,0,0,Warmup
+2026-08-23,Athletics,Houston Astros,Brady Basso,Cristian Javier,0,0,Warmup
+2026-08-23,New York Mets,Chicago White Sox,Nolan McLean,Sean Newcomb,0,0,Warmup
+2026-08-23,Los Angeles Angels,Texas Rangers,Yusei Kikuchi,Cal Quantrill,0,0,Pre-Game
+2026-08-23,Cleveland Guardians,Colorado Rockies,Foster Griffin,Tomoyuki Sugano,0,0,Pre-Game
+2026-08-23,San Francisco Giants,Boston Red Sox,Matt Wilkinson,Jake Bennett,0,0,Pre-Game
+2026-08-23,Pittsburgh Pirates,Los Angeles Dodgers,Lake Bachar,Blake Snell,0,0,Pre-Game
+2026-08-23,Chicago Cubs,Seattle Mariners,Shota Imanaga,Bryce Miller,0,0,Pre-Game
+2026-08-23,Minnesota Twins,San Diego Padres,Bailey Ober,Walker Buehler,0,0,Pre-Game
+2026-08-23,Cincinnati Reds,Arizona Diamondbacks,Andrew Abbott,Mitch Bratt,0,0,Pre-Game
 2026-08-23,Atlanta Braves,Milwaukee Brewers,Tyler Mahle,Shane Drohan,0,0,Scheduled
