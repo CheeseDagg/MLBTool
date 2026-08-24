@@ -1392,3 +1392,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-23,Miguel Vargas,CHW,824558,Nolan McLean,3,card,16.1,21.1,,+522,,,park +9%,76F · wind out 5,RvR -3%,heat +1%,-0.4,
 2026-08-23,Randy Arozarena,SEA,823099,Shota Imanaga,1,card,16.0,21.0,,+524,,,park -4%,70F (roof: half),RvL +12%,heat -1%,,new
 2026-08-23,Kazuma Okamoto,TOR,823507,Carlos Rodón *,5,card,15.8,20.6,,+533,,,park +14%,79F · wind out 7,RvL +12%,heat +2%,-1.4,
+2026-08-24,Byron Buxton,MIN,824964,Jeffrey Springs,5,proj,30.1,26.2,18.8,+232,198,-43.9,park +6% [low-conf],68F,RvL +12%,heat +3%,0.0,
+2026-08-24,Kyle Schwarber,PHI,823097,Logan Gilbert,2,proj,25.3,27.8,19.7,+296,255,-30.1,park -4%,57F (roof: half),LvR +8%,heat +4%,-0.9,
+2026-08-24,Munetaka Murakami,CHW,824557,Kumar Rocker,5,proj,24.6,24.3,17.8,+307,265,-35.0,park +9%,58F · wind out 4,LvR +8%,heat +3%,-2.4,floor
+2026-08-24,Joc Pederson,TEX,824557,TBD *,4,proj,23.6,19.4,15.2,+324,280,-42.4,park +9%,58F · wind out 4,,,-2.6,floor
+2026-08-24,Corey Seager,TEX,824557,TBD *,7,proj,23.3,14.3,11.6,+329,285,-55.4,park +9%,58F · wind out 4,,,-4.5,floor
+2026-08-24,Junior Caminero,TBR,824235,Framber Valdez,1,proj,22.1,25.2,18.3,+352,305,-25.9,park -5%,53F,RvL +12%,heat +18%,-0.3,
+2026-08-24,Royce Lewis,MIN,824964,Jeffrey Springs,6,proj,22.1,16.5,13.6,+352,305,-44.9,park +6% [low-conf],68F,RvL +12%,heat +2%,0.3,
+2026-08-24,Esmerlyn Valdez,PIT,823260,Robbie Ray,9,proj,21.4,13.9,11.2,+368,320,-53.1,park -4%,72F,RvL +12%,heat +2%,-6.5,floor
+2026-08-24,Pete Crow-Armstrong,CHC,825041,Merrill Kelly,2,proj,20.9,24.8,18.1,+379,330,-22.2,park +4%,88F · wind in 6 (roof: half),LvR +8%,heat -2%,0.6,
+2026-08-24,Max Muncy,ATH,824964,Zebby Matthews,1,proj,20.3,29.0,,+392,,,park +6% [low-conf],68F,LvR +8%,heat -0%,4.9,STANDOUT
+2026-08-24,Ryan Jeffers,MIN,824964,Jeffrey Springs,9,proj,19.9,13.3,10.5,+402,350,-52.6,park +6% [low-conf],68F,RvL +12%,heat +2%,-9.6,floor
+2026-08-24,Zach Neto,LAA,823992,Parker Messick,1,proj,19.9,19.9,15.4,+402,350,-30.6,park +4%,72F,RvL +12%,heat +8%,-1.7,
+2026-08-24,Colson Montgomery,CHW,824557,Kumar Rocker,3,proj,19.5,23.0,17.1,+413,360,-21.4,park +9%,58F · wind out 4,LvR +8%,heat -5%,1.6,
+2026-08-24,Cal Raleigh,SEA,823097,Zack Wheeler,5,proj,18.3,14.0,11.3,+446,390,-44.7,park -4%,57F (roof: half),SvR +8%,,0.4,
+2026-08-24,Mike Trout,LAA,823992,Parker Messick,2,proj,18.3,19.7,15.3,+446,390,-24.9,park +4%,72F,RvL +12%,heat +2%,-1.5,
+2026-08-24,Oneil Cruz,PIT,823260,Robbie Ray,6,proj,18.3,14.8,12.2,+446,390,-40.3,park -4%,72F,LvL -22%,heat +1%,,new
+2026-08-24,Chase DeLauter,CLE,823992,George Klassen,4,proj,17.9,13.8,11.1,+457,400,-44.6,park +4%,72F,LvR +8%,,,new
+2026-08-24,Josh Bell,MIN,824964,Jeffrey Springs,1,proj,17.9,22.4,16.8,+457,400,-16.1,park +6% [low-conf],68F,SvL +12%,heat -3%,3.4,STANDOUT
+2026-08-24,Kody Clemens,MIN,824964,Jeffrey Springs,4,proj,17.9,20.5,15.7,+457,400,-21.3,park +6% [low-conf],68F,LvL -22%,heat -7%,0.0,
+2026-08-24,Nathaniel Lowe,CLE,823992,George Klassen,6,proj,17.9,14.8,12.2,+457,400,-39.2,park +4%,72F,LvR +8%,heat +3%,-8.4,floor
+2026-08-24,Wyatt Langford,TEX,824557,TBD *,6,proj,17.9,13.3,10.4,+457,400,-47.8,park +9%,58F · wind out 4,,,-4.8,floor
+2026-08-24,CJ Abrams,WSN,822695,Ryan Feltner,2,proj,17.4,23.6,,+475,,,park avg,64F,LvR +8%,heat +3%,-2.0,floor
+2026-08-24,Bryan Reynolds,PIT,823260,Robbie Ray,1,proj,17.1,15.4,12.9,+485,425,-32.1,park -4%,72F,SvL +12%,heat -3%,,new
+2026-08-24,Corbin Carroll,ARI,825041,Kevin Gausman,1,proj,17.1,19.8,15.4,+485,425,-19.2,park +4%,88F · wind in 6 (roof: half),LvR +8%,heat -7%,-1.2,
+2026-08-24,Fernando Tatis Jr.,SDP,823260,Braxton Ashcraft,1,proj,17.1,16.9,13.8,+485,425,-27.5,park -4%,72F,RvR -3%,heat +3%,0.4,
+2026-08-24,Jo Adell,CLE,823992,George Klassen,1,proj,17.1,19.3,15.1,+485,425,-20.6,park +4%,72F,RvR -3%,heat -0%,-0.7,
+2026-08-24,Manny Machado,SDP,823260,Braxton Ashcraft,2,proj,17.1,18.8,14.9,+485,425,-22.0,park -4%,72F,RvR -3%,heat +0%,-0.7,
+2026-08-24,Mickey Moniak,COL,822695,Cade Cavalli,6,proj,17.1,18.3,14.6,+485,425,-23.6,park avg,64F,LvR +8%,heat +7%,-4.9,floor
+2026-08-24,Sal Stewart,CIN,823183,TBD *,1,proj,16.5,21.9,,+506,,,park -14%,57F · wind out 8,,,-2.2,floor
+2026-08-24,Miguel Vargas,CHW,824557,Kumar Rocker,1,proj,16.3,25.3,18.3,+513,450,0.8,park +9%,58F · wind out 4,RvR -3%,heat -4%,1.8,

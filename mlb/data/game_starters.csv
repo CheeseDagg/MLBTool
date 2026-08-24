@@ -2338,14 +2338,24 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-23,St. Louis Cardinals,Philadelphia Phillies,Kyle Leahy,Cristopher Sánchez,4,6,Final
 2026-08-23,Toronto Blue Jays,New York Yankees,José Soriano,Carlos Rodón,3,8,Final
 2026-08-23,Washington Nationals,Miami Marlins,Jackson Kent,Janson Junk,2,6,Final
-2026-08-23,Detroit Tigers,Kansas City Royals,Jacob Waguespack,Daniel Lynch IV,7,9,In Progress
-2026-08-23,Athletics,Houston Astros,Brady Basso,Cristian Javier,7,6,In Progress
-2026-08-23,New York Mets,Chicago White Sox,Nolan McLean,Sean Newcomb,1,1,In Progress
-2026-08-23,Los Angeles Angels,Texas Rangers,Yusei Kikuchi,Cal Quantrill,0,5,In Progress
-2026-08-23,Cleveland Guardians,Colorado Rockies,Foster Griffin,Tomoyuki Sugano,5,2,In Progress
-2026-08-23,San Francisco Giants,Boston Red Sox,Matt Wilkinson,Jake Bennett,3,5,In Progress
-2026-08-23,Pittsburgh Pirates,Los Angeles Dodgers,Lake Bachar,Blake Snell,0,1,In Progress
-2026-08-23,Chicago Cubs,Seattle Mariners,Shota Imanaga,Bryce Miller,0,1,In Progress
-2026-08-23,Minnesota Twins,San Diego Padres,Bailey Ober,Walker Buehler,0,0,In Progress
-2026-08-23,Cincinnati Reds,Arizona Diamondbacks,Andrew Abbott,Mitch Bratt,0,0,In Progress
-2026-08-23,Atlanta Braves,Milwaukee Brewers,Tyler Mahle,Shane Drohan,0,0,Pre-Game
+2026-08-23,Detroit Tigers,Kansas City Royals,Jacob Waguespack,Daniel Lynch IV,7,11,Final
+2026-08-23,Athletics,Houston Astros,Brady Basso,Cristian Javier,7,6,Final
+2026-08-23,New York Mets,Chicago White Sox,Nolan McLean,Sean Newcomb,1,2,Final
+2026-08-23,Los Angeles Angels,Texas Rangers,Yusei Kikuchi,Cal Quantrill,3,5,Final
+2026-08-23,Cleveland Guardians,Colorado Rockies,Foster Griffin,Tomoyuki Sugano,7,2,Final
+2026-08-23,San Francisco Giants,Boston Red Sox,Matt Wilkinson,Jake Bennett,4,5,Final
+2026-08-23,Pittsburgh Pirates,Los Angeles Dodgers,Lake Bachar,Blake Snell,0,4,Final
+2026-08-23,Chicago Cubs,Seattle Mariners,Shota Imanaga,Bryce Miller,19,2,Final
+2026-08-23,Minnesota Twins,San Diego Padres,Bailey Ober,Walker Buehler,1,8,Final
+2026-08-23,Cincinnati Reds,Arizona Diamondbacks,Andrew Abbott,Mitch Bratt,3,5,Final
+2026-08-23,Atlanta Braves,Milwaukee Brewers,Tyler Mahle,Shane Drohan,4,2,Final
+2026-08-24,Tampa Bay Rays,Detroit Tigers,Drew Rasmussen,Framber Valdez,0,0,Scheduled
+2026-08-24,Boston Red Sox,Miami Marlins,Ranger Suarez,Sandy Alcantara,0,0,Scheduled
+2026-08-24,Colorado Rockies,Washington Nationals,Ryan Feltner,Cade Cavalli,0,0,Scheduled
+2026-08-24,Texas Rangers,Chicago White Sox,Kumar Rocker,,0,0,Scheduled
+2026-08-24,Cleveland Guardians,Los Angeles Angels,Parker Messick,George Klassen,0,0,Scheduled
+2026-08-24,Chicago Cubs,Arizona Diamondbacks,Kevin Gausman,Merrill Kelly,0,0,Scheduled
+2026-08-24,Pittsburgh Pirates,San Diego Padres,Braxton Ashcraft,Robbie Ray,0,0,Scheduled
+2026-08-24,Minnesota Twins,Athletics,Zebby Matthews,Jeffrey Springs,0,0,Scheduled
+2026-08-24,Philadelphia Phillies,Seattle Mariners,Zack Wheeler,Logan Gilbert,0,0,Scheduled
+2026-08-24,Cincinnati Reds,San Francisco Giants,Chase Burns,,0,0,Scheduled

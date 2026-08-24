@@ -1430,3 +1430,28 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-23,Colson Montgomery,CHW,824558,Nolan McLean,6,card,18.3,17.3,14.0,+446,390,-31.2,park +9%,71F · wind out 3,LvR +8%,heat -1%,no,0
 2026-08-23,Pete Alonso,BAL,824799,Nick Martinez,2,card,18.3,26.7,19.1,+446,390,-6.3,park +4% [low-conf],83F,RvR -3%,heat -2%,no,0
 2026-08-23,Samuel Basallo,BAL,824799,Nick Martinez,4,card,17.2,23.2,17.2,+480,420,-10.6,park +4% [low-conf],83F,LvR +8%,heat +12%,no,0
+2026-08-23,Shohei Ohtani,LAD,823909,Lake Bachar,1,card,24.6,30.6,21.2,+307,265,-22.6,park +5%,100F · wind out 4,LvR +8%,heat +1%,no,0
+2026-08-23,Max Muncy,ATH,824150,Cristian Javier,6,card,20.4,18.9,14.9,+391,340,-34.6,park +3%,98F (roof: half),LvR +8%,,hr,1
+2026-08-23,Max Muncy,LAD,823909,Lake Bachar,4,card,20.4,23.8,17.5,+391,340,-22.8,park +5%,100F · wind out 4,LvR +8%,,no,0
+2026-08-23,Fernando Tatis Jr.,SDP,823258,Bailey Ober,1,card,19.9,18.1,14.5,+402,350,-34.8,park -4%,89F · wind in 4,RvR -3%,heat -3%,hr,2
+2026-08-23,Ben Rice,NYY,823507,José Soriano,2,card,19.7,27.7,,+409,,,park +14%,79F · wind out 7,LvR +8%,heat -7%,no,0
+2026-08-23,Kenny Piper,TBR,824799,Shane Baz,4,card,19.7,27.8,,+408,,,park +4% [low-conf],83F · wind out 5,RvR -3%,,void,
+2026-08-23,Jo Adell,CLE,824315,Tomoyuki Sugano,3,card,19.1,21.0,16.0,+424,370,-24.7,park +9%,97F · wind in 6,RvR -3%,heat +7%,no,0
+2026-08-23,Eduardo Valencia,DET,824071,Daniel Lynch IV,4,card,18.9,26.4,,+428,,,park -4% [low-conf],82F · wind in 3,RvL +12%,,no,0
+2026-08-23,Junior Caminero,TBR,824799,Shane Baz,3,card,18.8,26.2,,+431,,,park +4% [low-conf],83F · wind out 5,RvR -3%,heat +0%,no,0
+2026-08-23,Byron Buxton,MIN,823258,Walker Buehler,2,card,18.3,25.8,18.6,+446,390,-8.7,park -4%,89F · wind in 4,RvR -3%,heat +4%,no,0
+2026-08-23,Cal Raleigh,SEA,823099,Shota Imanaga,4,card,18.3,18.9,14.9,+446,390,-27.1,park -4%,70F (roof: half),SvL +12%,heat -3%,no,0
+2026-08-23,Manny Machado,SDP,823258,Bailey Ober,3,card,18.3,20.1,15.5,+446,390,-24.0,park -4%,89F · wind in 4,RvR -3%,heat -0%,no,0
+2026-08-23,Justin Foscue,TEX,822856,Yusei Kikuchi,1,card,18.0,24.7,,+455,,,park +2%,108F (roof: half),RvL +12%,heat -1%,no,0
+2026-08-23,Jackson Merrill,SDP,823258,Bailey Ober,5,card,17.9,16.6,13.7,+457,400,-31.6,park -4%,89F · wind in 4,LvR +8%,,hr,1
+2026-08-23,Pete Crow-Armstrong,CHC,823099,Bryce Miller,1,card,17.9,26.2,18.8,+457,400,-6.0,park -4%,70F (roof: half),LvR +8%,heat +8%,hr,1
+2026-08-23,Brett Callahan,DET,824071,Daniel Lynch IV,6,card,17.2,23.2,,+481,,,park -4% [low-conf],82F · wind in 3,LvL -22%,,no,0
+2026-08-23,Matt Olson,ATL,823745,Shane Drohan,3,card,17.1,22.0,16.5,+485,425,-13.2,park avg [unknown],no wx,LvL -22%,heat -3%,no,0
+2026-08-23,Abimelec Ortiz,WSN,823827,Janson Junk,2,card,16.7,22.3,,+498,,,park -9%,84F (roof: half),LvR +8%,,no,0
+2026-08-23,Jordan Walker,STL,823421,Cristopher Sánchez *,3,card,16.6,22.2,,+501,,,park +9%,82F · wind out 4,RvL +12%,heat -3%,no,0
+2026-08-23,Julio Rodríguez,SEA,823099,Shota Imanaga,3,card,16.6,20.0,15.5,+502,440,-16.5,park -4%,70F (roof: half),RvL +12%,heat +7%,no,0
+2026-08-23,Corey Seager,TEX,822856,Yusei Kikuchi,2,card,16.3,21.4,,+515,,,park +2%,108F (roof: half),LvL -22%,heat +10%,no,0
+2026-08-23,Heriberto Hernández,MIA,823827,Jackson Kent,3,card,16.2,21.3,,+518,,,park -9%,84F (roof: half),RvL +12%,,no,0
+2026-08-23,Trent Grisham,NYY,823507,José Soriano,1,card,16.2,21.3,,+517,,,park +14%,79F · wind out 7,LvR +8%,heat -13%,hr,1
+2026-08-23,Miguel Vargas,CHW,824558,Nolan McLean,3,card,16.1,21.1,,+522,,,park +9%,76F · wind out 5,RvR -3%,heat +1%,no,0
+2026-08-23,Randy Arozarena,SEA,823099,Shota Imanaga,1,card,16.0,21.0,,+524,,,park -4%,70F (roof: half),RvL +12%,heat -1%,hr,1
