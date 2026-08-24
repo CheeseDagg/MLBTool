@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T14:09+00:00",
+ "generated": "2026-08-24T18:09+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -282,6 +282,46 @@
    ]
   },
   {
+   "pitcher": "Jos\u00e9 Urquidy",
+   "opp": "Texas Rangers",
+   "lam": 5.35,
+   "k9_regressed": 8.9,
+   "exp_ip": 5.3,
+   "opp_mult": 1.02,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6184,
+     "fair_over": -162,
+     "fair_under": 162
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.445,
+     "fair_over": 125,
+     "fair_under": -125
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2904,
+     "fair_over": 244,
+     "fair_under": -244
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1722,
+     "fair_over": 481,
+     "fair_under": -481
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0933,
+     "fair_over": 972,
+     "fair_under": -972
+    }
+   ]
+  },
+  {
    "pitcher": "Robbie Ray",
    "opp": "Pittsburgh Pirates",
    "lam": 5.04,
@@ -522,6 +562,46 @@
    ]
   },
   {
+   "pitcher": "Carson Whisenhunt",
+   "opp": "Cincinnati Reds",
+   "lam": 4.18,
+   "k9_regressed": 7.58,
+   "exp_ip": 4.57,
+   "opp_mult": 1.086,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4071,
+     "fair_over": 146,
+     "fair_under": -146
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2442,
+     "fair_over": 309,
+     "fair_under": -309
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1307,
+     "fair_over": 665,
+     "fair_under": -665
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0629,
+     "fair_over": 1491,
+     "fair_under": -1491
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0274,
+     "fair_over": 3555,
+     "fair_under": -3555
+    }
+   ]
+  },
+  {
    "pitcher": "Framber Valdez",
    "opp": "Tampa Bay Rays",
    "lam": 4.17,
@@ -722,8 +802,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 10389 (used 9611) \u00b7 whiff rest:30 rows",
- "n_markets": 18,
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 10367 (used 9633) \u00b7 whiff rest:30 rows",
+ "n_markets": 20,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -735,6 +815,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
