@@ -1455,3 +1455,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-23,Trent Grisham,NYY,823507,José Soriano,1,card,16.2,21.3,,+517,,,park +14%,79F · wind out 7,LvR +8%,heat -13%,hr,1
 2026-08-23,Miguel Vargas,CHW,824558,Nolan McLean,3,card,16.1,21.1,,+522,,,park +9%,76F · wind out 5,RvR -3%,heat +1%,no,0
 2026-08-23,Randy Arozarena,SEA,823099,Shota Imanaga,1,card,16.0,21.0,,+524,,,park -4%,70F (roof: half),RvL +12%,heat -1%,hr,1
+2026-08-24,Byron Buxton,MIN,824964,Jeffrey Springs,5,proj,30.9,28.3,20.0,+223,190,-42.0,park +6% [low-conf],90F · wind out 4,RvL +12%,heat +3%,no,0
+2026-08-24,Kyle Schwarber,PHI,823097,Logan Gilbert,2,proj,24.9,28.4,20.0,+301,260,-27.9,park -4%,74F (roof: half),LvR +8%,heat +4%,no,0
+2026-08-24,Munetaka Murakami,CHW,824557,Kumar Rocker,2,card,23.6,28.2,19.9,+324,280,-24.4,park +9%,72F,LvR +8%,heat +3%,no,0
+2026-08-24,Royce Lewis,MIN,824964,Jeffrey Springs,6,proj,23.0,17.9,14.3,+335,290,-44.1,park +6% [low-conf],90F · wind out 4,RvL +12%,heat +2%,no,0
+2026-08-24,Pete Crow-Armstrong,CHC,825041,Merrill Kelly,2,proj,22.1,25.6,18.5,+352,305,-25.1,park +4%,105F (roof: half),LvR +8%,heat -2%,no,0
+2026-08-24,Junior Caminero,TBR,824235,Framber Valdez,3,card,21.4,23.7,17.5,+368,320,-26.6,park -5%,76F · wind out 7,RvL +12%,heat +18%,no,0
+2026-08-24,Max Muncy,ATH,824964,Zebby Matthews,1,proj,21.4,31.0,,+367,,,park +6% [low-conf],90F · wind out 4,LvR +8%,heat -0%,no,0
+2026-08-24,Corey Seager,TEX,824557,José Urquidy,2,card,20.9,21.8,16.5,+379,330,-29.2,park +9%,72F,LvR +8%,heat +16%,no,0
+2026-08-24,Esmerlyn Valdez,PIT,823260,Robbie Ray,9,proj,19.9,12.9,10.0,+402,350,-54.9,park -4%,89F,RvL +12%,heat +2%,hr,1
+2026-08-24,Joc Pederson,TEX,824557,José Urquidy,1,card,19.9,25.0,18.2,+402,350,-18.1,park +9%,72F,LvR +8%,heat +15%,no,0
+2026-08-24,Ryan Jeffers,MIN,824964,Jeffrey Springs,9,proj,19.9,14.5,11.8,+402,350,-46.8,park +6% [low-conf],90F · wind out 4,RvL +12%,heat +2%,no,0
+2026-08-24,Zach Neto,LAA,823992,Parker Messick,1,proj,19.5,21.6,16.4,+413,360,-24.7,park +4%,95F · wind out 6,RvL +12%,heat +8%,no,0
+2026-08-24,Josh Bell,MIN,824964,Jeffrey Springs,1,proj,19.1,24.3,17.8,+424,370,-16.4,park +6% [low-conf],90F · wind out 4,SvL +12%,heat -3%,no,0
+2026-08-24,Kody Clemens,MIN,824964,Jeffrey Springs,4,proj,18.9,22.0,16.6,+430,375,-21.4,park +6% [low-conf],90F · wind out 4,LvL -22%,heat -7%,no,0
+2026-08-24,CJ Abrams,WSN,822695,Ryan Feltner,1,card,18.3,26.6,19.0,+446,390,-6.7,park avg,83F,LvR +8%,heat +3%,no,0
+2026-08-24,Cal Raleigh,SEA,823097,Zack Wheeler,5,proj,18.3,14.3,11.7,+446,390,-42.8,park -4%,74F (roof: half),SvR +8%,,hr,3
+2026-08-24,Colson Montgomery,CHW,824557,Kumar Rocker,6,card,18.3,18.6,14.7,+446,390,-27.7,park +9%,72F,LvR +8%,heat -5%,no,0
+2026-08-24,Mike Trout,LAA,823992,Parker Messick,2,proj,17.9,21.5,16.3,+457,400,-18.4,park +4%,95F · wind out 6,RvL +12%,heat +2%,no,0
+2026-08-24,Oneil Cruz,PIT,823260,Robbie Ray,6,proj,17.9,15.4,12.9,+457,400,-35.6,park -4%,89F,LvL -22%,heat +1%,no,0
+2026-08-24,Chase DeLauter,CLE,823992,George Klassen,4,proj,17.6,13.1,10.3,+469,410,-47.6,park +4%,95F · wind out 6,LvR +8%,heat +4%,void,
+2026-08-24,Wyatt Langford,TEX,824557,José Urquidy,3,card,17.1,16.9,13.8,+485,425,-27.5,park +9%,72F,RvR -3%,heat +8%,hr,1
+2026-08-24,Zack Gelof,ATH,824964,Zebby Matthews,6,proj,17.1,16.8,13.8,+485,425,-27.8,park +6% [low-conf],90F · wind out 4,RvR -3%,heat -6%,no,0
+2026-08-24,Corbin Carroll,ARI,825041,Kevin Gausman,1,proj,16.9,20.5,15.8,+491,430,-16.4,park +4%,105F (roof: half),LvR +8%,heat -7%,void,
+2026-08-24,Miguel Vargas,CHW,824557,Kumar Rocker,3,card,16.9,22.5,16.8,+491,430,-10.7,park +9%,72F,RvR -3%,heat -4%,no,0
+2026-08-24,Fernando Tatis Jr.,SDP,823260,Braxton Ashcraft,1,proj,16.6,17.8,14.3,+502,440,-22.9,park -4%,89F,RvR -3%,heat +3%,no,0
+2026-08-24,Bryce Harper,PHI,823097,Logan Gilbert,3,proj,16.3,19.9,15.4,+513,450,-15.2,park -4%,74F (roof: half),LvR +8%,heat +13%,no,0
+2026-08-24,Brooks Lee,MIN,824964,Jeffrey Springs,2,proj,15.6,22.0,16.6,+541,475,-4.7,park +6% [low-conf],90F · wind out 4,SvL +12%,heat +5%,no,0
+2026-08-24,Jackson Merrill,SDP,823260,Braxton Ashcraft,3,proj,15.6,17.9,14.3,+541,475,-17.6,park -4%,89F,LvR +8%,heat +4%,no,0
+2026-08-24,Lawrence Butler,ATH,824964,Zebby Matthews,2,proj,15.6,17.9,14.3,+541,475,-17.5,park +6% [low-conf],90F · wind out 4,LvR +8%,heat -9%,no,0
+2026-08-24,Manny Machado,SDP,823260,Braxton Ashcraft,2,proj,15.6,19.6,15.3,+541,475,-12.1,park -4%,89F,RvR -3%,heat +0%,no,0
