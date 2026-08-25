@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-25T18:07+00:00",
+ "generated": "2026-08-25T20:54+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -322,46 +322,6 @@
    ]
   },
   {
-   "pitcher": "Ian Seymour",
-   "opp": "Detroit Tigers",
-   "lam": 5.43,
-   "k9_regressed": 10.33,
-   "exp_ip": 4.7,
-   "opp_mult": 1.008,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6316,
-     "fair_over": -171,
-     "fair_under": 171
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4592,
-     "fair_over": 118,
-     "fair_under": -118
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3032,
-     "fair_over": 230,
-     "fair_under": -230
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1821,
-     "fair_over": 449,
-     "fair_under": -449
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0999,
-     "fair_over": 901,
-     "fair_under": -901
-    }
-   ]
-  },
-  {
    "pitcher": "Michael King",
    "opp": "Pittsburgh Pirates",
    "lam": 5.33,
@@ -398,6 +358,46 @@
      "p_over": 0.0916,
      "fair_over": 991,
      "fair_under": -991
+    }
+   ]
+  },
+  {
+   "pitcher": "Matthew Liberatore",
+   "opp": "Baltimore Orioles",
+   "lam": 5.24,
+   "k9_regressed": 8.91,
+   "exp_ip": 5.0,
+   "opp_mult": 1.058,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6003,
+     "fair_over": -150,
+     "fair_under": 150
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4258,
+     "fair_over": 135,
+     "fair_under": -135
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2735,
+     "fair_over": 266,
+     "fair_under": -266
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1595,
+     "fair_over": 527,
+     "fair_under": -527
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0848,
+     "fair_over": 1079,
+     "fair_under": -1079
     }
    ]
   },
@@ -1002,6 +1002,46 @@
    ]
   },
   {
+   "pitcher": "Tyler Phillips",
+   "opp": "Boston Red Sox",
+   "lam": 3.7,
+   "k9_regressed": 7.46,
+   "exp_ip": 4.57,
+   "opp_mult": 0.976,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3124,
+     "fair_over": 220,
+     "fair_under": -220
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1696,
+     "fair_over": 489,
+     "fair_under": -489
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0816,
+     "fair_over": 1125,
+     "fair_under": -1125
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0352,
+     "fair_over": 2745,
+     "fair_under": -2745
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0137,
+     "fair_over": 7219,
+     "fair_under": -7219
+    }
+   ]
+  },
+  {
    "pitcher": "Chris Bassitt",
    "opp": "St. Louis Cardinals",
    "lam": 3.52,
@@ -1080,10 +1120,50 @@
      "fair_under": -16309
     }
    ]
+  },
+  {
+   "pitcher": "Casey Legumina",
+   "opp": "Detroit Tigers",
+   "lam": 2.53,
+   "k9_regressed": 7.53,
+   "exp_ip": 3.0,
+   "opp_mult": 1.008,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1129,
+     "fair_over": 786,
+     "fair_under": -786
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0441,
+     "fair_over": 2169,
+     "fair_under": -2169
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.015,
+     "fair_over": 6547,
+     "fair_under": -6547
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0046,
+     "fair_over": 21856,
+     "fair_under": -21856
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0012,
+     "fair_over": 80736,
+     "fair_under": -80736
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10211 (used 9789) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10180 (used 9820) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
