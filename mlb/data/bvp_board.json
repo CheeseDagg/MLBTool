@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-25T17:44:22+00:00",
+ "generated": "2026-08-25T20:43:38+00:00",
  "date": "2026-08-25",
  "min_pa": 6,
  "rows": [
@@ -13,17 +13,6 @@
    "hr": 4,
    "avg": ".371",
    "slg": ".771"
-  },
-  {
-   "batter": "Randal Grichuk",
-   "team": "CWS",
-   "opp_sp": "Jacob deGrom",
-   "pa": 14,
-   "ab": 13,
-   "h": 5,
-   "hr": 2,
-   "avg": ".385",
-   "slg": "1.000"
   },
   {
    "batter": "Michael Conforto",
