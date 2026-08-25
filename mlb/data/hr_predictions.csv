@@ -1422,33 +1422,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-24,Jackson Merrill,SDP,823260,Braxton Ashcraft,3,proj,15.6,17.9,14.3,+541,475,-17.6,park -4%,89F,LvR +8%,heat +4%,1.2,
 2026-08-24,Lawrence Butler,ATH,824964,Zebby Matthews,2,proj,15.6,17.9,14.3,+541,475,-17.5,park +6% [low-conf],90F · wind out 4,LvR +8%,heat -9%,,new
 2026-08-24,Manny Machado,SDP,823260,Braxton Ashcraft,2,proj,15.6,19.6,15.3,+541,475,-12.1,park -4%,89F,RvR -3%,heat +0%,-0.3,
-2026-08-25,Yordan Alvarez,HOU,823505,Will Warren,1,proj,28.9,31.2,21.5,+246,210,-33.3,park +14%,71F · wind out 6,LvR +8%,heat +2%,0.8,
-2026-08-25,Shohei Ohtani,LAD,824881,Bryce Elder,1,proj,28.0,28.4,20.0,+257,220,-35.9,park +4%,77F,LvR +8%,heat +2%,-0.1,
-2026-08-25,Kyle Schwarber,PHI,823098,George Kirby,2,proj,27.2,27.0,19.3,+268,230,-36.4,park -4%,59F (roof: half),LvR +8%,heat +8%,-1.1,
-2026-08-25,Byron Buxton,MIN,824962,Gage Jump,5,proj,23.9,22.5,16.8,+318,275,-37.0,park +6% [low-conf],61F,RvL +12%,heat +9%,-2.0,floor
-2026-08-25,Ben Rice,NYY,823505,Ethan Pecko *,1,proj,22.1,29.6,20.7,+352,305,-16.3,park +14%,71F · wind out 6,LvR +8%,,0.6,
-2026-08-25,Rafael Devers,SFG,823181,Brady Singer,1,proj,21.4,22.1,16.6,+368,320,-30.2,park -14%,58F · wind out 6,LvR +8%,heat -1%,-0.8,
-2026-08-25,Trent Grisham,NYY,823505,Ethan Pecko *,3,proj,21.4,19.3,15.1,+368,320,-36.6,park +14%,71F · wind out 6,LvR +8%,,-1.7,
-2026-08-25,Cal Raleigh,SEA,823098,Aaron Nola,5,proj,20.9,17.2,14.0,+379,330,-40.0,park -4%,59F (roof: half),SvR +8%,heat -0%,2.6,
-2026-08-25,Carter Jensen,KCR,822773,Max Scherzer,3,proj,20.4,18.4,14.6,+391,340,-35.6,park +3% [low-conf],68F · wind in 5 (roof: half),LvR +8%,heat +2%,-2.0,floor
-2026-08-25,Max Muncy,ATH,824962,Taj Bradley,1,proj,20.4,27.1,19.3,+391,340,-15.0,park +6% [low-conf],61F,LvR +8%,heat +4%,3.9,STANDOUT
-2026-08-25,Munetaka Murakami,CHW,824556,Jacob deGrom,5,proj,20.4,22.8,17.0,+391,340,-25.2,park +9%,67F,LvR +8%,heat +3%,-3.0,floor
-2026-08-25,Junior Caminero,TBR,824233,Jackson Jobe,1,proj,19.9,26.7,19.1,+402,350,-14.2,park -5%,70F,RvR -3%,,0.5,
-2026-08-25,Matt Olson,ATL,824881,Tyler Glasnow,1,proj,19.9,29.0,20.4,+402,350,-8.4,park +4%,77F,LvR +8%,heat +12%,1.8,
-2026-08-25,Pete Crow-Armstrong,CHC,825042,Brandon Pfaadt,2,proj,19.9,24.4,17.8,+402,350,-19.7,park +4%,89F (roof: half),LvR +8%,heat +1%,0.3,
-2026-08-25,Royce Lewis,MIN,824962,Gage Jump,6,proj,19.1,13.8,11.1,+424,370,-48.0,park +6% [low-conf],61F,RvL +12%,,-2.6,floor
-2026-08-25,Jac Caglianone,KCR,822773,Max Scherzer,4,proj,18.9,21.6,16.4,+430,375,-22.3,park +3% [low-conf],68F · wind in 5 (roof: half),LvR +8%,heat +5%,-0.3,
-2026-08-25,Oneil Cruz,PIT,823259,Michael King,6,proj,18.9,15.7,13.2,+430,375,-37.5,park -4%,70F,LvR +8%,heat +7%,0.3,
-2026-08-25,Brandon Lowe,PIT,823259,Michael King,2,proj,18.3,20.9,16.0,+446,390,-21.8,park -4%,70F,LvR +8%,heat -4%,-0.5,
-2026-08-25,Colson Montgomery,CHW,824556,Jacob deGrom,3,proj,18.3,23.0,17.1,+446,390,-16.2,park +9%,67F,LvR +8%,heat -1%,2.3,
-2026-08-25,Miguel Vargas,CHW,824556,Jacob deGrom,1,proj,18.3,25.4,18.4,+446,390,-9.8,park +9%,67F,RvR -3%,heat -15%,1.6,
-2026-08-25,Pete Alonso,BAL,823016,TBD *,2,proj,18.3,22.2,16.7,+446,390,-18.3,park -7%,72F,,,-2.0,floor
-2026-08-25,Ryan Jeffers,MIN,824962,Gage Jump,9,proj,18.3,11.1,9.5,+446,390,-53.6,park +6% [low-conf],61F,RvL +12%,,-9.6,floor
-2026-08-25,Spencer Jones,NYY,823505,Ethan Pecko *,9,proj,18.3,10.7,9.3,+446,390,-54.3,park +14%,71F · wind out 6,LvR +8%,,,new
-2026-08-25,Bobby Witt Jr.,KCR,822773,Max Scherzer,2,proj,17.9,19.6,15.3,+457,400,-23.6,park +3% [low-conf],68F · wind in 5 (roof: half),RvR -3%,heat +5%,0.6,
-2026-08-25,Cody Bellinger,NYY,823505,Ethan Pecko *,4,proj,17.9,13.0,10.1,+457,400,-49.5,park +14%,71F · wind out 6,LvR +8%,,,new
-2026-08-25,Dominic Canzone,SEA,823098,Aaron Nola,6,proj,17.9,16.2,13.5,+457,400,-32.7,park -4%,59F (roof: half),LvR +8%,heat -6%,-3.5,floor
-2026-08-25,Jackson Chourio,MIL,823585,Zac Thornton,4,proj,17.9,16.7,13.7,+457,400,-31.6,park -4%,70F,RvL +12%,heat +17%,-2.1,floor
-2026-08-25,Jazz Chisholm Jr.,NYY,823505,Ethan Pecko *,2,proj,17.9,18.8,14.8,+457,400,-25.8,park +14%,71F · wind out 6,LvR +8%,,1.6,
-2026-08-25,Josh Bell,MIN,824962,Gage Jump,1,proj,17.9,19.5,15.2,+457,400,-23.9,park +6% [low-conf],61F,SvL +12%,heat +2%,-0.4,
-2026-08-25,Kody Clemens,MIN,824962,Gage Jump,4,proj,17.9,17.8,14.3,+457,400,-28.6,park +6% [low-conf],61F,LvL -22%,heat +2%,-1.6,
+2026-08-25,Yordan Alvarez,HOU,823505,Will Warren,1,proj,28.9,32.0,22.0,+246,210,-31.9,park +14%,78F · wind out 8,LvR +8%,heat +2%,1.3,
+2026-08-25,Kyle Schwarber,PHI,823098,George Kirby,2,proj,27.6,27.6,19.6,+262,225,-36.3,park -4%,70F (roof: half),LvR +8%,heat +8%,-0.8,
+2026-08-25,Shohei Ohtani,LAD,824881,Bryce Elder,1,proj,26.4,29.4,20.6,+279,240,-30.1,park +4%,88F,LvR +8%,heat +2%,0.6,
+2026-08-25,Byron Buxton,MIN,824962,Gage Jump,5,proj,25.6,23.8,17.5,+290,250,-38.6,park +6% [low-conf],79F,RvL +12%,heat +9%,-1.3,
+2026-08-25,Ben Rice,NYY,823505,Ethan Pecko *,1,proj,23.0,30.4,21.1,+335,290,-17.8,park +14%,78F · wind out 8,LvR +8%,,1.0,
+2026-08-25,Cal Raleigh,SEA,823098,Aaron Nola,5,proj,21.4,17.7,14.2,+368,320,-40.2,park -4%,70F (roof: half),SvR +8%,heat -0%,2.8,
+2026-08-25,Max Muncy,ATH,824962,Taj Bradley,1,proj,21.4,28.6,20.1,+368,320,-15.5,park +6% [low-conf],79F,LvR +8%,heat +4%,4.7,STANDOUT
+2026-08-25,Trent Grisham,NYY,823505,Ethan Pecko *,3,proj,21.1,19.9,15.4,+374,325,-34.5,park +14%,78F · wind out 8,LvR +8%,,-1.3,
+2026-08-25,Matt Olson,ATL,824881,Tyler Glasnow,1,proj,20.9,30.0,20.9,+379,330,-10.3,park +4%,88F,LvR +8%,heat +12%,2.3,
+2026-08-25,Munetaka Murakami,CHW,824556,Jacob deGrom,5,proj,20.9,23.0,17.1,+379,330,-26.4,park +9%,75F · wind in 5,LvR +8%,heat +3%,-2.9,floor
+2026-08-25,Rafael Devers,SFG,823181,Brady Singer,1,proj,20.6,22.5,16.8,+385,335,-26.7,park -14%,65F · wind out 5,LvR +8%,heat -1%,-0.6,
+2026-08-25,Bobby Witt Jr.,KCR,822773,Max Scherzer,2,proj,19.9,19.8,15.4,+402,350,-30.7,park +3% [low-conf],74F · wind in 4 (roof: half),RvR -3%,heat +5%,0.7,
+2026-08-25,Carter Jensen,KCR,822773,Max Scherzer,3,proj,19.9,18.6,14.7,+402,350,-33.7,park +3% [low-conf],74F · wind in 4 (roof: half),LvR +8%,heat +2%,-1.9,
+2026-08-25,Junior Caminero,TBR,824233,Jackson Jobe,1,proj,19.9,27.2,19.4,+402,350,-12.9,park -5%,79F,RvR -3%,,0.8,
+2026-08-25,Pete Crow-Armstrong,CHC,825042,Brandon Pfaadt,2,proj,19.9,25.0,18.2,+402,350,-18.2,park +4%,108F (roof: half),LvR +8%,heat +1%,0.7,
+2026-08-25,Royce Lewis,MIN,824962,Gage Jump,6,proj,19.9,14.7,12.1,+402,350,-45.6,park +6% [low-conf],79F,RvL +12%,,-1.6,
+2026-08-25,Colson Montgomery,CHW,824556,Jacob deGrom,3,proj,18.9,23.2,17.2,+430,375,-18.3,park +9%,75F · wind in 5,LvR +8%,heat -1%,2.4,
+2026-08-25,Miguel Vargas,CHW,824556,Jacob deGrom,1,proj,18.3,25.7,18.5,+446,390,-9.2,park +9%,75F · wind in 5,RvR -3%,heat -15%,1.8,
+2026-08-25,Pete Alonso,BAL,823016,TBD *,2,proj,18.3,23.2,17.2,+446,390,-15.6,park -7%,86F,,,-1.5,
+2026-08-25,Ryan Jeffers,MIN,824962,Gage Jump,9,proj,18.3,11.8,9.7,+446,390,-52.5,park +6% [low-conf],79F,RvL +12%,,-9.4,floor
+2026-08-25,Brandon Lowe,PIT,823259,Michael King,2,proj,17.9,22.1,16.6,+457,400,-17.0,park -4%,91F · wind in 3,LvR +8%,heat -4%,0.1,
+2026-08-25,Dominic Canzone,SEA,823098,Aaron Nola,6,proj,17.9,16.7,13.7,+457,400,-31.5,park -4%,70F (roof: half),LvR +8%,heat -6%,-3.3,floor
+2026-08-25,Jac Caglianone,KCR,822773,Max Scherzer,4,proj,17.9,21.9,16.5,+457,400,-17.5,park +3% [low-conf],74F · wind in 4 (roof: half),LvR +8%,heat +5%,-0.2,
+2026-08-25,Jackson Chourio,MIL,823585,Zac Thornton,4,proj,17.9,17.0,13.9,+457,400,-30.6,park -4%,77F,RvL +12%,heat +17%,-1.8,
+2026-08-25,Josh Bell,MIN,824962,Gage Jump,1,proj,17.9,20.6,15.8,+457,400,-20.9,park +6% [low-conf],79F,SvL +12%,heat +2%,0.2,
+2026-08-25,Kody Clemens,MIN,824962,Gage Jump,4,proj,17.9,18.7,14.8,+457,400,-26.0,park +6% [low-conf],79F,LvL -22%,heat +2%,-1.1,
+2026-08-25,Oneil Cruz,PIT,823259,Michael King,6,proj,17.9,16.7,13.7,+457,400,-31.5,park -4%,91F · wind in 3,LvR +8%,heat +7%,0.8,
+2026-08-25,Fernando Tatis Jr.,SDP,823259,Paul Skenes,1,proj,17.6,16.5,13.6,+469,410,-30.8,park -4%,91F · wind in 3,RvR -3%,heat +1%,0.1,
+2026-08-25,Kazuma Okamoto,TOR,822773,Seth Lugo,1,proj,17.6,24.9,18.1,+469,410,-7.7,park +3% [low-conf],74F · wind in 4 (roof: half),RvR -3%,heat +10%,1.6,
+2026-08-25,Spencer Jones,NYY,823505,Ethan Pecko *,9,proj,17.6,11.0,9.4,+469,410,-51.9,park +14%,78F · wind out 8,LvR +8%,,,new

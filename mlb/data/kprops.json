@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-25T14:09+00:00",
+ "generated": "2026-08-25T18:07+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -1082,8 +1082,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 10243 (used 9757) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 10211 (used 9789) \u00b7 whiff rest:30 rows",
+ "n_markets": 25,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1095,6 +1095,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
