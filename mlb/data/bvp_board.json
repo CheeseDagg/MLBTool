@@ -1,56 +1,89 @@
 {
- "generated": "2026-08-24T23:33:22+00:00",
- "date": "2026-08-24",
+ "generated": "2026-08-25T17:44:22+00:00",
+ "date": "2026-08-25",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Michael Busch",
+   "batter": "Salvador Perez",
+   "team": "KC",
+   "opp_sp": "Max Scherzer",
+   "pa": 36,
+   "ab": 35,
+   "h": 13,
+   "hr": 4,
+   "avg": ".371",
+   "slg": ".771"
+  },
+  {
+   "batter": "Randal Grichuk",
+   "team": "CWS",
+   "opp_sp": "Jacob deGrom",
+   "pa": 14,
+   "ab": 13,
+   "h": 5,
+   "hr": 2,
+   "avg": ".385",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Michael Conforto",
    "team": "CHC",
-   "opp_sp": "Merrill Kelly",
-   "pa": 10,
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 17,
+   "ab": 15,
+   "h": 3,
+   "hr": 2,
+   "avg": ".200",
+   "slg": ".600"
+  },
+  {
+   "batter": "Eugenio Su\u00e1rez",
+   "team": "CIN",
+   "opp_sp": "Adrian Houser",
+   "pa": 27,
+   "ab": 25,
+   "h": 7,
+   "hr": 2,
+   "avg": ".280",
+   "slg": ".560"
+  },
+  {
+   "batter": "Ram\u00f3n Ur\u00edas",
+   "team": "STL",
+   "opp_sp": "Chris Bassitt",
+   "pa": 9,
    "ab": 8,
    "h": 4,
    "hr": 1,
    "avg": ".500",
-   "slg": "1.250"
-  },
-  {
-   "batter": "Willson Contreras",
-   "team": "BOS",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 10,
-   "ab": 8,
-   "h": 3,
-   "hr": 1,
-   "avg": ".375",
    "slg": ".875"
   },
   {
-   "batter": "J.T. Realmuto",
-   "team": "PHI",
-   "opp_sp": "Logan Gilbert",
-   "pa": 6,
-   "ab": 6,
-   "h": 2,
+   "batter": "Tyler Stephenson",
+   "team": "CIN",
+   "opp_sp": "Adrian Houser",
+   "pa": 14,
+   "ab": 12,
+   "h": 4,
    "hr": 1,
    "avg": ".333",
-   "slg": ".833"
+   "slg": ".750"
   },
   {
-   "batter": "Corey Seager",
-   "team": "TEX",
-   "opp_sp": "Jos\u00e9 Urquidy",
+   "batter": "Bryan De La Cruz",
+   "team": "PHI",
+   "opp_sp": "George Kirby",
    "pa": 9,
    "ab": 9,
-   "h": 3,
+   "h": 2,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".778"
+   "avg": ".222",
+   "slg": ".667"
   },
   {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Logan Gilbert",
+   "batter": "Rafael Devers",
+   "team": "SF",
+   "opp_sp": "Brady Singer",
    "pa": 14,
    "ab": 14,
    "h": 4,
@@ -59,48 +92,59 @@
    "slg": ".571"
   },
   {
-   "batter": "Luis Arraez",
-   "team": "PHI",
-   "opp_sp": "Logan Gilbert",
-   "pa": 12,
+   "batter": "Max Muncy",
+   "team": "LAD",
+   "opp_sp": "Bryce Elder",
+   "pa": 14,
+   "ab": 14,
+   "h": 3,
+   "hr": 1,
+   "avg": ".214",
+   "slg": ".500"
+  },
+  {
+   "batter": "Shohei Ohtani",
+   "team": "LAD",
+   "opp_sp": "Bryce Elder",
+   "pa": 11,
+   "ab": 10,
+   "h": 2,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".500"
+  },
+  {
+   "batter": "Mookie Betts",
+   "team": "LAD",
+   "opp_sp": "Bryce Elder",
+   "pa": 14,
+   "ab": 11,
+   "h": 2,
+   "hr": 1,
+   "avg": ".182",
+   "slg": ".455"
+  },
+  {
+   "batter": "Brandon Lowe",
+   "team": "PIT",
+   "opp_sp": "Michael King",
+   "pa": 14,
    "ab": 12,
    "h": 2,
    "hr": 1,
    "avg": ".167",
-   "slg": ".500"
+   "slg": ".417"
   },
   {
-   "batter": "Trea Turner",
-   "team": "PHI",
-   "opp_sp": "Logan Gilbert",
-   "pa": 8,
-   "ab": 8,
+   "batter": "Jes\u00fas S\u00e1nchez",
+   "team": "TOR",
+   "opp_sp": "Seth Lugo",
+   "pa": 11,
+   "ab": 10,
    "h": 1,
    "hr": 1,
-   "avg": ".125",
-   "slg": ".500"
-  },
-  {
-   "batter": "Max Kepler",
-   "team": "AZ",
-   "opp_sp": "Kevin Gausman",
-   "pa": 16,
-   "ab": 15,
-   "h": 4,
-   "hr": 1,
-   "avg": ".267",
-   "slg": ".467"
-  },
-  {
-   "batter": "Nolan Arenado",
-   "team": "AZ",
-   "opp_sp": "Kevin Gausman",
-   "pa": 24,
-   "ab": 21,
-   "h": 3,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".286"
+   "avg": ".100",
+   "slg": ".400"
   }
  ]
 }
