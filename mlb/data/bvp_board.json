@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-26T19:17:44+00:00",
+ "generated": "2026-08-26T23:29:16+00:00",
  "date": "2026-08-26",
  "min_pa": 6,
  "rows": [
@@ -13,6 +13,105 @@
    "hr": 3,
    "avg": ".333",
    "slg": ".741"
+  },
+  {
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Jake Cronenworth",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Manny Machado",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Ty France",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Jackson Merrill",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Luis Rengifo",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Gavin Sheets",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Xander Bogaerts",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Freddy Fermin",
+   "team": "SD",
+   "opp_sp": "Bubba Chandler",
+   "pa": 18,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.000"
   },
   {
    "batter": "Randal Grichuk",
@@ -37,17 +136,6 @@
    "slg": ".889"
   },
   {
-   "batter": "Julio Rodr\u00edguez",
-   "team": "SEA",
-   "opp_sp": "Jes\u00fas Luzardo",
-   "pa": 8,
-   "ab": 7,
-   "h": 3,
-   "hr": 1,
-   "avg": ".429",
-   "slg": ".857"
-  },
-  {
    "batter": "Francisco Lindor",
    "team": "NYM",
    "opp_sp": "Dustin May",
@@ -59,15 +147,15 @@
    "slg": ".800"
   },
   {
-   "batter": "Matt McLain",
-   "team": "CIN",
-   "opp_sp": "Logan Webb",
-   "pa": 6,
-   "ab": 6,
-   "h": 1,
+   "batter": "Julio Rodr\u00edguez",
+   "team": "SEA",
+   "opp_sp": "Jes\u00fas Luzardo",
+   "pa": 11,
+   "ab": 10,
+   "h": 3,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
+   "avg": ".300",
+   "slg": ".600"
   },
   {
    "batter": "Patrick Wisdom",
