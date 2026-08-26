@@ -1,128 +1,84 @@
 {
- "generated": "2026-08-25T23:35:15+00:00",
- "date": "2026-08-25",
+ "generated": "2026-08-26T19:17:44+00:00",
+ "date": "2026-08-26",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Max Scherzer",
-   "pa": 36,
-   "ab": 35,
-   "h": 13,
-   "hr": 4,
-   "avg": ".371",
-   "slg": ".771"
-  },
-  {
-   "batter": "Michael Conforto",
+   "batter": "Alex Bregman",
    "team": "CHC",
-   "opp_sp": "Brandon Pfaadt",
-   "pa": 17,
-   "ab": 15,
-   "h": 3,
-   "hr": 2,
-   "avg": ".200",
-   "slg": ".600"
-  },
-  {
-   "batter": "Eugenio Su\u00e1rez",
-   "team": "CIN",
-   "opp_sp": "Adrian Houser",
-   "pa": 27,
-   "ab": 25,
-   "h": 7,
-   "hr": 2,
-   "avg": ".280",
-   "slg": ".560"
-  },
-  {
-   "batter": "Ram\u00f3n Ur\u00edas",
-   "team": "STL",
-   "opp_sp": "Chris Bassitt",
-   "pa": 9,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": ".875"
-  },
-  {
-   "batter": "Tyler Stephenson",
-   "team": "CIN",
-   "opp_sp": "Adrian Houser",
-   "pa": 14,
-   "ab": 12,
-   "h": 4,
-   "hr": 1,
+   "opp_sp": "Eduardo Rodriguez",
+   "pa": 31,
+   "ab": 27,
+   "h": 9,
+   "hr": 3,
    "avg": ".333",
-   "slg": ".750"
+   "slg": ".741"
   },
   {
-   "batter": "Rafael Devers",
-   "team": "SF",
-   "opp_sp": "Brady Singer",
-   "pa": 14,
-   "ab": 14,
+   "batter": "Randal Grichuk",
+   "team": "CWS",
+   "opp_sp": "MacKenzie Gore",
+   "pa": 10,
+   "ab": 9,
+   "h": 5,
+   "hr": 1,
+   "avg": ".556",
+   "slg": "1.111"
+  },
+  {
+   "batter": "Cody Bellinger",
+   "team": "NYY",
+   "opp_sp": "Peter Lambert",
+   "pa": 11,
+   "ab": 9,
    "h": 4,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".571"
+   "avg": ".444",
+   "slg": ".889"
   },
   {
-   "batter": "Max Muncy",
-   "team": "LAD",
-   "opp_sp": "Bryce Elder",
-   "pa": 14,
-   "ab": 14,
+   "batter": "Julio Rodr\u00edguez",
+   "team": "SEA",
+   "opp_sp": "Jes\u00fas Luzardo",
+   "pa": 8,
+   "ab": 7,
    "h": 3,
    "hr": 1,
-   "avg": ".214",
-   "slg": ".500"
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Shohei Ohtani",
-   "team": "LAD",
-   "opp_sp": "Bryce Elder",
-   "pa": 11,
-   "ab": 10,
-   "h": 2,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".500"
-  },
-  {
-   "batter": "Mookie Betts",
-   "team": "LAD",
-   "opp_sp": "Bryce Elder",
-   "pa": 14,
-   "ab": 11,
-   "h": 2,
-   "hr": 1,
-   "avg": ".182",
-   "slg": ".455"
-  },
-  {
-   "batter": "Brandon Lowe",
-   "team": "PIT",
-   "opp_sp": "Michael King",
-   "pa": 14,
-   "ab": 12,
-   "h": 2,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".417"
-  },
-  {
-   "batter": "Jes\u00fas S\u00e1nchez",
-   "team": "TOR",
-   "opp_sp": "Seth Lugo",
-   "pa": 11,
-   "ab": 10,
+   "batter": "Francisco Lindor",
+   "team": "NYM",
+   "opp_sp": "Dustin May",
+   "pa": 6,
+   "ab": 5,
    "h": 1,
    "hr": 1,
-   "avg": ".100",
-   "slg": ".400"
+   "avg": ".200",
+   "slg": ".800"
+  },
+  {
+   "batter": "Matt McLain",
+   "team": "CIN",
+   "opp_sp": "Logan Webb",
+   "pa": 6,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "Patrick Wisdom",
+   "team": "SEA",
+   "opp_sp": "Jes\u00fas Luzardo",
+   "pa": 14,
+   "ab": 13,
+   "h": 2,
+   "hr": 1,
+   "avg": ".154",
+   "slg": ".538"
   }
  ]
 }
