@@ -1516,3 +1516,8 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-25,Spencer Jones,NYY,823505,Ethan Pecko *,6,card,17.6,13.9,11.2,+469,410,-42.9,park +14%,80F · wind out 6,LvR +8%,,no,0
 2026-08-25,Brandon Lowe,PIT,823259,Michael King,2,proj,17.1,21.9,16.5,+485,425,-13.4,park -4%,90F · wind in 5,LvR +8%,heat -4%,no,0
 2026-08-26,Junior Caminero,TBR,824234,Troy Melton,1,proj,18.3,26.3,18.9,+446,390,-7.5,park -5%,71F · wind in 3,RvR -3%,heat -1%,no,0
+2026-08-26,Kyle Schwarber,PHI,823096,Bryan Woo,1,card,26.8,29.4,20.6,+274,235,-31.1,park -4%,66F (roof: half),LvR +8%,heat +3%,hr,1
+2026-08-26,Oneil Cruz,PIT,823255,Randy Vásquez *,5,card,20.9,18.6,14.7,+379,330,-36.6,park -4%,95F,LvR +8%,heat +8%,no,0
+2026-08-26,Brandon Lowe,PIT,823255,Randy Vásquez *,2,card,20.4,22.3,16.7,+391,340,-26.3,park -4%,95F,LvR +8%,heat +14%,no,0
+2026-08-26,Fernando Tatis Jr.,SDP,823255,Bubba Chandler,1,card,19.9,17.1,13.9,+402,350,-37.5,park -4%,95F,RvR -3%,heat +0%,no,0
+2026-08-26,Cal Raleigh,SEA,823096,Jesús Luzardo,4,card,18.3,16.8,13.7,+446,390,-32.7,park -4%,66F (roof: half),SvL +12%,,no,0
