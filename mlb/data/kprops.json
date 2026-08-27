@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-27T19:19+00:00",
+ "generated": "2026-08-27T22:32+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -291,33 +291,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5286,
+     "p_over": 0.5285,
      "fair_over": -112,
      "fair_under": 112
     },
     {
      "line": 5.5,
-     "p_over": 0.3537,
+     "p_over": 0.3535,
      "fair_over": 183,
      "fair_under": -183
     },
     {
      "line": 6.5,
-     "p_over": 0.2129,
+     "p_over": 0.2128,
      "fair_over": 370,
      "fair_under": -370
     },
     {
      "line": 7.5,
-     "p_over": 0.1159,
+     "p_over": 0.1158,
      "fair_over": 763,
      "fair_under": -763
     },
     {
      "line": 8.5,
-     "p_over": 0.0574,
-     "fair_over": 1643,
-     "fair_under": -1643
+     "p_over": 0.0573,
+     "fair_over": 1644,
+     "fair_under": -1644
     }
    ]
   },
@@ -404,40 +404,40 @@
   {
    "pitcher": "Trevor Rogers",
    "opp": "St. Louis Cardinals",
-   "lam": 4.69,
-   "k9_regressed": 8.06,
-   "exp_ip": 5.47,
-   "opp_mult": 0.958,
+   "lam": 4.73,
+   "k9_regressed": 8.05,
+   "exp_ip": 5.51,
+   "opp_mult": 0.96,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5035,
-     "fair_over": -101,
-     "fair_under": 101
+     "p_over": 0.5102,
+     "fair_over": -104,
+     "fair_under": 104
     },
     {
      "line": 5.5,
-     "p_over": 0.3298,
-     "fair_over": 203,
-     "fair_under": -203
+     "p_over": 0.3361,
+     "fair_over": 198,
+     "fair_under": -198
     },
     {
      "line": 6.5,
-     "p_over": 0.194,
-     "fair_over": 415,
-     "fair_under": -415
+     "p_over": 0.199,
+     "fair_over": 403,
+     "fair_under": -403
     },
     {
      "line": 7.5,
-     "p_over": 0.103,
-     "fair_over": 870,
-     "fair_under": -870
+     "p_over": 0.1064,
+     "fair_over": 840,
+     "fair_under": -840
     },
     {
      "line": 8.5,
-     "p_over": 0.0497,
-     "fair_over": 1912,
-     "fair_under": -1912
+     "p_over": 0.0517,
+     "fair_over": 1835,
+     "fair_under": -1835
     }
    ]
   },
@@ -451,33 +451,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4136,
+     "p_over": 0.4135,
      "fair_over": 142,
      "fair_under": -142
     },
     {
      "line": 5.5,
-     "p_over": 0.2498,
-     "fair_over": 300,
-     "fair_under": -300
+     "p_over": 0.2496,
+     "fair_over": 301,
+     "fair_under": -301
     },
     {
      "line": 6.5,
-     "p_over": 0.1346,
-     "fair_over": 643,
-     "fair_under": -643
+     "p_over": 0.1345,
+     "fair_over": 644,
+     "fair_under": -644
     },
     {
      "line": 7.5,
-     "p_over": 0.0652,
-     "fair_over": 1434,
-     "fair_under": -1434
+     "p_over": 0.0651,
+     "fair_over": 1436,
+     "fair_under": -1436
     },
     {
      "line": 8.5,
      "p_over": 0.0286,
-     "fair_over": 3399,
-     "fair_under": -3399
+     "fair_over": 3403,
+     "fair_under": -3403
     }
    ]
   },
@@ -527,42 +527,42 @@
    "lam": 2.36,
    "k9_regressed": 6.7,
    "exp_ip": 3.0,
-   "opp_mult": 1.059,
+   "opp_mult": 1.058,
    "lines": [
     {
      "line": 4.5,
      "p_over": 0.0914,
-     "fair_over": 994,
-     "fair_under": -994
+     "fair_over": 995,
+     "fair_under": -995
     },
     {
      "line": 5.5,
-     "p_over": 0.0336,
-     "fair_over": 2880,
-     "fair_under": -2880
+     "p_over": 0.0335,
+     "fair_over": 2883,
+     "fair_under": -2883
     },
     {
      "line": 6.5,
-     "p_over": 0.0108,
-     "fair_over": 9197,
-     "fair_under": -9197
+     "p_over": 0.0107,
+     "fair_over": 9211,
+     "fair_under": -9211
     },
     {
      "line": 7.5,
-     "p_over": 0.0031,
-     "fair_over": 32650,
-     "fair_under": -32650
+     "p_over": 0.003,
+     "fair_over": 32709,
+     "fair_under": -32709
     },
     {
      "line": 8.5,
      "p_over": 0.0008,
-     "fair_over": 128591,
-     "fair_under": -128591
+     "fair_over": 128863,
+     "fair_under": -128863
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 9998 (used 10002) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 9986 (used 10014) \u00b7 whiff rest:30 rows",
  "n_markets": 9,
  "n_plays": 0,
  "plays": [],
@@ -575,6 +575,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 0,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
