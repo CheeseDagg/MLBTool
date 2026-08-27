@@ -1521,3 +1521,30 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-26,Brandon Lowe,PIT,823255,Randy Vásquez *,2,card,20.4,22.3,16.7,+391,340,-26.3,park -4%,95F,LvR +8%,heat +14%,no,0
 2026-08-26,Fernando Tatis Jr.,SDP,823255,Bubba Chandler,1,card,19.9,17.1,13.9,+402,350,-37.5,park -4%,95F,RvR -3%,heat +0%,no,0
 2026-08-26,Cal Raleigh,SEA,823096,Jesús Luzardo,4,card,18.3,16.8,13.7,+446,390,-32.7,park -4%,66F (roof: half),SvL +12%,,no,0
+2026-08-26,Miguel Vargas,CHW,824555,MacKenzie Gore,1,card,22.1,26.0,18.7,+352,305,-24.2,park +9%,74F · wind in 4,RvL +12%,heat +8%,no,0
+2026-08-26,Kody Clemens,MIN,824963,J.T. Ginn,5,card,21.9,20.5,15.7,+357,310,-35.5,park +6% [low-conf],96F,LvR +8%,heat -6%,no,0
+2026-08-26,Yordan Alvarez,HOU,823506,Elmer Rodríguez *,2,card,21.4,28.8,20.2,+368,320,-15.1,park +14%,76F,LvR +8%,heat +6%,no,0
+2026-08-26,Corey Seager,TEX,824555,Sean Burke,2,card,21.1,21.8,16.5,+374,325,-30.0,park +9%,74F · wind in 4,LvR +8%,heat +8%,no,0
+2026-08-26,Munetaka Murakami,CHW,824555,MacKenzie Gore,2,card,20.9,25.3,18.4,+379,330,-21.0,park +9%,74F · wind in 4,LvL -22%,heat +7%,no,0
+2026-08-26,Shohei Ohtani,LAD,824878,AJ Smith-Shawver,1,card,20.6,25.5,18.4,+385,335,-19.8,park +4%,83F · wind in 5,LvR +8%,,no,0
+2026-08-26,Luis García Jr.,NYY,823506,Peter Lambert,3,card,20.4,19.5,15.2,+391,340,-33.0,park +14%,76F,LvR +8%,heat +0%,hr,1
+2026-08-26,Randal Grichuk,CHW,824555,MacKenzie Gore,3,card,19.9,22.8,17.0,+402,350,-23.6,park +9%,74F · wind in 4,RvL +12%,heat -4%,no,0
+2026-08-26,Royce Lewis,MIN,824963,J.T. Ginn,6,card,19.9,15.4,12.9,+402,350,-41.9,park +6% [low-conf],96F,RvR -3%,,no,0
+2026-08-26,Ben Rice,NYY,823506,Peter Lambert,2,card,19.1,26.7,,+423,,,park +14%,76F,LvR +8%,heat +3%,hr,1
+2026-08-26,Matt Olson,ATL,824878,Roki Sasaki,3,card,19.1,26.6,,+425,,,park +4%,83F · wind in 5,LvR +8%,heat -8%,hr,1
+2026-08-26,Pete Alonso,BAL,823015,Michael McGreevy,2,card,19.1,24.2,17.8,+424,370,-16.5,park -7%,90F,RvR -3%,heat +2%,hr,1
+2026-08-26,Wyatt Langford,TEX,824555,Sean Burke,3,card,18.9,17.5,14.1,+430,375,-32.9,park +9%,74F · wind in 4,RvR -3%,heat +0%,no,0
+2026-08-26,Brandon Nimmo,TEX,824555,Sean Burke,4,card,18.3,13.3,10.5,+446,390,-48.5,park +9%,74F · wind in 4,LvR +8%,,no,0
+2026-08-26,Pete Crow-Armstrong,CHC,825039,Eduardo Rodriguez *,1,card,18.0,24.7,,+456,,,park +4%,114F (roof: half),LvL -22%,heat +7%,no,0
+2026-08-26,Josh Bell,MIN,824963,J.T. Ginn,3,card,17.6,19.3,15.1,+469,410,-22.9,park +6% [low-conf],96F,SvR +8%,heat -5%,no,0
+2026-08-26,Trent Grisham,NYY,823506,Peter Lambert,1,card,17.1,21.1,16.1,+485,425,-15.6,park +14%,76F,LvR +8%,heat -10%,no,0
+2026-08-26,Zack Gelof,ATH,824963,Connor Prielipp,2,card,17.1,22.0,16.5,+485,425,-13.1,park +6% [low-conf],96F,RvL +12%,heat +0%,no,0
+2026-08-26,Joc Pederson,TEX,824555,Sean Burke,1,card,16.3,25.3,18.3,+513,450,0.8,park +9%,74F · wind in 4,LvR +8%,heat +5%,hr,1
+2026-08-26,Mike Trout,LAA,823988,Joey Cantillo,2,card,16.3,21.5,,+513,,,park +4%,95F · wind out 5,RvL +12%,heat +11%,no,0
+2026-08-26,Zach Neto,LAA,823988,Joey Cantillo,1,card,16.2,21.4,,+515,,,park +4%,95F · wind out 5,RvL +12%,heat +10%,no,0
+2026-08-26,Rafael Devers,SFG,823180,Nick Lodolo,2,card,16.1,21.2,,+521,,,park -14%,73F · wind out 14,LvL -22%,heat -6%,hr,1
+2026-08-26,Seiya Suzuki,CHC,825039,Eduardo Rodriguez *,2,card,15.9,20.8,,+527,,,park +4%,114F (roof: half),RvL +12%,heat -8%,no,0
+2026-08-26,Samuel Basallo,BAL,823015,Michael McGreevy,4,card,15.6,19.1,15.0,+541,475,-13.8,park -7%,90F,LvR +8%,heat +2%,no,0
+2026-08-26,Austin Riley,ATL,824878,Roki Sasaki,8,card,14.9,10.8,9.4,+569,500,-43.8,park +4%,83F · wind in 5,RvR -3%,,no,0
+2026-08-26,Brooks Lee,MIN,824963,J.T. Ginn,2,card,14.9,20.0,15.5,+569,500,-7.0,park +6% [low-conf],96F,SvR +8%,heat -8%,hr,1
+2026-08-26,Christian Encarnacion-Strand,BAL,823015,Michael McGreevy,5,card,14.9,18.4,14.6,+569,500,-12.2,park -7%,90F,RvR -3%,heat -3%,no,0

@@ -2380,12 +2380,19 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-26,Cleveland Guardians,Los Angeles Angels,Joey Cantillo,Grayson Rodriguez,4,3,Final
 2026-08-26,Pittsburgh Pirates,San Diego Padres,Bubba Chandler,Randy Vásquez,0,3,Final
 2026-08-26,Philadelphia Phillies,Seattle Mariners,Jesús Luzardo,Bryan Woo,6,0,Final
-2026-08-26,Boston Red Sox,Miami Marlins,Sonny Gray,Ryan Gusto,0,2,In Progress
-2026-08-26,Colorado Rockies,Washington Nationals,Tanner Gordon,Matt Waldron,0,1,In Progress
-2026-08-26,Houston Astros,New York Yankees,Peter Lambert,Elmer Rodríguez,1,2,In Progress
-2026-08-26,Kansas City Royals,Toronto Blue Jays,Randy Dobnak,Spencer Miles,0,0,In Progress
-2026-08-26,Milwaukee Brewers,New York Mets,Dustin May,Robert Stock,1,0,In Progress
-2026-08-26,Los Angeles Dodgers,Atlanta Braves,Roki Sasaki,AJ Smith-Shawver,0,1,In Progress
-2026-08-26,Texas Rangers,Chicago White Sox,MacKenzie Gore,Sean Burke,0,0,Warmup
-2026-08-26,Baltimore Orioles,St. Louis Cardinals,Kyle Bradish,Michael McGreevy,0,0,Warmup
-2026-08-26,Minnesota Twins,Athletics,Connor Prielipp,J.T. Ginn,0,0,Pre-Game
+2026-08-26,Boston Red Sox,Miami Marlins,Sonny Gray,Ryan Gusto,0,4,Final
+2026-08-26,Colorado Rockies,Washington Nationals,Tanner Gordon,Matt Waldron,13,1,Final
+2026-08-26,Houston Astros,New York Yankees,Peter Lambert,Elmer Rodríguez,3,9,Final
+2026-08-26,Kansas City Royals,Toronto Blue Jays,Randy Dobnak,Spencer Miles,0,3,Final
+2026-08-26,Milwaukee Brewers,New York Mets,Dustin May,Robert Stock,8,1,Final
+2026-08-26,Los Angeles Dodgers,Atlanta Braves,Roki Sasaki,AJ Smith-Shawver,5,6,Final
+2026-08-26,Texas Rangers,Chicago White Sox,MacKenzie Gore,Sean Burke,4,10,Final
+2026-08-26,Baltimore Orioles,St. Louis Cardinals,Kyle Bradish,Michael McGreevy,8,7,Final
+2026-08-26,Minnesota Twins,Athletics,Connor Prielipp,J.T. Ginn,4,7,Final
+2026-08-27,Colorado Rockies,Washington Nationals,Gabriel Hughes,Jake Irvin,1,4,In Progress
+2026-08-27,Baltimore Orioles,St. Louis Cardinals,Trevor Rogers,Gordon Graceffo,0,3,In Progress
+2026-08-27,Houston Astros,New York Yankees,Hayden Wesneski,Gerrit Cole,0,0,Scheduled
+2026-08-27,Kansas City Royals,Toronto Blue Jays,Noah Cameron,Spencer Arrighetti,0,0,Scheduled
+2026-08-27,Milwaukee Brewers,New York Mets,Jacob Misiorowski,Sean Manaea,0,0,Scheduled
+2026-08-27,Los Angeles Dodgers,Atlanta Braves,Yoshinobu Yamamoto,Chris Sale,0,0,Pre-Game
+2026-08-27,Arizona Diamondbacks,San Francisco Giants,Jose Cabrera,Landen Roupp,0,0,Scheduled
