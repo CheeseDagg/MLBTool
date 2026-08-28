@@ -1557,3 +1557,26 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-27,Jake McCarthy,COL,822694,Jake Irvin,1,card,14.4,17.9,,+596,,,park avg,87F · wind out 6,LvR +8%,heat +14%,no,0
 2026-08-27,Matt Olson,ATL,824879,Yoshinobu Yamamoto,3,card,17.6,25.3,18.3,+469,410,-6.5,park +4%,84F,LvR +8%,heat -1%,no,0
 2026-08-27,Shohei Ohtani,LAD,824879,Chris Sale,1,card,17.1,23.2,17.2,+485,425,-9.6,park +4%,84F,LvL -22%,heat +9%,no,0
+2026-08-27,Yordan Alvarez,HOU,823503,Gerrit Cole,2,card,26.4,28.9,20.3,+279,240,-31.0,park +14%,74F · wind out 4,LvR +8%,heat +8%,no,0
+2026-08-27,Ben Rice,NYY,823503,Hayden Wesneski,2,card,23.6,28.7,20.2,+324,280,-23.3,park +14%,74F · wind out 4,LvR +8%,heat +1%,no,0
+2026-08-27,Trent Grisham,NYY,823503,Hayden Wesneski,1,card,21.4,22.3,16.7,+368,320,-29.7,park +14%,74F · wind out 4,LvR +8%,heat -7%,no,0
+2026-08-27,Luis García Jr.,NYY,823503,Hayden Wesneski,3,card,20.4,20.7,15.9,+391,340,-30.2,park +14%,74F · wind out 4,LvR +8%,heat +7%,no,0
+2026-08-27,Bobby Witt Jr.,KCR,822771,Spencer Arrighetti,2,card,18.3,17.6,14.2,+446,390,-30.4,park +3% [low-conf],74F · wind in 4 (roof: half),RvR -3%,heat -3%,no,0
+2026-08-27,Jackson Chourio,MIL,823581,Sean Manaea,1,card,18.3,22.0,16.6,+446,390,-18.7,park -4%,73F · wind out 7,RvL +12%,heat +15%,hr,2
+2026-08-27,Jazz Chisholm Jr.,NYY,823503,Hayden Wesneski,7,card,18.3,13.2,10.3,+446,390,-49.4,park +14%,74F · wind out 4,LvR +8%,heat -1%,no,0
+2026-08-27,Spencer Jones,NYY,823503,Hayden Wesneski,6,card,18.3,13.8,11.0,+446,390,-46.0,park +14%,74F · wind out 4,LvR +8%,heat -2%,no,0
+2026-08-27,Gary Sánchez,MIL,823581,Sean Manaea,5,card,17.9,16.5,13.6,+457,400,-32.0,park -4%,73F · wind out 7,RvL +12%,heat +9%,no,0
+2026-08-27,Jac Caglianone,KCR,822771,Spencer Arrighetti,3,card,17.9,21.0,16.0,+457,400,-19.9,park +3% [low-conf],74F · wind in 4 (roof: half),LvR +8%,heat -3%,hr,1
+2026-08-27,Kazuma Okamoto,TOR,822771,Noah Cameron,5,card,17.6,18.5,14.7,+469,410,-25.3,park +3% [low-conf],74F · wind in 4 (roof: half),RvL +12%,heat +1%,no,0
+2026-08-27,Rafael Devers,SFG,823179,Jose Cabrera,2,card,17.2,22.1,16.6,+480,420,-13.6,park -14%,73F · wind out 14,LvR +8%,,no,0
+2026-08-27,Cody Bellinger,NYY,823503,Hayden Wesneski,4,card,17.1,13.9,11.2,+485,425,-41.3,park +14%,74F · wind out 4,LvR +8%,heat -1%,no,0
+2026-08-27,William Contreras,MIL,823581,Sean Manaea,3,card,17.1,13.5,10.7,+485,425,-43.8,park -4%,73F · wind out 7,RvL +12%,heat +11%,no,0
+2026-08-27,Carter Jensen,KCR,822771,Spencer Arrighetti,1,card,16.6,19.2,15.0,+502,440,-18.8,park +3% [low-conf],74F · wind in 4 (roof: half),LvR +8%,heat -9%,hr,1
+2026-08-27,Christian Walker,HOU,823503,Gerrit Cole,6,card,16.6,15.6,13.1,+502,440,-29.5,park +14%,74F · wind out 4,RvR -3%,heat +11%,hr,1
+2026-08-27,Daulton Varsho,HOU,823503,Gerrit Cole,5,card,15.6,10.6,9.3,+541,475,-46.6,park +14%,74F · wind out 4,LvR +8%,,no,0
+2026-08-27,Andrew Vaughn,MIL,823581,Sean Manaea,4,card,14.9,11.0,9.4,+569,500,-43.4,park -4%,73F · wind out 7,RvL +12%,,no,0
+2026-08-27,Francisco Lindor,NYM,823581,Jacob Misiorowski,2,card,14.9,17.8,14.3,+569,500,-14.1,park -4%,73F · wind out 7,SvR +8%,heat +9%,no,0
+2026-08-27,Salvador Perez,KCR,822771,Spencer Arrighetti,5,card,14.9,14.5,11.9,+569,500,-28.6,park +3% [low-conf],74F · wind in 4 (roof: half),RvR -3%,heat +5%,no,0
+2026-08-27,Austin Wells,NYY,823503,Hayden Wesneski,8,card,14.3,9.9,8.7,+597,525,-45.8,park +14%,74F · wind out 4,LvR +8%,,no,0
+2026-08-27,Corbin Carroll,ARI,823179,Landen Roupp,2,card,14.3,15.8,13.2,+597,525,-17.4,park -14%,73F · wind out 14,LvR +8%,heat -7%,void,
+2026-08-27,Vinnie Pasquantino,KCR,822771,Spencer Arrighetti,4,card,14.3,12.7,10.0,+597,525,-37.7,park +3% [low-conf],74F · wind in 4 (roof: half),LvR +8%,heat -4%,hr,1

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-28T01:53+00:00",
+ "generated": "2026-08-28T04:28+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -282,46 +282,6 @@
    ]
   },
   {
-   "pitcher": "Hunter Brown",
-   "opp": "New York Mets",
-   "lam": 5.38,
-   "k9_regressed": 9.01,
-   "exp_ip": 5.31,
-   "opp_mult": 1.011,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.6227,
-     "fair_over": -165,
-     "fair_under": 165
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4496,
-     "fair_over": 122,
-     "fair_under": -122
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2945,
-     "fair_over": 240,
-     "fair_under": -240
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1754,
-     "fair_over": 470,
-     "fair_under": -470
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0954,
-     "fair_over": 949,
-     "fair_under": -949
-    }
-   ]
-  },
-  {
    "pitcher": "Christian Scott",
    "opp": "Houston Astros",
    "lam": 5.38,
@@ -358,6 +318,46 @@
      "p_over": 0.096,
      "fair_over": 941,
      "fair_under": -941
+    }
+   ]
+  },
+  {
+   "pitcher": "Hunter Brown",
+   "opp": "New York Mets",
+   "lam": 5.37,
+   "k9_regressed": 9.01,
+   "exp_ip": 5.31,
+   "opp_mult": 1.011,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6223,
+     "fair_over": -165,
+     "fair_under": 165
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4492,
+     "fair_over": 123,
+     "fair_under": -123
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2941,
+     "fair_over": 240,
+     "fair_under": -240
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1751,
+     "fair_over": 471,
+     "fair_under": -471
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0952,
+     "fair_over": 951,
+     "fair_under": -951
     }
    ]
   },
@@ -882,6 +882,46 @@
    ]
   },
   {
+   "pitcher": "Cody Bradford",
+   "opp": "Milwaukee Brewers",
+   "lam": 4.23,
+   "k9_regressed": 7.51,
+   "exp_ip": 5.17,
+   "opp_mult": 0.98,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4151,
+     "fair_over": 141,
+     "fair_under": -141
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.251,
+     "fair_over": 298,
+     "fair_under": -298
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1355,
+     "fair_over": 638,
+     "fair_under": -638
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0657,
+     "fair_over": 1422,
+     "fair_under": -1422
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0289,
+     "fair_over": 3365,
+     "fair_under": -3365
+    }
+   ]
+  },
+  {
    "pitcher": "Blade Tidwell",
    "opp": "Arizona Diamondbacks",
    "lam": 4.23,
@@ -891,15 +931,15 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4166,
+     "p_over": 0.4165,
      "fair_over": 140,
      "fair_under": -140
     },
     {
      "line": 5.5,
      "p_over": 0.2522,
-     "fair_over": 296,
-     "fair_under": -296
+     "fair_over": 297,
+     "fair_under": -297
     },
     {
      "line": 6.5,
@@ -916,48 +956,8 @@
     {
      "line": 8.5,
      "p_over": 0.0291,
-     "fair_over": 3332,
-     "fair_under": -3332
-    }
-   ]
-  },
-  {
-   "pitcher": "Cody Bradford",
-   "opp": "Milwaukee Brewers",
-   "lam": 4.22,
-   "k9_regressed": 7.51,
-   "exp_ip": 5.17,
-   "opp_mult": 0.98,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4148,
-     "fair_over": 141,
-     "fair_under": -141
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2507,
-     "fair_over": 299,
-     "fair_under": -299
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1353,
-     "fair_over": 639,
-     "fair_under": -639
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0656,
-     "fair_over": 1425,
-     "fair_under": -1425
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0288,
-     "fair_over": 3373,
-     "fair_under": -3373
+     "fair_over": 3334,
+     "fair_under": -3334
     }
    ]
   },
@@ -1082,8 +1082,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 9968 (used 10032) \u00b7 whiff rest:30 rows",
- "n_markets": 0,
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 9948 (used 10052) \u00b7 whiff rest:30 rows",
+ "n_markets": 20,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1095,6 +1095,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 0,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
