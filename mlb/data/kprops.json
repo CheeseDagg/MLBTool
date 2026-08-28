@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-28T20:27+00:00",
+ "generated": "2026-08-28T22:35+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -404,40 +404,40 @@
   {
    "pitcher": "David Peterson",
    "opp": "Cincinnati Reds",
-   "lam": 4.94,
+   "lam": 4.95,
    "k9_regressed": 8.1,
    "exp_ip": 5.07,
-   "opp_mult": 1.083,
+   "opp_mult": 1.084,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5494,
+     "p_over": 0.55,
      "fair_over": -122,
      "fair_under": 122
     },
     {
      "line": 5.5,
-     "p_over": 0.374,
+     "p_over": 0.3746,
      "fair_over": 167,
      "fair_under": -167
     },
     {
      "line": 6.5,
-     "p_over": 0.2295,
-     "fair_over": 336,
-     "fair_under": -336
+     "p_over": 0.23,
+     "fair_over": 335,
+     "fair_under": -335
     },
     {
      "line": 7.5,
-     "p_over": 0.1275,
-     "fair_over": 685,
-     "fair_under": -685
+     "p_over": 0.1278,
+     "fair_over": 682,
+     "fair_under": -682
     },
     {
      "line": 8.5,
-     "p_over": 0.0644,
-     "fair_over": 1452,
-     "fair_under": -1452
+     "p_over": 0.0646,
+     "fair_over": 1447,
+     "fair_under": -1447
     }
    ]
   },
@@ -1044,40 +1044,40 @@
   {
    "pitcher": "Rhett Lowder",
    "opp": "Chicago Cubs",
-   "lam": 4.08,
+   "lam": 4.07,
    "k9_regressed": 7.44,
    "exp_ip": 5.0,
-   "opp_mult": 0.987,
+   "opp_mult": 0.986,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3863,
+     "p_over": 0.3855,
      "fair_over": 159,
      "fair_under": -159
     },
     {
      "line": 5.5,
-     "p_over": 0.2271,
-     "fair_over": 340,
-     "fair_under": -340
+     "p_over": 0.2264,
+     "fair_over": 342,
+     "fair_under": -342
     },
     {
      "line": 6.5,
-     "p_over": 0.1189,
-     "fair_over": 741,
-     "fair_under": -741
+     "p_over": 0.1185,
+     "fair_over": 744,
+     "fair_under": -744
     },
     {
      "line": 7.5,
-     "p_over": 0.0559,
-     "fair_over": 1690,
-     "fair_under": -1690
+     "p_over": 0.0556,
+     "fair_over": 1698,
+     "fair_under": -1698
     },
     {
      "line": 8.5,
-     "p_over": 0.0238,
-     "fair_over": 4109,
-     "fair_under": -4109
+     "p_over": 0.0236,
+     "fair_over": 4132,
+     "fair_under": -4132
     }
    ]
   },
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 9906 (used 10094) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 9876 (used 10124) \u00b7 whiff rest:30 rows",
  "n_markets": 28,
  "n_plays": 0,
  "plays": [],
