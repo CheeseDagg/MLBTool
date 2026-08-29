@@ -1600,3 +1600,13 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-28,Fernando Tatis Jr.,SDP,822935,Shane McClanahan,1,card,17.9,18.4,14.6,+457,400,-26.9,park -4% [low-conf],dome,RvL +12%,heat +10%,no,0
 2026-08-28,Wilyer Abreu,BOS,823504,Cam Schlittler,3,card,17.9,18.3,14.6,+457,400,-27.1,park +14%,no wx,LvR +8%,heat +8%,no,0
 2026-08-28,Jo Adell,CLE,824396,Michael Wacha,4,card,17.6,15.9,13.3,+469,410,-32.3,park -3%,73F · wind in 4,RvR -3%,,no,0
+2026-08-28,Pete Alonso,BAL,824960,Jacob Lopez,2,card,27.6,28.8,20.2,+262,225,-34.3,park +6% [low-conf],78F · wind out 4,RvL +12%,heat +9%,no,0
+2026-08-28,Kyle Schwarber,PHI,823985,Reid Detmers,1,card,25.3,30.8,21.3,+296,255,-24.4,park +4%,98F · wind out 6,LvL -22%,heat +12%,no,0
+2026-08-28,Munetaka Murakami,CHW,823666,Dean Kremer,2,card,23.3,26.7,19.1,+329,285,-26.5,park -2%,81F,LvR +8%,heat -3%,no,0
+2026-08-28,Christian Encarnacion-Strand,BAL,824960,Jacob Lopez,5,card,22.7,21.6,16.4,+340,295,-35.3,park +6% [low-conf],78F · wind out 4,RvL +12%,heat +2%,no,0
+2026-08-28,Coby Mayo,BAL,824960,Jacob Lopez,4,card,20.4,22.1,16.6,+391,340,-27.0,park +6% [low-conf],78F · wind out 4,RvL +12%,heat +5%,no,0
+2026-08-28,Colson Montgomery,CHW,823666,Dean Kremer,6,card,19.9,17.8,14.3,+402,350,-35.7,park -2%,81F,LvR +8%,heat -5%,hr,1
+2026-08-28,Kody Clemens,MIN,823666,Luis Castillo,4,card,19.9,19.0,14.9,+402,350,-32.8,park -2%,81F,LvR +8%,heat +3%,hr,1
+2026-08-28,Mike Trout,LAA,823985,Andrew Painter,2,card,19.5,22.3,16.7,+413,360,-23.1,park +4%,98F · wind out 6,RvR -3%,heat -8%,no,0
+2026-08-28,Corbin Carroll,ARI,823178,Blade Tidwell,2,card,17.9,16.1,13.4,+457,400,-33.1,park -14%,65F · wind out 10,LvR +8%,heat +2%,void,
+2026-08-28,Miguel Vargas,CHW,823666,Dean Kremer,3,card,17.9,21.3,16.2,+457,400,-18.9,park -2%,81F,RvR -3%,heat -9%,no,0
