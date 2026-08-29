@@ -1613,3 +1613,9 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-29,Shohei Ohtani,LAD,824230,Keider Montero,1,card,22.1,26.7,19.1,+352,305,-22.6,park -5%,81F · wind in 4,LvR +8%,heat +7%,no,0
 2026-08-29,Max Muncy,LAD,824230,Keider Montero,4,card,18.3,21.4,16.2,+446,390,-20.5,park -5%,81F · wind in 4,LvR +8%,,no,0
 2026-08-29,Max Muncy,ATH,824961,Shane Baz,1,proj,18.3,26.4,18.9,+446,390,-7.2,park +6% [low-conf],72F,LvR +8%,heat +5%,void,
+2026-08-29,Pete Crow-Armstrong,CHC,824637,Andrew Abbott,1,card,18.1,24.8,,+453,,,park avg,82F · wind out 8,LvL -22%,heat +9%,hr,3
+2026-08-29,Jo Adell,CLE,824392,Daniel Lynch IV,4,card,17.2,16.9,13.8,+480,420,-28.1,park -3%,82F,RvL +12%,,no,0
+2026-08-29,José Ramírez,CLE,824392,Daniel Lynch IV,3,card,17.2,13.0,10.2,+480,420,-47.1,park -3%,82F,SvL +12%,,no,0
+2026-08-29,Wilyer Abreu,BOS,823539,Carlos Rodón *,1,proj,17.1,20.8,15.9,+485,425,-16.5,park +14%,79F,LvL -22%,,hr,1
+2026-08-29,Bobby Witt Jr.,KCR,824392,Foster Griffin,2,card,16.9,17.9,14.3,+491,430,-24.0,park -3%,82F,RvL +12%,heat +9%,no,0
+2026-08-29,Cal Raleigh,SEA,822770,José Soriano,5,card,16.9,17.3,14.0,+491,430,-25.8,park +3% [low-conf],77F · wind out 6 (roof: half),SvR +8%,,hr,1
