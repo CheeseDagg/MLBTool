@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-29T16:53+00:00",
+ "generated": "2026-08-29T17:13+00:00",
  "board": [
   {
    "pitcher": "Cristopher S\u00e1nchez",
@@ -407,37 +407,37 @@
    "lam": 5.2,
    "k9_regressed": 8.34,
    "exp_ip": 5.76,
-   "opp_mult": 0.974,
+   "opp_mult": 0.975,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5934,
+     "p_over": 0.5937,
      "fair_over": -146,
      "fair_under": 146
     },
     {
      "line": 5.5,
-     "p_over": 0.4186,
+     "p_over": 0.4189,
      "fair_over": 139,
      "fair_under": -139
     },
     {
      "line": 6.5,
-     "p_over": 0.2672,
+     "p_over": 0.2674,
      "fair_over": 274,
      "fair_under": -274
     },
     {
      "line": 7.5,
-     "p_over": 0.1548,
-     "fair_over": 546,
-     "fair_under": -546
+     "p_over": 0.1549,
+     "fair_over": 545,
+     "fair_under": -545
     },
     {
      "line": 8.5,
-     "p_over": 0.0817,
-     "fair_over": 1124,
-     "fair_under": -1124
+     "p_over": 0.0818,
+     "fair_over": 1122,
+     "fair_under": -1122
     }
    ]
   },
@@ -644,40 +644,40 @@
   {
    "pitcher": "Carlos Rod\u00f3n",
    "opp": "Boston Red Sox",
-   "lam": 4.93,
-   "k9_regressed": 9.21,
-   "exp_ip": 4.94,
-   "opp_mult": 0.974,
+   "lam": 4.59,
+   "k9_regressed": 9.24,
+   "exp_ip": 4.58,
+   "opp_mult": 0.975,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5465,
-     "fair_over": -121,
-     "fair_under": 121
+     "p_over": 0.4846,
+     "fair_over": 106,
+     "fair_under": -106
     },
     {
      "line": 5.5,
-     "p_over": 0.3711,
-     "fair_over": 169,
-     "fair_under": -169
+     "p_over": 0.3123,
+     "fair_over": 220,
+     "fair_under": -220
     },
     {
      "line": 6.5,
-     "p_over": 0.2272,
-     "fair_over": 340,
-     "fair_under": -340
+     "p_over": 0.1805,
+     "fair_over": 454,
+     "fair_under": -454
     },
     {
      "line": 7.5,
-     "p_over": 0.1258,
-     "fair_over": 695,
-     "fair_under": -695
+     "p_over": 0.0941,
+     "fair_over": 963,
+     "fair_under": -963
     },
     {
      "line": 8.5,
-     "p_over": 0.0634,
-     "fair_over": 1477,
-     "fair_under": -1477
+     "p_over": 0.0445,
+     "fair_over": 2147,
+     "fair_under": -2147
     }
    ]
   },
@@ -798,46 +798,6 @@
      "p_over": 0.0222,
      "fair_over": 4400,
      "fair_under": -4400
-    }
-   ]
-  },
-  {
-   "pitcher": "Keider Montero",
-   "opp": "Los Angeles Dodgers",
-   "lam": 3.95,
-   "k9_regressed": 6.53,
-   "exp_ip": 5.68,
-   "opp_mult": 0.956,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3605,
-     "fair_over": 177,
-     "fair_under": -177
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2064,
-     "fair_over": 385,
-     "fair_under": -385
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.105,
-     "fair_over": 852,
-     "fair_under": -852
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0479,
-     "fair_over": 1986,
-     "fair_under": -1986
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0198,
-     "fair_over": 4957,
-     "fair_under": -4957
     }
    ]
   },
@@ -1042,6 +1002,46 @@
    ]
   },
   {
+   "pitcher": "Keider Montero",
+   "opp": "Los Angeles Dodgers",
+   "lam": 3.8,
+   "k9_regressed": 6.56,
+   "exp_ip": 5.45,
+   "opp_mult": 0.957,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3329,
+     "fair_over": 200,
+     "fair_under": -200
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.185,
+     "fair_over": 440,
+     "fair_under": -440
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0913,
+     "fair_over": 996,
+     "fair_under": -996
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0403,
+     "fair_over": 2381,
+     "fair_under": -2381
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0161,
+     "fair_over": 6118,
+     "fair_under": -6118
+    }
+   ]
+  },
+  {
    "pitcher": "Ryan Feltner",
    "opp": "Atlanta Braves",
    "lam": 3.75,
@@ -1242,8 +1242,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 9746 (used 10254) \u00b7 whiff rest:30 rows",
- "n_markets": 27,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 9713 (used 10287) \u00b7 whiff rest:30 rows",
+ "n_markets": 29,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1255,6 +1255,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 6,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
