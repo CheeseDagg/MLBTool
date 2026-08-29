@@ -1610,3 +1610,6 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-28,Mike Trout,LAA,823985,Andrew Painter,2,card,19.5,22.3,16.7,+413,360,-23.1,park +4%,98F · wind out 6,RvR -3%,heat -8%,no,0
 2026-08-28,Corbin Carroll,ARI,823178,Blade Tidwell,2,card,17.9,16.1,13.4,+457,400,-33.1,park -14%,65F · wind out 10,LvR +8%,heat +2%,void,
 2026-08-28,Miguel Vargas,CHW,823666,Dean Kremer,3,card,17.9,21.3,16.2,+457,400,-18.9,park -2%,81F,RvR -3%,heat -9%,no,0
+2026-08-29,Shohei Ohtani,LAD,824230,Keider Montero,1,card,22.1,26.7,19.1,+352,305,-22.6,park -5%,81F · wind in 4,LvR +8%,heat +7%,no,0
+2026-08-29,Max Muncy,LAD,824230,Keider Montero,4,card,18.3,21.4,16.2,+446,390,-20.5,park -5%,81F · wind in 4,LvR +8%,,no,0
+2026-08-29,Max Muncy,ATH,824961,Shane Baz,1,proj,18.3,26.4,18.9,+446,390,-7.2,park +6% [low-conf],72F,LvR +8%,heat +5%,void,
