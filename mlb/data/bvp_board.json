@@ -1,18 +1,117 @@
 {
- "generated": "2026-08-29T19:43:17+00:00",
+ "generated": "2026-08-29T22:39:10+00:00",
  "date": "2026-08-29",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Julio Rodr\u00edguez",
-   "team": "SEA",
-   "opp_sp": "Jos\u00e9 Soriano",
-   "pa": 20,
-   "ab": 18,
-   "h": 10,
+   "batter": "Jonathan Aranda",
+   "team": "TB",
+   "opp_sp": "Walker Buehler",
+   "pa": 11,
+   "ab": 10,
+   "h": 4,
    "hr": 2,
-   "avg": ".556",
-   "slg": ".944"
+   "avg": ".400",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Pete Crow-Armstrong",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Seiya Suzuki",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Alex Bregman",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Michael Busch",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Nico Hoerner",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Matt Shaw",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Tyrone Taylor",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Pedro Ram\u00edrez",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
+  },
+  {
+   "batter": "Carson Kelly",
+   "team": "CHC",
+   "opp_sp": "Andrew Abbott",
+   "pa": 39,
+   "ab": 31,
+   "h": 11,
+   "hr": 2,
+   "avg": ".355",
+   "slg": ".613"
   },
   {
    "batter": "Jackson Chourio",
@@ -26,37 +125,26 @@
    "slg": "1.400"
   },
   {
-   "batter": "Jonathan Aranda",
-   "team": "TB",
-   "opp_sp": "Walker Buehler",
-   "pa": 8,
-   "ab": 7,
+   "batter": "Shohei Ohtani",
+   "team": "LAD",
+   "opp_sp": "Keider Montero",
+   "pa": 6,
+   "ab": 6,
    "h": 3,
    "hr": 1,
-   "avg": ".429",
-   "slg": ".857"
+   "avg": ".500",
+   "slg": "1.333"
   },
   {
-   "batter": "Oneil Cruz",
-   "team": "PIT",
-   "opp_sp": "Kyle Leahy",
-   "pa": 7,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
-   "batter": "Alex Bregman",
-   "team": "CHC",
-   "opp_sp": "Andrew Abbott",
-   "pa": 10,
+   "batter": "Ty France",
+   "team": "SD",
+   "opp_sp": "Nick Martinez",
+   "pa": 9,
    "ab": 9,
-   "h": 2,
+   "h": 5,
    "hr": 1,
-   "avg": ".222",
-   "slg": ".667"
+   "avg": ".556",
+   "slg": "1.111"
   },
   {
    "batter": "Austin Hedges",
@@ -79,83 +167,6 @@
    "hr": 1,
    "avg": ".222",
    "slg": ".556"
-  },
-  {
-   "batter": "Eugenio Su\u00e1rez",
-   "team": "CIN",
-   "opp_sp": "Kevin Gausman",
-   "pa": 22,
-   "ab": 19,
-   "h": 6,
-   "hr": 1,
-   "avg": ".316",
-   "slg": ".526"
-  },
-  {
-   "batter": "Rafael Devers",
-   "team": "SF",
-   "opp_sp": "Merrill Kelly",
-   "pa": 18,
-   "ab": 18,
-   "h": 4,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".500"
-  },
-  {
-   "batter": "Junior Caminero",
-   "team": "TB",
-   "opp_sp": "Walker Buehler",
-   "pa": 9,
-   "ab": 8,
-   "h": 1,
-   "hr": 1,
-   "avg": ".125",
-   "slg": ".500"
-  },
-  {
-   "batter": "Willson Contreras",
-   "team": "BOS",
-   "opp_sp": "Carlos Rod\u00f3n",
-   "pa": 12,
-   "ab": 12,
-   "h": 2,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".417"
-  },
-  {
-   "batter": "Seiya Suzuki",
-   "team": "CHC",
-   "opp_sp": "Andrew Abbott",
-   "pa": 22,
-   "ab": 18,
-   "h": 4,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".389"
-  },
-  {
-   "batter": "Ceddanne Rafaela",
-   "team": "BOS",
-   "opp_sp": "Carlos Rod\u00f3n",
-   "pa": 18,
-   "ab": 17,
-   "h": 3,
-   "hr": 1,
-   "avg": ".176",
-   "slg": ".353"
-  },
-  {
-   "batter": "Gleyber Torres",
-   "team": "DET",
-   "opp_sp": "Blake Snell",
-   "pa": 21,
-   "ab": 18,
-   "h": 3,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".333"
   }
  ]
 }
