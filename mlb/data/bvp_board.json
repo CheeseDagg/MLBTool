@@ -1,24 +1,24 @@
 {
- "generated": "2026-08-30T01:13:54+00:00",
+ "generated": "2026-08-30T19:48:59+00:00",
  "date": "2026-08-30",
  "min_pa": 6,
  "rows": [
+  {
+   "batter": "Junior Caminero",
+   "team": "TB",
+   "opp_sp": "Robbie Ray",
+   "pa": 6,
+   "ab": 5,
+   "h": 2,
+   "hr": 2,
+   "avg": ".400",
+   "slg": "1.600"
+  },
   {
    "batter": "Amed Rosario",
    "team": "NYY",
    "opp_sp": "Ranger Suarez",
    "pa": 14,
-   "ab": 12,
-   "h": 4,
-   "hr": 2,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Robbie Ray",
-   "pa": 12,
    "ab": 12,
    "h": 4,
    "hr": 2,
@@ -51,12 +51,23 @@
    "batter": "Miguel Rojas",
    "team": "LAD",
    "opp_sp": "Framber Valdez",
-   "pa": 6,
-   "ab": 4,
-   "h": 2,
+   "pa": 8,
+   "ab": 5,
+   "h": 3,
+   "hr": 1,
+   "avg": ".600",
+   "slg": "1.400"
+  },
+  {
+   "batter": "Trevor Story",
+   "team": "BOS",
+   "opp_sp": "Will Warren",
+   "pa": 8,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
    "avg": ".500",
-   "slg": "1.250"
+   "slg": "1.000"
   },
   {
    "batter": "Sal Stewart",
@@ -68,17 +79,6 @@
    "hr": 1,
    "avg": ".500",
    "slg": "1.000"
-  },
-  {
-   "batter": "Iv\u00e1n Herrera",
-   "team": "STL",
-   "opp_sp": "Braxton Ashcraft",
-   "pa": 9,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".857"
   },
   {
    "batter": "Trent Grisham",
@@ -103,6 +103,17 @@
    "slg": ".750"
   },
   {
+   "batter": "Alejandro Kirk",
+   "team": "TOR",
+   "opp_sp": "Logan Gilbert",
+   "pa": 16,
+   "ab": 15,
+   "h": 6,
+   "hr": 1,
+   "avg": ".400",
+   "slg": ".733"
+  },
+  {
    "batter": "Matt McLain",
    "team": "CIN",
    "opp_sp": "Shota Imanaga",
@@ -125,17 +136,6 @@
    "slg": ".667"
   },
   {
-   "batter": "Bryan Reynolds",
-   "team": "PIT",
-   "opp_sp": "Matthew Liberatore",
-   "pa": 15,
-   "ab": 15,
-   "h": 5,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
-  },
-  {
    "batter": "Zack Gelof",
    "team": "ATH",
    "opp_sp": "Chris Bassitt",
@@ -144,6 +144,17 @@
    "h": 4,
    "hr": 1,
    "avg": ".333",
+   "slg": ".667"
+  },
+  {
+   "batter": "Iv\u00e1n Herrera",
+   "team": "STL",
+   "opp_sp": "Braxton Ashcraft",
+   "pa": 11,
+   "ab": 9,
+   "h": 2,
+   "hr": 1,
+   "avg": ".222",
    "slg": ".667"
   },
   {
@@ -156,17 +167,6 @@
    "hr": 1,
    "avg": ".308",
    "slg": ".615"
-  },
-  {
-   "batter": "Travis d'Arnaud",
-   "team": "LAA",
-   "opp_sp": "Zack Wheeler",
-   "pa": 23,
-   "ab": 21,
-   "h": 8,
-   "hr": 1,
-   "avg": ".381",
-   "slg": ".571"
   }
  ]
 }
