@@ -1648,3 +1648,13 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-29,Corey Seager,TEX,823741,Shane Drohan,2,card,16.3,18.1,14.4,+513,450,-20.6,park +9%,74F · wind in 3 (roof: half),LvL -22%,heat +2%,no,0
 2026-08-29,Kyle Stowers,MIA,822690,Cade Cavalli,1,card,16.3,21.5,,+514,,,park avg,82F,LvR +8%,heat +6%,no,0
 2026-08-29,Sal Stewart,CIN,824637,Kevin Gausman,3,card,16.2,21.4,,+516,,,park avg,76F · wind out 3,RvR -3%,heat -3%,hr,1
+2026-08-30,Hunter Goodman,COL,824876,Tyler Mahle,3,card,18.6,25.9,,+436,,,park +4%,88F · wind in 3,RvR -3%,heat -6%,no,0
+2026-08-30,Juan Soto,NYM,823580,Ethan Pecko *,2,card,18.4,25.5,,+442,,,park -4%,81F · wind out 9,LvR +8%,,hr,1
+2026-08-30,Dominic Canzone,SEA,822766,Max Scherzer,2,card,18.2,24.9,,+451,,,park +3% [low-conf],69F · wind out 4 (roof: half),LvR +8%,heat +5%,no,0
+2026-08-30,Heriberto Hernández,MIA,822688,Andrew Alvarez,1,card,18.1,24.9,,+452,,,park avg,88F · wind out 4,RvL +12%,heat +2%,no,0
+2026-08-30,Junior Caminero,TBR,822933,Robbie Ray,3,card,18.0,24.7,,+455,,,park -4% [low-conf],dome,RvL +12%,heat +17%,hr,1
+2026-08-30,CJ Abrams,WSN,822688,Janson Junk,1,card,17.1,23.0,,+484,,,park avg,88F · wind out 4,LvR +8%,heat +6%,no,0
+2026-08-30,Cal Raleigh,SEA,822766,Max Scherzer,4,card,16.5,21.9,,+506,,,park +3% [low-conf],69F · wind out 4 (roof: half),SvR +8%,heat +2%,no,0
+2026-08-30,Yordan Alvarez,HOU,823580,Zac Thornton,2,card,16.0,26.2,18.8,+524,460,5.5,park -4%,81F · wind out 9,LvL -22%,,no,0
+2026-08-30,Randy Arozarena,SEA,822766,Max Scherzer,1,card,15.9,20.8,,+529,,,park +3% [low-conf],69F · wind out 4 (roof: half),RvR -3%,heat +3%,no,0
+2026-08-30,Francisco Lindor,NYM,823580,Ethan Pecko *,1,card,15.7,20.4,,+537,,,park -4%,81F · wind out 9,SvR +8%,,hr,1
