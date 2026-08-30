@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-30T16:56+00:00",
+ "generated": "2026-08-30T17:35+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -562,6 +562,46 @@
    ]
   },
   {
+   "pitcher": "Andrew Alvarez",
+   "opp": "Miami Marlins",
+   "lam": 4.55,
+   "k9_regressed": 8.55,
+   "exp_ip": 4.85,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.478,
+     "fair_over": 109,
+     "fair_under": -109
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3062,
+     "fair_over": 227,
+     "fair_under": -227
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1758,
+     "fair_over": 469,
+     "fair_under": -469
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.091,
+     "fair_over": 998,
+     "fair_under": -998
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0428,
+     "fair_over": 2238,
+     "fair_under": -2238
+    }
+   ]
+  },
+  {
    "pitcher": "Kumar Rocker",
    "opp": "Milwaukee Brewers",
    "lam": 4.51,
@@ -678,46 +718,6 @@
      "p_over": 0.0385,
      "fair_over": 2496,
      "fair_under": -2496
-    }
-   ]
-  },
-  {
-   "pitcher": "Andrew Alvarez",
-   "opp": "Miami Marlins",
-   "lam": 4.42,
-   "k9_regressed": 8.57,
-   "exp_ip": 4.69,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4519,
-     "fair_over": 121,
-     "fair_under": -121
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2828,
-     "fair_over": 254,
-     "fair_under": -254
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1584,
-     "fair_over": 531,
-     "fair_under": -531
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0799,
-     "fair_over": 1152,
-     "fair_under": -1152
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0365,
-     "fair_over": 2639,
-     "fair_under": -2639
     }
    ]
   },
@@ -964,40 +964,40 @@
   {
    "pitcher": "Janson Junk",
    "opp": "Washington Nationals",
-   "lam": 3.71,
-   "k9_regressed": 6.8,
-   "exp_ip": 5.0,
-   "opp_mult": 0.982,
+   "lam": 3.77,
+   "k9_regressed": 6.78,
+   "exp_ip": 5.1,
+   "opp_mult": 0.981,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3141,
-     "fair_over": 218,
-     "fair_under": -218
+     "p_over": 0.3263,
+     "fair_over": 206,
+     "fair_under": -206
     },
     {
      "line": 5.5,
-     "p_over": 0.1709,
-     "fair_over": 485,
-     "fair_under": -485
+     "p_over": 0.18,
+     "fair_over": 455,
+     "fair_under": -455
     },
     {
      "line": 6.5,
-     "p_over": 0.0824,
-     "fair_over": 1114,
-     "fair_under": -1114
+     "p_over": 0.0881,
+     "fair_over": 1035,
+     "fair_under": -1035
     },
     {
      "line": 7.5,
-     "p_over": 0.0356,
-     "fair_over": 2713,
-     "fair_under": -2713
+     "p_over": 0.0386,
+     "fair_over": 2490,
+     "fair_under": -2490
     },
     {
      "line": 8.5,
-     "p_over": 0.0138,
-     "fair_over": 7121,
-     "fair_under": -7121
+     "p_over": 0.0153,
+     "fair_over": 6447,
+     "fair_under": -6447
     }
    ]
   },
@@ -1122,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 9600 (used 10400) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 9570 (used 10430) \u00b7 whiff rest:30 rows",
  "n_markets": 24,
  "n_plays": 0,
  "plays": [],

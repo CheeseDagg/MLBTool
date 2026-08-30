@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-30T16:54:31+00:00",
+ "generated": "2026-08-30T17:34:35+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -40,11 +40,11 @@
   },
   {
    "team": "Tampa Bay Rays",
-   "cons_pct": 7.5,
-   "fair": "+1233",
-   "best_price": 1000,
+   "cons_pct": 7.2,
+   "fair": "+1287",
+   "best_price": 1100,
    "book": "fanduel",
-   "edge_pct": -17.5,
+   "edge_pct": -13.5,
    "any_price": 1100,
    "any_book": "betrivers",
    "books_n": 5,
@@ -52,11 +52,11 @@
   },
   {
    "team": "Atlanta Braves",
-   "cons_pct": 6.1,
-   "fair": "+1538",
-   "best_price": 1300,
+   "cons_pct": 5.8,
+   "fair": "+1634",
+   "best_price": 1400,
    "book": "fanduel",
-   "edge_pct": -14.5,
+   "edge_pct": -13.5,
    "any_price": 1600,
    "any_book": "betonlineag",
    "books_n": 5,
@@ -66,22 +66,10 @@
    "team": "Boston Red Sox",
    "cons_pct": 5.7,
    "fair": "+1652",
-   "best_price": 1300,
-   "book": "fanduel",
-   "edge_pct": -20.1,
-   "any_price": 1400,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": false
-  },
-  {
-   "team": "Chicago Cubs",
-   "cons_pct": 5.3,
-   "fair": "+1781",
    "best_price": 1400,
    "book": "fanduel",
-   "edge_pct": -20.2,
-   "any_price": 1600,
+   "edge_pct": -14.4,
+   "any_price": 1400,
    "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
@@ -99,12 +87,24 @@
    "shop": false
   },
   {
+   "team": "Chicago Cubs",
+   "cons_pct": 5.3,
+   "fair": "+1781",
+   "best_price": 1400,
+   "book": "fanduel",
+   "edge_pct": -20.2,
+   "any_price": 1600,
+   "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
    "team": "Chicago White Sox",
-   "cons_pct": 3.7,
-   "fair": "+2591",
+   "cons_pct": 3.8,
+   "fair": "+2559",
    "best_price": 2200,
    "book": "fanduel",
-   "edge_pct": -14.5,
+   "edge_pct": -13.5,
    "any_price": 2500,
    "any_book": "betonlineag",
    "books_n": 5,
@@ -113,10 +113,10 @@
   {
    "team": "Houston Astros",
    "cons_pct": 3.3,
-   "fair": "+2943",
+   "fair": "+2937",
    "best_price": 2500,
    "book": "fanduel",
-   "edge_pct": -14.5,
+   "edge_pct": -14.4,
    "any_price": 3500,
    "any_book": "betonlineag",
    "books_n": 5,
@@ -135,18 +135,6 @@
    "shop": false
   },
   {
-   "team": "San Diego Padres",
-   "cons_pct": 2.1,
-   "fair": "+4689",
-   "best_price": 4000,
-   "book": "fanduel",
-   "edge_pct": -14.4,
-   "any_price": 5000,
-   "any_book": "draftkings",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Seattle Mariners",
    "cons_pct": 2.1,
    "fair": "+4689",
@@ -159,12 +147,24 @@
    "shop": false
   },
   {
+   "team": "San Diego Padres",
+   "cons_pct": 2.1,
+   "fair": "+4640",
+   "best_price": 4000,
+   "book": "fanduel",
+   "edge_pct": -13.5,
+   "any_price": 5000,
+   "any_book": "draftkings",
+   "books_n": 5,
+   "shop": false
+  },
+  {
    "team": "Toronto Blue Jays",
    "cons_pct": 1.6,
    "fair": "+6299",
-   "best_price": 10000,
+   "best_price": 8000,
    "book": "fanduel",
-   "edge_pct": 57.8,
+   "edge_pct": 26.6,
    "any_price": null,
    "any_book": null,
    "books_n": 5,
@@ -185,10 +185,10 @@
   {
    "team": "Arizona Diamondbacks",
    "cons_pct": 1.1,
-   "fair": "+9361",
+   "fair": "+9265",
    "best_price": 8000,
    "book": "fanduel",
-   "edge_pct": -14.4,
+   "edge_pct": -13.5,
    "any_price": 10000,
    "any_book": "betonlineag",
    "books_n": 5,
@@ -197,12 +197,24 @@
   {
    "team": "Baltimore Orioles",
    "cons_pct": 0.8,
-   "fair": "+11719",
+   "fair": "+11697",
    "best_price": 10000,
    "book": "fanduel",
-   "edge_pct": -14.5,
+   "edge_pct": -14.4,
    "any_price": 15000,
    "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Detroit Tigers",
+   "cons_pct": 0.3,
+   "fair": "+28921",
+   "best_price": 25000,
+   "book": "fanduel",
+   "edge_pct": -13.5,
+   "any_price": 40000,
+   "any_book": "betmgm",
    "books_n": 5,
    "shop": false
   },
@@ -219,18 +231,6 @@
    "shop": false
   },
   {
-   "team": "Detroit Tigers",
-   "cons_pct": 0.3,
-   "fair": "+35123",
-   "best_price": 30000,
-   "book": "fanduel",
-   "edge_pct": -14.5,
-   "any_price": 40000,
-   "any_book": "betmgm",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Miami Marlins",
    "cons_pct": 0.2,
    "fair": "+55326",
@@ -243,55 +243,7 @@
    "shop": true
   },
   {
-   "team": "Pittsburgh Pirates",
-   "cons_pct": 0.1,
-   "fair": "+87617",
-   "best_price": 100000,
-   "book": "fanduel",
-   "edge_pct": 14.1,
-   "any_price": 100000,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": true
-  },
-  {
-   "team": "Colorado Rockies",
-   "cons_pct": 0.1,
-   "fair": "+132095",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 200000,
-   "any_book": "betonlineag",
-   "books_n": 2,
-   "shop": false
-  },
-  {
-   "team": "Athletics",
-   "cons_pct": 0.1,
-   "fair": "+80101",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "betonlineag",
-   "books_n": 2,
-   "shop": false
-  },
-  {
-   "team": "St. Louis Cardinals",
-   "cons_pct": 0.1,
-   "fair": "+82984",
-   "best_price": 100000,
-   "book": "fanduel",
-   "edge_pct": 20.5,
-   "any_price": null,
-   "any_book": null,
-   "books_n": 5,
-   "shop": true
-  },
-  {
-   "team": "Washington Nationals",
+   "team": "New York Mets",
    "cons_pct": 0.1,
    "fair": "+113645",
    "best_price": null,
@@ -327,6 +279,54 @@
    "shop": false
   },
   {
+   "team": "Colorado Rockies",
+   "cons_pct": 0.1,
+   "fair": "+132095",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 200000,
+   "any_book": "betonlineag",
+   "books_n": 2,
+   "shop": false
+  },
+  {
+   "team": "Pittsburgh Pirates",
+   "cons_pct": 0.1,
+   "fair": "+87617",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 14.1,
+   "any_price": 100000,
+   "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": true
+  },
+  {
+   "team": "Washington Nationals",
+   "cons_pct": 0.1,
+   "fair": "+113645",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "betonlineag",
+   "books_n": 4,
+   "shop": false
+  },
+  {
+   "team": "St. Louis Cardinals",
+   "cons_pct": 0.1,
+   "fair": "+82984",
+   "best_price": 100000,
+   "book": "fanduel",
+   "edge_pct": 20.5,
+   "any_price": null,
+   "any_book": null,
+   "books_n": 5,
+   "shop": true
+  },
+  {
    "team": "Los Angeles Angels",
    "cons_pct": 0.1,
    "fair": "+80101",
@@ -351,15 +351,15 @@
    "shop": false
   },
   {
-   "team": "New York Mets",
+   "team": "Athletics",
    "cons_pct": 0.1,
-   "fair": "+113645",
+   "fair": "+80101",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
    "any_book": "betonlineag",
-   "books_n": 4,
+   "books_n": 2,
    "shop": false
   }
  ],
