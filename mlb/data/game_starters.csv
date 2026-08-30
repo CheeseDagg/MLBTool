@@ -2412,19 +2412,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-28,Baltimore Orioles,Athletics,Brandon Young,Jacob Lopez,4,3,Final
 2026-08-28,Arizona Diamondbacks,San Francisco Giants,Kohl Drake,Blade Tidwell,10,6,Final
 2026-08-29,Boston Red Sox,New York Yankees,Jake Bennett,Carlos Rodón,6,0,Final
-2026-08-29,Boston Red Sox,New York Yankees,Alec Gamboa,Max Fried,0,0,Pre-Game
+2026-08-29,Boston Red Sox,New York Yankees,Alec Gamboa,Max Fried,2,9,Final
 2026-08-29,Los Angeles Dodgers,Detroit Tigers,Blake Snell,Keider Montero,1,2,Final
 2026-08-29,Chicago White Sox,Minnesota Twins,Erick Fedde,Bailey Ober,3,2,Final
 2026-08-29,Pittsburgh Pirates,St. Louis Cardinals,Lake Bachar,Kyle Leahy,6,2,Final
 2026-08-29,Cincinnati Reds,Chicago Cubs,Andrew Abbott,Kevin Gausman,5,17,Final
 2026-08-29,Seattle Mariners,Toronto Blue Jays,Kade Anderson,José Soriano,3,4,Final
-2026-08-29,Arizona Diamondbacks,San Francisco Giants,Merrill Kelly,Matt Wilkinson,7,1,In Progress
-2026-08-29,Arizona Diamondbacks,San Francisco Giants,Mitch Bratt,,0,0,Scheduled
-2026-08-29,Miami Marlins,Washington Nationals,Sandy Alcantara,Cade Cavalli,4,4,In Progress
-2026-08-29,Kansas City Royals,Cleveland Guardians,Daniel Lynch IV,Foster Griffin,8,3,In Progress
-2026-08-29,Houston Astros,New York Mets,Bennett Sousa,Nolan McLean,2,6,In Progress
-2026-08-29,San Diego Padres,Tampa Bay Rays,Walker Buehler,Nick Martinez,6,7,In Progress
-2026-08-29,Colorado Rockies,Atlanta Braves,Zach Agnos,Martín Pérez,1,0,In Progress
-2026-08-29,Texas Rangers,Milwaukee Brewers,Cal Quantrill,Shane Drohan,0,0,Pre-Game
-2026-08-29,Baltimore Orioles,Athletics,Shane Baz,Jack Perkins,0,0,Pre-Game
-2026-08-29,Philadelphia Phillies,Los Angeles Angels,Cristopher Sánchez,Ryan Johnson,0,0,Pre-Game
+2026-08-29,Arizona Diamondbacks,San Francisco Giants,Merrill Kelly,Matt Wilkinson,7,1,Final
+2026-08-29,Arizona Diamondbacks,San Francisco Giants,Mitch Bratt,Yunior Marte,2,7,Final
+2026-08-29,Miami Marlins,Washington Nationals,Sandy Alcantara,Cade Cavalli,4,5,Final
+2026-08-29,Kansas City Royals,Cleveland Guardians,Daniel Lynch IV,Foster Griffin,8,3,Final
+2026-08-29,Houston Astros,New York Mets,Bennett Sousa,Nolan McLean,2,6,Final
+2026-08-29,San Diego Padres,Tampa Bay Rays,Walker Buehler,Nick Martinez,6,7,Final
+2026-08-29,Colorado Rockies,Atlanta Braves,Zach Agnos,Martín Pérez,1,2,Final
+2026-08-29,Texas Rangers,Milwaukee Brewers,Cal Quantrill,Shane Drohan,3,5,Final
+2026-08-29,Baltimore Orioles,Athletics,Shane Baz,Jack Perkins,5,3,Final
+2026-08-29,Philadelphia Phillies,Los Angeles Angels,Cristopher Sánchez,Ryan Johnson,4,2,Final
+2026-08-30,Miami Marlins,Washington Nationals,Janson Junk,Andrew Alvarez,0,0,Scheduled
+2026-08-30,Colorado Rockies,Atlanta Braves,Mason Adams,Tyler Mahle,0,0,Scheduled
+2026-08-30,Boston Red Sox,New York Yankees,Ranger Suarez,Will Warren,0,0,Scheduled
+2026-08-30,Seattle Mariners,Toronto Blue Jays,Logan Gilbert,Max Scherzer,0,0,Scheduled
+2026-08-30,Kansas City Royals,Cleveland Guardians,Seth Lugo,Parker Messick,0,0,Scheduled
+2026-08-30,Los Angeles Dodgers,Detroit Tigers,Tyler Glasnow,Framber Valdez,0,0,Scheduled
+2026-08-30,San Diego Padres,Tampa Bay Rays,Robbie Ray,Drew Rasmussen,0,0,Scheduled
+2026-08-30,Chicago White Sox,Minnesota Twins,Jordan Hicks,Zebby Matthews,0,0,Scheduled
+2026-08-30,Texas Rangers,Milwaukee Brewers,Kumar Rocker,Dustin May,0,0,Scheduled
+2026-08-30,Pittsburgh Pirates,St. Louis Cardinals,Braxton Ashcraft,Matthew Liberatore,0,0,Scheduled
+2026-08-30,Houston Astros,New York Mets,Ethan Pecko,Zac Thornton,0,0,Scheduled
+2026-08-30,Baltimore Orioles,Athletics,Chris Bassitt,Jeffrey Springs,0,0,Scheduled
+2026-08-30,Philadelphia Phillies,Los Angeles Angels,Zack Wheeler,Yusei Kikuchi,0,0,Scheduled
+2026-08-30,Cincinnati Reds,Chicago Cubs,Chase Burns,Shota Imanaga,0,0,Scheduled
