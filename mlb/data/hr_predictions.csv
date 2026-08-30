@@ -1572,33 +1572,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-29,Corey Seager,TEX,823741,Shane Drohan,2,card,16.3,18.1,14.4,+513,450,-20.6,park +9%,74F · wind in 3 (roof: half),LvL -22%,heat +2%,-2.0,floor
 2026-08-29,Kyle Stowers,MIA,822690,Cade Cavalli,1,card,16.3,21.5,,+514,,,park avg,82F,LvR +8%,heat +6%,0.4,
 2026-08-29,Sal Stewart,CIN,824637,Kevin Gausman,3,card,16.2,21.4,,+516,,,park avg,76F · wind out 3,RvR -3%,heat -3%,-2.5,floor
-2026-08-30,Kyle Schwarber,PHI,823987,Yusei Kikuchi,2,proj,26.8,26.9,19.2,+274,235,-35.6,park +4%,72F,LvL -22%,heat +9%,-1.7,
-2026-08-30,Pete Alonso,BAL,824959,Jeffrey Springs,2,proj,26.4,28.1,19.9,+279,240,-32.4,park +6% [low-conf],56F,RvL +12%,heat +4%,1.1,
-2026-08-30,Pete Crow-Armstrong,CHC,824636,Chase Burns,2,proj,25.3,24.8,18.1,+296,255,-35.9,park avg,69F · wind out 10,LvR +8%,heat -2%,-0.0,
-2026-08-30,Sal Stewart,CIN,824636,Shota Imanaga,1,proj,24.6,29.3,20.5,+307,265,-25.2,park avg,69F · wind out 10,RvL +12%,heat -1%,1.9,
-2026-08-30,Coby Mayo,BAL,824959,Jeffrey Springs,4,proj,23.6,21.5,16.3,+324,280,-38.1,park +6% [low-conf],56F,RvL +12%,heat -1%,0.9,
-2026-08-30,Elly De La Cruz,CIN,824636,Shota Imanaga,2,proj,23.6,23.7,17.5,+324,280,-33.5,park avg,69F · wind out 10,SvL +12%,heat +11%,-0.1,
-2026-08-30,Matt Olson,ATL,824876,Mason Adams *,1,proj,23.0,28.3,20.0,+335,290,-22.2,park +4%,no wx,LvR +8%,,1.2,
-2026-08-30,Cal Raleigh,SEA,822766,Max Scherzer,5,proj,22.4,20.2,15.6,+346,300,-37.5,park +3% [low-conf],68F (roof: half),SvR +8%,heat +2%,3.8,STANDOUT
-2026-08-30,Junior Caminero,TBR,822933,Robbie Ray,1,proj,22.4,28.1,19.9,+346,300,-20.5,park -4% [low-conf],dome,RvL +12%,heat +17%,2.4,
-2026-08-30,Yordan Alvarez,HOU,823580,Zac Thornton,1,proj,22.1,27.0,19.3,+352,305,-22.0,park -4%,72F · wind out 5,LvL -22%,,-0.9,
-2026-08-30,Juan Soto,NYM,823580,Ethan Pecko *,6,proj,21.9,18.5,14.7,+357,310,-39.9,park -4%,72F · wind out 5,LvR +8%,,-6.8,floor
-2026-08-30,Seiya Suzuki,CHC,824636,Chase Burns,6,proj,21.4,14.6,12.0,+368,320,-49.6,park avg,69F · wind out 10,RvR -3%,,-4.9,floor
-2026-08-30,Munetaka Murakami,CHW,823662,Zebby Matthews,5,proj,20.9,20.7,15.9,+379,330,-31.7,park -2%,71F · wind in 3,LvR +8%,heat +6%,-3.8,floor
-2026-08-30,Corey Seager,TEX,823740,Dustin May,7,proj,20.6,13.7,10.9,+385,335,-52.5,park +9%,75F · wind in 3 (roof: half),LvR +8%,,-5.2,floor
-2026-08-30,Wilyer Abreu,BOS,823502,Will Warren,1,proj,20.4,23.0,17.1,+391,340,-24.7,park +14%,72F · wind out 4,LvR +8%,heat -4%,2.4,
-2026-08-30,CJ Abrams,WSN,822688,Janson Junk,2,proj,19.9,21.0,16.0,+402,350,-27.9,park avg,76F · wind out 6,LvR +8%,heat +6%,-3.1,floor
-2026-08-30,Hunter Goodman,COL,824876,Tyler Mahle,3,proj,19.9,24.9,18.2,+402,350,-18.3,park +4%,no wx,RvR -3%,heat -6%,-0.9,
-2026-08-30,JJ Bleday,CIN,824636,Shota Imanaga,3,proj,19.9,20.4,15.7,+402,350,-29.3,park avg,69F · wind out 10,LvL -22%,heat -7%,-0.6,
-2026-08-30,Jake Bauers,MIL,823740,Kumar Rocker,3,proj,19.9,21.6,16.3,+402,350,-26.5,park +9%,75F · wind in 3 (roof: half),LvR +8%,heat -6%,0.2,
-2026-08-30,Dominic Canzone,SEA,822766,Max Scherzer,6,proj,19.1,18.7,14.8,+424,370,-30.5,park +3% [low-conf],68F (roof: half),LvR +8%,heat +5%,-1.8,
-2026-08-30,Oneil Cruz,PIT,823010,Matthew Liberatore,6,proj,19.1,15.8,13.2,+424,370,-37.8,park -7%,78F · wind out 5,LvL -22%,heat -0%,-0.1,
-2026-08-30,Ben Rice,NYY,823502,Ranger Suarez,1,proj,18.9,25.1,18.2,+430,375,-13.3,park +14%,72F · wind out 4,LvL -22%,heat -0%,-0.8,
-2026-08-30,Heriberto Hernández,MIA,822688,Andrew Alvarez,1,card,18.3,24.2,17.7,+446,390,-13.1,park avg,76F · wind out 6,RvL +12%,heat +2%,0.6,
-2026-08-30,Max Muncy,ATH,824959,Chris Bassitt,1,proj,18.3,25.3,,+445,,,park +6% [low-conf],56F,LvR +8%,heat +1%,1.0,
-2026-08-30,Michael Busch,CHC,824636,Chase Burns,3,proj,18.3,14.6,12.0,+446,390,-41.3,park avg,69F · wind out 10,LvR +8%,,,new
-2026-08-30,Drake Baldwin,ATL,824876,Mason Adams *,5,proj,17.9,16.7,13.7,+457,400,-31.4,park +4%,no wx,LvR +8%,,-4.0,floor
-2026-08-30,Ian Happ,CHC,824636,Chase Burns,5,proj,17.9,15.4,12.9,+457,400,-35.5,park avg,69F · wind out 10,SvR +8%,heat -3%,-7.8,floor
-2026-08-30,Jo Adell,CLE,824393,Seth Lugo,1,proj,17.9,21.0,16.0,+457,400,-19.9,park -3%,72F,RvR -3%,heat +11%,0.8,
-2026-08-30,Joc Pederson,TEX,823740,Dustin May,4,proj,17.9,19.6,15.3,+457,400,-23.5,park +9%,75F · wind in 3 (roof: half),LvR +8%,heat +1%,-2.7,floor
-2026-08-30,Michael Harris II,ATL,824876,Mason Adams *,4,proj,17.9,17.3,14.0,+457,400,-29.8,park +4%,no wx,LvR +8%,,-1.2,
+2026-08-30,Pete Alonso,BAL,824959,Jeffrey Springs,2,proj,26.0,29.0,20.4,+285,245,-29.8,park +6% [low-conf],66F,RvL +12%,heat +4%,1.6,
+2026-08-30,Kyle Schwarber,PHI,823987,Yusei Kikuchi,2,proj,25.6,27.8,19.7,+290,250,-31.0,park +4%,81F,LvL -22%,heat +9%,-1.2,
+2026-08-30,Sal Stewart,CIN,824636,Shota Imanaga,1,proj,23.9,29.5,20.6,+318,275,-22.8,park avg,75F · wind out 6,RvL +12%,heat -1%,2.1,
+2026-08-30,Coby Mayo,BAL,824959,Jeffrey Springs,4,proj,23.6,22.2,16.7,+324,280,-36.7,park +6% [low-conf],66F,RvL +12%,heat -1%,1.2,
+2026-08-30,Pete Crow-Armstrong,CHC,824636,Chase Burns,2,proj,23.3,24.9,18.1,+329,285,-30.2,park avg,75F · wind out 6,LvR +8%,heat -2%,-0.0,
+2026-08-30,Yordan Alvarez,HOU,823580,Zac Thornton,2,card,22.7,25.8,18.6,+340,295,-26.5,park -4%,77F · wind out 7,LvL -22%,,-1.6,
+2026-08-30,Cal Raleigh,SEA,822766,Max Scherzer,4,card,22.4,21.7,16.4,+346,300,-34.3,park +3% [low-conf],67F (roof: half),SvR +8%,heat +2%,4.6,STANDOUT
+2026-08-30,Elly De La Cruz,CIN,824636,Shota Imanaga,2,proj,22.1,23.9,17.6,+352,305,-28.8,park avg,75F · wind out 6,SvL +12%,heat +11%,0.1,
+2026-08-30,Hunter Goodman,COL,824876,Tyler Mahle,3,card,22.1,25.5,18.5,+352,305,-25.2,park +4%,83F · wind in 4,RvR -3%,heat -6%,-0.6,
+2026-08-30,Matt Olson,ATL,824876,Mason Adams *,3,card,22.1,25.5,18.4,+352,305,-25.4,park +4%,83F · wind in 4,LvR +8%,,-0.4,
+2026-08-30,Wilyer Abreu,BOS,823502,Will Warren,3,card,22.1,20.5,15.7,+352,305,-36.3,park +14%,78F · wind out 5,LvR +8%,heat -4%,1.0,
+2026-08-30,Juan Soto,NYM,823580,Ethan Pecko *,6,proj,21.9,18.9,14.9,+357,310,-38.9,park -4%,77F · wind out 7,LvR +8%,,-6.6,floor
+2026-08-30,Junior Caminero,TBR,822933,Robbie Ray,3,card,21.9,24.7,18.0,+357,310,-26.2,park -4% [low-conf],dome,RvL +12%,heat +17%,0.5,
+2026-08-30,Corey Seager,TEX,823740,Dustin May,2,card,21.4,20.4,15.7,+368,320,-34.1,park +9%,83F (roof: half),LvR +8%,heat +8%,-0.4,
+2026-08-30,Seiya Suzuki,CHC,824636,Chase Burns,6,proj,21.4,14.7,12.1,+368,320,-49.2,park avg,75F · wind out 6,RvR -3%,,-4.8,floor
+2026-08-30,Munetaka Murakami,CHW,823662,Zebby Matthews,2,card,20.9,25.9,18.7,+379,330,-19.8,park -2%,77F · wind in 4,LvR +8%,heat +6%,-1.1,
+2026-08-30,Jake Bauers,MIL,823740,Kumar Rocker,3,card,19.9,22.0,16.6,+402,350,-25.5,park +9%,83F (roof: half),LvR +8%,heat -6%,0.5,
+2026-08-30,Dominic Canzone,SEA,822766,Max Scherzer,2,card,19.1,24.8,18.1,+424,370,-15.1,park +3% [low-conf],67F (roof: half),LvR +8%,heat +5%,1.6,
+2026-08-30,JJ Bleday,CIN,824636,Shota Imanaga,3,proj,19.1,20.6,15.8,+424,370,-25.8,park avg,75F · wind out 6,LvL -22%,heat -7%,-0.4,
+2026-08-30,Oneil Cruz,PIT,823010,Matthew Liberatore,2,card,19.1,21.9,16.5,+424,370,-22.4,park -7%,89F · wind out 5,LvL -22%,heat -0%,3.2,STANDOUT
+2026-08-30,Max Muncy,ATH,824959,Chris Bassitt,1,proj,18.7,26.0,,+434,,,park +6% [low-conf],66F,LvR +8%,heat +1%,1.4,
+2026-08-30,CJ Abrams,WSN,822688,Janson Junk,1,card,18.3,22.9,17.0,+446,390,-16.5,park avg,82F · wind out 7,LvR +8%,heat +6%,-2.1,floor
+2026-08-30,Joc Pederson,TEX,823740,Dustin May,1,card,18.3,24.6,18.0,+446,390,-11.9,park +9%,83F (roof: half),LvR +8%,heat +1%,-0.0,
+2026-08-30,Michael Busch,CHC,824636,Chase Burns,3,proj,18.3,14.7,12.1,+446,390,-40.8,park avg,75F · wind out 6,LvR +8%,,,new
+2026-08-30,Tyler Stephenson,CIN,824636,Shota Imanaga,5,proj,18.3,17.2,14.0,+446,390,-31.6,park avg,75F · wind out 6,RvL +12%,heat -1%,,new
+2026-08-30,Christian Walker,HOU,823580,Zac Thornton,5,card,17.9,17.0,13.8,+457,400,-30.8,park -4%,77F · wind out 7,RvL +12%,heat +14%,-1.8,
+2026-08-30,Drake Baldwin,ATL,824876,Mason Adams *,1,card,17.9,22.9,17.1,+457,400,-14.7,park +4%,83F · wind in 4,LvR +8%,,-0.6,
+2026-08-30,Ian Happ,CHC,824636,Chase Burns,5,proj,17.9,15.5,13.0,+457,400,-34.8,park avg,75F · wind out 6,SvR +8%,,-7.7,floor
+2026-08-30,Jo Adell,CLE,824393,Seth Lugo,4,card,17.9,17.3,14.0,+457,400,-30.0,park -3%,78F,RvR -3%,heat +11%,-1.2,
+2026-08-30,Michael Harris II,ATL,824876,Mason Adams *,4,card,17.9,17.8,14.3,+457,400,-28.5,park +4%,83F · wind in 4,LvR +8%,,-0.8,

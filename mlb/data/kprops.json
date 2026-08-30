@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-30T14:05+00:00",
+ "generated": "2026-08-30T16:56+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -562,46 +562,6 @@
    ]
   },
   {
-   "pitcher": "Andrew Alvarez",
-   "opp": "Miami Marlins",
-   "lam": 4.53,
-   "k9_regressed": 8.53,
-   "exp_ip": 4.83,
-   "opp_mult": 0.988,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4733,
-     "fair_over": 111,
-     "fair_under": -111
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.302,
-     "fair_over": 231,
-     "fair_under": -231
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1726,
-     "fair_over": 479,
-     "fair_under": -479
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.089,
-     "fair_over": 1024,
-     "fair_under": -1024
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0416,
-     "fair_over": 2304,
-     "fair_under": -2304
-    }
-   ]
-  },
-  {
    "pitcher": "Kumar Rocker",
    "opp": "Milwaukee Brewers",
    "lam": 4.51,
@@ -718,6 +678,46 @@
      "p_over": 0.0385,
      "fair_over": 2496,
      "fair_under": -2496
+    }
+   ]
+  },
+  {
+   "pitcher": "Andrew Alvarez",
+   "opp": "Miami Marlins",
+   "lam": 4.42,
+   "k9_regressed": 8.57,
+   "exp_ip": 4.69,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4519,
+     "fair_over": 121,
+     "fair_under": -121
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2828,
+     "fair_over": 254,
+     "fair_under": -254
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1584,
+     "fair_over": 531,
+     "fair_under": -531
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0799,
+     "fair_over": 1152,
+     "fair_under": -1152
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0365,
+     "fair_over": 2639,
+     "fair_under": -2639
     }
    ]
   },
@@ -922,46 +922,6 @@
    ]
   },
   {
-   "pitcher": "Janson Junk",
-   "opp": "Washington Nationals",
-   "lam": 3.83,
-   "k9_regressed": 6.85,
-   "exp_ip": 5.12,
-   "opp_mult": 0.982,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3378,
-     "fair_over": 196,
-     "fair_under": -196
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.1887,
-     "fair_over": 430,
-     "fair_under": -430
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0936,
-     "fair_over": 968,
-     "fair_under": -968
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0416,
-     "fair_over": 2305,
-     "fair_under": -2305
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0167,
-     "fair_over": 5891,
-     "fair_under": -5891
-    }
-   ]
-  },
-  {
    "pitcher": "Chris Bassitt",
    "opp": "Athletics",
    "lam": 3.82,
@@ -998,6 +958,46 @@
      "p_over": 0.0166,
      "fair_over": 5941,
      "fair_under": -5941
+    }
+   ]
+  },
+  {
+   "pitcher": "Janson Junk",
+   "opp": "Washington Nationals",
+   "lam": 3.71,
+   "k9_regressed": 6.8,
+   "exp_ip": 5.0,
+   "opp_mult": 0.982,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3141,
+     "fair_over": 218,
+     "fair_under": -218
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1709,
+     "fair_over": 485,
+     "fair_under": -485
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0824,
+     "fair_over": 1114,
+     "fair_under": -1114
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0356,
+     "fair_over": 2713,
+     "fair_under": -2713
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0138,
+     "fair_over": 7121,
+     "fair_under": -7121
     }
    ]
   },
@@ -1122,8 +1122,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 9630 (used 10370) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 9600 (used 10400) \u00b7 whiff rest:30 rows",
+ "n_markets": 24,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
