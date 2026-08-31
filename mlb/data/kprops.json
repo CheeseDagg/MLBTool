@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T16:27+00:00",
+ "generated": "2026-08-31T19:15+00:00",
  "board": [
   {
    "pitcher": "Payton Tolle",
@@ -602,6 +602,46 @@
    ]
   },
   {
+   "pitcher": "Brandon Pfaadt",
+   "opp": "Philadelphia Phillies",
+   "lam": 4.5,
+   "k9_regressed": 6.78,
+   "exp_ip": 5.98,
+   "opp_mult": 1.0,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4678,
+     "fair_over": 114,
+     "fair_under": -114
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.297,
+     "fair_over": 237,
+     "fair_under": -237
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1689,
+     "fair_over": 492,
+     "fair_under": -492
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0865,
+     "fair_over": 1056,
+     "fair_under": -1056
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0402,
+     "fair_over": 2386,
+     "fair_under": -2386
+    }
+   ]
+  },
+  {
    "pitcher": "Brady Singer",
    "opp": "San Diego Padres",
    "lam": 4.4,
@@ -882,8 +922,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 9519 (used 10481) \u00b7 whiff rest:30 rows",
- "n_markets": 21,
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 9493 (used 10507) \u00b7 whiff rest:30 rows",
+ "n_markets": 22,
  "n_plays": 0,
  "plays": [],
  "books": [
