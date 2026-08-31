@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T19:15+00:00",
+ "generated": "2026-08-31T19:37+00:00",
  "board": [
   {
    "pitcher": "Payton Tolle",
@@ -842,6 +842,46 @@
    ]
   },
   {
+   "pitcher": "Cade Povich",
+   "opp": "Colorado Rockies",
+   "lam": 3.96,
+   "k9_regressed": 7.74,
+   "exp_ip": 4.53,
+   "opp_mult": 1.015,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3627,
+     "fair_over": 176,
+     "fair_under": -176
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2081,
+     "fair_over": 380,
+     "fair_under": -380
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1062,
+     "fair_over": 842,
+     "fair_under": -842
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0486,
+     "fair_over": 1958,
+     "fair_under": -1958
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0201,
+     "fair_over": 4876,
+     "fair_under": -4876
+    }
+   ]
+  },
+  {
    "pitcher": "Robert Stock",
    "opp": "Tampa Bay Rays",
    "lam": 3.64,
@@ -922,8 +962,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 9493 (used 10507) \u00b7 whiff rest:30 rows",
- "n_markets": 22,
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 9467 (used 10533) \u00b7 whiff rest:30 rows",
+ "n_markets": 23,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -935,6 +975,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
