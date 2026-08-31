@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T19:37+00:00",
+ "generated": "2026-08-31T22:07+00:00",
  "board": [
   {
    "pitcher": "Payton Tolle",
@@ -962,7 +962,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 9467 (used 10533) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 9441 (used 10559) \u00b7 whiff rest:30 rows",
  "n_markets": 23,
  "n_plays": 0,
  "plays": [],
