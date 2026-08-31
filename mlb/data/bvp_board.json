@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T01:22:23+00:00",
+ "generated": "2026-08-31T21:53:32+00:00",
  "date": "2026-08-31",
  "min_pa": 6,
  "rows": [
@@ -48,6 +48,28 @@
    "slg": "1.000"
   },
   {
+   "batter": "J.T. Realmuto",
+   "team": "PHI",
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Kyle Schwarber",
+   "team": "PHI",
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 6,
+   "ab": 4,
+   "h": 1,
+   "hr": 1,
+   "avg": ".250",
+   "slg": "1.000"
+  },
+  {
    "batter": "JJ Bleday",
    "team": "CIN",
    "opp_sp": "Michael King",
@@ -59,6 +81,17 @@
    "slg": ".857"
   },
   {
+   "batter": "Luis Arraez",
+   "team": "PHI",
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 25,
+   "ab": 24,
+   "h": 13,
+   "hr": 1,
+   "avg": ".542",
+   "slg": ".833"
+  },
+  {
    "batter": "Sal Stewart",
    "team": "CIN",
    "opp_sp": "Michael King",
@@ -68,6 +101,17 @@
    "hr": 1,
    "avg": ".333",
    "slg": ".833"
+  },
+  {
+   "batter": "Bryce Harper",
+   "team": "PHI",
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 6,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
   },
   {
    "batter": "Lawrence Butler",
@@ -90,17 +134,6 @@
    "hr": 1,
    "avg": ".219",
    "slg": ".344"
-  },
-  {
-   "batter": "Adley Rutschman",
-   "team": "BOS",
-   "opp_sp": "George Kirby",
-   "pa": 22,
-   "ab": 22,
-   "h": 4,
-   "hr": 1,
-   "avg": ".182",
-   "slg": ".318"
   }
  ]
 }
