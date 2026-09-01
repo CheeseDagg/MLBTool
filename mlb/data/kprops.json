@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T20:13+00:00",
+ "generated": "2026-09-01T22:43+00:00",
  "board": [
   {
    "pitcher": "Jes\u00fas Luzardo",
@@ -42,46 +42,6 @@
    ]
   },
   {
-   "pitcher": "Gavin Williams",
-   "opp": "Toronto Blue Jays",
-   "lam": 6.61,
-   "k9_regressed": 11.19,
-   "exp_ip": 5.78,
-   "opp_mult": 0.92,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7884,
-     "fair_over": -373,
-     "fair_under": 373
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.6467,
-     "fair_over": -183,
-     "fair_under": 183
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.4907,
-     "fair_over": 104,
-     "fair_under": -104
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.3434,
-     "fair_over": 191,
-     "fair_under": -191
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.2217,
-     "fair_over": 351,
-     "fair_under": -351
-    }
-   ]
-  },
-  {
    "pitcher": "Gerrit Cole",
    "opp": "Los Angeles Angels",
    "lam": 6.48,
@@ -118,6 +78,46 @@
      "p_over": 0.2066,
      "fair_over": 384,
      "fair_under": -384
+    }
+   ]
+  },
+  {
+   "pitcher": "Gavin Williams",
+   "opp": "Toronto Blue Jays",
+   "lam": 6.39,
+   "k9_regressed": 11.19,
+   "exp_ip": 5.58,
+   "opp_mult": 0.921,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7638,
+     "fair_over": -323,
+     "fair_under": 323
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.6148,
+     "fair_over": -160,
+     "fair_under": 160
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4562,
+     "fair_over": 119,
+     "fair_under": -119
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.3113,
+     "fair_over": 221,
+     "fair_under": -221
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1956,
+     "fair_over": 411,
+     "fair_under": -411
     }
    ]
   },
@@ -411,25 +411,25 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5615,
+     "p_over": 0.5614,
      "fair_over": -128,
      "fair_under": 128
     },
     {
      "line": 5.5,
-     "p_over": 0.386,
+     "p_over": 0.3859,
      "fair_over": 159,
      "fair_under": -159
     },
     {
      "line": 6.5,
-     "p_over": 0.2395,
+     "p_over": 0.2394,
      "fair_over": 318,
      "fair_under": -318
     },
     {
      "line": 7.5,
-     "p_over": 0.1346,
+     "p_over": 0.1345,
      "fair_over": 643,
      "fair_under": -643
     },
@@ -771,33 +771,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4043,
+     "p_over": 0.4042,
      "fair_over": 147,
      "fair_under": -147
     },
     {
      "line": 5.5,
-     "p_over": 0.242,
+     "p_over": 0.2419,
      "fair_over": 313,
      "fair_under": -313
     },
     {
      "line": 6.5,
      "p_over": 0.1291,
-     "fair_over": 674,
-     "fair_under": -674
+     "fair_over": 675,
+     "fair_under": -675
     },
     {
      "line": 7.5,
      "p_over": 0.0619,
-     "fair_over": 1515,
-     "fair_under": -1515
+     "fair_over": 1516,
+     "fair_under": -1516
     },
     {
      "line": 8.5,
-     "p_over": 0.0269,
-     "fair_over": 3622,
-     "fair_under": -3622
+     "p_over": 0.0268,
+     "fair_over": 3624,
+     "fair_under": -3624
     }
    ]
   },
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 19861 (used 139) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 19830 (used 170) \u00b7 whiff rest:30 rows",
  "n_markets": 26,
  "n_plays": 0,
  "plays": [],
@@ -1215,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
