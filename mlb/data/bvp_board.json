@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T01:49:08+00:00",
+ "generated": "2026-09-01T19:55:41+00:00",
  "date": "2026-09-01",
  "min_pa": 6,
  "rows": [
@@ -13,17 +13,6 @@
    "hr": 2,
    "avg": ".154",
    "slg": ".615"
-  },
-  {
-   "batter": "Mike Yastrzemski",
-   "team": "ATL",
-   "opp_sp": "Jake Irvin",
-   "pa": 17,
-   "ab": 14,
-   "h": 2,
-   "hr": 2,
-   "avg": ".143",
-   "slg": ".571"
   },
   {
    "batter": "Matt Olson",
@@ -79,17 +68,6 @@
    "hr": 1,
    "avg": ".400",
    "slg": ".900"
-  },
-  {
-   "batter": "Adley Rutschman",
-   "team": "BOS",
-   "opp_sp": "Bryan Woo",
-   "pa": 9,
-   "ab": 9,
-   "h": 4,
-   "hr": 1,
-   "avg": ".444",
-   "slg": ".889"
   },
   {
    "batter": "William Contreras",
@@ -167,6 +145,28 @@
    "hr": 1,
    "avg": ".200",
    "slg": ".500"
+  },
+  {
+   "batter": "Francisco Lindor",
+   "team": "NYM",
+   "opp_sp": "Freddy Peralta",
+   "pa": 12,
+   "ab": 9,
+   "h": 1,
+   "hr": 1,
+   "avg": ".111",
+   "slg": ".444"
+  },
+  {
+   "batter": "Mike Trout",
+   "team": "LAA",
+   "opp_sp": "Gerrit Cole",
+   "pa": 24,
+   "ab": 21,
+   "h": 6,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".429"
   }
  ]
 }
