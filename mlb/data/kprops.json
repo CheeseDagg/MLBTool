@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T17:26+00:00",
+ "generated": "2026-09-01T20:13+00:00",
  "board": [
   {
    "pitcher": "Jes\u00fas Luzardo",
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19893 (used 107) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 19861 (used 139) \u00b7 whiff rest:30 rows",
  "n_markets": 26,
  "n_plays": 0,
  "plays": [],
@@ -1215,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
