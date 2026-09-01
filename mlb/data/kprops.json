@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T13:46+00:00",
+ "generated": "2026-09-01T16:52+00:00",
  "board": [
   {
    "pitcher": "Jes\u00fas Luzardo",
@@ -482,42 +482,42 @@
    ]
   },
   {
-   "pitcher": "Spencer Arrighetti",
-   "opp": "Cleveland Guardians",
-   "lam": 4.93,
-   "k9_regressed": 8.87,
-   "exp_ip": 5.11,
-   "opp_mult": 0.979,
+   "pitcher": "Jedixson Paez",
+   "opp": "Seattle Mariners",
+   "lam": 4.82,
+   "k9_regressed": 7.92,
+   "exp_ip": 5.3,
+   "opp_mult": 1.032,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5473,
-     "fair_over": -121,
-     "fair_under": 121
+     "p_over": 0.5267,
+     "fair_over": -111,
+     "fair_under": 111
     },
     {
      "line": 5.5,
-     "p_over": 0.3719,
-     "fair_over": 169,
-     "fair_under": -169
+     "p_over": 0.3518,
+     "fair_over": 184,
+     "fair_under": -184
     },
     {
      "line": 6.5,
-     "p_over": 0.2278,
-     "fair_over": 339,
-     "fair_under": -339
+     "p_over": 0.2114,
+     "fair_over": 373,
+     "fair_under": -373
     },
     {
      "line": 7.5,
-     "p_over": 0.1262,
-     "fair_over": 692,
-     "fair_under": -692
+     "p_over": 0.1149,
+     "fair_over": 770,
+     "fair_under": -770
     },
     {
      "line": 8.5,
-     "p_over": 0.0637,
-     "fair_over": 1471,
-     "fair_under": -1471
+     "p_over": 0.0567,
+     "fair_over": 1662,
+     "fair_under": -1662
     }
    ]
   },
@@ -1082,6 +1082,46 @@
    ]
   },
   {
+   "pitcher": "Spencer Miles",
+   "opp": "Cleveland Guardians",
+   "lam": 2.92,
+   "k9_regressed": 8.4,
+   "exp_ip": 3.2,
+   "opp_mult": 0.979,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1721,
+     "fair_over": 481,
+     "fair_under": -481
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0764,
+     "fair_over": 1209,
+     "fair_under": -1209
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0298,
+     "fair_over": 3255,
+     "fair_under": -3255
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0103,
+     "fair_over": 9574,
+     "fair_under": -9574
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0032,
+     "fair_over": 30932,
+     "fair_under": -30932
+    }
+   ]
+  },
+  {
    "pitcher": "Andrew Morris",
    "opp": "Detroit Tigers",
    "lam": 2.85,
@@ -1162,8 +1202,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19957 (used 43) \u00b7 whiff rest:30 rows",
- "n_markets": 27,
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19925 (used 75) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
