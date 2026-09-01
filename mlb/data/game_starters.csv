@@ -2442,15 +2442,30 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-08-30,Baltimore Orioles,Athletics,Chris Bassitt,Jeffrey Springs,8,5,Final
 2026-08-30,Philadelphia Phillies,Los Angeles Angels,Zack Wheeler,Yusei Kikuchi,5,2,Final
 2026-08-30,Cincinnati Reds,Chicago Cubs,Chase Burns,Shota Imanaga,7,5,Final
-2026-08-31,San Francisco Giants,Atlanta Braves,Anthony Molina,Bryce Elder,6,3,In Progress
-2026-08-31,San Diego Padres,Cincinnati Reds,Michael King,Brady Singer,4,0,In Progress
-2026-08-31,New York Mets,Tampa Bay Rays,Robert Stock,Ian Seymour,1,0,In Progress
-2026-08-31,Seattle Mariners,Boston Red Sox,George Kirby,Payton Tolle,2,3,In Progress
-2026-08-31,Miami Marlins,Washington Nationals,Ryan Gusto,Will Dion,3,0,In Progress
-2026-08-31,Detroit Tigers,Minnesota Twins,Jackson Jobe,Taj Bradley,0,1,In Progress
-2026-08-31,Milwaukee Brewers,Chicago Cubs,Kyle Harrison,Clay Holmes,0,2,In Progress
-2026-08-31,Athletics,Texas Rangers,Gage Jump,Jacob deGrom,0,0,Warmup
-2026-08-31,Chicago White Sox,Houston Astros,Anthony Kay,Peter Lambert,0,0,Warmup
-2026-08-31,Baltimore Orioles,Colorado Rockies,Cade Povich,Tanner Gordon,0,0,Pre-Game
-2026-08-31,New York Yankees,Los Angeles Angels,Elmer Rodríguez,Walbert Ureña,0,0,Pre-Game
-2026-08-31,Philadelphia Phillies,Arizona Diamondbacks,Aaron Nola,Brandon Pfaadt,0,0,Pre-Game
+2026-08-31,San Francisco Giants,Atlanta Braves,Anthony Molina,Bryce Elder,7,3,Final
+2026-08-31,San Diego Padres,Cincinnati Reds,Michael King,Brady Singer,5,0,Final
+2026-08-31,New York Mets,Tampa Bay Rays,Robert Stock,Ian Seymour,3,2,Final
+2026-08-31,Seattle Mariners,Boston Red Sox,George Kirby,Payton Tolle,8,9,Final
+2026-08-31,Miami Marlins,Washington Nationals,Ryan Gusto,Will Dion,3,6,Final
+2026-08-31,Detroit Tigers,Minnesota Twins,Jackson Jobe,Taj Bradley,1,11,Final
+2026-08-31,Milwaukee Brewers,Chicago Cubs,Kyle Harrison,Clay Holmes,3,17,Final
+2026-08-31,Athletics,Texas Rangers,Gage Jump,Jacob deGrom,1,8,Final
+2026-08-31,Chicago White Sox,Houston Astros,Anthony Kay,Peter Lambert,3,6,Final
+2026-08-31,Baltimore Orioles,Colorado Rockies,Cade Povich,Tanner Gordon,2,1,Final
+2026-08-31,New York Yankees,Los Angeles Angels,Elmer Rodríguez,Walbert Ureña,1,10,Final
+2026-08-31,Philadelphia Phillies,Arizona Diamondbacks,Aaron Nola,Brandon Pfaadt,2,1,Final
+2026-09-01,San Diego Padres,Cincinnati Reds,Randy Vásquez,Nick Lodolo,0,0,Scheduled
+2026-09-01,San Francisco Giants,Pittsburgh Pirates,Logan Webb,Paul Skenes,0,0,Scheduled
+2026-09-01,New York Mets,Tampa Bay Rays,Sean Manaea,Freddy Peralta,0,0,Scheduled
+2026-09-01,Toronto Blue Jays,Cleveland Guardians,Spencer Arrighetti,Gavin Williams,0,0,Scheduled
+2026-09-01,Seattle Mariners,Boston Red Sox,Bryan Woo,,0,0,Scheduled
+2026-09-01,Atlanta Braves,Washington Nationals,AJ Smith-Shawver,Jake Irvin,0,0,Scheduled
+2026-09-01,Detroit Tigers,Minnesota Twins,Troy Melton,Andrew Morris,0,0,Scheduled
+2026-09-01,Miami Marlins,Kansas City Royals,Tyler Phillips,Randy Dobnak,0,0,Scheduled
+2026-09-01,Milwaukee Brewers,Chicago Cubs,Robert Gasser,Matthew Boyd,0,0,Scheduled
+2026-09-01,Athletics,Texas Rangers,Brady Basso,MacKenzie Gore,0,0,Scheduled
+2026-09-01,Chicago White Sox,Houston Astros,Sean Burke,Ronel Blanco,0,0,Scheduled
+2026-09-01,Baltimore Orioles,Colorado Rockies,Kyle Bradish,Gabriel Hughes,0,0,Scheduled
+2026-09-01,New York Yankees,Los Angeles Angels,Gerrit Cole,Grayson Rodriguez,0,0,Scheduled
+2026-09-01,Philadelphia Phillies,Arizona Diamondbacks,Jesús Luzardo,Eduardo Rodriguez,0,0,Scheduled
+2026-09-01,St. Louis Cardinals,Los Angeles Dodgers,Michael McGreevy,Eric Lauer,0,0,Scheduled

@@ -1680,3 +1680,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-08-30,Rafael Flores,PIT,823010,Matthew Liberatore,4,card,16.5,21.8,,+508,,,park -7%,93F,RvL +12%,heat +1%,no,0
 2026-08-30,Miguel Vargas,CHW,823662,Zebby Matthews,3,card,16.1,21.1,,+522,,,park -2%,85F · wind in 5,RvR -3%,heat +3%,no,0
 2026-08-30,Wilyer Abreu,BOS,823502,Will Warren,3,card,15.8,20.6,,+533,,,park +14%,80F · wind out 5,LvR +8%,heat -4%,no,0
+2026-08-31,Pete Alonso,BAL,824314,Tanner Gordon,2,card,26.0,27.6,19.6,+285,245,-32.4,park +9%,86F,RvR -3%,heat +9%,no,0
+2026-08-31,Yordan Alvarez,HOU,824149,Anthony Kay,2,card,24.6,26.0,18.7,+307,265,-31.6,park +3%,86F (roof: half),LvL -22%,heat +9%,no,0
+2026-08-31,Kyle Schwarber,PHI,825040,Brandon Pfaadt,1,card,23.6,30.6,21.2,+324,280,-19.5,park +4%,88F · wind out 4 (roof: half),LvR +8%,heat -3%,no,0
+2026-08-31,Hunter Goodman,COL,824314,Cade Povich,3,card,23.0,29.7,20.7,+335,290,-19.1,park +9%,86F,RvL +12%,heat +17%,no,0
+2026-08-31,Pete Crow-Armstrong,CHC,824635,Kyle Harrison,1,card,21.4,25.9,18.6,+368,320,-21.7,park avg,80F · wind out 5,LvL -22%,heat +4%,no,0
+2026-08-31,Corey Seager,TEX,822855,Gage Jump,2,card,20.9,19.3,15.1,+379,330,-35.0,park +2%,98F · wind in 5 (roof: half),LvL -22%,heat +4%,no,0
+2026-08-31,Munetaka Murakami,CHW,824149,Peter Lambert,2,card,20.9,26.7,19.1,+379,330,-17.8,park +3%,86F (roof: half),LvR +8%,heat +0%,no,0
+2026-08-31,Coby Mayo,BAL,824314,Tanner Gordon,4,card,19.5,22.3,16.7,+413,360,-23.1,park +9%,86F,RvR -3%,heat +7%,no,0
+2026-08-31,Miguel Vargas,CHW,824149,Peter Lambert,3,card,19.1,20.1,15.5,+424,370,-27.0,park +3%,86F (roof: half),RvR -3%,heat -0%,no,0
+2026-08-31,Samuel Basallo,BAL,824314,Tanner Gordon,6,card,19.1,19.7,15.3,+424,370,-27.9,park +9%,86F,LvR +8%,heat +13%,no,0
+2026-08-31,Colson Montgomery,CHW,824149,Peter Lambert,6,card,18.3,17.3,14.0,+446,390,-31.3,park +3%,86F (roof: half),LvR +8%,heat -2%,hr,1
+2026-08-31,Turner Hill,SFG,824911,Bryce Elder,1,card,18.1,24.8,,+453,,,park +4%,88F,LvR +8%,,no,0
+2026-08-31,Ben Rice,NYY,823982,Walbert Ureña *,1,card,17.9,29.8,20.8,+457,400,3.9,park +4%,81F · wind out 6,LvR +8%,heat -5%,no,0
+2026-08-31,Seiya Suzuki,CHC,824635,Kyle Harrison,2,card,17.9,20.5,15.8,+457,400,-21.2,park avg,80F · wind out 5,RvL +12%,heat +4%,hr,1
+2026-08-31,Rafael Devers,SFG,824911,Bryce Elder,2,card,17.3,23.4,,+478,,,park +4%,88F,LvR +8%,heat -1%,hr,1
+2026-08-31,Jake Burger,TEX,822855,Gage Jump,5,card,17.2,17.8,14.3,+480,420,-25.7,park +2%,98F · wind in 5 (roof: half),RvL +12%,heat +14%,no,0
+2026-08-31,Christian Walker,HOU,824149,Anthony Kay,4,card,17.1,18.2,14.5,+485,425,-23.8,park +3%,86F (roof: half),RvL +12%,heat -1%,no,0
+2026-08-31,Gunnar Henderson,BAL,824314,Tanner Gordon,3,card,17.1,19.2,15.0,+485,425,-21.1,park +9%,86F,LvR +8%,heat +12%,no,0
+2026-08-31,Ketel Marte,ARI,825040,Aaron Nola,4,card,17.1,19.6,15.3,+485,425,-19.7,park +4%,88F · wind out 4 (roof: half),SvR +8%,heat -4%,void,
+2026-08-31,Michael Busch,CHC,824635,Kyle Harrison,6,card,16.9,10.7,9.3,+491,430,-50.5,park avg,80F · wind out 5,LvL -22%,,no,0
+2026-08-31,Mike Trout,LAA,823982,Elmer Rodríguez *,2,card,16.9,20.5,15.8,+491,430,-16.4,park +4%,81F · wind out 6,RvR -3%,heat +6%,no,0
+2026-08-31,Nelson Velázquez,HOU,824149,Anthony Kay,7,card,16.3,14.8,12.2,+513,450,-33.0,park +3%,86F (roof: half),RvL +12%,,hr,1
+2026-08-31,Colton Cowser,BAL,824314,Tanner Gordon,8,card,16.0,14.2,11.5,+524,460,-35.4,park +9%,86F,LvR +8%,,no,0
+2026-08-31,Kody Clemens,MIN,823663,Jackson Jobe,3,card,16.0,21.0,16.0,+524,460,-10.3,park -2%,86F · wind out 3,LvR +8%,heat -3%,hr,1
+2026-08-31,Trent Grisham,NYY,823982,Walbert Ureña *,5,card,15.6,16.2,13.4,+541,475,-22.7,park +4%,81F · wind out 6,LvR +8%,heat -12%,no,0
+2026-08-31,Max Muncy,ATH,822855,Jacob deGrom,6,card,15.4,19.9,,+548,,,park +2%,98F · wind in 5 (roof: half),LvR +8%,,no,0
+2026-08-31,Bryce Harper,PHI,825040,Brandon Pfaadt,3,card,14.9,20.3,15.6,+569,500,-6.2,park +4%,88F · wind out 4 (roof: half),LvR +8%,heat +3%,no,0
+2026-08-31,Carson Kelly,CHC,824635,Kyle Harrison,7,card,14.9,9.5,8.3,+569,500,-50.4,park avg,80F · wind out 5,RvL +12%,,hr,1
+2026-08-31,Corbin Carroll,ARI,825040,Aaron Nola,2,card,14.9,20.0,15.5,+569,500,-7.1,park +4%,88F · wind out 4 (roof: half),LvR +8%,heat -7%,void,
+2026-08-31,Isaac Paredes,HOU,824149,Anthony Kay,3,card,14.9,14.8,12.2,+569,500,-27.1,park +3%,86F (roof: half),RvL +12%,,no,0
