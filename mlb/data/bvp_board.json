@@ -1,19 +1,8 @@
 {
- "generated": "2026-09-01T19:55:41+00:00",
+ "generated": "2026-09-01T22:35:13+00:00",
  "date": "2026-09-01",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Jose Siri",
-   "team": "LAA",
-   "opp_sp": "Gerrit Cole",
-   "pa": 13,
-   "ab": 13,
-   "h": 2,
-   "hr": 2,
-   "avg": ".154",
-   "slg": ".615"
-  },
   {
    "batter": "Matt Olson",
    "team": "ATL",
@@ -24,17 +13,6 @@
    "hr": 2,
    "avg": ".190",
    "slg": ".476"
-  },
-  {
-   "batter": "Darell Hernaiz",
-   "team": "ATH",
-   "opp_sp": "MacKenzie Gore",
-   "pa": 7,
-   "ab": 6,
-   "h": 4,
-   "hr": 1,
-   "avg": ".667",
-   "slg": "1.167"
   },
   {
    "batter": "Xander Bogaerts",
@@ -79,17 +57,6 @@
    "hr": 1,
    "avg": ".444",
    "slg": ".778"
-  },
-  {
-   "batter": "Gary S\u00e1nchez",
-   "team": "MIL",
-   "opp_sp": "Matthew Boyd",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
   },
   {
    "batter": "Andrew Vaughn",
@@ -167,6 +134,17 @@
    "hr": 1,
    "avg": ".286",
    "slg": ".429"
+  },
+  {
+   "batter": "Juan Soto",
+   "team": "NYM",
+   "opp_sp": "Freddy Peralta",
+   "pa": 17,
+   "ab": 12,
+   "h": 1,
+   "hr": 1,
+   "avg": ".083",
+   "slg": ".333"
   }
  ]
 }
