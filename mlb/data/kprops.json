@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T16:52+00:00",
+ "generated": "2026-09-01T17:26+00:00",
  "board": [
   {
    "pitcher": "Jes\u00fas Luzardo",
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19925 (used 75) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19893 (used 107) \u00b7 whiff rest:30 rows",
  "n_markets": 26,
  "n_plays": 0,
  "plays": [],
