@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T19:46:49+00:00",
+ "generated": "2026-09-02T22:36:16+00:00",
  "date": "2026-09-02",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Lawrence Butler",
    "team": "ATH",
    "opp_sp": "Cody Bradford",
-   "pa": 11,
-   "ab": 10,
-   "h": 6,
+   "pa": 13,
+   "ab": 12,
+   "h": 7,
    "hr": 2,
-   "avg": ".600",
-   "slg": "1.300"
+   "avg": ".583",
+   "slg": "1.167"
   },
   {
    "batter": "Julio Rodr\u00edguez",
@@ -37,17 +37,6 @@
    "slg": ".846"
   },
   {
-   "batter": "Jake Burger",
-   "team": "TEX",
-   "opp_sp": "Jacob Lopez",
-   "pa": 10,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
    "batter": "Trea Turner",
    "team": "PHI",
    "opp_sp": "Taylor Clarke",
@@ -57,6 +46,17 @@
    "hr": 1,
    "avg": ".500",
    "slg": "1.000"
+  },
+  {
+   "batter": "Justin Foscue",
+   "team": "TEX",
+   "opp_sp": "Jacob Lopez",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
   },
   {
    "batter": "Seiya Suzuki",
@@ -103,6 +103,17 @@
    "slg": ".714"
   },
   {
+   "batter": "Jake Burger",
+   "team": "TEX",
+   "opp_sp": "Jacob Lopez",
+   "pa": 13,
+   "ab": 9,
+   "h": 3,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".667"
+  },
+  {
    "batter": "Isaac Paredes",
    "team": "HOU",
    "opp_sp": "Davis Martin",
@@ -125,17 +136,6 @@
    "slg": ".667"
   },
   {
-   "batter": "Michael Harris II",
-   "team": "ATL",
-   "opp_sp": "Brad Lord",
-   "pa": 9,
-   "ab": 9,
-   "h": 3,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
-  },
-  {
    "batter": "Dylan Crews",
    "team": "WSH",
    "opp_sp": "Grant Holmes",
@@ -147,26 +147,26 @@
    "slg": ".571"
   },
   {
-   "batter": "Gleyber Torres",
-   "team": "DET",
-   "opp_sp": "Dean Kremer",
-   "pa": 35,
-   "ab": 32,
-   "h": 10,
+   "batter": "Michael Harris II",
+   "team": "ATL",
+   "opp_sp": "Brad Lord",
+   "pa": 11,
+   "ab": 11,
+   "h": 3,
    "hr": 1,
-   "avg": ".313",
-   "slg": ".500"
+   "avg": ".273",
+   "slg": ".545"
   },
   {
-   "batter": "Dillon Dingler",
-   "team": "DET",
-   "opp_sp": "Dean Kremer",
-   "pa": 8,
-   "ab": 8,
-   "h": 1,
+   "batter": "Randy Arozarena",
+   "team": "SEA",
+   "opp_sp": "Patrick Sandoval",
+   "pa": 18,
+   "ab": 16,
+   "h": 3,
    "hr": 1,
-   "avg": ".125",
-   "slg": ".500"
+   "avg": ".188",
+   "slg": ".438"
   }
  ]
 }
