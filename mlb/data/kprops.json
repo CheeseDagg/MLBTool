@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T13:02+00:00",
+ "generated": "2026-09-02T16:49+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -962,46 +962,6 @@
    ]
   },
   {
-   "pitcher": "Brandon Williamson",
-   "opp": "San Diego Padres",
-   "lam": 3.84,
-   "k9_regressed": 7.49,
-   "exp_ip": 4.67,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3403,
-     "fair_over": 194,
-     "fair_under": -194
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.1907,
-     "fair_over": 424,
-     "fair_under": -424
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0949,
-     "fair_over": 954,
-     "fair_under": -954
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0423,
-     "fair_over": 2266,
-     "fair_under": -2266
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.017,
-     "fair_over": 5776,
-     "fair_under": -5776
-    }
-   ]
-  },
-  {
    "pitcher": "Taylor Clarke",
    "opp": "Philadelphia Phillies",
    "lam": 3.82,
@@ -1082,6 +1042,46 @@
    ]
   },
   {
+   "pitcher": "Brandon Williamson",
+   "opp": "San Diego Padres",
+   "lam": 3.3,
+   "k9_regressed": 7.41,
+   "exp_ip": 4.05,
+   "opp_mult": 0.988,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2365,
+     "fair_over": 323,
+     "fair_under": -323
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1165,
+     "fair_over": 758,
+     "fair_under": -758
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0506,
+     "fair_over": 1875,
+     "fair_under": -1875
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0196,
+     "fair_over": 4996,
+     "fair_under": -4996
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0068,
+     "fair_over": 14502,
+     "fair_under": -14502
+    }
+   ]
+  },
+  {
    "pitcher": "Brad Lord",
    "opp": "Atlanta Braves",
    "lam": 2.76,
@@ -1122,8 +1122,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 19784 (used 216) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 19752 (used 248) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
