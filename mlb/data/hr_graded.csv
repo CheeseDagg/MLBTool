@@ -1741,3 +1741,10 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-01,Miguel Vargas,CHW,824148,Ronel Blanco,3,card,19.1,21.3,16.2,+424,370,-23.9,park +3%,84F (roof: half),RvR -3%,heat +2%,no,0
 2026-09-01,Sal Stewart,CIN,824472,Randy Vásquez *,3,card,19.1,25.0,18.2,+424,370,-14.6,park +25%,94F,RvR -3%,heat +7%,no,0
 2026-09-02,Fernando Tatis Jr.,SDP,824470,Brandon Williamson,1,card,17.1,23.3,17.3,+485,425,-9.4,park +25%,94F,RvL +12%,heat +4%,no,0
+2026-09-02,Hunter Goodman,COL,824312,Trevor Rogers,3,card,19.9,27.4,19.5,+402,350,-12.3,park +9%,89F,RvL +12%,heat +16%,no,0
+2026-09-02,James Wood,WSN,822686,Grant Holmes,1,card,18.8,26.2,,+431,,,park avg,80F · wind in 5,LvR +8%,heat -7%,no,0
+2026-09-02,Matt Olson,ATL,822686,Brad Lord,3,card,18.7,26.0,,+434,,,park avg,80F · wind in 5,LvR +8%,heat +2%,no,0
+2026-09-02,Sal Stewart,CIN,824470,Casey Mize,3,card,18.3,25.1,,+448,,,park +25%,96F · wind out 4,RvR -3%,heat -3%,no,0
+2026-09-02,Pete Alonso,BAL,824312,Tomoyuki Sugano,2,card,17.9,28.3,20.0,+457,400,-0.1,park +9%,89F,RvR -3%,heat +4%,no,0
+2026-09-02,Drake Baldwin,ATL,822686,Brad Lord,1,card,17.5,23.7,,+473,,,park avg,80F · wind in 5,LvR +8%,heat -0%,no,0
+2026-09-02,Kyle Schwarber,PHI,825037,Taylor Clarke,1,card,17.2,30.7,21.2,+480,420,10.4,park +4%,100F (roof: half),LvR +8%,heat -1%,no,0
