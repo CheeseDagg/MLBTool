@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T16:49+00:00",
+ "generated": "2026-09-02T17:18+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -442,46 +442,6 @@
    ]
   },
   {
-   "pitcher": "Casey Mize",
-   "opp": "Cincinnati Reds",
-   "lam": 5.07,
-   "k9_regressed": 8.05,
-   "exp_ip": 5.22,
-   "opp_mult": 1.085,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5714,
-     "fair_over": -133,
-     "fair_under": 133
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.396,
-     "fair_over": 153,
-     "fair_under": -153
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2478,
-     "fair_over": 303,
-     "fair_under": -303
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1406,
-     "fair_over": 611,
-     "fair_under": -611
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0726,
-     "fair_over": 1277,
-     "fair_under": -1277
-    }
-   ]
-  },
-  {
    "pitcher": "Noah Cameron",
    "opp": "Miami Marlins",
    "lam": 5.02,
@@ -598,6 +558,46 @@
      "p_over": 0.0627,
      "fair_over": 1496,
      "fair_under": -1496
+    }
+   ]
+  },
+  {
+   "pitcher": "Casey Mize",
+   "opp": "Cincinnati Reds",
+   "lam": 4.84,
+   "k9_regressed": 8.0,
+   "exp_ip": 5.03,
+   "opp_mult": 1.084,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5318,
+     "fair_over": -114,
+     "fair_under": 114
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3567,
+     "fair_over": 180,
+     "fair_under": -180
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2154,
+     "fair_over": 364,
+     "fair_under": -364
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1176,
+     "fair_over": 750,
+     "fair_under": -750
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0584,
+     "fair_over": 1612,
+     "fair_under": -1612
     }
    ]
   },
@@ -842,46 +842,6 @@
    ]
   },
   {
-   "pitcher": "Grant Holmes",
-   "opp": "Washington Nationals",
-   "lam": 4.09,
-   "k9_regressed": 7.5,
-   "exp_ip": 4.99,
-   "opp_mult": 0.984,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3885,
-     "fair_over": 157,
-     "fair_under": -157
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2289,
-     "fair_over": 337,
-     "fair_under": -337
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1201,
-     "fair_over": 732,
-     "fair_under": -732
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0566,
-     "fair_over": 1667,
-     "fair_under": -1667
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0241,
-     "fair_over": 4044,
-     "fair_under": -4044
-    }
-   ]
-  },
-  {
    "pitcher": "Cody Bradford",
    "opp": "Athletics",
    "lam": 4.02,
@@ -958,6 +918,46 @@
      "p_over": 0.0216,
      "fair_over": 4521,
      "fair_under": -4521
+    }
+   ]
+  },
+  {
+   "pitcher": "Grant Holmes",
+   "opp": "Washington Nationals",
+   "lam": 3.93,
+   "k9_regressed": 7.46,
+   "exp_ip": 4.82,
+   "opp_mult": 0.983,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.357,
+     "fair_over": 180,
+     "fair_under": -180
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2036,
+     "fair_over": 391,
+     "fair_under": -391
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1032,
+     "fair_over": 869,
+     "fair_under": -869
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0469,
+     "fair_over": 2031,
+     "fair_under": -2031
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0193,
+     "fair_over": 5087,
+     "fair_under": -5087
     }
    ]
   },
@@ -1044,86 +1044,86 @@
   {
    "pitcher": "Brandon Williamson",
    "opp": "San Diego Padres",
-   "lam": 3.3,
-   "k9_regressed": 7.41,
-   "exp_ip": 4.05,
+   "lam": 3.48,
+   "k9_regressed": 7.4,
+   "exp_ip": 4.29,
    "opp_mult": 0.988,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2365,
-     "fair_over": 323,
-     "fair_under": -323
+     "p_over": 0.2711,
+     "fair_over": 269,
+     "fair_under": -269
     },
     {
      "line": 5.5,
-     "p_over": 0.1165,
-     "fair_over": 758,
-     "fair_under": -758
+     "p_over": 0.14,
+     "fair_over": 614,
+     "fair_under": -614
     },
     {
      "line": 6.5,
-     "p_over": 0.0506,
-     "fair_over": 1875,
-     "fair_under": -1875
+     "p_over": 0.0639,
+     "fair_over": 1465,
+     "fair_under": -1465
     },
     {
      "line": 7.5,
-     "p_over": 0.0196,
-     "fair_over": 4996,
-     "fair_under": -4996
+     "p_over": 0.026,
+     "fair_over": 3739,
+     "fair_under": -3739
     },
     {
      "line": 8.5,
-     "p_over": 0.0068,
-     "fair_over": 14502,
-     "fair_under": -14502
+     "p_over": 0.0096,
+     "fair_over": 10347,
+     "fair_under": -10347
     }
    ]
   },
   {
    "pitcher": "Brad Lord",
    "opp": "Atlanta Braves",
-   "lam": 2.76,
-   "k9_regressed": 8.38,
+   "lam": 2.79,
+   "k9_regressed": 8.47,
    "exp_ip": 3.0,
-   "opp_mult": 0.987,
+   "opp_mult": 0.988,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1457,
-     "fair_over": 587,
-     "fair_under": -587
+     "p_over": 0.1506,
+     "fair_over": 564,
+     "fair_under": -564
     },
     {
      "line": 5.5,
-     "p_over": 0.0614,
-     "fair_over": 1529,
-     "fair_under": -1529
+     "p_over": 0.0641,
+     "fair_over": 1459,
+     "fair_under": -1459
     },
     {
      "line": 6.5,
-     "p_over": 0.0227,
-     "fair_over": 4307,
-     "fair_under": -4307
+     "p_over": 0.024,
+     "fair_over": 4075,
+     "fair_under": -4075
     },
     {
      "line": 7.5,
-     "p_over": 0.0074,
-     "fair_over": 13324,
-     "fair_under": -13324
+     "p_over": 0.0079,
+     "fair_over": 12482,
+     "fair_under": -12482
     },
     {
      "line": 8.5,
-     "p_over": 0.0022,
-     "fair_over": 45436,
-     "fair_under": -45436
+     "p_over": 0.0024,
+     "fair_over": 42112,
+     "fair_under": -42112
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 19752 (used 248) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 19720 (used 280) \u00b7 whiff rest:30 rows",
+ "n_markets": 24,
  "n_plays": 0,
  "plays": [],
  "books": [
