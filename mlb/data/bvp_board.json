@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T01:00:31+00:00",
+ "generated": "2026-09-02T19:46:49+00:00",
  "date": "2026-09-02",
  "min_pa": 6,
  "rows": [
@@ -48,15 +48,15 @@
    "slg": "1.000"
   },
   {
-   "batter": "Jorbit Vivas",
-   "team": "WSH",
-   "opp_sp": "Grant Holmes",
-   "pa": 7,
-   "ab": 6,
-   "h": 2,
+   "batter": "Trea Turner",
+   "team": "PHI",
+   "opp_sp": "Taylor Clarke",
+   "pa": 10,
+   "ab": 10,
+   "h": 5,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
+   "avg": ".500",
+   "slg": "1.000"
   },
   {
    "batter": "Seiya Suzuki",
@@ -81,6 +81,17 @@
    "slg": ".750"
   },
   {
+   "batter": "Ronald Acu\u00f1a Jr.",
+   "team": "ATL",
+   "opp_sp": "Brad Lord",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".750"
+  },
+  {
    "batter": "Josh Naylor",
    "team": "SEA",
    "opp_sp": "Patrick Sandoval",
@@ -92,10 +103,21 @@
    "slg": ".714"
   },
   {
-   "batter": "Dylan Crews",
+   "batter": "Isaac Paredes",
+   "team": "HOU",
+   "opp_sp": "Davis Martin",
+   "pa": 11,
+   "ab": 9,
+   "h": 3,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".667"
+  },
+  {
+   "batter": "James Wood",
    "team": "WSH",
    "opp_sp": "Grant Holmes",
-   "pa": 7,
+   "pa": 9,
    "ab": 6,
    "h": 1,
    "hr": 1,
@@ -103,10 +125,21 @@
    "slg": ".667"
   },
   {
-   "batter": "Austin Hedges",
-   "team": "CLE",
-   "opp_sp": "Dylan Cease",
+   "batter": "Michael Harris II",
+   "team": "ATL",
+   "opp_sp": "Brad Lord",
    "pa": 9,
+   "ab": 9,
+   "h": 3,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".667"
+  },
+  {
+   "batter": "Dylan Crews",
+   "team": "WSH",
+   "opp_sp": "Grant Holmes",
+   "pa": 8,
    "ab": 7,
    "h": 1,
    "hr": 1,
@@ -134,17 +167,6 @@
    "hr": 1,
    "avg": ".125",
    "slg": ".500"
-  },
-  {
-   "batter": "Randy Arozarena",
-   "team": "SEA",
-   "opp_sp": "Patrick Sandoval",
-   "pa": 18,
-   "ab": 16,
-   "h": 3,
-   "hr": 1,
-   "avg": ".188",
-   "slg": ".438"
   }
  ]
 }
