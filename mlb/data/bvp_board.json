@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T01:06:33+00:00",
+ "generated": "2026-09-03T19:48:27+00:00",
  "date": "2026-09-03",
  "min_pa": 6,
  "rows": [
@@ -96,17 +96,6 @@
    "team": "TB",
    "opp_sp": "Cal Quantrill",
    "pa": 11,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
-  },
-  {
-   "batter": "George Springer",
-   "team": "TOR",
-   "opp_sp": "Tanner Bibee",
-   "pa": 9,
    "ab": 9,
    "h": 2,
    "hr": 1,
