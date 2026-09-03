@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T19:48:27+00:00",
+ "generated": "2026-09-03T22:32:12+00:00",
  "date": "2026-09-03",
  "min_pa": 6,
  "rows": [
@@ -125,15 +125,15 @@
    "slg": ".364"
   },
   {
-   "batter": "Gary S\u00e1nchez",
-   "team": "MIL",
-   "opp_sp": "Kevin Gausman",
-   "pa": 27,
-   "ab": 25,
-   "h": 5,
+   "batter": "Jose Altuve",
+   "team": "HOU",
+   "opp_sp": "Luis Castillo",
+   "pa": 26,
+   "ab": 26,
+   "h": 6,
    "hr": 1,
-   "avg": ".200",
-   "slg": ".320"
+   "avg": ".231",
+   "slg": ".346"
   }
  ]
 }
