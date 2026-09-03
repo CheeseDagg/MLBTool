@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T20:12+00:00",
+ "generated": "2026-09-03T22:44+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -51,31 +51,31 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6985,
+     "p_over": 0.6986,
      "fair_over": -232,
      "fair_under": 232
     },
     {
      "line": 5.5,
-     "p_over": 0.5348,
+     "p_over": 0.5349,
      "fair_over": -115,
      "fair_under": 115
     },
     {
      "line": 6.5,
-     "p_over": 0.3743,
+     "p_over": 0.3745,
      "fair_over": 167,
      "fair_under": -167
     },
     {
      "line": 7.5,
-     "p_over": 0.2396,
+     "p_over": 0.2397,
      "fair_over": 317,
      "fair_under": -317
     },
     {
      "line": 8.5,
-     "p_over": 0.1406,
+     "p_over": 0.1407,
      "fair_over": 611,
      "fair_under": -611
     }
@@ -189,7 +189,7 @@
     },
     {
      "line": 7.5,
-     "p_over": 0.1609,
+     "p_over": 0.161,
      "fair_over": 521,
      "fair_under": -521
     },
@@ -567,37 +567,37 @@
    "lam": 4.36,
    "k9_regressed": 7.4,
    "exp_ip": 5.74,
-   "opp_mult": 0.924,
+   "opp_mult": 0.925,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4404,
+     "p_over": 0.4408,
      "fair_over": 127,
      "fair_under": -127
     },
     {
      "line": 5.5,
-     "p_over": 0.2728,
-     "fair_over": 267,
-     "fair_under": -267
+     "p_over": 0.2731,
+     "fair_over": 266,
+     "fair_under": -266
     },
     {
      "line": 6.5,
-     "p_over": 0.151,
-     "fair_over": 562,
-     "fair_under": -562
+     "p_over": 0.1513,
+     "fair_over": 561,
+     "fair_under": -561
     },
     {
      "line": 7.5,
-     "p_over": 0.0752,
-     "fair_over": 1229,
-     "fair_under": -1229
+     "p_over": 0.0754,
+     "fair_over": 1226,
+     "fair_under": -1226
     },
     {
      "line": 8.5,
-     "p_over": 0.034,
-     "fair_over": 2844,
-     "fair_under": -2844
+     "p_over": 0.0341,
+     "fair_over": 2836,
+     "fair_under": -2836
     }
    ]
   },
@@ -611,33 +611,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4381,
+     "p_over": 0.4379,
      "fair_over": 128,
      "fair_under": -128
     },
     {
      "line": 5.5,
-     "p_over": 0.2707,
-     "fair_over": 269,
-     "fair_under": -269
+     "p_over": 0.2706,
+     "fair_over": 270,
+     "fair_under": -270
     },
     {
      "line": 6.5,
-     "p_over": 0.1495,
+     "p_over": 0.1494,
      "fair_over": 569,
      "fair_under": -569
     },
     {
      "line": 7.5,
      "p_over": 0.0743,
-     "fair_over": 1246,
-     "fair_under": -1246
+     "fair_over": 1247,
+     "fair_under": -1247
     },
     {
      "line": 8.5,
-     "p_over": 0.0335,
-     "fair_over": 2888,
-     "fair_under": -2888
+     "p_over": 0.0334,
+     "fair_over": 2891,
+     "fair_under": -2891
     }
    ]
   },
@@ -722,7 +722,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 19588 (used 412) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 19575 (used 425) \u00b7 whiff rest:30 rows",
  "n_markets": 12,
  "n_plays": 0,
  "plays": [],
@@ -735,6 +735,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 0,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
