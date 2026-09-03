@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T17:09+00:00",
+ "generated": "2026-09-03T20:12+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -44,40 +44,40 @@
   {
    "pitcher": "Hunter Brown",
    "opp": "Chicago White Sox",
-   "lam": 5.8,
-   "k9_regressed": 9.27,
-   "exp_ip": 5.4,
+   "lam": 5.88,
+   "k9_regressed": 9.33,
+   "exp_ip": 5.44,
    "opp_mult": 1.043,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6869,
-     "fair_over": -219,
-     "fair_under": 219
+     "p_over": 0.6985,
+     "fair_over": -232,
+     "fair_under": 232
     },
     {
      "line": 5.5,
-     "p_over": 0.5212,
-     "fair_over": -109,
-     "fair_under": 109
+     "p_over": 0.5348,
+     "fair_over": -115,
+     "fair_under": 115
     },
     {
      "line": 6.5,
-     "p_over": 0.3611,
-     "fair_over": 177,
-     "fair_under": -177
+     "p_over": 0.3743,
+     "fair_over": 167,
+     "fair_under": -167
     },
     {
      "line": 7.5,
-     "p_over": 0.2286,
-     "fair_over": 337,
-     "fair_under": -337
+     "p_over": 0.2396,
+     "fair_over": 317,
+     "fair_under": -317
     },
     {
      "line": 8.5,
-     "p_over": 0.1325,
-     "fair_over": 655,
-     "fair_under": -655
+     "p_over": 0.1406,
+     "fair_over": 611,
+     "fair_under": -611
     }
    ]
   },
@@ -164,40 +164,40 @@
   {
    "pitcher": "Jos\u00e9 Soriano",
    "opp": "Cleveland Guardians",
-   "lam": 5.37,
-   "k9_regressed": 8.81,
-   "exp_ip": 5.6,
-   "opp_mult": 0.978,
+   "lam": 5.25,
+   "k9_regressed": 8.69,
+   "exp_ip": 5.57,
+   "opp_mult": 0.976,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6211,
-     "fair_over": -164,
-     "fair_under": 164
+     "p_over": 0.6025,
+     "fair_over": -152,
+     "fair_under": 152
     },
     {
      "line": 5.5,
-     "p_over": 0.4479,
-     "fair_over": 123,
-     "fair_under": -123
+     "p_over": 0.4281,
+     "fair_over": 134,
+     "fair_under": -134
     },
     {
      "line": 6.5,
-     "p_over": 0.293,
-     "fair_over": 241,
-     "fair_under": -241
+     "p_over": 0.2755,
+     "fair_over": 263,
+     "fair_under": -263
     },
     {
      "line": 7.5,
-     "p_over": 0.1742,
-     "fair_over": 474,
-     "fair_under": -474
+     "p_over": 0.1609,
+     "fair_over": 521,
+     "fair_under": -521
     },
     {
      "line": 8.5,
-     "p_over": 0.0946,
-     "fair_over": 957,
-     "fair_under": -957
+     "p_over": 0.0858,
+     "fair_over": 1066,
+     "fair_under": -1066
     }
    ]
   },
@@ -362,6 +362,46 @@
    ]
   },
   {
+   "pitcher": "Blade Tidwell",
+   "opp": "Pittsburgh Pirates",
+   "lam": 4.84,
+   "k9_regressed": 8.05,
+   "exp_ip": 5.11,
+   "opp_mult": 1.06,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5314,
+     "fair_over": -113,
+     "fair_under": 113
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3564,
+     "fair_over": 181,
+     "fair_under": -181
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2151,
+     "fair_over": 365,
+     "fair_under": -365
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1174,
+     "fair_over": 752,
+     "fair_under": -752
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0583,
+     "fair_over": 1616,
+     "fair_under": -1616
+    }
+   ]
+  },
+  {
    "pitcher": "Kade Anderson",
    "opp": "Athletics",
    "lam": 4.64,
@@ -522,122 +562,82 @@
    ]
   },
   {
-   "pitcher": "Luis Castillo",
-   "opp": "Houston Astros",
-   "lam": 4.41,
-   "k9_regressed": 7.99,
-   "exp_ip": 5.03,
-   "opp_mult": 0.986,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4499,
-     "fair_over": 122,
-     "fair_under": -122
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2811,
-     "fair_over": 256,
-     "fair_under": -256
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1571,
-     "fair_over": 537,
-     "fair_under": -537
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.079,
-     "fair_over": 1165,
-     "fair_under": -1165
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0361,
-     "fair_over": 2674,
-     "fair_under": -2674
-    }
-   ]
-  },
-  {
    "pitcher": "Tanner Bibee",
    "opp": "Toronto Blue Jays",
-   "lam": 4.38,
-   "k9_regressed": 7.36,
-   "exp_ip": 5.8,
+   "lam": 4.36,
+   "k9_regressed": 7.4,
+   "exp_ip": 5.74,
    "opp_mult": 0.924,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4456,
-     "fair_over": 124,
-     "fair_under": -124
+     "p_over": 0.4404,
+     "fair_over": 127,
+     "fair_under": -127
     },
     {
      "line": 5.5,
-     "p_over": 0.2772,
-     "fair_over": 261,
-     "fair_under": -261
+     "p_over": 0.2728,
+     "fair_over": 267,
+     "fair_under": -267
     },
     {
      "line": 6.5,
-     "p_over": 0.1543,
-     "fair_over": 548,
-     "fair_under": -548
+     "p_over": 0.151,
+     "fair_over": 562,
+     "fair_under": -562
     },
     {
      "line": 7.5,
-     "p_over": 0.0773,
-     "fair_over": 1194,
-     "fair_under": -1194
+     "p_over": 0.0752,
+     "fair_over": 1229,
+     "fair_under": -1229
     },
     {
      "line": 8.5,
-     "p_over": 0.0351,
-     "fair_over": 2750,
-     "fair_under": -2750
+     "p_over": 0.034,
+     "fair_over": 2844,
+     "fair_under": -2844
     }
    ]
   },
   {
-   "pitcher": "Blade Tidwell",
-   "opp": "Pittsburgh Pirates",
-   "lam": 4.25,
-   "k9_regressed": 8.12,
-   "exp_ip": 4.44,
-   "opp_mult": 1.061,
+   "pitcher": "Luis Castillo",
+   "opp": "Houston Astros",
+   "lam": 4.34,
+   "k9_regressed": 7.96,
+   "exp_ip": 4.99,
+   "opp_mult": 0.985,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4206,
-     "fair_over": 138,
-     "fair_under": -138
+     "p_over": 0.4381,
+     "fair_over": 128,
+     "fair_under": -128
     },
     {
      "line": 5.5,
-     "p_over": 0.2556,
-     "fair_over": 291,
-     "fair_under": -291
+     "p_over": 0.2707,
+     "fair_over": 269,
+     "fair_under": -269
     },
     {
      "line": 6.5,
-     "p_over": 0.1387,
-     "fair_over": 621,
-     "fair_under": -621
+     "p_over": 0.1495,
+     "fair_over": 569,
+     "fair_under": -569
     },
     {
      "line": 7.5,
-     "p_over": 0.0677,
-     "fair_over": 1378,
-     "fair_under": -1378
+     "p_over": 0.0743,
+     "fair_over": 1246,
+     "fair_under": -1246
     },
     {
      "line": 8.5,
-     "p_over": 0.0299,
-     "fair_over": 3244,
-     "fair_under": -3244
+     "p_over": 0.0335,
+     "fair_over": 2888,
+     "fair_under": -2888
     }
    ]
   },
@@ -685,45 +685,45 @@
    "pitcher": "Lake Bachar",
    "opp": "San Francisco Giants",
    "lam": 2.95,
-   "k9_regressed": 9.09,
+   "k9_regressed": 9.06,
    "exp_ip": 3.0,
    "opp_mult": 0.975,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1772,
-     "fair_over": 464,
-     "fair_under": -464
+     "p_over": 0.1758,
+     "fair_over": 469,
+     "fair_under": -469
     },
     {
      "line": 5.5,
-     "p_over": 0.0794,
-     "fair_over": 1159,
-     "fair_under": -1159
+     "p_over": 0.0786,
+     "fair_over": 1172,
+     "fair_under": -1172
     },
     {
      "line": 6.5,
-     "p_over": 0.0313,
-     "fair_over": 3097,
-     "fair_under": -3097
+     "p_over": 0.0309,
+     "fair_over": 3138,
+     "fair_under": -3138
     },
     {
      "line": 7.5,
-     "p_over": 0.011,
-     "fair_over": 9027,
-     "fair_under": -9027
+     "p_over": 0.0108,
+     "fair_over": 9169,
+     "fair_under": -9169
     },
     {
      "line": 8.5,
-     "p_over": 0.0035,
-     "fair_over": 28885,
-     "fair_under": -28885
+     "p_over": 0.0034,
+     "fair_over": 29413,
+     "fair_under": -29413
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19604 (used 396) \u00b7 whiff rest:30 rows",
- "n_markets": 16,
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 19588 (used 412) \u00b7 whiff rest:30 rows",
+ "n_markets": 12,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -735,6 +735,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }

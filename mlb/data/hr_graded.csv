@@ -1772,3 +1772,6 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-02,Juan Soto,NYM,822931,Griffin Jax,2,card,16.9,25.6,18.5,+491,430,-1.8,park -4% [low-conf],dome,LvR +8%,heat +1%,hr,1
 2026-09-02,Kody Clemens,MIN,823660,Drew Anderson,3,card,16.9,22.0,16.6,+491,430,-12.2,park -2%,87F,LvR +8%,heat +0%,no,0
 2026-09-02,Salvador Perez,KCR,824068,Eury Pérez *,4,card,16.9,16.0,13.3,+491,430,-29.5,park -4% [low-conf],99F · wind out 8,RvR -3%,,hr,1
+2026-09-03,Brandon Lowe,PIT,823337,Blade Tidwell,2,card,19.1,22.5,16.8,+424,370,-21.0,park -9%,83F,LvR +8%,heat +6%,no,0
+2026-09-03,Oneil Cruz,PIT,823337,Blade Tidwell,5,card,17.6,17.7,14.2,+469,410,-27.4,park -9%,83F,LvR +8%,heat +7%,no,0
+2026-09-03,Rafael Devers,SFG,823337,Lake Bachar,2,card,16.9,23.0,17.1,+491,430,-9.2,park -9%,83F,LvR +8%,heat -5%,no,0
