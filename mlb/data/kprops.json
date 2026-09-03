@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T16:39+00:00",
+ "generated": "2026-09-03T17:09+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -362,46 +362,6 @@
    ]
   },
   {
-   "pitcher": "Blade Tidwell",
-   "opp": "Pittsburgh Pirates",
-   "lam": 4.83,
-   "k9_regressed": 7.98,
-   "exp_ip": 5.13,
-   "opp_mult": 1.061,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5293,
-     "fair_over": -112,
-     "fair_under": 112
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3543,
-     "fair_over": 182,
-     "fair_under": -182
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2135,
-     "fair_over": 368,
-     "fair_under": -368
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1163,
-     "fair_over": 760,
-     "fair_under": -760
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0576,
-     "fair_over": 1637,
-     "fair_under": -1637
-    }
-   ]
-  },
-  {
    "pitcher": "Kade Anderson",
    "opp": "Athletics",
    "lam": 4.64,
@@ -642,6 +602,46 @@
    ]
   },
   {
+   "pitcher": "Blade Tidwell",
+   "opp": "Pittsburgh Pirates",
+   "lam": 4.25,
+   "k9_regressed": 8.12,
+   "exp_ip": 4.44,
+   "opp_mult": 1.061,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4206,
+     "fair_over": 138,
+     "fair_under": -138
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2556,
+     "fair_over": 291,
+     "fair_under": -291
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1387,
+     "fair_over": 621,
+     "fair_under": -621
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0677,
+     "fair_over": 1378,
+     "fair_under": -1378
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0299,
+     "fair_over": 3244,
+     "fair_under": -3244
+    }
+   ]
+  },
+  {
    "pitcher": "Cal Quantrill",
    "opp": "Tampa Bay Rays",
    "lam": 3.75,
@@ -684,46 +684,46 @@
   {
    "pitcher": "Lake Bachar",
    "opp": "San Francisco Giants",
-   "lam": 2.94,
-   "k9_regressed": 9.06,
+   "lam": 2.95,
+   "k9_regressed": 9.09,
    "exp_ip": 3.0,
    "opp_mult": 0.975,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1756,
-     "fair_over": 470,
-     "fair_under": -470
+     "p_over": 0.1772,
+     "fair_over": 464,
+     "fair_under": -464
     },
     {
      "line": 5.5,
-     "p_over": 0.0785,
-     "fair_over": 1174,
-     "fair_under": -1174
+     "p_over": 0.0794,
+     "fair_over": 1159,
+     "fair_under": -1159
     },
     {
      "line": 6.5,
-     "p_over": 0.0308,
-     "fair_over": 3146,
-     "fair_under": -3146
+     "p_over": 0.0313,
+     "fair_over": 3097,
+     "fair_under": -3097
     },
     {
      "line": 7.5,
-     "p_over": 0.0108,
-     "fair_over": 9194,
-     "fair_under": -9194
+     "p_over": 0.011,
+     "fair_over": 9027,
+     "fair_under": -9027
     },
     {
      "line": 8.5,
-     "p_over": 0.0034,
-     "fair_over": 29509,
-     "fair_under": -29509
+     "p_over": 0.0035,
+     "fair_over": 28885,
+     "fair_under": -28885
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 19624 (used 376) \u00b7 whiff rest:30 rows",
- "n_markets": 17,
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 19604 (used 396) \u00b7 whiff rest:30 rows",
+ "n_markets": 16,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -735,6 +735,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
