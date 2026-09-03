@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T13:05+00:00",
+ "generated": "2026-09-03T16:39+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -684,45 +684,45 @@
   {
    "pitcher": "Lake Bachar",
    "opp": "San Francisco Giants",
-   "lam": 2.93,
-   "k9_regressed": 9.01,
+   "lam": 2.94,
+   "k9_regressed": 9.06,
    "exp_ip": 3.0,
-   "opp_mult": 0.974,
+   "opp_mult": 0.975,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1725,
-     "fair_over": 480,
-     "fair_under": -480
+     "p_over": 0.1756,
+     "fair_over": 470,
+     "fair_under": -470
     },
     {
      "line": 5.5,
-     "p_over": 0.0767,
-     "fair_over": 1204,
-     "fair_under": -1204
+     "p_over": 0.0785,
+     "fair_over": 1174,
+     "fair_under": -1174
     },
     {
      "line": 6.5,
-     "p_over": 0.0299,
-     "fair_over": 3242,
-     "fair_under": -3242
+     "p_over": 0.0308,
+     "fair_over": 3146,
+     "fair_under": -3146
     },
     {
      "line": 7.5,
-     "p_over": 0.0104,
-     "fair_over": 9528,
-     "fair_under": -9528
+     "p_over": 0.0108,
+     "fair_over": 9194,
+     "fair_under": -9194
     },
     {
      "line": 8.5,
-     "p_over": 0.0032,
-     "fair_over": 30758,
-     "fair_under": -30758
+     "p_over": 0.0034,
+     "fair_over": 29509,
+     "fair_under": -29509
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 19644 (used 356) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 19624 (used 376) \u00b7 whiff rest:30 rows",
  "n_markets": 17,
  "n_plays": 0,
  "plays": [],
