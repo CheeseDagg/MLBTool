@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T19:57+00:00",
+ "generated": "2026-09-04T22:28+00:00",
  "board": [
   {
    "pitcher": "Chris Sale",
@@ -367,37 +367,37 @@
    "lam": 5.27,
    "k9_regressed": 8.2,
    "exp_ip": 5.72,
-   "opp_mult": 1.012,
+   "opp_mult": 1.013,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6054,
-     "fair_over": -153,
-     "fair_under": 153
+     "p_over": 0.606,
+     "fair_over": -154,
+     "fair_under": 154
     },
     {
      "line": 5.5,
-     "p_over": 0.4311,
+     "p_over": 0.4317,
      "fair_over": 132,
      "fair_under": -132
     },
     {
      "line": 6.5,
-     "p_over": 0.2781,
-     "fair_over": 260,
-     "fair_under": -260
+     "p_over": 0.2787,
+     "fair_over": 259,
+     "fair_under": -259
     },
     {
      "line": 7.5,
-     "p_over": 0.1629,
-     "fair_over": 514,
-     "fair_under": -514
+     "p_over": 0.1633,
+     "fair_over": 512,
+     "fair_under": -512
     },
     {
      "line": 8.5,
-     "p_over": 0.0871,
-     "fair_over": 1048,
-     "fair_under": -1048
+     "p_over": 0.0873,
+     "fair_over": 1045,
+     "fair_under": -1045
     }
    ]
   },
@@ -571,33 +571,33 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.496,
+     "p_over": 0.4957,
      "fair_over": 102,
      "fair_under": -102
     },
     {
      "line": 5.5,
-     "p_over": 0.3228,
+     "p_over": 0.3225,
      "fair_over": 210,
      "fair_under": -210
     },
     {
      "line": 6.5,
-     "p_over": 0.1886,
-     "fair_over": 430,
-     "fair_under": -430
+     "p_over": 0.1883,
+     "fair_over": 431,
+     "fair_under": -431
     },
     {
      "line": 7.5,
-     "p_over": 0.0994,
-     "fair_over": 906,
-     "fair_under": -906
+     "p_over": 0.0993,
+     "fair_over": 908,
+     "fair_under": -908
     },
     {
      "line": 8.5,
-     "p_over": 0.0476,
-     "fair_over": 2001,
-     "fair_under": -2001
+     "p_over": 0.0475,
+     "fair_over": 2005,
+     "fair_under": -2005
     }
    ]
   },
@@ -882,6 +882,46 @@
    ]
   },
   {
+   "pitcher": "Keider Montero",
+   "opp": "Cleveland Guardians",
+   "lam": 3.97,
+   "k9_regressed": 6.54,
+   "exp_ip": 5.59,
+   "opp_mult": 0.976,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3653,
+     "fair_over": 174,
+     "fair_under": -174
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2102,
+     "fair_over": 376,
+     "fair_under": -376
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1075,
+     "fair_over": 830,
+     "fair_under": -830
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0494,
+     "fair_over": 1926,
+     "fair_under": -1926
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0205,
+     "fair_over": 4783,
+     "fair_under": -4783
+    }
+   ]
+  },
+  {
    "pitcher": "Nick Martinez",
    "opp": "Texas Rangers",
    "lam": 3.95,
@@ -918,46 +958,6 @@
      "p_over": 0.0198,
      "fair_over": 4945,
      "fair_under": -4945
-    }
-   ]
-  },
-  {
-   "pitcher": "Keider Montero",
-   "opp": "Cleveland Guardians",
-   "lam": 3.89,
-   "k9_regressed": 6.52,
-   "exp_ip": 5.51,
-   "opp_mult": 0.976,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3503,
-     "fair_over": 186,
-     "fair_under": -186
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.1984,
-     "fair_over": 404,
-     "fair_under": -404
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0998,
-     "fair_over": 902,
-     "fair_under": -902
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.045,
-     "fair_over": 2122,
-     "fair_under": -2122
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0183,
-     "fair_over": 5351,
-     "fair_under": -5351
     }
    ]
   },
@@ -1204,40 +1204,40 @@
   {
    "pitcher": "Logan Allen",
    "opp": "Detroit Tigers",
-   "lam": 2.92,
-   "k9_regressed": 8.67,
+   "lam": 2.91,
+   "k9_regressed": 8.61,
    "exp_ip": 3.0,
-   "opp_mult": 1.012,
+   "opp_mult": 1.013,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1722,
-     "fair_over": 481,
-     "fair_under": -481
+     "p_over": 0.1695,
+     "fair_over": 490,
+     "fair_under": -490
     },
     {
      "line": 5.5,
-     "p_over": 0.0765,
-     "fair_over": 1207,
-     "fair_under": -1207
+     "p_over": 0.0749,
+     "fair_over": 1235,
+     "fair_under": -1235
     },
     {
      "line": 6.5,
-     "p_over": 0.0298,
-     "fair_over": 3251,
-     "fair_under": -3251
+     "p_over": 0.0291,
+     "fair_over": 3341,
+     "fair_under": -3341
     },
     {
      "line": 7.5,
-     "p_over": 0.0104,
-     "fair_over": 9558,
-     "fair_under": -9558
+     "p_over": 0.01,
+     "fair_over": 9872,
+     "fair_under": -9872
     },
     {
      "line": 8.5,
-     "p_over": 0.0032,
-     "fair_over": 30873,
-     "fair_under": -30873
+     "p_over": 0.0031,
+     "fair_over": 32056,
+     "fair_under": -32056
     }
    ]
   },
@@ -1282,7 +1282,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 19435 (used 565) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 19404 (used 596) \u00b7 whiff rest:30 rows",
  "n_markets": 27,
  "n_plays": 0,
  "plays": [],
@@ -1295,6 +1295,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
