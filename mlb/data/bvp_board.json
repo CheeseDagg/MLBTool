@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T00:58:58+00:00",
+ "generated": "2026-09-04T19:32:34+00:00",
  "date": "2026-09-04",
  "min_pa": 6,
  "rows": [
@@ -125,17 +125,6 @@
    "slg": "1.000"
   },
   {
-   "batter": "Willi Castro",
-   "team": "COL",
-   "opp_sp": "Andre Pallante",
-   "pa": 6,
-   "ab": 4,
-   "h": 1,
-   "hr": 1,
-   "avg": ".250",
-   "slg": "1.000"
-  },
-  {
    "batter": "Lane Thomas",
    "team": "ATL",
    "opp_sp": "Cristopher S\u00e1nchez",
@@ -166,6 +155,17 @@
    "h": 4,
    "hr": 1,
    "avg": ".500",
+   "slg": ".875"
+  },
+  {
+   "batter": "Zack Gelof",
+   "team": "ATH",
+   "opp_sp": "Logan Gilbert",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
+   "hr": 1,
+   "avg": ".375",
    "slg": ".875"
   }
  ]
