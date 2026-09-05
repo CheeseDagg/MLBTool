@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-05T19:35+00:00",
+ "generated": "2026-09-05T22:10+00:00",
  "board": [
   {
    "pitcher": "Taj Bradley",
@@ -82,46 +82,6 @@
    ]
   },
   {
-   "pitcher": "Zack Wheeler",
-   "opp": "Atlanta Braves",
-   "lam": 6.34,
-   "k9_regressed": 10.2,
-   "exp_ip": 5.67,
-   "opp_mult": 0.987,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7577,
-     "fair_over": -313,
-     "fair_under": 313
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.607,
-     "fair_over": -154,
-     "fair_under": 154
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.4479,
-     "fair_over": 123,
-     "fair_under": -123
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.3038,
-     "fair_over": 229,
-     "fair_under": -229
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1896,
-     "fair_over": 427,
-     "fair_under": -427
-    }
-   ]
-  },
-  {
    "pitcher": "Tyler Glasnow",
    "opp": "Washington Nationals",
    "lam": 6.22,
@@ -158,6 +118,46 @@
      "p_over": 0.1768,
      "fair_over": 466,
      "fair_under": -466
+    }
+   ]
+  },
+  {
+   "pitcher": "Zack Wheeler",
+   "opp": "Atlanta Braves",
+   "lam": 6.07,
+   "k9_regressed": 10.2,
+   "exp_ip": 5.43,
+   "opp_mult": 0.986,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7245,
+     "fair_over": -263,
+     "fair_under": 263
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5659,
+     "fair_over": -130,
+     "fair_under": 130
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4053,
+     "fair_over": 147,
+     "fair_under": -147
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.266,
+     "fair_over": 276,
+     "fair_under": -276
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1603,
+     "fair_over": 524,
+     "fair_under": -524
     }
    ]
   },
@@ -602,42 +602,82 @@
    ]
   },
   {
+   "pitcher": "Anthony Molina",
+   "opp": "New York Mets",
+   "lam": 4.51,
+   "k9_regressed": 8.02,
+   "exp_ip": 5.0,
+   "opp_mult": 1.012,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4701,
+     "fair_over": 113,
+     "fair_under": -113
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.299,
+     "fair_over": 234,
+     "fair_under": -234
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1704,
+     "fair_over": 487,
+     "fair_under": -487
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0875,
+     "fair_over": 1042,
+     "fair_under": -1042
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0408,
+     "fair_over": 2352,
+     "fair_under": -2352
+    }
+   ]
+  },
+  {
    "pitcher": "Zac Thornton",
    "opp": "San Francisco Giants",
-   "lam": 4.43,
-   "k9_regressed": 7.33,
-   "exp_ip": 5.58,
+   "lam": 4.5,
+   "k9_regressed": 7.5,
+   "exp_ip": 5.53,
    "opp_mult": 0.976,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.455,
-     "fair_over": 120,
-     "fair_under": -120
+     "p_over": 0.4674,
+     "fair_over": 114,
+     "fair_under": -114
     },
     {
      "line": 5.5,
-     "p_over": 0.2856,
-     "fair_over": 250,
-     "fair_under": -250
+     "p_over": 0.2966,
+     "fair_over": 237,
+     "fair_under": -237
     },
     {
      "line": 6.5,
-     "p_over": 0.1604,
-     "fair_over": 523,
-     "fair_under": -523
+     "p_over": 0.1686,
+     "fair_over": 493,
+     "fair_under": -493
     },
     {
      "line": 7.5,
-     "p_over": 0.0811,
-     "fair_over": 1133,
-     "fair_under": -1133
+     "p_over": 0.0864,
+     "fair_over": 1058,
+     "fair_under": -1058
     },
     {
      "line": 8.5,
-     "p_over": 0.0372,
-     "fair_over": 2587,
-     "fair_under": -2587
+     "p_over": 0.0401,
+     "fair_over": 2392,
+     "fair_under": -2392
     }
    ]
   },
@@ -678,46 +718,6 @@
      "p_over": 0.0353,
      "fair_over": 2736,
      "fair_under": -2736
-    }
-   ]
-  },
-  {
-   "pitcher": "Anthony Molina",
-   "opp": "New York Mets",
-   "lam": 4.35,
-   "k9_regressed": 7.74,
-   "exp_ip": 5.0,
-   "opp_mult": 1.011,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4391,
-     "fair_over": 128,
-     "fair_under": -128
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2716,
-     "fair_over": 268,
-     "fair_under": -268
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1502,
-     "fair_over": 566,
-     "fair_under": -566
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0747,
-     "fair_over": 1238,
-     "fair_under": -1238
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0337,
-     "fair_over": 2868,
-     "fair_under": -2868
     }
    ]
   },
@@ -1004,40 +1004,40 @@
   {
    "pitcher": "Javier Assad",
    "opp": "Miami Marlins",
-   "lam": 3.85,
-   "k9_regressed": 6.73,
-   "exp_ip": 5.2,
-   "opp_mult": 0.99,
+   "lam": 3.79,
+   "k9_regressed": 6.69,
+   "exp_ip": 5.15,
+   "opp_mult": 0.989,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3415,
-     "fair_over": 193,
-     "fair_under": -193
+     "p_over": 0.3299,
+     "fair_over": 203,
+     "fair_under": -203
     },
     {
      "line": 5.5,
-     "p_over": 0.1916,
-     "fair_over": 422,
-     "fair_under": -422
+     "p_over": 0.1827,
+     "fair_over": 447,
+     "fair_under": -447
     },
     {
      "line": 6.5,
-     "p_over": 0.0955,
-     "fair_over": 948,
-     "fair_under": -948
+     "p_over": 0.0898,
+     "fair_over": 1013,
+     "fair_under": -1013
     },
     {
      "line": 7.5,
-     "p_over": 0.0426,
-     "fair_over": 2248,
-     "fair_under": -2248
+     "p_over": 0.0395,
+     "fair_over": 2430,
+     "fair_under": -2430
     },
     {
      "line": 8.5,
-     "p_over": 0.0172,
-     "fair_over": 5722,
-     "fair_under": -5722
+     "p_over": 0.0157,
+     "fair_over": 6266,
+     "fair_under": -6266
     }
    ]
   },
@@ -1082,6 +1082,46 @@
    ]
   },
   {
+   "pitcher": "Ryan Gusto",
+   "opp": "Chicago Cubs",
+   "lam": 3.66,
+   "k9_regressed": 8.0,
+   "exp_ip": 4.2,
+   "opp_mult": 0.979,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3045,
+     "fair_over": 228,
+     "fair_under": -228
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1638,
+     "fair_over": 511,
+     "fair_under": -511
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0781,
+     "fair_over": 1181,
+     "fair_under": -1181
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0333,
+     "fair_over": 2906,
+     "fair_under": -2906
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0128,
+     "fair_over": 7715,
+     "fair_under": -7715
+    }
+   ]
+  },
+  {
    "pitcher": "Max Scherzer",
    "opp": "Kansas City Royals",
    "lam": 3.64,
@@ -1118,46 +1158,6 @@
      "p_over": 0.0125,
      "fair_over": 7916,
      "fair_under": -7916
-    }
-   ]
-  },
-  {
-   "pitcher": "Ryan Gusto",
-   "opp": "Chicago Cubs",
-   "lam": 3.59,
-   "k9_regressed": 7.93,
-   "exp_ip": 4.17,
-   "opp_mult": 0.979,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.2925,
-     "fair_over": 242,
-     "fair_under": -242
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.1551,
-     "fair_over": 545,
-     "fair_under": -545
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0728,
-     "fair_over": 1273,
-     "fair_under": -1273
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0306,
-     "fair_over": 3172,
-     "fair_under": -3172
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0116,
-     "fair_over": 8544,
-     "fair_under": -8544
     }
    ]
   },
@@ -1202,8 +1202,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 19263 (used 737) \u00b7 whiff rest:30 rows",
- "n_markets": 29,
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 19234 (used 766) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
