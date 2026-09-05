@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-05T00:55:37+00:00",
+ "generated": "2026-09-05T19:01:37+00:00",
  "date": "2026-09-05",
  "min_pa": 6,
  "rows": [
@@ -92,6 +92,17 @@
    "slg": ".680"
   },
   {
+   "batter": "Julio Rodr\u00edguez",
+   "team": "SEA",
+   "opp_sp": "Jeffrey Springs",
+   "pa": 17,
+   "ab": 17,
+   "h": 4,
+   "hr": 2,
+   "avg": ".235",
+   "slg": ".588"
+  },
+  {
    "batter": "Matt Olson",
    "team": "ATL",
    "opp_sp": "Zack Wheeler",
@@ -156,17 +167,6 @@
    "hr": 1,
    "avg": ".375",
    "slg": ".750"
-  },
-  {
-   "batter": "Spencer Torkelson",
-   "team": "DET",
-   "opp_sp": "Parker Messick",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
   }
  ]
 }
