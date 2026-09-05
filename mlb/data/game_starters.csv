@@ -2494,18 +2494,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-09-03,Athletics,Seattle Mariners,Jack Perkins,Kade Anderson,7,4,Final
 2026-09-03,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,2,3,Final
 2026-09-04,Detroit Tigers,Cleveland Guardians,Keider Montero,Logan Allen,6,7,Final
-2026-09-04,Detroit Tigers,Cleveland Guardians,Andrew Sears,Foster Griffin,0,0,Pre-Game
-2026-09-04,Milwaukee Brewers,Cincinnati Reds,Shane Drohan,Rhett Lowder,0,0,Delayed Start
-2026-09-04,Atlanta Braves,Philadelphia Phillies,Chris Sale,Cristopher Sánchez,0,0,Warmup
-2026-09-04,Los Angeles Angels,Pittsburgh Pirates,Ryan Johnson,Jared Jones,0,0,Pre-Game
-2026-09-04,Boston Red Sox,Baltimore Orioles,Ranger Suarez,Shane Baz,0,0,Pre-Game
-2026-09-04,San Francisco Giants,New York Mets,Matt Wilkinson,Nolan McLean,0,0,Pre-Game
-2026-09-04,Chicago Cubs,Miami Marlins,Shota Imanaga,Janson Junk,0,0,Pre-Game
-2026-09-04,Minnesota Twins,Chicago White Sox,Zebby Matthews,Erick Fedde,0,0,Pre-Game
-2026-09-04,Tampa Bay Rays,Texas Rangers,Nick Martinez,Trevor Williams,0,0,Pre-Game
-2026-09-04,Arizona Diamondbacks,Houston Astros,Merrill Kelly,Cristian Javier,0,0,Pre-Game
-2026-09-04,Toronto Blue Jays,Kansas City Royals,Jameson Taillon,Daniel Lynch IV,0,0,Pre-Game
-2026-09-04,St. Louis Cardinals,Colorado Rockies,Andre Pallante,Ryan Feltner,0,0,Pre-Game
-2026-09-04,New York Yankees,San Diego Padres,Max Fried,Walker Buehler,0,0,Pre-Game
-2026-09-04,Washington Nationals,Los Angeles Dodgers,Jackson Kent,Blake Snell,0,0,Pre-Game
-2026-09-04,Athletics,Seattle Mariners,Kade Morris,Logan Gilbert,0,0,Pre-Game
+2026-09-04,Detroit Tigers,Cleveland Guardians,Andrew Sears,Foster Griffin,3,4,Final
+2026-09-04,Milwaukee Brewers,Cincinnati Reds,Shane Drohan,Rhett Lowder,10,7,Final
+2026-09-04,Atlanta Braves,Philadelphia Phillies,Chris Sale,Cristopher Sánchez,5,2,Final
+2026-09-04,Los Angeles Angels,Pittsburgh Pirates,Ryan Johnson,Jared Jones,0,1,Final
+2026-09-04,Boston Red Sox,Baltimore Orioles,Ranger Suarez,Shane Baz,1,0,Final
+2026-09-04,San Francisco Giants,New York Mets,Matt Wilkinson,Nolan McLean,6,10,Final
+2026-09-04,Chicago Cubs,Miami Marlins,Shota Imanaga,Janson Junk,6,1,Final
+2026-09-04,Minnesota Twins,Chicago White Sox,Zebby Matthews,Erick Fedde,1,4,Final
+2026-09-04,Tampa Bay Rays,Texas Rangers,Nick Martinez,Trevor Williams,7,6,Final
+2026-09-04,Arizona Diamondbacks,Houston Astros,Merrill Kelly,Cristian Javier,1,3,Final
+2026-09-04,Toronto Blue Jays,Kansas City Royals,Jameson Taillon,Daniel Lynch IV,9,2,Final
+2026-09-04,St. Louis Cardinals,Colorado Rockies,Andre Pallante,Ryan Feltner,7,6,Final
+2026-09-04,New York Yankees,San Diego Padres,Max Fried,Walker Buehler,2,3,Final
+2026-09-04,Washington Nationals,Los Angeles Dodgers,Jackson Kent,Blake Snell,3,5,Final
+2026-09-04,Athletics,Seattle Mariners,Kade Morris,Logan Gilbert,7,6,Final
+2026-09-05,San Francisco Giants,New York Mets,Anthony Molina,Zac Thornton,0,0,Scheduled
+2026-09-05,Chicago Cubs,Miami Marlins,Javier Assad,Ryan Gusto,0,0,Scheduled
+2026-09-05,Atlanta Braves,Philadelphia Phillies,Martín Pérez,Zack Wheeler,0,0,Scheduled
+2026-09-05,Detroit Tigers,Cleveland Guardians,Framber Valdez,Parker Messick,0,0,Scheduled
+2026-09-05,Los Angeles Angels,Pittsburgh Pirates,Yusei Kikuchi,Braxton Ashcraft,0,0,Scheduled
+2026-09-05,Milwaukee Brewers,Cincinnati Reds,Dustin May,Andrew Abbott,0,0,Scheduled
+2026-09-05,Boston Red Sox,Baltimore Orioles,Sonny Gray,Chris Bassitt,0,0,Scheduled
+2026-09-05,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,0,0,Scheduled
+2026-09-05,Toronto Blue Jays,Kansas City Royals,Max Scherzer,Seth Lugo,0,0,Scheduled
+2026-09-05,Minnesota Twins,Chicago White Sox,Taj Bradley,Anthony Kay,0,0,Scheduled
+2026-09-05,Arizona Diamondbacks,Houston Astros,Brandon Pfaadt,Ethan Pecko,0,0,Scheduled
+2026-09-05,New York Yankees,San Diego Padres,Carlos Rodón,Robbie Ray,0,0,Scheduled
+2026-09-05,St. Louis Cardinals,Colorado Rockies,Matthew Liberatore,Mason Adams,0,0,Scheduled
+2026-09-05,Washington Nationals,Los Angeles Dodgers,Cade Cavalli,Tyler Glasnow,0,0,Scheduled
+2026-09-05,Athletics,Seattle Mariners,Jeffrey Springs,George Kirby,0,0,Scheduled
