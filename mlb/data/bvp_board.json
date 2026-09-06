@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06T00:53:51+00:00",
+ "generated": "2026-09-06T19:07:55+00:00",
  "date": "2026-09-06",
  "min_pa": 6,
  "rows": [
@@ -15,17 +15,6 @@
    "slg": ".750"
   },
   {
-   "batter": "Matt Olson",
-   "team": "ATL",
-   "opp_sp": "Aaron Nola",
-   "pa": 42,
-   "ab": 35,
-   "h": 9,
-   "hr": 4,
-   "avg": ".257",
-   "slg": ".686"
-  },
-  {
    "batter": "Ronald Acu\u00f1a Jr.",
    "team": "ATL",
    "opp_sp": "Aaron Nola",
@@ -35,6 +24,17 @@
    "hr": 4,
    "avg": ".333",
    "slg": ".648"
+  },
+  {
+   "batter": "Matt Olson",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 45,
+   "ab": 38,
+   "h": 9,
+   "hr": 4,
+   "avg": ".237",
+   "slg": ".632"
   },
   {
    "batter": "Michael Harris II",
@@ -92,28 +92,6 @@
    "slg": ".378"
   },
   {
-   "batter": "Javier B\u00e1ez",
-   "team": "DET",
-   "opp_sp": "Gavin Williams",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.167"
-  },
-  {
-   "batter": "Connor Wong",
-   "team": "BOS",
-   "opp_sp": "Kyle Bradish",
-   "pa": 8,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  },
-  {
    "batter": "Bo Naylor",
    "team": "MIL",
    "opp_sp": "Brady Singer",
@@ -123,17 +101,6 @@
    "hr": 1,
    "avg": ".417",
    "slg": ".833"
-  },
-  {
-   "batter": "Darell Hernaiz",
-   "team": "ATH",
-   "opp_sp": "Bryan Woo",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
   },
   {
    "batter": "Mike Yastrzemski",
@@ -147,26 +114,59 @@
    "slg": ".667"
   },
   {
-   "batter": "Tommy Pham",
-   "team": "CWS",
-   "opp_sp": "Bailey Ober",
-   "pa": 11,
-   "ab": 10,
+   "batter": "Jarren Duran",
+   "team": "BOS",
+   "opp_sp": "Kyle Bradish",
+   "pa": 13,
+   "ab": 13,
    "h": 2,
    "hr": 1,
-   "avg": ".200",
-   "slg": ".600"
+   "avg": ".154",
+   "slg": ".462"
   },
   {
-   "batter": "Lane Thomas",
-   "team": "ATL",
-   "opp_sp": "Aaron Nola",
-   "pa": 19,
-   "ab": 19,
-   "h": 5,
+   "batter": "Christian Yelich",
+   "team": "MIL",
+   "opp_sp": "Brady Singer",
+   "pa": 13,
+   "ab": 12,
+   "h": 2,
    "hr": 1,
-   "avg": ".263",
-   "slg": ".579"
+   "avg": ".167",
+   "slg": ".417"
+  },
+  {
+   "batter": "Riley Greene",
+   "team": "DET",
+   "opp_sp": "Gavin Williams",
+   "pa": 16,
+   "ab": 14,
+   "h": 2,
+   "hr": 1,
+   "avg": ".143",
+   "slg": ".357"
+  },
+  {
+   "batter": "Trevor Story",
+   "team": "BOS",
+   "opp_sp": "Kyle Bradish",
+   "pa": 12,
+   "ab": 12,
+   "h": 1,
+   "hr": 1,
+   "avg": ".083",
+   "slg": ".333"
+  },
+  {
+   "batter": "Lawrence Butler",
+   "team": "ATH",
+   "opp_sp": "Bryan Woo",
+   "pa": 23,
+   "ab": 21,
+   "h": 2,
+   "hr": 1,
+   "avg": ".095",
+   "slg": ".238"
   }
  ]
 }
