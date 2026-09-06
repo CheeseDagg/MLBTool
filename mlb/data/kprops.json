@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06T15:39+00:00",
+ "generated": "2026-09-06T16:25+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -122,46 +122,6 @@
    ]
   },
   {
-   "pitcher": "Kyle Harrison",
-   "opp": "Cincinnati Reds",
-   "lam": 6.08,
-   "k9_regressed": 10.36,
-   "exp_ip": 4.86,
-   "opp_mult": 1.086,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7252,
-     "fair_over": -264,
-     "fair_under": 264
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5667,
-     "fair_over": -131,
-     "fair_under": 131
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.4062,
-     "fair_over": 146,
-     "fair_under": -146
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2668,
-     "fair_over": 275,
-     "fair_under": -275
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1609,
-     "fair_over": 521,
-     "fair_under": -521
-    }
-   ]
-  },
-  {
    "pitcher": "Gerrit Cole",
    "opp": "San Diego Padres",
    "lam": 5.91,
@@ -198,6 +158,46 @@
      "p_over": 0.1437,
      "fair_over": 596,
      "fair_under": -596
+    }
+   ]
+  },
+  {
+   "pitcher": "Kyle Harrison",
+   "opp": "Cincinnati Reds",
+   "lam": 5.82,
+   "k9_regressed": 10.33,
+   "exp_ip": 4.67,
+   "opp_mult": 1.085,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6895,
+     "fair_over": -222,
+     "fair_under": 222
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5242,
+     "fair_over": -110,
+     "fair_under": 110
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3641,
+     "fair_over": 175,
+     "fair_under": -175
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.231,
+     "fair_over": 333,
+     "fair_under": -333
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1343,
+     "fair_over": 645,
+     "fair_under": -645
     }
    ]
   },
@@ -884,40 +884,40 @@
   {
    "pitcher": "Brady Singer",
    "opp": "Milwaukee Brewers",
-   "lam": 4.4,
-   "k9_regressed": 7.66,
-   "exp_ip": 5.25,
+   "lam": 4.27,
+   "k9_regressed": 7.67,
+   "exp_ip": 5.1,
    "opp_mult": 0.984,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4479,
-     "fair_over": 123,
-     "fair_under": -123
+     "p_over": 0.4244,
+     "fair_over": 136,
+     "fair_under": -136
     },
     {
      "line": 5.5,
-     "p_over": 0.2793,
-     "fair_over": 258,
-     "fair_under": -258
+     "p_over": 0.2589,
+     "fair_over": 286,
+     "fair_under": -286
     },
     {
      "line": 6.5,
-     "p_over": 0.1558,
-     "fair_over": 542,
-     "fair_under": -542
+     "p_over": 0.141,
+     "fair_over": 609,
+     "fair_under": -609
     },
     {
      "line": 7.5,
-     "p_over": 0.0782,
-     "fair_over": 1179,
-     "fair_under": -1179
+     "p_over": 0.0691,
+     "fair_over": 1348,
+     "fair_under": -1348
     },
     {
      "line": 8.5,
-     "p_over": 0.0356,
-     "fair_over": 2709,
-     "fair_under": -2709
+     "p_over": 0.0307,
+     "fair_over": 3162,
+     "fair_under": -3162
     }
    ]
   },
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 6 \u00b7 credits remaining 19156 (used 844) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 7 \u00b7 credits remaining 19124 (used 876) \u00b7 whiff rest:30 rows",
  "n_markets": 28,
  "n_plays": 0,
  "plays": [],
@@ -1215,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 6,
+ "n_unbettable": 7,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
