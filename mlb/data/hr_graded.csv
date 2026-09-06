@@ -1866,3 +1866,9 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-05,Oneil Cruz,PIT,823335,Yusei Kikuchi,4,card,17.9,17.6,14.2,+457,400,-29.0,park -9%,78F,LvL -22%,heat +4%,no,0
 2026-09-06,Jake Bauers,MIL,824469,Brady Singer,4,card,20.4,20.7,15.8,+391,340,-30.3,park +25%,78F,LvR +8%,heat -6%,hr,1
 2026-09-06,Elly De La Cruz,CIN,824469,Kyle Harrison,2,card,18.7,22.5,16.8,+435,380,-19.2,park +25%,78F,SvL +12%,heat +18%,hr,1
+2026-09-06,Kyle Schwarber,PHI,823417,Tyler Mahle,1,card,20.4,29.0,,+391,,,park +9%,79F · wind in 5,LvR +8%,heat -1%,hr,1
+2026-09-06,Pete Crow-Armstrong,CHC,823822,Tyler Phillips,1,card,18.2,25.1,,+448,,,park -9%,no wx,LvR +8%,heat +10%,hr,1
+2026-09-06,Corey Seager,TEX,822848,Ian Seymour,2,card,17.9,19.9,15.4,+457,400,-22.8,park +2%,98F · wind in 5 (roof: half),LvL -22%,heat +12%,hr,1
+2026-09-06,Yordan Alvarez,HOU,824142,Eduardo Rodriguez *,2,card,17.9,24.5,,+458,,,park +3%,82F · wind out 4 (roof: half),LvL -22%,heat +10%,hr,1
+2026-09-06,Ronald Acuña Jr.,ATL,823417,Aaron Nola,2,card,15.7,20.3,,+538,,,park +9%,79F · wind in 5,RvR -3%,heat +12%,hr,1
+2026-09-06,Junior Caminero,TBR,822848,MacKenzie Gore,3,card,15.6,26.8,19.2,+541,475,10.2,park +2%,98F · wind in 5 (roof: half),RvL +12%,heat +18%,no,0
