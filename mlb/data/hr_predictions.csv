@@ -1782,33 +1782,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-05,Kazuma Okamoto,TOR,824066,Seth Lugo,6,card,17.9,20.0,15.5,+457,400,-22.6,park -4% [low-conf],99F · wind in 6,RvR -3%,heat +8%,-0.2,
 2026-09-05,Miguel Vargas,CHW,824553,Taj Bradley,2,card,17.9,22.6,16.9,+457,400,-15.5,park +9%,74F · wind out 4,RvR -3%,heat +3%,0.7,
 2026-09-05,Oneil Cruz,PIT,823335,Yusei Kikuchi,4,card,17.9,17.6,14.2,+457,400,-29.0,park -9%,78F,LvL -22%,heat +4%,0.6,
-2026-09-06,Alec Burleson,STL,824309,Tanner Gordon,1,proj,25.3,22.1,16.6,+296,255,-40.9,park +9%,77F,LvR +8%,heat +14%,0.8,
-2026-09-06,Jordan Walker,STL,824309,Tanner Gordon,2,proj,25.3,23.8,17.5,+296,255,-37.8,park +9%,77F,RvR -3%,heat +9%,1.1,
-2026-09-06,Munetaka Murakami,CHW,824552,Bailey Ober,5,proj,24.6,24.0,17.6,+307,265,-35.7,park +9%,74F,LvR +8%,heat +10%,-1.7,
-2026-09-06,Kyle Schwarber,PHI,823417,Tyler Mahle,1,card,24.2,28.3,20.0,+313,270,-26.1,park +9%,74F · wind in 6,LvR +8%,heat -1%,-1.0,
-2026-09-06,Colson Montgomery,CHW,824552,Bailey Ober,3,proj,23.0,24.8,18.1,+335,290,-29.5,park +9%,74F,LvR +8%,heat +5%,3.4,STANDOUT
-2026-09-06,Matt Olson,ATL,823417,Aaron Nola,3,card,23.0,26.5,19.0,+335,290,-25.9,park +9%,74F · wind in 6,LvR +8%,heat -5%,0.0,
-2026-09-06,Miguel Vargas,CHW,824552,Bailey Ober,1,proj,21.4,25.2,18.3,+368,320,-23.2,park +9%,74F,RvR -3%,heat -1%,2.1,
-2026-09-06,Nolan Gorman,STL,824309,Tanner Gordon,4,proj,21.4,16.5,13.6,+368,320,-42.9,park +9%,77F,LvR +8%,,,new
-2026-09-06,Pete Crow-Armstrong,CHC,823822,Tyler Phillips,1,card,21.4,25.7,18.6,+368,320,-22.0,park -9%,87F (roof: half),LvR +8%,heat +10%,-0.1,
-2026-09-06,Junior Caminero,TBR,822848,MacKenzie Gore,3,card,21.1,26.7,19.1,+374,325,-18.7,park +2%,92F (roof: half),RvL +12%,heat +18%,0.7,
-2026-09-06,Rafael Devers,SFG,823578,Christian Scott,2,card,20.9,23.0,17.1,+379,330,-26.4,park -4%,71F · wind in 6,LvR +8%,heat +7%,0.6,
-2026-09-06,Jake Bauers,MIL,824469,Brady Singer,4,card,20.4,20.7,15.8,+391,340,-30.3,park +25%,78F,LvR +8%,heat -6%,-0.2,
-2026-09-06,Cal Raleigh,SEA,823091,Gage Jump,5,proj,19.9,17.4,14.1,+402,350,-36.7,park -4%,59F (roof: half),SvL +12%,heat +7%,-1.0,
-2026-09-06,Juan Soto,NYM,823578,Cesar Perdomo *,2,card,19.9,22.3,16.7,+402,350,-24.7,park -4%,71F · wind in 6,LvL -22%,,-1.9,
-2026-09-06,Yordan Alvarez,HOU,824142,Eduardo Rodriguez *,2,card,19.9,24.4,17.9,+402,350,-19.6,park +3%,86F (roof: half),LvL -22%,heat +10%,-1.5,
-2026-09-06,Ben Rice,NYY,823253,Michael King,1,proj,19.5,26.5,19.0,+413,360,-12.6,park -4%,81F · wind in 6,LvR +8%,heat +1%,0.2,
-2026-09-06,Corey Seager,TEX,822848,Ian Seymour,2,card,19.5,19.8,15.4,+413,360,-29.2,park +2%,92F (roof: half),LvL -22%,heat +12%,-0.2,
-2026-09-06,Fernando Tatis Jr.,SDP,823253,Gerrit Cole,1,proj,19.1,17.9,14.3,+424,370,-32.6,park -4%,81F · wind in 6,RvR -3%,heat +2%,-0.2,
-2026-09-06,Mickey Moniak,COL,824309,Kyle Leahy,5,card,19.1,17.6,14.2,+424,370,-33.2,park +9%,77F,LvR +8%,heat +6%,-4.1,floor
-2026-09-06,Pete Alonso,BAL,824794,Payton Tolle,2,card,19.1,26.1,18.8,+424,370,-11.8,park +4% [low-conf],80F · wind in 3,RvL +12%,heat +9%,0.1,
-2026-09-06,Royce Lewis,MIN,824552,Bryan Hudson,5,proj,19.1,13.8,11.1,+424,370,-47.8,park +9%,74F,RvL +12%,,-1.9,
-2026-09-06,Elly De La Cruz,CIN,824469,Kyle Harrison,2,card,18.7,22.5,16.8,+435,380,-19.2,park +25%,78F,SvL +12%,heat +18%,-0.7,
-2026-09-06,James Wood,WSN,823903,Justin Wrobleski,3,proj,18.7,22.4,16.8,+435,380,-19.3,park +5%,69F · wind out 3,LvL -22%,heat +15%,-4.2,floor
-2026-09-06,Andrew Benintendi,CHW,824552,Bailey Ober,7,proj,18.3,12.5,9.9,+446,390,-51.5,park +9%,74F,LvR +8%,,,new
-2026-09-06,Bobby Witt Jr.,KCR,824065,Spencer Arrighetti,2,card,18.3,18.3,14.6,+446,390,-28.5,park -4% [low-conf],92F,RvR -3%,heat -3%,-0.1,
-2026-09-06,Drake Baldwin,ATL,823417,Aaron Nola,1,card,18.3,24.2,17.8,+446,390,-13.0,park +9%,74F · wind in 6,LvR +8%,heat -2%,-0.2,
-2026-09-06,Kyle Stowers,MIA,823822,Clay Holmes,1,card,18.3,20.7,15.9,+446,390,-22.2,park -9%,87F (roof: half),LvR +8%,heat -1%,-0.4,
-2026-09-06,Michael Harris II,ATL,823417,Aaron Nola,4,card,18.3,19.6,15.3,+446,390,-25.1,park +9%,74F · wind in 6,LvR +8%,heat -7%,0.2,
-2026-09-06,Kazuma Okamoto,TOR,824065,Randy Dobnak,5,card,17.9,20.0,15.5,+457,400,-22.5,park -4% [low-conf],92F,RvR -3%,heat -4%,-0.1,
-2026-09-06,Max Muncy,ATH,823091,Bryan Woo,1,proj,17.9,24.5,,+458,,,park -4%,59F (roof: half),LvR +8%,heat +4%,0.5,
+2026-09-06,Munetaka Murakami,CHW,824552,Bailey Ober,3,card,24.6,27.9,19.7,+307,265,-27.9,park +9%,75F,LvR +8%,heat +10%,0.4,
+2026-09-06,Nolan Gorman,STL,824309,Tanner Gordon,7,card,24.6,13.7,11.0,+307,265,-60.0,park +9%,88F,LvR +8%,,,new
+2026-09-06,Alec Burleson,STL,824309,Tanner Gordon,3,card,23.0,20.1,15.5,+335,290,-39.4,park +9%,88F,LvR +8%,heat +14%,-0.3,
+2026-09-06,Colson Montgomery,CHW,824552,Bailey Ober,5,card,23.0,22.0,16.6,+335,290,-35.4,park +9%,75F,LvR +8%,heat +5%,1.9,
+2026-09-06,Jordan Walker,STL,824309,Tanner Gordon,4,card,23.0,21.5,16.3,+335,290,-36.4,park +9%,88F,RvR -3%,heat +9%,-0.1,
+2026-09-06,Joshua Báez,STL,824309,Tanner Gordon,6,card,21.4,25.8,18.6,+368,320,-21.9,park +9%,88F,RvR -3%,,,new
+2026-09-06,Cal Raleigh,SEA,823091,Gage Jump,4,card,20.9,19.0,14.9,+379,330,-35.8,park -4%,66F (roof: half),SvL +12%,heat +7%,-0.2,
+2026-09-06,Kyle Schwarber,PHI,823417,Tyler Mahle,1,card,20.4,29.0,,+391,,,park +9%,79F · wind in 5,LvR +8%,heat -1%,-0.6,
+2026-09-06,Leo Bernal,STL,824309,Tanner Gordon,5,card,19.6,27.7,,+409,,,park +9%,88F,SvR +8%,,1.6,
+2026-09-06,Miguel Vargas,CHW,824552,Bailey Ober,2,card,19.5,24.0,17.6,+413,360,-18.9,park +9%,75F,RvR -3%,heat -1%,1.4,
+2026-09-06,Andrew Benintendi,CHW,824552,Bailey Ober,4,card,19.1,16.0,13.3,+424,370,-37.4,park +9%,75F,LvR +8%,heat -1%,,new
+2026-09-06,Ben Rice,NYY,823253,Michael King,1,card,19.1,26.8,19.1,+424,370,-10.0,park -4%,88F · wind in 8,LvR +8%,heat +1%,0.3,
+2026-09-06,Fernando Tatis Jr.,SDP,823253,Gerrit Cole,1,card,19.1,18.1,14.5,+424,370,-32.0,park -4%,88F · wind in 8,RvR -3%,heat +2%,-0.1,
+2026-09-06,Royce Lewis,MIN,824552,Bryan Hudson,6,card,19.1,13.0,10.2,+424,370,-52.1,park +9%,75F,RvL +12%,,-2.8,floor
+2026-09-06,Pete Crow-Armstrong,CHC,823822,Tyler Phillips,1,card,18.2,25.1,,+448,,,park -9%,no wx,LvR +8%,heat +10%,-0.5,
+2026-09-06,Corey Seager,TEX,822848,Ian Seymour,2,card,17.9,19.9,15.4,+457,400,-22.8,park +2%,98F · wind in 5 (roof: half),LvL -22%,heat +12%,-0.2,
+2026-09-06,James Wood,WSN,823903,Justin Wrobleski,3,proj,17.9,22.1,16.6,+457,400,-16.9,park +5%,70F,LvL -22%,heat +15%,-4.4,floor
+2026-09-06,Kody Clemens,MIN,824552,Bryan Hudson,5,card,17.9,16.3,13.5,+457,400,-32.6,park +9%,75F,LvL -22%,,-2.3,floor
+2026-09-06,Yordan Alvarez,HOU,824142,Eduardo Rodriguez *,2,card,17.9,24.5,,+458,,,park +3%,82F · wind out 4 (roof: half),LvL -22%,heat +10%,-1.5,
+2026-09-06,Shohei Ohtani,LAD,823903,Andrew Alvarez,1,proj,17.5,23.8,,+470,,,park +5%,70F,LvL -22%,heat -1%,-1.2,
+2026-09-06,Elly De La Cruz,CIN,824469,Kyle Harrison,2,card,17.2,23.1,,+482,,,park +25%,84F,SvL +12%,heat +18%,-0.3,
+2026-09-06,Ryan Jeffers,MIN,824552,Bryan Hudson,3,card,17.2,19.0,14.9,+480,420,-22.3,park +9%,75F,RvL +12%,heat +13%,-2.5,floor
+2026-09-06,Julio Rodríguez,SEA,823091,Gage Jump,3,card,17.1,16.5,13.6,+485,425,-28.5,park -4%,66F (roof: half),RvL +12%,,-1.3,
+2026-09-06,Manny Machado,SDP,823253,Gerrit Cole,3,card,16.9,18.0,14.4,+491,430,-23.7,park -4%,88F · wind in 8,RvR -3%,heat +5%,-1.0,
+2026-09-06,Iván Herrera,STL,824309,Tanner Gordon,2,card,16.6,14.9,12.3,+502,440,-33.6,park +9%,88F,RvR -3%,heat +3%,,new
+2026-09-06,Jake Bauers,MIL,824469,Brady Singer,4,card,16.2,21.3,,+519,,,park +25%,84F,LvR +8%,heat -6%,0.2,
+2026-09-06,Ronald Acuña Jr.,ATL,823417,Aaron Nola,2,card,15.7,20.3,,+538,,,park +9%,79F · wind in 5,RvR -3%,heat +12%,-0.2,
+2026-09-06,Junior Caminero,TBR,822848,MacKenzie Gore,3,card,15.6,26.8,19.2,+541,475,10.2,park +2%,98F · wind in 5 (roof: half),RvL +12%,heat +18%,0.8,
+2026-09-06,Spencer Jones,NYY,823253,Michael King,4,card,15.6,17.3,14.0,+541,475,-19.4,park -4%,88F · wind in 8,LvR +8%,,0.6,
+2026-09-06,Jackson Merrill,SDP,823253,Gerrit Cole,5,card,14.9,15.3,12.7,+569,500,-23.7,park -4%,88F · wind in 8,LvR +8%,,-0.7,
