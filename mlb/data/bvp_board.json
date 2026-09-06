@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06T19:07:55+00:00",
+ "generated": "2026-09-06T22:07:03+00:00",
  "date": "2026-09-06",
  "min_pa": 6,
  "rows": [
@@ -15,6 +15,17 @@
    "slg": ".750"
   },
   {
+   "batter": "Matt Olson",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 42,
+   "ab": 35,
+   "h": 9,
+   "hr": 4,
+   "avg": ".257",
+   "slg": ".686"
+  },
+  {
    "batter": "Ronald Acu\u00f1a Jr.",
    "team": "ATL",
    "opp_sp": "Aaron Nola",
@@ -26,37 +37,15 @@
    "slg": ".648"
   },
   {
-   "batter": "Matt Olson",
-   "team": "ATL",
-   "opp_sp": "Aaron Nola",
-   "pa": 45,
-   "ab": 38,
-   "h": 9,
-   "hr": 4,
-   "avg": ".237",
-   "slg": ".632"
-  },
-  {
    "batter": "Michael Harris II",
    "team": "ATL",
    "opp_sp": "Aaron Nola",
-   "pa": 32,
-   "ab": 29,
+   "pa": 33,
+   "ab": 30,
    "h": 7,
    "hr": 3,
-   "avg": ".241",
-   "slg": ".621"
-  },
-  {
-   "batter": "Jose Altuve",
-   "team": "HOU",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 28,
-   "ab": 27,
-   "h": 10,
-   "hr": 2,
-   "avg": ".370",
-   "slg": ".667"
+   "avg": ".233",
+   "slg": ".600"
   },
   {
    "batter": "Kyle Schwarber",
@@ -103,70 +92,81 @@
    "slg": ".833"
   },
   {
-   "batter": "Mike Yastrzemski",
-   "team": "ATL",
-   "opp_sp": "Aaron Nola",
-   "pa": 17,
-   "ab": 15,
-   "h": 5,
+   "batter": "Drew Gilbert",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
+   "h": 2,
    "hr": 1,
    "avg": ".333",
-   "slg": ".667"
+   "slg": ".833"
   },
   {
-   "batter": "Jarren Duran",
-   "team": "BOS",
-   "opp_sp": "Kyle Bradish",
-   "pa": 13,
-   "ab": 13,
+   "batter": "Rafael Devers",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
    "h": 2,
    "hr": 1,
-   "avg": ".154",
-   "slg": ".462"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
-   "batter": "Christian Yelich",
-   "team": "MIL",
-   "opp_sp": "Brady Singer",
-   "pa": 13,
-   "ab": 12,
+   "batter": "Bryce Eldridge",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
    "h": 2,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".417"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
-   "batter": "Riley Greene",
-   "team": "DET",
-   "opp_sp": "Gavin Williams",
-   "pa": 16,
-   "ab": 14,
+   "batter": "Jonah Cox",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
    "h": 2,
    "hr": 1,
-   "avg": ".143",
-   "slg": ".357"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
-   "batter": "Trevor Story",
-   "team": "BOS",
-   "opp_sp": "Kyle Bradish",
-   "pa": 12,
-   "ab": 12,
-   "h": 1,
-   "hr": 1,
-   "avg": ".083",
-   "slg": ".333"
-  },
-  {
-   "batter": "Lawrence Butler",
-   "team": "ATH",
-   "opp_sp": "Bryan Woo",
-   "pa": 23,
-   "ab": 21,
+   "batter": "Jung Hoo Lee",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
    "h": 2,
    "hr": 1,
-   "avg": ".095",
-   "slg": ".238"
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Osleivis Basabe",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Grant McCray",
+   "team": "SF",
+   "opp_sp": "Christian Scott",
+   "pa": 8,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
   }
  ]
 }
