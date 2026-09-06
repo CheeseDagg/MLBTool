@@ -2509,18 +2509,33 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-09-04,New York Yankees,San Diego Padres,Max Fried,Walker Buehler,2,3,Final
 2026-09-04,Washington Nationals,Los Angeles Dodgers,Jackson Kent,Blake Snell,3,5,Final
 2026-09-04,Athletics,Seattle Mariners,Kade Morris,Logan Gilbert,7,6,Final
-2026-09-05,San Francisco Giants,New York Mets,Anthony Molina,Zac Thornton,6,2,In Progress
-2026-09-05,Chicago Cubs,Miami Marlins,Javier Assad,Ryan Gusto,5,2,In Progress
-2026-09-05,Atlanta Braves,Philadelphia Phillies,Martín Pérez,Zack Wheeler,0,0,Warmup
-2026-09-05,Detroit Tigers,Cleveland Guardians,Framber Valdez,Parker Messick,0,0,Warmup
-2026-09-05,Los Angeles Angels,Pittsburgh Pirates,Yusei Kikuchi,Braxton Ashcraft,0,0,Pre-Game
-2026-09-05,Milwaukee Brewers,Cincinnati Reds,Dustin May,Andrew Abbott,0,0,Pre-Game
-2026-09-05,Boston Red Sox,Baltimore Orioles,Sonny Gray,Chris Bassitt,0,0,Pre-Game
-2026-09-05,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,0,0,Pre-Game
-2026-09-05,Toronto Blue Jays,Kansas City Royals,Max Scherzer,Seth Lugo,0,0,Pre-Game
-2026-09-05,Minnesota Twins,Chicago White Sox,Taj Bradley,Anthony Kay,0,0,Pre-Game
-2026-09-05,Arizona Diamondbacks,Houston Astros,Brandon Pfaadt,Ethan Pecko,0,0,Pre-Game
-2026-09-05,New York Yankees,San Diego Padres,Carlos Rodón,Robbie Ray,0,0,Pre-Game
-2026-09-05,St. Louis Cardinals,Colorado Rockies,Matthew Liberatore,Mason Adams,0,0,Pre-Game
-2026-09-05,Washington Nationals,Los Angeles Dodgers,Cade Cavalli,Tyler Glasnow,0,0,Pre-Game
-2026-09-05,Athletics,Seattle Mariners,Jeffrey Springs,George Kirby,0,0,Pre-Game
+2026-09-05,San Francisco Giants,New York Mets,Anthony Molina,Zac Thornton,9,5,Final
+2026-09-05,Chicago Cubs,Miami Marlins,Javier Assad,Ryan Gusto,6,5,Final
+2026-09-05,Atlanta Braves,Philadelphia Phillies,Martín Pérez,Zack Wheeler,2,4,Final
+2026-09-05,Detroit Tigers,Cleveland Guardians,Framber Valdez,Parker Messick,6,0,Final
+2026-09-05,Los Angeles Angels,Pittsburgh Pirates,Yusei Kikuchi,Braxton Ashcraft,6,1,Final
+2026-09-05,Milwaukee Brewers,Cincinnati Reds,Dustin May,Andrew Abbott,3,5,Final
+2026-09-05,Boston Red Sox,Baltimore Orioles,Sonny Gray,Chris Bassitt,5,0,Final
+2026-09-05,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,6,3,Final
+2026-09-05,Toronto Blue Jays,Kansas City Royals,Max Scherzer,Seth Lugo,4,3,Final
+2026-09-05,Minnesota Twins,Chicago White Sox,Taj Bradley,Anthony Kay,6,4,Final
+2026-09-05,Arizona Diamondbacks,Houston Astros,Brandon Pfaadt,Ethan Pecko,4,3,Final
+2026-09-05,New York Yankees,San Diego Padres,Carlos Rodón,Robbie Ray,5,1,Final
+2026-09-05,St. Louis Cardinals,Colorado Rockies,Matthew Liberatore,Mason Adams,7,10,Final
+2026-09-05,Washington Nationals,Los Angeles Dodgers,Cade Cavalli,Tyler Glasnow,5,6,Final
+2026-09-05,Athletics,Seattle Mariners,Jeffrey Springs,George Kirby,6,2,Final
+2026-09-06,Milwaukee Brewers,Cincinnati Reds,Kyle Harrison,Brady Singer,0,0,Scheduled
+2026-09-06,Atlanta Braves,Philadelphia Phillies,Tyler Mahle,Aaron Nola,0,0,Scheduled
+2026-09-06,Boston Red Sox,Baltimore Orioles,Payton Tolle,Kyle Bradish,0,0,Scheduled
+2026-09-06,Los Angeles Angels,Pittsburgh Pirates,Walbert Ureña,Paul Skenes,0,0,Scheduled
+2026-09-06,Detroit Tigers,Cleveland Guardians,Jackson Jobe,Gavin Williams,0,0,Scheduled
+2026-09-06,San Francisco Giants,New York Mets,Cesar Perdomo,Christian Scott,0,0,Scheduled
+2026-09-06,Chicago Cubs,Miami Marlins,Clay Holmes,Tyler Phillips,0,0,Scheduled
+2026-09-06,Arizona Diamondbacks,Houston Astros,Eduardo Rodriguez,Peter Lambert,0,0,Scheduled
+2026-09-06,Toronto Blue Jays,Kansas City Royals,Spencer Arrighetti,Randy Dobnak,0,0,Scheduled
+2026-09-06,Tampa Bay Rays,Texas Rangers,Ian Seymour,MacKenzie Gore,0,0,Scheduled
+2026-09-06,St. Louis Cardinals,Colorado Rockies,Kyle Leahy,Tanner Gordon,0,0,Scheduled
+2026-09-06,Athletics,Seattle Mariners,Gage Jump,Bryan Woo,0,0,Scheduled
+2026-09-06,New York Yankees,San Diego Padres,Gerrit Cole,Michael King,0,0,Scheduled
+2026-09-06,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,0,0,Scheduled
+2026-09-06,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,0,0,Scheduled

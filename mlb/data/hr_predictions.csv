@@ -1782,3 +1782,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-05,Kazuma Okamoto,TOR,824066,Seth Lugo,6,card,17.9,20.0,15.5,+457,400,-22.6,park -4% [low-conf],99F · wind in 6,RvR -3%,heat +8%,-0.2,
 2026-09-05,Miguel Vargas,CHW,824553,Taj Bradley,2,card,17.9,22.6,16.9,+457,400,-15.5,park +9%,74F · wind out 4,RvR -3%,heat +3%,0.7,
 2026-09-05,Oneil Cruz,PIT,823335,Yusei Kikuchi,4,card,17.9,17.6,14.2,+457,400,-29.0,park -9%,78F,LvL -22%,heat +4%,0.6,
+2026-09-06,Alec Burleson,STL,824309,Tanner Gordon,1,proj,26.0,21.1,16.1,+285,245,-44.5,park +9%,62F,LvR +8%,heat +14%,0.3,
+2026-09-06,Hunter Goodman,COL,824309,Kyle Leahy,3,proj,25.3,24.0,17.7,+296,255,-37.3,park +9%,62F,RvR -3%,heat +1%,-1.6,
+2026-09-06,Jordan Walker,STL,824309,Tanner Gordon,2,proj,25.3,22.7,16.9,+296,255,-39.9,park +9%,62F,RvR -3%,heat +9%,0.5,
+2026-09-06,Munetaka Murakami,CHW,824552,Bailey Ober,5,proj,24.6,23.7,17.5,+307,265,-36.3,park +9%,71F,LvR +8%,heat +10%,-1.8,
+2026-09-06,Kyle Schwarber,PHI,823417,Tyler Mahle,2,proj,24.2,26.0,18.7,+313,270,-30.7,park +9%,66F · wind in 5,LvR +8%,heat -1%,-2.3,floor
+2026-09-06,Colson Montgomery,CHW,824552,Bailey Ober,3,proj,23.0,24.5,17.9,+335,290,-30.2,park +9%,71F,LvR +8%,heat +5%,3.2,STANDOUT
+2026-09-06,Matt Olson,ATL,823417,Aaron Nola,1,proj,23.0,29.5,20.6,+335,290,-19.7,park +9%,66F · wind in 5,LvR +8%,heat -5%,1.6,
+2026-09-06,Miguel Vargas,CHW,824552,Bailey Ober,1,proj,22.1,24.9,18.1,+352,305,-26.6,park +9%,71F,RvR -3%,heat -1%,1.9,
+2026-09-06,Nolan Gorman,STL,824309,Tanner Gordon,4,proj,21.4,15.7,13.2,+368,320,-44.8,park +9%,62F,LvR +8%,,,new
+2026-09-06,Rafael Devers,SFG,823578,Christian Scott,1,proj,21.4,24.5,17.9,+368,320,-24.8,park -4%,67F · wind in 4,LvR +8%,heat +7%,1.4,
+2026-09-06,Cal Raleigh,SEA,823091,Gage Jump,5,proj,21.1,17.2,14.0,+374,325,-40.6,park -4%,53F · wind in 3 (roof: half),SvL +12%,heat +7%,-1.1,
+2026-09-06,Jake Bauers,MIL,824469,Brady Singer,3,proj,20.9,21.6,16.3,+379,330,-29.8,park +25%,68F,LvR +8%,heat -6%,0.3,
+2026-09-06,Juan Soto,NYM,823578,Cesar Perdomo *,6,proj,20.9,16.6,13.6,+379,330,-41.3,park -4%,67F · wind in 4,LvL -22%,,-5.0,floor
+2026-09-06,Junior Caminero,TBR,822848,MacKenzie Gore,1,proj,20.9,29.9,20.8,+379,330,-10.6,park +2%,78F (roof: half),RvL +12%,heat +18%,2.4,
+2026-09-06,Pete Crow-Armstrong,CHC,823822,Tyler Phillips,2,proj,20.9,23.7,17.5,+379,330,-24.7,park -9%,78F (roof: half),LvR +8%,heat +10%,-1.2,
+2026-09-06,James Wood,WSN,823903,Justin Wrobleski,3,proj,19.9,22.4,16.8,+402,350,-24.6,park +5%,73F,LvL -22%,heat +15%,-4.2,floor
+2026-09-06,Mickey Moniak,COL,824309,Kyle Leahy,6,proj,19.9,15.6,13.1,+402,350,-40.9,park +9%,62F,LvR +8%,,-5.2,floor
+2026-09-06,Yordan Alvarez,HOU,824142,Eduardo Rodriguez *,1,proj,19.9,25.9,18.7,+402,350,-16.1,park +3%,78F (roof: half),LvL -22%,heat +10%,-0.7,
+2026-09-06,Ben Rice,NYY,823253,Michael King,1,proj,19.5,26.3,18.9,+413,360,-13.1,park -4%,74F,LvR +8%,heat +1%,0.1,
+2026-09-06,Andrew Benintendi,CHW,824552,Bailey Ober,7,proj,19.1,12.3,9.8,+424,370,-53.8,park +9%,71F,LvR +8%,,,new
+2026-09-06,Corey Seager,TEX,822848,Ian Seymour,7,proj,19.1,13.3,10.5,+424,370,-50.9,park +2%,78F (roof: half),LvL -22%,,-5.1,floor
+2026-09-06,Fernando Tatis Jr.,SDP,823253,Gerrit Cole,1,proj,19.1,17.7,14.3,+424,370,-33.0,park -4%,74F,RvR -3%,heat +2%,-0.2,
+2026-09-06,Pete Alonso,BAL,824794,Payton Tolle,2,proj,19.1,25.0,18.2,+424,370,-14.5,park +4% [low-conf],67F · wind in 4,RvL +12%,heat +9%,-0.5,
+2026-09-06,Royce Lewis,MIN,824552,Bryan Hudson,5,proj,19.1,13.7,10.9,+424,370,-48.7,park +9%,71F,RvL +12%,,-2.1,floor
+2026-09-06,Drake Baldwin,ATL,823417,Aaron Nola,5,proj,18.3,17.8,14.3,+446,390,-29.9,park +9%,66F · wind in 5,LvR +8%,heat -2%,-3.7,floor
+2026-09-06,Elly De La Cruz,CIN,824469,Kyle Harrison,2,proj,18.3,21.9,16.5,+446,390,-19.1,park +25%,68F,SvL +12%,heat +18%,-1.0,
+2026-09-06,Kyle Stowers,MIA,823822,Clay Holmes,3,proj,18.3,17.7,14.3,+446,390,-30.2,park -9%,78F (roof: half),LvR +8%,heat -1%,-2.0,floor
+2026-09-06,Bobby Witt Jr.,KCR,824065,Spencer Arrighetti,2,proj,17.9,17.5,14.1,+457,400,-29.3,park -4% [low-conf],77F,RvR -3%,heat -3%,-0.6,
+2026-09-06,Jac Caglianone,KCR,824065,Spencer Arrighetti,4,proj,17.9,19.6,15.3,+457,400,-23.7,park -4% [low-conf],77F,LvR +8%,heat -3%,-1.5,
+2026-09-06,Jackson Chourio,MIL,824469,Brady Singer,4,proj,17.9,19.4,15.2,+457,400,-24.2,park +25%,68F,RvR -3%,heat -9%,-2.1,floor
