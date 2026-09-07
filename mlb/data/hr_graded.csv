@@ -1901,3 +1901,13 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-07,Pete Alonso,BAL,824793,Joey Cantillo,2,card,16.9,24.8,18.1,+491,430,-4.1,park +4% [low-conf],82F · wind in 5,RvL +12%,heat +3%,no,0
 2026-09-07,Kyle Schwarber,PHI,823415,Grant Holmes,1,card,15.6,30.6,21.2,+541,475,22.0,park +9%,80F · wind in 4,LvR +8%,heat -4%,hr,1
 2026-09-07,Pete Crow-Armstrong,CHC,823742,Robert Gasser,1,card,15.5,26.0,18.7,+547,480,8.5,park +9%,78F · wind in 7 (roof: half),LvL -22%,heat +8%,hr,1
+2026-09-07,Ketel Marte,ARI,824062,Noah Cameron,2,card,17.0,22.8,,+488,,,park -4% [low-conf],92F,SvL +12%,heat +7%,void,
+2026-09-07,Heriberto Hernández,MIA,823820,Jonah Tong,2,card,16.6,22.1,,+501,,,park -9%,85F (roof: half),RvR -3%,,no,0
+2026-09-07,Kyle Stowers,MIA,823820,Jonah Tong,1,card,15.8,20.5,,+535,,,park -9%,85F (roof: half),LvR +8%,,no,0
+2026-09-07,Matt Olson,ATL,823415,Jesús Luzardo,4,card,15.7,20.4,,+536,,,park +9%,80F,LvL -22%,heat -4%,no,0
+2026-09-07,Seiya Suzuki,CHC,823742,Robert Gasser,2,card,15.7,20.3,,+538,,,park +9%,77F · wind in 7 (roof: half),RvL +12%,heat +14%,no,0
+2026-09-07,Ronald Acuña Jr.,ATL,823415,Jesús Luzardo,1,card,15.5,20.1,,+544,,,park +9%,80F,RvL +12%,heat +8%,no,0
+2026-09-07,Griffin Conine,MIA,823820,Jonah Tong,3,card,15.4,19.9,,+548,,,park -9%,85F (roof: half),LvR +8%,,no,0
+2026-09-07,Bryce Harper,PHI,823415,Grant Holmes,3,card,15.3,19.7,,+552,,,park +9%,80F,LvR +8%,heat +1%,no,0
+2026-09-07,Francisco Lindor,NYM,823820,Eury Pérez *,1,card,15.2,19.5,,+556,,,park -9%,85F (roof: half),SvR +8%,heat -6%,no,0
+2026-09-07,Zach Neto,LAA,824715,Brayan Bello,1,card,14.7,18.5,,+580,,,park -7%,81F,RvR -3%,heat +12%,no,0

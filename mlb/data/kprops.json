@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07T20:52+00:00",
+ "generated": "2026-09-07T22:57+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -127,37 +127,37 @@
    "lam": 5.98,
    "k9_regressed": 9.75,
    "exp_ip": 5.4,
-   "opp_mult": 1.021,
+   "opp_mult": 1.022,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7121,
-     "fair_over": -247,
-     "fair_under": 247
+     "p_over": 0.7126,
+     "fair_over": -248,
+     "fair_under": 248
     },
     {
      "line": 5.5,
-     "p_over": 0.5509,
+     "p_over": 0.5515,
      "fair_over": -123,
      "fair_under": 123
     },
     {
      "line": 6.5,
-     "p_over": 0.3903,
+     "p_over": 0.3909,
      "fair_over": 156,
      "fair_under": -156
     },
     {
      "line": 7.5,
-     "p_over": 0.2531,
-     "fair_over": 295,
-     "fair_under": -295
+     "p_over": 0.2536,
+     "fair_over": 294,
+     "fair_under": -294
     },
     {
      "line": 8.5,
-     "p_over": 0.1506,
-     "fair_over": 564,
-     "fair_under": -564
+     "p_over": 0.151,
+     "fair_over": 562,
+     "fair_under": -562
     }
    ]
   },
@@ -198,6 +198,46 @@
      "p_over": 0.1227,
      "fair_over": 715,
      "fair_under": -715
+    }
+   ]
+  },
+  {
+   "pitcher": "Emmet Sheehan",
+   "opp": "Cincinnati Reds",
+   "lam": 5.61,
+   "k9_regressed": 9.77,
+   "exp_ip": 4.77,
+   "opp_mult": 1.084,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.659,
+     "fair_over": -193,
+     "fair_under": 193
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4894,
+     "fair_over": 104,
+     "fair_under": -104
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3309,
+     "fair_over": 202,
+     "fair_under": -202
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.204,
+     "fair_over": 390,
+     "fair_under": -390
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.115,
+     "fair_over": 770,
+     "fair_under": -770
     }
    ]
   },
@@ -284,40 +324,40 @@
   {
    "pitcher": "Troy Melton",
    "opp": "Minnesota Twins",
-   "lam": 4.89,
+   "lam": 4.88,
    "k9_regressed": 7.58,
    "exp_ip": 6.0,
    "opp_mult": 0.967,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5393,
+     "p_over": 0.5391,
      "fair_over": -117,
      "fair_under": 117
     },
     {
      "line": 5.5,
-     "p_over": 0.3641,
+     "p_over": 0.3638,
      "fair_over": 175,
      "fair_under": -175
     },
     {
      "line": 6.5,
-     "p_over": 0.2214,
+     "p_over": 0.2212,
      "fair_over": 352,
      "fair_under": -352
     },
     {
      "line": 7.5,
-     "p_over": 0.1217,
-     "fair_over": 721,
-     "fair_under": -721
+     "p_over": 0.1216,
+     "fair_over": 722,
+     "fair_under": -722
     },
     {
      "line": 8.5,
-     "p_over": 0.0609,
-     "fair_over": 1542,
-     "fair_under": -1542
+     "p_over": 0.0608,
+     "fair_over": 1544,
+     "fair_under": -1544
     }
    ]
   },
@@ -327,37 +367,37 @@
    "lam": 4.81,
    "k9_regressed": 8.22,
    "exp_ip": 5.68,
-   "opp_mult": 0.926,
+   "opp_mult": 0.927,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5247,
-     "fair_over": -110,
-     "fair_under": 110
+     "p_over": 0.525,
+     "fair_over": -111,
+     "fair_under": 111
     },
     {
      "line": 5.5,
-     "p_over": 0.3499,
+     "p_over": 0.3502,
      "fair_over": 186,
      "fair_under": -186
     },
     {
      "line": 6.5,
-     "p_over": 0.2099,
+     "p_over": 0.2102,
      "fair_over": 376,
      "fair_under": -376
     },
     {
      "line": 7.5,
-     "p_over": 0.1138,
-     "fair_over": 779,
-     "fair_under": -779
+     "p_over": 0.114,
+     "fair_over": 777,
+     "fair_under": -777
     },
     {
      "line": 8.5,
-     "p_over": 0.0561,
-     "fair_over": 1682,
-     "fair_under": -1682
+     "p_over": 0.0562,
+     "fair_over": 1678,
+     "fair_under": -1678
     }
    ]
   },
@@ -442,46 +482,6 @@
    ]
   },
   {
-   "pitcher": "Jake Irvin",
-   "opp": "San Diego Padres",
-   "lam": 4.7,
-   "k9_regressed": 8.98,
-   "exp_ip": 4.76,
-   "opp_mult": 0.99,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5055,
-     "fair_over": -102,
-     "fair_under": 102
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3317,
-     "fair_over": 201,
-     "fair_under": -201
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1955,
-     "fair_over": 412,
-     "fair_under": -412
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.104,
-     "fair_over": 861,
-     "fair_under": -861
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0503,
-     "fair_over": 1888,
-     "fair_under": -1888
-    }
-   ]
-  },
-  {
    "pitcher": "Jonah Tong",
    "opp": "Miami Marlins",
    "lam": 4.69,
@@ -562,42 +562,82 @@
    ]
   },
   {
-   "pitcher": "Nick Pivetta",
-   "opp": "Washington Nationals",
-   "lam": 4.45,
-   "k9_regressed": 10.14,
-   "exp_ip": 4.0,
+   "pitcher": "Jake Irvin",
+   "opp": "San Diego Padres",
+   "lam": 4.64,
+   "k9_regressed": 8.79,
+   "exp_ip": 4.81,
    "opp_mult": 0.988,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4585,
-     "fair_over": 118,
-     "fair_under": -118
+     "p_over": 0.4945,
+     "fair_over": 102,
+     "fair_under": -102
     },
     {
      "line": 5.5,
-     "p_over": 0.2887,
-     "fair_over": 246,
-     "fair_under": -246
+     "p_over": 0.3214,
+     "fair_over": 211,
+     "fair_under": -211
     },
     {
      "line": 6.5,
-     "p_over": 0.1627,
-     "fair_over": 515,
-     "fair_under": -515
+     "p_over": 0.1875,
+     "fair_over": 433,
+     "fair_under": -433
     },
     {
      "line": 7.5,
-     "p_over": 0.0826,
-     "fair_over": 1111,
-     "fair_under": -1111
+     "p_over": 0.0987,
+     "fair_over": 913,
+     "fair_under": -913
     },
     {
      "line": 8.5,
-     "p_over": 0.038,
-     "fair_over": 2531,
-     "fair_under": -2531
+     "p_over": 0.0472,
+     "fair_over": 2019,
+     "fair_under": -2019
+    }
+   ]
+  },
+  {
+   "pitcher": "Nick Pivetta",
+   "opp": "Washington Nationals",
+   "lam": 4.4,
+   "k9_regressed": 9.55,
+   "exp_ip": 4.2,
+   "opp_mult": 0.987,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4489,
+     "fair_over": 123,
+     "fair_under": -123
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2801,
+     "fair_over": 257,
+     "fair_under": -257
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1564,
+     "fair_over": 539,
+     "fair_under": -539
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0786,
+     "fair_over": 1172,
+     "fair_under": -1172
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0358,
+     "fair_over": 2692,
+     "fair_under": -2692
     }
    ]
   },
@@ -811,39 +851,39 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1112,
-     "fair_over": 799,
-     "fair_under": -799
+     "p_over": 0.1113,
+     "fair_over": 798,
+     "fair_under": -798
     },
     {
      "line": 5.5,
-     "p_over": 0.0432,
-     "fair_over": 2213,
-     "fair_under": -2213
+     "p_over": 0.0433,
+     "fair_over": 2210,
+     "fair_under": -2210
     },
     {
      "line": 6.5,
      "p_over": 0.0147,
-     "fair_over": 6704,
-     "fair_under": -6704
+     "fair_over": 6695,
+     "fair_under": -6695
     },
     {
      "line": 7.5,
      "p_over": 0.0044,
-     "fair_over": 22478,
-     "fair_under": -22478
+     "fair_over": 22440,
+     "fair_under": -22440
     },
     {
      "line": 8.5,
      "p_over": 0.0012,
-     "fair_over": 83409,
-     "fair_under": -83409
+     "fair_over": 83248,
+     "fair_under": -83248
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 19003 (used 997) \u00b7 whiff rest:30 rows",
- "n_markets": 7,
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 18995 (used 1005) \u00b7 whiff rest:30 rows",
+ "n_markets": 6,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -855,6 +895,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 0,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
