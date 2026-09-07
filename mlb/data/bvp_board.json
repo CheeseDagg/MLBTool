@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07T00:59:22+00:00",
+ "generated": "2026-09-07T20:33:31+00:00",
  "date": "2026-09-07",
  "min_pa": 6,
  "rows": [
@@ -26,17 +26,6 @@
    "slg": "1.800"
   },
   {
-   "batter": "Juan Soto",
-   "team": "NYM",
-   "opp_sp": "Eury P\u00e9rez",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 2,
-   "avg": ".500",
-   "slg": "1.500"
-  },
-  {
    "batter": "Jos\u00e9 Ram\u00edrez",
    "team": "CLE",
    "opp_sp": "Trevor Rogers",
@@ -48,54 +37,10 @@
    "slg": "1.429"
   },
   {
-   "batter": "Kody Clemens",
-   "team": "MIN",
-   "opp_sp": "Troy Melton",
-   "pa": 6,
-   "ab": 6,
-   "h": 2,
-   "hr": 2,
-   "avg": ".333",
-   "slg": "1.333"
-  },
-  {
    "batter": "Bryce Harper",
    "team": "PHI",
    "opp_sp": "Grant Holmes",
-   "pa": 7,
-   "ab": 4,
-   "h": 2,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.250"
-  },
-  {
-   "batter": "Royce Lewis",
-   "team": "MIN",
-   "opp_sp": "Troy Melton",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.167"
-  },
-  {
-   "batter": "Wilyer Abreu",
-   "team": "BOS",
-   "opp_sp": "Grayson Rodriguez",
-   "pa": 8,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
-   "batter": "David Fry",
-   "team": "CLE",
-   "opp_sp": "Trevor Rogers",
-   "pa": 7,
+   "pa": 10,
    "ab": 6,
    "h": 2,
    "hr": 1,
@@ -103,10 +48,10 @@
    "slg": ".833"
   },
   {
-   "batter": "Josh Bell",
-   "team": "MIN",
-   "opp_sp": "Troy Melton",
-   "pa": 6,
+   "batter": "David Fry",
+   "team": "CLE",
+   "opp_sp": "Trevor Rogers",
+   "pa": 7,
    "ab": 6,
    "h": 2,
    "hr": 1,
@@ -147,26 +92,81 @@
    "slg": ".714"
   },
   {
-   "batter": "Gary S\u00e1nchez",
+   "batter": "Andrew Vaughn",
    "team": "MIL",
    "opp_sp": "Matthew Boyd",
-   "pa": 8,
+   "pa": 16,
+   "ab": 14,
+   "h": 3,
+   "hr": 1,
+   "avg": ".214",
+   "slg": ".571"
+  },
+  {
+   "batter": "Kyle Schwarber",
+   "team": "PHI",
+   "opp_sp": "Grant Holmes",
+   "pa": 9,
    "ab": 7,
+   "h": 1,
+   "hr": 1,
+   "avg": ".143",
+   "slg": ".571"
+  },
+  {
+   "batter": "Christian Yelich",
+   "team": "MIL",
+   "opp_sp": "Matthew Boyd",
+   "pa": 16,
+   "ab": 16,
+   "h": 3,
+   "hr": 1,
+   "avg": ".188",
+   "slg": ".438"
+  },
+  {
+   "batter": "Luke Keaschall",
+   "team": "MIN",
+   "opp_sp": "Troy Melton",
+   "pa": 17,
+   "ab": 12,
    "h": 2,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
+   "avg": ".167",
+   "slg": ".417"
   },
   {
    "batter": "Brooks Lee",
    "team": "MIN",
    "opp_sp": "Troy Melton",
-   "pa": 7,
-   "ab": 7,
+   "pa": 17,
+   "ab": 12,
    "h": 2,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
+   "avg": ".167",
+   "slg": ".417"
+  },
+  {
+   "batter": "Kody Clemens",
+   "team": "MIN",
+   "opp_sp": "Troy Melton",
+   "pa": 17,
+   "ab": 12,
+   "h": 2,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".417"
+  },
+  {
+   "batter": "Ryan Jeffers",
+   "team": "MIN",
+   "opp_sp": "Troy Melton",
+   "pa": 17,
+   "ab": 12,
+   "h": 2,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".417"
   }
  ]
 }
