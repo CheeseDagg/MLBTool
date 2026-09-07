@@ -1872,3 +1872,27 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-06,Yordan Alvarez,HOU,824142,Eduardo Rodriguez *,2,card,17.9,24.5,,+458,,,park +3%,82F · wind out 4 (roof: half),LvL -22%,heat +10%,hr,1
 2026-09-06,Ronald Acuña Jr.,ATL,823417,Aaron Nola,2,card,15.7,20.3,,+538,,,park +9%,79F · wind in 5,RvR -3%,heat +12%,hr,1
 2026-09-06,Junior Caminero,TBR,822848,MacKenzie Gore,3,card,15.6,26.8,19.2,+541,475,10.2,park +2%,98F · wind in 5 (roof: half),RvL +12%,heat +18%,no,0
+2026-09-06,Munetaka Murakami,CHW,824552,Bailey Ober,3,card,24.9,27.8,19.7,+301,260,-29.1,park +9%,74F,LvR +8%,heat +10%,no,0
+2026-09-06,Colson Montgomery,CHW,824552,Bailey Ober,5,card,23.0,21.9,16.5,+335,290,-35.6,park +9%,74F,LvR +8%,heat +5%,no,0
+2026-09-06,Leo Bernal,STL,824309,Tanner Gordon,5,card,19.7,27.9,,+407,,,park +9%,93F,SvR +8%,,no,0
+2026-09-06,Miguel Vargas,CHW,824552,Bailey Ober,2,card,19.5,23.9,17.6,+413,360,-19.1,park +9%,74F,RvR -3%,heat -1%,no,0
+2026-09-06,Ben Rice,NYY,823253,Michael King,1,card,19.3,27.0,,+419,,,park -4%,94F · wind in 10,LvR +8%,heat +1%,no,0
+2026-09-06,Matt Olson,ATL,823417,Aaron Nola,3,card,19.3,27.1,,+417,,,park +9%,79F · wind in 5,LvR +8%,heat -5%,no,0
+2026-09-06,Royce Lewis,MIN,824552,Bryan Hudson,6,card,19.1,13.0,10.1,+424,370,-52.3,park +9%,74F,RvL +12%,,no,0
+2026-09-06,Deyvison De Los Santos,MIA,823822,Clay Holmes,2,card,18.9,26.3,,+430,,,park -9%,80F (roof: half),RvR -3%,,void,
+2026-09-06,James Wood,WSN,823903,Justin Wrobleski,3,proj,18.7,22.3,16.7,+435,380,-19.8,park +5%,73F,LvL -22%,heat +15%,no,0
+2026-09-06,Pete Alonso,BAL,824794,Payton Tolle,2,card,18.7,25.9,,+436,,,park +4% [low-conf],81F · wind in 6,RvL +12%,heat +9%,no,0
+2026-09-06,Andrew Benintendi,CHW,824552,Bailey Ober,4,card,18.3,15.9,13.3,+446,390,-34.9,park +9%,74F,LvR +8%,heat -1%,no,0
+2026-09-06,Sal Stewart,CIN,824469,Kyle Harrison,3,card,18.3,25.3,,+445,,,park +25%,82F,RvL +12%,heat +7%,no,0
+2026-09-06,Drake Baldwin,ATL,823417,Aaron Nola,1,card,18.1,24.8,,+453,,,park +9%,79F · wind in 5,LvR +8%,heat -2%,no,0
+2026-09-06,Kody Clemens,MIN,824552,Bryan Hudson,5,card,17.9,16.2,13.4,+457,400,-32.9,park +9%,74F,LvL -22%,heat -6%,no,0
+2026-09-06,Rafael Devers,SFG,823578,Christian Scott,2,card,17.3,23.3,,+478,,,park -4%,71F,LvR +8%,heat +7%,no,0
+2026-09-06,Ryan Jeffers,MIN,824552,Bryan Hudson,3,card,17.2,19.0,14.9,+480,420,-22.4,park +9%,74F,RvL +12%,heat +13%,no,0
+2026-09-06,Juan Soto,NYM,823578,Cesar Perdomo *,2,card,17.0,22.7,,+489,,,park -4%,71F,LvL -22%,,no,0
+2026-09-06,Coby Mayo,BAL,824794,Payton Tolle,3,card,16.5,21.9,,+505,,,park +4% [low-conf],81F · wind in 6,RvL +12%,heat +9%,no,0
+2026-09-06,Brandon Lowe,PIT,823336,Walbert Ureña *,2,card,16.4,21.7,,+510,,,park -9%,74F,LvR +8%,heat -7%,no,0
+2026-09-06,Jackson Chourio,MIL,824469,Brady Singer,3,card,16.4,21.6,,+511,,,park +25%,82F,RvR -3%,heat -9%,no,0
+2026-09-06,John Rave,KCR,824065,Spencer Arrighetti,1,card,16.4,21.8,,+508,,,park -4% [low-conf],97F · wind in 4,LvR +8%,heat -6%,no,0
+2026-09-06,Jordan Walker,STL,824309,Tanner Gordon,4,card,16.4,21.6,,+511,,,park +9%,93F,RvR -3%,heat +9%,no,0
+2026-09-06,Christian Encarnacion-Strand,BAL,824794,Payton Tolle,4,card,15.9,20.8,,+528,,,park +4% [low-conf],81F · wind in 6,RvL +12%,heat +4%,no,0
+2026-09-06,Francisco Lindor,NYM,823578,Cesar Perdomo *,1,card,15.9,20.7,,+531,,,park -4%,71F,SvL +12%,,no,0
