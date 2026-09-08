@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T01:11:25+00:00",
+ "generated": "2026-09-08T19:53:55+00:00",
  "date": "2026-09-08",
  "min_pa": 6,
  "rows": [
@@ -92,17 +92,6 @@
    "slg": ".457"
   },
   {
-   "batter": "Heston Kjerstad",
-   "team": "BAL",
-   "opp_sp": "Tanner Bibee",
-   "pa": 6,
-   "ab": 5,
-   "h": 3,
-   "hr": 1,
-   "avg": ".600",
-   "slg": "1.400"
-  },
-  {
    "batter": "Tommy Edman",
    "team": "LAD",
    "opp_sp": "Nick Lodolo",
@@ -166,6 +155,17 @@
    "h": 5,
    "hr": 1,
    "avg": ".417",
+   "slg": ".667"
+  },
+  {
+   "batter": "Seiya Suzuki",
+   "team": "CHC",
+   "opp_sp": "Jacob Misiorowski",
+   "pa": 12,
+   "ab": 9,
+   "h": 3,
+   "hr": 1,
+   "avg": ".333",
    "slg": ".667"
   }
  ]
