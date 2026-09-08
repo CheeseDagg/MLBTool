@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T17:21+00:00",
+ "generated": "2026-09-08T20:23+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -962,6 +962,46 @@
    ]
   },
   {
+   "pitcher": "Cal Quantrill",
+   "opp": "Seattle Mariners",
+   "lam": 4.4,
+   "k9_regressed": 7.28,
+   "exp_ip": 5.28,
+   "opp_mult": 1.032,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4493,
+     "fair_over": 123,
+     "fair_under": -123
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2805,
+     "fair_over": 257,
+     "fair_under": -257
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1566,
+     "fair_over": 538,
+     "fair_under": -538
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0788,
+     "fair_over": 1170,
+     "fair_under": -1170
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0359,
+     "fair_over": 2685,
+     "fair_under": -2685
+    }
+   ]
+  },
+  {
    "pitcher": "Andrew Painter",
    "opp": "Houston Astros",
    "lam": 4.39,
@@ -1082,8 +1122,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 18896 (used 1104) \u00b7 whiff rest:30 rows",
- "n_markets": 26,
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 18864 (used 1136) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1095,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
