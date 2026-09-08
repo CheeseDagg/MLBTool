@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T19:53:55+00:00",
+ "generated": "2026-09-08T22:37:59+00:00",
  "date": "2026-09-08",
  "min_pa": 6,
  "rows": [
@@ -26,6 +26,17 @@
    "slg": ".800"
   },
   {
+   "batter": "Evan Carter",
+   "team": "TEX",
+   "opp_sp": "Bryce Miller",
+   "pa": 7,
+   "ab": 5,
+   "h": 2,
+   "hr": 2,
+   "avg": ".400",
+   "slg": "1.600"
+  },
+  {
    "batter": "Trea Turner",
    "team": "PHI",
    "opp_sp": "Hayden Wesneski",
@@ -37,6 +48,17 @@
    "slg": "1.333"
   },
   {
+   "batter": "Corey Seager",
+   "team": "TEX",
+   "opp_sp": "Bryce Miller",
+   "pa": 10,
+   "ab": 7,
+   "h": 3,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.286"
+  },
+  {
    "batter": "Jackson Chourio",
    "team": "MIL",
    "opp_sp": "David Peterson",
@@ -46,6 +68,17 @@
    "hr": 2,
    "avg": ".455",
    "slg": "1.091"
+  },
+  {
+   "batter": "Julio Rodr\u00edguez",
+   "team": "SEA",
+   "opp_sp": "Cal Quantrill",
+   "pa": 15,
+   "ab": 15,
+   "h": 6,
+   "hr": 2,
+   "avg": ".400",
+   "slg": ".800"
   },
   {
    "batter": "Austin Riley",
@@ -92,6 +125,17 @@
    "slg": ".457"
   },
   {
+   "batter": "Wyatt Langford",
+   "team": "TEX",
+   "opp_sp": "Bryce Miller",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".857"
+  },
+  {
    "batter": "Tommy Edman",
    "team": "LAD",
    "opp_sp": "Nick Lodolo",
@@ -123,50 +167,6 @@
    "hr": 1,
    "avg": ".333",
    "slg": ".750"
-  },
-  {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Corbin Burnes",
-   "pa": 12,
-   "ab": 12,
-   "h": 6,
-   "hr": 1,
-   "avg": ".500",
-   "slg": ".750"
-  },
-  {
-   "batter": "Lars Nootbaar",
-   "team": "AZ",
-   "opp_sp": "Michael Wacha",
-   "pa": 11,
-   "ab": 11,
-   "h": 4,
-   "hr": 1,
-   "avg": ".364",
-   "slg": ".727"
-  },
-  {
-   "batter": "Marcus Semien",
-   "team": "NYM",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 12,
-   "ab": 12,
-   "h": 5,
-   "hr": 1,
-   "avg": ".417",
-   "slg": ".667"
-  },
-  {
-   "batter": "Seiya Suzuki",
-   "team": "CHC",
-   "opp_sp": "Jacob Misiorowski",
-   "pa": 12,
-   "ab": 9,
-   "h": 3,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".667"
   }
  ]
 }
