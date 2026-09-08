@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T16:50:27+00:00",
+ "generated": "2026-09-08T17:20:23+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -147,18 +147,6 @@
    "shop": false
   },
   {
-   "team": "Texas Rangers",
-   "cons_pct": 1.6,
-   "fair": "+6198",
-   "best_price": 5500,
-   "book": "fanduel",
-   "edge_pct": -11.1,
-   "any_price": 6600,
-   "any_book": "betmgm",
-   "books_n": 4,
-   "shop": false
-  },
-  {
    "team": "Arizona Diamondbacks",
    "cons_pct": 1.6,
    "fair": "+6326",
@@ -167,6 +155,18 @@
    "edge_pct": -12.9,
    "any_price": 8000,
    "any_book": "betrivers",
+   "books_n": 4,
+   "shop": false
+  },
+  {
+   "team": "Texas Rangers",
+   "cons_pct": 1.6,
+   "fair": "+6198",
+   "best_price": 5500,
+   "book": "fanduel",
+   "edge_pct": -11.1,
+   "any_price": 6600,
+   "any_book": "betmgm",
    "books_n": 4,
    "shop": false
   },
@@ -219,15 +219,15 @@
    "shop": true
   },
   {
-   "team": "Miami Marlins",
+   "team": "Kansas City Royals",
    "cons_pct": 0.1,
-   "fair": "+115282",
+   "fair": "+80643",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
    "any_book": "draftkings",
-   "books_n": 3,
+   "books_n": 2,
    "shop": false
   },
   {
@@ -243,19 +243,7 @@
    "shop": false
   },
   {
-   "team": "Pittsburgh Pirates",
-   "cons_pct": 0.1,
-   "fair": "+83686",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "betmgm",
-   "books_n": 3,
-   "shop": false
-  },
-  {
-   "team": "Cincinnati Reds",
+   "team": "Miami Marlins",
    "cons_pct": 0.1,
    "fair": "+115282",
    "best_price": null,
@@ -279,15 +267,15 @@
    "shop": false
   },
   {
-   "team": "Kansas City Royals",
+   "team": "Pittsburgh Pirates",
    "cons_pct": 0.1,
-   "fair": "+80643",
+   "fair": "+83686",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
-   "any_book": "draftkings",
-   "books_n": 2,
+   "any_book": "betmgm",
+   "books_n": 3,
    "shop": false
   },
   {
@@ -299,6 +287,18 @@
    "edge_pct": null,
    "any_price": 100000,
    "any_book": "betmgm",
+   "books_n": 3,
+   "shop": false
+  },
+  {
+   "team": "Cincinnati Reds",
+   "cons_pct": 0.1,
+   "fair": "+115282",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "draftkings",
    "books_n": 3,
    "shop": false
   }
