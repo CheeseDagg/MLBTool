@@ -1958,3 +1958,8 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-08,Max Muncy,LAD,823901,Nick Lodolo,8,card,18.3,15.9,13.3,+446,390,-35.0,park +5%,94F,LvL -22%,,no,0
 2026-09-08,Vladimir Guerrero Jr.,TOR,824957,Jack Perkins,3,proj,17.9,11.9,9.7,+457,400,-51.4,park +6% [low-conf],94F,RvR -3%,,no,0
 2026-09-08,Esmerlyn Valdez,PIT,824551,Sean Burke,5,card,17.6,18.3,14.6,+469,410,-25.6,park +9%,82F · wind in 4,RvR -3%,heat +7%,no,0
+2026-09-09,Cal Raleigh,SEA,823090,Cody Bradford,4,card,23.0,20.2,15.6,+335,290,-39.3,park -4%,68F (roof: half),SvL +12%,heat +8%,no,0
+2026-09-09,Corey Seager,TEX,823090,Kade Anderson,2,card,19.1,20.0,15.5,+424,370,-27.3,park -4%,68F (roof: half),LvL -22%,heat +12%,hr,1
+2026-09-09,Jake Burger,TEX,823090,Kade Anderson,6,card,17.9,16.0,13.3,+457,400,-33.3,park -4%,68F (roof: half),RvL +12%,,hr,1
+2026-09-09,Julio Rodríguez,SEA,823090,Cody Bradford,5,card,17.9,14.6,12.0,+457,400,-39.9,park -4%,68F (roof: half),RvL +12%,,no,0
+2026-09-09,Randy Arozarena,SEA,823090,Cody Bradford,2,card,17.9,18.3,14.6,+457,400,-27.1,park -4%,68F (roof: half),RvL +12%,heat +6%,no,0
