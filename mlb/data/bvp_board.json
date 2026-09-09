@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T01:14:46+00:00",
+ "generated": "2026-09-09T19:45:27+00:00",
  "date": "2026-09-09",
  "min_pa": 6,
  "rows": [
@@ -59,28 +59,6 @@
    "slg": ".857"
   },
   {
-   "batter": "Spencer Torkelson",
-   "team": "DET",
-   "opp_sp": "Zebby Matthews",
-   "pa": 7,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
-   "batter": "Gleyber Torres",
-   "team": "DET",
-   "opp_sp": "Zebby Matthews",
-   "pa": 6,
-   "ab": 6,
-   "h": 1,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
    "batter": "Trevor Larnach",
    "team": "MIN",
    "opp_sp": "Keider Montero",
@@ -90,17 +68,6 @@
    "hr": 1,
    "avg": ".222",
    "slg": ".556"
-  },
-  {
-   "batter": "Rafael Devers",
-   "team": "SF",
-   "opp_sp": "Andre Pallante",
-   "pa": 12,
-   "ab": 10,
-   "h": 2,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".500"
   },
   {
    "batter": "Jake Bauers",
