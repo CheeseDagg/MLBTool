@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T16:52+00:00",
+ "generated": "2026-09-09T17:16+00:00",
  "board": [
   {
    "pitcher": "Yoshinobu Yamamoto",
@@ -1162,7 +1162,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 18757 (used 1243) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 18726 (used 1274) \u00b7 whiff rest:30 rows",
  "n_markets": 25,
  "n_plays": 0,
  "plays": [],
@@ -1175,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }

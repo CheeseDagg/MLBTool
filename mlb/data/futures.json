@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T16:51:20+00:00",
+ "generated": "2026-09-09T17:15:18+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -147,18 +147,6 @@
    "shop": true
   },
   {
-   "team": "Texas Rangers",
-   "cons_pct": 1.6,
-   "fair": "+6095",
-   "best_price": 5500,
-   "book": "fanduel",
-   "edge_pct": -9.6,
-   "any_price": 5500,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Arizona Diamondbacks",
    "cons_pct": 1.6,
    "fair": "+6323",
@@ -166,6 +154,18 @@
    "book": "fanduel",
    "edge_pct": -12.8,
    "any_price": 8000,
+   "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Texas Rangers",
+   "cons_pct": 1.6,
+   "fair": "+6095",
+   "best_price": 5500,
+   "book": "fanduel",
+   "edge_pct": -9.6,
+   "any_price": 5500,
    "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
@@ -231,15 +231,27 @@
    "shop": true
   },
   {
-   "team": "Kansas City Royals",
+   "team": "Miami Marlins",
    "cons_pct": 0.1,
-   "fair": "+110644",
+   "fair": "+79439",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "draftkings",
+   "books_n": 4,
+   "shop": false
+  },
+  {
+   "team": "Pittsburgh Pirates",
+   "cons_pct": 0.1,
+   "fair": "+83943",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
    "any_book": "betonlineag",
-   "books_n": 3,
+   "books_n": 4,
    "shop": false
   },
   {
@@ -267,18 +279,6 @@
    "shop": false
   },
   {
-   "team": "Washington Nationals",
-   "cons_pct": 0.1,
-   "fair": "+110644",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "betonlineag",
-   "books_n": 3,
-   "shop": false
-  },
-  {
    "team": "New York Mets",
    "cons_pct": 0.1,
    "fair": "+88615",
@@ -291,15 +291,27 @@
    "shop": false
   },
   {
-   "team": "Miami Marlins",
+   "team": "Washington Nationals",
    "cons_pct": 0.1,
-   "fair": "+79439",
+   "fair": "+110644",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
-   "any_book": "draftkings",
-   "books_n": 4,
+   "any_book": "betonlineag",
+   "books_n": 3,
+   "shop": false
+  },
+  {
+   "team": "Kansas City Royals",
+   "cons_pct": 0.1,
+   "fair": "+110644",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "betonlineag",
+   "books_n": 3,
    "shop": false
   },
   {
@@ -312,18 +324,6 @@
    "any_price": 300000,
    "any_book": "betonlineag",
    "books_n": 2,
-   "shop": false
-  },
-  {
-   "team": "Pittsburgh Pirates",
-   "cons_pct": 0.1,
-   "fair": "+83943",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "betonlineag",
-   "books_n": 4,
    "shop": false
   }
  ],
