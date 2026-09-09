@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T19:45:27+00:00",
+ "generated": "2026-09-09T22:32:17+00:00",
  "date": "2026-09-09",
  "min_pa": 6,
  "rows": [
@@ -37,6 +37,17 @@
    "slg": "1.286"
   },
   {
+   "batter": "Keibert Ruiz",
+   "team": "WSH",
+   "opp_sp": "Walker Buehler",
+   "pa": 6,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": "1.000"
+  },
+  {
    "batter": "Isaac Paredes",
    "team": "HOU",
    "opp_sp": "Cristopher S\u00e1nchez",
@@ -68,28 +79,6 @@
    "hr": 1,
    "avg": ".222",
    "slg": ".556"
-  },
-  {
-   "batter": "Jake Bauers",
-   "team": "MIL",
-   "opp_sp": "Kevin Gausman",
-   "pa": 12,
-   "ab": 9,
-   "h": 1,
-   "hr": 1,
-   "avg": ".111",
-   "slg": ".444"
-  },
-  {
-   "batter": "Gary S\u00e1nchez",
-   "team": "MIL",
-   "opp_sp": "Kevin Gausman",
-   "pa": 27,
-   "ab": 25,
-   "h": 5,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".320"
   }
  ]
 }
