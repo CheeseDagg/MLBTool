@@ -1928,3 +1928,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-07,Kody Clemens,MIN,824229,Troy Melton,3,card,15.6,20.3,,+540,,,park -5%,75F,LvR +8%,heat -4%,no,0
 2026-09-07,Elly De La Cruz,CIN,823902,Emmet Sheehan,2,card,15.5,22.7,16.9,+547,480,-1.7,park +5%,86F · wind out 3,SvR +8%,heat +5%,hr,1
 2026-09-07,JJ Bleday,CIN,823902,Emmet Sheehan,4,card,15.5,19.6,15.2,+547,480,-11.6,park +5%,86F · wind out 3,LvR +8%,heat +4%,no,0
+2026-09-08,Kyle Schwarber,PHI,823414,Hayden Wesneski,1,card,26.8,32.3,22.1,+274,235,-25.9,park +9%,80F · wind out 4,LvR +8%,heat +2%,no,0
+2026-09-08,Aaron Judge,NYY,823500,Gabriel Hughes,3,card,26.0,26.0,18.7,+285,245,-35.3,park +14%,79F,RvR -3%,heat +3%,no,0
+2026-09-08,Cal Raleigh,SEA,823092,Cal Quantrill,4,card,24.6,20.3,15.7,+307,265,-42.9,park -4%,71F (roof: half),SvR +8%,heat +6%,no,0
+2026-09-08,Ben Rice,NYY,823500,Gabriel Hughes,1,card,23.0,28.8,20.2,+335,290,-21.1,park +14%,79F,LvR +8%,heat +12%,no,0
+2026-09-08,Pete Alonso,BAL,824792,Tanner Bibee,2,card,22.4,26.1,18.8,+346,300,-24.9,park +4% [low-conf],82F,RvR -3%,heat +8%,hr,1
+2026-09-08,James Wood,WSN,823250,Casey Mize,1,card,22.1,26.0,18.7,+352,305,-24.1,park -4%,96F · wind in 8,LvR +8%,heat +10%,no,0
+2026-09-08,Munetaka Murakami,CHW,824551,Bubba Chandler,3,card,21.9,22.4,16.8,+357,310,-31.3,park +9%,82F · wind in 4,LvR +8%,heat +3%,no,0
+2026-09-08,Heriberto Hernández,MIA,823821,Sean Manaea,1,card,21.4,25.8,18.6,+368,320,-21.8,park -9%,84F (roof: half),RvL +12%,heat +11%,no,0
+2026-09-08,Yordan Alvarez,HOU,823414,Andrew Painter,2,card,21.4,29.2,20.4,+368,320,-14.2,park +9%,80F · wind out 4,LvR +8%,heat +11%,no,0
+2026-09-08,Colson Montgomery,CHW,824551,Bubba Chandler,5,card,21.1,18.4,14.6,+374,325,-37.8,park +9%,82F · wind in 4,LvR +8%,heat +2%,no,0
+2026-09-08,Matt Olson,ATL,824875,Freddy Peralta,3,card,20.9,24.9,18.1,+379,330,-22.0,park +4%,87F · wind in 3,LvR +8%,heat -15%,no,0
+2026-09-08,Junior Caminero,TBR,824875,AJ Smith-Shawver,3,card,20.4,23.5,17.4,+391,340,-23.6,park +4%,87F · wind in 3,RvR -3%,heat +2%,hr,1
+2026-09-08,Teoscar Hernández,LAD,823901,Nick Lodolo,5,card,20.4,15.4,12.9,+391,340,-43.3,park +5%,94F,RvL +12%,heat -1%,no,0
+2026-09-08,Brandon Lowe,PIT,824551,Sean Burke,2,card,19.9,23.5,17.4,+402,350,-21.8,park +9%,82F · wind in 4,LvR +8%,heat +7%,no,0
+2026-09-08,Bryce Harper,PHI,823414,Hayden Wesneski,3,card,19.9,20.4,15.7,+402,350,-29.2,park +9%,80F · wind out 4,LvR +8%,heat +6%,no,0
+2026-09-08,Kazuma Okamoto,TOR,824957,Jack Perkins,1,proj,19.9,26.8,19.2,+402,350,-13.7,park +6% [low-conf],94F,RvR -3%,heat -5%,hr,1
+2026-09-08,Ketel Marte,ARI,824063,Michael Wacha,2,card,19.9,23.5,17.4,+402,350,-21.8,park -4% [low-conf],100F · wind out 6,SvR +8%,heat +11%,void,
+2026-09-08,Coby Mayo,BAL,824792,Tanner Bibee,4,card,19.5,21.3,16.2,+413,360,-25.6,park +4% [low-conf],82F,RvR -3%,heat -1%,no,0
+2026-09-08,Luis García Jr.,NYY,823500,Gabriel Hughes,4,card,19.5,18.4,14.6,+413,360,-32.8,park +14%,79F,LvR +8%,heat +16%,no,0
+2026-09-08,Spencer Jones,NYY,823500,Gabriel Hughes,5,card,19.1,14.8,12.2,+424,370,-42.7,park +14%,79F,LvR +8%,,no,0
+2026-09-08,Bobby Witt Jr.,KCR,824063,Corbin Burnes *,2,card,18.9,18.4,14.6,+430,375,-30.5,park -4% [low-conf],100F · wind out 6,RvR -3%,,no,0
+2026-09-08,Michael Harris II,ATL,824875,Freddy Peralta,1,card,18.7,22.9,17.0,+435,380,-18.3,park +4%,87F · wind in 3,LvR +8%,heat -11%,no,0
+2026-09-08,Oneil Cruz,PIT,824551,Sean Burke,4,card,18.7,19.8,15.4,+435,380,-26.2,park +9%,82F · wind in 4,LvR +8%,heat +10%,no,0
+2026-09-08,Samuel Basallo,BAL,824792,Tanner Bibee,5,card,18.7,18.5,14.7,+435,380,-29.5,park +4% [low-conf],82F,LvR +8%,heat +8%,no,0
+2026-09-08,Will Smith,LAD,823901,Nick Lodolo,3,card,18.7,18.2,14.5,+435,380,-30.3,park +5%,94F,RvL +12%,heat -5%,hr,1
+2026-09-08,Corey Seager,TEX,823092,Bryce Miller,2,card,18.3,21.9,16.5,+446,390,-19.0,park -4%,71F (roof: half),LvR +8%,heat +10%,hr,1
+2026-09-08,Juan Soto,NYM,823821,Sandy Alcantara,2,card,18.3,22.8,17.0,+446,390,-16.8,park -9%,84F (roof: half),LvR +8%,heat +8%,hr,1
+2026-09-08,Max Muncy,LAD,823901,Nick Lodolo,8,card,18.3,15.9,13.3,+446,390,-35.0,park +5%,94F,LvL -22%,,no,0
+2026-09-08,Vladimir Guerrero Jr.,TOR,824957,Jack Perkins,3,proj,17.9,11.9,9.7,+457,400,-51.4,park +6% [low-conf],94F,RvR -3%,,no,0
+2026-09-08,Esmerlyn Valdez,PIT,824551,Sean Burke,5,card,17.6,18.3,14.6,+469,410,-25.6,park +9%,82F · wind in 4,RvR -3%,heat +7%,no,0
