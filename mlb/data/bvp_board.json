@@ -1,8 +1,30 @@
 {
- "generated": "2026-09-10T19:39:34+00:00",
+ "generated": "2026-09-10T22:33:00+00:00",
  "date": "2026-09-10",
  "min_pa": 6,
  "rows": [
+  {
+   "batter": "Matt Olson",
+   "team": "ATL",
+   "opp_sp": "Nick Martinez",
+   "pa": 19,
+   "ab": 16,
+   "h": 6,
+   "hr": 2,
+   "avg": ".375",
+   "slg": ".750"
+  },
+  {
+   "batter": "Yandy D\u00edaz",
+   "team": "TB",
+   "opp_sp": "Mart\u00edn P\u00e9rez",
+   "pa": 32,
+   "ab": 30,
+   "h": 12,
+   "hr": 2,
+   "avg": ".400",
+   "slg": ".667"
+  },
   {
    "batter": "Brandon Nimmo",
    "team": "TEX",
@@ -13,6 +35,17 @@
    "hr": 2,
    "avg": ".214",
    "slg": ".643"
+  },
+  {
+   "batter": "Christian Walker",
+   "team": "HOU",
+   "opp_sp": "Zack Wheeler",
+   "pa": 23,
+   "ab": 21,
+   "h": 9,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".714"
   },
   {
    "batter": "Julio Rodr\u00edguez",
@@ -37,17 +70,6 @@
    "slg": ".576"
   },
   {
-   "batter": "J.P. Crawford",
-   "team": "SEA",
-   "opp_sp": "Jacob deGrom",
-   "pa": 15,
-   "ab": 14,
-   "h": 3,
-   "hr": 1,
-   "avg": ".214",
-   "slg": ".429"
-  },
-  {
    "batter": "Cal Raleigh",
    "team": "SEA",
    "opp_sp": "Jacob deGrom",
@@ -57,6 +79,17 @@
    "hr": 1,
    "avg": ".154",
    "slg": ".385"
+  },
+  {
+   "batter": "J.P. Crawford",
+   "team": "SEA",
+   "opp_sp": "Jacob deGrom",
+   "pa": 18,
+   "ab": 17,
+   "h": 3,
+   "hr": 1,
+   "avg": ".176",
+   "slg": ".353"
   }
  ]
 }
