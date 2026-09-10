@@ -1902,33 +1902,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-09,Ketel Marte,ARI,824064,Daniel Lynch IV,2,card,17.9,21.5,16.3,+457,400,-18.6,park -4% [low-conf],78F,SvL +12%,heat +10%,-0.4,
 2026-09-09,Austin Wells,NYY,823497,Tomoyuki Sugano,8,card,17.6,11.4,9.6,+469,410,-51.3,park +14%,79F,LvR +8%,,,new
 2026-09-09,Teoscar Hernández,LAD,823900,Rhett Lowder,5,card,17.6,15.0,12.4,+469,410,-36.6,park +5%,102F · wind out 6,RvR -3%,,0.7,
-2026-09-10,Ben Rice,NYY,823499,Ryan Feltner,1,card,25.3,31.7,21.8,+296,255,-22.5,park +14%,88F · wind out 8,LvR +8%,heat +14%,2.1,
-2026-09-10,Kyle Schwarber,PHI,823413,Cristian Javier,1,card,22.5,33.0,,+344,,,park +9%,89F,LvR +8%,heat +8%,1.7,
-2026-09-10,Spencer Jones,NYY,823499,Ryan Feltner,5,card,21.4,16.4,13.6,+368,320,-43.1,park +14%,88F · wind out 8,LvR +8%,heat +7%,0.7,
-2026-09-10,Cal Raleigh,SEA,823088,Jacob deGrom,4,card,20.9,20.0,15.5,+379,330,-33.5,park -4%,66F (roof: half),SvR +8%,heat +8%,0.2,
-2026-09-10,Munetaka Murakami,CHW,824550,Jared Jones,5,proj,20.9,20.8,15.9,+379,330,-31.6,park +9%,71F,LvR +8%,heat +4%,-3.2,floor
-2026-09-10,Yordan Alvarez,HOU,823413,Zack Wheeler,2,card,20.2,28.7,,+396,,,park +9%,89F,LvR +8%,heat -7%,0.7,
-2026-09-10,Luis García Jr.,NYY,823499,Ryan Feltner,4,card,19.5,20.7,15.8,+413,360,-27.1,park +14%,88F · wind out 8,LvR +8%,heat +14%,0.4,
-2026-09-10,Corey Seager,TEX,823088,Logan Gilbert,2,card,19.1,22.6,16.9,+424,370,-20.7,park -4%,66F (roof: half),LvR +8%,heat +5%,1.3,
-2026-09-10,Hunter Goodman,COL,823499,Max Fried,3,card,19.1,27.3,19.4,+424,370,-8.8,park +14%,88F · wind out 8,RvL +12%,heat +8%,0.4,
-2026-09-10,Colson Montgomery,CHW,824550,Jared Jones,3,proj,18.7,22.3,16.7,+435,380,-19.7,park +9%,71F,LvR +8%,heat -0%,1.6,
-2026-09-10,Junior Caminero,TBR,824872,Martín Pérez *,3,card,18.6,25.7,,+438,,,park +4%,90F,RvL +12%,heat -0%,-0.1,
-2026-09-10,Matt Olson,ATL,824872,Nick Martinez,3,card,18.4,25.5,,+443,,,park +4%,90F,LvR +8%,heat +9%,-0.1,
-2026-09-10,Drake Baldwin,ATL,824872,Nick Martinez,1,card,17.3,23.4,,+478,,,park +4%,90F,LvR +8%,heat +4%,-0.7,
-2026-09-10,Jake Burger,TEX,823088,Logan Gilbert,7,card,17.1,15.1,12.5,+485,425,-34.4,park -4%,66F (roof: half),RvR -3%,heat +8%,-2.4,floor
-2026-09-10,Oneil Cruz,PIT,824550,Hagen Smith,6,proj,16.6,14.4,11.7,+502,440,-36.8,park +9%,71F,LvL -22%,heat +5%,-2.6,floor
-2026-09-10,Wyatt Langford,TEX,823088,Logan Gilbert,5,card,16.3,14.0,11.3,+513,450,-38.1,park -4%,66F (roof: half),RvR -3%,heat +3%,-2.6,floor
-2026-09-10,Cody Bellinger,NYY,823499,Ryan Feltner,2,card,16.0,16.9,13.8,+524,460,-22.5,park +14%,88F · wind out 8,LvR +8%,heat +5%,1.8,
-2026-09-10,Dominic Canzone,SEA,823088,Jacob deGrom,3,card,16.0,20.3,15.7,+524,460,-12.3,park -4%,66F (roof: half),LvR +8%,heat +2%,-0.9,
-2026-09-10,Bryce Harper,PHI,823413,Cristian Javier,3,card,15.8,20.7,,+531,,,park +9%,89F,LvR +8%,heat +15%,0.3,
-2026-09-10,Jeremy Peña,HOU,823413,Zack Wheeler,1,card,15.7,20.4,,+536,,,park +9%,89F,RvR -3%,heat +1%,,new
-2026-09-10,Brandon Lowe,PIT,824550,Hagen Smith,2,proj,15.5,20.2,15.6,+547,480,-9.6,park +9%,71F,LvL -22%,heat +15%,-1.0,
-2026-09-10,Jasson Domínguez,NYY,823499,Ryan Feltner,3,card,15.5,15.2,12.7,+547,480,-26.3,park +14%,88F · wind out 8,SvR +8%,heat +4%,,new
-2026-09-10,Ronald Acuña Jr.,ATL,824872,Nick Martinez,2,card,15.2,19.5,,+558,,,park +4%,90F,RvR -3%,heat +7%,-0.5,
-2026-09-10,Austin Wells,NYY,823499,Ryan Feltner,8,card,14.9,11.2,9.5,+569,500,-43.1,park +14%,88F · wind out 8,LvR +8%,heat +5%,-0.1,
-2026-09-10,Bryan Reynolds,PIT,824550,Hagen Smith,1,proj,14.9,15.9,13.3,+569,500,-20.5,park +9%,71F,SvL +12%,heat -1%,,new
-2026-09-10,Joc Pederson,TEX,823088,Logan Gilbert,1,card,14.9,25.8,18.6,+569,500,11.6,park -4%,66F (roof: half),LvR +8%,heat +2%,0.4,
-2026-09-10,Michael Harris II,ATL,824872,Nick Martinez,4,card,14.9,18.9,,+572,,,park +4%,90F,LvR +8%,heat +13%,-0.2,
-2026-09-10,Ryan McMahon,NYY,823499,Ryan Feltner,7,card,14.9,12.8,10.0,+569,500,-40.0,park +14%,88F · wind out 8,LvR +8%,heat -0%,,new
-2026-09-10,Yandy Díaz,TBR,824872,Martín Pérez *,1,card,14.8,18.8,,+574,,,park +4%,90F,RvL +12%,heat -8%,,new
-2026-09-10,Ryan Vilade,TBR,824872,Martín Pérez *,2,card,14.5,18.2,,+590,,,park +4%,90F,RvL +12%,heat -7%,,new
+2026-09-10,Ben Rice,NYY,823499,Ryan Feltner,1,card,25.3,31.4,21.6,+296,255,-23.2,park +14%,85F · wind out 7,LvR +8%,heat +14%,1.9,
+2026-09-10,Kyle Schwarber,PHI,823413,Cristian Javier,1,card,22.4,32.8,,+347,,,park +9%,85F,LvR +8%,heat +8%,1.6,
+2026-09-10,Munetaka Murakami,CHW,824550,Jared Jones,3,card,21.4,23.8,17.5,+368,320,-26.3,park +9%,71F,LvR +8%,heat +4%,-1.6,
+2026-09-10,Spencer Jones,NYY,823499,Ryan Feltner,5,card,21.4,16.2,13.4,+368,320,-43.5,park +14%,85F · wind out 7,LvR +8%,heat +7%,0.5,
+2026-09-10,Yordan Alvarez,HOU,823413,Zack Wheeler,2,card,20.0,28.4,,+399,,,park +9%,85F,LvR +8%,heat -7%,0.5,
+2026-09-10,Luis García Jr.,NYY,823499,Ryan Feltner,4,card,19.5,20.4,15.7,+413,360,-27.8,park +14%,85F · wind out 7,LvR +8%,heat +14%,0.2,
+2026-09-10,Colson Montgomery,CHW,824550,Jared Jones,5,card,19.1,19.3,15.1,+424,370,-29.1,park +9%,71F,LvR +8%,heat -0%,-0.0,
+2026-09-10,Hunter Goodman,COL,823499,Max Fried,3,card,19.1,27.0,19.2,+424,370,-9.5,park +14%,85F · wind out 7,RvL +12%,heat +8%,0.2,
+2026-09-10,Junior Caminero,TBR,824872,Martín Pérez *,3,card,18.6,25.8,,+437,,,park +4%,90F,RvL +12%,heat -0%,-0.1,
+2026-09-10,Matt Olson,ATL,824872,Nick Martinez,3,card,18.5,25.5,,+441,,,park +4%,90F,LvR +8%,heat +9%,0.0,
+2026-09-10,Drake Baldwin,ATL,824872,Nick Martinez,1,card,17.3,23.4,,+477,,,park +4%,90F,LvR +8%,heat +4%,-0.7,
+2026-09-10,Corey Seager,TEX,823088,Logan Gilbert,2,card,16.9,22.6,,+492,,,park -4%,68F (roof: half),LvR +8%,heat +5%,1.3,
+2026-09-10,Oneil Cruz,PIT,824550,Hagen Smith,2,card,16.9,19.3,15.1,+491,430,-20.0,park +9%,71F,LvL -22%,heat +5%,0.8,
+2026-09-10,Cody Bellinger,NYY,823499,Ryan Feltner,2,card,16.0,16.7,13.7,+524,460,-23.2,park +14%,85F · wind out 7,LvR +8%,heat +5%,1.7,
+2026-09-10,Bryce Harper,PHI,823413,Cristian Javier,3,card,15.7,20.5,,+535,,,park +9%,85F,LvR +8%,heat +15%,0.2,
+2026-09-10,Justin Foscue,TEX,823088,Logan Gilbert,1,card,15.7,20.4,,+538,,,park -4%,68F (roof: half),RvR -3%,heat +1%,-2.3,floor
+2026-09-10,Dominic Canzone,SEA,823088,Jacob deGrom,3,card,15.6,20.2,,+540,,,park -4%,68F (roof: half),LvR +8%,heat +2%,-1.0,
+2026-09-10,Jeremy Peña,HOU,823413,Zack Wheeler,1,card,15.6,20.3,,+540,,,park +9%,85F,RvR -3%,heat +1%,,new
+2026-09-10,Jasson Domínguez,NYY,823499,Ryan Feltner,3,card,15.5,15.1,12.5,+547,480,-27.5,park +14%,85F · wind out 7,SvR +8%,heat +4%,,new
+2026-09-10,Cal Raleigh,SEA,823088,Jacob deGrom,4,card,15.4,19.9,,+548,,,park -4%,68F (roof: half),SvR +8%,heat +8%,0.1,
+2026-09-10,Ronald Acuña Jr.,ATL,824872,Nick Martinez,2,card,15.2,19.6,,+556,,,park +4%,90F,RvR -3%,heat +7%,-0.5,
+2026-09-10,Austin Wells,NYY,823499,Ryan Feltner,8,card,14.9,11.0,9.4,+569,500,-43.3,park +14%,85F · wind out 7,LvR +8%,heat +5%,-0.2,
+2026-09-10,Brandon Lowe,PIT,824550,Hagen Smith,5,card,14.9,16.2,13.4,+569,500,-19.5,park +9%,71F,LvL -22%,heat +15%,-3.2,floor
+2026-09-10,Michael Harris II,ATL,824872,Nick Martinez,4,card,14.9,18.9,,+571,,,park +4%,90F,LvR +8%,heat +13%,-0.2,
+2026-09-10,Ryan McMahon,NYY,823499,Ryan Feltner,7,card,14.9,12.6,10.0,+569,500,-40.3,park +14%,85F · wind out 7,LvR +8%,heat -0%,,new
+2026-09-10,Yandy Díaz,TBR,824872,Martín Pérez *,1,card,14.9,18.9,,+573,,,park +4%,90F,RvL +12%,heat -8%,,new
+2026-09-10,Ryan Vilade,TBR,824872,Martín Pérez *,2,card,14.5,18.2,,+588,,,park +4%,90F,RvL +12%,heat -7%,,new
+2026-09-10,Randy Arozarena,SEA,823088,Jacob deGrom,2,card,14.1,17.5,,+608,,,park -4%,68F (roof: half),RvR -3%,heat -7%,-1.8,
+2026-09-10,Bryan Reynolds,PIT,824550,Hagen Smith,3,card,13.3,13.6,10.8,+653,575,-26.9,park +9%,71F,SvL +12%,heat -1%,,new
+2026-09-10,Miguel Vargas,CHW,824550,Jared Jones,2,card,13.3,21.5,16.3,+653,575,10.0,park +9%,71F,RvR -3%,heat -4%,-0.1,

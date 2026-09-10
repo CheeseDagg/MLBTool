@@ -1,6 +1,46 @@
 {
- "generated": "2026-09-10T20:06+00:00",
+ "generated": "2026-09-10T22:44+00:00",
  "board": [
+  {
+   "pitcher": "Jacob deGrom",
+   "opp": "Seattle Mariners",
+   "lam": 6.56,
+   "k9_regressed": 10.71,
+   "exp_ip": 5.33,
+   "opp_mult": 1.034,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7834,
+     "fair_over": -362,
+     "fair_under": 362
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.6402,
+     "fair_over": -178,
+     "fair_under": 178
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4835,
+     "fair_over": 107,
+     "fair_under": -107
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.3366,
+     "fair_over": 197,
+     "fair_under": -197
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.2161,
+     "fair_over": 363,
+     "fair_under": -363
+    }
+   ]
+  },
   {
    "pitcher": "Zack Wheeler",
    "opp": "Houston Astros",
@@ -42,82 +82,42 @@
    ]
   },
   {
-   "pitcher": "Jacob deGrom",
-   "opp": "Seattle Mariners",
-   "lam": 6.36,
-   "k9_regressed": 10.47,
-   "exp_ip": 5.31,
-   "opp_mult": 1.029,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7599,
-     "fair_over": -317,
-     "fair_under": 317
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.6099,
-     "fair_over": -156,
-     "fair_under": 156
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.4509,
-     "fair_over": 122,
-     "fair_under": -122
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.3065,
-     "fair_over": 226,
-     "fair_under": -226
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1918,
-     "fair_over": 421,
-     "fair_under": -421
-    }
-   ]
-  },
-  {
    "pitcher": "Logan Gilbert",
    "opp": "Texas Rangers",
-   "lam": 6.25,
-   "k9_regressed": 9.43,
-   "exp_ip": 5.89,
-   "opp_mult": 1.014,
+   "lam": 6.42,
+   "k9_regressed": 9.58,
+   "exp_ip": 5.93,
+   "opp_mult": 1.016,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7476,
-     "fair_over": -296,
-     "fair_under": 296
+     "p_over": 0.7671,
+     "fair_over": -329,
+     "fair_under": 329
     },
     {
      "line": 5.5,
-     "p_over": 0.5943,
-     "fair_over": -147,
-     "fair_under": 147
+     "p_over": 0.619,
+     "fair_over": -162,
+     "fair_under": 162
     },
     {
      "line": 6.5,
-     "p_over": 0.4346,
-     "fair_over": 130,
-     "fair_under": -130
+     "p_over": 0.4606,
+     "fair_over": 117,
+     "fair_under": -117
     },
     {
      "line": 7.5,
-     "p_over": 0.2918,
-     "fair_over": 243,
-     "fair_under": -243
+     "p_over": 0.3153,
+     "fair_over": 217,
+     "fair_under": -217
     },
     {
      "line": 8.5,
-     "p_over": 0.1802,
-     "fair_over": 455,
-     "fair_under": -455
+     "p_over": 0.1988,
+     "fair_over": 403,
+     "fair_under": -403
     }
    ]
   },
@@ -402,8 +402,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 18619 (used 1381) \u00b7 whiff rest:30 rows",
- "n_markets": 5,
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 18613 (used 1387) \u00b7 whiff rest:30 rows",
+ "n_markets": 3,
  "n_plays": 0,
  "plays": [],
  "books": [
