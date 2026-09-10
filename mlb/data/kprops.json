@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T16:39+00:00",
+ "generated": "2026-09-10T17:05+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -324,85 +324,85 @@
   {
    "pitcher": "Nick Martinez",
    "opp": "Atlanta Braves",
-   "lam": 3.75,
-   "k9_regressed": 5.94,
-   "exp_ip": 5.75,
+   "lam": 3.81,
+   "k9_regressed": 5.93,
+   "exp_ip": 5.86,
    "opp_mult": 0.988,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3229,
-     "fair_over": 210,
-     "fair_under": -210
+     "p_over": 0.3344,
+     "fair_over": 199,
+     "fair_under": -199
     },
     {
      "line": 5.5,
-     "p_over": 0.1775,
-     "fair_over": 463,
-     "fair_under": -463
+     "p_over": 0.1862,
+     "fair_over": 437,
+     "fair_under": -437
     },
     {
      "line": 6.5,
-     "p_over": 0.0865,
-     "fair_over": 1056,
-     "fair_under": -1056
+     "p_over": 0.092,
+     "fair_over": 987,
+     "fair_under": -987
     },
     {
      "line": 7.5,
-     "p_over": 0.0377,
-     "fair_over": 2550,
-     "fair_under": -2550
+     "p_over": 0.0407,
+     "fair_over": 2357,
+     "fair_under": -2357
     },
     {
      "line": 8.5,
-     "p_over": 0.0149,
-     "fair_over": 6626,
-     "fair_under": -6626
+     "p_over": 0.0163,
+     "fair_over": 6048,
+     "fair_under": -6048
     }
    ]
   },
   {
    "pitcher": "Mart\u00edn P\u00e9rez",
    "opp": "Tampa Bay Rays",
-   "lam": 3.46,
-   "k9_regressed": 7.09,
-   "exp_ip": 4.89,
+   "lam": 3.54,
+   "k9_regressed": 7.13,
+   "exp_ip": 4.97,
    "opp_mult": 0.897,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2665,
-     "fair_over": 275,
-     "fair_under": -275
+     "p_over": 0.2814,
+     "fair_over": 255,
+     "fair_under": -255
     },
     {
      "line": 5.5,
-     "p_over": 0.1368,
-     "fair_over": 631,
-     "fair_under": -631
+     "p_over": 0.1472,
+     "fair_over": 579,
+     "fair_under": -579
     },
     {
      "line": 6.5,
-     "p_over": 0.062,
-     "fair_over": 1512,
-     "fair_under": -1512
+     "p_over": 0.0681,
+     "fair_over": 1368,
+     "fair_under": -1368
     },
     {
      "line": 7.5,
-     "p_over": 0.0251,
-     "fair_over": 3882,
-     "fair_under": -3882
+     "p_over": 0.0282,
+     "fair_over": 3450,
+     "fair_under": -3450
     },
     {
      "line": 8.5,
-     "p_over": 0.0092,
-     "fair_over": 10808,
-     "fair_under": -10808
+     "p_over": 0.0105,
+     "fair_over": 9422,
+     "fair_under": -9422
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 18639 (used 1361) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 18627 (used 1373) \u00b7 whiff rest:30 rows",
  "n_markets": 7,
  "n_plays": 0,
  "plays": [],
@@ -415,6 +415,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
