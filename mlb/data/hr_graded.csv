@@ -1993,3 +1993,11 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-09,Ketel Marte,ARI,824064,Daniel Lynch IV,2,card,17.9,21.5,16.3,+457,400,-18.6,park -4% [low-conf],78F,SvL +12%,heat +10%,void,
 2026-09-09,Austin Wells,NYY,823497,Tomoyuki Sugano,8,card,17.6,11.4,9.6,+469,410,-51.3,park +14%,79F,LvR +8%,,no,0
 2026-09-09,Teoscar Hernández,LAD,823900,Rhett Lowder,5,card,17.6,15.0,12.4,+469,410,-36.6,park +5%,102F · wind out 6,RvR -3%,,no,0
+2026-09-10,Kyle Schwarber,PHI,823413,Cristian Javier,1,card,28.5,32.9,22.5,+251,215,-29.2,park +9%,88F,LvR +8%,heat +8%,no,0
+2026-09-10,Yordan Alvarez,HOU,823413,Zack Wheeler,2,card,23.3,28.5,20.1,+329,285,-22.6,park +9%,88F,LvR +8%,heat -7%,no,0
+2026-09-10,Bryce Harper,PHI,823413,Cristian Javier,3,card,20.4,20.6,15.8,+391,340,-30.4,park +9%,88F,LvR +8%,heat +15%,no,0
+2026-09-10,Matt Olson,ATL,824872,Nick Martinez,3,card,17.2,25.2,18.3,+480,420,-4.8,park +4%,87F,LvR +8%,heat +9%,no,0
+2026-09-10,Trea Turner,PHI,823413,Cristian Javier,2,card,15.6,16.0,13.4,+541,475,-23.2,park +9%,88F,RvR -3%,heat -6%,no,0
+2026-09-10,Ronald Acuña Jr.,ATL,824872,Nick Martinez,2,card,14.9,19.3,15.1,+569,500,-9.2,park +4%,87F,RvR -3%,heat +7%,no,0
+2026-09-10,Christian Walker,HOU,823413,Zack Wheeler,6,card,14.3,15.8,13.2,+597,525,-17.5,park +9%,88F,RvR -3%,heat -0%,no,0
+2026-09-10,Isaac Paredes,HOU,823413,Zack Wheeler,3,card,14.3,15.4,12.9,+597,525,-19.4,park +9%,88F,RvR -3%,heat +3%,no,0

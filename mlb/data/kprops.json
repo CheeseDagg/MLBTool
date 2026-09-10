@@ -1,43 +1,43 @@
 {
- "generated": "2026-09-10T17:05+00:00",
+ "generated": "2026-09-10T20:06+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
    "opp": "Houston Astros",
-   "lam": 6.42,
-   "k9_regressed": 10.32,
-   "exp_ip": 5.68,
-   "opp_mult": 0.986,
+   "lam": 6.52,
+   "k9_regressed": 10.37,
+   "exp_ip": 5.73,
+   "opp_mult": 0.987,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7676,
-     "fair_over": -330,
-     "fair_under": 330
+     "p_over": 0.7787,
+     "fair_over": -352,
+     "fair_under": 352
     },
     {
      "line": 5.5,
-     "p_over": 0.6197,
-     "fair_over": -163,
-     "fair_under": 163
+     "p_over": 0.634,
+     "fair_over": -173,
+     "fair_under": 173
     },
     {
      "line": 6.5,
-     "p_over": 0.4614,
-     "fair_over": 117,
-     "fair_under": -117
+     "p_over": 0.4768,
+     "fair_over": 110,
+     "fair_under": -110
     },
     {
      "line": 7.5,
-     "p_over": 0.3161,
-     "fair_over": 216,
-     "fair_under": -216
+     "p_over": 0.3303,
+     "fair_over": 203,
+     "fair_under": -203
     },
     {
      "line": 8.5,
-     "p_over": 0.1994,
-     "fair_over": 401,
-     "fair_under": -401
+     "p_over": 0.2109,
+     "fair_over": 374,
+     "fair_under": -374
     }
    ]
   },
@@ -284,126 +284,126 @@
   {
    "pitcher": "Cristian Javier",
    "opp": "Philadelphia Phillies",
-   "lam": 3.97,
-   "k9_regressed": 8.87,
-   "exp_ip": 4.04,
-   "opp_mult": 0.998,
+   "lam": 4.12,
+   "k9_regressed": 8.78,
+   "exp_ip": 4.23,
+   "opp_mult": 0.999,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3651,
-     "fair_over": 174,
-     "fair_under": -174
+     "p_over": 0.3955,
+     "fair_over": 153,
+     "fair_under": -153
     },
     {
      "line": 5.5,
-     "p_over": 0.2101,
-     "fair_over": 376,
-     "fair_under": -376
+     "p_over": 0.2347,
+     "fair_over": 326,
+     "fair_under": -326
     },
     {
      "line": 6.5,
-     "p_over": 0.1075,
-     "fair_over": 830,
-     "fair_under": -830
+     "p_over": 0.1241,
+     "fair_over": 706,
+     "fair_under": -706
     },
     {
      "line": 7.5,
-     "p_over": 0.0493,
-     "fair_over": 1928,
-     "fair_under": -1928
+     "p_over": 0.0589,
+     "fair_over": 1597,
+     "fair_under": -1597
     },
     {
      "line": 8.5,
-     "p_over": 0.0205,
-     "fair_over": 4788,
-     "fair_under": -4788
+     "p_over": 0.0253,
+     "fair_over": 3850,
+     "fair_under": -3850
     }
    ]
   },
   {
    "pitcher": "Nick Martinez",
    "opp": "Atlanta Braves",
-   "lam": 3.81,
-   "k9_regressed": 5.93,
-   "exp_ip": 5.86,
-   "opp_mult": 0.988,
+   "lam": 3.83,
+   "k9_regressed": 5.88,
+   "exp_ip": 5.94,
+   "opp_mult": 0.987,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3344,
-     "fair_over": 199,
-     "fair_under": -199
+     "p_over": 0.3373,
+     "fair_over": 197,
+     "fair_under": -197
     },
     {
      "line": 5.5,
-     "p_over": 0.1862,
-     "fair_over": 437,
-     "fair_under": -437
+     "p_over": 0.1883,
+     "fair_over": 431,
+     "fair_under": -431
     },
     {
      "line": 6.5,
-     "p_over": 0.092,
-     "fair_over": 987,
-     "fair_under": -987
+     "p_over": 0.0934,
+     "fair_over": 971,
+     "fair_under": -971
     },
     {
      "line": 7.5,
-     "p_over": 0.0407,
-     "fair_over": 2357,
-     "fair_under": -2357
+     "p_over": 0.0415,
+     "fair_over": 2312,
+     "fair_under": -2312
     },
     {
      "line": 8.5,
-     "p_over": 0.0163,
-     "fair_over": 6048,
-     "fair_under": -6048
+     "p_over": 0.0166,
+     "fair_over": 5915,
+     "fair_under": -5915
     }
    ]
   },
   {
    "pitcher": "Mart\u00edn P\u00e9rez",
    "opp": "Tampa Bay Rays",
-   "lam": 3.54,
-   "k9_regressed": 7.13,
-   "exp_ip": 4.97,
-   "opp_mult": 0.897,
+   "lam": 3.61,
+   "k9_regressed": 7.1,
+   "exp_ip": 5.1,
+   "opp_mult": 0.898,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.2814,
-     "fair_over": 255,
-     "fair_under": -255
+     "p_over": 0.2951,
+     "fair_over": 239,
+     "fair_under": -239
     },
     {
      "line": 5.5,
-     "p_over": 0.1472,
-     "fair_over": 579,
-     "fair_under": -579
+     "p_over": 0.157,
+     "fair_over": 537,
+     "fair_under": -537
     },
     {
      "line": 6.5,
-     "p_over": 0.0681,
-     "fair_over": 1368,
-     "fair_under": -1368
+     "p_over": 0.074,
+     "fair_over": 1252,
+     "fair_under": -1252
     },
     {
      "line": 7.5,
-     "p_over": 0.0282,
-     "fair_over": 3450,
-     "fair_under": -3450
+     "p_over": 0.0311,
+     "fair_over": 3111,
+     "fair_under": -3111
     },
     {
      "line": 8.5,
-     "p_over": 0.0105,
-     "fair_over": 9422,
-     "fair_under": -9422
+     "p_over": 0.0118,
+     "fair_over": 8353,
+     "fair_under": -8353
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 18627 (used 1373) \u00b7 whiff rest:30 rows",
- "n_markets": 7,
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 18619 (used 1381) \u00b7 whiff rest:30 rows",
+ "n_markets": 5,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -415,6 +415,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
