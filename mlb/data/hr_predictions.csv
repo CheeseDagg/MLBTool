@@ -1902,3 +1902,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-09,Ketel Marte,ARI,824064,Daniel Lynch IV,2,card,17.9,21.5,16.3,+457,400,-18.6,park -4% [low-conf],78F,SvL +12%,heat +10%,-0.4,
 2026-09-09,Austin Wells,NYY,823497,Tomoyuki Sugano,8,card,17.6,11.4,9.6,+469,410,-51.3,park +14%,79F,LvR +8%,,,new
 2026-09-09,Teoscar Hernández,LAD,823900,Rhett Lowder,5,card,17.6,15.0,12.4,+469,410,-36.6,park +5%,102F · wind out 6,RvR -3%,,0.7,
+2026-09-10,Kyle Schwarber,PHI,823413,Cristian Javier,1,proj,32.0,32.3,22.1,+212,180,-38.1,park +9%,78F · wind out 3,LvR +8%,heat +8%,1.3,
+2026-09-10,Yordan Alvarez,HOU,823413,Zack Wheeler,1,proj,27.6,29.7,20.7,+262,225,-32.6,park +9%,78F · wind out 3,LvR +8%,heat -7%,1.2,
+2026-09-10,Ben Rice,NYY,823499,Ryan Feltner,1,proj,26.0,30.5,21.2,+285,245,-27.0,park +14%,77F · wind out 6,LvR +8%,heat +14%,1.4,
+2026-09-10,Aaron Judge,NYY,823499,Ryan Feltner,8,proj,25.3,19.6,15.3,+296,255,-45.8,park +14%,77F · wind out 6,RvR -3%,heat +3%,,new
+2026-09-10,Bryce Harper,PHI,823413,Cristian Javier,3,proj,22.1,20.1,15.6,+352,305,-37.0,park +9%,78F · wind out 3,LvR +8%,heat +15%,0.1,
+2026-09-10,Spencer Jones,NYY,823499,Ryan Feltner,9,proj,21.9,11.5,9.6,+357,310,-60.7,park +14%,77F · wind out 6,LvR +8%,heat +7%,-3.3,floor
+2026-09-10,Matt Olson,ATL,824872,Nick Martinez,1,proj,21.4,28.2,19.9,+368,320,-16.4,park +4%,76F,LvR +8%,heat +9%,1.4,
+2026-09-10,Cal Raleigh,SEA,823088,Jacob deGrom,5,proj,20.9,18.1,14.5,+379,330,-37.7,park -4%,58F · wind in 4 (roof: half),SvR +8%,heat +8%,-0.8,
+2026-09-10,Munetaka Murakami,CHW,824550,Jared Jones,5,proj,20.9,20.7,15.9,+379,330,-31.7,park +9%,68F · wind out 3,LvR +8%,heat +4%,-3.2,floor
+2026-09-10,Junior Caminero,TBR,824872,Martín Pérez *,1,proj,20.4,28.4,20.0,+391,340,-11.9,park +4%,76F,RvL +12%,heat -0%,1.2,
+2026-09-10,Hunter Goodman,COL,823499,Max Fried,3,proj,19.5,26.3,18.9,+413,360,-13.1,park +14%,77F · wind out 6,RvL +12%,heat +8%,-0.1,
+2026-09-10,Colson Montgomery,CHW,824550,Jared Jones,3,proj,18.3,22.3,16.7,+446,390,-18.2,park +9%,68F · wind out 3,LvR +8%,heat -0%,1.6,
+2026-09-10,Corey Seager,TEX,823088,Logan Gilbert,7,proj,18.3,15.3,12.8,+446,390,-37.3,park -4%,58F · wind in 4 (roof: half),LvR +8%,heat +5%,-2.8,floor
+2026-09-10,Daulton Varsho,HOU,823413,Zack Wheeler,6,proj,17.1,9.8,8.6,+485,425,-55.0,park +9%,78F · wind out 3,LvR +8%,heat -9%,,new
+2026-09-10,Drake Baldwin,ATL,824872,Nick Martinez,5,proj,17.1,17.0,13.9,+485,425,-27.1,park +4%,76F,LvR +8%,heat +4%,-4.1,floor
+2026-09-10,Jake Burger,TEX,823088,Logan Gilbert,2,proj,16.9,21.3,16.2,+491,430,-14.2,park -4%,58F · wind in 4 (roof: half),RvR -3%,heat +8%,1.3,
+2026-09-10,Oneil Cruz,PIT,824550,Hagen Smith,6,proj,16.6,14.4,11.7,+502,440,-36.9,park +9%,68F · wind out 3,LvL -22%,heat +5%,-2.6,floor
+2026-09-10,Dominic Canzone,SEA,823088,Jacob deGrom,6,proj,16.3,15.9,13.3,+513,450,-26.9,park -4%,58F · wind in 4 (roof: half),LvR +8%,heat +2%,-3.2,floor
+2026-09-10,Wyatt Langford,TEX,823088,Logan Gilbert,6,proj,16.3,12.7,10.0,+513,450,-45.2,park -4%,58F · wind in 4 (roof: half),RvR -3%,heat +3%,-3.9,floor
+2026-09-10,Cody Bellinger,NYY,823499,Ryan Feltner,3,proj,16.0,15.1,12.5,+524,460,-30.0,park +14%,77F · wind out 6,LvR +8%,heat +5%,0.5,
+2026-09-10,Brandon Lowe,PIT,824550,Hagen Smith,2,proj,15.6,20.2,15.6,+541,475,-10.4,park +9%,68F · wind out 3,LvL -22%,heat +15%,-1.0,
+2026-09-10,Austin Wells,NYY,823499,Ryan Feltner,6,proj,15.5,12.6,9.9,+547,480,-42.5,park +14%,77F · wind out 6,LvR +8%,heat +5%,0.3,
+2026-09-10,Michael Harris II,ATL,824872,Nick Martinez,4,proj,15.5,18.3,14.6,+547,480,-15.6,park +4%,76F,LvR +8%,heat +13%,-0.6,
+2026-09-10,Jazz Chisholm Jr.,NYY,823499,Ryan Feltner,2,proj,15.2,19.4,,+559,,,park +14%,77F · wind out 6,LvR +8%,heat +7%,2.0,
+2026-09-10,Ryan McMahon,NYY,823499,Ryan Feltner,7,proj,14.9,12.2,9.8,+569,500,-41.1,park +14%,77F · wind out 6,LvR +8%,heat -0%,,new
+2026-09-10,Trea Turner,PHI,823413,Cristian Javier,2,proj,14.9,15.7,13.2,+569,500,-21.0,park +9%,78F · wind out 3,RvR -3%,heat -6%,-2.9,floor
+2026-09-10,Paul Goldschmidt,NYY,823499,Ryan Feltner,5,proj,14.6,18.4,,+584,,,park +14%,77F · wind out 6,RvR -3%,heat +1%,-5.2,floor
+2026-09-10,Brandon Marsh,PHI,823413,Cristian Javier,7,proj,14.3,11.7,9.7,+597,525,-39.7,park +9%,78F · wind out 3,LvR +8%,heat -0%,-3.7,floor
+2026-09-10,Brandon Nimmo,TEX,823088,Logan Gilbert,1,proj,14.3,15.5,13.0,+597,525,-18.9,park -4%,58F · wind in 4 (roof: half),LvR +8%,heat -1%,-0.8,
+2026-09-10,Bryan Reynolds,PIT,824550,Hagen Smith,1,proj,14.3,15.8,13.2,+597,525,-17.2,park +9%,68F · wind out 3,SvL +12%,heat -1%,,new

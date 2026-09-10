@@ -1963,3 +1963,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-09,Jake Burger,TEX,823090,Kade Anderson,6,card,17.9,16.0,13.3,+457,400,-33.3,park -4%,68F (roof: half),RvL +12%,,hr,1
 2026-09-09,Julio Rodríguez,SEA,823090,Cody Bradford,5,card,17.9,14.6,12.0,+457,400,-39.9,park -4%,68F (roof: half),RvL +12%,,no,0
 2026-09-09,Randy Arozarena,SEA,823090,Cody Bradford,2,card,17.9,18.3,14.6,+457,400,-27.1,park -4%,68F (roof: half),RvL +12%,heat +6%,no,0
+2026-09-09,Aaron Judge,NYY,823497,Tomoyuki Sugano,3,card,29.4,29.4,20.6,+240,205,-37.3,park +14%,79F,RvR -3%,heat -3%,no,0
+2026-09-09,Ben Rice,NYY,823497,Tomoyuki Sugano,1,card,27.6,31.9,21.9,+262,225,-28.8,park +14%,79F,LvR +8%,heat -4%,no,0
+2026-09-09,Kyle Schwarber,PHI,823416,Hunter Brown,1,card,25.3,31.3,21.6,+296,255,-23.4,park +9%,83F · wind out 8,LvR +8%,heat -4%,hr,1
+2026-09-09,Spencer Jones,NYY,823497,Tomoyuki Sugano,5,card,24.2,16.7,13.7,+313,270,-49.2,park +14%,79F,LvR +8%,heat +1%,no,0
+2026-09-09,Kyle Stowers,MIA,823818,Robert Stock,1,card,23.0,19.8,15.4,+335,290,-40.1,park -9%,85F · wind in 4 (roof: half),LvR +8%,heat -3%,no,0
+2026-09-09,Munetaka Murakami,CHW,824549,Lake Bachar,3,card,23.0,24.3,17.8,+335,290,-30.5,park +9%,77F · wind out 3,LvR +8%,heat +2%,hr,1
+2026-09-09,Pete Crow-Armstrong,CHC,823739,Logan Henderson,1,card,22.7,28.7,20.2,+340,295,-20.4,park +9%,82F · wind out 4 (roof: half),LvR +8%,heat +9%,no,0
+2026-09-09,Junior Caminero,TBR,824871,Reynaldo López *,3,card,22.4,24.7,18.0,+346,300,-28.0,park +4%,89F · wind in 4,RvR -3%,heat +0%,no,0
+2026-09-09,Colson Montgomery,CHW,824549,Lake Bachar,5,card,22.1,20.2,15.6,+352,305,-36.9,park +9%,77F · wind out 3,LvR +8%,heat -4%,no,0
+2026-09-09,Hunter Goodman,COL,823497,Will Warren,4,card,22.1,26.1,18.8,+352,305,-24.0,park +14%,79F,RvR -3%,heat +4%,no,0
+2026-09-09,Juan Soto,NYM,823818,Janson Junk,2,card,21.4,22.9,17.1,+368,320,-28.4,park -9%,85F · wind in 4 (roof: half),LvR +8%,heat +11%,no,0
+2026-09-09,Oneil Cruz,PIT,824549,Davis Martin,5,card,21.4,18.0,14.4,+368,320,-39.6,park +9%,77F · wind out 3,LvR +8%,heat +9%,no,0
+2026-09-09,Pete Alonso,BAL,824791,Foster Griffin,2,card,21.4,28.2,19.9,+368,320,-16.5,park +4% [low-conf],87F · wind out 7,RvL +12%,heat +6%,no,0
+2026-09-09,Yordan Alvarez,HOU,823416,Cristopher Sánchez *,2,card,21.4,26.7,19.1,+368,320,-19.8,park +9%,83F · wind out 8,LvL -22%,heat +18%,no,0
+2026-09-09,Luis García Jr.,NYY,823497,Tomoyuki Sugano,4,card,21.1,20.5,15.8,+374,325,-33.0,park +14%,79F,LvR +8%,heat -4%,hr,1
+2026-09-09,Brandon Lowe,PIT,824549,Davis Martin,2,card,20.4,23.0,17.1,+391,340,-24.8,park +9%,77F · wind out 3,LvR +8%,heat +10%,no,0
+2026-09-09,Wilyer Abreu,BOS,824713,Ryan Johnson,3,card,19.9,19.2,15.1,+402,350,-32.2,park -7%,74F · wind out 6,LvR +8%,heat +6%,hr,1
+2026-09-09,Zach Neto,LAA,824713,Jake Bennett,1,card,19.9,19.6,15.3,+402,350,-31.4,park -7%,74F · wind out 6,RvL +12%,heat +12%,hr,1
+2026-09-09,Coby Mayo,BAL,824791,Foster Griffin,3,card,19.5,24.2,17.8,+413,360,-18.3,park +4% [low-conf],87F · wind out 7,RvL +12%,heat +4%,hr,1
+2026-09-09,Christian Encarnacion-Strand,BAL,824791,Foster Griffin,4,card,18.7,22.1,16.6,+435,380,-20.3,park +4% [low-conf],87F · wind out 7,RvL +12%,heat +1%,no,0
+2026-09-09,Mickey Moniak,COL,823497,Will Warren,5,card,18.7,19.9,15.4,+435,380,-26.0,park +14%,79F,LvR +8%,heat -0%,no,0
+2026-09-09,Griffin Conine,MIA,823818,Robert Stock,3,card,18.3,19.3,15.1,+446,390,-25.9,park -9%,85F · wind in 4 (roof: half),LvR +8%,heat +1%,no,0
+2026-09-09,Matt Olson,ATL,824871,Griffin Jax,3,card,18.3,24.8,18.1,+446,390,-11.5,park +4%,89F · wind in 4,LvR +8%,heat -6%,no,0
+2026-09-09,Cody Bellinger,NYY,823497,Tomoyuki Sugano,2,card,17.9,16.4,13.5,+457,400,-32.3,park +14%,79F,LvR +8%,,hr,1
+2026-09-09,Heriberto Hernández,MIA,823818,Robert Stock,2,card,17.9,21.7,16.4,+457,400,-18.1,park -9%,85F · wind in 4 (roof: half),RvR -3%,heat +5%,no,0
+2026-09-09,Jackson Chourio,MIL,823739,Kevin Gausman,1,card,17.9,23.7,17.5,+457,400,-12.6,park +9%,82F · wind out 4 (roof: half),RvR -3%,heat +1%,hr,1
+2026-09-09,Jo Adell,CLE,824791,Shane Baz,4,card,17.9,16.3,13.5,+457,400,-32.5,park +4% [low-conf],87F · wind out 7,RvR -3%,,no,0
+2026-09-09,Ketel Marte,ARI,824064,Daniel Lynch IV,2,card,17.9,21.5,16.3,+457,400,-18.6,park -4% [low-conf],78F,SvL +12%,heat +10%,void,
+2026-09-09,Austin Wells,NYY,823497,Tomoyuki Sugano,8,card,17.6,11.4,9.6,+469,410,-51.3,park +14%,79F,LvR +8%,,no,0
+2026-09-09,Teoscar Hernández,LAD,823900,Rhett Lowder,5,card,17.6,15.0,12.4,+469,410,-36.6,park +5%,102F · wind out 6,RvR -3%,,no,0
