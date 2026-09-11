@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T17:10+00:00",
+ "generated": "2026-09-11T20:07+00:00",
  "board": [
   {
    "pitcher": "Chris Sale",
@@ -204,40 +204,40 @@
   {
    "pitcher": "Shota Imanaga",
    "opp": "Pittsburgh Pirates",
-   "lam": 5.7,
-   "k9_regressed": 8.72,
-   "exp_ip": 5.58,
-   "opp_mult": 1.053,
+   "lam": 5.65,
+   "k9_regressed": 8.68,
+   "exp_ip": 5.56,
+   "opp_mult": 1.052,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6722,
-     "fair_over": -205,
-     "fair_under": 205
+     "p_over": 0.665,
+     "fair_over": -198,
+     "fair_under": 198
     },
     {
      "line": 5.5,
-     "p_over": 0.5043,
-     "fair_over": -102,
-     "fair_under": 102
+     "p_over": 0.4962,
+     "fair_over": 102,
+     "fair_under": -102
     },
     {
      "line": 6.5,
-     "p_over": 0.345,
-     "fair_over": 190,
-     "fair_under": -190
+     "p_over": 0.3373,
+     "fair_over": 197,
+     "fair_under": -197
     },
     {
      "line": 7.5,
-     "p_over": 0.2153,
-     "fair_over": 364,
-     "fair_under": -364
+     "p_over": 0.2091,
+     "fair_over": 378,
+     "fair_under": -378
     },
     {
      "line": 8.5,
-     "p_over": 0.123,
-     "fair_over": 713,
-     "fair_under": -713
+     "p_over": 0.1186,
+     "fair_over": 743,
+     "fair_under": -743
     }
    ]
   },
@@ -402,42 +402,42 @@
    ]
   },
   {
-   "pitcher": "Wilber Dotel",
-   "opp": "Chicago Cubs",
-   "lam": 5.17,
-   "k9_regressed": 8.97,
-   "exp_ip": 5.3,
-   "opp_mult": 0.979,
+   "pitcher": "MacKenzie Gore",
+   "opp": "Arizona Diamondbacks",
+   "lam": 5.13,
+   "k9_regressed": 9.5,
+   "exp_ip": 5.26,
+   "opp_mult": 0.924,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5891,
-     "fair_over": -143,
-     "fair_under": 143
+     "p_over": 0.5814,
+     "fair_over": -139,
+     "fair_under": 139
     },
     {
      "line": 5.5,
-     "p_over": 0.4141,
-     "fair_over": 141,
-     "fair_under": -141
+     "p_over": 0.4062,
+     "fair_over": 146,
+     "fair_under": -146
     },
     {
      "line": 6.5,
-     "p_over": 0.2633,
-     "fair_over": 280,
-     "fair_under": -280
+     "p_over": 0.2566,
+     "fair_over": 290,
+     "fair_under": -290
     },
     {
      "line": 7.5,
-     "p_over": 0.1519,
-     "fair_over": 558,
-     "fair_under": -558
+     "p_over": 0.1469,
+     "fair_over": 581,
+     "fair_under": -581
     },
     {
      "line": 8.5,
-     "p_over": 0.0799,
-     "fair_over": 1152,
-     "fair_under": -1152
+     "p_over": 0.0767,
+     "fair_over": 1204,
+     "fair_under": -1204
     }
    ]
   },
@@ -1080,9 +1080,49 @@
      "fair_under": -8793
     }
    ]
+  },
+  {
+   "pitcher": "Wilber Dotel",
+   "opp": "Chicago Cubs",
+   "lam": 2.88,
+   "k9_regressed": 8.84,
+   "exp_ip": 3.0,
+   "opp_mult": 0.977,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1648,
+     "fair_over": 507,
+     "fair_under": -507
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0722,
+     "fair_over": 1285,
+     "fair_under": -1285
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0278,
+     "fair_over": 3502,
+     "fair_under": -3502
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0095,
+     "fair_over": 10438,
+     "fair_under": -10438
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0029,
+     "fair_over": 34204,
+     "fair_under": -34204
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 18517 (used 1483) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 18486 (used 1514) \u00b7 whiff rest:30 rows",
  "n_markets": 25,
  "n_plays": 0,
  "plays": [],
@@ -1095,6 +1135,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
