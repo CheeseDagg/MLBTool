@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T20:07+00:00",
+ "generated": "2026-09-11T22:43+00:00",
  "board": [
   {
    "pitcher": "Chris Sale",
@@ -162,6 +162,46 @@
    ]
   },
   {
+   "pitcher": "Blake Snell",
+   "opp": "Miami Marlins",
+   "lam": 6.01,
+   "k9_regressed": 10.27,
+   "exp_ip": 5.33,
+   "opp_mult": 0.988,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7164,
+     "fair_over": -253,
+     "fair_under": 253
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.556,
+     "fair_over": -125,
+     "fair_under": 125
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3954,
+     "fair_over": 153,
+     "fair_under": -153
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2575,
+     "fair_over": 288,
+     "fair_under": -288
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1539,
+     "fair_over": 550,
+     "fair_under": -550
+    }
+   ]
+  },
+  {
    "pitcher": "Parker Messick",
    "opp": "Minnesota Twins",
    "lam": 5.89,
@@ -202,46 +242,6 @@
    ]
   },
   {
-   "pitcher": "Shota Imanaga",
-   "opp": "Pittsburgh Pirates",
-   "lam": 5.65,
-   "k9_regressed": 8.68,
-   "exp_ip": 5.56,
-   "opp_mult": 1.052,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.665,
-     "fair_over": -198,
-     "fair_under": 198
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.4962,
-     "fair_over": 102,
-     "fair_under": -102
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3373,
-     "fair_over": 197,
-     "fair_under": -197
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2091,
-     "fair_over": 378,
-     "fair_under": -378
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1186,
-     "fair_over": 743,
-     "fair_under": -743
-    }
-   ]
-  },
-  {
    "pitcher": "Drew Rasmussen",
    "opp": "Houston Astros",
    "lam": 5.64,
@@ -278,6 +278,46 @@
      "p_over": 0.1179,
      "fair_over": 748,
      "fair_under": -748
+    }
+   ]
+  },
+  {
+   "pitcher": "Shota Imanaga",
+   "opp": "Pittsburgh Pirates",
+   "lam": 5.64,
+   "k9_regressed": 8.64,
+   "exp_ip": 5.6,
+   "opp_mult": 1.05,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.6645,
+     "fair_over": -198,
+     "fair_under": 198
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4957,
+     "fair_over": 102,
+     "fair_under": -102
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.3368,
+     "fair_over": 197,
+     "fair_under": -197
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2087,
+     "fair_over": 379,
+     "fair_under": -379
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1183,
+     "fair_over": 745,
+     "fair_under": -745
     }
    ]
   },
@@ -682,46 +722,6 @@
    ]
   },
   {
-   "pitcher": "Framber Valdez",
-   "opp": "Colorado Rockies",
-   "lam": 4.56,
-   "k9_regressed": 7.12,
-   "exp_ip": 5.63,
-   "opp_mult": 1.023,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4784,
-     "fair_over": 109,
-     "fair_under": -109
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3066,
-     "fair_over": 226,
-     "fair_under": -226
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1761,
-     "fair_over": 468,
-     "fair_under": -468
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0912,
-     "fair_over": 996,
-     "fair_under": -996
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0429,
-     "fair_over": 2231,
-     "fair_under": -2231
-    }
-   ]
-  },
-  {
    "pitcher": "Robbie Ray",
    "opp": "San Francisco Giants",
    "lam": 4.52,
@@ -758,6 +758,46 @@
      "p_over": 0.0412,
      "fair_over": 2329,
      "fair_under": -2329
+    }
+   ]
+  },
+  {
+   "pitcher": "Framber Valdez",
+   "opp": "Colorado Rockies",
+   "lam": 4.4,
+   "k9_regressed": 7.11,
+   "exp_ip": 5.45,
+   "opp_mult": 1.022,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4487,
+     "fair_over": 123,
+     "fair_under": -123
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.28,
+     "fair_over": 257,
+     "fair_under": -257
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1563,
+     "fair_over": 540,
+     "fair_under": -540
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0785,
+     "fair_over": 1173,
+     "fair_under": -1173
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0358,
+     "fair_over": 2695,
+     "fair_under": -2695
     }
    ]
   },
@@ -918,6 +958,46 @@
      "p_over": 0.0286,
      "fair_over": 3397,
      "fair_under": -3397
+    }
+   ]
+  },
+  {
+   "pitcher": "Merrill Kelly",
+   "opp": "Texas Rangers",
+   "lam": 4.18,
+   "k9_regressed": 6.53,
+   "exp_ip": 5.68,
+   "opp_mult": 1.016,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4072,
+     "fair_over": 146,
+     "fair_under": -146
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2443,
+     "fair_over": 309,
+     "fair_under": -309
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1308,
+     "fair_over": 665,
+     "fair_under": -665
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0629,
+     "fair_over": 1490,
+     "fair_under": -1490
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0274,
+     "fair_over": 3552,
+     "fair_under": -3552
     }
    ]
   },
@@ -1087,43 +1167,43 @@
    "lam": 2.88,
    "k9_regressed": 8.84,
    "exp_ip": 3.0,
-   "opp_mult": 0.977,
+   "opp_mult": 0.976,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1648,
-     "fair_over": 507,
-     "fair_under": -507
+     "p_over": 0.1643,
+     "fair_over": 508,
+     "fair_under": -508
     },
     {
      "line": 5.5,
-     "p_over": 0.0722,
-     "fair_over": 1285,
-     "fair_under": -1285
+     "p_over": 0.0719,
+     "fair_over": 1290,
+     "fair_under": -1290
     },
     {
      "line": 6.5,
-     "p_over": 0.0278,
-     "fair_over": 3502,
-     "fair_under": -3502
+     "p_over": 0.0276,
+     "fair_over": 3518,
+     "fair_under": -3518
     },
     {
      "line": 7.5,
-     "p_over": 0.0095,
-     "fair_over": 10438,
-     "fair_under": -10438
+     "p_over": 0.0094,
+     "fair_over": 10493,
+     "fair_under": -10493
     },
     {
      "line": 8.5,
      "p_over": 0.0029,
-     "fair_over": 34204,
-     "fair_under": -34204
+     "fair_over": 34415,
+     "fair_under": -34415
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 18486 (used 1514) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 18457 (used 1543) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
