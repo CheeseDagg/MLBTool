@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T01:05:35+00:00",
+ "generated": "2026-09-12T19:17:41+00:00",
  "date": "2026-09-12",
  "min_pa": 6,
  "rows": [
@@ -13,17 +13,6 @@
    "hr": 3,
    "avg": ".255",
    "slg": ".511"
-  },
-  {
-   "batter": "Mark Vientos",
-   "team": "NYM",
-   "opp_sp": "Gerrit Cole",
-   "pa": 7,
-   "ab": 7,
-   "h": 3,
-   "hr": 2,
-   "avg": ".429",
-   "slg": "1.286"
   },
   {
    "batter": "Rafael Devers",
@@ -48,6 +37,17 @@
    "slg": ".545"
   },
   {
+   "batter": "Eugenio Su\u00e1rez",
+   "team": "CIN",
+   "opp_sp": "Shane Drohan",
+   "pa": 7,
+   "ab": 5,
+   "h": 3,
+   "hr": 1,
+   "avg": ".600",
+   "slg": "1.600"
+  },
+  {
    "batter": "George Springer",
    "team": "TOR",
    "opp_sp": "Kyle Bradish",
@@ -70,17 +70,6 @@
    "slg": ".714"
   },
   {
-   "batter": "Ernie Clement",
-   "team": "TOR",
-   "opp_sp": "Kyle Bradish",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
    "batter": "Darell Hernaiz",
    "team": "ATH",
    "opp_sp": "Bryan Woo",
@@ -90,6 +79,17 @@
    "hr": 1,
    "avg": ".286",
    "slg": ".714"
+  },
+  {
+   "batter": "Matt McLain",
+   "team": "CIN",
+   "opp_sp": "Shane Drohan",
+   "pa": 6,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
   },
   {
    "batter": "Michael Busch",
@@ -118,17 +118,6 @@
    "team": "CHC",
    "opp_sp": "Paul Skenes",
    "pa": 20,
-   "ab": 18,
-   "h": 5,
-   "hr": 1,
-   "avg": ".278",
-   "slg": ".444"
-  },
-  {
-   "batter": "Seiya Suzuki",
-   "team": "CHC",
-   "opp_sp": "Paul Skenes",
-   "pa": 19,
    "ab": 18,
    "h": 5,
    "hr": 1,
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".257",
    "slg": ".371"
+  },
+  {
+   "batter": "Christian Yelich",
+   "team": "MIL",
+   "opp_sp": "Brady Singer",
+   "pa": 16,
+   "ab": 14,
+   "h": 2,
+   "hr": 1,
+   "avg": ".143",
+   "slg": ".357"
   }
  ]
 }
