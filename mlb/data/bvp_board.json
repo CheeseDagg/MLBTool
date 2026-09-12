@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T19:17:41+00:00",
+ "generated": "2026-09-12T22:14:51+00:00",
  "date": "2026-09-12",
  "min_pa": 6,
  "rows": [
@@ -7,12 +7,12 @@
    "batter": "Marcus Semien",
    "team": "NYM",
    "opp_sp": "Gerrit Cole",
-   "pa": 51,
-   "ab": 47,
+   "pa": 53,
+   "ab": 49,
    "h": 12,
    "hr": 3,
-   "avg": ".255",
-   "slg": ".511"
+   "avg": ".245",
+   "slg": ".490"
   },
   {
    "batter": "Rafael Devers",
@@ -48,59 +48,26 @@
    "slg": "1.600"
   },
   {
-   "batter": "George Springer",
-   "team": "TOR",
-   "opp_sp": "Kyle Bradish",
-   "pa": 22,
-   "ab": 20,
-   "h": 8,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".800"
-  },
-  {
-   "batter": "Bo Naylor",
-   "team": "MIL",
-   "opp_sp": "Brady Singer",
-   "pa": 15,
-   "ab": 14,
-   "h": 5,
-   "hr": 1,
-   "avg": ".357",
-   "slg": ".714"
-  },
-  {
-   "batter": "Darell Hernaiz",
-   "team": "ATH",
-   "opp_sp": "Bryan Woo",
-   "pa": 7,
+   "batter": "Riley Greene",
+   "team": "DET",
+   "opp_sp": "Tanner Gordon",
+   "pa": 8,
    "ab": 7,
-   "h": 2,
+   "h": 3,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Matt McLain",
-   "team": "CIN",
-   "opp_sp": "Shane Drohan",
+   "batter": "Max Muncy",
+   "team": "LAD",
+   "opp_sp": "Tyler Phillips",
    "pa": 6,
    "ab": 6,
-   "h": 1,
+   "h": 2,
    "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
-   "batter": "Michael Busch",
-   "team": "CHC",
-   "opp_sp": "Paul Skenes",
-   "pa": 24,
-   "ab": 18,
-   "h": 4,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".500"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
    "batter": "Francisco Lindor",
@@ -114,17 +81,6 @@
    "slg": ".500"
   },
   {
-   "batter": "Nico Hoerner",
-   "team": "CHC",
-   "opp_sp": "Paul Skenes",
-   "pa": 20,
-   "ab": 18,
-   "h": 5,
-   "hr": 1,
-   "avg": ".278",
-   "slg": ".444"
-  },
-  {
    "batter": "Jake Bauers",
    "team": "MIL",
    "opp_sp": "Brady Singer",
@@ -136,37 +92,81 @@
    "slg": ".400"
   },
   {
-   "batter": "Vladimir Guerrero Jr.",
-   "team": "TOR",
-   "opp_sp": "Kyle Bradish",
-   "pa": 28,
-   "ab": 24,
-   "h": 6,
+   "batter": "Pete Crow-Armstrong",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
    "hr": 1,
-   "avg": ".250",
-   "slg": ".375"
+   "avg": ".227",
+   "slg": ".364"
   },
   {
-   "batter": "Andrew Vaughn",
-   "team": "MIL",
-   "opp_sp": "Brady Singer",
-   "pa": 36,
-   "ab": 35,
-   "h": 9,
+   "batter": "Alex Bregman",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
    "hr": 1,
-   "avg": ".257",
-   "slg": ".371"
+   "avg": ".227",
+   "slg": ".364"
   },
   {
-   "batter": "Christian Yelich",
-   "team": "MIL",
-   "opp_sp": "Brady Singer",
-   "pa": 16,
-   "ab": 14,
-   "h": 2,
+   "batter": "Michael Busch",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
    "hr": 1,
-   "avg": ".143",
-   "slg": ".357"
+   "avg": ".227",
+   "slg": ".364"
+  },
+  {
+   "batter": "Ian Happ",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
+   "hr": 1,
+   "avg": ".227",
+   "slg": ".364"
+  },
+  {
+   "batter": "Nico Hoerner",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
+   "hr": 1,
+   "avg": ".227",
+   "slg": ".364"
+  },
+  {
+   "batter": "Michael Conforto",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
+   "hr": 1,
+   "avg": ".227",
+   "slg": ".364"
+  },
+  {
+   "batter": "Carson Kelly",
+   "team": "CHC",
+   "opp_sp": "Paul Skenes",
+   "pa": 25,
+   "ab": 22,
+   "h": 5,
+   "hr": 1,
+   "avg": ".227",
+   "slg": ".364"
   }
  ]
 }
