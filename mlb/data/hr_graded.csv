@@ -2058,3 +2058,7 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-11,Spencer Jones,NYY,823498,Nolan McLean,5,card,17.1,14.3,11.6,+485,425,-39.0,park +14%,78F · wind out 3,LvR +8%,,no,0
 2026-09-11,Elly De La Cruz,CIN,823736,Dustin May,2,card,16.9,21.2,16.1,+491,430,-14.5,park +9%,74F · wind in 7 (roof: half),SvR +8%,heat +5%,no,0
 2026-09-11,Ronald Acuña Jr.,ATL,824873,Aaron Nola,2,card,16.9,20.0,15.5,+491,430,-18.0,park +4%,76F,RvR -3%,heat +10%,no,0
+2026-09-12,Juan Soto,NYM,823496,Gerrit Cole,2,card,19.4,27.2,,+416,,,park +14%,no wx,LvR +8%,heat +10%,hr,1
+2026-09-12,Hunter Goodman,COL,824224,Andrew Sears,3,card,18.8,26.2,,+431,,,park -5%,81F · wind in 4,RvL +12%,,hr,1
+2026-09-12,Pete Alonso,BAL,822768,Spencer Miles,2,card,17.6,23.5,17.4,+469,410,-11.4,park +3% [low-conf],78F (roof: half),RvR -3%,heat +8%,hr,1
+2026-09-12,Francisco Lindor,NYM,823496,Gerrit Cole,1,card,17.3,23.4,,+478,,,park +14%,no wx,SvR +8%,heat +1%,hr,2
