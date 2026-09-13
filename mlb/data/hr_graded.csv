@@ -2088,3 +2088,17 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-12,Lawrence Butler,ATH,824955,Bryan Woo,3,card,16.3,16.9,13.8,+513,450,-24.0,park +6% [low-conf],85F · wind out 7,LvR +8%,heat +6%,no,0
 2026-09-12,Elly De La Cruz,CIN,823737,Shane Drohan,2,card,16.0,21.7,16.4,+524,460,-8.1,park +9%,80F · wind out 7 (roof: half),SvL +12%,heat +7%,no,0
 2026-09-12,Sal Stewart,CIN,823737,Shane Drohan,3,card,16.0,20.9,16.0,+524,460,-10.4,park +9%,80F · wind out 7 (roof: half),RvL +12%,heat +5%,no,0
+2026-09-13,Ben Rice,NYY,823495,Christian Scott,1,card,20.1,28.5,,+398,,,park +14%,76F,LvR +8%,heat +18%,hr,1
+2026-09-13,Max Muncy,ATH,824952,Bryce Miller,5,card,16.6,22.0,,+504,,,park +6% [low-conf],74F,LvR +8%,heat +2%,void,
+2026-09-13,Zach Neto,LAA,822682,Riley Cornelio,1,card,16.2,21.3,,+518,,,park avg,86F,RvR -3%,,hr,1
+2026-09-13,Nelson Velázquez,HOU,822928,Freddy Peralta,2,card,16.1,21.2,,+520,,,park -4% [low-conf],dome,RvR -3%,heat -3%,hr,1
+2026-09-13,Max Muncy,LAD,823815,Eury Pérez *,3,card,15.6,20.2,,+541,,,park -9%,79F (roof: half),LvR +8%,,no,0
+2026-09-13,Mike Trout,LAA,822682,Riley Cornelio,2,card,15.6,20.2,,+541,,,park avg,86F,RvR -3%,,no,0
+2026-09-13,Bryce Harper,PHI,824869,Grant Holmes,3,card,15.5,20.1,,+544,,,park +4%,84F · wind out 4,LvR +8%,heat +1%,no,0
+2026-09-13,CJ Abrams,WSN,822682,Grayson Rodriguez,4,card,15.5,20.0,,+545,,,park avg,86F,LvR +8%,heat +6%,no,0
+2026-09-13,Kazuma Okamoto,TOR,822764,Trevor Rogers,4,card,15.4,19.8,,+551,,,park +3% [low-conf],81F · wind out 4 (roof: half),RvL +12%,heat +7%,hr,1
+2026-09-13,Mickey Moniak,COL,824225,Jackson Jobe,5,card,15.1,19.3,,+562,,,park -5%,80F · wind out 8,LvR +8%,heat +7%,no,0
+2026-09-13,Eugenio Suárez,CIN,823734,Robert Gasser,4,card,15.0,19.1,,+566,,,park +9%,66F · wind out 6 (roof: half),RvL +12%,,hr,1
+2026-09-13,Andrés Chaparro,WSN,822682,Grayson Rodriguez,3,card,14.7,18.5,,+581,,,park avg,86F,RvR -3%,heat +3%,no,0
+2026-09-13,Luis García Jr.,NYY,823495,Christian Scott,4,card,14.7,18.5,,+581,,,park +14%,76F,LvR +8%,heat +18%,no,0
+2026-09-13,Jordan Walker,STL,823008,David Sandlin,4,card,14.6,18.3,,+587,,,park -7%,85F,RvR -3%,heat -1%,no,0
