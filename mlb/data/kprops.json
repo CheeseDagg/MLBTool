@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T16:34+00:00",
+ "generated": "2026-09-13T17:05+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -922,6 +922,46 @@
    ]
   },
   {
+   "pitcher": "Jackson Jobe",
+   "opp": "Colorado Rockies",
+   "lam": 4.28,
+   "k9_regressed": 8.52,
+   "exp_ip": 4.43,
+   "opp_mult": 1.021,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4251,
+     "fair_over": 135,
+     "fair_under": -135
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2595,
+     "fair_over": 285,
+     "fair_under": -285
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1415,
+     "fair_over": 607,
+     "fair_under": -607
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0693,
+     "fair_over": 1342,
+     "fair_under": -1342
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0308,
+     "fair_over": 3147,
+     "fair_under": -3147
+    }
+   ]
+  },
+  {
    "pitcher": "Michael McGreevy",
    "opp": "Chicago White Sox",
    "lam": 4.26,
@@ -962,82 +1002,42 @@
    ]
   },
   {
-   "pitcher": "Jackson Jobe",
-   "opp": "Colorado Rockies",
-   "lam": 4.18,
-   "k9_regressed": 8.6,
-   "exp_ip": 4.29,
-   "opp_mult": 1.021,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4061,
-     "fair_over": 146,
-     "fair_under": -146
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2434,
-     "fair_over": 311,
-     "fair_under": -311
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1301,
-     "fair_over": 668,
-     "fair_under": -668
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0625,
-     "fair_over": 1500,
-     "fair_under": -1500
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0272,
-     "fair_over": 3579,
-     "fair_under": -3579
-    }
-   ]
-  },
-  {
    "pitcher": "Gabriel Hughes",
    "opp": "Detroit Tigers",
-   "lam": 4.15,
-   "k9_regressed": 7.95,
-   "exp_ip": 4.61,
+   "lam": 4.23,
+   "k9_regressed": 7.96,
+   "exp_ip": 4.69,
    "opp_mult": 1.019,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4007,
-     "fair_over": 150,
-     "fair_under": -150
+     "p_over": 0.4161,
+     "fair_over": 140,
+     "fair_under": -140
     },
     {
      "line": 5.5,
-     "p_over": 0.239,
-     "fair_over": 318,
-     "fair_under": -318
+     "p_over": 0.2519,
+     "fair_over": 297,
+     "fair_under": -297
     },
     {
      "line": 6.5,
-     "p_over": 0.127,
-     "fair_over": 687,
-     "fair_under": -687
+     "p_over": 0.1361,
+     "fair_over": 635,
+     "fair_under": -635
     },
     {
      "line": 7.5,
-     "p_over": 0.0607,
-     "fair_over": 1548,
-     "fair_under": -1548
+     "p_over": 0.0661,
+     "fair_over": 1413,
+     "fair_under": -1413
     },
     {
      "line": 8.5,
-     "p_over": 0.0262,
-     "fair_over": 3713,
-     "fair_under": -3713
+     "p_over": 0.0291,
+     "fair_over": 3342,
+     "fair_under": -3342
     }
    ]
   },
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 8 \u00b7 credits remaining 18227 (used 1773) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 8 \u00b7 credits remaining 18195 (used 1805) \u00b7 whiff rest:30 rows",
  "n_markets": 27,
  "n_plays": 0,
  "plays": [],
