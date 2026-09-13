@@ -1,8 +1,19 @@
 {
- "generated": "2026-09-13T19:26:45+00:00",
+ "generated": "2026-09-13T22:23:10+00:00",
  "date": "2026-09-13",
  "min_pa": 6,
  "rows": [
+  {
+   "batter": "Kazuma Okamoto",
+   "team": "TOR",
+   "opp_sp": "Trevor Rogers",
+   "pa": 6,
+   "ab": 5,
+   "h": 2,
+   "hr": 2,
+   "avg": ".400",
+   "slg": "1.600"
+  },
   {
    "batter": "Ketel Marte",
    "team": "AZ",
@@ -13,6 +24,17 @@
    "hr": 2,
    "avg": ".286",
    "slg": ".714"
+  },
+  {
+   "batter": "Michael Harris II",
+   "team": "ATL",
+   "opp_sp": "Andrew Painter",
+   "pa": 6,
+   "ab": 6,
+   "h": 5,
+   "hr": 1,
+   "avg": ".833",
+   "slg": "1.500"
   },
   {
    "batter": "Jung Hoo Lee",
@@ -103,6 +125,17 @@
    "slg": ".800"
   },
   {
+   "batter": "J.T. Realmuto",
+   "team": "PHI",
+   "opp_sp": "Grant Holmes",
+   "pa": 8,
+   "ab": 8,
+   "h": 2,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".750"
+  },
+  {
    "batter": "Trea Turner",
    "team": "PHI",
    "opp_sp": "Grant Holmes",
@@ -112,17 +145,6 @@
    "hr": 1,
    "avg": ".300",
    "slg": ".700"
-  },
-  {
-   "batter": "Freddy Fermin",
-   "team": "SD",
-   "opp_sp": "Logan Webb",
-   "pa": 7,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
   },
   {
    "batter": "Kyle Schwarber",
@@ -139,34 +161,12 @@
    "batter": "Pete Alonso",
    "team": "BAL",
    "opp_sp": "Dylan Cease",
-   "pa": 11,
-   "ab": 11,
-   "h": 2,
+   "pa": 12,
+   "ab": 12,
+   "h": 3,
    "hr": 1,
-   "avg": ".182",
-   "slg": ".455"
-  },
-  {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Logan Webb",
-   "pa": 40,
-   "ab": 38,
-   "h": 9,
-   "hr": 1,
-   "avg": ".237",
-   "slg": ".421"
-  },
-  {
-   "batter": "Xander Bogaerts",
-   "team": "SD",
-   "opp_sp": "Logan Webb",
-   "pa": 33,
-   "ab": 32,
-   "h": 7,
-   "hr": 1,
-   "avg": ".219",
-   "slg": ".375"
+   "avg": ".250",
+   "slg": ".500"
   }
  ]
 }
