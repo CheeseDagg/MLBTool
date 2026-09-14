@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T18:12:21+00:00",
+ "generated": "2026-09-14T18:44:29+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -135,18 +135,6 @@
    "shop": false
   },
   {
-   "team": "Toronto Blue Jays",
-   "cons_pct": 2.4,
-   "fair": "+4047",
-   "best_price": 5000,
-   "book": "fanduel",
-   "edge_pct": 23.0,
-   "any_price": 5000,
-   "any_book": "betrivers",
-   "books_n": 5,
-   "shop": true
-  },
-  {
    "team": "San Diego Padres",
    "cons_pct": 2.4,
    "fair": "+4119",
@@ -157,6 +145,18 @@
    "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
+  },
+  {
+   "team": "Toronto Blue Jays",
+   "cons_pct": 2.4,
+   "fair": "+4047",
+   "best_price": 5000,
+   "book": "fanduel",
+   "edge_pct": 23.0,
+   "any_price": 5000,
+   "any_book": "betrivers",
+   "books_n": 5,
+   "shop": true
   },
   {
    "team": "Texas Rangers",
@@ -195,18 +195,6 @@
    "shop": true
   },
   {
-   "team": "Pittsburgh Pirates",
-   "cons_pct": 0.2,
-   "fair": "+64911",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 75000,
-   "any_book": "betmgm",
-   "books_n": 4,
-   "shop": false
-  },
-  {
    "team": "Baltimore Orioles",
    "cons_pct": 0.2,
    "fair": "+43683",
@@ -215,6 +203,18 @@
    "edge_pct": null,
    "any_price": 50000,
    "any_book": "betrivers",
+   "books_n": 4,
+   "shop": false
+  },
+  {
+   "team": "Pittsburgh Pirates",
+   "cons_pct": 0.2,
+   "fair": "+64911",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 75000,
+   "any_book": "betmgm",
    "books_n": 4,
    "shop": false
   },
@@ -243,9 +243,9 @@
    "shop": false
   },
   {
-   "team": "Miami Marlins",
+   "team": "St. Louis Cardinals",
    "cons_pct": 0.1,
-   "fair": "+79147",
+   "fair": "+96504",
    "best_price": null,
    "book": "",
    "edge_pct": null,
@@ -255,9 +255,9 @@
    "shop": false
   },
   {
-   "team": "St. Louis Cardinals",
+   "team": "Miami Marlins",
    "cons_pct": 0.1,
-   "fair": "+96504",
+   "fair": "+79147",
    "best_price": null,
    "book": "",
    "edge_pct": null,
