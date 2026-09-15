@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T20:13:43+00:00",
+ "generated": "2026-09-15T22:54:19+00:00",
  "date": "2026-09-15",
  "min_pa": 6,
  "rows": [
@@ -37,6 +37,17 @@
    "slg": "1.800"
   },
   {
+   "batter": "Liam Hicks",
+   "team": "TB",
+   "opp_sp": "Jack Perkins",
+   "pa": 6,
+   "ab": 5,
+   "h": 4,
+   "hr": 1,
+   "avg": ".800",
+   "slg": "1.600"
+  },
+  {
    "batter": "Juan Soto",
    "team": "NYM",
    "opp_sp": "Shane Baz",
@@ -46,17 +57,6 @@
    "hr": 1,
    "avg": ".600",
    "slg": "1.400"
-  },
-  {
-   "batter": "Ezequiel Tovar",
-   "team": "COL",
-   "opp_sp": "Walker Buehler",
-   "pa": 11,
-   "ab": 10,
-   "h": 5,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
   },
   {
    "batter": "Christian Walker",
@@ -79,17 +79,6 @@
    "hr": 1,
    "avg": ".286",
    "slg": ".857"
-  },
-  {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Hunter Brown",
-   "pa": 10,
-   "ab": 10,
-   "h": 4,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".800"
   },
   {
    "batter": "Bobby Witt Jr.",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".250",
    "slg": ".583"
+  },
+  {
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Kyle Freeland",
+   "pa": 33,
+   "ab": 30,
+   "h": 7,
+   "hr": 1,
+   "avg": ".233",
+   "slg": ".467"
   }
  ]
 }
