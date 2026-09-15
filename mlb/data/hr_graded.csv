@@ -2125,3 +2125,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-13,Coby Mayo,BAL,822764,Dylan Cease,4,card,15.3,19.6,,+554,,,park +3% [low-conf],76F · wind in 3 (roof: half),RvR -3%,heat -8%,no,0
 2026-09-13,Ronald Acuña Jr.,ATL,824869,Andrew Painter,2,card,15.3,19.7,,+553,,,park +4%,83F,RvR -3%,heat +1%,no,0
 2026-09-13,Jake Burger,TEX,825033,Eduardo Rodriguez *,4,card,15.2,19.4,,+559,,,park +4%,102F · wind out 4 (roof: half),RvL +12%,heat +4%,no,0
+2026-09-14,Pete Crow-Armstrong,CHC,824629,Reynaldo López *,1,card,25.3,26.4,18.9,+296,255,-32.8,park avg,69F,LvR +8%,heat -2%,hr,1
+2026-09-14,Hunter Goodman,COL,824308,Casey Mize,3,card,24.2,26.6,19.0,+313,270,-29.5,park +9%,87F,RvR -3%,heat -1%,no,0
+2026-09-14,Fernando Tatis Jr.,SDP,824308,Tomoyuki Sugano,1,card,23.6,22.4,16.8,+324,280,-36.2,park +9%,87F,RvR -3%,heat -1%,hr,1
+2026-09-14,Pete Alonso,BAL,823575,Jonah Tong,2,card,23.3,22.6,16.9,+329,285,-35.0,park -4%,70F · wind in 4,RvR -3%,heat +2%,no,0
+2026-09-14,Manny Machado,SDP,824308,Tomoyuki Sugano,3,card,22.1,21.9,16.5,+352,305,-33.1,park +9%,87F,RvR -3%,heat -9%,hr,1
+2026-09-14,Aaron Judge,NYY,823656,Dean Kremer,3,card,21.9,22.8,17.0,+357,310,-30.4,park -2%,56F,RvR -3%,heat -1%,hr,1
+2026-09-14,Juan Soto,NYM,823575,Brandon Young,2,card,21.4,24.9,18.1,+368,320,-23.9,park -4%,70F · wind in 4,LvR +8%,heat +11%,no,0
+2026-09-14,Jackson Merrill,SDP,824308,Tomoyuki Sugano,5,card,20.9,19.8,15.4,+379,330,-33.9,park +9%,87F,LvR +8%,heat -3%,no,0
+2026-09-14,Ben Rice,NYY,823656,Dean Kremer,1,card,20.6,26.7,19.1,+385,335,-17.0,park -2%,56F,LvR +8%,heat +0%,no,0
+2026-09-14,Cal Raleigh,SEA,823981,Reid Detmers,4,card,19.9,19.1,15.0,+402,350,-32.4,park +4%,80F · wind out 5,SvL +12%,heat +6%,hr,1
+2026-09-14,Coby Mayo,BAL,823575,Jonah Tong,4,card,19.5,18.7,14.8,+413,360,-31.9,park -4%,70F · wind in 4,RvR -3%,heat +0%,no,0
+2026-09-14,Francisco Lindor,NYM,823575,Brandon Young,1,card,18.7,22.2,16.7,+435,380,-19.9,park -4%,70F · wind in 4,SvR +8%,heat +1%,no,0
+2026-09-14,Mickey Moniak,COL,824308,Casey Mize,7,card,18.3,16.3,13.5,+446,390,-34.0,park +9%,87F,LvR +8%,heat +6%,no,0
+2026-09-14,Seiya Suzuki,CHC,824629,Reynaldo López *,2,card,18.3,18.4,14.6,+446,390,-28.4,park avg,69F,RvR -3%,heat +0%,no,0
+2026-09-14,Zach Neto,LAA,823981,Kade Anderson,1,card,17.9,23.1,17.1,+457,400,-14.3,park +4%,80F · wind out 5,RvL +12%,heat +18%,no,0
+2026-09-14,Matt Olson,ATL,824629,David Peterson,3,card,17.6,22.1,16.6,+469,410,-15.3,park avg,69F,LvL -22%,heat +4%,no,0
+2026-09-14,Kody Clemens,MIN,823656,Will Warren,3,card,17.2,19.4,15.2,+480,420,-21.1,park -2%,56F,LvR +8%,heat -6%,no,0
+2026-09-14,Ronald Acuña Jr.,ATL,824629,David Peterson,1,card,17.2,19.9,15.4,+480,420,-19.9,park avg,69F,RvL +12%,heat +6%,no,0
+2026-09-14,Julio Rodríguez,SEA,823981,Reid Detmers,5,card,17.1,14.4,11.7,+485,425,-38.4,park +4%,80F · wind out 5,RvL +12%,,no,0
+2026-09-14,Christian Encarnacion-Strand,BAL,823575,Jonah Tong,6,card,16.9,14.2,11.5,+491,430,-39.0,park -4%,70F · wind in 4,RvR -3%,heat +0%,no,0
+2026-09-14,Luis Campusano,SDP,824308,Tomoyuki Sugano,6,card,16.9,13.8,11.1,+491,430,-41.1,park +9%,87F,RvR -3%,heat -1%,no,0
+2026-09-14,Michael Conforto,CHC,824629,Reynaldo López *,7,card,16.9,13.5,10.8,+491,430,-43.0,park avg,69F,LvR +8%,,no,0
+2026-09-14,Mike Trout,LAA,823981,Kade Anderson,2,card,16.9,21.5,16.3,+491,430,-13.8,park +4%,80F · wind out 5,RvL +12%,heat +18%,no,0
+2026-09-14,Spencer Jones,NYY,823656,Dean Kremer,5,card,16.9,12.9,10.0,+491,430,-46.9,park -2%,56F,LvR +8%,heat -4%,no,0
+2026-09-14,Austin Riley,ATL,824629,David Peterson,7,card,16.6,10.9,9.4,+502,440,-49.2,park avg,69F,RvL +12%,,no,0
+2026-09-14,George Springer,TOR,822765,Troy Melton,2,card,16.3,16.8,13.8,+513,450,-24.3,park +3% [low-conf],64F (roof: half),RvR -3%,heat +1%,no,0
+2026-09-14,Kazuma Okamoto,TOR,822765,Troy Melton,6,card,16.3,18.0,14.4,+513,450,-20.6,park +3% [low-conf],64F (roof: half),RvR -3%,heat +2%,hr,1
+2026-09-14,Luis García Jr.,NYY,823656,Dean Kremer,4,card,16.3,17.0,13.9,+513,450,-23.6,park -2%,56F,LvR +8%,heat -3%,no,0
+2026-09-14,Corbin Carroll,ARI,825034,Sandy Alcantara,5,card,15.6,13.9,11.2,+541,475,-35.8,park +4%,103F (roof: half),LvR +8%,heat -3%,void,
+2026-09-14,Kyle Stowers,MIA,825034,Corbin Burnes *,1,card,15.6,20.8,15.9,+541,475,-8.5,park +4%,103F (roof: half),LvR +8%,,no,0
