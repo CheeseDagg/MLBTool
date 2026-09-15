@@ -2052,33 +2052,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-14,Luis García Jr.,NYY,823656,Dean Kremer,4,card,16.3,17.0,13.9,+513,450,-23.6,park -2%,56F,LvR +8%,heat -3%,-1.5,
 2026-09-14,Corbin Carroll,ARI,825034,Sandy Alcantara,5,card,15.6,13.9,11.2,+541,475,-35.8,park +4%,103F (roof: half),LvR +8%,heat -3%,-3.1,floor
 2026-09-14,Kyle Stowers,MIA,825034,Corbin Burnes *,1,card,15.6,20.8,15.9,+541,475,-8.5,park +4%,103F (roof: half),LvR +8%,,0.1,
-2026-09-15,Aaron Judge,NYY,823654,Bailey Ober,7,proj,25.3,20.0,15.5,+296,255,-45.0,park -2%,71F · wind out 7,RvR -3%,heat +5%,-3.0,floor
-2026-09-15,Hunter Goodman,COL,824307,Walker Buehler,3,proj,23.6,26.4,18.9,+324,280,-28.0,park +9%,74F,RvR -3%,heat -6%,-0.1,
-2026-09-15,Junior Caminero,TBR,822925,Jack Perkins,3,card,23.6,26.1,18.8,+324,280,-28.6,park -4% [low-conf],dome,RvR -3%,heat +0%,0.5,
-2026-09-15,Pete Alonso,BAL,823574,Sean Manaea,2,card,23.3,25.7,18.6,+329,285,-28.5,park -4%,74F · wind out 4,RvL +12%,heat +10%,0.2,
-2026-09-15,Kyle Schwarber,PHI,822683,Jackson Kent,1,card,23.0,28.9,20.3,+335,290,-20.9,park avg,79F,LvL -22%,heat -4%,-1.0,
-2026-09-15,Manny Machado,SDP,824307,Kyle Freeland,2,proj,23.0,22.6,16.9,+335,290,-34.1,park +9%,74F,RvL +12%,heat +6%,1.1,
-2026-09-15,Yordan Alvarez,HOU,824143,Michael Wacha,2,card,22.7,27.7,19.6,+340,295,-22.4,park +3%,95F (roof: half),LvR +8%,heat +7%,0.1,
-2026-09-15,Ben Rice,NYY,823654,Bailey Ober,1,proj,22.1,29.6,20.7,+352,305,-16.3,park -2%,71F · wind out 7,LvR +8%,heat +6%,0.8,
-2026-09-15,Fernando Tatis Jr.,SDP,824307,Kyle Freeland,1,proj,22.1,21.6,16.4,+352,305,-33.7,park +9%,74F,RvL +12%,heat +7%,0.5,
-2026-09-15,Shea Langeliers,ATH,822925,Griffin Jax,3,card,20.9,22.6,16.9,+379,330,-27.3,park -4% [low-conf],dome,RvR -3%,heat +6%,-5.1,floor
-2026-09-15,Cal Raleigh,SEA,823980,Ryan Johnson,5,proj,20.4,20.4,15.7,+391,340,-31.0,park +4%,79F · wind out 4,SvR +8%,heat +7%,0.1,
-2026-09-15,Matt Olson,ATL,824627,Kevin Gausman,3,card,20.4,25.9,18.7,+391,340,-17.9,park avg,80F,LvR +8%,heat -9%,0.6,
-2026-09-15,Max Muncy,LAD,824466,Rhett Lowder,6,card,19.5,21.8,16.4,+413,360,-24.3,park +25%,95F,LvR +8%,,-0.1,
-2026-09-15,Juan Soto,NYM,823574,Shane Baz,2,card,19.1,24.4,17.9,+424,370,-16.0,park -4%,74F · wind out 4,LvR +8%,heat +12%,0.2,
-2026-09-15,Munetaka Murakami,CHW,824384,Foster Griffin,4,card,18.7,20.9,16.0,+435,380,-23.4,park -3%,87F · wind out 6,LvL -22%,heat +6%,-2.1,floor
-2026-09-15,Teoscar Hernández,LAD,824466,Rhett Lowder,5,card,18.7,15.9,13.3,+435,380,-36.3,park +25%,95F,RvR -3%,,0.9,
-2026-09-15,Coby Mayo,BAL,823574,Sean Manaea,3,card,18.3,22.9,17.0,+446,390,-16.6,park -4%,74F · wind out 4,RvL +12%,heat +11%,0.6,
-2026-09-15,Jo Adell,CLE,824384,Chris Murphy,3,card,18.3,16.8,13.7,+446,390,-32.7,park -3%,87F · wind out 6,RvL +12%,,-0.4,
-2026-09-15,Ronald Acuña Jr.,ATL,824627,Kevin Gausman,2,card,18.3,19.6,15.3,+446,390,-25.2,park avg,80F,RvR -3%,heat +8%,-0.1,
-2026-09-15,Willson Contreras,BOS,822849,Jacob deGrom,4,card,18.3,20.7,15.8,+446,390,-22.4,park +2%,99F (roof: half),RvR -3%,heat +1%,0.2,
-2026-09-15,Jackson Merrill,SDP,824307,Kyle Freeland,3,proj,17.9,18.9,14.9,+457,400,-25.6,park +9%,74F,LvL -22%,heat +8%,1.2,
-2026-09-15,Kyle Stowers,MIA,825030,Michael Soroka,4,proj,17.9,16.1,13.4,+457,400,-33.0,park +4%,98F · wind out 5 (roof: half),LvR +8%,,-2.5,floor
-2026-09-15,Miguel Vargas,CHW,824384,Foster Griffin,3,card,17.9,21.7,16.4,+457,400,-18.0,park -3%,87F · wind out 6,RvL +12%,heat +4%,0.1,
-2026-09-15,Spencer Jones,NYY,823654,Bailey Ober,8,proj,17.9,11.5,9.6,+457,400,-52.1,park -2%,71F · wind out 7,LvR +8%,,-2.3,floor
-2026-09-15,Christian Encarnacion-Strand,BAL,823574,Sean Manaea,4,card,17.2,19.0,14.9,+480,420,-22.3,park -4%,74F · wind out 4,RvL +12%,heat +5%,-1.2,
-2026-09-15,Kazuma Okamoto,TOR,822762,Drew Anderson,6,card,17.2,18.5,14.7,+480,420,-23.7,park +3% [low-conf],72F · wind out 6 (roof: half),RvR -3%,heat -10%,-1.1,
-2026-09-15,Pete Crow-Armstrong,CHC,824627,Martín Pérez *,1,proj,17.2,25.9,18.6,+480,420,-3.0,park avg,80F,LvL -22%,heat +6%,-0.1,
-2026-09-15,Zach Neto,LAA,823980,Logan Gilbert,1,proj,17.2,22.3,16.7,+480,420,-13.0,park +4%,79F · wind out 4,RvR -3%,heat +10%,0.4,
-2026-09-15,Alec Burleson,STL,823007,Blade Tidwell,3,card,17.1,18.0,14.4,+485,425,-24.4,park -7%,98F · wind out 3,LvR +8%,heat +10%,-1.4,
-2026-09-15,Ty France,SDP,824307,Kyle Freeland,5,proj,17.1,17.1,13.9,+485,425,-26.8,park +9%,74F,RvL +12%,heat +5%,,new
+2026-09-15,Pete Alonso,BAL,823574,Sean Manaea,2,card,23.0,25.0,18.2,+335,290,-29.1,park -4%,66F,RvL +12%,heat +10%,-0.2,
+2026-09-15,Yordan Alvarez,HOU,824143,Michael Wacha,2,card,23.0,27.1,19.3,+335,290,-24.7,park +3%,82F (roof: half),LvR +8%,heat +7%,-0.2,
+2026-09-15,Manny Machado,SDP,824307,Kyle Freeland,3,card,22.1,20.8,15.9,+352,305,-35.6,park +9%,74F,RvL +12%,heat +6%,0.2,
+2026-09-15,Ben Rice,NYY,823654,Bailey Ober,1,card,21.4,29.4,20.6,+368,320,-13.6,park -2%,71F · wind out 5,LvR +8%,heat +6%,0.8,
+2026-09-15,Fernando Tatis Jr.,SDP,824307,Kyle Freeland,1,card,21.4,21.3,16.2,+368,320,-32.1,park +9%,74F,RvL +12%,heat +7%,0.3,
+2026-09-15,Junior Caminero,TBR,822925,Jack Perkins,3,card,20.9,26.1,18.8,+379,330,-19.2,park -4% [low-conf],dome,RvR -3%,heat +0%,0.5,
+2026-09-15,Kyle Schwarber,PHI,822683,Jackson Kent,1,card,20.9,28.7,20.2,+379,330,-13.2,park avg,75F,LvL -22%,heat -4%,-1.1,
+2026-09-15,Matt Olson,ATL,824627,Kevin Gausman,3,card,20.9,25.0,18.2,+379,330,-21.9,park avg,no wx,LvR +8%,heat -9%,0.1,
+2026-09-15,Max Muncy,LAD,824466,Rhett Lowder,6,card,20.9,21.4,16.3,+379,330,-30.1,park +25%,91F,LvR +8%,,-0.2,
+2026-09-15,Cal Raleigh,SEA,823980,Ryan Johnson,4,card,20.4,21.9,16.5,+391,340,-27.3,park +4%,79F · wind out 5,SvR +8%,heat +7%,0.9,
+2026-09-15,Teoscar Hernández,LAD,824466,Rhett Lowder,5,card,19.5,15.6,13.1,+413,360,-39.6,park +25%,91F,RvR -3%,,0.7,
+2026-09-15,Juan Soto,NYM,823574,Shane Baz,2,card,19.1,23.7,17.5,+424,370,-17.7,park -4%,66F,LvR +8%,heat +12%,-0.2,
+2026-09-15,Coby Mayo,BAL,823574,Sean Manaea,3,card,18.3,22.2,16.7,+446,390,-18.3,park -4%,66F,RvL +12%,heat +11%,0.3,
+2026-09-15,Kyle Stowers,MIA,825030,Michael Soroka,4,proj,18.3,16.1,13.4,+446,390,-34.4,park +4%,98F · wind out 4 (roof: half),LvR +8%,,-2.5,floor
+2026-09-15,Ronald Acuña Jr.,ATL,824627,Kevin Gausman,2,card,18.3,18.9,14.9,+446,390,-27.0,park avg,no wx,RvR -3%,heat +8%,-0.5,
+2026-09-15,Alec Burleson,STL,823007,Blade Tidwell,3,card,17.9,17.6,14.2,+457,400,-29.0,park -7%,96F,LvR +8%,heat +10%,-1.6,
+2026-09-15,Jackson Merrill,SDP,824307,Kyle Freeland,5,card,17.9,15.9,13.3,+457,400,-33.5,park +9%,74F,LvL -22%,,-0.4,
+2026-09-15,Spencer Jones,NYY,823654,Bailey Ober,5,card,17.9,14.4,11.8,+457,400,-41.1,park -2%,71F · wind out 5,LvR +8%,,-0.1,
+2026-09-15,Luis García Jr.,NYY,823654,Bailey Ober,4,card,17.6,19.1,15.0,+469,410,-23.6,park -2%,71F · wind out 5,LvR +8%,heat +2%,-0.1,
+2026-09-15,Christian Encarnacion-Strand,BAL,823574,Sean Manaea,4,card,17.2,18.3,14.6,+480,420,-24.1,park -4%,66F,RvL +12%,heat +5%,-1.5,
+2026-09-15,Zach Neto,LAA,823980,Logan Gilbert,1,card,17.2,22.4,16.8,+480,420,-12.8,park +4%,79F · wind out 5,RvR -3%,heat +10%,0.5,
+2026-09-15,Victor Mesa Jr.,TBR,822925,Jack Perkins,5,card,17.1,16.5,13.6,+485,425,-28.7,park -4% [low-conf],dome,LvR +8%,heat +1%,,new
+2026-09-15,Christian Walker,HOU,824143,Michael Wacha,7,card,16.9,13.6,10.9,+491,430,-42.4,park +3%,82F (roof: half),RvR -3%,,-4.5,floor
+2026-09-15,Kazuma Okamoto,TOR,822762,Drew Anderson,6,card,16.9,18.3,14.6,+491,430,-22.8,park +3% [low-conf],69F (roof: half),RvR -3%,heat -10%,-1.2,
+2026-09-15,Mike Trout,LAA,823980,Logan Gilbert,2,card,16.9,20.8,15.9,+491,430,-15.5,park +4%,79F · wind out 5,RvR -3%,heat +13%,-0.4,
+2026-09-15,Pete Crow-Armstrong,CHC,824627,Martín Pérez *,1,card,16.9,25.1,18.2,+491,430,-3.3,park avg,no wx,LvL -22%,heat +6%,-0.6,
+2026-09-15,Randy Arozarena,SEA,823980,Ryan Johnson,2,card,16.9,20.4,15.7,+491,430,-16.7,park +4%,79F · wind out 5,RvR -3%,heat +2%,-0.1,
+2026-09-15,Wilyer Abreu,BOS,822849,Jacob deGrom,5,card,16.6,17.4,14.1,+502,440,-24.1,park +2%,99F (roof: half),LvR +8%,heat +1%,-0.8,
+2026-09-15,Mickey Moniak,COL,824307,Walker Buehler,6,card,16.3,17.1,13.9,+513,450,-23.3,park +9%,74F,LvR +8%,heat +8%,-2.6,floor
+2026-09-15,Munetaka Murakami,CHW,824384,Foster Griffin,4,card,16.3,20.6,15.8,+513,450,-13.0,park -3%,81F · wind out 7,LvL -22%,heat +6%,-2.3,floor
