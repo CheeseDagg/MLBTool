@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T13:58+00:00",
+ "generated": "2026-09-15T17:17+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -158,6 +158,46 @@
      "p_over": 0.2412,
      "fair_over": 315,
      "fair_under": -315
+    }
+   ]
+  },
+  {
+   "pitcher": "Jacob deGrom",
+   "opp": "Boston Red Sox",
+   "lam": 6.22,
+   "k9_regressed": 10.71,
+   "exp_ip": 5.33,
+   "opp_mult": 0.979,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7429,
+     "fair_over": -289,
+     "fair_under": 289
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5885,
+     "fair_over": -143,
+     "fair_under": 143
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4285,
+     "fair_over": 133,
+     "fair_under": -133
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2864,
+     "fair_over": 249,
+     "fair_under": -249
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1759,
+     "fair_over": 468,
+     "fair_under": -468
     }
    ]
   },
@@ -682,46 +722,6 @@
    ]
   },
   {
-   "pitcher": "Davis Martin",
-   "opp": "Cleveland Guardians",
-   "lam": 4.41,
-   "k9_regressed": 7.83,
-   "exp_ip": 5.22,
-   "opp_mult": 0.971,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4506,
-     "fair_over": 122,
-     "fair_under": -122
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2816,
-     "fair_over": 255,
-     "fair_under": -255
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1575,
-     "fair_over": 535,
-     "fair_under": -535
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0793,
-     "fair_over": 1161,
-     "fair_under": -1161
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0362,
-     "fair_over": 2663,
-     "fair_under": -2663
-    }
-   ]
-  },
-  {
    "pitcher": "Drew Anderson",
    "opp": "Toronto Blue Jays",
    "lam": 4.36,
@@ -1160,9 +1160,49 @@
      "fair_under": -26798
     }
    ]
+  },
+  {
+   "pitcher": "Chris Murphy",
+   "opp": "Cleveland Guardians",
+   "lam": 2.93,
+   "k9_regressed": 9.06,
+   "exp_ip": 3.0,
+   "opp_mult": 0.971,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1737,
+     "fair_over": 476,
+     "fair_under": -476
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0774,
+     "fair_over": 1192,
+     "fair_under": -1192
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0303,
+     "fair_over": 3202,
+     "fair_under": -3202
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0105,
+     "fair_over": 9391,
+     "fair_under": -9391
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0033,
+     "fair_over": 30244,
+     "fair_under": -30244
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 18016 (used 1984) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 17984 (used 2016) \u00b7 whiff rest:30 rows",
  "n_markets": 27,
  "n_plays": 0,
  "plays": [],
