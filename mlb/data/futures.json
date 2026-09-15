@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T17:15:01+00:00",
+ "generated": "2026-09-15T17:45:48+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -135,18 +135,6 @@
    "shop": false
   },
   {
-   "team": "San Diego Padres",
-   "cons_pct": 2.4,
-   "fair": "+4081",
-   "best_price": 3500,
-   "book": "fanduel",
-   "edge_pct": -13.9,
-   "any_price": 3500,
-   "any_book": "betrivers",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Toronto Blue Jays",
    "cons_pct": 2.4,
    "fair": "+4040",
@@ -157,6 +145,18 @@
    "any_book": null,
    "books_n": 5,
    "shop": true
+  },
+  {
+   "team": "San Diego Padres",
+   "cons_pct": 2.4,
+   "fair": "+4081",
+   "best_price": 3500,
+   "book": "fanduel",
+   "edge_pct": -13.9,
+   "any_price": 3500,
+   "any_book": "betrivers",
+   "books_n": 5,
+   "shop": false
   },
   {
    "team": "Texas Rangers",
@@ -183,6 +183,30 @@
    "shop": false
   },
   {
+   "team": "Miami Marlins",
+   "cons_pct": 0.2,
+   "fair": "+60269",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "betmgm",
+   "books_n": 3,
+   "shop": false
+  },
+  {
+   "team": "Seattle Mariners",
+   "cons_pct": 0.2,
+   "fair": "+46012",
+   "best_price": 40000,
+   "book": "fanduel",
+   "edge_pct": -13.0,
+   "any_price": 50000,
+   "any_book": "betrivers",
+   "books_n": 5,
+   "shop": false
+  },
+  {
    "team": "Baltimore Orioles",
    "cons_pct": 0.2,
    "fair": "+46939",
@@ -204,30 +228,6 @@
    "any_price": 100000,
    "any_book": "betmgm",
    "books_n": 4,
-   "shop": false
-  },
-  {
-   "team": "Seattle Mariners",
-   "cons_pct": 0.2,
-   "fair": "+46012",
-   "best_price": 40000,
-   "book": "fanduel",
-   "edge_pct": -13.0,
-   "any_price": 50000,
-   "any_book": "betrivers",
-   "books_n": 5,
-   "shop": false
-  },
-  {
-   "team": "Miami Marlins",
-   "cons_pct": 0.2,
-   "fair": "+60269",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "betmgm",
-   "books_n": 3,
    "shop": false
   },
   {
