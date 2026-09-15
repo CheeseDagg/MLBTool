@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T01:25:45+00:00",
+ "generated": "2026-09-15T20:13:43+00:00",
  "date": "2026-09-15",
  "min_pa": 6,
  "rows": [
@@ -35,17 +35,6 @@
    "hr": 1,
    "avg": ".800",
    "slg": "1.800"
-  },
-  {
-   "batter": "Liam Hicks",
-   "team": "TB",
-   "opp_sp": "Jack Perkins",
-   "pa": 6,
-   "ab": 5,
-   "h": 4,
-   "hr": 1,
-   "avg": ".800",
-   "slg": "1.600"
   },
   {
    "batter": "Juan Soto",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".200",
    "slg": ".600"
+  },
+  {
+   "batter": "Isaac Paredes",
+   "team": "HOU",
+   "opp_sp": "Michael Wacha",
+   "pa": 15,
+   "ab": 12,
+   "h": 3,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".583"
   }
  ]
 }
