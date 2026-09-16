@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T13:48+00:00",
+ "generated": "2026-09-16T17:16+00:00",
  "board": [
   {
    "pitcher": "Blake Snell",
@@ -82,46 +82,6 @@
    ]
   },
   {
-   "pitcher": "Parker Messick",
-   "opp": "Chicago White Sox",
-   "lam": 6.38,
-   "k9_regressed": 9.18,
-   "exp_ip": 5.94,
-   "opp_mult": 1.053,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7627,
-     "fair_over": -321,
-     "fair_under": 321
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.6134,
-     "fair_over": -159,
-     "fair_under": 159
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.4547,
-     "fair_over": 120,
-     "fair_under": -120
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.3099,
-     "fair_over": 223,
-     "fair_under": -223
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1945,
-     "fair_over": 414,
-     "fair_under": -414
-    }
-   ]
-  },
-  {
    "pitcher": "Logan Henderson",
    "opp": "Pittsburgh Pirates",
    "lam": 6.22,
@@ -158,6 +118,46 @@
      "p_over": 0.1762,
      "fair_over": 468,
      "fair_under": -468
+    }
+   ]
+  },
+  {
+   "pitcher": "Parker Messick",
+   "opp": "Chicago White Sox",
+   "lam": 6.18,
+   "k9_regressed": 9.18,
+   "exp_ip": 5.76,
+   "opp_mult": 1.053,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.7383,
+     "fair_over": -282,
+     "fair_under": 282
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.5828,
+     "fair_over": -140,
+     "fair_under": 140
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.4226,
+     "fair_over": 137,
+     "fair_under": -137
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.2811,
+     "fair_over": 256,
+     "fair_under": -256
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.1719,
+     "fair_over": 482,
+     "fair_under": -482
     }
    ]
   },
@@ -1202,7 +1202,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 17843 (used 2157) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 17811 (used 2189) \u00b7 whiff rest:30 rows",
  "n_markets": 29,
  "n_plays": 0,
  "plays": [],
@@ -1215,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
