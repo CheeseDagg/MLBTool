@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T01:23:25+00:00",
+ "generated": "2026-09-16T20:06:07+00:00",
  "date": "2026-09-16",
  "min_pa": 6,
  "rows": [
@@ -114,17 +114,6 @@
    "slg": ".938"
   },
   {
-   "batter": "Braden Montgomery",
-   "team": "CWS",
-   "opp_sp": "Parker Messick",
-   "pa": 8,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
    "batter": "Cole Carrigg",
    "team": "COL",
    "opp_sp": "Robbie Ray",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".250",
    "slg": ".625"
+  },
+  {
+   "batter": "Zach Neto",
+   "team": "LAA",
+   "opp_sp": "George Kirby",
+   "pa": 15,
+   "ab": 10,
+   "h": 2,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".600"
   }
  ]
 }
