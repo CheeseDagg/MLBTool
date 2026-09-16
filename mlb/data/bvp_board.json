@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T20:06:07+00:00",
+ "generated": "2026-09-16T22:54:42+00:00",
  "date": "2026-09-16",
  "min_pa": 6,
  "rows": [
@@ -70,17 +70,6 @@
    "slg": "1.600"
   },
   {
-   "batter": "Ben Rice",
-   "team": "NYY",
-   "opp_sp": "Zebby Matthews",
-   "pa": 9,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
    "batter": "Kyle Stowers",
    "team": "MIA",
    "opp_sp": "Merrill Kelly",
@@ -114,6 +103,17 @@
    "slg": ".938"
   },
   {
+   "batter": "Ben Rice",
+   "team": "NYY",
+   "opp_sp": "Zebby Matthews",
+   "pa": 12,
+   "ab": 10,
+   "h": 5,
+   "hr": 1,
+   "avg": ".500",
+   "slg": ".900"
+  },
+  {
    "batter": "Cole Carrigg",
    "team": "COL",
    "opp_sp": "Robbie Ray",
@@ -125,17 +125,6 @@
    "slg": ".800"
   },
   {
-   "batter": "Ryan McMahon",
-   "team": "NYY",
-   "opp_sp": "Zebby Matthews",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
    "batter": "Lawrence Butler",
    "team": "ATH",
    "opp_sp": "Nick Martinez",
@@ -145,6 +134,17 @@
    "hr": 1,
    "avg": ".167",
    "slg": ".667"
+  },
+  {
+   "batter": "Ryan McMahon",
+   "team": "NYY",
+   "opp_sp": "Zebby Matthews",
+   "pa": 9,
+   "ab": 8,
+   "h": 2,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".625"
   },
   {
    "batter": "Cody Bellinger",
