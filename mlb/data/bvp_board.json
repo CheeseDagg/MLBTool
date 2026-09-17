@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-17T01:22:07+00:00",
+ "generated": "2026-09-17T20:18:20+00:00",
  "date": "2026-09-17",
  "min_pa": 6,
  "rows": [
@@ -48,125 +48,125 @@
    "slg": "1.100"
   },
   {
-   "batter": "Christian V\u00e1zquez",
-   "team": "HOU",
-   "opp_sp": "Seth Lugo",
-   "pa": 10,
-   "ab": 10,
-   "h": 3,
+   "batter": "Henry Bolte",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
    "hr": 2,
-   "avg": ".300",
-   "slg": "1.000"
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Christopher Morel",
-   "team": "NYM",
-   "opp_sp": "Aaron Nola",
-   "pa": 9,
-   "ab": 8,
-   "h": 3,
-   "hr": 1,
-   "avg": ".375",
-   "slg": ".875"
+   "batter": "Jeff McNeil",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
   },
   {
    "batter": "Lawrence Butler",
    "team": "ATH",
    "opp_sp": "Drew Rasmussen",
-   "pa": 7,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Riley Greene",
-   "team": "DET",
-   "opp_sp": "Erick Fedde",
-   "pa": 11,
-   "ab": 10,
-   "h": 5,
-   "hr": 1,
-   "avg": ".500",
-   "slg": ".800"
-  },
-  {
-   "batter": "Jackson Merrill",
-   "team": "SD",
-   "opp_sp": "Tanner Gordon",
-   "pa": 6,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
-   "batter": "Yordan Alvarez",
-   "team": "HOU",
-   "opp_sp": "Seth Lugo",
-   "pa": 12,
-   "ab": 11,
-   "h": 4,
-   "hr": 1,
-   "avg": ".364",
-   "slg": ".727"
-  },
-  {
-   "batter": "Mickey Moniak",
-   "team": "COL",
-   "opp_sp": "Michael King",
-   "pa": 7,
-   "ab": 6,
-   "h": 1,
-   "hr": 1,
-   "avg": ".167",
-   "slg": ".667"
-  },
-  {
-   "batter": "Freddie Freeman",
-   "team": "LAD",
-   "opp_sp": "Brady Singer",
-   "pa": 9,
-   "ab": 8,
-   "h": 2,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".625"
-  },
-  {
-   "batter": "Jared Young",
-   "team": "NYM",
-   "opp_sp": "Aaron Nola",
-   "pa": 8,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
-  },
-  {
-   "batter": "Shea Langeliers",
+   "batter": "Zack Gelof",
    "team": "ATH",
    "opp_sp": "Drew Rasmussen",
-   "pa": 7,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Tommy Pham",
-   "team": "CWS",
-   "opp_sp": "Framber Valdez",
-   "pa": 14,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
+   "batter": "Donovan Walton",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Tommy White",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Alika Williams",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Jonah Heim",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Denzel Clarke",
+   "team": "ATH",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 15,
+   "ab": 14,
+   "h": 6,
+   "hr": 2,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Konnor Griffin",
+   "team": "PIT",
+   "opp_sp": "Kyle Harrison",
+   "pa": 25,
+   "ab": 22,
+   "h": 6,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".591"
+  },
+  {
+   "batter": "Oneil Cruz",
+   "team": "PIT",
+   "opp_sp": "Kyle Harrison",
+   "pa": 25,
+   "ab": 22,
+   "h": 6,
+   "hr": 2,
+   "avg": ".273",
+   "slg": ".591"
   }
  ]
 }
