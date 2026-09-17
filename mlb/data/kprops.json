@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-17T20:38+00:00",
+ "generated": "2026-09-17T22:58+00:00",
  "board": [
   {
    "pitcher": "Taj Bradley",
@@ -284,40 +284,40 @@
   {
    "pitcher": "Michael King",
    "opp": "Colorado Rockies",
-   "lam": 5.08,
-   "k9_regressed": 7.8,
-   "exp_ip": 5.77,
+   "lam": 5.15,
+   "k9_regressed": 7.81,
+   "exp_ip": 5.84,
    "opp_mult": 1.016,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5739,
-     "fair_over": -135,
-     "fair_under": 135
+     "p_over": 0.5849,
+     "fair_over": -141,
+     "fair_under": 141
     },
     {
      "line": 5.5,
-     "p_over": 0.3986,
-     "fair_over": 151,
-     "fair_under": -151
+     "p_over": 0.4098,
+     "fair_over": 144,
+     "fair_under": -144
     },
     {
      "line": 6.5,
-     "p_over": 0.25,
-     "fair_over": 300,
-     "fair_under": -300
+     "p_over": 0.2596,
+     "fair_over": 285,
+     "fair_under": -285
     },
     {
      "line": 7.5,
-     "p_over": 0.1422,
-     "fair_over": 603,
-     "fair_under": -603
+     "p_over": 0.1492,
+     "fair_over": 570,
+     "fair_under": -570
     },
     {
      "line": 8.5,
-     "p_over": 0.0736,
-     "fair_over": 1258,
-     "fair_under": -1258
+     "p_over": 0.0781,
+     "fair_over": 1180,
+     "fair_under": -1180
     }
    ]
   },
@@ -487,37 +487,37 @@
    "lam": 4.02,
    "k9_regressed": 7.81,
    "exp_ip": 4.73,
-   "opp_mult": 0.98,
+   "opp_mult": 0.981,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3754,
+     "p_over": 0.3759,
      "fair_over": 166,
      "fair_under": -166
     },
     {
      "line": 5.5,
-     "p_over": 0.2183,
-     "fair_over": 358,
-     "fair_under": -358
+     "p_over": 0.2187,
+     "fair_over": 357,
+     "fair_under": -357
     },
     {
      "line": 6.5,
-     "p_over": 0.113,
-     "fair_over": 785,
-     "fair_under": -785
+     "p_over": 0.1132,
+     "fair_over": 783,
+     "fair_under": -783
     },
     {
      "line": 7.5,
-     "p_over": 0.0524,
-     "fair_over": 1807,
-     "fair_under": -1807
+     "p_over": 0.0526,
+     "fair_over": 1801,
+     "fair_under": -1801
     },
     {
      "line": 8.5,
-     "p_over": 0.022,
-     "fair_over": 4442,
-     "fair_under": -4442
+     "p_over": 0.0221,
+     "fair_over": 4425,
+     "fair_under": -4425
     }
    ]
   },
@@ -722,7 +722,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 17648 (used 2352) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 17637 (used 2363) \u00b7 whiff rest:30 rows",
  "n_markets": 8,
  "n_plays": 0,
  "plays": [],
@@ -735,6 +735,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
