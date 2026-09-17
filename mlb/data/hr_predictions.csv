@@ -2112,3 +2112,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-16,Randy Arozarena,SEA,823979,Yusei Kikuchi,2,card,17.1,19.6,15.3,+485,425,-19.8,park +4%,78F · wind out 6,RvL +12%,heat +9%,-0.4,
 2026-09-16,Corey Seager,TEX,822846,Jake Bennett,2,card,16.6,20.9,16.0,+502,440,-13.8,park +2%,95F (roof: half),LvL -22%,heat +12%,-0.5,
 2026-09-16,Ronald Acuña Jr.,ATL,824626,Shota Imanaga,1,card,16.6,22.6,16.9,+502,440,-8.8,park avg,68F · wind in 9,RvL +12%,heat +4%,1.5,
+2026-09-17,Yordan Alvarez,HOU,824141,Seth Lugo,1,proj,26.4,30.4,21.1,+279,240,-28.3,park +3%,81F (roof: half),LvR +8%,heat +9%,1.8,
+2026-09-17,Max Muncy,ATH,822924,Drew Rasmussen,1,proj,25.6,25.1,18.2,+290,250,-36.2,park -4% [low-conf],dome,LvR +8%,heat +3%,1.9,
+2026-09-17,Elly De La Cruz,CIN,824464,Justin Wrobleski,2,card,23.3,26.6,19.0,+329,285,-26.7,park +25%,82F,SvL +12%,heat +17%,2.2,
+2026-09-17,Kyle Schwarber,PHI,823573,Nolan McLean,1,proj,22.7,28.9,20.3,+340,295,-19.8,park -4%,77F,LvR +8%,heat +1%,-0.9,
+2026-09-17,Manny Machado,SDP,824305,Tanner Gordon,2,proj,22.4,21.9,16.5,+346,300,-33.9,park +9%,67F · wind out 3,RvR -3%,heat +4%,0.6,
+2026-09-17,Junior Caminero,TBR,822924,Jeffrey Springs,1,proj,21.9,33.1,22.5,+357,310,-7.6,park -4% [low-conf],dome,RvL +12%,heat +9%,4.2,STANDOUT
+2026-09-17,Trevor Larnach,MIN,823978,Walbert Ureña *,6,proj,21.9,11.6,9.6,+357,310,-60.5,park +4%,70F,LvR +8%,,,new
+2026-09-17,Fernando Tatis Jr.,SDP,824305,Tanner Gordon,1,proj,21.4,21.5,16.3,+368,320,-31.6,park +9%,67F · wind out 3,RvR -3%,heat +7%,-0.1,
+2026-09-17,Jackson Merrill,SDP,824305,Tanner Gordon,3,proj,20.6,20.7,15.9,+385,335,-31.0,park +9%,67F · wind out 3,LvR +8%,heat +6%,2.2,
+2026-09-17,Juan Soto,NYM,823573,Aaron Nola,6,proj,20.4,20.4,15.7,+391,340,-30.8,park -4%,77F,LvR +8%,heat -7%,-2.2,floor
+2026-09-17,Bobby Witt Jr.,KCR,824141,TBD *,2,proj,19.9,16.9,13.8,+402,350,-37.8,park +3%,81F (roof: half),,,-0.3,
+2026-09-17,Miguel Vargas,CHW,824548,Framber Valdez,1,proj,19.9,22.5,16.8,+402,350,-24.2,park +9%,67F,RvL +12%,heat +8%,0.6,
+2026-09-17,Carter Jensen,KCR,824141,TBD *,3,proj,19.5,18.1,14.5,+413,360,-33.4,park +3%,81F (roof: half),,,-1.9,
+2026-09-17,Corey Seager,TEX,822845,Sonny Gray,8,proj,19.1,13.8,11.1,+424,370,-47.8,park +2%,84F (roof: half),LvR +8%,heat +3%,-5.4,floor
+2026-09-17,Will Smith,LAD,824464,Brady Singer,6,proj,19.1,14.7,12.0,+424,370,-43.4,park +25%,82F,RvR -3%,heat -11%,-2.5,floor
+2026-09-17,Kyle Tucker,LAD,824464,Brady Singer,2,proj,18.9,17.3,14.0,+430,375,-33.5,park +25%,82F,LvR +8%,heat -1%,,new
+2026-09-17,Freddie Freeman,LAD,824464,Brady Singer,1,proj,18.3,19.1,15.0,+446,390,-26.4,park +25%,82F,LvR +8%,heat +1%,-0.6,
+2026-09-17,Shea Langeliers,ATH,822924,Drew Rasmussen,5,proj,18.3,19.0,14.9,+446,390,-26.8,park -4% [low-conf],dome,RvR -3%,heat +7%,-6.5,floor
+2026-09-17,Willson Contreras,BOS,822845,Tyler Alexander,4,proj,18.3,19.5,15.2,+446,390,-25.6,park +2%,84F (roof: half),RvL +12%,heat -1%,-0.4,
+2026-09-17,Sal Stewart,CIN,824464,Justin Wrobleski,3,card,17.9,24.4,17.9,+457,400,-10.7,park +25%,82F,RvL +12%,heat +14%,-0.1,
+2026-09-17,Francisco Lindor,NYM,823573,Aaron Nola,7,proj,17.6,15.6,13.1,+469,410,-33.3,park -4%,77F,SvR +8%,heat -8%,-3.3,floor
+2026-09-17,Mike Trout,LAA,823978,Taj Bradley,2,proj,17.6,18.6,14.7,+469,410,-24.9,park +4%,70F,RvR -3%,heat +1%,-1.6,
+2026-09-17,Kody Clemens,MIN,823978,Walbert Ureña *,4,proj,17.1,19.0,15.0,+485,425,-21.5,park +4%,70F,LvR +8%,heat -10%,-0.8,
+2026-09-17,Oneil Cruz,PIT,823334,Kyle Harrison,6,proj,17.1,14.8,12.2,+485,425,-36.2,park -9%,76F,LvL -22%,heat +6%,-2.9,floor
+2026-09-17,Randal Grichuk,CHW,824548,Framber Valdez,9,proj,16.9,13.2,10.4,+491,430,-45.1,park +9%,67F,RvL +12%,,-8.5,floor
+2026-09-17,Riley Greene,DET,824548,Erick Fedde,4,proj,16.9,17.3,14.0,+491,430,-25.5,park +9%,67F,LvR +8%,heat -2%,-0.7,
+2026-09-17,Christian Walker,HOU,824141,Seth Lugo,3,proj,16.6,19.1,15.0,+502,440,-19.0,park +3%,81F (roof: half),RvR -3%,heat +7%,-0.3,
+2026-09-17,Jake Bauers,MIL,823334,Wilber Dotel,3,proj,16.6,18.5,14.7,+502,440,-20.6,park -9%,76F,LvR +8%,heat +7%,-1.5,
+2026-09-17,Mickey Moniak,COL,824305,Michael King,7,proj,16.6,15.2,12.7,+502,440,-31.5,park +9%,67F · wind out 3,LvR +8%,heat -1%,-2.8,floor
+2026-09-17,Ty France,SDP,824305,Tanner Gordon,5,proj,16.6,16.6,13.6,+502,440,-26.4,park +9%,67F · wind out 3,RvR -3%,heat +3%,,new
