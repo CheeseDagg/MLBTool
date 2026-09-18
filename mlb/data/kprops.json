@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T16:40+00:00",
+ "generated": "2026-09-18T17:13+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -762,46 +762,6 @@
    ]
   },
   {
-   "pitcher": "Andrew Painter",
-   "opp": "New York Mets",
-   "lam": 4.47,
-   "k9_regressed": 7.99,
-   "exp_ip": 5.02,
-   "opp_mult": 1.005,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4627,
-     "fair_over": 116,
-     "fair_under": -116
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2924,
-     "fair_over": 242,
-     "fair_under": -242
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1655,
-     "fair_over": 504,
-     "fair_under": -504
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0844,
-     "fair_over": 1085,
-     "fair_under": -1085
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.039,
-     "fair_over": 2464,
-     "fair_under": -2464
-    }
-   ]
-  },
-  {
    "pitcher": "Nick Pivetta",
    "opp": "Miami Marlins",
    "lam": 4.44,
@@ -958,6 +918,46 @@
      "p_over": 0.029,
      "fair_over": 3347,
      "fair_under": -3347
+    }
+   ]
+  },
+  {
+   "pitcher": "Cade Povich",
+   "opp": "Milwaukee Brewers",
+   "lam": 3.88,
+   "k9_regressed": 7.7,
+   "exp_ip": 4.61,
+   "opp_mult": 0.983,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3475,
+     "fair_over": 188,
+     "fair_under": -188
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1962,
+     "fair_over": 410,
+     "fair_under": -410
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0984,
+     "fair_over": 916,
+     "fair_under": -916
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0442,
+     "fair_over": 2161,
+     "fair_under": -2161
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.018,
+     "fair_over": 5466,
+     "fair_under": -5466
     }
    ]
   },
@@ -1122,7 +1122,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 17569 (used 2431) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 17537 (used 2463) \u00b7 whiff rest:30 rows",
  "n_markets": 25,
  "n_plays": 0,
  "plays": [],

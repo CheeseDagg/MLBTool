@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T16:38:59+00:00",
+ "generated": "2026-09-18T17:11:20+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -51,18 +51,6 @@
    "shop": false
   },
   {
-   "team": "Atlanta Braves",
-   "cons_pct": 5.7,
-   "fair": "+1639",
-   "best_price": 1400,
-   "book": "fanduel",
-   "edge_pct": -13.8,
-   "any_price": 1600,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Boston Red Sox",
    "cons_pct": 5.7,
    "fair": "+1639",
@@ -70,6 +58,18 @@
    "book": "fanduel",
    "edge_pct": -13.8,
    "any_price": 1800,
+   "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Atlanta Braves",
+   "cons_pct": 5.7,
+   "fair": "+1639",
+   "best_price": 1400,
+   "book": "fanduel",
+   "edge_pct": -13.8,
+   "any_price": 1600,
    "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
@@ -195,6 +195,18 @@
    "shop": false
   },
   {
+   "team": "Minnesota Twins",
+   "cons_pct": 0.1,
+   "fair": "+114348",
+   "best_price": null,
+   "book": "",
+   "edge_pct": null,
+   "any_price": 100000,
+   "any_book": "draftkings",
+   "books_n": 3,
+   "shop": false
+  },
+  {
    "team": "Detroit Tigers",
    "cons_pct": 0.1,
    "fair": "+96138",
@@ -208,18 +220,6 @@
   },
   {
    "team": "Seattle Mariners",
-   "cons_pct": 0.1,
-   "fair": "+114348",
-   "best_price": null,
-   "book": "",
-   "edge_pct": null,
-   "any_price": 100000,
-   "any_book": "draftkings",
-   "books_n": 3,
-   "shop": false
-  },
-  {
-   "team": "Minnesota Twins",
    "cons_pct": 0.1,
    "fair": "+114348",
    "best_price": null,
