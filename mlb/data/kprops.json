@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T17:13+00:00",
+ "generated": "2026-09-18T20:03+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -882,6 +882,46 @@
    ]
   },
   {
+   "pitcher": "Gabriel Hughes",
+   "opp": "Seattle Mariners",
+   "lam": 4.26,
+   "k9_regressed": 7.96,
+   "exp_ip": 4.69,
+   "opp_mult": 1.025,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4215,
+     "fair_over": 137,
+     "fair_under": -137
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2564,
+     "fair_over": 290,
+     "fair_under": -290
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1393,
+     "fair_over": 618,
+     "fair_under": -618
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.068,
+     "fair_over": 1370,
+     "fair_under": -1370
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0301,
+     "fair_over": 3224,
+     "fair_under": -3224
+    }
+   ]
+  },
+  {
    "pitcher": "Kumar Rocker",
    "opp": "Toronto Blue Jays",
    "lam": 4.23,
@@ -1122,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 17537 (used 2463) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 17505 (used 2495) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
