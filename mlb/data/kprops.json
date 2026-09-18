@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T20:03+00:00",
+ "generated": "2026-09-18T22:43+00:00",
  "board": [
   {
    "pitcher": "Dylan Cease",
@@ -1160,9 +1160,49 @@
      "fair_under": -13575
     }
    ]
+  },
+  {
+   "pitcher": "Tim Mayza",
+   "opp": "New York Mets",
+   "lam": 2.92,
+   "k9_regressed": 8.71,
+   "exp_ip": 3.0,
+   "opp_mult": 1.005,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1709,
+     "fair_over": 485,
+     "fair_under": -485
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0757,
+     "fair_over": 1221,
+     "fair_under": -1221
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0295,
+     "fair_over": 3294,
+     "fair_under": -3294
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0102,
+     "fair_over": 9709,
+     "fair_under": -9709
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0032,
+     "fair_over": 31441,
+     "fair_under": -31441
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 17505 (used 2495) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 17474 (used 2526) \u00b7 whiff rest:30 rows",
  "n_markets": 27,
  "n_plays": 0,
  "plays": [],
@@ -1175,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 0,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
