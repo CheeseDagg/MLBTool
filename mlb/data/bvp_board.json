@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-19T19:18:48+00:00",
+ "generated": "2026-09-19T22:19:13+00:00",
  "date": "2026-09-19",
  "min_pa": 6,
  "rows": [
@@ -24,6 +24,17 @@
    "hr": 2,
    "avg": ".167",
    "slg": ".556"
+  },
+  {
+   "batter": "Bryce Harper",
+   "team": "PHI",
+   "opp_sp": "Christian Scott",
+   "pa": 6,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.333"
   },
   {
    "batter": "Luis Garc\u00eda Jr.",
@@ -68,17 +79,6 @@
    "hr": 1,
    "avg": ".400",
    "slg": ".700"
-  },
-  {
-   "batter": "Ian Happ",
-   "team": "CHC",
-   "opp_sp": "Nick Lodolo",
-   "pa": 27,
-   "ab": 25,
-   "h": 8,
-   "hr": 1,
-   "avg": ".320",
-   "slg": ".640"
   },
   {
    "batter": "Corey Seager",
