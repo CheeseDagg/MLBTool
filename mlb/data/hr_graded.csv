@@ -2245,3 +2245,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-17,Wilyer Abreu,BOS,822845,Tyler Alexander,3,card,15.6,16.7,13.7,+541,475,-21.1,park +2%,98F · wind in 6 (roof: half),LvL -22%,heat +8%,no,0
 2026-09-17,Francisco Alvarez,NYM,823573,Aaron Nola,7,card,15.5,14.3,11.7,+547,480,-32.3,park -4%,76F · wind out 4,RvR -3%,heat -7%,no,0
 2026-09-17,Jeremy Peña,HOU,824141,Seth Lugo,1,card,14.9,19.7,15.3,+569,500,-8.2,park +3%,83F (roof: half),RvR -3%,heat +8%,hr,1
+2026-09-18,Pete Crow-Armstrong,CHC,824463,Chase Burns,1,card,28.0,31.0,21.4,+257,220,-31.4,park +25%,80F,LvR +8%,heat +2%,no,0
+2026-09-18,Cal Raleigh,SEA,824303,Gabriel Hughes,4,card,24.9,20.1,15.5,+301,260,-44.1,park +9%,86F,SvR +8%,heat +7%,no,0
+2026-09-18,Yordan Alvarez,HOU,824138,Tyler Mahle,2,card,24.6,26.2,18.8,+307,265,-31.3,park +3%,88F (roof: half),LvR +8%,heat -2%,no,0
+2026-09-18,Kyle Schwarber,PHI,823572,Zac Thornton,1,card,22.7,28.5,20.0,+340,295,-20.8,park -4%,77F · wind in 5,LvL -22%,heat +10%,no,0
+2026-09-18,Matt Olson,ATL,824138,Peter Lambert,3,card,21.9,23.8,17.5,+357,310,-28.2,park +3%,88F (roof: half),LvR +8%,heat -5%,hr,1
+2026-09-18,Juan Soto,NYM,823572,Tim Mayza,2,card,21.4,22.0,16.5,+368,320,-30.5,park -4%,77F · wind in 5,LvL -22%,heat +2%,hr,1
+2026-09-18,Teoscar Hernández,LAD,823898,Cesar Perdomo,3,card,20.4,16.4,13.5,+391,340,-40.4,park +5%,78F · wind out 5,RvL +12%,,no,0
+2026-09-18,Elly De La Cruz,CIN,824463,Clay Holmes,2,card,19.9,24.6,17.9,+402,350,-19.3,park +25%,80F,SvR +8%,heat -6%,no,0
+2026-09-18,Ronald Acuña Jr.,ATL,824138,Peter Lambert,2,card,19.9,18.4,14.6,+402,350,-34.2,park +3%,88F (roof: half),RvR -3%,heat +6%,hr,1
+2026-09-18,Hunter Goodman,COL,824303,Bryan Woo,4,card,19.5,26.3,18.9,+413,360,-13.1,park +9%,86F,RvR -3%,heat +12%,no,0
+2026-09-18,Kazuma Okamoto,TOR,822847,Kumar Rocker,6,card,19.1,18.3,14.6,+424,370,-31.5,park +2%,95F (roof: half),RvR -3%,heat -7%,no,0
+2026-09-18,Seiya Suzuki,CHC,824463,Chase Burns,2,card,19.1,20.6,15.8,+424,370,-25.7,park +25%,80F,RvR -3%,heat -7%,no,0
+2026-09-18,Will Smith,LAD,823898,Cesar Perdomo,2,card,19.1,17.8,14.3,+424,370,-32.7,park +5%,78F · wind out 5,RvL +12%,,hr,1
+2026-09-18,Miguel Vargas,CHW,824547,Andrew Sears,1,card,18.7,23.8,17.5,+435,380,-15.8,park +9%,67F,RvL +12%,,hr,1
+2026-09-18,Corey Seager,TEX,822847,Dylan Cease,2,card,18.3,21.0,16.0,+446,390,-21.5,park +2%,95F (roof: half),LvR +8%,heat +1%,no,0
+2026-09-18,Ian Happ,CHC,824463,Chase Burns,5,card,18.3,16.4,13.5,+446,390,-33.8,park +25%,80F,SvR +8%,heat -3%,hr,1
+2026-09-18,JJ Bleday,CIN,824463,Clay Holmes,5,card,18.3,17.2,14.0,+446,390,-31.6,park +25%,80F,LvR +8%,heat -12%,no,0
+2026-09-18,Michael Busch,CHC,824463,Chase Burns,3,card,18.3,16.2,13.4,+446,390,-34.1,park +25%,80F,LvR +8%,,no,0
+2026-09-18,Oneil Cruz,PIT,823331,Randy Dobnak,4,card,18.3,18.3,14.6,+446,390,-28.6,park -9%,73F,LvR +8%,heat +5%,no,0
+2026-09-18,Pete Alonso,BAL,824790,Dustin May,2,card,18.3,25.2,18.3,+446,390,-10.4,park +4% [low-conf],83F,RvR -3%,heat +5%,hr,1
+2026-09-18,Riley Greene,DET,824547,David Sandlin,4,card,18.3,17.2,14.0,+446,390,-31.6,park +9%,67F,LvR +8%,,hr,1
+2026-09-18,Kyle Stowers,MIA,823252,Nick Pivetta,4,proj,17.6,15.1,12.5,+469,410,-36.1,park -4%,78F · wind in 3,LvR +8%,,no,0
+2026-09-18,Michael Conforto,CHC,824463,Chase Burns,7,card,17.6,15.4,12.8,+469,410,-34.5,park +25%,80F,LvR +8%,,no,0
+2026-09-18,Michael Harris II,ATL,824138,Peter Lambert,4,card,17.6,17.3,14.0,+469,410,-28.6,park +3%,88F (roof: half),LvR +8%,heat -3%,hr,1
+2026-09-18,Brandon Lowe,PIT,823331,Randy Dobnak,2,card,17.2,21.7,16.4,+480,420,-14.7,park -9%,73F,LvR +8%,heat -7%,hr,1
+2026-09-18,Mookie Betts,LAD,823898,Cesar Perdomo,1,card,17.2,21.6,16.3,+480,420,-15.1,park +5%,78F · wind out 5,RvL +12%,,hr,2
+2026-09-18,Randy Arozarena,SEA,824303,Gabriel Hughes,2,card,17.2,18.8,14.9,+480,420,-22.8,park +9%,86F,RvR -3%,heat +0%,no,0
+2026-09-18,Shea Langeliers,ATH,824383,Daniel Espino,2,card,17.2,21.8,16.5,+480,420,-14.4,park -3%,71F · wind in 5,RvR -3%,,no,0
+2026-09-18,Christian Walker,HOU,824138,Tyler Mahle,6,card,17.1,13.8,11.1,+485,425,-41.8,park +3%,88F (roof: half),RvR -3%,,no,0
+2026-09-18,Colson Montgomery,CHW,824547,Andrew Sears,8,card,17.1,13.9,11.2,+485,425,-41.4,park +9%,67F,LvL -22%,,no,0
