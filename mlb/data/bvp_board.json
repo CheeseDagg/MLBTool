@@ -1,73 +1,139 @@
 {
- "generated": "2026-09-18T22:34:05+00:00",
- "date": "2026-09-18",
+ "generated": "2026-09-19T01:09:06+00:00",
+ "date": "2026-09-19",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Nolan Arenado",
-   "team": "AZ",
-   "opp_sp": "Gerrit Cole",
-   "pa": 22,
-   "ab": 22,
-   "h": 10,
-   "hr": 3,
-   "avg": ".455",
-   "slg": ".955"
+   "batter": "Cody Bellinger",
+   "team": "NYY",
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
+   "hr": 2,
+   "avg": ".286",
+   "slg": "1.143"
   },
   {
-   "batter": "Jake Burger",
-   "team": "TEX",
-   "opp_sp": "Dylan Cease",
+   "batter": "Dansby Swanson",
+   "team": "CHC",
+   "opp_sp": "Nick Lodolo",
+   "pa": 18,
+   "ab": 18,
+   "h": 3,
+   "hr": 2,
+   "avg": ".167",
+   "slg": ".556"
+  },
+  {
+   "batter": "Willson Contreras",
+   "team": "BOS",
+   "opp_sp": "Freddy Peralta",
+   "pa": 34,
+   "ab": 26,
+   "h": 7,
+   "hr": 2,
+   "avg": ".269",
+   "slg": ".538"
+  },
+  {
+   "batter": "Luis Garc\u00eda Jr.",
+   "team": "NYY",
+   "opp_sp": "Brandon Pfaadt",
+   "pa": 7,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Colt Keith",
+   "team": "DET",
+   "opp_sp": "Sean Burke",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".857"
+  },
+  {
+   "batter": "Matt Shaw",
+   "team": "CHC",
+   "opp_sp": "Nick Lodolo",
    "pa": 6,
    "ab": 6,
-   "h": 4,
+   "h": 2,
    "hr": 1,
-   "avg": ".667",
-   "slg": "1.167"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
-   "batter": "Mike Yastrzemski",
-   "team": "ATL",
-   "opp_sp": "Peter Lambert",
-   "pa": 14,
+   "batter": "Carson Kelly",
+   "team": "CHC",
+   "opp_sp": "Nick Lodolo",
+   "pa": 10,
    "ab": 10,
    "h": 4,
    "hr": 1,
    "avg": ".400",
-   "slg": "1.000"
+   "slg": ".700"
+  },
+  {
+   "batter": "Ian Happ",
+   "team": "CHC",
+   "opp_sp": "Nick Lodolo",
+   "pa": 27,
+   "ab": 25,
+   "h": 8,
+   "hr": 1,
+   "avg": ".320",
+   "slg": ".640"
   },
   {
    "batter": "Corey Seager",
    "team": "TEX",
-   "opp_sp": "Dylan Cease",
-   "pa": 11,
-   "ab": 9,
-   "h": 3,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".778"
-  },
-  {
-   "batter": "Mickey Moniak",
-   "team": "COL",
-   "opp_sp": "Bryan Woo",
-   "pa": 12,
-   "ab": 12,
+   "opp_sp": "Jos\u00e9 Soriano",
+   "pa": 14,
+   "ab": 11,
    "h": 4,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".750"
+   "avg": ".364",
+   "slg": ".636"
   },
   {
-   "batter": "Aaron Judge",
-   "team": "NYY",
-   "opp_sp": "Eduardo Rodriguez",
-   "pa": 41,
-   "ab": 33,
-   "h": 5,
+   "batter": "Tyrone Taylor",
+   "team": "CHC",
+   "opp_sp": "Nick Lodolo",
+   "pa": 13,
+   "ab": 11,
+   "h": 2,
    "hr": 1,
-   "avg": ".152",
-   "slg": ".273"
+   "avg": ".182",
+   "slg": ".455"
+  },
+  {
+   "batter": "Trevor Story",
+   "team": "BOS",
+   "opp_sp": "Freddy Peralta",
+   "pa": 11,
+   "ab": 9,
+   "h": 1,
+   "hr": 1,
+   "avg": ".111",
+   "slg": ".444"
+  },
+  {
+   "batter": "Eugenio Su\u00e1rez",
+   "team": "CIN",
+   "opp_sp": "Matthew Boyd",
+   "pa": 17,
+   "ab": 15,
+   "h": 2,
+   "hr": 1,
+   "avg": ".133",
+   "slg": ".400"
   }
  ]
 }
