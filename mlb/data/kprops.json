@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-19T16:38+00:00",
+ "generated": "2026-09-19T19:42+00:00",
  "board": [
   {
    "pitcher": "Tarik Skubal",
@@ -164,40 +164,40 @@
   {
    "pitcher": "Sean Burke",
    "opp": "Detroit Tigers",
-   "lam": 5.61,
-   "k9_regressed": 9.48,
+   "lam": 5.56,
+   "k9_regressed": 9.41,
    "exp_ip": 5.24,
-   "opp_mult": 1.016,
+   "opp_mult": 1.015,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6588,
-     "fair_over": -193,
-     "fair_under": 193
+     "p_over": 0.6525,
+     "fair_over": -188,
+     "fair_under": 188
     },
     {
      "line": 5.5,
-     "p_over": 0.4892,
-     "fair_over": 104,
-     "fair_under": -104
+     "p_over": 0.4821,
+     "fair_over": 107,
+     "fair_under": -107
     },
     {
      "line": 6.5,
-     "p_over": 0.3307,
-     "fair_over": 202,
-     "fair_under": -202
+     "p_over": 0.3242,
+     "fair_over": 208,
+     "fair_under": -208
     },
     {
      "line": 7.5,
-     "p_over": 0.2038,
-     "fair_over": 391,
-     "fair_under": -391
+     "p_over": 0.1986,
+     "fair_over": 404,
+     "fair_under": -404
     },
     {
      "line": 8.5,
-     "p_over": 0.1149,
-     "fair_over": 771,
-     "fair_under": -771
+     "p_over": 0.1112,
+     "fair_over": 799,
+     "fair_under": -799
     }
    ]
   },
@@ -402,6 +402,46 @@
    ]
   },
   {
+   "pitcher": "Jackson Jobe",
+   "opp": "Chicago White Sox",
+   "lam": 5.22,
+   "k9_regressed": 8.97,
+   "exp_ip": 4.96,
+   "opp_mult": 1.056,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5971,
+     "fair_over": -148,
+     "fair_under": 148
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.4224,
+     "fair_over": 137,
+     "fair_under": -137
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2705,
+     "fair_over": 270,
+     "fair_under": -270
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1572,
+     "fair_over": 536,
+     "fair_under": -536
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0833,
+     "fair_over": 1100,
+     "fair_under": -1100
+    }
+   ]
+  },
+  {
    "pitcher": "Robert Gasser",
    "opp": "Baltimore Orioles",
    "lam": 5.18,
@@ -518,46 +558,6 @@
      "p_over": 0.0729,
      "fair_over": 1272,
      "fair_under": -1272
-    }
-   ]
-  },
-  {
-   "pitcher": "Jackson Jobe",
-   "opp": "Chicago White Sox",
-   "lam": 5.06,
-   "k9_regressed": 8.71,
-   "exp_ip": 4.95,
-   "opp_mult": 1.055,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5694,
-     "fair_over": -132,
-     "fair_under": 132
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.394,
-     "fair_over": 154,
-     "fair_under": -154
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2462,
-     "fair_over": 306,
-     "fair_under": -306
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1394,
-     "fair_over": 617,
-     "fair_under": -617
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0719,
-     "fair_over": 1291,
-     "fair_under": -1291
     }
    ]
   },
@@ -1082,6 +1082,86 @@
    ]
   },
   {
+   "pitcher": "Yunior Marte",
+   "opp": "Los Angeles Dodgers",
+   "lam": 3.79,
+   "k9_regressed": 7.69,
+   "exp_ip": 4.67,
+   "opp_mult": 0.951,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3307,
+     "fair_over": 202,
+     "fair_under": -202
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1833,
+     "fair_over": 445,
+     "fair_under": -445
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0902,
+     "fair_over": 1009,
+     "fair_under": -1009
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0397,
+     "fair_over": 2417,
+     "fair_under": -2417
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0158,
+     "fair_over": 6227,
+     "fair_under": -6227
+    }
+   ]
+  },
+  {
+   "pitcher": "Brayan Bello",
+   "opp": "Tampa Bay Rays",
+   "lam": 3.28,
+   "k9_regressed": 7.26,
+   "exp_ip": 4.52,
+   "opp_mult": 0.899,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2333,
+     "fair_over": 329,
+     "fair_under": -329
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1144,
+     "fair_over": 774,
+     "fair_under": -774
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0495,
+     "fair_over": 1921,
+     "fair_under": -1921
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0191,
+     "fair_over": 5140,
+     "fair_under": -5140
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0066,
+     "fair_over": 14990,
+     "fair_under": -14990
+    }
+   ]
+  },
+  {
    "pitcher": "Jose Quintana",
    "opp": "Seattle Mariners",
    "lam": 3.28,
@@ -1122,8 +1202,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 17364 (used 2636) \u00b7 whiff rest:30 rows",
- "n_markets": 27,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 17332 (used 2668) \u00b7 whiff rest:30 rows",
+ "n_markets": 26,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 3,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
