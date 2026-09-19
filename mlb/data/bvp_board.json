@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-19T01:09:06+00:00",
+ "generated": "2026-09-19T19:18:48+00:00",
  "date": "2026-09-19",
  "min_pa": 6,
  "rows": [
@@ -24,17 +24,6 @@
    "hr": 2,
    "avg": ".167",
    "slg": ".556"
-  },
-  {
-   "batter": "Willson Contreras",
-   "team": "BOS",
-   "opp_sp": "Freddy Peralta",
-   "pa": 34,
-   "ab": 26,
-   "h": 7,
-   "hr": 2,
-   "avg": ".269",
-   "slg": ".538"
   },
   {
    "batter": "Luis Garc\u00eda Jr.",
@@ -134,6 +123,17 @@
    "hr": 1,
    "avg": ".133",
    "slg": ".400"
+  },
+  {
+   "batter": "Weston Wilson",
+   "team": "SEA",
+   "opp_sp": "Jose Quintana",
+   "pa": 11,
+   "ab": 11,
+   "h": 1,
+   "hr": 1,
+   "avg": ".091",
+   "slg": ".364"
   }
  ]
 }
