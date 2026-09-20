@@ -2275,3 +2275,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-18,Shea Langeliers,ATH,824383,Daniel Espino,2,card,17.2,21.8,16.5,+480,420,-14.4,park -3%,71F · wind in 5,RvR -3%,,no,0
 2026-09-18,Christian Walker,HOU,824138,Tyler Mahle,6,card,17.1,13.8,11.1,+485,425,-41.8,park +3%,88F (roof: half),RvR -3%,,no,0
 2026-09-18,Colson Montgomery,CHW,824547,Andrew Sears,8,card,17.1,13.9,11.2,+485,425,-41.4,park +9%,67F,LvL -22%,,no,0
+2026-09-19,Pete Crow-Armstrong,CHC,824461,Nick Lodolo,1,card,26.8,31.6,21.8,+274,235,-27.1,park +25%,88F · wind out 3,LvL -22%,heat +4%,no,0
+2026-09-19,Cal Raleigh,SEA,824304,Jose Quintana,4,card,24.2,20.0,15.5,+313,270,-42.7,park +9%,81F · wind in 5,SvL +12%,heat -8%,hr,1
+2026-09-19,Yordan Alvarez,HOU,824137,Grant Holmes,2,card,23.6,27.5,19.5,+324,280,-25.8,park +3%,91F (roof: half),LvR +8%,heat +1%,no,0
+2026-09-19,Elly De La Cruz,CIN,824461,Matthew Boyd,2,card,21.4,27.5,19.6,+368,320,-17.9,park +25%,88F · wind out 3,SvL +12%,heat +14%,no,0
+2026-09-19,Matt Olson,ATL,824137,Hayden Wesneski,3,card,21.4,25.8,18.6,+368,320,-21.7,park +3%,91F (roof: half),LvR +8%,heat +2%,no,0
+2026-09-19,Max Muncy,LAD,823899,Yunior Marte,4,card,21.1,22.0,16.5,+374,325,-29.7,park +5%,80F · wind out 5,LvR +8%,,no,0
+2026-09-19,Hunter Goodman,COL,824304,Bryce Miller,4,card,20.6,26.5,19.0,+385,335,-17.5,park +9%,81F · wind in 5,RvR -3%,heat -2%,no,0
+2026-09-19,Oneil Cruz,PIT,823330,Noah Cameron,2,card,19.9,19.4,15.2,+402,350,-31.7,park -9%,73F,LvL -22%,heat +5%,no,0
+2026-09-19,Seiya Suzuki,CHC,824461,Nick Lodolo,3,card,19.9,22.5,16.8,+402,350,-24.2,park +25%,88F · wind out 3,RvL +12%,heat +3%,no,0
+2026-09-19,Pete Alonso,BAL,824788,Robert Gasser,2,card,19.3,27.0,,+419,,,park +4% [low-conf],78F,RvL +12%,heat +7%,no,0
+2026-09-19,Eugenio Suárez,CIN,824461,Matthew Boyd,5,card,19.1,22.7,16.9,+424,370,-20.4,park +25%,88F · wind out 3,RvL +12%,heat +3%,no,0
+2026-09-19,Heriberto Hernández,MIA,823249,Casey Mize,2,card,19.1,21.0,16.0,+424,370,-24.8,park -4%,77F,RvR -3%,heat -3%,no,0
+2026-09-19,Sal Stewart,CIN,824461,Matthew Boyd,3,card,19.1,25.6,18.5,+424,370,-12.9,park +25%,88F · wind out 3,RvL +12%,heat +3%,no,0
+2026-09-19,Fernando Tatis Jr.,SDP,823249,Eury Pérez *,1,card,18.3,18.3,14.6,+446,390,-28.7,park -4%,77F,RvR -3%,heat -2%,hr,1
+2026-09-19,Kazuma Okamoto,TOR,822843,Cal Quantrill,6,card,18.3,18.6,14.7,+446,390,-27.8,park +2%,95F (roof: half),RvR -3%,heat -0%,no,0
+2026-09-19,Kyle Stowers,MIA,823249,Casey Mize,3,card,18.3,16.6,13.7,+446,390,-33.0,park -4%,77F,LvR +8%,heat +6%,no,0
+2026-09-19,Ronald Acuña Jr.,ATL,824137,Hayden Wesneski,2,card,18.3,19.6,15.3,+446,390,-25.1,park +3%,91F (roof: half),RvR -3%,,hr,1
+2026-09-19,Randal Grichuk,CHW,824545,Jackson Jobe,1,card,18.2,25.1,,+448,,,park +9%,no wx,RvR -3%,heat -1%,void,
+2026-09-19,Drake Baldwin,ATL,824137,Hayden Wesneski,1,card,17.9,23.1,17.1,+457,400,-14.3,park +3%,91F (roof: half),LvR +8%,heat -0%,no,0
+2026-09-19,Kody Clemens,MIN,823976,Reid Detmers,4,proj,17.6,17.9,14.3,+469,410,-26.9,park +4%,81F · wind out 6,LvL -22%,heat +4%,void,
+2026-09-19,Mickey Moniak,COL,824304,Bryce Miller,7,card,17.6,17.2,14.0,+469,410,-28.8,park +9%,81F · wind in 5,LvR +8%,heat +8%,no,0
+2026-09-19,Will Smith,LAD,823899,Yunior Marte,3,card,17.6,17.0,13.9,+469,410,-29.3,park +5%,80F · wind out 5,RvR -3%,,hr,1
+2026-09-19,Coby Mayo,BAL,824788,Robert Gasser,3,card,17.3,23.4,,+477,,,park +4% [low-conf],78F,RvL +12%,heat +14%,no,0
+2026-09-19,Jo Adell,CLE,824380,Jacob Lopez,4,card,17.2,16.2,13.4,+480,420,-30.1,park -3%,70F,RvL +12%,,no,0
+2026-09-19,Alex Bregman,CHC,824461,Nick Lodolo,2,card,17.1,22.0,16.6,+485,425,-13.0,park +25%,88F · wind out 3,RvL +12%,heat -2%,no,0
+2026-09-19,Dansby Swanson,CHC,824461,Nick Lodolo,9,card,17.1,13.2,10.4,+485,425,-45.5,park +25%,88F · wind out 3,RvL +12%,,hr,1
+2026-09-19,Dominic Canzone,SEA,824304,Jose Quintana,3,card,17.1,19.0,14.9,+485,425,-21.6,park +9%,81F · wind in 5,LvL -22%,heat -1%,no,0
+2026-09-19,Jac Caglianone,KCR,823330,Bubba Chandler,3,card,17.1,17.3,14.0,+485,425,-26.3,park -9%,73F,LvR +8%,heat +13%,no,0
+2026-09-19,Jackson Chourio,MIL,824788,Trevor Rogers,1,card,17.1,22.9,,+486,,,park +4% [low-conf],78F,RvL +12%,heat +12%,no,0
+2026-09-19,Jordan Walker,STL,823003,Andrew Alvarez,3,card,17.1,19.9,15.4,+485,425,-19.0,park -7%,94F,RvL +12%,heat +2%,no,0
