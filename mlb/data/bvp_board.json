@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T01:05:00+00:00",
+ "generated": "2026-09-20T19:26:44+00:00",
  "date": "2026-09-20",
  "min_pa": 6,
  "rows": [
@@ -59,6 +59,17 @@
    "slg": ".714"
   },
   {
+   "batter": "Sal Stewart",
+   "team": "CIN",
+   "opp_sp": "David Peterson",
+   "pa": 8,
+   "ab": 7,
+   "h": 2,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".714"
+  },
+  {
    "batter": "Mark Vientos",
    "team": "NYM",
    "opp_sp": "Cristopher S\u00e1nchez",
@@ -67,6 +78,17 @@
    "h": 4,
    "hr": 1,
    "avg": ".267",
+   "slg": ".667"
+  },
+  {
+   "batter": "JJ Bleday",
+   "team": "CIN",
+   "opp_sp": "David Peterson",
+   "pa": 15,
+   "ab": 15,
+   "h": 7,
+   "hr": 1,
+   "avg": ".467",
    "slg": ".667"
   },
   {
@@ -90,28 +112,6 @@
    "hr": 1,
    "avg": ".429",
    "slg": ".643"
-  },
-  {
-   "batter": "Wilyer Abreu",
-   "team": "BOS",
-   "opp_sp": "Griffin Jax",
-   "pa": 10,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".600"
-  },
-  {
-   "batter": "Austin Hays",
-   "team": "SD",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 9,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
   },
   {
    "batter": "Jose Altuve",
