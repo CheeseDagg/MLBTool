@@ -2305,3 +2305,15 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-19,Jac Caglianone,KCR,823330,Bubba Chandler,3,card,17.1,17.3,14.0,+485,425,-26.3,park -9%,73F,LvR +8%,heat +13%,no,0
 2026-09-19,Jackson Chourio,MIL,824788,Trevor Rogers,1,card,17.1,22.9,,+486,,,park +4% [low-conf],78F,RvL +12%,heat +12%,no,0
 2026-09-19,Jordan Walker,STL,823003,Andrew Alvarez,3,card,17.1,19.9,15.4,+485,425,-19.0,park -7%,94F,RvL +12%,heat +2%,no,0
+2026-09-20,Pete Crow-Armstrong,CHC,824462,Rhett Lowder,1,card,22.4,32.9,,+346,,,park +25%,91F,LvR +8%,heat +7%,hr,1
+2026-09-20,Max Muncy,LAD,823896,Matt Wilkinson,6,card,19.9,17.8,14.3,+402,350,-35.6,park +5%,78F · wind out 4,LvL -22%,,void,
+2026-09-20,Fernando Tatis Jr.,SDP,823247,Sandy Alcantara,1,card,19.1,18.8,14.8,+424,370,-30.3,park -4%,78F,RvR -3%,heat +4%,hr,1
+2026-09-20,Kyle Stowers,MIA,823247,Walker Buehler,1,card,18.7,20.0,15.5,+435,380,-25.7,park -4%,78F,LvR +8%,heat +3%,no,0
+2026-09-20,Junior Caminero,TBR,822922,Patrick Sandoval,3,card,18.0,24.6,,+456,,,park -4% [low-conf],dome,RvL +12%,heat +13%,no,0
+2026-09-20,Hunter Goodman,COL,824300,Kade Anderson,3,card,17.6,27.4,19.5,+469,410,-0.7,park +9%,75F · wind in 6,RvL +12%,heat +18%,hr,1
+2026-09-20,Cal Raleigh,SEA,824300,Tomoyuki Sugano,4,card,17.2,22.1,16.6,+480,420,-13.6,park +9%,75F · wind in 6,SvR +8%,heat +7%,no,0
+2026-09-20,Juan Soto,NYM,823570,Cristopher Sánchez *,2,card,16.8,22.5,,+495,,,park -4%,67F,LvL -22%,heat +2%,no,0
+2026-09-20,Heriberto Hernández,MIA,823247,Walker Buehler,4,card,16.6,19.0,14.9,+502,440,-19.4,park -4%,78F,RvR -3%,,no,0
+2026-09-20,Manny Machado,SDP,823247,Sandy Alcantara,3,card,16.6,17.6,14.2,+502,440,-23.5,park -4%,78F,RvR -3%,heat +5%,no,0
+2026-09-20,Seiya Suzuki,CHC,824462,Rhett Lowder,2,card,16.6,22.0,,+503,,,park +25%,91F,RvR -3%,heat +2%,hr,1
+2026-09-20,Jackson Merrill,SDP,823247,Sandy Alcantara,5,card,16.3,15.4,12.9,+513,450,-28.9,park -4%,78F,LvR +8%,,no,0
