@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T13:20+00:00",
+ "generated": "2026-09-20T16:23+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -438,6 +438,46 @@
      "p_over": 0.0692,
      "fair_over": 1345,
      "fair_under": -1345
+    }
+   ]
+  },
+  {
+   "pitcher": "David Peterson",
+   "opp": "Cincinnati Reds",
+   "lam": 4.98,
+   "k9_regressed": 8.22,
+   "exp_ip": 5.02,
+   "opp_mult": 1.088,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5567,
+     "fair_over": -126,
+     "fair_under": 126
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3812,
+     "fair_over": 162,
+     "fair_under": -162
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2355,
+     "fair_over": 325,
+     "fair_under": -325
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1317,
+     "fair_over": 659,
+     "fair_under": -659
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.067,
+     "fair_over": 1392,
+     "fair_under": -1392
     }
    ]
   },
@@ -1122,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 17262 (used 2738) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 17230 (used 2770) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 2,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
