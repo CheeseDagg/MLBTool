@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T16:22:21+00:00",
+ "generated": "2026-09-20T16:54:05+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -113,7 +113,7 @@
   {
    "team": "San Diego Padres",
    "cons_pct": 3.1,
-   "fair": "+3142",
+   "fair": "+3141",
    "best_price": 2700,
    "book": "fanduel",
    "edge_pct": -13.6,
@@ -162,9 +162,9 @@
    "team": "Toronto Blue Jays",
    "cons_pct": 0.6,
    "fair": "+17107",
-   "best_price": 35000,
+   "best_price": 40000,
    "book": "fanduel",
-   "edge_pct": 104.0,
+   "edge_pct": 133.0,
    "any_price": null,
    "any_book": null,
    "books_n": 5,
@@ -195,15 +195,15 @@
    "shop": false
   },
   {
-   "team": "Seattle Mariners",
+   "team": "Detroit Tigers",
    "cons_pct": 0.1,
-   "fair": "+113966",
+   "fair": "+78775",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
-   "any_book": "draftkings",
-   "books_n": 3,
+   "any_book": "betmgm",
+   "books_n": 2,
    "shop": false
   },
   {
@@ -219,15 +219,15 @@
    "shop": false
   },
   {
-   "team": "Detroit Tigers",
+   "team": "Seattle Mariners",
    "cons_pct": 0.1,
-   "fair": "+78775",
+   "fair": "+113966",
    "best_price": null,
    "book": "",
    "edge_pct": null,
    "any_price": 100000,
-   "any_book": "betmgm",
-   "books_n": 2,
+   "any_book": "draftkings",
+   "books_n": 3,
    "shop": false
   }
  ],
