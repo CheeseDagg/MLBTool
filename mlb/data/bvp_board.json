@@ -1,172 +1,18 @@
 {
- "generated": "2026-09-20T22:24:45+00:00",
- "date": "2026-09-20",
+ "generated": "2026-09-21T01:02:50+00:00",
+ "date": "2026-09-21",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Ryan O'Hearn",
-   "team": "PIT",
-   "opp_sp": "Michael Wacha",
-   "pa": 11,
-   "ab": 10,
-   "h": 3,
-   "hr": 2,
-   "avg": ".300",
-   "slg": ".900"
-  },
-  {
-   "batter": "Sam Antonacci",
-   "team": "CWS",
-   "opp_sp": "Troy Melton",
-   "pa": 10,
-   "ab": 8,
-   "h": 4,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Alec Burleson",
-   "team": "STL",
-   "opp_sp": "Jake Irvin",
-   "pa": 10,
-   "ab": 9,
-   "h": 3,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".778"
-  },
-  {
-   "batter": "Matt Olson",
-   "team": "ATL",
-   "opp_sp": "Hunter Brown",
-   "pa": 9,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
-   "batter": "Sal Stewart",
-   "team": "CIN",
-   "opp_sp": "David Peterson",
-   "pa": 8,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  },
-  {
-   "batter": "Nick Fortes",
-   "team": "TB",
-   "opp_sp": "Patrick Sandoval",
-   "pa": 10,
-   "ab": 10,
-   "h": 3,
-   "hr": 1,
-   "avg": ".300",
-   "slg": ".700"
-  },
-  {
-   "batter": "JJ Bleday",
-   "team": "CIN",
-   "opp_sp": "David Peterson",
-   "pa": 15,
-   "ab": 15,
-   "h": 7,
-   "hr": 1,
-   "avg": ".467",
-   "slg": ".667"
-  },
-  {
-   "batter": "Xander Bogaerts",
-   "team": "SD",
-   "opp_sp": "Sandy Alcantara",
-   "pa": 14,
-   "ab": 14,
-   "h": 6,
-   "hr": 1,
-   "avg": ".429",
-   "slg": ".643"
-  },
-  {
-   "batter": "Michael Busch",
-   "team": "CHC",
-   "opp_sp": "Rhett Lowder",
-   "pa": 8,
-   "ab": 7,
-   "h": 1,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".571"
-  },
-  {
-   "batter": "Mark Vientos",
-   "team": "NYM",
-   "opp_sp": "Cristopher S\u00e1nchez",
-   "pa": 21,
+   "batter": "Vladimir Guerrero Jr.",
+   "team": "TOR",
+   "opp_sp": "Shane Baz",
+   "pa": 18,
    "ab": 18,
-   "h": 4,
+   "h": 5,
    "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
-  },
-  {
-   "batter": "Jose Altuve",
-   "team": "HOU",
-   "opp_sp": "Mart\u00edn P\u00e9rez",
-   "pa": 63,
-   "ab": 58,
-   "h": 17,
-   "hr": 1,
-   "avg": ".293",
-   "slg": ".500"
-  },
-  {
-   "batter": "Mike Trout",
-   "team": "LAA",
-   "opp_sp": "Dean Kremer",
-   "pa": 9,
-   "ab": 8,
-   "h": 1,
-   "hr": 1,
-   "avg": ".125",
-   "slg": ".500"
-  },
-  {
-   "batter": "Luis Garc\u00eda Jr.",
-   "team": "NYY",
-   "opp_sp": "Corbin Burnes",
-   "pa": 15,
-   "ab": 11,
-   "h": 2,
-   "hr": 1,
-   "avg": ".182",
-   "slg": ".455"
-  },
-  {
-   "batter": "Anthony Volpe",
-   "team": "NYY",
-   "opp_sp": "Corbin Burnes",
-   "pa": 9,
-   "ab": 9,
-   "h": 1,
-   "hr": 1,
-   "avg": ".111",
+   "avg": ".278",
    "slg": ".444"
-  },
-  {
-   "batter": "Yordan Alvarez",
-   "team": "HOU",
-   "opp_sp": "Mart\u00edn P\u00e9rez",
-   "pa": 21,
-   "ab": 19,
-   "h": 4,
-   "hr": 1,
-   "avg": ".211",
-   "slg": ".421"
   }
  ]
 }
