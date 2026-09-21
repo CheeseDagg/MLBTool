@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T18:19:51+00:00",
+ "generated": "2026-09-21T18:46:55+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -27,18 +27,6 @@
    "shop": false
   },
   {
-   "team": "New York Yankees",
-   "cons_pct": 9.5,
-   "fair": "+947",
-   "best_price": 800,
-   "book": "fanduel",
-   "edge_pct": -14.1,
-   "any_price": 875,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Tampa Bay Rays",
    "cons_pct": 9.5,
    "fair": "+947",
@@ -47,6 +35,18 @@
    "edge_pct": -14.1,
    "any_price": 850,
    "any_book": "betrivers",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "New York Yankees",
+   "cons_pct": 9.5,
+   "fair": "+947",
+   "best_price": 800,
+   "book": "fanduel",
+   "edge_pct": -14.1,
+   "any_price": 875,
+   "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
   },
