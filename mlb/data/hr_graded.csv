@@ -2317,3 +2317,27 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-20,Manny Machado,SDP,823247,Sandy Alcantara,3,card,16.6,17.6,14.2,+502,440,-23.5,park -4%,78F,RvR -3%,heat +5%,no,0
 2026-09-20,Seiya Suzuki,CHC,824462,Rhett Lowder,2,card,16.6,22.0,,+503,,,park +25%,91F,RvR -3%,heat +2%,hr,1
 2026-09-20,Jackson Merrill,SDP,823247,Sandy Alcantara,5,card,16.3,15.4,12.9,+513,450,-28.9,park -4%,78F,LvR +8%,,no,0
+2026-09-20,Kyle Schwarber,PHI,823570,Jonah Tong,1,card,20.2,28.8,,+394,,,park -4%,68F,LvR +8%,heat +6%,no,0
+2026-09-20,Jake Bauers,MIL,824789,Brandon Young,4,card,19.9,20.6,15.8,+402,350,-29.0,park +4% [low-conf],76F,LvR +8%,heat +0%,no,0
+2026-09-20,Munetaka Murakami,CHW,824546,Troy Melton,4,card,18.3,21.8,16.5,+446,390,-19.3,park +9%,64F,LvR +8%,heat +2%,no,0
+2026-09-20,Yordan Alvarez,HOU,824139,Martín Pérez *,2,card,18.3,25.2,,+446,,,park +3%,88F · wind out 5 (roof: half),LvL -22%,heat +14%,no,0
+2026-09-20,Jackson Chourio,MIL,824789,Brandon Young,1,card,17.9,23.9,17.6,+457,400,-11.9,park +4% [low-conf],76F,RvR -3%,heat +4%,no,0
+2026-09-20,Pete Alonso,BAL,824789,Jacob Misiorowski,2,card,17.9,24.6,18.0,+457,400,-10.1,park +4% [low-conf],76F,RvR -3%,heat +6%,no,0
+2026-09-20,Matt Olson,ATL,824139,Hunter Brown,3,card,17.8,24.3,,+462,,,park +3%,88F · wind out 5 (roof: half),LvR +8%,heat -11%,no,0
+2026-09-20,Mookie Betts,LAD,823896,Matt Wilkinson,1,card,17.6,23.9,,+469,,,park +5%,83F · wind out 6,RvL +12%,heat -4%,no,0
+2026-09-20,James Wood,WSN,823001,Quinn Mathews,1,card,17.2,23.2,,+482,,,park -7%,91F,LvL -22%,heat +2%,no,0
+2026-09-20,Sal Stewart,CIN,824462,David Peterson,3,card,17.2,23.2,,+481,,,park +25%,88F,RvL +12%,heat -2%,no,0
+2026-09-20,Brandon Lowe,PIT,823329,Michael Wacha,2,card,17.1,23.1,,+483,,,park -9%,71F,LvR +8%,heat +13%,no,0
+2026-09-20,Colson Montgomery,CHW,824546,Troy Melton,6,card,17.1,17.5,14.1,+485,425,-25.8,park +9%,64F,LvR +8%,heat +1%,no,0
+2026-09-20,Dominic Canzone,SEA,824300,Tomoyuki Sugano,3,card,16.8,22.4,,+496,,,park +9%,76F · wind in 3,LvR +8%,heat -2%,no,0
+2026-09-20,Shea Langeliers,ATH,824381,Gavin Williams,2,card,16.5,21.9,,+505,,,park -3%,66F · wind in 5,RvR -3%,heat -0%,no,0
+2026-09-20,Drake Baldwin,ATL,824139,Hunter Brown,1,card,16.4,21.7,,+510,,,park +3%,88F · wind out 5 (roof: half),LvR +8%,heat -11%,no,0
+2026-09-20,Francisco Lindor,NYM,823570,Cristopher Sánchez *,1,card,16.2,21.4,,+516,,,park -4%,68F,SvL +12%,heat +0%,no,0
+2026-09-20,Griffin Conine,MIA,823247,Walker Buehler,3,card,16.1,21.1,,+522,,,park -4%,78F,LvR +8%,heat +9%,no,0
+2026-09-20,Coby Mayo,BAL,824789,Jacob Misiorowski,4,card,16.0,19.7,15.3,+524,460,-14.0,park +4% [low-conf],76F,RvR -3%,heat -2%,no,0
+2026-09-20,Kazuma Okamoto,TOR,822844,Jacob deGrom,4,card,16.0,20.9,,+526,,,park +2%,96F (roof: half),RvR -3%,heat -15%,no,0
+2026-09-20,Randy Arozarena,SEA,824300,Tomoyuki Sugano,2,card,16.0,20.9,,+527,,,park +9%,76F · wind in 3,RvR -3%,heat +0%,no,0
+2026-09-20,Corey Seager,TEX,822844,Spencer Miles,2,card,15.9,20.8,,+528,,,park +2%,96F (roof: half),LvR +8%,heat +17%,no,0
+2026-09-20,Jordan Walker,STL,823001,Jake Irvin,4,card,15.9,20.7,,+529,,,park -7%,91F,RvR -3%,heat -1%,no,0
+2026-09-20,Alec Burleson,STL,823001,Jake Irvin,3,card,15.8,20.6,,+532,,,park -7%,91F,LvR +8%,heat +15%,no,0
+2026-09-20,Ketel Marte,ARI,825028,Will Warren,2,card,15.7,20.3,,+538,,,park +4%,100F (roof: half),SvR +8%,heat +0%,void,
