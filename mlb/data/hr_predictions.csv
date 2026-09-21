@@ -2232,33 +2232,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-20,Jordan Walker,STL,823001,Jake Irvin,4,card,15.9,20.7,,+529,,,park -7%,91F,RvR -3%,heat -1%,-0.4,
 2026-09-20,Alec Burleson,STL,823001,Jake Irvin,3,card,15.8,20.6,,+532,,,park -7%,91F,LvR +8%,heat +15%,0.0,
 2026-09-20,Ketel Marte,ARI,825028,Will Warren,2,card,15.7,20.3,,+538,,,park +4%,100F (roof: half),SvR +8%,heat +0%,-0.8,
-2026-09-21,Pete Alonso,BAL,824787,Trey Yesavage,2,proj,17.9,24.4,17.8,+457,400,-10.8,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -4%,-0.1,
-2026-09-21,James Wood,WSN,824221,River Ryan *,3,proj,17.6,20.3,15.6,+469,410,-20.2,park -5%,59F,,,-3.3,floor
-2026-09-21,Kody Clemens,MIN,823169,Blade Tidwell,4,proj,16.6,17.1,13.9,+502,440,-24.7,park -14%,57F · wind out 4,LvR +8%,heat -1%,-1.5,
-2026-09-21,Coby Mayo,BAL,824787,Trey Yesavage,4,proj,16.3,19.7,15.3,+513,450,-15.8,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -1%,-0.5,
-2026-09-21,Kazuma Okamoto,TOR,824787,Shane Baz,1,proj,15.6,24.2,17.7,+541,475,2.0,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -1%,2.6,
-2026-09-21,Samuel Basallo,BAL,824787,Trey Yesavage,5,proj,15.6,16.2,13.5,+541,475,-22.7,park +4% [low-conf],74F · wind in 5,LvR +8%,heat +2%,-1.3,
-2026-09-21,Christian Encarnacion-Strand,BAL,824787,Trey Yesavage,9,proj,15.5,12.2,9.8,+547,480,-43.1,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -3%,-6.3,floor
-2026-09-21,Gunnar Henderson,BAL,824787,Trey Yesavage,1,proj,15.5,18.0,14.4,+547,480,-16.5,park +4% [low-conf],74F · wind in 5,LvR +8%,heat -8%,-0.5,
-2026-09-21,Spencer Torkelson,DET,824221,DJ Herz *,3,proj,15.5,17.7,14.3,+547,480,-17.3,park -5%,59F,,,-5.6,floor
-2026-09-21,Daylen Lile,WSN,824221,River Ryan *,1,proj,14.7,17.5,14.1,+580,510,-13.9,park -5%,59F,,,,new
-2026-09-21,Dillon Dingler,DET,824221,DJ Herz *,2,proj,14.7,19.9,15.4,+580,510,-5.9,park -5%,59F,,,-3.3,floor
-2026-09-21,Dylan Crews,WSN,824221,River Ryan *,5,proj,14.3,11.4,9.6,+597,525,-40.2,park -5%,59F,,,,new
-2026-09-21,Royce Lewis,MIN,823169,Blade Tidwell,5,proj,14.0,11.6,9.6,+614,540,-38.4,park -14%,57F · wind out 4,RvR -3%,heat +8%,-3.2,floor
-2026-09-21,CJ Abrams,WSN,824221,River Ryan *,2,proj,13.8,20.0,15.5,+625,550,0.7,park -5%,59F,,,-2.6,floor
-2026-09-21,Riley Greene,DET,824221,DJ Herz *,4,proj,13.8,16.5,13.6,+625,550,-11.7,park -5%,59F,,,-0.8,
-2026-09-21,Bryce Eldridge,SFG,823169,Zebby Matthews,2,proj,13.6,16.5,,+635,,,park -14%,57F · wind out 4,LvR +8%,heat +3%,,new
-2026-09-21,Dylan Beavers,BAL,824787,Trey Yesavage,7,proj,13.3,8.5,7.2,+653,575,-51.1,park +4% [low-conf],74F · wind in 5,LvR +8%,heat -6%,,new
-2026-09-21,Ryan Jeffers,MIN,823169,Blade Tidwell,7,proj,13.3,11.5,9.6,+653,575,-35.2,park -14%,57F · wind out 4,RvR -3%,heat +2%,-7.0,floor
-2026-09-21,Vladimir Guerrero Jr.,TOR,824787,Shane Baz,3,proj,13.3,10.1,8.9,+653,575,-39.7,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -5%,,new
-2026-09-21,Abimelec Ortiz,WSN,824221,River Ryan *,9,proj,12.8,8.3,7.2,+681,600,-49.6,park -5%,59F,,,-16.7,floor
-2026-09-21,Josh Bell,MIN,823169,Blade Tidwell,1,proj,12.8,17.1,13.9,+681,600,-2.4,park -14%,57F · wind out 4,SvR +8%,heat +14%,-1.2,
-2026-09-21,Kevin McGonigle,DET,824221,DJ Herz *,1,proj,12.4,14.0,11.3,+708,625,-17.9,park -5%,59F,,,,new
-2026-09-21,Brooks Lee,MIN,823169,Blade Tidwell,2,proj,12.0,15.6,13.1,+736,650,-1.5,park -14%,57F · wind out 4,SvR +8%,heat +2%,-3.2,floor
-2026-09-21,George Springer,TOR,824787,Shane Baz,4,proj,12.0,13.2,10.4,+736,650,-22.0,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -1%,-3.2,floor
-2026-09-21,Hao-Yu Lee,DET,824221,DJ Herz *,8,proj,12.0,9.0,7.8,+736,650,-41.5,park -5%,59F,,,,new
-2026-09-21,Brady House,WSN,824221,River Ryan *,8,proj,10.6,8.8,7.6,+848,750,-35.6,park -5%,59F,,,,new
-2026-09-21,Gleyber Torres,DET,824221,DJ Herz *,7,proj,10.6,7.9,7.2,+848,750,-39.0,park -5%,59F,,,,new
-2026-09-21,Colton Cowser,BAL,824787,Trey Yesavage,6,proj,10.0,12.7,10.0,+904,800,-10.4,park +4% [low-conf],74F · wind in 5,LvR +8%,heat -7%,,new
-2026-09-21,Alejandro Kirk,TOR,824787,Shane Baz,7,proj,9.4,10.2,9.0,+959,850,-14.6,park +4% [low-conf],74F · wind in 5,RvR -3%,heat -8%,,new
-2026-09-21,Keibert Ruiz,WSN,824221,River Ryan *,7,proj,9.4,9.2,7.9,+959,850,-24.9,park -5%,59F,,,,new
+2026-09-21,Pete Alonso,BAL,824787,Trey Yesavage,2,proj,17.9,24.3,17.8,+457,400,-10.9,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -4%,-0.1,
+2026-09-21,James Wood,WSN,824221,River Ryan *,3,proj,17.2,20.6,15.8,+480,420,-17.9,park -5%,62F,,,-3.1,floor
+2026-09-21,Kody Clemens,MIN,823169,Blade Tidwell,4,proj,16.6,17.5,14.1,+502,440,-23.6,park -14%,62F · wind out 5,LvR +8%,heat -1%,-1.3,
+2026-09-21,Coby Mayo,BAL,824787,Trey Yesavage,4,proj,16.0,20.0,15.5,+524,460,-13.3,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -1%,-0.3,
+2026-09-21,Kazuma Okamoto,TOR,824787,Shane Baz,1,proj,15.6,25.4,18.4,+541,475,5.9,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -1%,3.3,STANDOUT
+2026-09-21,Samuel Basallo,BAL,824787,Trey Yesavage,5,proj,15.6,16.9,13.8,+541,475,-20.5,park +4% [low-conf],73F · wind in 5,LvR +8%,heat +2%,-1.0,
+2026-09-21,Spencer Torkelson,DET,824221,DJ Herz *,3,proj,15.6,18.5,14.7,+541,475,-15.7,park -5%,62F,RvL +12%,,-5.2,floor
+2026-09-21,Christian Encarnacion-Strand,BAL,824787,Trey Yesavage,9,proj,15.5,12.5,9.9,+547,480,-42.6,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -3%,-6.2,floor
+2026-09-21,Gunnar Henderson,BAL,824787,Trey Yesavage,1,proj,15.5,18.0,14.4,+547,480,-16.4,park +4% [low-conf],73F · wind in 5,LvR +8%,heat -8%,-0.5,
+2026-09-21,Bryce Eldridge,SFG,823169,Zebby Matthews,2,proj,14.7,18.5,,+582,,,park -14%,62F · wind out 5,LvR +8%,heat +3%,,new
+2026-09-21,Dylan Crews,WSN,824221,River Ryan *,5,proj,14.7,11.8,9.7,+580,510,-40.9,park -5%,62F,,,,new
+2026-09-21,Daylen Lile,WSN,824221,River Ryan *,1,proj,14.3,17.9,14.4,+597,525,-10.3,park -5%,62F,,,,new
+2026-09-21,Dillon Dingler,DET,824221,DJ Herz *,2,proj,14.3,20.8,15.9,+597,525,-0.4,park -5%,62F,RvL +12%,,-2.8,floor
+2026-09-21,Royce Lewis,MIN,823169,Blade Tidwell,5,proj,14.3,12.0,9.7,+597,525,-39.2,park -14%,62F · wind out 5,RvR -3%,heat +8%,-3.1,floor
+2026-09-21,CJ Abrams,WSN,824221,River Ryan *,2,proj,13.8,20.2,15.6,+625,550,1.5,park -5%,62F,,,-2.5,floor
+2026-09-21,Dylan Beavers,BAL,824787,Trey Yesavage,7,proj,13.8,9.2,7.9,+625,550,-48.4,park +4% [low-conf],73F · wind in 5,LvR +8%,heat -6%,,new
+2026-09-21,Riley Greene,DET,824221,DJ Herz *,4,proj,13.8,15.7,13.2,+625,550,-14.4,park -5%,62F,LvL -22%,,-1.2,
+2026-09-21,Ryan Jeffers,MIN,823169,Blade Tidwell,7,proj,13.8,11.8,9.7,+625,550,-37.0,park -14%,62F · wind out 5,RvR -3%,heat +2%,-6.9,floor
+2026-09-21,Josh Bell,MIN,823169,Blade Tidwell,1,proj,13.3,17.5,14.1,+653,575,-4.7,park -14%,62F · wind out 5,SvR +8%,heat +14%,-1.0,
+2026-09-21,Vladimir Guerrero Jr.,TOR,824787,Shane Baz,3,proj,13.3,10.1,8.9,+653,575,-40.0,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -5%,,new
+2026-09-21,Abimelec Ortiz,WSN,824221,River Ryan *,9,proj,12.0,10.4,9.2,+736,650,-30.9,park -5%,62F,,,-14.7,floor
+2026-09-21,Brooks Lee,MIN,823169,Blade Tidwell,2,proj,12.0,16.0,13.3,+736,650,0.1,park -14%,62F · wind out 5,SvR +8%,heat +2%,-2.9,floor
+2026-09-21,George Springer,TOR,824787,Shane Baz,4,proj,12.0,13.2,10.4,+736,650,-21.8,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -1%,-3.2,floor
+2026-09-21,Gleyber Torres,DET,824221,DJ Herz *,7,proj,12.0,8.3,7.2,+736,650,-46.0,park -5%,62F,RvL +12%,,,new
+2026-09-21,Hao-Yu Lee,DET,824221,DJ Herz *,8,proj,12.0,11.0,9.4,+736,650,-29.3,park -5%,62F,RvL +12%,,,new
+2026-09-21,Kevin McGonigle,DET,824221,DJ Herz *,1,proj,12.0,14.8,12.2,+736,650,-8.9,park -5%,62F,LvL -22%,,,new
+2026-09-21,Brady House,WSN,824221,River Ryan *,8,proj,10.0,9.3,8.1,+904,800,-27.5,park -5%,62F,,,,new
+2026-09-21,Colton Cowser,BAL,824787,Trey Yesavage,6,proj,10.0,12.8,10.0,+904,800,-10.1,park +4% [low-conf],73F · wind in 5,LvR +8%,heat -7%,,new
+2026-09-21,Drew Gilbert,SFG,823169,Zebby Matthews,3,proj,10.0,12.9,10.0,+904,800,-9.6,park -14%,62F · wind out 5,LvR +8%,heat -3%,,new
+2026-09-21,Alejandro Kirk,TOR,824787,Shane Baz,7,proj,9.4,10.3,9.1,+959,850,-13.7,park +4% [low-conf],73F · wind in 5,RvR -3%,heat -8%,,new
