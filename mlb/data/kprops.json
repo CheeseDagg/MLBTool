@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T21:20+00:00",
+ "generated": "2026-09-21T23:26+00:00",
  "board": [
   {
    "pitcher": "Trey Yesavage",
@@ -84,40 +84,40 @@
   {
    "pitcher": "Shane Baz",
    "opp": "Toronto Blue Jays",
-   "lam": 4.7,
+   "lam": 4.55,
    "k9_regressed": 8.02,
-   "exp_ip": 5.77,
+   "exp_ip": 5.58,
    "opp_mult": 0.915,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5061,
-     "fair_over": -102,
-     "fair_under": 102
+     "p_over": 0.4776,
+     "fair_over": 109,
+     "fair_under": -109
     },
     {
      "line": 5.5,
-     "p_over": 0.3322,
-     "fair_over": 201,
-     "fair_under": -201
+     "p_over": 0.3059,
+     "fair_over": 227,
+     "fair_under": -227
     },
     {
      "line": 6.5,
-     "p_over": 0.1959,
-     "fair_over": 410,
-     "fair_under": -410
+     "p_over": 0.1756,
+     "fair_over": 469,
+     "fair_under": -469
     },
     {
      "line": 7.5,
-     "p_over": 0.1043,
-     "fair_over": 859,
-     "fair_under": -859
+     "p_over": 0.0909,
+     "fair_over": 1000,
+     "fair_under": -1000
     },
     {
      "line": 8.5,
-     "p_over": 0.0505,
-     "fair_over": 1882,
-     "fair_under": -1882
+     "p_over": 0.0427,
+     "fair_over": 2243,
+     "fair_under": -2243
     }
    ]
   },
@@ -160,9 +160,89 @@
      "fair_under": -3077
     }
    ]
+  },
+  {
+   "pitcher": "DJ Herz",
+   "opp": "Detroit Tigers",
+   "lam": 3.0,
+   "k9_regressed": 8.86,
+   "exp_ip": 3.0,
+   "opp_mult": 1.016,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1851,
+     "fair_over": 440,
+     "fair_under": -440
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0841,
+     "fair_over": 1089,
+     "fair_under": -1089
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0336,
+     "fair_over": 2876,
+     "fair_under": -2876
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0119,
+     "fair_over": 8272,
+     "fair_under": -8272
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0038,
+     "fair_over": 26090,
+     "fair_under": -26090
+    }
+   ]
+  },
+  {
+   "pitcher": "River Ryan",
+   "opp": "Washington Nationals",
+   "lam": 2.84,
+   "k9_regressed": 8.63,
+   "exp_ip": 3.0,
+   "opp_mult": 0.987,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.1586,
+     "fair_over": 530,
+     "fair_under": -530
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.0687,
+     "fair_over": 1356,
+     "fair_under": -1356
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0261,
+     "fair_over": 3734,
+     "fair_under": -3734
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0088,
+     "fair_over": 11258,
+     "fair_under": -11258
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0027,
+     "fair_over": 37348,
+     "fair_under": -37348
+    }
+   ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 17129 (used 2871) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 17122 (used 2878) \u00b7 whiff rest:30 rows",
  "n_markets": 4,
  "n_plays": 0,
  "plays": [],
@@ -175,6 +255,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 0,
+ "n_unbettable": 1,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
