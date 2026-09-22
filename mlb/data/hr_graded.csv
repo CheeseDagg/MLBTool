@@ -2371,3 +2371,4 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-21,Josh Smith,TOR,824787,Shane Baz,7,card,9.4,9.5,8.3,+959,850,-21.4,park +4% [low-conf],65F,LvR +8%,heat +5%,no,0
 2026-09-21,Rece Hinds,BAL,824787,Trey Yesavage,7,card,9.4,7.9,7.2,+959,850,-31.8,park +4% [low-conf],65F,RvR -3%,,no,0
 2026-09-21,Ben Malgeri,DET,824221,DJ Herz *,5,card,9.0,12.7,10.0,+1015,900,-0.5,park -5%,56F · wind out 3,RvL +12%,,hr,1
+2026-09-22,Ben Rice,NYY,823543,Nick Martinez,1,proj,15.6,27.7,19.6,+541,475,12.9,park +14%,65F · wind in 11,LvR +8%,heat +18%,no,0
