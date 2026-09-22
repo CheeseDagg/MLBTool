@@ -2262,33 +2262,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-21,Josh Smith,TOR,824787,Shane Baz,7,card,9.4,9.5,8.3,+959,850,-21.4,park +4% [low-conf],65F,LvR +8%,heat +5%,,new
 2026-09-21,Rece Hinds,BAL,824787,Trey Yesavage,7,card,9.4,7.9,7.2,+959,850,-31.8,park +4% [low-conf],65F,RvR -3%,,,new
 2026-09-21,Ben Malgeri,DET,824221,DJ Herz *,5,card,9.0,12.7,10.0,+1015,900,-0.5,park -5%,56F · wind out 3,RvL +12%,,,new
-2026-09-22,Ketel Marte,ARI,824302,Kyle Freeland,2,card,26.4,21.6,16.3,+279,240,-44.5,park +9%,85F · wind in 3,SvL +12%,heat +9%,-0.2,
-2026-09-22,Shea Langeliers,ATH,824953,Yusei Kikuchi,5,proj,23.0,21.6,16.3,+335,290,-36.3,park +6% [low-conf],77F,RvL +12%,heat +16%,-3.1,floor
-2026-09-22,Hunter Goodman,COL,824302,Michael Soroka,4,card,22.4,23.9,17.6,+346,300,-29.6,park +9%,85F · wind in 3,RvR -3%,heat +1%,-1.3,
-2026-09-22,Yordan Alvarez,HOU,823089,Logan Gilbert,1,proj,22.4,28.8,20.2,+346,300,-19.0,park -4%,65F (roof: half),LvR +8%,heat +9%,1.0,
-2026-09-22,Cal Raleigh,SEA,823089,Cristian Javier,5,proj,22.1,17.4,14.1,+352,305,-42.9,park -4%,65F (roof: half),SvR +8%,heat +10%,-2.0,floor
-2026-09-22,Kyle Schwarber,PHI,823412,Dustin May,1,card,21.9,27.9,19.7,+357,310,-19.1,park +9%,64F · wind in 7,LvR +8%,heat +2%,-0.6,
-2026-09-22,Matt Olson,ATL,824867,Brandon Williamson,3,card,21.9,24.4,17.8,+357,310,-26.8,park +4%,85F,LvL -22%,,-0.1,
-2026-09-22,Juan Soto,NYM,822840,MacKenzie Gore,6,proj,21.1,18.5,14.7,+374,325,-37.6,park +2%,96F (roof: half),LvL -22%,heat +11%,-3.2,floor
-2026-09-22,Fernando Tatis Jr.,SDP,823897,TBD *,1,proj,20.9,21.8,16.5,+379,330,-29.2,park +5%,82F · wind out 5,,,0.1,
-2026-09-22,Zach Neto,LAA,824953,Brady Basso,1,proj,20.9,22.4,16.8,+379,330,-27.7,park +6% [low-conf],77F,RvL +12%,heat +16%,0.5,
-2026-09-22,Jake Burger,TEX,822840,Sean Manaea,4,card,20.4,21.0,16.0,+391,340,-29.5,park +2%,96F (roof: half),RvL +12%,heat +18%,1.3,
-2026-09-22,Corey Seager,TEX,822840,Sean Manaea,2,card,19.9,21.8,16.5,+402,350,-25.9,park +2%,96F (roof: half),LvL -22%,heat +9%,0.2,
-2026-09-22,Manny Machado,SDP,823897,TBD *,2,proj,19.9,21.2,16.2,+402,350,-27.3,park +5%,82F · wind out 5,,,0.3,
-2026-09-22,Mike Trout,LAA,824953,Brady Basso,2,proj,19.9,20.9,16.0,+402,350,-28.2,park +6% [low-conf],77F,RvL +12%,heat +7%,-0.1,
-2026-09-22,Ronald Acuña Jr.,ATL,824867,Brandon Williamson,1,card,19.9,22.6,16.9,+402,350,-24.0,park +4%,85F,RvL +12%,heat +4%,1.6,
-2026-09-22,Pete Alonso,BAL,824785,Max Scherzer,2,proj,19.3,27.1,,+418,,,park +4% [low-conf],60F · wind in 7,RvR -3%,heat +6%,1.4,
-2026-09-22,Corbin Carroll,ARI,824302,Kyle Freeland,7,card,19.1,12.8,10.0,+424,370,-53.0,park +9%,85F · wind in 3,LvL -22%,,-3.8,floor
-2026-09-22,Wyatt Langford,TEX,822840,Sean Manaea,1,card,19.1,21.1,16.1,+424,370,-24.4,park +2%,96F (roof: half),RvL +12%,heat +6%,2.2,
-2026-09-22,Ben Rice,NYY,823543,Nick Martinez,1,proj,17.9,27.7,19.7,+457,400,-1.7,park +14%,68F · wind in 12,LvR +8%,heat +18%,-0.4,
-2026-09-22,Ben Rice,NYY,823494,Drew Rasmussen,1,proj,17.9,26.7,19.1,+457,400,-4.4,park +14%,68F · wind in 12,LvR +8%,heat +16%,-1.0,
-2026-09-22,Elly De La Cruz,CIN,824867,JR Ritchie,2,card,17.9,22.9,17.1,+457,400,-14.6,park +4%,85F,SvR +8%,heat +3%,0.2,
-2026-09-22,Jose Siri,LAA,824953,Brady Basso,8,proj,17.9,13.4,10.6,+457,400,-46.9,park +6% [low-conf],77F,RvL +12%,,-9.4,floor
-2026-09-22,Nolan Arenado,ARI,824302,Kyle Freeland,5,card,17.9,18.1,14.4,+457,400,-27.8,park +9%,85F · wind in 3,RvL +12%,heat +10%,,new
-2026-09-22,Kazuma Okamoto,TOR,824785,Chris Bassitt,1,proj,17.8,24.2,,+463,,,park +4% [low-conf],60F · wind in 7,RvR -3%,heat +0%,3.2,STANDOUT
-2026-09-22,Mickey Moniak,COL,824302,Michael Soroka,7,card,17.6,15.0,12.4,+469,410,-36.6,park +9%,85F · wind in 3,LvR +8%,,-2.3,floor
-2026-09-22,James Wood,WSN,824222,Drew Anderson,1,card,17.1,24.3,17.8,+485,425,-6.6,park -5%,63F,LvR +8%,heat +9%,-0.9,
-2026-09-22,Max Muncy,ATH,824953,Yusei Kikuchi,1,proj,16.9,25.7,18.6,+491,430,-1.7,park +6% [low-conf],77F,LvL -22%,,2.0,
-2026-09-22,Miguel Vargas,CHW,824061,Daniel Lynch IV,1,card,16.9,24.5,17.9,+491,430,-5.0,park -4% [low-conf],73F · wind in 6,RvL +12%,heat +0%,1.3,
-2026-09-22,Francisco Lindor,NYM,822840,MacKenzie Gore,7,proj,16.6,15.0,12.4,+502,440,-33.1,park +2%,96F (roof: half),SvL +12%,,-4.6,floor
-2026-09-22,Junior Caminero,TBR,823543,Carlos Rodón *,1,proj,16.6,28.5,20.1,+502,440,8.4,park +14%,68F · wind in 12,RvL +12%,heat +15%,1.8,
+2026-09-22,Ketel Marte,ARI,824302,Kyle Freeland,2,card,26.4,20.3,15.6,+279,240,-46.8,park +9%,71F · wind in 7,SvL +12%,heat +9%,-0.9,
+2026-09-22,Shea Langeliers,ATH,824953,Yusei Kikuchi,2,card,23.0,26.9,19.2,+335,290,-25.0,park +6% [low-conf],81F · wind out 3,RvL +12%,heat +16%,-0.2,
+2026-09-22,Hunter Goodman,COL,824302,Michael Soroka,4,card,22.4,22.8,17.0,+346,300,-32.0,park +9%,71F · wind in 7,RvR -3%,heat +1%,-1.9,
+2026-09-22,Yordan Alvarez,HOU,823089,Logan Gilbert,2,card,22.4,27.2,19.4,+346,300,-22.5,park -4%,no wx,LvR +8%,heat +9%,0.2,
+2026-09-22,Cal Raleigh,SEA,823089,Cristian Javier,4,card,22.1,18.9,14.9,+352,305,-39.7,park -4%,no wx,SvR +8%,heat +10%,-1.2,
+2026-09-22,Matt Olson,ATL,824867,Brandon Williamson,3,card,21.9,24.1,17.7,+357,310,-27.5,park +4%,80F,LvL -22%,,-0.2,
+2026-09-22,Juan Soto,NYM,822840,MacKenzie Gore,2,card,21.1,24.5,17.9,+374,325,-24.0,park +2%,96F (roof: half),LvL -22%,heat +11%,0.0,
+2026-09-22,Fernando Tatis Jr.,SDP,823897,Brock Stewart,1,card,20.9,20.8,15.9,+379,330,-31.5,park +5%,77F · wind out 5,RvR -3%,heat -2%,-0.5,
+2026-09-22,Ronald Acuña Jr.,ATL,824867,Brandon Williamson,1,card,20.9,22.3,16.7,+379,330,-28.1,park +4%,80F,RvL +12%,heat +4%,1.4,
+2026-09-22,Zach Neto,LAA,824953,Brady Basso,1,card,20.9,22.8,17.0,+379,330,-26.9,park +6% [low-conf],81F · wind out 3,RvL +12%,heat +16%,0.7,
+2026-09-22,Manny Machado,SDP,823897,Brock Stewart,3,card,20.4,18.9,14.9,+391,340,-34.5,park +5%,77F · wind out 5,RvR -3%,heat -3%,-1.0,
+2026-09-22,Mike Trout,LAA,824953,Brady Basso,2,card,20.4,21.3,16.2,+391,340,-28.8,park +6% [low-conf],81F · wind out 3,RvL +12%,heat +7%,0.1,
+2026-09-22,Corey Seager,TEX,822840,Sean Manaea,2,card,19.9,21.7,16.4,+402,350,-26.2,park +2%,96F (roof: half),LvL -22%,heat +9%,0.1,
+2026-09-22,Jake Burger,TEX,822840,Sean Manaea,4,card,19.9,20.9,16.0,+402,350,-28.2,park +2%,96F (roof: half),RvL +12%,heat +18%,1.3,
+2026-09-22,Pete Alonso,BAL,824785,Max Scherzer,2,proj,19.3,27.0,,+419,,,park +4% [low-conf],59F · wind in 7,RvR -3%,heat +6%,1.4,
+2026-09-22,Corbin Carroll,ARI,824302,Kyle Freeland,7,card,19.1,12.1,9.8,+424,370,-54.1,park +9%,71F · wind in 7,LvL -22%,,-4.0,floor
+2026-09-22,Kyle Schwarber,PHI,823412,Dustin May,1,card,19.1,27.8,19.7,+424,370,-7.4,park +9%,61F · wind in 5,LvR +8%,heat +2%,-0.6,
+2026-09-22,Wyatt Langford,TEX,822840,Sean Manaea,1,card,19.1,21.0,16.0,+424,370,-24.7,park +2%,96F (roof: half),RvL +12%,heat +6%,2.1,
+2026-09-22,Ben Rice,NYY,823543,Nick Martinez,1,card,17.9,28.0,19.8,+457,400,-1.1,park +14%,63F · wind in 6,LvR +8%,heat +18%,-0.3,
+2026-09-22,Ben Rice,NYY,823494,Drew Rasmussen,1,card,17.9,27.0,19.2,+457,400,-3.8,park +14%,63F · wind in 6,LvR +8%,heat +16%,-0.9,
+2026-09-22,Elly De La Cruz,CIN,824867,JR Ritchie,2,card,17.9,22.7,16.9,+457,400,-15.4,park +4%,80F,SvR +8%,heat +3%,-0.1,
+2026-09-22,Nolan Arenado,ARI,824302,Kyle Freeland,5,card,17.9,17.1,13.9,+457,400,-30.4,park +9%,71F · wind in 7,RvL +12%,heat +10%,,new
+2026-09-22,Kazuma Okamoto,TOR,824785,Chris Bassitt,1,proj,17.7,24.2,,+464,,,park +4% [low-conf],59F · wind in 7,RvR -3%,heat +0%,3.1,STANDOUT
+2026-09-22,Mickey Moniak,COL,824302,Michael Soroka,7,card,17.6,14.2,11.5,+469,410,-41.1,park +9%,71F · wind in 7,LvR +8%,,-3.2,floor
+2026-09-22,Drake Baldwin,ATL,824867,Brandon Williamson,2,card,17.2,20.2,15.6,+480,420,-18.8,park +4%,80F,LvL -22%,,-2.0,floor
+2026-09-22,Miguel Vargas,CHW,824061,Daniel Lynch IV,1,card,17.1,24.5,17.9,+485,425,-6.0,park -4% [low-conf],72F · wind in 5,RvL +12%,heat +0%,1.3,
+2026-09-22,Francisco Lindor,NYM,822840,MacKenzie Gore,1,card,16.9,23.2,17.2,+491,430,-8.9,park +2%,96F (roof: half),SvL +12%,heat +5%,0.2,
+2026-09-22,Max Muncy,LAD,823897,Michael King,4,card,16.9,20.8,15.9,+491,430,-15.8,park +5%,77F · wind out 5,LvR +8%,,-0.7,
+2026-09-22,Jose Siri,LAA,824953,Brady Basso,6,card,16.6,16.0,13.3,+502,440,-28.1,park +6% [low-conf],81F · wind out 3,RvL +12%,,-6.7,floor
+2026-09-22,Coby Mayo,BAL,824785,Max Scherzer,4,proj,16.3,21.4,,+515,,,park +4% [low-conf],59F · wind in 7,RvR -3%,heat +5%,0.9,
