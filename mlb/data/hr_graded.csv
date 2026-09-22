@@ -2341,3 +2341,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-20,Jordan Walker,STL,823001,Jake Irvin,4,card,15.9,20.7,,+529,,,park -7%,91F,RvR -3%,heat -1%,no,0
 2026-09-20,Alec Burleson,STL,823001,Jake Irvin,3,card,15.8,20.6,,+532,,,park -7%,91F,LvR +8%,heat +15%,no,0
 2026-09-20,Ketel Marte,ARI,825028,Will Warren,2,card,15.7,20.3,,+538,,,park +4%,100F (roof: half),SvR +8%,heat +0%,void,
+2026-09-21,Pete Alonso,BAL,824787,Trey Yesavage,2,card,17.9,24.0,17.7,+457,400,-11.7,park +4% [low-conf],65F,RvR -3%,heat -4%,hr,2
+2026-09-21,Coby Mayo,BAL,824787,Trey Yesavage,4,card,16.9,19.7,15.3,+491,430,-18.7,park +4% [low-conf],65F,RvR -3%,heat -1%,no,0
+2026-09-21,Kazuma Okamoto,TOR,824787,Shane Baz,6,card,16.9,17.6,14.2,+491,430,-24.7,park +4% [low-conf],65F,RvR -3%,heat -1%,no,0
+2026-09-21,Kody Clemens,MIN,823169,Blade Tidwell,4,card,16.3,17.9,14.4,+513,450,-20.9,park -14%,62F · wind out 11,LvR +8%,heat -1%,no,0
+2026-09-21,Christian Encarnacion-Strand,BAL,824787,Trey Yesavage,5,card,15.6,16.7,13.7,+541,475,-21.1,park +4% [low-conf],65F,RvR -3%,heat -3%,no,0
+2026-09-21,Aaron Sabato,MIN,823169,Blade Tidwell,7,card,14.9,18.8,,+573,,,park -14%,62F · wind out 11,RvR -3%,,no,0
+2026-09-21,Gunnar Henderson,BAL,824787,Trey Yesavage,3,card,14.9,15.3,12.8,+569,500,-23.1,park +4% [low-conf],65F,LvR +8%,heat -8%,hr,1
+2026-09-21,Samuel Basallo,BAL,824787,Trey Yesavage,6,card,14.9,15.5,12.9,+569,500,-22.3,park +4% [low-conf],65F,LvR +8%,heat +2%,no,0
+2026-09-21,Sean Keys,TOR,824787,Shane Baz,5,card,14.9,17.7,14.2,+569,500,-14.7,park +4% [low-conf],65F,LvR +8%,,no,0
+2026-09-21,Ryan Jeffers,MIN,823169,Blade Tidwell,5,card,13.3,14.2,11.5,+653,575,-22.5,park -14%,62F · wind out 11,RvR -3%,heat +2%,no,0
+2026-09-21,Dylan Crews,WSN,824221,River Ryan *,5,card,12.8,11.6,9.6,+681,600,-32.7,park -5%,56F · wind out 3,RvR -3%,,no,0
+2026-09-21,Spencer Torkelson,DET,824221,DJ Herz *,7,card,12.8,13.5,10.7,+681,600,-25.2,park -5%,56F · wind out 3,RvL +12%,,hr,1
+2026-09-21,Emmanuel Rodriguez,MIN,823169,Blade Tidwell,8,card,12.4,16.6,13.7,+708,625,-0.9,park -14%,62F · wind out 11,LvR +8%,,hr,1
+2026-09-21,CJ Abrams,WSN,824221,River Ryan *,4,card,12.0,17.6,14.2,+736,650,6.5,park -5%,56F · wind out 3,LvR +8%,,no,0
+2026-09-21,Dillon Dingler,DET,824221,DJ Herz *,6,card,12.0,15.3,12.8,+736,650,-3.8,park -5%,56F · wind out 3,RvL +12%,,no,0
+2026-09-21,George Springer,TOR,824787,Shane Baz,4,card,12.0,13.1,10.2,+736,650,-23.3,park +4% [low-conf],65F,RvR -3%,heat -1%,no,0
+2026-09-21,Brooks Lee,MIN,823169,Blade Tidwell,3,card,11.2,15.2,12.6,+792,700,1.1,park -14%,62F · wind out 11,SvR +8%,heat +2%,hr,1
+2026-09-21,Dylan Beavers,BAL,824787,Trey Yesavage,1,card,11.2,14.5,11.8,+792,700,-5.4,park +4% [low-conf],65F,LvR +8%,heat -6%,no,0
+2026-09-21,James Wood,WSN,824221,River Ryan *,1,card,11.2,23.8,17.5,+792,700,40.2,park -5%,56F · wind out 3,LvR +8%,,no,0
+2026-09-21,Walker Jenkins,MIN,823169,Blade Tidwell,1,card,11.2,20.1,15.5,+792,700,24.2,park -14%,62F · wind out 11,LvR +8%,,no,0
+2026-09-21,Eduardo Valencia,DET,824221,DJ Herz *,4,card,10.6,20.1,15.5,+848,750,32.0,park -5%,56F · wind out 3,RvL +12%,,no,0
+2026-09-21,Alejandro Kirk,TOR,824787,Shane Baz,2,card,10.0,15.0,12.4,+904,800,11.5,park +4% [low-conf],65F,RvR -3%,heat -8%,no,0
+2026-09-21,Victor Bericoto,SFG,823169,Zebby Matthews,9,proj,9.9,12.5,,+909,,,park -14%,62F · wind out 11,RvR -3%,heat -1%,void,
+2026-09-21,Marcelo Mayer,SFG,823169,Zebby Matthews,2,proj,9.8,12.3,,+917,,,park -14%,62F · wind out 11,LvR +8%,heat -2%,no,0
+2026-09-21,Osleivis Basabe,SFG,823169,Zebby Matthews,6,proj,9.7,11.9,,+930,,,park -14%,62F · wind out 11,RvR -3%,heat -2%,no,0
+2026-09-21,Colton Cowser,BAL,824787,Trey Yesavage,8,card,9.4,10.7,9.3,+959,850,-11.3,park +4% [low-conf],65F,LvR +8%,heat -7%,no,0
+2026-09-21,Daylen Lile,WSN,824221,River Ryan *,2,card,9.4,16.8,13.7,+959,850,30.5,park -5%,56F · wind out 3,LvR +8%,,no,0
+2026-09-21,Josh Smith,TOR,824787,Shane Baz,7,card,9.4,9.5,8.3,+959,850,-21.4,park +4% [low-conf],65F,LvR +8%,heat +5%,no,0
+2026-09-21,Rece Hinds,BAL,824787,Trey Yesavage,7,card,9.4,7.9,7.2,+959,850,-31.8,park +4% [low-conf],65F,RvR -3%,,no,0
+2026-09-21,Ben Malgeri,DET,824221,DJ Herz *,5,card,9.0,12.7,10.0,+1015,900,-0.5,park -5%,56F · wind out 3,RvL +12%,,hr,1
