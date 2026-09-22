@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22T01:36:16+00:00",
+ "generated": "2026-09-22T20:11:22+00:00",
  "date": "2026-09-22",
  "min_pa": 6,
  "rows": [
@@ -92,17 +92,6 @@
    "slg": ".462"
   },
   {
-   "batter": "Lars Nootbaar",
-   "team": "AZ",
-   "opp_sp": "Kyle Freeland",
-   "pa": 7,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.500"
-  },
-  {
    "batter": "Dylan Beavers",
    "team": "BAL",
    "opp_sp": "Max Scherzer",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".333",
    "slg": ".778"
+  },
+  {
+   "batter": "Spencer Horwitz",
+   "team": "PIT",
+   "opp_sp": "Andre Pallante",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".750"
   }
  ]
 }
