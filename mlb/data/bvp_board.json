@@ -1,6 +1,172 @@
 {
- "generated": "2026-09-21T21:01:52+00:00",
- "date": "2026-09-21",
+ "generated": "2026-09-22T01:36:16+00:00",
+ "date": "2026-09-22",
  "min_pa": 6,
- "rows": []
+ "rows": [
+  {
+   "batter": "Ketel Marte",
+   "team": "AZ",
+   "opp_sp": "Kyle Freeland",
+   "pa": 58,
+   "ab": 51,
+   "h": 17,
+   "hr": 3,
+   "avg": ".333",
+   "slg": ".647"
+  },
+  {
+   "batter": "Colton Cowser",
+   "team": "BAL",
+   "opp_sp": "Max Scherzer",
+   "pa": 9,
+   "ab": 7,
+   "h": 3,
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.429"
+  },
+  {
+   "batter": "Jake Burger",
+   "team": "TEX",
+   "opp_sp": "Sean Manaea",
+   "pa": 8,
+   "ab": 8,
+   "h": 3,
+   "hr": 2,
+   "avg": ".375",
+   "slg": "1.250"
+  },
+  {
+   "batter": "Jose Altuve",
+   "team": "HOU",
+   "opp_sp": "Logan Gilbert",
+   "pa": 42,
+   "ab": 38,
+   "h": 15,
+   "hr": 2,
+   "avg": ".395",
+   "slg": ".737"
+  },
+  {
+   "batter": "Yainer Diaz",
+   "team": "HOU",
+   "opp_sp": "Logan Gilbert",
+   "pa": 19,
+   "ab": 19,
+   "h": 4,
+   "hr": 2,
+   "avg": ".211",
+   "slg": ".579"
+  },
+  {
+   "batter": "George Springer",
+   "team": "TOR",
+   "opp_sp": "Chris Bassitt",
+   "pa": 23,
+   "ab": 23,
+   "h": 6,
+   "hr": 2,
+   "avg": ".261",
+   "slg": ".565"
+  },
+  {
+   "batter": "Mookie Betts",
+   "team": "LAD",
+   "opp_sp": "Michael King",
+   "pa": 21,
+   "ab": 18,
+   "h": 4,
+   "hr": 2,
+   "avg": ".222",
+   "slg": ".556"
+  },
+  {
+   "batter": "Bryan Reynolds",
+   "team": "PIT",
+   "opp_sp": "Andre Pallante",
+   "pa": 26,
+   "ab": 26,
+   "h": 4,
+   "hr": 2,
+   "avg": ".154",
+   "slg": ".462"
+  },
+  {
+   "batter": "Lars Nootbaar",
+   "team": "AZ",
+   "opp_sp": "Kyle Freeland",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.500"
+  },
+  {
+   "batter": "Dylan Beavers",
+   "team": "BAL",
+   "opp_sp": "Max Scherzer",
+   "pa": 6,
+   "ab": 4,
+   "h": 2,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.250"
+  },
+  {
+   "batter": "Kazuma Okamoto",
+   "team": "TOR",
+   "opp_sp": "Chris Bassitt",
+   "pa": 6,
+   "ab": 5,
+   "h": 2,
+   "hr": 1,
+   "avg": ".400",
+   "slg": "1.200"
+  },
+  {
+   "batter": "Jorge Mateo",
+   "team": "TB",
+   "opp_sp": "Carlos Rod\u00f3n",
+   "pa": 8,
+   "ab": 7,
+   "h": 4,
+   "hr": 1,
+   "avg": ".571",
+   "slg": "1.143"
+  },
+  {
+   "batter": "Cal Raleigh",
+   "team": "SEA",
+   "opp_sp": "Cristian Javier",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Jahmai Jones",
+   "team": "BOS",
+   "opp_sp": "Parker Messick",
+   "pa": 6,
+   "ab": 5,
+   "h": 1,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".800"
+  },
+  {
+   "batter": "Mark Vientos",
+   "team": "NYM",
+   "opp_sp": "MacKenzie Gore",
+   "pa": 11,
+   "ab": 9,
+   "h": 3,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".778"
+  }
+ ]
 }
