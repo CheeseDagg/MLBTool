@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22T17:09:24+00:00",
+ "generated": "2026-09-22T17:43:49+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -123,18 +123,6 @@
    "shop": false
   },
   {
-   "team": "San Diego Padres",
-   "cons_pct": 3.1,
-   "fair": "+3128",
-   "best_price": 2700,
-   "book": "fanduel",
-   "edge_pct": -13.3,
-   "any_price": 2800,
-   "any_book": "draftkings",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Texas Rangers",
    "cons_pct": 3.1,
    "fair": "+3128",
@@ -143,6 +131,18 @@
    "edge_pct": -13.3,
    "any_price": 3300,
    "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "San Diego Padres",
+   "cons_pct": 3.1,
+   "fair": "+3128",
+   "best_price": 2700,
+   "book": "fanduel",
+   "edge_pct": -13.3,
+   "any_price": 2800,
+   "any_book": "draftkings",
    "books_n": 5,
    "shop": false
   },

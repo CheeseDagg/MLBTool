@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22T17:10+00:00",
+ "generated": "2026-09-22T17:44+00:00",
  "board": [
   {
    "pitcher": "Zack Wheeler",
@@ -204,40 +204,40 @@
   {
    "pitcher": "Drew Rasmussen",
    "opp": "New York Yankees",
-   "lam": 5.93,
+   "lam": 5.94,
    "k9_regressed": 8.83,
    "exp_ip": 5.7,
-   "opp_mult": 1.061,
+   "opp_mult": 1.062,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.7058,
+     "p_over": 0.7062,
      "fair_over": -240,
      "fair_under": 240
     },
     {
      "line": 5.5,
-     "p_over": 0.5434,
+     "p_over": 0.5439,
      "fair_over": -119,
      "fair_under": 119
     },
     {
      "line": 6.5,
-     "p_over": 0.3829,
+     "p_over": 0.3833,
      "fair_over": 161,
      "fair_under": -161
     },
     {
      "line": 7.5,
-     "p_over": 0.2468,
+     "p_over": 0.2472,
      "fair_over": 305,
      "fair_under": -305
     },
     {
      "line": 8.5,
-     "p_over": 0.1459,
-     "fair_over": 586,
-     "fair_under": -586
+     "p_over": 0.1462,
+     "fair_over": 584,
+     "fair_under": -584
     }
    ]
   },
@@ -522,6 +522,46 @@
    ]
   },
   {
+   "pitcher": "Max Fried",
+   "opp": "Tampa Bay Rays",
+   "lam": 4.77,
+   "k9_regressed": 8.52,
+   "exp_ip": 5.58,
+   "opp_mult": 0.903,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.518,
+     "fair_over": -107,
+     "fair_under": 107
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3435,
+     "fair_over": 191,
+     "fair_under": -191
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2048,
+     "fair_over": 388,
+     "fair_under": -388
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1103,
+     "fair_over": 806,
+     "fair_under": -806
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.054,
+     "fair_over": 1751,
+     "fair_under": -1751
+    }
+   ]
+  },
+  {
    "pitcher": "Yusei Kikuchi",
    "opp": "Athletics",
    "lam": 4.77,
@@ -562,42 +602,42 @@
    ]
   },
   {
-   "pitcher": "Max Fried",
+   "pitcher": "Carlos Rod\u00f3n",
    "opp": "Tampa Bay Rays",
-   "lam": 4.76,
-   "k9_regressed": 8.52,
-   "exp_ip": 5.58,
-   "opp_mult": 0.902,
+   "lam": 4.72,
+   "k9_regressed": 9.48,
+   "exp_ip": 4.96,
+   "opp_mult": 0.903,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.5173,
-     "fair_over": -107,
-     "fair_under": 107
+     "p_over": 0.5086,
+     "fair_over": -103,
+     "fair_under": 103
     },
     {
      "line": 5.5,
-     "p_over": 0.3428,
-     "fair_over": 192,
-     "fair_under": -192
+     "p_over": 0.3346,
+     "fair_over": 199,
+     "fair_under": -199
     },
     {
      "line": 6.5,
-     "p_over": 0.2043,
-     "fair_over": 389,
-     "fair_under": -389
+     "p_over": 0.1978,
+     "fair_over": 406,
+     "fair_under": -406
     },
     {
      "line": 7.5,
-     "p_over": 0.11,
-     "fair_over": 809,
-     "fair_under": -809
+     "p_over": 0.1056,
+     "fair_over": 847,
+     "fair_under": -847
     },
     {
      "line": 8.5,
-     "p_over": 0.0538,
-     "fair_over": 1758,
-     "fair_under": -1758
+     "p_over": 0.0512,
+     "fair_over": 1853,
+     "fair_under": -1853
     }
    ]
   },
@@ -678,46 +718,6 @@
      "p_over": 0.0484,
      "fair_over": 1964,
      "fair_under": -1964
-    }
-   ]
-  },
-  {
-   "pitcher": "Carlos Rod\u00f3n",
-   "opp": "Tampa Bay Rays",
-   "lam": 4.52,
-   "k9_regressed": 9.41,
-   "exp_ip": 4.79,
-   "opp_mult": 0.902,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4722,
-     "fair_over": 112,
-     "fair_under": -112
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3009,
-     "fair_over": 232,
-     "fair_under": -232
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1719,
-     "fair_over": 482,
-     "fair_under": -482
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0885,
-     "fair_over": 1030,
-     "fair_under": -1030
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0413,
-     "fair_over": 2320,
-     "fair_under": -2320
     }
    ]
   },
@@ -884,40 +884,40 @@
   {
    "pitcher": "Nick Martinez",
    "opp": "New York Yankees",
-   "lam": 4.09,
-   "k9_regressed": 5.86,
-   "exp_ip": 5.91,
-   "opp_mult": 1.061,
+   "lam": 4.05,
+   "k9_regressed": 5.92,
+   "exp_ip": 5.8,
+   "opp_mult": 1.062,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3878,
-     "fair_over": 158,
-     "fair_under": -158
+     "p_over": 0.3808,
+     "fair_over": 163,
+     "fair_under": -163
     },
     {
      "line": 5.5,
-     "p_over": 0.2283,
-     "fair_over": 338,
-     "fair_under": -338
+     "p_over": 0.2227,
+     "fair_over": 349,
+     "fair_under": -349
     },
     {
      "line": 6.5,
-     "p_over": 0.1197,
-     "fair_over": 735,
-     "fair_under": -735
+     "p_over": 0.1159,
+     "fair_over": 763,
+     "fair_under": -763
     },
     {
      "line": 7.5,
-     "p_over": 0.0564,
-     "fair_over": 1674,
-     "fair_under": -1674
+     "p_over": 0.0541,
+     "fair_over": 1747,
+     "fair_under": -1747
     },
     {
      "line": 8.5,
-     "p_over": 0.024,
-     "fair_over": 4065,
-     "fair_under": -4065
+     "p_over": 0.0229,
+     "fair_over": 4272,
+     "fair_under": -4272
     }
    ]
   },
@@ -1242,8 +1242,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 17052 (used 2948) \u00b7 whiff rest:30 rows",
- "n_markets": 30,
+ "diag": "errors {} \u00b7 unbettable markets dropped 2 \u00b7 credits remaining 17018 (used 2982) \u00b7 whiff rest:30 rows",
+ "n_markets": 28,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1255,6 +1255,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 2,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
