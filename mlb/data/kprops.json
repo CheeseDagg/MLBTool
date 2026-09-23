@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T17:24+00:00",
+ "generated": "2026-09-23T17:59+00:00",
  "board": [
   {
    "pitcher": "Chris Sale",
@@ -158,46 +158,6 @@
      "p_over": 0.1473,
      "fair_over": 579,
      "fair_under": -579
-    }
-   ]
-  },
-  {
-   "pitcher": "Ian Seymour",
-   "opp": "New York Yankees",
-   "lam": 5.93,
-   "k9_regressed": 10.45,
-   "exp_ip": 4.8,
-   "opp_mult": 1.065,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.7061,
-     "fair_over": -240,
-     "fair_under": 240
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.5437,
-     "fair_over": -119,
-     "fair_under": 119
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.3832,
-     "fair_over": 161,
-     "fair_under": -161
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.2471,
-     "fair_over": 305,
-     "fair_under": -305
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.1461,
-     "fair_over": 585,
-     "fair_under": -585
     }
    ]
   },
@@ -562,6 +522,46 @@
    ]
   },
   {
+   "pitcher": "Mason Englert",
+   "opp": "New York Yankees",
+   "lam": 4.71,
+   "k9_regressed": 8.33,
+   "exp_ip": 4.78,
+   "opp_mult": 1.065,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5077,
+     "fair_over": -103,
+     "fair_under": 103
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3337,
+     "fair_over": 200,
+     "fair_under": -200
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1971,
+     "fair_over": 407,
+     "fair_under": -407
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1051,
+     "fair_over": 851,
+     "fair_under": -851
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0509,
+     "fair_over": 1863,
+     "fair_under": -1863
+    }
+   ]
+  },
+  {
    "pitcher": "Seth Lugo",
    "opp": "Chicago White Sox",
    "lam": 4.64,
@@ -642,6 +642,46 @@
    ]
   },
   {
+   "pitcher": "Framber Valdez",
+   "opp": "Washington Nationals",
+   "lam": 4.44,
+   "k9_regressed": 7.27,
+   "exp_ip": 5.56,
+   "opp_mult": 0.99,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4574,
+     "fair_over": 119,
+     "fair_under": -119
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2877,
+     "fair_over": 248,
+     "fair_under": -248
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1619,
+     "fair_over": 518,
+     "fair_under": -518
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0821,
+     "fair_over": 1118,
+     "fair_under": -1118
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0378,
+     "fair_over": 2549,
+     "fair_under": -2549
+    }
+   ]
+  },
+  {
    "pitcher": "Jeffrey Springs",
    "opp": "Los Angeles Angels",
    "lam": 4.41,
@@ -678,46 +718,6 @@
      "p_over": 0.0364,
      "fair_over": 2649,
      "fair_under": -2649
-    }
-   ]
-  },
-  {
-   "pitcher": "Framber Valdez",
-   "opp": "Washington Nationals",
-   "lam": 4.35,
-   "k9_regressed": 7.22,
-   "exp_ip": 5.48,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4397,
-     "fair_over": 127,
-     "fair_under": -127
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.2721,
-     "fair_over": 267,
-     "fair_under": -267
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1505,
-     "fair_over": 564,
-     "fair_under": -564
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0749,
-     "fair_over": 1234,
-     "fair_under": -1234
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0338,
-     "fair_over": 2857,
-     "fair_under": -2857
     }
    ]
   },
@@ -884,80 +884,40 @@
   {
    "pitcher": "Max Scherzer",
    "opp": "Baltimore Orioles",
-   "lam": 3.95,
-   "k9_regressed": 7.31,
-   "exp_ip": 4.54,
-   "opp_mult": 1.072,
+   "lam": 3.84,
+   "k9_regressed": 7.43,
+   "exp_ip": 4.33,
+   "opp_mult": 1.073,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3622,
-     "fair_over": 176,
-     "fair_under": -176
+     "p_over": 0.3397,
+     "fair_over": 194,
+     "fair_under": -194
     },
     {
      "line": 5.5,
-     "p_over": 0.2078,
-     "fair_over": 381,
-     "fair_under": -381
+     "p_over": 0.1902,
+     "fair_over": 426,
+     "fair_under": -426
     },
     {
      "line": 6.5,
-     "p_over": 0.106,
-     "fair_over": 844,
-     "fair_under": -844
+     "p_over": 0.0946,
+     "fair_over": 958,
+     "fair_under": -958
     },
     {
      "line": 7.5,
-     "p_over": 0.0485,
-     "fair_over": 1964,
-     "fair_under": -1964
+     "p_over": 0.0421,
+     "fair_over": 2275,
+     "fair_under": -2275
     },
     {
      "line": 8.5,
-     "p_over": 0.02,
-     "fair_over": 4891,
-     "fair_under": -4891
-    }
-   ]
-  },
-  {
-   "pitcher": "Chris Bassitt",
-   "opp": "Toronto Blue Jays",
-   "lam": 3.72,
-   "k9_regressed": 7.19,
-   "exp_ip": 5.1,
-   "opp_mult": 0.914,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.3172,
-     "fair_over": 215,
-     "fair_under": -215
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.1732,
-     "fair_over": 477,
-     "fair_under": -477
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.0838,
-     "fair_over": 1093,
-     "fair_under": -1093
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0363,
-     "fair_over": 2653,
-     "fair_under": -2653
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0142,
-     "fair_over": 6940,
-     "fair_under": -6940
+     "p_over": 0.0169,
+     "fair_over": 5803,
+     "fair_under": -5803
     }
    ]
   },
@@ -1082,6 +1042,46 @@
    ]
   },
   {
+   "pitcher": "Chris Bassitt",
+   "opp": "Toronto Blue Jays",
+   "lam": 3.53,
+   "k9_regressed": 7.14,
+   "exp_ip": 4.87,
+   "opp_mult": 0.914,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.28,
+     "fair_over": 257,
+     "fair_under": -257
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1462,
+     "fair_over": 584,
+     "fair_under": -584
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0675,
+     "fair_over": 1381,
+     "fair_under": -1381
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0279,
+     "fair_over": 3490,
+     "fair_under": -3490
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0104,
+     "fair_over": 9548,
+     "fair_under": -9548
+    }
+   ]
+  },
+  {
    "pitcher": "Lake Bachar",
    "opp": "St. Louis Cardinals",
    "lam": 2.95,
@@ -1124,40 +1124,40 @@
   {
    "pitcher": "Richard Lovelady",
    "opp": "Detroit Tigers",
-   "lam": 2.82,
-   "k9_regressed": 8.32,
+   "lam": 2.8,
+   "k9_regressed": 8.28,
    "exp_ip": 3.0,
    "opp_mult": 1.016,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1547,
-     "fair_over": 546,
-     "fair_under": -546
+     "p_over": 0.1526,
+     "fair_over": 555,
+     "fair_under": -555
     },
     {
      "line": 5.5,
-     "p_over": 0.0664,
-     "fair_over": 1405,
-     "fair_under": -1405
+     "p_over": 0.0653,
+     "fair_over": 1432,
+     "fair_under": -1432
     },
     {
      "line": 6.5,
-     "p_over": 0.025,
-     "fair_over": 3894,
-     "fair_under": -3894
+     "p_over": 0.0245,
+     "fair_over": 3984,
+     "fair_under": -3984
     },
     {
      "line": 7.5,
-     "p_over": 0.0084,
-     "fair_over": 11831,
-     "fair_under": -11831
+     "p_over": 0.0082,
+     "fair_over": 12153,
+     "fair_under": -12153
     },
     {
      "line": 8.5,
-     "p_over": 0.0025,
-     "fair_over": 39568,
-     "fair_under": -39568
+     "p_over": 0.0024,
+     "fair_over": 40826,
+     "fair_under": -40826
     }
    ]
   },
@@ -1202,8 +1202,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 16881 (used 3119) \u00b7 whiff rest:30 rows",
- "n_markets": 27,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 16848 (used 3152) \u00b7 whiff rest:30 rows",
+ "n_markets": 23,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1215,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
