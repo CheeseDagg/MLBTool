@@ -1,18 +1,40 @@
 {
- "generated": "2026-09-22T22:55:06+00:00",
- "date": "2026-09-22",
+ "generated": "2026-09-23T01:28:48+00:00",
+ "date": "2026-09-23",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Ketel Marte",
-   "team": "AZ",
-   "opp_sp": "Kyle Freeland",
-   "pa": 58,
-   "ab": 51,
-   "h": 17,
+   "batter": "Enrique Hern\u00e1ndez",
+   "team": "LAD",
+   "opp_sp": "Robbie Ray",
+   "pa": 69,
+   "ab": 57,
+   "h": 14,
+   "hr": 5,
+   "avg": ".246",
+   "slg": ".614"
+  },
+  {
+   "batter": "Miguel Rojas",
+   "team": "LAD",
+   "opp_sp": "Robbie Ray",
+   "pa": 24,
+   "ab": 22,
+   "h": 8,
    "hr": 3,
-   "avg": ".333",
-   "slg": ".647"
+   "avg": ".364",
+   "slg": ".818"
+  },
+  {
+   "batter": "Ben Rice",
+   "team": "NYY",
+   "opp_sp": "Ian Seymour",
+   "pa": 6,
+   "ab": 6,
+   "h": 3,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.500"
   },
   {
    "batter": "Colton Cowser",
@@ -26,70 +48,59 @@
    "slg": "1.429"
   },
   {
-   "batter": "Jake Burger",
-   "team": "TEX",
-   "opp_sp": "Sean Manaea",
-   "pa": 8,
-   "ab": 8,
-   "h": 3,
-   "hr": 2,
-   "avg": ".375",
-   "slg": "1.250"
-  },
-  {
-   "batter": "Jose Altuve",
-   "team": "HOU",
-   "opp_sp": "Logan Gilbert",
-   "pa": 42,
-   "ab": 38,
-   "h": 15,
-   "hr": 2,
-   "avg": ".395",
-   "slg": ".737"
-  },
-  {
-   "batter": "Yainer Diaz",
-   "team": "HOU",
-   "opp_sp": "Logan Gilbert",
-   "pa": 19,
-   "ab": 19,
-   "h": 4,
-   "hr": 2,
-   "avg": ".211",
-   "slg": ".579"
-  },
-  {
-   "batter": "George Springer",
-   "team": "TOR",
-   "opp_sp": "Chris Bassitt",
-   "pa": 23,
-   "ab": 23,
+   "batter": "Kyle Tucker",
+   "team": "LAD",
+   "opp_sp": "Robbie Ray",
+   "pa": 15,
+   "ab": 14,
    "h": 6,
    "hr": 2,
-   "avg": ".261",
-   "slg": ".565"
+   "avg": ".429",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Ezequiel Tovar",
+   "team": "COL",
+   "opp_sp": "Merrill Kelly",
+   "pa": 18,
+   "ab": 18,
+   "h": 8,
+   "hr": 2,
+   "avg": ".444",
+   "slg": ".944"
+  },
+  {
+   "batter": "Austin Hedges",
+   "team": "CLE",
+   "opp_sp": "Sonny Gray",
+   "pa": 13,
+   "ab": 10,
+   "h": 3,
+   "hr": 2,
+   "avg": ".300",
+   "slg": ".900"
   },
   {
    "batter": "Mookie Betts",
    "team": "LAD",
-   "opp_sp": "Michael King",
-   "pa": 21,
-   "ab": 18,
+   "opp_sp": "Robbie Ray",
+   "pa": 15,
+   "ab": 12,
    "h": 4,
    "hr": 2,
-   "avg": ".222",
-   "slg": ".556"
+   "avg": ".333",
+   "slg": ".833"
   },
   {
-   "batter": "Bryan Reynolds",
-   "team": "PIT",
-   "opp_sp": "Andre Pallante",
-   "pa": 26,
-   "ab": 26,
-   "h": 4,
+   "batter": "Yandy D\u00edaz",
+   "team": "TB",
+   "opp_sp": "Gerrit Cole",
+   "pa": 54,
+   "ab": 50,
+   "h": 17,
    "hr": 2,
-   "avg": ".154",
-   "slg": ".462"
+   "avg": ".340",
+   "slg": ".520"
   },
   {
    "batter": "Dylan Beavers",
@@ -103,32 +114,21 @@
    "slg": "1.250"
   },
   {
-   "batter": "Kazuma Okamoto",
-   "team": "TOR",
-   "opp_sp": "Chris Bassitt",
+   "batter": "Ha-Seong Kim",
+   "team": "ATL",
+   "opp_sp": "Andrew Abbott",
    "pa": 6,
-   "ab": 5,
-   "h": 2,
+   "ab": 4,
+   "h": 1,
    "hr": 1,
-   "avg": ".400",
-   "slg": "1.200"
+   "avg": ".250",
+   "slg": "1.000"
   },
   {
-   "batter": "Jorge Mateo",
-   "team": "TB",
-   "opp_sp": "Carlos Rod\u00f3n",
-   "pa": 8,
-   "ab": 7,
-   "h": 4,
-   "hr": 1,
-   "avg": ".571",
-   "slg": "1.143"
-  },
-  {
-   "batter": "Cal Raleigh",
-   "team": "SEA",
-   "opp_sp": "Cristian Javier",
-   "pa": 7,
+   "batter": "Nelson Vel\u00e1zquez",
+   "team": "HOU",
+   "opp_sp": "George Kirby",
+   "pa": 6,
    "ab": 6,
    "h": 3,
    "hr": 1,
@@ -136,36 +136,36 @@
    "slg": "1.000"
   },
   {
-   "batter": "Jahmai Jones",
-   "team": "BOS",
-   "opp_sp": "Parker Messick",
-   "pa": 6,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
-   "batter": "Mark Vientos",
-   "team": "NYM",
-   "opp_sp": "MacKenzie Gore",
-   "pa": 11,
-   "ab": 9,
+   "batter": "Jared Triolo",
+   "team": "PIT",
+   "opp_sp": "Matthew Liberatore",
+   "pa": 8,
+   "ab": 7,
    "h": 3,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".778"
+   "avg": ".429",
+   "slg": ".857"
   },
   {
-   "batter": "Spencer Horwitz",
-   "team": "PIT",
-   "opp_sp": "Andre Pallante",
+   "batter": "Salvador Perez",
+   "team": "KC",
+   "opp_sp": "Erick Fedde",
+   "pa": 13,
+   "ab": 11,
+   "h": 5,
+   "hr": 1,
+   "avg": ".455",
+   "slg": ".818"
+  },
+  {
+   "batter": "Jordan Beck",
+   "team": "COL",
+   "opp_sp": "Merrill Kelly",
    "pa": 8,
    "ab": 8,
-   "h": 3,
+   "h": 2,
    "hr": 1,
-   "avg": ".375",
+   "avg": ".250",
    "slg": ".750"
   }
  ]
