@@ -2743,10 +2743,10 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-09-22,Minnesota Twins,San Francisco Giants,Taj Bradley,Anthony Molina,3,2,Final
 2026-09-22,San Diego Padres,Los Angeles Dodgers,Michael King,Brock Stewart,0,7,Final
 2026-09-22,Toronto Blue Jays,Baltimore Orioles,Max Scherzer,Chris Bassitt,0,0,Postponed
-2026-09-23,Washington Nationals,Detroit Tigers,Richard Lovelady,Framber Valdez,0,0,Scheduled
-2026-09-23,Toronto Blue Jays,Baltimore Orioles,Max Scherzer,,0,0,Scheduled
+2026-09-23,Washington Nationals,Detroit Tigers,Richard Lovelady,Framber Valdez,0,0,In Progress
+2026-09-23,Toronto Blue Jays,Baltimore Orioles,Max Scherzer,Chris Bassitt,0,0,Warmup
 2026-09-23,Toronto Blue Jays,Baltimore Orioles,,,0,0,Scheduled
-2026-09-23,Minnesota Twins,San Francisco Giants,Connor Prielipp,Cesar Perdomo,0,0,Scheduled
+2026-09-23,Minnesota Twins,San Francisco Giants,Connor Prielipp,Cesar Perdomo,0,0,Pre-Game
 2026-09-23,St. Louis Cardinals,Pittsburgh Pirates,Matthew Liberatore,Lake Bachar,0,0,Scheduled
 2026-09-23,Milwaukee Brewers,Philadelphia Phillies,Logan Henderson,Aaron Nola,0,0,Scheduled
 2026-09-23,Tampa Bay Rays,New York Yankees,Ian Seymour,Gerrit Cole,0,0,Scheduled
@@ -2754,7 +2754,7 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-09-23,Cincinnati Reds,Atlanta Braves,Andrew Abbott,Chris Sale,0,0,Scheduled
 2026-09-23,Chicago White Sox,Kansas City Royals,Bryan Hudson,Seth Lugo,0,0,Scheduled
 2026-09-23,Miami Marlins,Chicago Cubs,Ryan Gusto,Kevin Gausman,0,0,Scheduled
-2026-09-23,New York Mets,Texas Rangers,Nolan McLean,,0,0,Scheduled
+2026-09-23,New York Mets,Texas Rangers,Nolan McLean,Cody Bradford,0,0,Scheduled
 2026-09-23,Arizona Diamondbacks,Colorado Rockies,Merrill Kelly,Mason Adams,0,0,Scheduled
 2026-09-23,Los Angeles Angels,Athletics,Walbert Ureña,Jeffrey Springs,0,0,Scheduled
 2026-09-23,San Diego Padres,Los Angeles Dodgers,Robbie Ray,Yoshinobu Yamamoto,0,0,Scheduled

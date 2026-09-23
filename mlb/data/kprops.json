@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T13:54+00:00",
+ "generated": "2026-09-23T17:24+00:00",
  "board": [
   {
    "pitcher": "Chris Sale",
@@ -642,46 +642,6 @@
    ]
   },
   {
-   "pitcher": "Framber Valdez",
-   "opp": "Washington Nationals",
-   "lam": 4.43,
-   "k9_regressed": 7.18,
-   "exp_ip": 5.62,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4555,
-     "fair_over": 120,
-     "fair_under": -120
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.286,
-     "fair_over": 250,
-     "fair_under": -250
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1607,
-     "fair_over": 522,
-     "fair_under": -522
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0813,
-     "fair_over": 1130,
-     "fair_under": -1130
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0373,
-     "fair_over": 2580,
-     "fair_under": -2580
-    }
-   ]
-  },
-  {
    "pitcher": "Jeffrey Springs",
    "opp": "Los Angeles Angels",
    "lam": 4.41,
@@ -718,6 +678,46 @@
      "p_over": 0.0364,
      "fair_over": 2649,
      "fair_under": -2649
+    }
+   ]
+  },
+  {
+   "pitcher": "Framber Valdez",
+   "opp": "Washington Nationals",
+   "lam": 4.35,
+   "k9_regressed": 7.22,
+   "exp_ip": 5.48,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4397,
+     "fair_over": 127,
+     "fair_under": -127
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.2721,
+     "fair_over": 267,
+     "fair_under": -267
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1505,
+     "fair_over": 564,
+     "fair_under": -564
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0749,
+     "fair_over": 1234,
+     "fair_under": -1234
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0338,
+     "fair_over": 2857,
+     "fair_under": -2857
     }
    ]
   },
@@ -922,6 +922,46 @@
    ]
   },
   {
+   "pitcher": "Chris Bassitt",
+   "opp": "Toronto Blue Jays",
+   "lam": 3.72,
+   "k9_regressed": 7.19,
+   "exp_ip": 5.1,
+   "opp_mult": 0.914,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.3172,
+     "fair_over": 215,
+     "fair_under": -215
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1732,
+     "fair_over": 477,
+     "fair_under": -477
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0838,
+     "fair_over": 1093,
+     "fair_under": -1093
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0363,
+     "fair_over": 2653,
+     "fair_under": -2653
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0142,
+     "fair_over": 6940,
+     "fair_under": -6940
+    }
+   ]
+  },
+  {
    "pitcher": "Ethan Pecko",
    "opp": "Seattle Mariners",
    "lam": 3.66,
@@ -1002,6 +1042,46 @@
    ]
   },
   {
+   "pitcher": "Cody Bradford",
+   "opp": "New York Mets",
+   "lam": 3.56,
+   "k9_regressed": 6.53,
+   "exp_ip": 4.9,
+   "opp_mult": 1.002,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2868,
+     "fair_over": 249,
+     "fair_under": -249
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1511,
+     "fair_over": 562,
+     "fair_under": -562
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0704,
+     "fair_over": 1320,
+     "fair_under": -1320
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0293,
+     "fair_over": 3311,
+     "fair_under": -3311
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.011,
+     "fair_over": 8980,
+     "fair_under": -8980
+    }
+   ]
+  },
+  {
    "pitcher": "Lake Bachar",
    "opp": "St. Louis Cardinals",
    "lam": 2.95,
@@ -1044,40 +1124,40 @@
   {
    "pitcher": "Richard Lovelady",
    "opp": "Detroit Tigers",
-   "lam": 2.86,
-   "k9_regressed": 8.44,
+   "lam": 2.82,
+   "k9_regressed": 8.32,
    "exp_ip": 3.0,
    "opp_mult": 1.016,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1615,
-     "fair_over": 519,
-     "fair_under": -519
+     "p_over": 0.1547,
+     "fair_over": 546,
+     "fair_under": -546
     },
     {
      "line": 5.5,
-     "p_over": 0.0703,
-     "fair_over": 1323,
-     "fair_under": -1323
+     "p_over": 0.0664,
+     "fair_over": 1405,
+     "fair_under": -1405
     },
     {
      "line": 6.5,
-     "p_over": 0.0269,
-     "fair_over": 3624,
-     "fair_under": -3624
+     "p_over": 0.025,
+     "fair_over": 3894,
+     "fair_under": -3894
     },
     {
      "line": 7.5,
-     "p_over": 0.0091,
-     "fair_over": 10869,
-     "fair_under": -10869
+     "p_over": 0.0084,
+     "fair_over": 11831,
+     "fair_under": -11831
     },
     {
      "line": 8.5,
-     "p_over": 0.0028,
-     "fair_over": 35851,
-     "fair_under": -35851
+     "p_over": 0.0025,
+     "fair_over": 39568,
+     "fair_under": -39568
     }
    ]
   },
@@ -1122,8 +1202,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 0 \u00b7 credits remaining 16914 (used 3086) \u00b7 whiff rest:30 rows",
- "n_markets": 25,
+ "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 16881 (used 3119) \u00b7 whiff rest:30 rows",
+ "n_markets": 27,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1215,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 0,
+ "n_unbettable": 5,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
