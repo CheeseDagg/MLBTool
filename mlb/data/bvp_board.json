@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T01:28:48+00:00",
+ "generated": "2026-09-23T20:18:47+00:00",
  "date": "2026-09-23",
  "min_pa": 6,
  "rows": [
@@ -26,28 +26,6 @@
    "slg": ".818"
   },
   {
-   "batter": "Ben Rice",
-   "team": "NYY",
-   "opp_sp": "Ian Seymour",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 2,
-   "avg": ".500",
-   "slg": "1.500"
-  },
-  {
-   "batter": "Colton Cowser",
-   "team": "BAL",
-   "opp_sp": "Max Scherzer",
-   "pa": 9,
-   "ab": 7,
-   "h": 3,
-   "hr": 2,
-   "avg": ".429",
-   "slg": "1.429"
-  },
-  {
    "batter": "Kyle Tucker",
    "team": "LAD",
    "opp_sp": "Robbie Ray",
@@ -70,17 +48,6 @@
    "slg": ".944"
   },
   {
-   "batter": "Austin Hedges",
-   "team": "CLE",
-   "opp_sp": "Sonny Gray",
-   "pa": 13,
-   "ab": 10,
-   "h": 3,
-   "hr": 2,
-   "avg": ".300",
-   "slg": ".900"
-  },
-  {
    "batter": "Mookie Betts",
    "team": "LAD",
    "opp_sp": "Robbie Ray",
@@ -101,17 +68,6 @@
    "hr": 2,
    "avg": ".340",
    "slg": ".520"
-  },
-  {
-   "batter": "Dylan Beavers",
-   "team": "BAL",
-   "opp_sp": "Max Scherzer",
-   "pa": 6,
-   "ab": 4,
-   "h": 2,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.250"
   },
   {
    "batter": "Ha-Seong Kim",
@@ -147,26 +103,70 @@
    "slg": ".857"
   },
   {
-   "batter": "Salvador Perez",
-   "team": "KC",
-   "opp_sp": "Erick Fedde",
-   "pa": 13,
-   "ab": 11,
-   "h": 5,
+   "batter": "James Wood",
+   "team": "WSH",
+   "opp_sp": "Framber Valdez",
+   "pa": 8,
+   "ab": 6,
+   "h": 1,
    "hr": 1,
-   "avg": ".455",
-   "slg": ".818"
+   "avg": ".167",
+   "slg": ".667"
   },
   {
-   "batter": "Jordan Beck",
-   "team": "COL",
-   "opp_sp": "Merrill Kelly",
+   "batter": "Andr\u00e9s Chaparro",
+   "team": "WSH",
+   "opp_sp": "Framber Valdez",
    "pa": 8,
-   "ab": 8,
-   "h": 2,
+   "ab": 6,
+   "h": 1,
    "hr": 1,
-   "avg": ".250",
-   "slg": ".750"
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "Brady House",
+   "team": "WSH",
+   "opp_sp": "Framber Valdez",
+   "pa": 8,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "CJ Abrams",
+   "team": "WSH",
+   "opp_sp": "Framber Valdez",
+   "pa": 8,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "Dylan Crews",
+   "team": "WSH",
+   "opp_sp": "Framber Valdez",
+   "pa": 8,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "Yohandy Morales",
+   "team": "WSH",
+   "opp_sp": "Framber Valdez",
+   "pa": 8,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
   }
  ]
 }
