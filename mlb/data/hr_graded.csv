@@ -2402,3 +2402,9 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-22,Max Muncy,LAD,823897,Michael King,4,card,16.9,20.8,15.9,+491,430,-15.8,park +5%,77F · wind out 5,LvR +8%,,no,0
 2026-09-22,Jose Siri,LAA,824953,Brady Basso,6,card,16.6,16.0,13.3,+502,440,-28.1,park +6% [low-conf],81F · wind out 3,RvL +12%,,no,0
 2026-09-22,Coby Mayo,BAL,824785,Max Scherzer,4,proj,16.3,21.4,,+515,,,park +4% [low-conf],59F · wind in 7,RvR -3%,heat +5%,void,
+2026-09-23,Coby Mayo,BAL,824785,Max Scherzer,4,proj,17.9,21.6,16.4,+457,400,-18.2,park +4% [low-conf],62F · wind in 7,RvR -3%,heat +5%,no,0
+2026-09-23,Coby Mayo,BAL,824784,TBD *,4,proj,17.9,20.0,15.5,+457,400,-22.6,park +4% [low-conf],62F · wind in 7,,,no,0
+2026-09-23,Pete Alonso,BAL,824785,Max Scherzer,2,proj,17.2,27.3,19.4,+480,420,0.9,park +4% [low-conf],62F · wind in 7,RvR -3%,heat +6%,hr,1
+2026-09-23,Pete Alonso,BAL,824784,TBD *,2,proj,17.2,25.3,18.3,+480,420,-4.6,park +4% [low-conf],62F · wind in 7,,,hr,1
+2026-09-23,Christian Encarnacion-Strand,BAL,824785,Max Scherzer,8,proj,15.6,14.7,12.1,+541,475,-30.2,park +4% [low-conf],62F · wind in 7,RvR -3%,,no,0
+2026-09-23,Christian Encarnacion-Strand,BAL,824784,TBD *,8,proj,15.6,13.5,10.7,+541,475,-38.2,park +4% [low-conf],62F · wind in 7,,,no,0
