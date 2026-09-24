@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T01:21:32+00:00",
+ "generated": "2026-09-24T20:28:39+00:00",
  "date": "2026-09-24",
  "min_pa": 6,
  "rows": [
@@ -59,9 +59,9 @@
    "slg": ".683"
   },
   {
-   "batter": "Tyrone Taylor",
-   "team": "CHC",
-   "opp_sp": "Tyler Phillips",
+   "batter": "Brandon Lowe",
+   "team": "PIT",
+   "opp_sp": "Kyle Leahy",
    "pa": 6,
    "ab": 5,
    "h": 3,
@@ -103,6 +103,17 @@
    "slg": ".917"
   },
   {
+   "batter": "Oneil Cruz",
+   "team": "PIT",
+   "opp_sp": "Kyle Leahy",
+   "pa": 10,
+   "ab": 9,
+   "h": 4,
+   "hr": 1,
+   "avg": ".444",
+   "slg": ".889"
+  },
+  {
    "batter": "Taylor Ward",
    "team": "SEA",
    "opp_sp": "Grayson Rodriguez",
@@ -112,28 +123,6 @@
    "hr": 1,
    "avg": ".375",
    "slg": ".875"
-  },
-  {
-   "batter": "Oneil Cruz",
-   "team": "PIT",
-   "opp_sp": "Kyle Leahy",
-   "pa": 9,
-   "ab": 8,
-   "h": 3,
-   "hr": 1,
-   "avg": ".375",
-   "slg": ".750"
-  },
-  {
-   "batter": "Dominic Smith",
-   "team": "ATL",
-   "opp_sp": "Brady Singer",
-   "pa": 9,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
   },
   {
    "batter": "Jordan Walker",
@@ -167,6 +156,17 @@
    "hr": 1,
    "avg": ".250",
    "slg": ".500"
+  },
+  {
+   "batter": "Austin Hays",
+   "team": "SD",
+   "opp_sp": "Tyler Glasnow",
+   "pa": 16,
+   "ab": 14,
+   "h": 3,
+   "hr": 1,
+   "avg": ".214",
+   "slg": ".429"
   }
  ]
 }
