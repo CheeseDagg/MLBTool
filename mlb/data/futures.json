@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T17:27:38+00:00",
+ "generated": "2026-09-24T17:58:12+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -63,18 +63,6 @@
    "shop": false
   },
   {
-   "team": "Philadelphia Phillies",
-   "cons_pct": 5.5,
-   "fair": "+1735",
-   "best_price": 1500,
-   "book": "fanduel",
-   "edge_pct": -12.8,
-   "any_price": 1600,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Atlanta Braves",
    "cons_pct": 5.5,
    "fair": "+1724",
@@ -82,6 +70,18 @@
    "book": "fanduel",
    "edge_pct": -12.3,
    "any_price": 1800,
+   "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Philadelphia Phillies",
+   "cons_pct": 5.5,
+   "fair": "+1735",
+   "best_price": 1500,
+   "book": "fanduel",
+   "edge_pct": -12.8,
+   "any_price": 1600,
    "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
@@ -111,18 +111,6 @@
    "shop": false
   },
   {
-   "team": "Chicago White Sox",
-   "cons_pct": 3.2,
-   "fair": "+3023",
-   "best_price": 2700,
-   "book": "fanduel",
-   "edge_pct": -10.4,
-   "any_price": 2800,
-   "any_book": "betonlineag",
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "San Diego Padres",
    "cons_pct": 3.2,
    "fair": "+3023",
@@ -131,6 +119,18 @@
    "edge_pct": -10.4,
    "any_price": 2800,
    "any_book": "betmgm",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Chicago White Sox",
+   "cons_pct": 3.2,
+   "fair": "+3023",
+   "best_price": 2700,
+   "book": "fanduel",
+   "edge_pct": -10.4,
+   "any_price": 2800,
+   "any_book": "betonlineag",
    "books_n": 5,
    "shop": false
   },

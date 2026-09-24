@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T17:29+00:00",
+ "generated": "2026-09-24T18:00+00:00",
  "board": [
   {
    "pitcher": "Tyler Glasnow",
@@ -164,40 +164,40 @@
   {
    "pitcher": "Paul Skenes",
    "opp": "St. Louis Cardinals",
-   "lam": 5.82,
-   "k9_regressed": 10.11,
-   "exp_ip": 5.35,
-   "opp_mult": 0.968,
+   "lam": 5.84,
+   "k9_regressed": 10.06,
+   "exp_ip": 5.41,
+   "opp_mult": 0.967,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6903,
-     "fair_over": -223,
-     "fair_under": 223
+     "p_over": 0.6937,
+     "fair_over": -226,
+     "fair_under": 226
     },
     {
      "line": 5.5,
-     "p_over": 0.5252,
-     "fair_over": -111,
-     "fair_under": 111
+     "p_over": 0.5291,
+     "fair_over": -112,
+     "fair_under": 112
     },
     {
      "line": 6.5,
-     "p_over": 0.365,
-     "fair_over": 174,
-     "fair_under": -174
+     "p_over": 0.3688,
+     "fair_over": 171,
+     "fair_under": -171
     },
     {
      "line": 7.5,
-     "p_over": 0.2318,
-     "fair_over": 331,
-     "fair_under": -331
+     "p_over": 0.235,
+     "fair_over": 326,
+     "fair_under": -326
     },
     {
      "line": 8.5,
-     "p_over": 0.1348,
-     "fair_over": 642,
-     "fair_under": -642
+     "p_over": 0.1372,
+     "fair_over": 629,
+     "fair_under": -629
     }
    ]
   },
@@ -487,37 +487,37 @@
    "lam": 4.63,
    "k9_regressed": 8.51,
    "exp_ip": 4.67,
-   "opp_mult": 1.049,
+   "opp_mult": 1.048,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4917,
+     "p_over": 0.4915,
      "fair_over": 103,
      "fair_under": -103
     },
     {
      "line": 5.5,
-     "p_over": 0.3188,
+     "p_over": 0.3187,
      "fair_over": 214,
      "fair_under": -214
     },
     {
      "line": 6.5,
-     "p_over": 0.1855,
+     "p_over": 0.1854,
      "fair_over": 439,
      "fair_under": -439
     },
     {
      "line": 7.5,
-     "p_over": 0.0974,
-     "fair_over": 927,
-     "fair_under": -927
+     "p_over": 0.0973,
+     "fair_over": 928,
+     "fair_under": -928
     },
     {
      "line": 8.5,
      "p_over": 0.0464,
-     "fair_over": 2055,
-     "fair_under": -2055
+     "fair_over": 2057,
+     "fair_under": -2057
     }
    ]
   },
@@ -962,7 +962,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 16729 (used 3271) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 16704 (used 3296) \u00b7 whiff rest:30 rows",
  "n_markets": 18,
  "n_plays": 0,
  "plays": [],
@@ -975,6 +975,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
