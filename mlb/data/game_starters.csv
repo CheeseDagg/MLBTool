@@ -2745,17 +2745,29 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-09-22,Toronto Blue Jays,Baltimore Orioles,Max Scherzer,Chris Bassitt,0,0,Postponed
 2026-09-23,Washington Nationals,Detroit Tigers,Richard Lovelady,Framber Valdez,4,2,Final
 2026-09-23,Toronto Blue Jays,Baltimore Orioles,Max Scherzer,Chris Bassitt,2,4,Final
-2026-09-23,Toronto Blue Jays,Baltimore Orioles,CJ Van Eyk,Trey Gibson,0,3,In Progress
+2026-09-23,Toronto Blue Jays,Baltimore Orioles,CJ Van Eyk,Trey Gibson,2,4,Final
 2026-09-23,Minnesota Twins,San Francisco Giants,Connor Prielipp,Cesar Perdomo,4,2,Final
-2026-09-23,St. Louis Cardinals,Pittsburgh Pirates,Matthew Liberatore,Lake Bachar,0,0,In Progress
-2026-09-23,Milwaukee Brewers,Philadelphia Phillies,Logan Henderson,Aaron Nola,1,0,In Progress
-2026-09-23,Tampa Bay Rays,New York Yankees,Mason Englert,Gerrit Cole,0,0,Warmup
-2026-09-23,Cleveland Guardians,Boston Red Sox,Foster Griffin,Sonny Gray,0,0,Warmup
-2026-09-23,Cincinnati Reds,Atlanta Braves,Andrew Abbott,Chris Sale,0,0,Warmup
-2026-09-23,Chicago White Sox,Kansas City Royals,Bryan Hudson,Seth Lugo,0,0,Pre-Game
-2026-09-23,Miami Marlins,Chicago Cubs,Ryan Gusto,Kevin Gausman,0,0,Pre-Game
-2026-09-23,New York Mets,Texas Rangers,Nolan McLean,Cody Bradford,0,0,Pre-Game
-2026-09-23,Arizona Diamondbacks,Colorado Rockies,Merrill Kelly,Mason Adams,0,0,Pre-Game
-2026-09-23,Los Angeles Angels,Athletics,Walbert Ureña,Jeffrey Springs,0,0,Pre-Game
-2026-09-23,San Diego Padres,Los Angeles Dodgers,Robbie Ray,Yoshinobu Yamamoto,0,0,Pre-Game
-2026-09-23,Houston Astros,Seattle Mariners,Ethan Pecko,George Kirby,0,0,Pre-Game
+2026-09-23,St. Louis Cardinals,Pittsburgh Pirates,Matthew Liberatore,Lake Bachar,5,1,Final
+2026-09-23,Milwaukee Brewers,Philadelphia Phillies,Logan Henderson,Aaron Nola,4,1,Final
+2026-09-23,Tampa Bay Rays,New York Yankees,Mason Englert,Gerrit Cole,2,9,Final
+2026-09-23,Cleveland Guardians,Boston Red Sox,Foster Griffin,Sonny Gray,0,1,Final
+2026-09-23,Cincinnati Reds,Atlanta Braves,Andrew Abbott,Chris Sale,2,3,Final
+2026-09-23,Chicago White Sox,Kansas City Royals,Bryan Hudson,Seth Lugo,4,5,Final
+2026-09-23,Miami Marlins,Chicago Cubs,Ryan Gusto,Kevin Gausman,3,2,Final
+2026-09-23,New York Mets,Texas Rangers,Nolan McLean,Cody Bradford,7,2,Final
+2026-09-23,Arizona Diamondbacks,Colorado Rockies,Merrill Kelly,Mason Adams,5,3,Final
+2026-09-23,Los Angeles Angels,Athletics,Walbert Ureña,Jeffrey Springs,3,7,Final
+2026-09-23,San Diego Padres,Los Angeles Dodgers,Robbie Ray,Yoshinobu Yamamoto,5,1,Final
+2026-09-23,Houston Astros,Seattle Mariners,Ethan Pecko,George Kirby,5,6,Final
+2026-09-24,St. Louis Cardinals,Pittsburgh Pirates,Kyle Leahy,Paul Skenes,0,0,Pre-Game
+2026-09-24,Chicago White Sox,Kansas City Royals,David Sandlin,Randy Dobnak,0,0,Scheduled
+2026-09-24,Miami Marlins,Chicago Cubs,Tyler Phillips,Matthew Boyd,0,0,Scheduled
+2026-09-24,New York Mets,Texas Rangers,Zac Thornton,Kumar Rocker,0,0,Scheduled
+2026-09-24,Arizona Diamondbacks,Colorado Rockies,Eduardo Rodriguez,Tanner Gordon,0,0,Scheduled
+2026-09-24,Milwaukee Brewers,Philadelphia Phillies,Bryse Wilson,Andrew Painter,0,0,Scheduled
+2026-09-24,Cleveland Guardians,Boston Red Sox,Daniel Espino,Ranger Suarez,0,0,Scheduled
+2026-09-24,Tampa Bay Rays,New York Yankees,Ian Seymour,Cam Schlittler,0,0,Scheduled
+2026-09-24,Cincinnati Reds,Atlanta Braves,Brady Singer,Tyler Mahle,0,0,Scheduled
+2026-09-24,Houston Astros,Athletics,Peter Lambert,Mason Barnett,0,0,Scheduled
+2026-09-24,Los Angeles Angels,Seattle Mariners,Grayson Rodriguez,Bryan Woo,0,0,Scheduled
+2026-09-24,San Diego Padres,Los Angeles Dodgers,Nick Pivetta,Tyler Glasnow,0,0,Scheduled

@@ -2408,3 +2408,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-23,Pete Alonso,BAL,824784,TBD *,2,proj,17.2,25.3,18.3,+480,420,-4.6,park +4% [low-conf],62F · wind in 7,,,hr,1
 2026-09-23,Christian Encarnacion-Strand,BAL,824785,Max Scherzer,8,proj,15.6,14.7,12.1,+541,475,-30.2,park +4% [low-conf],62F · wind in 7,RvR -3%,,no,0
 2026-09-23,Christian Encarnacion-Strand,BAL,824784,TBD *,8,proj,15.6,13.5,10.7,+541,475,-38.2,park +4% [low-conf],62F · wind in 7,,,no,0
+2026-09-23,Ketel Marte,ARI,824301,Mason Adams,2,card,23.0,20.4,15.7,+335,290,-38.9,park +9%,75F,SvR +8%,heat +2%,void,
+2026-09-23,Yordan Alvarez,HOU,823086,George Kirby,1,proj,23.0,27.9,19.8,+335,290,-22.9,park -4%,63F (roof: half),LvR +8%,heat +10%,no,0
+2026-09-23,Zach Neto,LAA,824951,Jeffrey Springs,1,card,23.0,26.1,18.8,+335,290,-26.7,park +6% [low-conf],90F,RvL +12%,heat +6%,no,0
+2026-09-23,Hunter Goodman,COL,824301,Merrill Kelly,3,card,22.4,26.9,19.2,+346,300,-23.2,park +9%,75F,RvR -3%,heat +4%,no,0
+2026-09-23,Shohei Ohtani,LAD,823894,Robbie Ray,2,card,22.1,22.7,17.0,+352,305,-31.3,park +5%,82F · wind out 6,LvL -22%,heat -9%,no,0
+2026-09-23,Mike Trout,LAA,824951,Jeffrey Springs,2,card,21.9,24.6,18.0,+357,310,-26.3,park +6% [low-conf],90F,RvL +12%,heat -5%,hr,1
+2026-09-23,Shea Langeliers,ATH,824951,Walbert Ureña *,3,card,20.4,24.6,18.0,+391,340,-20.9,park +6% [low-conf],90F,RvR -3%,heat +14%,no,0
+2026-09-23,Cal Raleigh,SEA,823086,Ethan Pecko,4,card,19.9,18.9,14.9,+402,350,-32.9,park -4%,63F (roof: half),SvR +8%,heat +5%,no,0
+2026-09-23,Matt Olson,ATL,824868,Andrew Abbott,3,card,19.5,22.9,17.1,+413,360,-21.5,park +4%,73F · wind in 3,LvL -22%,heat +3%,hr,1
+2026-09-23,Kyle Schwarber,PHI,823410,Logan Henderson,1,card,19.1,29.0,20.3,+424,370,-4.5,park +9%,62F · wind in 4,LvR +8%,heat +11%,no,0
+2026-09-23,Teoscar Hernández,LAD,823894,Robbie Ray,5,card,19.1,14.2,11.6,+424,370,-45.6,park +5%,82F · wind out 6,RvL +12%,,no,0
+2026-09-23,Will Smith,LAD,823894,Robbie Ray,3,card,19.1,18.5,14.7,+424,370,-31.0,park +5%,82F · wind out 6,RvL +12%,heat -3%,no,0
+2026-09-23,Corbin Carroll,ARI,824301,Mason Adams,7,card,18.3,13.6,10.8,+446,390,-47.0,park +9%,75F,LvR +8%,,void,
+2026-09-23,Andy Pages,LAD,823894,Robbie Ray,7,card,17.9,12.8,10.0,+457,400,-49.9,park +5%,82F · wind out 6,RvL +12%,,no,0
+2026-09-23,Junior Caminero,TBR,823492,Gerrit Cole,3,card,17.9,25.0,18.2,+457,400,-9.0,park +14%,64F · wind in 9,RvR -3%,heat +8%,no,0
+2026-09-23,Jose Siri,LAA,824951,Jeffrey Springs,6,card,17.6,18.6,14.7,+469,410,-24.8,park +6% [low-conf],90F,RvL +12%,heat +3%,no,0
+2026-09-23,Juan Soto,NYM,822841,Cody Bradford,2,card,17.6,24.1,17.7,+469,410,-9.7,park +2%,88F · wind in 12 (roof: half),LvL -22%,heat +10%,hr,1
+2026-09-23,Lars Nootbaar,ARI,824301,Mason Adams,1,card,17.6,16.1,13.4,+469,410,-31.8,park +9%,75F,LvR +8%,heat +1%,void,
+2026-09-23,Munetaka Murakami,CHW,824060,Seth Lugo,4,card,17.6,24.8,18.1,+469,410,-7.7,park -4% [low-conf],72F · wind in 7,LvR +8%,heat +11%,no,0
+2026-09-23,Max Muncy,LAD,823894,Robbie Ray,8,card,17.1,14.4,11.8,+485,425,-38.2,park +5%,82F · wind out 6,LvL -22%,,no,0
+2026-09-23,Pete Crow-Armstrong,CHC,824625,Ryan Gusto,1,card,17.1,26.4,18.9,+485,425,-0.6,park avg,62F · wind in 9,LvR +8%,heat +9%,no,0
+2026-09-23,Colson Montgomery,CHW,824060,Seth Lugo,8,card,16.9,15.9,13.3,+491,430,-29.5,park -4% [low-conf],72F · wind in 7,LvR +8%,,no,0
+2026-09-23,Fernando Tatis Jr.,SDP,823894,Yoshinobu Yamamoto,1,card,16.9,20.8,15.9,+491,430,-15.6,park +5%,82F · wind out 6,RvR -3%,heat -1%,no,0
+2026-09-23,Miguel Vargas,CHW,824060,Seth Lugo,3,card,16.9,21.7,16.4,+491,430,-13.0,park -4% [low-conf],72F · wind in 7,RvR -3%,heat +1%,no,0
+2026-09-23,Mookie Betts,LAD,823894,Robbie Ray,1,card,16.6,21.9,16.5,+502,440,-10.8,park +5%,82F · wind out 6,RvL +12%,heat -8%,no,0
+2026-09-23,Manny Machado,SDP,823894,Yoshinobu Yamamoto,3,card,16.3,18.9,14.9,+513,450,-18.0,park +5%,82F · wind out 6,RvR -3%,heat +3%,hr,1
+2026-09-23,James Wood,WSN,824223,Framber Valdez,1,card,16.0,21.0,,+525,,,park -5%,60F,LvL -22%,heat +4%,no,0
+2026-09-23,Nolan Arenado,ARI,824301,Mason Adams,6,card,16.0,15.9,13.3,+524,460,-25.6,park +9%,75F,RvR -3%,,void,
+2026-09-23,Yohandy Morales,WSN,824223,Framber Valdez,6,card,15.8,20.6,,+532,,,park -5%,60F,RvL +12%,,hr,1
+2026-09-23,Ben Rice,NYY,823492,Mason Englert,1,card,15.6,27.7,19.6,+541,475,12.9,park +14%,64F · wind in 9,LvR +8%,heat +6%,hr,2
