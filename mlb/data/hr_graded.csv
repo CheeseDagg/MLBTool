@@ -2438,3 +2438,8 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-23,Nolan Arenado,ARI,824301,Mason Adams,6,card,16.0,15.9,13.3,+524,460,-25.6,park +9%,75F,RvR -3%,,void,
 2026-09-23,Yohandy Morales,WSN,824223,Framber Valdez,6,card,15.8,20.6,,+532,,,park -5%,60F,RvL +12%,,hr,1
 2026-09-23,Ben Rice,NYY,823492,Mason Englert,1,card,15.6,27.7,19.6,+541,475,12.9,park +14%,64F · wind in 9,LvR +8%,heat +6%,hr,2
+2026-09-24,Munetaka Murakami,CHW,824059,Randy Dobnak,4,card,19.9,23.9,17.6,+402,350,-20.9,park -4% [low-conf],74F,LvR +8%,heat +2%,no,0
+2026-09-24,Colson Montgomery,CHW,824059,Randy Dobnak,8,card,18.3,15.3,12.8,+446,390,-37.4,park -4% [low-conf],74F,LvR +8%,heat -4%,no,0
+2026-09-24,Miguel Vargas,CHW,824059,Randy Dobnak,3,card,18.3,20.9,15.9,+446,390,-21.9,park -4% [low-conf],74F,RvR -3%,heat -11%,no,0
+2026-09-24,Carter Jensen,KCR,824059,David Sandlin,1,card,17.1,23.2,17.2,+485,425,-9.8,park -4% [low-conf],74F,LvR +8%,heat +3%,no,0
+2026-09-24,Pete Crow-Armstrong,CHC,824623,Tyler Phillips,1,card,16.9,26.4,18.9,+491,430,0.2,park avg,65F · wind in 6,LvR +8%,heat +11%,no,0
