@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T13:51+00:00",
+ "generated": "2026-09-24T17:29+00:00",
  "board": [
   {
    "pitcher": "Tyler Glasnow",
@@ -164,40 +164,40 @@
   {
    "pitcher": "Paul Skenes",
    "opp": "St. Louis Cardinals",
-   "lam": 5.81,
-   "k9_regressed": 10.0,
-   "exp_ip": 5.42,
-   "opp_mult": 0.966,
+   "lam": 5.82,
+   "k9_regressed": 10.11,
+   "exp_ip": 5.35,
+   "opp_mult": 0.968,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.6893,
-     "fair_over": -222,
-     "fair_under": 222
+     "p_over": 0.6903,
+     "fair_over": -223,
+     "fair_under": 223
     },
     {
      "line": 5.5,
-     "p_over": 0.5241,
-     "fair_over": -110,
-     "fair_under": 110
+     "p_over": 0.5252,
+     "fair_over": -111,
+     "fair_under": 111
     },
     {
      "line": 6.5,
-     "p_over": 0.3639,
-     "fair_over": 175,
-     "fair_under": -175
+     "p_over": 0.365,
+     "fair_over": 174,
+     "fair_under": -174
     },
     {
      "line": 7.5,
-     "p_over": 0.2309,
-     "fair_over": 333,
-     "fair_under": -333
+     "p_over": 0.2318,
+     "fair_over": 331,
+     "fair_under": -331
     },
     {
      "line": 8.5,
-     "p_over": 0.1342,
-     "fair_over": 645,
-     "fair_under": -645
+     "p_over": 0.1348,
+     "fair_over": 642,
+     "fair_under": -642
     }
    ]
   },
@@ -282,6 +282,46 @@
    ]
   },
   {
+   "pitcher": "Shane Drohan",
+   "opp": "Philadelphia Phillies",
+   "lam": 4.99,
+   "k9_regressed": 8.95,
+   "exp_ip": 5.07,
+   "opp_mult": 0.989,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.5578,
+     "fair_over": -126,
+     "fair_under": 126
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3823,
+     "fair_over": 162,
+     "fair_under": -162
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.2364,
+     "fair_over": 323,
+     "fair_under": -323
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.1323,
+     "fair_over": 656,
+     "fair_under": -656
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0674,
+     "fair_over": 1383,
+     "fair_under": -1383
+    }
+   ]
+  },
+  {
    "pitcher": "Ranger Suarez",
    "opp": "Cleveland Guardians",
    "lam": 4.85,
@@ -322,46 +362,6 @@
    ]
   },
   {
-   "pitcher": "Bryse Wilson",
-   "opp": "Philadelphia Phillies",
-   "lam": 4.8,
-   "k9_regressed": 8.24,
-   "exp_ip": 5.3,
-   "opp_mult": 0.989,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5232,
-     "fair_over": -110,
-     "fair_under": 110
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3485,
-     "fair_over": 187,
-     "fair_under": -187
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.2088,
-     "fair_over": 379,
-     "fair_under": -379
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.113,
-     "fair_over": 785,
-     "fair_under": -785
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0556,
-     "fair_over": 1697,
-     "fair_under": -1697
-    }
-   ]
-  },
-  {
    "pitcher": "David Sandlin",
    "opp": "Kansas City Royals",
    "lam": 4.75,
@@ -398,46 +398,6 @@
      "p_over": 0.053,
      "fair_over": 1786,
      "fair_under": -1786
-    }
-   ]
-  },
-  {
-   "pitcher": "Kyle Leahy",
-   "opp": "Pittsburgh Pirates",
-   "lam": 4.68,
-   "k9_regressed": 8.45,
-   "exp_ip": 4.76,
-   "opp_mult": 1.048,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.5024,
-     "fair_over": -101,
-     "fair_under": 101
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3288,
-     "fair_over": 204,
-     "fair_under": -204
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1932,
-     "fair_over": 418,
-     "fair_under": -418
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.1025,
-     "fair_over": 876,
-     "fair_under": -876
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0494,
-     "fair_over": 1925,
-     "fair_under": -1925
     }
    ]
   },
@@ -518,6 +478,46 @@
      "p_over": 0.047,
      "fair_over": 2025,
      "fair_under": -2025
+    }
+   ]
+  },
+  {
+   "pitcher": "Kyle Leahy",
+   "opp": "Pittsburgh Pirates",
+   "lam": 4.63,
+   "k9_regressed": 8.51,
+   "exp_ip": 4.67,
+   "opp_mult": 1.049,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4917,
+     "fair_over": 103,
+     "fair_under": -103
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.3188,
+     "fair_over": 214,
+     "fair_under": -214
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1855,
+     "fair_over": 439,
+     "fair_under": -439
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0974,
+     "fair_over": 927,
+     "fair_under": -927
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0464,
+     "fair_over": 2055,
+     "fair_under": -2055
     }
    ]
   },
@@ -962,8 +962,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 1 \u00b7 credits remaining 16755 (used 3245) \u00b7 whiff rest:30 rows",
- "n_markets": 20,
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 16729 (used 3271) \u00b7 whiff rest:30 rows",
+ "n_markets": 18,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -975,6 +975,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 1,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
