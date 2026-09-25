@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T01:28:02+00:00",
+ "generated": "2026-09-25T20:28:22+00:00",
  "date": "2026-09-25",
  "min_pa": 6,
  "rows": [
@@ -35,17 +35,6 @@
    "hr": 2,
    "avg": ".444",
    "slg": "1.111"
-  },
-  {
-   "batter": "Victor Caratini",
-   "team": "MIN",
-   "opp_sp": "Jacob deGrom",
-   "pa": 25,
-   "ab": 23,
-   "h": 6,
-   "hr": 2,
-   "avg": ".261",
-   "slg": ".565"
   },
   {
    "batter": "Cal Raleigh",
@@ -136,6 +125,17 @@
    "slg": ".733"
   },
   {
+   "batter": "Eugenio Su\u00e1rez",
+   "team": "CIN",
+   "opp_sp": "Jos\u00e9 Soriano",
+   "pa": 11,
+   "ab": 9,
+   "h": 2,
+   "hr": 1,
+   "avg": ".222",
+   "slg": ".667"
+  },
+  {
    "batter": "Mike Trout",
    "team": "LAA",
    "opp_sp": "Bryce Miller",
@@ -158,14 +158,14 @@
    "slg": ".565"
   },
   {
-   "batter": "Ozzie Albies",
-   "team": "ATL",
-   "opp_sp": "Eury P\u00e9rez",
-   "pa": 10,
-   "ab": 9,
-   "h": 2,
+   "batter": "Lawrence Butler",
+   "team": "ATH",
+   "opp_sp": "Hunter Brown",
+   "pa": 19,
+   "ab": 18,
+   "h": 6,
    "hr": 1,
-   "avg": ".222",
+   "avg": ".333",
    "slg": ".556"
   }
  ]
