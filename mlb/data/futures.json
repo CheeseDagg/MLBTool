@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T17:26:55+00:00",
+ "generated": "2026-09-25T18:03:04+00:00",
  "market": "World Series",
  "rows": [
   {
@@ -87,18 +87,6 @@
    "shop": false
   },
   {
-   "team": "Philadelphia Phillies",
-   "cons_pct": 5.1,
-   "fair": "+1847",
-   "best_price": 1700,
-   "book": "fanduel",
-   "edge_pct": -7.6,
-   "any_price": null,
-   "any_book": null,
-   "books_n": 5,
-   "shop": false
-  },
-  {
    "team": "Chicago Cubs",
    "cons_pct": 5.1,
    "fair": "+1847",
@@ -107,6 +95,18 @@
    "edge_pct": -7.6,
    "any_price": 1800,
    "any_book": "betonlineag",
+   "books_n": 5,
+   "shop": false
+  },
+  {
+   "team": "Philadelphia Phillies",
+   "cons_pct": 5.1,
+   "fair": "+1847",
+   "best_price": 1700,
+   "book": "fanduel",
+   "edge_pct": -7.6,
+   "any_price": null,
+   "any_book": null,
    "books_n": 5,
    "shop": false
   },

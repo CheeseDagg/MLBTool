@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T17:29+00:00",
+ "generated": "2026-09-25T18:05+00:00",
  "board": [
   {
    "pitcher": "Gavin Williams",
@@ -682,46 +682,6 @@
    ]
   },
   {
-   "pitcher": "David Peterson",
-   "opp": "Boston Red Sox",
-   "lam": 4.61,
-   "k9_regressed": 8.3,
-   "exp_ip": 5.06,
-   "opp_mult": 0.987,
-   "lines": [
-    {
-     "line": 4.5,
-     "p_over": 0.4878,
-     "fair_over": 105,
-     "fair_under": -105
-    },
-    {
-     "line": 5.5,
-     "p_over": 0.3152,
-     "fair_over": 217,
-     "fair_under": -217
-    },
-    {
-     "line": 6.5,
-     "p_over": 0.1827,
-     "fair_over": 447,
-     "fair_under": -447
-    },
-    {
-     "line": 7.5,
-     "p_over": 0.0955,
-     "fair_over": 947,
-     "fair_under": -947
-    },
-    {
-     "line": 8.5,
-     "p_over": 0.0453,
-     "fair_over": 2105,
-     "fair_under": -2105
-    }
-   ]
-  },
-  {
    "pitcher": "Robert Gasser",
    "opp": "St. Louis Cardinals",
    "lam": 4.6,
@@ -762,42 +722,82 @@
    ]
   },
   {
-   "pitcher": "Clay Holmes",
+   "pitcher": "David Peterson",
    "opp": "Boston Red Sox",
-   "lam": 4.42,
-   "k9_regressed": 7.41,
-   "exp_ip": 5.44,
-   "opp_mult": 0.987,
+   "lam": 4.6,
+   "k9_regressed": 8.3,
+   "exp_ip": 5.06,
+   "opp_mult": 0.986,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.4529,
-     "fair_over": 121,
-     "fair_under": -121
+     "p_over": 0.4873,
+     "fair_over": 105,
+     "fair_under": -105
     },
     {
      "line": 5.5,
-     "p_over": 0.2837,
-     "fair_over": 252,
-     "fair_under": -252
+     "p_over": 0.3148,
+     "fair_over": 218,
+     "fair_under": -218
     },
     {
      "line": 6.5,
-     "p_over": 0.159,
-     "fair_over": 529,
-     "fair_under": -529
+     "p_over": 0.1824,
+     "fair_over": 448,
+     "fair_under": -448
     },
     {
      "line": 7.5,
-     "p_over": 0.0803,
-     "fair_over": 1146,
-     "fair_under": -1146
+     "p_over": 0.0953,
+     "fair_over": 949,
+     "fair_under": -949
     },
     {
      "line": 8.5,
-     "p_over": 0.0367,
-     "fair_over": 2622,
-     "fair_under": -2622
+     "p_over": 0.0452,
+     "fair_over": 2111,
+     "fair_under": -2111
+    }
+   ]
+  },
+  {
+   "pitcher": "Clay Holmes",
+   "opp": "Boston Red Sox",
+   "lam": 4.51,
+   "k9_regressed": 7.4,
+   "exp_ip": 5.56,
+   "opp_mult": 0.986,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.4689,
+     "fair_over": 113,
+     "fair_under": -113
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.298,
+     "fair_over": 236,
+     "fair_under": -236
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.1696,
+     "fair_over": 489,
+     "fair_under": -489
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.087,
+     "fair_over": 1049,
+     "fair_under": -1049
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0405,
+     "fair_over": 2369,
+     "fair_under": -2369
     }
    ]
   },
@@ -927,37 +927,37 @@
    "lam": 3.96,
    "k9_regressed": 7.54,
    "exp_ip": 4.87,
-   "opp_mult": 0.971,
+   "opp_mult": 0.97,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.3633,
-     "fair_over": 175,
-     "fair_under": -175
+     "p_over": 0.3627,
+     "fair_over": 176,
+     "fair_under": -176
     },
     {
      "line": 5.5,
-     "p_over": 0.2086,
-     "fair_over": 379,
-     "fair_under": -379
+     "p_over": 0.2082,
+     "fair_over": 380,
+     "fair_under": -380
     },
     {
      "line": 6.5,
-     "p_over": 0.1065,
-     "fair_over": 839,
-     "fair_under": -839
+     "p_over": 0.1062,
+     "fair_over": 841,
+     "fair_under": -841
     },
     {
      "line": 7.5,
-     "p_over": 0.0488,
-     "fair_over": 1950,
-     "fair_under": -1950
+     "p_over": 0.0486,
+     "fair_over": 1957,
+     "fair_under": -1957
     },
     {
      "line": 8.5,
-     "p_over": 0.0202,
-     "fair_over": 4853,
-     "fair_under": -4853
+     "p_over": 0.0201,
+     "fair_over": 4874,
+     "fair_under": -4874
     }
    ]
   },
@@ -1124,45 +1124,45 @@
   {
    "pitcher": "Alec Gamboa",
    "opp": "Chicago Cubs",
-   "lam": 2.45,
-   "k9_regressed": 7.58,
+   "lam": 2.42,
+   "k9_regressed": 7.47,
    "exp_ip": 3.0,
-   "opp_mult": 0.971,
+   "opp_mult": 0.97,
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.1028,
-     "fair_over": 873,
-     "fair_under": -873
+     "p_over": 0.0979,
+     "fair_over": 921,
+     "fair_under": -921
     },
     {
      "line": 5.5,
-     "p_over": 0.039,
-     "fair_over": 2461,
-     "fair_under": -2461
+     "p_over": 0.0367,
+     "fair_over": 2627,
+     "fair_under": -2627
     },
     {
      "line": 6.5,
-     "p_over": 0.013,
-     "fair_over": 7618,
-     "fair_under": -7618
+     "p_over": 0.012,
+     "fair_over": 8236,
+     "fair_under": -8236
     },
     {
      "line": 7.5,
-     "p_over": 0.0038,
-     "fair_over": 26137,
-     "fair_under": -26137
+     "p_over": 0.0035,
+     "fair_over": 28662,
+     "fair_under": -28662
     },
     {
      "line": 8.5,
-     "p_over": 0.001,
-     "fair_over": 99357,
-     "fair_under": -99357
+     "p_over": 0.0009,
+     "fair_over": 110573,
+     "fair_under": -110573
     }
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 5 \u00b7 credits remaining 16601 (used 3399) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 16569 (used 3431) \u00b7 whiff rest:30 rows",
  "n_markets": 22,
  "n_plays": 0,
  "plays": [],
@@ -1175,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 5,
+ "n_unbettable": 4,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
