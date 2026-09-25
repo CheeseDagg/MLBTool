@@ -2448,3 +2448,27 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-24,Oneil Cruz,PIT,823326,Kyle Leahy,1,card,15.8,20.7,,+531,,,park -9%,66F · wind in 3,LvR +8%,heat +11%,no,0
 2026-09-24,Ketel Marte,ARI,824298,Tanner Gordon,2,card,15.5,20.7,15.9,+547,480,-8.0,park +9%,72F · wind in 5,SvR +8%,heat +8%,void,
 2026-09-24,Brandon Lowe,PIT,823326,Kyle Leahy,3,card,15.1,19.3,,+561,,,park -9%,66F · wind in 3,LvR +8%,heat +7%,no,0
+2026-09-24,Yordan Alvarez,HOU,824950,Mason Barnett,1,proj,28.0,35.1,23.7,+257,220,-24.3,park +6% [low-conf],93F · wind out 3,LvR +8%,heat +1%,no,0
+2026-09-24,Shea Langeliers,ATH,824950,Peter Lambert,3,card,23.9,24.1,17.7,+318,275,-33.7,park +6% [low-conf],93F · wind out 3,RvR -3%,heat +10%,no,0
+2026-09-24,Matt Olson,ATL,824866,Brady Singer,3,card,23.0,25.4,18.4,+335,290,-28.3,park +4%,68F,LvR +8%,heat -0%,no,0
+2026-09-24,Shohei Ohtani,LAD,823895,Nick Pivetta,1,card,22.1,25.7,18.6,+352,305,-24.8,park +5%,79F · wind out 5,LvR +8%,heat +6%,no,0
+2026-09-24,Cal Raleigh,SEA,823087,Grayson Rodriguez,4,card,20.9,18.7,14.8,+379,330,-36.5,park -4%,61F (roof: half),SvR +8%,heat +13%,no,0
+2026-09-24,Teoscar Hernández,LAD,823895,Nick Pivetta,4,card,20.4,14.3,11.6,+391,340,-48.8,park +5%,79F · wind out 5,RvR -3%,heat -2%,no,0
+2026-09-24,Juan Soto,NYM,822842,Kumar Rocker,2,card,19.5,27.4,,+414,,,park +2%,93F · wind in 4 (roof: half),LvR +8%,heat +4%,no,0
+2026-09-24,Ronald Acuña Jr.,ATL,824866,Brady Singer,2,card,19.1,19.4,15.1,+424,370,-28.9,park +4%,68F,RvR -3%,heat +2%,no,0
+2026-09-24,Hunter Goodman,COL,824298,Eduardo Rodriguez *,3,card,18.7,25.9,,+436,,,park +9%,67F,RvL +12%,heat +2%,no,0
+2026-09-24,Isaac Paredes,HOU,824950,Mason Barnett,2,proj,18.7,20.2,15.6,+435,380,-25.1,park +6% [low-conf],93F · wind out 3,RvR -3%,heat -4%,hr,1
+2026-09-24,Yainer Diaz,HOU,824950,Mason Barnett,6,proj,18.7,16.8,13.8,+435,380,-33.9,park +6% [low-conf],93F · wind out 3,RvR -3%,heat -2%,no,0
+2026-09-24,Carlos Jorge,CIN,824866,Tyler Mahle,1,card,18.3,25.3,,+446,,,park +4%,68F,LvR +8%,,hr,1
+2026-09-24,Zack Gelof,ATH,824950,Peter Lambert,5,card,18.3,18.5,14.7,+446,390,-28.2,park +6% [low-conf],93F · wind out 3,RvR -3%,heat -1%,hr,2
+2026-09-24,Fernando Tatis Jr.,SDP,823895,Tyler Glasnow,1,card,17.9,20.5,15.8,+457,400,-21.1,park +5%,79F · wind out 5,RvR -3%,heat -9%,no,0
+2026-09-24,Christian Walker,HOU,824950,Mason Barnett,3,proj,17.2,22.3,16.7,+480,420,-12.9,park +6% [low-conf],93F · wind out 3,RvR -3%,heat -6%,hr,1
+2026-09-24,Elly De La Cruz,CIN,824866,Tyler Mahle,2,card,17.2,21.0,16.0,+480,420,-16.8,park +4%,68F,SvR +8%,heat +4%,hr,1
+2026-09-24,Francisco Lindor,NYM,822842,Kumar Rocker,1,card,17.2,23.2,,+482,,,park +2%,93F · wind in 4 (roof: half),SvR +8%,heat -6%,no,0
+2026-09-24,Andy Pages,LAD,823895,Nick Pivetta,7,card,17.1,12.0,9.7,+485,425,-48.9,park +5%,79F · wind out 5,RvR -3%,,no,0
+2026-09-24,Dominic Canzone,SEA,823087,Grayson Rodriguez,3,card,17.1,18.9,14.9,+485,425,-21.8,park -4%,61F (roof: half),LvR +8%,heat +4%,no,0
+2026-09-24,Manny Machado,SDP,823895,Tyler Glasnow,3,card,16.3,19.1,15.0,+513,450,-17.4,park +5%,79F · wind out 5,RvR -3%,heat -11%,no,0
+2026-09-24,Max Muncy,LAD,823895,Nick Pivetta,6,card,16.3,17.7,14.2,+513,450,-21.6,park +5%,79F · wind out 5,LvR +8%,,no,0
+2026-09-24,Mike Trout,LAA,823087,Bryan Woo,2,card,16.0,18.2,14.5,+524,460,-18.6,park -4%,61F (roof: half),RvR -3%,heat +13%,no,0
+2026-09-24,Jake Burger,TEX,822842,Zac Thornton,4,card,15.6,20.3,,+540,,,park +2%,93F · wind in 4 (roof: half),RvL +12%,heat +18%,no,0
+2026-09-24,Michael Harris II,ATL,824866,Brady Singer,4,card,15.6,18.2,14.5,+541,475,-16.4,park +4%,68F,LvR +8%,heat +2%,no,0
