@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T13:28+00:00",
+ "generated": "2026-09-26T16:39+00:00",
  "board": [
   {
    "pitcher": "Nathan Eovaldi",
@@ -131,13 +131,13 @@
    "lines": [
     {
      "line": 4.5,
-     "p_over": 0.626,
+     "p_over": 0.6259,
      "fair_over": -167,
      "fair_under": 167
     },
     {
      "line": 5.5,
-     "p_over": 0.4531,
+     "p_over": 0.453,
      "fair_over": 121,
      "fair_under": -121
     },
@@ -149,13 +149,13 @@
     },
     {
      "line": 7.5,
-     "p_over": 0.1778,
-     "fair_over": 462,
-     "fair_under": -462
+     "p_over": 0.1777,
+     "fair_over": 463,
+     "fair_under": -463
     },
     {
      "line": 8.5,
-     "p_over": 0.097,
+     "p_over": 0.0969,
      "fair_over": 931,
      "fair_under": -931
     }
@@ -962,7 +962,7 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 4 \u00b7 credits remaining 16468 (used 3532) \u00b7 whiff rest:30 rows",
+ "diag": "errors {} \u00b7 unbettable markets dropped 3 \u00b7 credits remaining 16441 (used 3559) \u00b7 whiff rest:30 rows",
  "n_markets": 18,
  "n_plays": 0,
  "plays": [],
@@ -975,6 +975,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 4,
+ "n_unbettable": 3,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
