@@ -2474,3 +2474,31 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-24,Michael Harris II,ATL,824866,Brady Singer,4,card,15.6,18.2,14.5,+541,475,-16.4,park +4%,68F,LvR +8%,heat +2%,no,0
 2026-09-25,Pete Alonso,BAL,823489,TBD *,2,proj,19.1,26.7,,+423,,,park +14%,no wx,,,hr,2
 2026-09-25,Pete Alonso,BAL,823491,Brendan Beck *,2,proj,19.0,26.5,,+426,,,park +14%,no wx,RvR -3%,,hr,2
+2026-09-25,Yordan Alvarez,HOU,824947,Jacob Lopez,2,card,24.6,30.1,20.9,+307,265,-23.6,park +6% [low-conf],85F · wind out 5,LvL -22%,heat +10%,no,0
+2026-09-25,Shohei Ohtani,LAD,823167,Yunior Marte,1,card,23.6,25.3,18.3,+324,280,-30.3,park -14%,69F · wind out 13,LvR +8%,heat +8%,no,0
+2026-09-25,Matt Olson,ATL,823816,Eury Pérez *,3,card,19.5,22.6,16.9,+413,360,-22.2,park -9%,80F (roof: half),LvR +8%,heat -5%,no,0
+2026-09-25,Fernando Tatis Jr.,SDP,823248,Brandon Pfaadt,1,card,19.1,19.0,15.0,+424,370,-29.7,park -4%,79F · wind in 5,RvR -3%,heat -1%,no,0
+2026-09-25,Isaac Paredes,HOU,824947,Jacob Lopez,3,card,19.1,19.7,15.3,+424,370,-28.0,park +6% [low-conf],85F · wind out 5,RvL +12%,heat +1%,no,0
+2026-09-25,Ketel Marte,ARI,823248,Casey Mize,2,card,19.1,17.8,14.3,+424,370,-32.9,park -4%,79F · wind in 5,SvR +8%,heat +6%,void,
+2026-09-25,Christian Walker,HOU,824947,Jacob Lopez,6,card,18.7,18.9,14.9,+435,380,-28.5,park +6% [low-conf],85F · wind out 5,RvL +12%,heat +2%,hr,1
+2026-09-25,Cam Smith,HOU,824947,Jacob Lopez,7,card,18.3,15.6,13.1,+446,390,-35.9,park +6% [low-conf],85F · wind out 5,RvL +12%,,hr,1
+2026-09-25,Jake Bauers,MIL,823735,Michael McGreevy,4,card,18.3,18.3,14.6,+446,390,-28.6,park +9%,61F (roof: half),LvR +8%,heat -6%,no,0
+2026-09-25,Jeremy Peña,HOU,824947,Jacob Lopez,1,card,18.3,24.7,18.0,+446,390,-11.7,park +6% [low-conf],85F · wind out 5,RvL +12%,heat +10%,no,0
+2026-09-25,Miguel Vargas,CHW,824544,Tomoyuki Sugano,3,card,18.3,21.9,16.5,+446,390,-19.2,park +9%,59F,RvR -3%,heat -6%,no,0
+2026-09-25,Corbin Carroll,ARI,823248,Casey Mize,5,card,17.9,13.6,10.9,+457,400,-45.6,park -4%,79F · wind in 5,LvR +8%,,void,
+2026-09-25,Hunter Goodman,COL,824544,Sean Burke,3,card,17.9,25.4,18.4,+457,400,-8.1,park +9%,59F,RvR -3%,heat +4%,no,0
+2026-09-25,Jordan Walker,STL,823735,Robert Gasser,3,card,17.9,19.1,15.0,+457,400,-25.0,park +9%,61F (roof: half),RvL +12%,heat +17%,hr,1
+2026-09-25,Randal Grichuk,CHW,824544,Tomoyuki Sugano,7,card,17.9,16.5,13.6,+457,400,-31.9,park +9%,59F,RvR -3%,heat +3%,no,0
+2026-09-25,Colson Montgomery,CHW,824544,Tomoyuki Sugano,8,card,17.6,16.2,13.4,+469,410,-31.4,park +9%,59F,LvR +8%,,no,0
+2026-09-25,Heriberto Hernández,MIA,823816,Ray Kerr,3,card,17.6,19.9,15.4,+469,410,-21.4,park -9%,80F (roof: half),RvL +12%,,no,0
+2026-09-25,Corey Seager,TEX,823652,Joe Ryan,3,card,16.9,20.2,15.6,+491,430,-17.5,park -2%,69F · wind in 4,LvR +8%,heat +13%,no,0
+2026-09-25,Manny Machado,SDP,823248,Brandon Pfaadt,3,card,16.9,17.8,14.3,+491,430,-24.2,park -4%,79F · wind in 5,RvR -3%,heat +2%,no,0
+2026-09-25,Munetaka Murakami,CHW,824544,Tomoyuki Sugano,4,card,16.9,25.2,18.3,+491,430,-3.1,park +9%,59F,LvR +8%,heat +0%,hr,2
+2026-09-25,Coby Mayo,BAL,823491,Brendan Beck *,3,card,16.3,21.5,16.3,+513,450,-10.2,park +14%,66F · wind in 5,RvR -3%,,no,0
+2026-09-25,Coby Mayo,BAL,823489,Ryan Yarbrough,3,card,16.3,22.6,16.9,+513,450,-7.2,park +14%,66F · wind in 5,RvL +12%,heat +2%,no,0
+2026-09-25,Riley Greene,DET,824220,Bubba Chandler,5,card,16.3,13.6,10.9,+513,450,-40.2,park -5%,62F,LvR +8%,,no,0
+2026-09-25,Jackson Merrill,SDP,823248,Brandon Pfaadt,5,card,16.0,15.4,12.9,+524,460,-27.8,park -4%,79F · wind in 5,LvR +8%,,no,0
+2026-09-25,Kazuma Okamoto,TOR,822760,Nick Lodolo,5,card,16.0,21.6,16.4,+524,460,-8.4,park +3% [low-conf],61F (roof: half),RvL +12%,heat +3%,no,0
+2026-09-25,Spencer Torkelson,DET,824220,Bubba Chandler,8,card,16.0,10.8,9.4,+524,460,-47.5,park -5%,62F,RvR -3%,,hr,1
+2026-09-25,Drake Baldwin,ATL,823816,Eury Pérez *,1,card,15.6,20.0,15.5,+541,475,-10.8,park -9%,80F (roof: half),LvR +8%,heat -7%,no,0
+2026-09-25,Jose Altuve,HOU,824947,Jacob Lopez,4,card,15.6,15.3,12.8,+541,475,-26.4,park +6% [low-conf],85F · wind out 5,RvL +12%,,no,0

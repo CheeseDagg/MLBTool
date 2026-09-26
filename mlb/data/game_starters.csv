@@ -2772,19 +2772,32 @@ date,away,home,away_SP,home_SP,away_score,home_score,status
 2026-09-24,Los Angeles Angels,Seattle Mariners,Grayson Rodriguez,Bryan Woo,6,4,Final
 2026-09-24,San Diego Padres,Los Angeles Dodgers,Nick Pivetta,Tyler Glasnow,4,2,Final
 2026-09-25,Chicago Cubs,Boston Red Sox,Clay Holmes,Alec Gamboa,3,4,Final
-2026-09-25,Chicago Cubs,Boston Red Sox,David Peterson,Brayan Bello,0,0,In Progress
+2026-09-25,Chicago Cubs,Boston Red Sox,David Peterson,Brayan Bello,0,2,Final
 2026-09-25,Baltimore Orioles,New York Yankees,Trevor Rogers,Brendan Beck,10,2,Final
-2026-09-25,Baltimore Orioles,New York Yankees,Brandon Young,Ryan Yarbrough,0,0,Warmup
-2026-09-25,Pittsburgh Pirates,Detroit Tigers,Bubba Chandler,Jackson Jobe,0,0,In Progress
-2026-09-25,Tampa Bay Rays,Philadelphia Phillies,Freddy Peralta,Cristopher Sánchez,2,0,In Progress
-2026-09-25,New York Mets,Washington Nationals,Jefry Yan,Andrew Alvarez,1,2,In Progress
-2026-09-25,Cincinnati Reds,Toronto Blue Jays,Nick Lodolo,José Soriano,0,1,In Progress
-2026-09-25,Atlanta Braves,Miami Marlins,Ray Kerr,Eury Pérez,0,0,In Progress
-2026-09-25,Cleveland Guardians,Kansas City Royals,Gavin Williams,Noah Cameron,0,0,Delayed Start
-2026-09-25,Colorado Rockies,Chicago White Sox,Tomoyuki Sugano,Sean Burke,0,0,Pre-Game
-2026-09-25,St. Louis Cardinals,Milwaukee Brewers,Michael McGreevy,Robert Gasser,0,0,Warmup
-2026-09-25,Texas Rangers,Minnesota Twins,Jacob deGrom,Joe Ryan,0,0,Pre-Game
-2026-09-25,Houston Astros,Athletics,Hunter Brown,Jacob Lopez,0,0,Pre-Game
-2026-09-25,Arizona Diamondbacks,San Diego Padres,Brandon Pfaadt,Casey Mize,0,0,Pre-Game
-2026-09-25,Los Angeles Angels,Seattle Mariners,Reid Detmers,Bryce Miller,0,0,Pre-Game
-2026-09-25,Los Angeles Dodgers,San Francisco Giants,Tarik Skubal,Yunior Marte,0,0,Pre-Game
+2026-09-25,Baltimore Orioles,New York Yankees,Brandon Young,Ryan Yarbrough,3,6,Final
+2026-09-25,Pittsburgh Pirates,Detroit Tigers,Bubba Chandler,Jackson Jobe,7,8,Final
+2026-09-25,Tampa Bay Rays,Philadelphia Phillies,Freddy Peralta,Cristopher Sánchez,2,0,Final
+2026-09-25,New York Mets,Washington Nationals,Jefry Yan,Andrew Alvarez,6,7,Final
+2026-09-25,Cincinnati Reds,Toronto Blue Jays,Nick Lodolo,José Soriano,5,6,Final
+2026-09-25,Atlanta Braves,Miami Marlins,Ray Kerr,Eury Pérez,0,3,Final
+2026-09-25,Cleveland Guardians,Kansas City Royals,Gavin Williams,Noah Cameron,12,9,Final
+2026-09-25,Colorado Rockies,Chicago White Sox,Tomoyuki Sugano,Sean Burke,1,6,Final
+2026-09-25,St. Louis Cardinals,Milwaukee Brewers,Michael McGreevy,Robert Gasser,4,8,Final
+2026-09-25,Texas Rangers,Minnesota Twins,Jacob deGrom,Joe Ryan,2,10,Final
+2026-09-25,Houston Astros,Athletics,Hunter Brown,Jacob Lopez,5,6,Final
+2026-09-25,Arizona Diamondbacks,San Diego Padres,Brandon Pfaadt,Casey Mize,11,4,Final
+2026-09-25,Los Angeles Angels,Seattle Mariners,Reid Detmers,Bryce Miller,7,5,Final
+2026-09-25,Los Angeles Dodgers,San Francisco Giants,Tarik Skubal,Yunior Marte,2,0,Final
+2026-09-26,New York Mets,Washington Nationals,Jonah Tong,Connelly Early,0,0,Scheduled
+2026-09-26,Pittsburgh Pirates,Detroit Tigers,Kirby Yates,Justin Verlander,0,0,Scheduled
+2026-09-26,Cincinnati Reds,Toronto Blue Jays,Rhett Lowder,Trey Yesavage,0,0,Scheduled
+2026-09-26,Los Angeles Dodgers,San Francisco Giants,Blake Snell,Matt Wilkinson,0,0,Scheduled
+2026-09-26,Texas Rangers,Minnesota Twins,Nathan Eovaldi,Bailey Ober,0,0,Scheduled
+2026-09-26,Atlanta Braves,Miami Marlins,Brent Suter,Jack Ralston,0,0,Scheduled
+2026-09-26,Cleveland Guardians,Kansas City Royals,Tanner Bibee,Michael Wacha,0,0,Scheduled
+2026-09-26,Colorado Rockies,Chicago White Sox,Jose Quintana,Davis Martin,0,0,Scheduled
+2026-09-26,St. Louis Cardinals,Milwaukee Brewers,Quinn Mathews,Dustin May,0,0,Scheduled
+2026-09-26,Tampa Bay Rays,Philadelphia Phillies,Griffin Jax,,0,0,Scheduled
+2026-09-26,Arizona Diamondbacks,San Diego Padres,,Walker Buehler,0,0,Scheduled
+2026-09-26,Houston Astros,Athletics,Hayden Wesneski,Jack Perkins,0,0,Scheduled
+2026-09-26,Los Angeles Angels,Seattle Mariners,Ryan Johnson,Kade Anderson,0,0,Scheduled

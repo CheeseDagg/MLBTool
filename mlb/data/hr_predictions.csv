@@ -2382,3 +2382,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-25,Spencer Torkelson,DET,824220,Bubba Chandler,8,card,16.0,10.8,9.4,+524,460,-47.5,park -5%,62F,RvR -3%,,-9.6,floor
 2026-09-25,Drake Baldwin,ATL,823816,Eury Pérez *,1,card,15.6,20.0,15.5,+541,475,-10.8,park -9%,80F (roof: half),LvR +8%,heat -7%,-2.1,floor
 2026-09-25,Jose Altuve,HOU,824947,Jacob Lopez,4,card,15.6,15.3,12.8,+541,475,-26.4,park +6% [low-conf],85F · wind out 5,RvL +12%,,,new
+2026-09-26,Yordan Alvarez,HOU,824949,Jack Perkins,1,proj,26.0,30.3,21.1,+285,245,-27.4,park +6% [low-conf],54F,LvR +8%,heat +6%,1.5,
+2026-09-26,Shohei Ohtani,LAD,823165,Matt Wilkinson,3,proj,24.6,19.1,15.0,+307,265,-45.3,park -14%,53F · wind out 5,LvL -22%,heat +10%,-3.5,floor
+2026-09-26,Cal Raleigh,SEA,823083,Ryan Johnson,5,proj,22.4,17.5,14.1,+346,300,-43.5,park -4%,46F (roof: half),SvR +8%,heat +7%,-1.4,
+2026-09-26,Fernando Tatis Jr.,SDP,823245,TBD *,1,proj,22.1,18.4,14.6,+352,305,-40.7,park -4%,65F,,,-1.3,
+2026-09-26,Munetaka Murakami,CHW,824543,Jose Quintana,5,proj,20.9,19.6,15.3,+379,330,-34.3,park +9%,58F · wind in 4,LvL -22%,heat -6%,-1.6,
+2026-09-26,Shea Langeliers,ATH,824949,Hayden Wesneski,4,proj,20.9,20.3,15.6,+379,330,-32.8,park +6% [low-conf],54F,RvR -3%,heat -1%,-2.3,floor
+2026-09-26,Kyle Schwarber,PHI,823407,Griffin Jax,1,proj,20.6,27.2,19.4,+385,335,-15.8,park +9%,58F · wind in 13,LvR +8%,heat -0%,-0.9,
+2026-09-26,Oneil Cruz,PIT,824219,Justin Verlander *,6,proj,20.4,15.2,12.7,+391,340,-44.2,park -5%,54F,LvR +8%,heat +6%,-2.7,floor
+2026-09-26,Christian Walker,HOU,824949,Jack Perkins,3,proj,19.9,19.6,15.3,+402,350,-31.2,park +6% [low-conf],54F,RvR -3%,heat -3%,0.6,
+2026-09-26,Hunter Goodman,COL,824543,Davis Martin,3,proj,19.9,24.5,17.9,+402,350,-19.5,park +9%,58F · wind in 4,RvR -3%,heat -1%,-1.1,
+2026-09-26,Corbin Carroll,ARI,823245,Walker Buehler,2,proj,19.1,17.1,13.9,+424,370,-34.7,park -4%,65F,LvR +8%,heat +5%,2.3,
+2026-09-26,Junior Caminero,TBR,823407,TBD *,1,proj,18.7,25.5,18.5,+435,380,-11.4,park +9%,58F · wind in 13,,,0.1,
+2026-09-26,Corey Seager,TEX,823653,Bailey Ober,7,proj,18.3,14.9,12.3,+446,390,-39.8,park -2%,58F · wind in 5,LvR +8%,heat +6%,-3.7,floor
+2026-09-26,Ketel Marte,ARI,823245,Walker Buehler,3,proj,18.3,16.5,13.6,+446,390,-33.5,park -4%,65F,SvR +8%,heat +7%,-2.4,floor
+2026-09-26,Matt Olson,ATL,823813,Jack Ralston,1,proj,18.3,26.5,19.0,+446,390,-6.9,park -9%,78F (roof: half),LvR +8%,heat +5%,1.2,
+2026-09-26,Manny Machado,SDP,823245,TBD *,2,proj,17.9,18.5,14.7,+457,400,-26.7,park -4%,65F,,,-0.4,
+2026-09-26,Carter Jensen,KCR,824057,Tanner Bibee,3,proj,17.2,19.7,15.3,+480,420,-20.4,park -4% [low-conf],64F,LvR +8%,heat +2%,-1.1,
+2026-09-26,Miguel Vargas,CHW,824543,Jose Quintana,1,proj,17.2,23.4,17.3,+480,420,-9.9,park +9%,58F · wind in 4,RvL +12%,heat -9%,1.1,
+2026-09-26,Andy Pages,LAD,823165,Matt Wilkinson,4,proj,17.1,14.3,11.6,+485,425,-38.9,park -14%,53F · wind out 5,RvL +12%,,-4.3,floor
+2026-09-26,Drake Baldwin,ATL,823813,Jack Ralston,5,proj,17.1,15.3,12.8,+485,425,-32.7,park -9%,78F (roof: half),LvR +8%,heat +4%,-4.4,floor
+2026-09-26,Isaac Paredes,HOU,824949,Jack Perkins,2,proj,17.1,17.9,14.4,+485,425,-24.5,park +6% [low-conf],54F,RvR -3%,heat +4%,-0.9,
+2026-09-26,Jackson Merrill,SDP,823245,TBD *,3,proj,17.1,16.8,13.8,+485,425,-27.8,park -4%,65F,,,0.3,
+2026-09-26,Mike Trout,LAA,823083,Kade Anderson,2,proj,17.1,18.5,14.7,+485,425,-23.1,park -4%,46F (roof: half),RvL +12%,heat +16%,-1.2,
+2026-09-26,Jac Caglianone,KCR,824057,Tanner Bibee,4,proj,16.9,18.7,14.8,+491,430,-21.7,park -4% [low-conf],64F,LvR +8%,heat +13%,-1.8,
+2026-09-26,Kazuma Okamoto,TOR,822759,Rhett Lowder,1,proj,16.9,26.1,18.8,+491,430,-0.6,park +3% [low-conf],57F · wind in 6 (roof: half),RvR -3%,heat +4%,4.2,STANDOUT
+2026-09-26,Dominic Canzone,SEA,823083,Ryan Johnson,6,proj,16.6,15.4,12.9,+502,440,-30.6,park -4%,46F (roof: half),LvR +8%,heat +4%,-3.4,floor
+2026-09-26,Jackson Chourio,MIL,823733,Quinn Mathews,4,proj,16.6,17.6,14.2,+502,440,-23.4,park +9%,50F (roof: half),RvL +12%,heat +5%,-3.3,floor
+2026-09-26,James Wood,WSN,822678,Jonah Tong,3,proj,16.6,20.0,15.5,+502,440,-16.5,park avg,65F · wind in 9,LvR +8%,heat +12%,-2.6,floor
+2026-09-26,Jordan Walker,STL,823733,Dustin May,2,proj,16.6,19.2,15.1,+502,440,-18.6,park +9%,50F (roof: half),RvR -3%,heat +7%,-1.0,
+2026-09-26,Juan Soto,NYM,822678,Connelly Early,5,proj,16.6,19.0,15.0,+502,440,-19.2,park avg,65F · wind in 9,LvL -22%,heat +7%,-2.7,floor
