@@ -2539,3 +2539,33 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-26,Randal Grichuk,CHW,824543,Jose Quintana,3,card,16.0,21.1,16.1,+524,460,-10.0,park +9%,61F,RvL +12%,heat -5%,no,0
 2026-09-26,Zack Gelof,ATH,824949,Hayden Wesneski,5,card,16.0,19.6,15.2,+524,460,-14.6,park +6% [low-conf],82F,RvR -3%,heat -5%,no,0
 2026-09-26,Sal Stewart,CIN,822759,Trey Yesavage,3,card,15.9,20.8,,+529,,,park +3% [low-conf],65F (roof: half),RvR -3%,heat -5%,no,0
+2026-09-27,Ben Rice,NYY,823490,Shane Baz,1,proj,19.0,26.6,,+425,,,park +14%,62F · wind in 8,LvR +8%,heat +12%,void,
+2026-09-27,Pete Alonso,BAL,823490,Elmer Rodríguez *,2,proj,18.6,25.8,,+437,,,park +14%,62F · wind in 8,RvR -3%,,void,
+2026-09-27,Randal Grichuk,CHW,824542,Kyle Freeland,1,card,18.4,25.4,,+443,,,park +9%,67F,RvL +12%,heat +1%,hr,1
+2026-09-27,Francisco Lindor,NYM,822679,DJ Herz *,1,card,16.4,21.6,,+511,,,park avg,62F,SvL +12%,,hr,1
+2026-09-27,Tyrone Taylor,CHC,824705,Tanner Houck *,1,card,16.2,21.4,,+516,,,park -4% [low-conf],dome,RvR -3%,,no,0
+2026-09-27,Andrés Chaparro,WSN,822679,Sean Manaea,2,card,16.0,21.0,,+523,,,park avg,62F,RvL +12%,heat +9%,hr,2
+2026-09-27,Sean Keys,TOR,822761,Brandon Williamson,1,card,15.7,20.4,,+538,,,park +3% [low-conf],77F · wind in 5 (roof: half),LvL -22%,,no,0
+2026-09-27,Kazuma Okamoto,TOR,822761,Brandon Williamson,3,card,15.6,24.4,17.9,+541,475,2.6,park +3% [low-conf],77F · wind in 5 (roof: half),RvL +12%,heat -1%,no,0
+2026-09-27,Jarren Duran,BOS,824705,Shota Imanaga,1,card,15.3,19.6,,+555,,,park -4% [low-conf],dome,LvL -22%,heat -2%,no,0
+2026-09-27,Coby Mayo,BAL,823490,Elmer Rodríguez *,4,proj,15.1,19.3,,+563,,,park +14%,62F · wind in 8,RvR -3%,,void,
+2026-09-27,Heriberto Hernández,MIA,823814,JR Ritchie,3,card,15.1,19.4,,+560,,,park -9%,84F · wind in 4 (roof: half),RvR -3%,heat -2%,hr,1
+2026-09-27,Adley Rutschman,BOS,824705,Shota Imanaga,2,card,14.9,19.0,,+569,,,park -4% [low-conf],dome,SvL +12%,heat +11%,hr,1
+2026-09-27,Shea Langeliers,ATH,824948,Peter Lambert,3,card,14.9,22.5,16.8,+569,500,0.9,park +6% [low-conf],73F,RvR -3%,heat +10%,no,0
+2026-09-27,Gunnar Henderson,BAL,823490,Elmer Rodríguez *,1,proj,14.5,18.1,,+591,,,park +14%,62F · wind in 8,LvR +8%,heat -1%,void,
+2026-09-27,Bryce Harper,PHI,823408,Nick Martinez,3,card,14.3,17.8,,+599,,,park +9%,63F · wind in 10,LvR +8%,heat +18%,hr,1
+2026-09-27,Hunter Goodman,COL,824542,Anthony Kay,3,card,14.3,27.8,19.7,+597,525,23.1,park +9%,67F,RvL +12%,heat +11%,no,0
+2026-09-27,Yordan Alvarez,HOU,824948,Seth Johnson,2,card,14.3,30.3,21.0,+597,525,31.4,park +6% [low-conf],73F,LvR +8%,,no,0
+2026-09-27,Ryan Vilade,TBR,823408,Zack Wheeler,2,card,14.2,17.7,,+602,,,park +9%,63F · wind in 10,RvR -3%,heat -5%,no,0
+2026-09-27,Alex Bregman,CHC,824705,Tanner Houck *,2,card,14.0,17.3,,+613,,,park -4% [low-conf],dome,RvR -3%,,hr,2
+2026-09-27,Christian Walker,HOU,824948,Seth Johnson,6,card,13.8,16.9,13.8,+625,550,-10.0,park +6% [low-conf],73F,RvR -3%,heat +0%,hr,1
+2026-09-27,Kyle Schwarber,PHI,823408,Nick Martinez,2,card,13.8,26.6,19.1,+625,550,23.9,park +9%,63F · wind in 10,LvR +8%,heat +10%,no,0
+2026-09-27,Leo Bernal,STL,823731,Jacob Misiorowski,3,card,13.8,16.9,,+623,,,park +9%,68F (roof: half),SvR +8%,,hr,1
+2026-09-27,Cal Raleigh,SEA,823084,Yusei Kikuchi,4,card,13.3,18.1,14.4,+653,575,-2.5,park -4%,60F (roof: half),SvL +12%,heat +13%,no,0
+2026-09-27,Munetaka Murakami,CHW,824542,Kyle Freeland,3,card,13.3,25.2,18.3,+653,575,23.5,park +9%,67F,LvL -22%,heat +14%,no,0
+2026-09-27,Riley Greene,DET,824217,Jared Jones,4,card,13.3,16.0,,+650,,,park -5%,75F · wind out 6,LvR +8%,heat +2%,no,0
+2026-09-27,Josh Bell,MIN,823650,MacKenzie Gore,3,card,13.0,15.5,,+667,,,park -2%,67F,SvL +12%,heat +0%,hr,1
+2026-09-27,Jazz Chisholm Jr.,NYY,823490,Shane Baz,3,proj,12.3,14.9,,+714,,,park +14%,62F · wind in 8,LvR +8%,,void,
+2026-09-27,Cody Bellinger,NYY,823490,Shane Baz,2,proj,12.2,14.8,,+717,,,park +14%,62F · wind in 8,LvR +8%,,void,
+2026-09-27,Isaac Paredes,HOU,824948,Seth Johnson,3,card,12.0,17.9,14.4,+736,650,7.7,park +6% [low-conf],73F,RvR -3%,heat +4%,no,0
+2026-09-27,Enrique Hernández,LAD,823164,Carson Seymour,3,card,11.6,14.3,,+763,,,park -14%,63F · wind out 8,RvR -3%,,no,0
