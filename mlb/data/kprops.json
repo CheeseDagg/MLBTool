@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T14:22+00:00",
+ "generated": "2026-09-27T17:12+00:00",
  "board": [
   {
    "pitcher": "Jacob Misiorowski",
@@ -1042,6 +1042,46 @@
    ]
   },
   {
+   "pitcher": "Jack Dreyer",
+   "opp": "San Francisco Giants",
+   "lam": 3.19,
+   "k9_regressed": 9.62,
+   "exp_ip": 3.0,
+   "opp_mult": 0.995,
+   "lines": [
+    {
+     "line": 4.5,
+     "p_over": 0.2178,
+     "fair_over": 359,
+     "fair_under": -359
+    },
+    {
+     "line": 5.5,
+     "p_over": 0.1044,
+     "fair_over": 858,
+     "fair_under": -858
+    },
+    {
+     "line": 6.5,
+     "p_over": 0.0441,
+     "fair_over": 2168,
+     "fair_under": -2168
+    },
+    {
+     "line": 7.5,
+     "p_over": 0.0166,
+     "fair_over": 5928,
+     "fair_under": -5928
+    },
+    {
+     "line": 8.5,
+     "p_over": 0.0056,
+     "fair_over": 17701,
+     "fair_under": -17701
+    }
+   ]
+  },
+  {
    "pitcher": "River Ryan",
    "opp": "Pittsburgh Pirates",
    "lam": 3.02,
@@ -1122,8 +1162,8 @@
    ]
   }
  ],
- "diag": "errors {} \u00b7 unbettable markets dropped 9 \u00b7 credits remaining 16336 (used 3664) \u00b7 whiff rest:30 rows",
- "n_markets": 17,
+ "diag": "errors {} \u00b7 unbettable markets dropped 10 \u00b7 credits remaining 16306 (used 3694) \u00b7 whiff rest:30 rows",
+ "n_markets": 18,
  "n_plays": 0,
  "plays": [],
  "books": [
@@ -1135,6 +1175,6 @@
  "bettable": [
   "fanduel"
  ],
- "n_unbettable": 9,
+ "n_unbettable": 10,
  "note": "Board = model fair ladder per starter. Plays (if any) are +EV vs BOTH our fair AND the vig-free consensus at the book's exact line. Prices are quoted from fanduel ONLY; consensus and the stale test still read every book in the pull."
 }
