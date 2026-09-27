@@ -1,18 +1,29 @@
 {
- "generated": "2026-09-27T20:08:18+00:00",
+ "generated": "2026-09-27T23:00:55+00:00",
  "date": "2026-09-27",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Randy Arozarena",
-   "team": "SEA",
-   "opp_sp": "Yusei Kikuchi",
-   "pa": 34,
-   "ab": 30,
-   "h": 7,
+   "batter": "Danny Jansen",
+   "team": "TEX",
+   "opp_sp": "Dean Kremer",
+   "pa": 11,
+   "ab": 9,
+   "h": 3,
    "hr": 3,
-   "avg": ".233",
-   "slg": ".533"
+   "avg": ".333",
+   "slg": "1.333"
+  },
+  {
+   "batter": "Andr\u00e9s Chaparro",
+   "team": "WSH",
+   "opp_sp": "Sean Manaea",
+   "pa": 12,
+   "ab": 10,
+   "h": 4,
+   "hr": 3,
+   "avg": ".400",
+   "slg": "1.300"
   },
   {
    "batter": "Brady House",
@@ -26,15 +37,15 @@
    "slg": "1.571"
   },
   {
-   "batter": "Danny Jansen",
-   "team": "TEX",
-   "opp_sp": "Dean Kremer",
-   "pa": 9,
-   "ab": 7,
-   "h": 2,
+   "batter": "Francisco Lindor",
+   "team": "NYM",
+   "opp_sp": "DJ Herz",
+   "pa": 8,
+   "ab": 8,
+   "h": 5,
    "hr": 2,
-   "avg": ".286",
-   "slg": "1.143"
+   "avg": ".625",
+   "slg": "1.500"
   },
   {
    "batter": "Iv\u00e1n Herrera",
@@ -70,21 +81,10 @@
    "slg": "1.286"
   },
   {
-   "batter": "Francisco Lindor",
-   "team": "NYM",
-   "opp_sp": "DJ Herz",
-   "pa": 6,
-   "ab": 6,
-   "h": 3,
-   "hr": 1,
-   "avg": ".500",
-   "slg": "1.167"
-  },
-  {
-   "batter": "Mauricio Dub\u00f3n",
-   "team": "ATL",
-   "opp_sp": "Janson Junk",
-   "pa": 7,
+   "batter": "Kyle Schwarber",
+   "team": "PHI",
+   "opp_sp": "Nick Martinez",
+   "pa": 8,
    "ab": 7,
    "h": 4,
    "hr": 1,
@@ -95,40 +95,18 @@
    "batter": "Nasim Nu\u00f1ez",
    "team": "WSH",
    "opp_sp": "Sean Manaea",
-   "pa": 8,
-   "ab": 6,
-   "h": 3,
+   "pa": 10,
+   "ab": 8,
+   "h": 4,
    "hr": 1,
    "avg": ".500",
    "slg": "1.000"
   },
   {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Nick Martinez",
-   "pa": 6,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Jeff McNeil",
-   "team": "ATH",
-   "opp_sp": "Peter Lambert",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".857"
-  },
-  {
    "batter": "Josh Bell",
    "team": "MIN",
    "opp_sp": "MacKenzie Gore",
-   "pa": 6,
+   "pa": 7,
    "ab": 6,
    "h": 2,
    "hr": 1,
@@ -147,9 +125,9 @@
    "slg": ".750"
   },
   {
-   "batter": "Austin Wells",
-   "team": "NYY",
-   "opp_sp": "Shane Baz",
+   "batter": "J.P. Crawford",
+   "team": "SEA",
+   "opp_sp": "Yusei Kikuchi",
    "pa": 11,
    "ab": 8,
    "h": 3,
@@ -158,10 +136,32 @@
    "slg": ".750"
   },
   {
-   "batter": "Josh Lowe",
-   "team": "LAA",
-   "opp_sp": "Logan Gilbert",
-   "pa": 8,
+   "batter": "Randy Arozarena",
+   "team": "SEA",
+   "opp_sp": "Yusei Kikuchi",
+   "pa": 11,
+   "ab": 8,
+   "h": 3,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".750"
+  },
+  {
+   "batter": "Dominic Canzone",
+   "team": "SEA",
+   "opp_sp": "Yusei Kikuchi",
+   "pa": 11,
+   "ab": 8,
+   "h": 3,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".750"
+  },
+  {
+   "batter": "Cal Raleigh",
+   "team": "SEA",
+   "opp_sp": "Yusei Kikuchi",
+   "pa": 11,
    "ab": 8,
    "h": 3,
    "hr": 1,
