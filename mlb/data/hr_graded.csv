@@ -2569,3 +2569,23 @@ date,player,team,game_id,opp_sp,slot,lu,hr_pct,hr_raw,hr_model,fair,book_price,e
 2026-09-27,Cody Bellinger,NYY,823490,Shane Baz,2,proj,12.2,14.8,,+717,,,park +14%,62F · wind in 8,LvR +8%,,void,
 2026-09-27,Isaac Paredes,HOU,824948,Seth Johnson,3,card,12.0,17.9,14.4,+736,650,7.7,park +6% [low-conf],73F,RvR -3%,heat +4%,no,0
 2026-09-27,Enrique Hernández,LAD,823164,Carson Seymour,3,card,11.6,14.3,,+763,,,park -14%,63F · wind out 8,RvR -3%,,no,0
+2026-09-27,Carlos Jorge,CIN,822761,Max Scherzer,1,card,18.8,26.2,,+432,,,park +3% [low-conf],67F (roof: half),LvR +8%,,no,0
+2026-09-27,Elly De La Cruz,CIN,822761,Max Scherzer,2,card,18.5,25.6,,+440,,,park +3% [low-conf],67F (roof: half),SvR +8%,heat +4%,no,0
+2026-09-27,Griffin Conine,MIA,823814,JR Ritchie,1,card,17.6,24.0,,+467,,,park -9%,79F (roof: half),LvR +8%,heat +1%,hr,1
+2026-09-27,Juan Soto,NYM,822679,DJ Herz *,2,card,17.3,23.4,,+478,,,park avg,62F,LvL -22%,,no,0
+2026-09-27,Sal Stewart,CIN,822761,Max Scherzer,3,card,17.3,23.3,,+479,,,park +3% [low-conf],67F (roof: half),RvR -3%,heat +4%,no,0
+2026-09-27,James Wood,WSN,822679,Sean Manaea,1,card,17.0,22.8,,+488,,,park avg,62F,LvL -22%,heat +8%,no,0
+2026-09-27,Jeremy Peña,HOU,824948,Seth Johnson,1,card,16.9,22.7,,+491,,,park +6% [low-conf],79F,RvR -3%,heat +2%,no,0
+2026-09-27,Dalton Rushing,LAD,823164,Carson Seymour,1,card,16.6,22.1,,+501,,,park -14%,64F · wind out 13,LvR +8%,heat +2%,no,0
+2026-09-27,Lucas Spence,HOU,824948,Seth Johnson,7,card,16.4,21.7,,+511,,,park +6% [low-conf],79F,LvR +8%,,no,0
+2026-09-27,Angel Martínez,CLE,824055,Daniel Lynch IV,1,card,16.1,21.1,,+522,,,park -4% [low-conf],72F · wind in 4,SvL +12%,heat +5%,no,0
+2026-09-27,Jordan Walker,STL,823731,Jacob Misiorowski,1,card,15.7,20.4,,+537,,,park +9%,65F (roof: half),RvR -3%,heat +2%,no,0
+2026-09-27,Jake Bauers,MIL,823731,Andre Pallante,2,card,15.6,20.1,,+543,,,park +9%,65F (roof: half),LvR +8%,heat +6%,no,0
+2026-09-27,Zack Gelof,ATH,824948,Peter Lambert,4,card,15.6,20.1,,+543,,,park +6% [low-conf],79F,RvR -3%,heat -1%,no,0
+2026-09-27,Corey Seager,TEX,823650,Dean Kremer,3,card,15.5,20.1,,+543,,,park -2%,67F,LvR +8%,heat -1%,hr,1
+2026-09-27,Jahmai Jones,BOS,824705,Shota Imanaga,3,card,15.5,20.1,,+544,,,park -4% [low-conf],dome,RvL +12%,heat -3%,no,0
+2026-09-27,Raynel Delgado,HOU,824948,Seth Johnson,4,card,15.5,20.1,,+544,,,park +6% [low-conf],79F,LvR +8%,,void,
+2026-09-27,Zach Neto,LAA,823084,Logan Gilbert,1,card,15.5,20.0,,+546,,,park -4%,61F (roof: half),RvR -3%,heat +10%,no,0
+2026-09-27,Rafael Flores,PIT,824217,River Ryan *,4,card,15.4,19.8,,+549,,,park -5%,70F,RvR -3%,,no,0
+2026-09-27,JJ Bleday,CIN,822761,Max Scherzer,4,card,15.3,19.7,,+553,,,park +3% [low-conf],67F (roof: half),LvR +8%,heat -4%,no,0
+2026-09-27,Michael Arroyo,SEA,823084,Yusei Kikuchi,2,card,15.2,19.6,,+556,,,park -4%,61F (roof: half),RvL +12%,,no,0
