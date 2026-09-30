@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T02:04:30+00:00",
+ "generated": "2026-09-30T21:24:42+00:00",
  "date": "2026-09-30",
  "min_pa": 6,
  "rows": [
@@ -13,6 +13,39 @@
    "hr": 2,
    "avg": ".429",
    "slg": "1.286"
+  },
+  {
+   "batter": "Austin Hays",
+   "team": "SD",
+   "opp_sp": "Kevin Gausman",
+   "pa": 16,
+   "ab": 14,
+   "h": 7,
+   "hr": 2,
+   "avg": ".500",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Kevin Gausman",
+   "pa": 24,
+   "ab": 23,
+   "h": 8,
+   "hr": 2,
+   "avg": ".348",
+   "slg": ".652"
+  },
+  {
+   "batter": "Manny Machado",
+   "team": "SD",
+   "opp_sp": "Kevin Gausman",
+   "pa": 25,
+   "ab": 25,
+   "h": 9,
+   "hr": 2,
+   "avg": ".360",
+   "slg": ".640"
   },
   {
    "batter": "Michael Conforto",
@@ -133,17 +166,6 @@
    "h": 5,
    "hr": 1,
    "avg": ".278",
-   "slg": ".500"
-  },
-  {
-   "batter": "Andrew Benintendi",
-   "team": "CWS",
-   "opp_sp": "Hunter Brown",
-   "pa": 18,
-   "ab": 14,
-   "h": 3,
-   "hr": 1,
-   "avg": ".214",
    "slg": ".500"
   }
  ]
