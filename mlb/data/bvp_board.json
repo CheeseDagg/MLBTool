@@ -1,95 +1,150 @@
 {
- "generated": "2026-09-29T21:22:56+00:00",
- "date": "2026-09-29",
+ "generated": "2026-09-30T02:04:30+00:00",
+ "date": "2026-09-30",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Chris Sale",
-   "pa": 27,
-   "ab": 25,
-   "h": 5,
-   "hr": 2,
-   "avg": ".200",
-   "slg": ".520"
-  },
-  {
-   "batter": "Manny Machado",
-   "team": "SD",
-   "opp_sp": "Matthew Boyd",
-   "pa": 20,
-   "ab": 19,
-   "h": 9,
-   "hr": 1,
-   "avg": ".474",
-   "slg": ".842"
-  },
-  {
-   "batter": "Caleb Durbin",
-   "team": "BOS",
-   "opp_sp": "Cam Schlittler",
-   "pa": 11,
-   "ab": 9,
-   "h": 2,
-   "hr": 1,
-   "avg": ".222",
-   "slg": ".556"
-  },
-  {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Matthew Boyd",
-   "pa": 12,
-   "ab": 12,
+   "batter": "Ben Rice",
+   "team": "NYY",
+   "opp_sp": "Sonny Gray",
+   "pa": 9,
+   "ab": 7,
    "h": 3,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".500"
-  },
-  {
-   "batter": "Alec Bohm",
-   "team": "PHI",
-   "opp_sp": "Chris Sale",
-   "pa": 25,
-   "ab": 23,
-   "h": 7,
-   "hr": 1,
-   "avg": ".304",
-   "slg": ".478"
+   "hr": 2,
+   "avg": ".429",
+   "slg": "1.286"
   },
   {
    "batter": "Michael Conforto",
    "team": "CHC",
-   "opp_sp": "Michael King",
-   "pa": 14,
-   "ab": 11,
-   "h": 1,
-   "hr": 1,
-   "avg": ".091",
-   "slg": ".364"
-  },
-  {
-   "batter": "Xander Bogaerts",
-   "team": "SD",
-   "opp_sp": "Matthew Boyd",
-   "pa": 22,
-   "ab": 20,
-   "h": 4,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".350"
+   "opp_sp": "Nick Pivetta",
+   "pa": 15,
+   "ab": 13,
+   "h": 2,
+   "hr": 2,
+   "avg": ".154",
+   "slg": ".615"
   },
   {
    "batter": "Matt Olson",
    "team": "ATL",
-   "opp_sp": "Jes\u00fas Luzardo",
-   "pa": 30,
-   "ab": 30,
+   "opp_sp": "Cristopher S\u00e1nchez",
+   "pa": 24,
+   "ab": 23,
+   "h": 6,
+   "hr": 2,
+   "avg": ".261",
+   "slg": ".609"
+  },
+  {
+   "batter": "Trevor Story",
+   "team": "BOS",
+   "opp_sp": "Max Fried",
+   "pa": 20,
+   "ab": 19,
+   "h": 4,
+   "hr": 2,
+   "avg": ".211",
+   "slg": ".579"
+  },
+  {
+   "batter": "Dansby Swanson",
+   "team": "CHC",
+   "opp_sp": "Nick Pivetta",
+   "pa": 35,
+   "ab": 34,
+   "h": 10,
+   "hr": 2,
+   "avg": ".294",
+   "slg": ".500"
+  },
+  {
+   "batter": "Kyle Schwarber",
+   "team": "PHI",
+   "opp_sp": "Tyler Mahle",
+   "pa": 35,
+   "ab": 25,
+   "h": 6,
+   "hr": 2,
+   "avg": ".240",
+   "slg": ".480"
+  },
+  {
+   "batter": "Trent Grisham",
+   "team": "NYY",
+   "opp_sp": "Sonny Gray",
+   "pa": 11,
+   "ab": 10,
+   "h": 5,
+   "hr": 1,
+   "avg": ".500",
+   "slg": ".900"
+  },
+  {
+   "batter": "Christian Walker",
+   "team": "HOU",
+   "opp_sp": "Sean Burke",
+   "pa": 7,
+   "ab": 7,
+   "h": 2,
+   "hr": 1,
+   "avg": ".286",
+   "slg": ".857"
+  },
+  {
+   "batter": "Luis Garc\u00eda Jr.",
+   "team": "NYY",
+   "opp_sp": "Sonny Gray",
+   "pa": 10,
+   "ab": 10,
+   "h": 4,
+   "hr": 1,
+   "avg": ".400",
+   "slg": ".800"
+  },
+  {
+   "batter": "Austin Riley",
+   "team": "ATL",
+   "opp_sp": "Cristopher S\u00e1nchez",
+   "pa": 16,
+   "ab": 15,
+   "h": 7,
+   "hr": 1,
+   "avg": ".467",
+   "slg": ".667"
+  },
+  {
+   "batter": "Ronald Acu\u00f1a Jr.",
+   "team": "ATL",
+   "opp_sp": "Cristopher S\u00e1nchez",
+   "pa": 16,
+   "ab": 16,
    "h": 6,
    "hr": 1,
-   "avg": ".200",
-   "slg": ".333"
+   "avg": ".375",
+   "slg": ".625"
+  },
+  {
+   "batter": "Bryce Harper",
+   "team": "PHI",
+   "opp_sp": "Tyler Mahle",
+   "pa": 20,
+   "ab": 18,
+   "h": 5,
+   "hr": 1,
+   "avg": ".278",
+   "slg": ".500"
+  },
+  {
+   "batter": "Andrew Benintendi",
+   "team": "CWS",
+   "opp_sp": "Hunter Brown",
+   "pa": 18,
+   "ab": 14,
+   "h": 3,
+   "hr": 1,
+   "avg": ".214",
+   "slg": ".500"
   }
  ]
 }
