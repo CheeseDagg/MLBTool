@@ -1,156 +1,35 @@
 {
- "generated": "2026-09-30T21:24:42+00:00",
- "date": "2026-09-30",
+ "generated": "2026-10-01T02:06:12+00:00",
+ "date": "2026-10-01",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Ben Rice",
+   "batter": "Amed Rosario",
    "team": "NYY",
-   "opp_sp": "Sonny Gray",
-   "pa": 9,
-   "ab": 7,
-   "h": 3,
+   "opp_sp": "Ranger Suarez",
+   "pa": 17,
+   "ab": 15,
+   "h": 5,
    "hr": 2,
-   "avg": ".429",
-   "slg": "1.286"
-  },
-  {
-   "batter": "Austin Hays",
-   "team": "SD",
-   "opp_sp": "Kevin Gausman",
-   "pa": 16,
-   "ab": 14,
-   "h": 7,
-   "hr": 2,
-   "avg": ".500",
-   "slg": "1.000"
-  },
-  {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Kevin Gausman",
-   "pa": 24,
-   "ab": 23,
-   "h": 8,
-   "hr": 2,
-   "avg": ".348",
-   "slg": ".652"
-  },
-  {
-   "batter": "Manny Machado",
-   "team": "SD",
-   "opp_sp": "Kevin Gausman",
-   "pa": 25,
-   "ab": 25,
-   "h": 9,
-   "hr": 2,
-   "avg": ".360",
-   "slg": ".640"
-  },
-  {
-   "batter": "Michael Conforto",
-   "team": "CHC",
-   "opp_sp": "Nick Pivetta",
-   "pa": 15,
-   "ab": 13,
-   "h": 2,
-   "hr": 2,
-   "avg": ".154",
-   "slg": ".615"
-  },
-  {
-   "batter": "Matt Olson",
-   "team": "ATL",
-   "opp_sp": "Cristopher S\u00e1nchez",
-   "pa": 24,
-   "ab": 23,
-   "h": 6,
-   "hr": 2,
-   "avg": ".261",
-   "slg": ".609"
-  },
-  {
-   "batter": "Trevor Story",
-   "team": "BOS",
-   "opp_sp": "Max Fried",
-   "pa": 20,
-   "ab": 19,
-   "h": 4,
-   "hr": 2,
-   "avg": ".211",
-   "slg": ".579"
-  },
-  {
-   "batter": "Dansby Swanson",
-   "team": "CHC",
-   "opp_sp": "Nick Pivetta",
-   "pa": 35,
-   "ab": 34,
-   "h": 10,
-   "hr": 2,
-   "avg": ".294",
-   "slg": ".500"
-  },
-  {
-   "batter": "Kyle Schwarber",
-   "team": "PHI",
-   "opp_sp": "Tyler Mahle",
-   "pa": 35,
-   "ab": 25,
-   "h": 6,
-   "hr": 2,
-   "avg": ".240",
-   "slg": ".480"
+   "avg": ".333",
+   "slg": ".733"
   },
   {
    "batter": "Trent Grisham",
    "team": "NYY",
-   "opp_sp": "Sonny Gray",
-   "pa": 11,
-   "ab": 10,
+   "opp_sp": "Ranger Suarez",
+   "pa": 15,
+   "ab": 13,
    "h": 5,
    "hr": 1,
-   "avg": ".500",
-   "slg": ".900"
+   "avg": ".385",
+   "slg": ".692"
   },
   {
-   "batter": "Christian Walker",
-   "team": "HOU",
-   "opp_sp": "Sean Burke",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".857"
-  },
-  {
-   "batter": "Luis Garc\u00eda Jr.",
+   "batter": "Ryan McMahon",
    "team": "NYY",
-   "opp_sp": "Sonny Gray",
-   "pa": 10,
-   "ab": 10,
-   "h": 4,
-   "hr": 1,
-   "avg": ".400",
-   "slg": ".800"
-  },
-  {
-   "batter": "Austin Riley",
-   "team": "ATL",
-   "opp_sp": "Cristopher S\u00e1nchez",
-   "pa": 16,
-   "ab": 15,
-   "h": 7,
-   "hr": 1,
-   "avg": ".467",
-   "slg": ".667"
-  },
-  {
-   "batter": "Ronald Acu\u00f1a Jr.",
-   "team": "ATL",
-   "opp_sp": "Cristopher S\u00e1nchez",
-   "pa": 16,
+   "opp_sp": "Ranger Suarez",
+   "pa": 17,
    "ab": 16,
    "h": 6,
    "hr": 1,
@@ -158,15 +37,15 @@
    "slg": ".625"
   },
   {
-   "batter": "Bryce Harper",
-   "team": "PHI",
-   "opp_sp": "Tyler Mahle",
-   "pa": 20,
-   "ab": 18,
-   "h": 5,
+   "batter": "Trevor Story",
+   "team": "BOS",
+   "opp_sp": "Gerrit Cole",
+   "pa": 21,
+   "ab": 19,
+   "h": 4,
    "hr": 1,
-   "avg": ".278",
-   "slg": ".500"
+   "avg": ".211",
+   "slg": ".368"
   }
  ]
 }
