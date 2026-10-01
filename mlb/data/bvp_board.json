@@ -1,51 +1,84 @@
 {
- "generated": "2026-10-01T02:06:12+00:00",
+ "generated": "2026-10-01T21:47:38+00:00",
  "date": "2026-10-01",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Amed Rosario",
-   "team": "NYY",
-   "opp_sp": "Ranger Suarez",
-   "pa": 17,
-   "ab": 15,
-   "h": 5,
+   "batter": "Austin Riley",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 68,
+   "ab": 64,
+   "h": 23,
+   "hr": 7,
+   "avg": ".359",
+   "slg": ".766"
+  },
+  {
+   "batter": "Matt Olson",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 48,
+   "ab": 40,
+   "h": 10,
+   "hr": 5,
+   "avg": ".250",
+   "slg": ".700"
+  },
+  {
+   "batter": "Ronald Acu\u00f1a Jr.",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 68,
+   "ab": 59,
+   "h": 20,
+   "hr": 4,
+   "avg": ".339",
+   "slg": ".661"
+  },
+  {
+   "batter": "Michael Harris II",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 38,
+   "ab": 35,
+   "h": 7,
+   "hr": 3,
+   "avg": ".200",
+   "slg": ".514"
+  },
+  {
+   "batter": "Ozzie Albies",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 81,
+   "ab": 76,
+   "h": 19,
    "hr": 2,
-   "avg": ".333",
-   "slg": ".733"
+   "avg": ".250",
+   "slg": ".395"
   },
   {
-   "batter": "Trent Grisham",
-   "team": "NYY",
-   "opp_sp": "Ranger Suarez",
-   "pa": 15,
-   "ab": 13,
-   "h": 5,
+   "batter": "Mike Yastrzemski",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 22,
+   "ab": 18,
+   "h": 7,
    "hr": 1,
-   "avg": ".385",
-   "slg": ".692"
+   "avg": ".389",
+   "slg": ".667"
   },
   {
-   "batter": "Ryan McMahon",
-   "team": "NYY",
-   "opp_sp": "Ranger Suarez",
-   "pa": 17,
-   "ab": 16,
-   "h": 6,
+   "batter": "Dominic Smith",
+   "team": "ATL",
+   "opp_sp": "Aaron Nola",
+   "pa": 42,
+   "ab": 41,
+   "h": 11,
    "hr": 1,
-   "avg": ".375",
-   "slg": ".625"
-  },
-  {
-   "batter": "Trevor Story",
-   "team": "BOS",
-   "opp_sp": "Gerrit Cole",
-   "pa": 21,
-   "ab": 19,
-   "h": 4,
-   "hr": 1,
-   "avg": ".211",
-   "slg": ".368"
+   "avg": ".268",
+   "slg": ".488"
   }
  ]
 }
