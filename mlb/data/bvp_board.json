@@ -1,6 +1,139 @@
 {
- "generated": "2026-10-02T21:18:20+00:00",
- "date": "2026-10-02",
+ "generated": "2026-10-03T01:55:04+00:00",
+ "date": "2026-10-03",
  "min_pa": 6,
- "rows": []
+ "rows": [
+  {
+   "batter": "Gary S\u00e1nchez",
+   "team": "MIL",
+   "opp_sp": "Robbie Ray",
+   "pa": 11,
+   "ab": 10,
+   "h": 2,
+   "hr": 2,
+   "avg": ".200",
+   "slg": ".800"
+  },
+  {
+   "batter": "Yandy D\u00edaz",
+   "team": "TB",
+   "opp_sp": "Gerrit Cole",
+   "pa": 54,
+   "ab": 50,
+   "h": 17,
+   "hr": 2,
+   "avg": ".340",
+   "slg": ".520"
+  },
+  {
+   "batter": "Cedric Mullins",
+   "team": "TB",
+   "opp_sp": "Gerrit Cole",
+   "pa": 38,
+   "ab": 38,
+   "h": 12,
+   "hr": 2,
+   "avg": ".316",
+   "slg": ".500"
+  },
+  {
+   "batter": "Ozzie Albies",
+   "team": "ATL",
+   "opp_sp": "Tarik Skubal",
+   "pa": 6,
+   "ab": 5,
+   "h": 3,
+   "hr": 1,
+   "avg": ".600",
+   "slg": "1.200"
+  },
+  {
+   "batter": "Braden Montgomery",
+   "team": "CWS",
+   "opp_sp": "Parker Messick",
+   "pa": 8,
+   "ab": 6,
+   "h": 2,
+   "hr": 1,
+   "avg": ".333",
+   "slg": ".833"
+  },
+  {
+   "batter": "Sean Murphy",
+   "team": "ATL",
+   "opp_sp": "Tarik Skubal",
+   "pa": 12,
+   "ab": 8,
+   "h": 2,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".625"
+  },
+  {
+   "batter": "Trent Grisham",
+   "team": "NYY",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 16,
+   "ab": 16,
+   "h": 6,
+   "hr": 1,
+   "avg": ".375",
+   "slg": ".563"
+  },
+  {
+   "batter": "Austin Wells",
+   "team": "NYY",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 9,
+   "ab": 8,
+   "h": 1,
+   "hr": 1,
+   "avg": ".125",
+   "slg": ".500"
+  },
+  {
+   "batter": "Mauricio Dub\u00f3n",
+   "team": "ATL",
+   "opp_sp": "Tarik Skubal",
+   "pa": 11,
+   "ab": 10,
+   "h": 1,
+   "hr": 1,
+   "avg": ".100",
+   "slg": ".400"
+  },
+  {
+   "batter": "Miguel Vargas",
+   "team": "CWS",
+   "opp_sp": "Parker Messick",
+   "pa": 15,
+   "ab": 14,
+   "h": 2,
+   "hr": 1,
+   "avg": ".143",
+   "slg": ".357"
+  },
+  {
+   "batter": "Andrew Vaughn",
+   "team": "MIL",
+   "opp_sp": "Robbie Ray",
+   "pa": 17,
+   "ab": 17,
+   "h": 3,
+   "hr": 1,
+   "avg": ".176",
+   "slg": ".353"
+  },
+  {
+   "batter": "Ben Rice",
+   "team": "NYY",
+   "opp_sp": "Drew Rasmussen",
+   "pa": 16,
+   "ab": 16,
+   "h": 1,
+   "hr": 1,
+   "avg": ".063",
+   "slg": ".250"
+  }
+ ]
 }
