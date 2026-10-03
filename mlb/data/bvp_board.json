@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T01:55:04+00:00",
+ "generated": "2026-10-03T19:49:21+00:00",
  "date": "2026-10-03",
  "min_pa": 6,
  "rows": [
@@ -24,17 +24,6 @@
    "hr": 2,
    "avg": ".340",
    "slg": ".520"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Gerrit Cole",
-   "pa": 38,
-   "ab": 38,
-   "h": 12,
-   "hr": 2,
-   "avg": ".316",
-   "slg": ".500"
   },
   {
    "batter": "Ozzie Albies",
