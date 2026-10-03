@@ -1,19 +1,8 @@
 {
- "generated": "2026-10-03T19:49:21+00:00",
+ "generated": "2026-10-03T22:53:00+00:00",
  "date": "2026-10-03",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Gary S\u00e1nchez",
-   "team": "MIL",
-   "opp_sp": "Robbie Ray",
-   "pa": 11,
-   "ab": 10,
-   "h": 2,
-   "hr": 2,
-   "avg": ".200",
-   "slg": ".800"
-  },
   {
    "batter": "Yandy D\u00edaz",
    "team": "TB",
@@ -101,17 +90,6 @@
    "hr": 1,
    "avg": ".143",
    "slg": ".357"
-  },
-  {
-   "batter": "Andrew Vaughn",
-   "team": "MIL",
-   "opp_sp": "Robbie Ray",
-   "pa": 17,
-   "ab": 17,
-   "h": 3,
-   "hr": 1,
-   "avg": ".176",
-   "slg": ".353"
   },
   {
    "batter": "Ben Rice",
