@@ -1,19 +1,8 @@
 {
- "generated": "2026-10-05T01:56:45+00:00",
+ "generated": "2026-10-05T23:08:50+00:00",
  "date": "2026-10-05",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Paul Goldschmidt",
-   "team": "NYY",
-   "opp_sp": "Freddy Peralta",
-   "pa": 38,
-   "ab": 35,
-   "h": 9,
-   "hr": 2,
-   "avg": ".257",
-   "slg": ".571"
-  },
   {
    "batter": "Munetaka Murakami",
    "team": "CWS",
