@@ -1,62 +1,128 @@
 {
- "generated": "2026-10-05T23:08:50+00:00",
- "date": "2026-10-05",
+ "generated": "2026-10-06T02:56:09+00:00",
+ "date": "2026-10-06",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Munetaka Murakami",
-   "team": "CWS",
-   "opp_sp": "Gavin Williams",
-   "pa": 6,
-   "ab": 5,
-   "h": 1,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
+   "batter": "Christian Yelich",
+   "team": "MIL",
+   "opp_sp": "Nick Pivetta",
+   "pa": 22,
+   "ab": 18,
+   "h": 7,
+   "hr": 2,
+   "avg": ".389",
+   "slg": ".833"
   },
   {
-   "batter": "Cody Bellinger",
-   "team": "NYY",
-   "opp_sp": "Freddy Peralta",
-   "pa": 18,
-   "ab": 14,
-   "h": 6,
+   "batter": "Freddie Freeman",
+   "team": "LAD",
+   "opp_sp": "Chris Sale",
+   "pa": 16,
+   "ab": 16,
+   "h": 5,
+   "hr": 2,
+   "avg": ".313",
+   "slg": ".813"
+  },
+  {
+   "batter": "Manny Machado",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 42,
+   "ab": 40,
+   "h": 10,
+   "hr": 2,
+   "avg": ".250",
+   "slg": ".450"
+  },
+  {
+   "batter": "Gary S\u00e1nchez",
+   "team": "MIL",
+   "opp_sp": "Nick Pivetta",
+   "pa": 7,
+   "ab": 6,
+   "h": 3,
+   "hr": 1,
+   "avg": ".500",
+   "slg": "1.000"
+  },
+  {
+   "batter": "Ha-Seong Kim",
+   "team": "ATL",
+   "opp_sp": "Yoshinobu Yamamoto",
+   "pa": 8,
+   "ab": 7,
+   "h": 3,
    "hr": 1,
    "avg": ".429",
-   "slg": ".714"
+   "slg": ".857"
   },
   {
-   "batter": "Miguel Vargas",
-   "team": "CWS",
-   "opp_sp": "Gavin Williams",
-   "pa": 17,
-   "ab": 14,
-   "h": 6,
+   "batter": "Mookie Betts",
+   "team": "LAD",
+   "opp_sp": "Chris Sale",
+   "pa": 20,
+   "ab": 18,
+   "h": 7,
    "hr": 1,
-   "avg": ".429",
-   "slg": ".643"
+   "avg": ".389",
+   "slg": ".722"
   },
   {
-   "batter": "Jazz Chisholm Jr.",
-   "team": "NYY",
-   "opp_sp": "Freddy Peralta",
-   "pa": 15,
-   "ab": 11,
-   "h": 2,
-   "hr": 1,
-   "avg": ".182",
-   "slg": ".545"
-  },
-  {
-   "batter": "Junior Caminero",
-   "team": "TB",
-   "opp_sp": "Cam Schlittler",
-   "pa": 14,
-   "ab": 14,
+   "batter": "Ty France",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 13,
+   "ab": 12,
    "h": 4,
    "hr": 1,
-   "avg": ".286",
-   "slg": ".500"
+   "avg": ".333",
+   "slg": ".583"
+  },
+  {
+   "batter": "Xander Bogaerts",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 17,
+   "ab": 16,
+   "h": 3,
+   "hr": 1,
+   "avg": ".188",
+   "slg": ".438"
+  },
+  {
+   "batter": "Teoscar Hern\u00e1ndez",
+   "team": "LAD",
+   "opp_sp": "Chris Sale",
+   "pa": 29,
+   "ab": 24,
+   "h": 5,
+   "hr": 1,
+   "avg": ".208",
+   "slg": ".417"
+  },
+  {
+   "batter": "Fernando Tatis Jr.",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 31,
+   "ab": 28,
+   "h": 7,
+   "hr": 1,
+   "avg": ".250",
+   "slg": ".393"
+  },
+  {
+   "batter": "Jake Cronenworth",
+   "team": "SD",
+   "opp_sp": "Dustin May",
+   "pa": 25,
+   "ab": 21,
+   "h": 5,
+   "hr": 1,
+   "avg": ".238",
+   "slg": ".381"
   }
  ]
 }
