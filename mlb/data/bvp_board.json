@@ -1,128 +1,95 @@
 {
- "generated": "2026-10-06T21:36:22+00:00",
- "date": "2026-10-06",
+ "generated": "2026-10-07T02:20:31+00:00",
+ "date": "2026-10-07",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Christian Yelich",
-   "team": "MIL",
-   "opp_sp": "Nick Pivetta",
-   "pa": 22,
-   "ab": 18,
-   "h": 7,
+   "batter": "Rowdy Tellez",
+   "team": "ATL",
+   "opp_sp": "Tyler Glasnow",
+   "pa": 19,
+   "ab": 19,
+   "h": 5,
    "hr": 2,
-   "avg": ".389",
-   "slg": ".833"
+   "avg": ".263",
+   "slg": ".684"
+  },
+  {
+   "batter": "Will Smith",
+   "team": "LAD",
+   "opp_sp": "Tyler Mahle",
+   "pa": 11,
+   "ab": 10,
+   "h": 3,
+   "hr": 1,
+   "avg": ".300",
+   "slg": ".700"
   },
   {
    "batter": "Freddie Freeman",
    "team": "LAD",
-   "opp_sp": "Chris Sale",
-   "pa": 16,
-   "ab": 16,
+   "opp_sp": "Tyler Mahle",
+   "pa": 22,
+   "ab": 19,
+   "h": 8,
+   "hr": 1,
+   "avg": ".421",
+   "slg": ".632"
+  },
+  {
+   "batter": "Cody Bellinger",
+   "team": "NYY",
+   "opp_sp": "Nick Martinez",
+   "pa": 17,
+   "ab": 17,
    "h": 5,
-   "hr": 2,
-   "avg": ".313",
-   "slg": ".813"
-  },
-  {
-   "batter": "Manny Machado",
-   "team": "SD",
-   "opp_sp": "Dustin May",
-   "pa": 42,
-   "ab": 40,
-   "h": 10,
-   "hr": 2,
-   "avg": ".250",
-   "slg": ".450"
-  },
-  {
-   "batter": "Gary S\u00e1nchez",
-   "team": "MIL",
-   "opp_sp": "Nick Pivetta",
-   "pa": 7,
-   "ab": 6,
-   "h": 3,
    "hr": 1,
-   "avg": ".500",
-   "slg": "1.000"
+   "avg": ".294",
+   "slg": ".529"
   },
   {
-   "batter": "Ha-Seong Kim",
-   "team": "ATL",
-   "opp_sp": "Yoshinobu Yamamoto",
-   "pa": 8,
-   "ab": 7,
-   "h": 3,
+   "batter": "Jorge Mateo",
+   "team": "TB",
+   "opp_sp": "Max Fried",
+   "pa": 11,
+   "ab": 10,
+   "h": 2,
    "hr": 1,
-   "avg": ".429",
-   "slg": ".857"
+   "avg": ".200",
+   "slg": ".500"
   },
   {
-   "batter": "Mookie Betts",
-   "team": "LAD",
-   "opp_sp": "Chris Sale",
-   "pa": 20,
-   "ab": 18,
-   "h": 7,
+   "batter": "Heliot Ramos",
+   "team": "NYY",
+   "opp_sp": "Nick Martinez",
+   "pa": 10,
+   "ab": 10,
+   "h": 1,
    "hr": 1,
-   "avg": ".389",
-   "slg": ".722"
+   "avg": ".100",
+   "slg": ".400"
   },
   {
-   "batter": "Ty France",
-   "team": "SD",
-   "opp_sp": "Dustin May",
+   "batter": "Jonathan Aranda",
+   "team": "TB",
+   "opp_sp": "Max Fried",
+   "pa": 13,
+   "ab": 11,
+   "h": 1,
+   "hr": 1,
+   "avg": ".091",
+   "slg": ".364"
+  },
+  {
+   "batter": "Cedric Mullins",
+   "team": "TB",
+   "opp_sp": "Max Fried",
    "pa": 13,
    "ab": 12,
-   "h": 4,
+   "h": 1,
    "hr": 1,
-   "avg": ".333",
-   "slg": ".583"
-  },
-  {
-   "batter": "Xander Bogaerts",
-   "team": "SD",
-   "opp_sp": "Dustin May",
-   "pa": 17,
-   "ab": 16,
-   "h": 3,
-   "hr": 1,
-   "avg": ".188",
-   "slg": ".438"
-  },
-  {
-   "batter": "Teoscar Hern\u00e1ndez",
-   "team": "LAD",
-   "opp_sp": "Chris Sale",
-   "pa": 29,
-   "ab": 24,
-   "h": 5,
-   "hr": 1,
-   "avg": ".208",
-   "slg": ".417"
-  },
-  {
-   "batter": "Fernando Tatis Jr.",
-   "team": "SD",
-   "opp_sp": "Dustin May",
-   "pa": 31,
-   "ab": 28,
-   "h": 7,
-   "hr": 1,
-   "avg": ".250",
-   "slg": ".393"
-  },
-  {
-   "batter": "Jake Cronenworth",
-   "team": "SD",
-   "opp_sp": "Dustin May",
-   "pa": 25,
-   "ab": 21,
-   "h": 5,
-   "hr": 1,
-   "avg": ".238",
-   "slg": ".381"
+   "avg": ".083",
+   "slg": ".333"
   }
  ]
 }
