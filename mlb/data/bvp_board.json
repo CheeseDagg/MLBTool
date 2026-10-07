@@ -1,19 +1,8 @@
 {
- "generated": "2026-10-07T02:20:31+00:00",
+ "generated": "2026-10-07T21:57:46+00:00",
  "date": "2026-10-07",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Rowdy Tellez",
-   "team": "ATL",
-   "opp_sp": "Tyler Glasnow",
-   "pa": 19,
-   "ab": 19,
-   "h": 5,
-   "hr": 2,
-   "avg": ".263",
-   "slg": ".684"
-  },
   {
    "batter": "Will Smith",
    "team": "LAD",
@@ -48,28 +37,6 @@
    "slg": ".529"
   },
   {
-   "batter": "Jorge Mateo",
-   "team": "TB",
-   "opp_sp": "Max Fried",
-   "pa": 11,
-   "ab": 10,
-   "h": 2,
-   "hr": 1,
-   "avg": ".200",
-   "slg": ".500"
-  },
-  {
-   "batter": "Heliot Ramos",
-   "team": "NYY",
-   "opp_sp": "Nick Martinez",
-   "pa": 10,
-   "ab": 10,
-   "h": 1,
-   "hr": 1,
-   "avg": ".100",
-   "slg": ".400"
-  },
-  {
    "batter": "Jonathan Aranda",
    "team": "TB",
    "opp_sp": "Max Fried",
@@ -79,17 +46,6 @@
    "hr": 1,
    "avg": ".091",
    "slg": ".364"
-  },
-  {
-   "batter": "Cedric Mullins",
-   "team": "TB",
-   "opp_sp": "Max Fried",
-   "pa": 13,
-   "ab": 12,
-   "h": 1,
-   "hr": 1,
-   "avg": ".083",
-   "slg": ".333"
   }
  ]
 }
