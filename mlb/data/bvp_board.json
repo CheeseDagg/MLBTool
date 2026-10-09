@@ -1,29 +1,6 @@
 {
- "generated": "2026-10-08T22:02:11+00:00",
- "date": "2026-10-08",
+ "generated": "2026-10-09T02:55:21+00:00",
+ "date": "2026-10-09",
  "min_pa": 6,
- "rows": [
-  {
-   "batter": "Braden Montgomery",
-   "team": "CWS",
-   "opp_sp": "Parker Messick",
-   "pa": 8,
-   "ab": 6,
-   "h": 2,
-   "hr": 1,
-   "avg": ".333",
-   "slg": ".833"
-  },
-  {
-   "batter": "Miguel Vargas",
-   "team": "CWS",
-   "opp_sp": "Parker Messick",
-   "pa": 15,
-   "ab": 14,
-   "h": 2,
-   "hr": 1,
-   "avg": ".143",
-   "slg": ".357"
-  }
- ]
+ "rows": []
 }
