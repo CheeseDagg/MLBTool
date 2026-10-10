@@ -1,19 +1,8 @@
 {
- "generated": "2026-10-10T02:17:40+00:00",
+ "generated": "2026-10-10T20:33:23+00:00",
  "date": "2026-10-10",
  "min_pa": 6,
  "rows": [
-  {
-   "batter": "Austin Hedges",
-   "team": "CLE",
-   "opp_sp": "Sean Burke",
-   "pa": 8,
-   "ab": 7,
-   "h": 4,
-   "hr": 1,
-   "avg": ".571",
-   "slg": "1.143"
-  },
   {
    "batter": "Munetaka Murakami",
    "team": "CWS",
