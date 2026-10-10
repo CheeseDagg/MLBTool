@@ -1,6 +1,40 @@
 {
- "generated": "2026-10-09T21:38:59+00:00",
- "date": "2026-10-09",
+ "generated": "2026-10-10T02:17:40+00:00",
+ "date": "2026-10-10",
  "min_pa": 6,
- "rows": []
+ "rows": [
+  {
+   "batter": "Austin Hedges",
+   "team": "CLE",
+   "opp_sp": "Sean Burke",
+   "pa": 8,
+   "ab": 7,
+   "h": 4,
+   "hr": 1,
+   "avg": ".571",
+   "slg": "1.143"
+  },
+  {
+   "batter": "Munetaka Murakami",
+   "team": "CWS",
+   "opp_sp": "Gavin Williams",
+   "pa": 6,
+   "ab": 5,
+   "h": 1,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".800"
+  },
+  {
+   "batter": "Miguel Vargas",
+   "team": "CWS",
+   "opp_sp": "Gavin Williams",
+   "pa": 17,
+   "ab": 14,
+   "h": 6,
+   "hr": 1,
+   "avg": ".429",
+   "slg": ".643"
+  }
+ ]
 }
