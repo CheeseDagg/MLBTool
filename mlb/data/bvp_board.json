@@ -1,29 +1,18 @@
 {
- "generated": "2026-10-10T20:33:23+00:00",
- "date": "2026-10-10",
+ "generated": "2026-10-11T01:49:55+00:00",
+ "date": "2026-10-11",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Munetaka Murakami",
-   "team": "CWS",
-   "opp_sp": "Gavin Williams",
+   "batter": "Shohei Ohtani",
+   "team": "LAD",
+   "opp_sp": "Jacob Misiorowski",
    "pa": 6,
    "ab": 5,
-   "h": 1,
+   "h": 2,
    "hr": 1,
-   "avg": ".200",
-   "slg": ".800"
-  },
-  {
-   "batter": "Miguel Vargas",
-   "team": "CWS",
-   "opp_sp": "Gavin Williams",
-   "pa": 17,
-   "ab": 14,
-   "h": 6,
-   "hr": 1,
-   "avg": ".429",
-   "slg": ".643"
+   "avg": ".400",
+   "slg": "1.400"
   }
  ]
 }
