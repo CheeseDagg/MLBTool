@@ -1,18 +1,18 @@
 {
- "generated": "2026-10-11T20:57:03+00:00",
- "date": "2026-10-11",
+ "generated": "2026-10-12T02:20:23+00:00",
+ "date": "2026-10-12",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Shohei Ohtani",
-   "team": "LAD",
-   "opp_sp": "Jacob Misiorowski",
-   "pa": 6,
-   "ab": 5,
+   "batter": "Andrew Vaughn",
+   "team": "MIL",
+   "opp_sp": "Yoshinobu Yamamoto",
+   "pa": 7,
+   "ab": 7,
    "h": 2,
    "hr": 1,
-   "avg": ".400",
-   "slg": "1.400"
+   "avg": ".286",
+   "slg": ".714"
   }
  ]
 }
