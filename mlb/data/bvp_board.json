@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-12T02:20:23+00:00",
+ "generated": "2026-10-12T23:36:35+00:00",
  "date": "2026-10-12",
  "min_pa": 6,
- "rows": [
-  {
-   "batter": "Andrew Vaughn",
-   "team": "MIL",
-   "opp_sp": "Yoshinobu Yamamoto",
-   "pa": 7,
-   "ab": 7,
-   "h": 2,
-   "hr": 1,
-   "avg": ".286",
-   "slg": ".714"
-  }
- ]
+ "rows": []
 }
