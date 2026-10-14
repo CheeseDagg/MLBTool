@@ -1,6 +1,18 @@
 {
- "generated": "2026-10-13T21:49:30+00:00",
- "date": "2026-10-13",
+ "generated": "2026-10-14T01:52:13+00:00",
+ "date": "2026-10-14",
  "min_pa": 6,
- "rows": []
+ "rows": [
+  {
+   "batter": "Gary S\u00e1nchez",
+   "team": "MIL",
+   "opp_sp": "Blake Snell",
+   "pa": 31,
+   "ab": 23,
+   "h": 7,
+   "hr": 5,
+   "avg": ".304",
+   "slg": "1.000"
+  }
+ ]
 }
