@@ -1,18 +1,29 @@
 {
- "generated": "2026-10-14T20:40:06+00:00",
- "date": "2026-10-14",
+ "generated": "2026-10-15T01:26:04+00:00",
+ "date": "2026-10-15",
  "min_pa": 6,
  "rows": [
   {
-   "batter": "Gary S\u00e1nchez",
+   "batter": "Jake Bauers",
    "team": "MIL",
-   "opp_sp": "Blake Snell",
-   "pa": 31,
-   "ab": 23,
-   "h": 7,
-   "hr": 5,
-   "avg": ".304",
-   "slg": "1.000"
+   "opp_sp": "Tyler Glasnow",
+   "pa": 7,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "Junior Caminero",
+   "team": "TB",
+   "opp_sp": "Gavin Williams",
+   "pa": 10,
+   "ab": 10,
+   "h": 2,
+   "hr": 1,
+   "avg": ".200",
+   "slg": ".500"
   }
  ]
 }
