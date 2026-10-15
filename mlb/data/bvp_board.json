@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T01:26:04+00:00",
+ "generated": "2026-10-15T20:18:50+00:00",
  "date": "2026-10-15",
  "min_pa": 6,
  "rows": [
@@ -8,6 +8,17 @@
    "team": "MIL",
    "opp_sp": "Tyler Glasnow",
    "pa": 7,
+   "ab": 6,
+   "h": 1,
+   "hr": 1,
+   "avg": ".167",
+   "slg": ".667"
+  },
+  {
+   "batter": "Andy Pages",
+   "team": "LAD",
+   "opp_sp": "Shane Drohan",
+   "pa": 6,
    "ab": 6,
    "h": 1,
    "hr": 1,
