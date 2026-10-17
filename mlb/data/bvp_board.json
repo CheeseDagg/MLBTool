@@ -1,6 +1,18 @@
 {
- "generated": "2026-10-17T01:16:37+00:00",
+ "generated": "2026-10-17T19:20:37+00:00",
  "date": "2026-10-17",
  "min_pa": 6,
- "rows": []
+ "rows": [
+  {
+   "batter": "Cedric Mullins",
+   "team": "TB",
+   "opp_sp": "Shawn Armstrong",
+   "pa": 8,
+   "ab": 8,
+   "h": 5,
+   "hr": 1,
+   "avg": ".625",
+   "slg": "1.125"
+  }
+ ]
 }
