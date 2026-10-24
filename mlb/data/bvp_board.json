@@ -1,40 +1,18 @@
 {
- "generated": "2026-10-23T20:25:02+00:00",
- "date": "2026-10-23",
+ "generated": "2026-10-24T01:33:00+00:00",
+ "date": "2026-10-24",
  "min_pa": 6,
  "rows": [
   {
    "batter": "William Contreras",
    "team": "MIL",
-   "opp_sp": "Nick Martinez",
-   "pa": 18,
-   "ab": 18,
-   "h": 5,
-   "hr": 2,
-   "avg": ".278",
-   "slg": ".667"
-  },
-  {
-   "batter": "Brice Turang",
-   "team": "MIL",
-   "opp_sp": "Nick Martinez",
-   "pa": 17,
-   "ab": 16,
-   "h": 4,
+   "opp_sp": "Drew Rasmussen",
+   "pa": 6,
+   "ab": 5,
+   "h": 2,
    "hr": 1,
-   "avg": ".250",
-   "slg": ".563"
-  },
-  {
-   "batter": "Christian Yelich",
-   "team": "MIL",
-   "opp_sp": "Nick Martinez",
-   "pa": 20,
-   "ab": 19,
-   "h": 5,
-   "hr": 1,
-   "avg": ".263",
-   "slg": ".474"
+   "avg": ".400",
+   "slg": "1.000"
   }
  ]
 }
