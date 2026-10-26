@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-26T01:07:05+00:00",
+ "generated": "2026-10-26T21:37:27+00:00",
  "date": "2026-10-26",
  "min_pa": 6,
- "rows": [
-  {
-   "batter": "Andrew Vaughn",
-   "team": "MIL",
-   "opp_sp": "Freddy Peralta",
-   "pa": 11,
-   "ab": 11,
-   "h": 5,
-   "hr": 1,
-   "avg": ".455",
-   "slg": ".818"
-  }
- ]
+ "rows": []
 }
