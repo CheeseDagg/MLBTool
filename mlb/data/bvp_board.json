@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-28T21:38:03+00:00",
- "date": "2026-10-28",
+ "generated": "2026-10-29T02:23:20+00:00",
+ "date": "2026-10-29",
  "min_pa": 6,
- "rows": [
-  {
-   "batter": "William Contreras",
-   "team": "MIL",
-   "opp_sp": "Drew Rasmussen",
-   "pa": 6,
-   "ab": 5,
-   "h": 2,
-   "hr": 1,
-   "avg": ".400",
-   "slg": "1.000"
-  }
- ]
+ "rows": []
 }
